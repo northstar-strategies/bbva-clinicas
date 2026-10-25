@@ -1116,6 +1116,89 @@ td{padding:11px 12px} th,thead th{padding:11px 12px}
 .atv-expl{font-size:11.5px;line-height:1.6;color:var(--txt-3);margin:0 0 12px}
 .atv-expl b{color:var(--ice-2);font-weight:600}
 @media (max-width:900px){.atv-ctl{grid-template-columns:1fr 1fr}}
+
+/* ── v6.5 · mapa de calor con Brinson-Fachler, alertas de stop-loss y lector de noticias ── */
+.atv-calor th:first-child,.atv-calor td:first-child{position:sticky;left:0;z-index:2;background:var(--s1,#0A1734);text-align:left}
+.atv-calor thead th{position:sticky;top:0;z-index:3;background:var(--s1,#0A1734)}
+.atv-calor thead th:first-child{z-index:4}
+.atv-calor tr.sub td{background:rgba(20,100,165,.22);color:var(--ice);font-weight:700}
+.atv-calor tr.sub td:first-child{background:#10284f}
+.atv-calor tr.tot td{border-top:1px solid var(--line-3);font-weight:700;color:var(--txt)}
+.atv-calor td.cel{position:relative}
+.atv-calor td.cel i.pt{position:absolute;top:3px;right:3px;width:6px;height:6px;border-radius:50%;background:#FF4D4F;box-shadow:0 0 0 2px rgba(0,0,0,.35)}
+.atv-calor td.cel i.pt.vig{background:#F5B93C;width:5px;height:5px}
+.sl-chip{display:inline-flex;align-items:center;gap:5px;padding:2px 8px;border-radius:999px;font-family:var(--sans);font-size:10px;font-weight:600;white-space:nowrap}
+.sl-chip.ok{background:var(--pos-bg);color:var(--pos)} .sl-chip.vig{background:var(--warn-bg);color:var(--warn)}
+.sl-chip.stop{background:#FF4D4F;color:#fff} .sl-chip.ejec{background:#072146;color:#D4EDFC;box-shadow:inset 0 0 0 1px #1464A5}
+.sl-chip.sin{background:transparent;color:var(--txt-4);box-shadow:inset 0 0 0 1px var(--line-2)}
+.sl-chip small{font-weight:500;opacity:.85}
+.atv-banda{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 19px 12px;padding:10px 12px;border-radius:12px;
+  background:rgba(245,185,60,.08);box-shadow:inset 0 0 0 1px rgba(245,185,60,.28);font-size:11.5px;color:var(--txt-2)}
+.atv-banda.limpia{background:rgba(48,209,88,.07);box-shadow:inset 0 0 0 1px rgba(48,209,88,.25)}
+.atv-banda b{color:var(--txt)}
+.atv-mapa-h{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:0 19px 10px}
+.precio-nota{font-size:11px;color:var(--txt-3);margin:8px 0 0}
+.precio-nota.uh{color:var(--warn)}
+@media (max-width:600px){.atv-calor{font-size:10px}.atv-calor th:first-child,.atv-calor td:first-child{min-width:78px}
+  .atv-banda{margin:0 12px 12px}.atv-mapa-h{padding:0 12px 10px}}
+
+.noti[data-nid]{cursor:pointer;transition:background-color .2s var(--crit,ease),box-shadow .2s var(--crit,ease),opacity .2s}
+.noti[data-nid]:hover{background:#0f2147}
+.noti[data-nid]:focus-visible{outline:2px solid #7FB6E8;outline-offset:2px}
+.noti.leida{opacity:.62}
+.noti.leida h4{color:var(--txt-2)}
+.noti .leer{display:inline-flex;align-items:center;gap:5px;padding:1px 8px;border-radius:999px;background:rgba(20,100,165,.22);color:#D4EDFC;font-family:var(--sans);font-weight:600}
+.noti .leer.doc{background:rgba(245,185,60,.14);color:var(--warn)}
+.lec-fondo{position:fixed;inset:0;z-index:900;background:rgba(2,8,22,.62);backdrop-filter:blur(3px);opacity:0;transition:opacity .2s var(--crit,ease)}
+.lec-fondo.on{opacity:1}
+.lec{position:fixed;z-index:901;top:0;right:0;bottom:0;width:min(560px,100vw);display:flex;flex-direction:column;background:#0A1734;
+  box-shadow:-30px 0 80px -20px rgba(0,0,0,.8),inset 1px 0 0 rgba(212,237,252,.08);transform:translateX(102%);transition:transform .2s var(--crit,ease)}
+.lec.on{transform:none}
+.lec-top{display:flex;align-items:center;gap:8px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.lec-top .spacer{flex:1}
+.lec-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:34px;min-width:34px;padding:0 10px;border-radius:9px;border:0;
+  background:rgba(212,237,252,.07);color:var(--txt-2);font:600 12px var(--sans);cursor:pointer;transition:background-color .2s}
+.lec-btn:hover{background:rgba(212,237,252,.14);color:var(--txt)}
+.lec-btn:focus-visible{outline:2px solid #7FB6E8;outline-offset:2px}
+.lec-btn:disabled{opacity:.35;cursor:default}
+.lec-cuerpo{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:18px 22px 28px}
+.lec-meta{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:12px}
+.lec-meta .chip{cursor:default}
+.lec-meta .chip.clic{cursor:pointer}
+.lec-dato{font-size:11.5px;color:var(--txt-3);margin:0 0 6px}
+.lec-cartera{font-size:11.5px;color:#D4EDFC;background:rgba(20,100,165,.18);border-radius:9px;padding:7px 10px;margin:4px 0 12px}
+.lec h2{font-family:var(--display,var(--sans));font-size:22px;line-height:1.3;letter-spacing:-.015em;margin:6px 0 16px;color:var(--txt);max-width:68ch}
+.lec-texto{max-width:68ch;font-size:15px;line-height:1.6;color:var(--txt-2)}
+.lec-texto p{margin:0 0 1em}
+.lec-texto ul,.lec-texto ol{margin:0 0 1em 1.2em;padding:0}
+.lec-texto li{margin:0 0 .45em}
+.lec-texto strong,.lec-texto b{color:var(--txt);font-weight:600}
+.lec-texto table{border-collapse:collapse;margin:0 0 1em;font-size:12.5px;width:100%}
+.lec-texto td,.lec-texto th{border-bottom:1px solid var(--line-2);padding:6px 8px;text-align:left;vertical-align:top}
+.lec-texto blockquote{margin:0 0 1em;padding:10px 14px;border-left:3px solid #1464A5;background:rgba(20,100,165,.12);border-radius:0 8px 8px 0}
+.lec-ligas{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.lec-ligas a{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:9px;background:#1464A5;color:#fff;text-decoration:none;font:600 12px var(--sans);transition:background-color .2s}
+.lec-ligas a:hover{background:#1a74bf}
+.lec-ligas a:focus-visible{outline:2px solid #D4EDFC;outline-offset:2px}
+.lec-aviso{font-size:12px;color:var(--warn);background:var(--warn-bg);border-radius:9px;padding:8px 11px;margin:0 0 14px}
+.lec-doc{border-radius:14px;padding:18px;background:rgba(212,237,252,.05);box-shadow:inset 0 0 0 1px var(--line-2);font-size:13.5px;line-height:1.6;color:var(--txt-2)}
+.lec-doc h3{font-size:15px;color:var(--txt);margin:0 0 6px}
+.lec-doc code{font-family:var(--code,monospace);font-size:11.5px;word-break:break-all;color:#7FB6E8}
+.lec-esq{display:flex;flex-direction:column;gap:10px}
+.lec-esq i{display:block;height:13px;border-radius:6px;background:linear-gradient(90deg,rgba(212,237,252,.06),rgba(212,237,252,.14),rgba(212,237,252,.06));
+  background-size:200% 100%;animation:lecBrillo 1.2s linear infinite}
+.lec-esq i.t{height:22px;width:85%} .lec-esq i.c{width:60%}
+@keyframes lecBrillo{to{background-position:-200% 0}}
+.lec-asa{display:none}
+@media (max-width:640px){
+  .lec{top:auto;left:0;width:100vw;height:100dvh;max-height:100dvh;border-radius:16px 16px 0 0;transform:translateY(104%)}
+  .lec.on{transform:none}
+  .lec-asa{display:block;width:42px;height:5px;border-radius:3px;background:rgba(212,237,252,.3);margin:8px auto 0}
+  .lec-cuerpo{padding:14px 16px 28px}
+  .lec h2{font-size:19px}
+  .lec-texto{font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){.lec,.lec-fondo,.noti[data-nid]{transition:none}.lec-esq i{animation:none}}
 </style>
 </head>
 <body>
@@ -1913,8 +1996,8 @@ c 810 FEMSAUBD a 202.18</pre>
             <p class="atv-expl"><b>Alfa</b> = lo que rindió la cartera − lo que rindió el MEXTRAC09 (100 pb = 1%). Sale de cuatro lados:</p>
             <p class="atv-expl"><b>1. Emisoras.</b> En cada acción comparamos cuánto pesa en la cartera (lo directo más lo que trae el MEXTRAC) contra cuánto pesa en el benchmark.
               Si pesamos <b>más</b> en una que le ganó al MEXTRAC09, suma; si pesamos más en una que se quedó atrás, resta. Si pesamos <b>menos</b>, es al revés.
-              Aporte = (peso cartera − peso benchmark) × (rendimiento de la acción − rendimiento del MEXTRAC09). Agrupado por sector es lo mismo, partido en
-              <b>asignación</b> (pesar distinto el sector), <b>selección</b> (escoger mejores o peores acciones dentro del sector) e <b>interacción</b> (cargar más justo donde escogimos mejor o peor).</p>
+              Aporte = (peso cartera − peso benchmark) × (rendimiento de la acción − rendimiento del MEXTRAC09). Con Brinson-Fachler ese mismo alfa se parte en
+              <b>asignación</b> (pesar distinto un sector que le ganó o perdió al MEXTRAC09), <b>selección</b> (escoger dentro del sector acciones mejores o peores que su sector) e <b>interacción</b> (cargar más el sector justo donde escogimos mejor o peor), por sector y por emisora.</p>
             <p class="atv-expl"><b>2. Efectivo.</b> El benchmark está invertido al 100%. Si el mercado sube, el efectivo resta; si baja, suma.</p>
             <p class="atv-expl"><b>3. MEXTRAC contra su canasta.</b> El benchmark es el precio del ETF, y el ETF no siempre vale lo mismo que las acciones que trae (su valor teórico del PCF).
               Lo que tenemos en acciones directas sigue a la canasta: si el ETF rinde menos que su canasta, eso nos da alfa; si rinde más, nos lo quita. Es temporal: se regresa cuando el precio alcanza a la canasta.</p>
@@ -1932,9 +2015,14 @@ c 810 FEMSAUBD a 202.18</pre>
                 La barra oscura del final es el alfa total: la suma de todas las demás.</p>
               <div class="chart-box"><canvas id="atvCas"></canvas></div></div>
           </div>
-          <div class="card pad0" style="margin-bottom:14px"><div class="card-h" style="padding:18px 19px 0"><h3>Mapa de calor · día × emisora</h3><span class="hint">aporte al alfa en pb · azul suma · rojo resta</span></div>
-            <p class="atv-expl" style="padding:0 19px">Cada celda es (peso cartera − peso benchmark) × (rendimiento − benchmark) de ese día. ▲ en la fecha = MEXTRAC estimado.</p>
-            <div class="tbl-wrap" style="max-height:560px;padding:0 12px 12px"><table class="atv-calor" id="atvCalor"></table></div></div>
+          <div class="card pad0" style="margin-bottom:14px"><div class="card-h" style="padding:18px 19px 0"><h3>Mapa de calor · día × emisora</h3><span class="hint">en pb · azul suma · rojo resta</span></div>
+            <div class="atv-mapa-h"><div class="seg" id="atv-mapa"></div><span class="hint" id="atv-mapa-t"></span></div>
+            <div id="atv-banda"></div>
+            <p class="atv-expl" style="padding:0 19px" id="atv-mapa-nota"></p>
+            <div class="tbl-wrap" style="max-height:620px;padding:0 12px 12px;overflow:auto"><table class="atv-calor" id="atvCalor"></table></div>
+            <p class="atv-expl" style="padding:0 19px 14px;margin:0">Agrupado por sector, con su subtotal. La columna <b>Suma</b> enlaza los días con Cariño. Pase el cursor por una celda para ver w_p, w_b, r_i, R_b,S y R_b.
+              <b>Stop-loss</b>: estado al último cierre y la z de TE; punto rojo = ese día se cumplieron las dos condiciones, punto ámbar = Vigilar. Sin sobrepeso no alerta. ▲ en la fecha = MEXTRAC estimado.</p>
+            <p class="precio-nota" style="padding:0 19px 14px;margin:0" id="atv-precios"></p></div>
           <div class="card pad0" style="margin-bottom:14px"><div class="card-h" style="padding:18px 19px 0"><h3>Día por día</h3><span class="hint">en pb · clic en el encabezado para ordenar</span></div>
             <p class="atv-expl" style="padding:0 19px" id="atv-diasnota"></p>
             <div class="tbl-wrap"><table id="atvTDias"></table></div></div>
@@ -1942,9 +2030,9 @@ c 810 FEMSAUBD a 202.18</pre>
             <p class="atv-expl" style="padding:0 19px">Aporte de cada sector cada día, en pb. Elija el efecto: asignación, selección, interacción o el total. ▲ = MEXTRAC estimado.</p>
             <div class="tbl-wrap" style="padding:0 12px 12px"><table class="atv-calor" id="atvSecDia"></table></div></div>
           <div class="grid g2" style="margin-bottom:14px">
-            <div class="card"><div class="card-h"><h3>Sectores · Brinson, Hood y Beebower</h3></div>
-              <p class="atv-expl"><b>Asignación</b> = II − I, por pesar distinto que el benchmark. <b>Selección</b> = III − I, por escoger mejores o peores acciones.
-                <b>Interacción</b> = IV − III − II + I, por haber cargado más justo donde escogimos mejor o peor.</p>
+            <div class="card"><div class="card-h"><h3>Sectores · Brinson-Fachler</h3></div>
+              <p class="atv-expl"><b>Asignación</b> = (W_p − W_b)(R_b,S − R_b), por pesar distinto en un sector que le ganó o perdió al MEXTRAC09. <b>Selección</b> = W_b(R_p,S − R_b,S), por escoger acciones mejores o peores que su sector.
+                <b>Interacción</b> = (W_p − W_b)(R_p,S − R_b,S), por haber cargado más justo donde escogimos mejor o peor. Los cuadrantes I–IV de BHB quedan abajo como referencia.</p>
               <div class="chart-box"><canvas id="atvSec"></canvas></div><p class="chart-nota" id="atv-secnota"></p></div>
             <div class="card"><div class="card-h"><h3>Top 5 sobreponderadas y subponderadas</h3></div>
               <p class="atv-expl">Peso en la cartera con el MEXTRAC abierto en sus emisoras menos el peso en el benchmark, al cierre del último día elegido.</p>
@@ -4091,9 +4179,11 @@ const Remote=(()=>{
       const f=campos(b);
       if(!f.titulo) return null;
       const [fecha,hora]=String(f.fecha||'').split(/[ T]/);
+      // v6.5: el id une la tarjeta con su texto completo (noticias_texto.json); las del equipo usan uno propio
+      const id=f.id||('equipo:'+(f.fecha||'')+':'+String(f.titulo).slice(0,60));
       return {fecha:fecha||'', hora:(hora||'').slice(0,5), sym:symOf(f.emisora||''),
         titulo:f.titulo, fuente:f.fuente||'', tono:(f.tono||'neutral').toLowerCase(),
-        impacto:(f.impacto||'').toLowerCase(), url:f.url||'',
+        impacto:(f.impacto||'').toLowerCase(), url:f.url||'', id, lseg:String(f.id||'').startsWith('lseg:'),
         resumen:(f.resumen||'').replace(/\n/g,' ')};
     }).filter(Boolean).sort((a,b)=>(b.fecha+b.hora).localeCompare(a.fecha+a.hora));
   }
@@ -4955,7 +5045,7 @@ const AtrV=(()=>{
   const bust=u=>u+'?_ts='+Date.now();
   const reg={}, orden={};
   let D=null, cargando=null, err='', leido=0, fuente='';
-  const st={alcance:'periodo', dia:'', desde:'', hasta:'', vent:'dia0', semana:null, rankVer:'TODAS', efecto:'Total'};
+  const st={alcance:'periodo', dia:'', desde:'', hasta:'', vent:'dia0', semana:null, rankVer:'TODAS', efecto:'Total', mapa:'Total'};
   const x=v=>{ const y=parseFloat(v); return isFinite(y)?y:null; };
   const ok=v=>v!==null && v!==undefined && isFinite(v);
   const fpb=v=>!ok(v)?'—':(v>0?'+':v<0?'−':'')+Math.abs(v*1e4).toFixed(2)+' pb';
@@ -4981,7 +5071,10 @@ const AtrV=(()=>{
         rb:x(r.rend_bench), alfa:x(r.alfa), k:x(r.k_carino), wetf:x(r.peso_etf), wc:x(r.peso_caja), est:r.mextrac_estimado==='1',
         teo:x(r.mextrac_teorico), premio:x(r.premio_etf)});
       else if(r.concepto==='EMISORA') d.em.push({sym:r.emisora, sec:r.sector, bl:r.bloque, tit:x(r.titulos), g:x(r.ganancia),
-        r:x(r.rendimiento), wp:x(r.peso_cartera), wb:x(r.peso_benchmark), wd:x(r.peso_directo), ap:x(r.aporte)});
+        r:x(r.rendimiento), wp:x(r.peso_cartera), wb:x(r.peso_benchmark), wd:x(r.peso_directo), ap:x(r.aporte),
+        // v6.5: Brinson-Fachler por emisora y estado del stop-loss del día
+        as:x(r.asignacion_bf), se:x(r.seleccion_bf), in:x(r.interaccion_bf), za:x(r.z_propia), zr:x(r.z_te),
+        esl:r.estado_sl||'', etp:r.estado_tp||'', rbs:x(r.rend_sector_bench), wps:x(r.peso_sector_cartera), wbs:x(r.peso_sector_bench)});
       else d.pz[r.concepto]={ap:x(r.aporte), g:x(r.ganancia), r:x(r.rendimiento), w:x(r.peso_cartera)}; });
     fechas.sort();
     const sec={}; filas(as).forEach(r=>{ (sec[r.fecha]||(sec[r.fecha]=[])).push({s:r.sector, wp:x(r.peso_cartera), wb:x(r.peso_benchmark),
@@ -5000,7 +5093,12 @@ const AtrV=(()=>{
     if(cargando) return cargando;
     cargando=(async()=>{
       try{ const [ad,as,se,ri]=await Promise.all(['atribucion_diaria.csv','atribucion_sector.csv','semanal.csv','riesgo.csv'].map(texto));
-        D=armar(ad,as,se,ri); err=''; leido=Date.now(); }
+        D=armar(ad,as,se,ri); err=''; leido=Date.now();
+        // v6.5: de dónde vino cada cierre (PriceClose o UltimoHecho:serie|serie), desde el día 0
+        try{ const pt=filas(await texto('precios_tracker.csv'));
+          D.uh=pt.filter(r=>r.fecha>=D.d0 && String(r.fuente_cierre||'').startsWith('UltimoHecho'))
+                 .map(r=>({f:r.fecha, s:String(r.fuente_cierre).split(':')[1]||''}));
+          D.conFuente=pt.length>0 && 'fuente_cierre' in pt[0]; }catch(e){ D.uh=[]; D.conFuente=false; } }
       catch(e){ err=e.message||String(e); }
       finally{ cargando=null; }
     })();
@@ -5052,9 +5150,11 @@ const AtrV=(()=>{
       ' del benchmark y rindió '+Math.abs(rel*100).toFixed(2)+' pp '+(rel>=0?'más':'menos')+' que el MEXTRAC09: '+
       (ap>0?(act>=0?'pesar más en lo que subió más suma.':'pesar menos en lo que se quedó atrás suma.')
            :(act>=0?'pesar más en lo que se quedó atrás resta.':'pesar menos en lo que subió más resta.')); };
-  const fraseSec=s=>{ if(Math.abs(s.t)<1e-6) return 'Casi no movió el alfa.';
+  // v6.5 · Brinson-Fachler: la asignación depende de si el sector le ganó al MEXTRAC09 (sin peso en el benchmark, R_b,S = R_p,S)
+  const fraseSec=(s,RB)=>{ if(Math.abs(s.t)<1e-6) return 'Casi no movió el alfa.';
     const m=Math.max(Math.abs(s.a),Math.abs(s.se),Math.abs(s.i)), q=(s.t>0?'Sumó ':'Restó ')+Math.abs(s.t*1e4).toFixed(1)+' pb, ';
-    if(m===Math.abs(s.a)) return q+'sobre todo por pesar '+(s.wp>=s.wb?'más':'menos')+' que el benchmark en un sector que '+(s.rb>=0?'subió':'bajó')+'.';
+    if(m===Math.abs(s.a)) return q+'sobre todo por pesar '+(s.wp>=s.wb?'más':'menos')+' que el benchmark en un sector que '+
+      ((s.wb>0?s.rb:s.rp)>=(RB??0)?'le ganó al MEXTRAC09':'se quedó atrás del MEXTRAC09')+'.';
     if(m===Math.abs(s.se)) return q+'sobre todo por escoger '+(s.se>=0?'mejores':'peores')+' acciones dentro del sector.';
     return q+'sobre todo por haber cargado '+(s.wp>=s.wb?'más':'menos')+' justo donde escogimos '+(s.rp>=s.rb?'mejor':'peor')+'.'; };
 
@@ -5145,12 +5245,56 @@ const AtrV=(()=>{
         backgroundColor:piezasC.map(b=>b.tot?BLUE:(b.v>=0?AZ:RJ)),borderRadius:3,barThickness:14}]},
       options:{indexAxis:'y',scales:ejesH(v=>v.toFixed(0)+' pb'),plugins:{legend:{display:false},
         tooltip:{callbacks:{label:c=>' '+fpb(piezasC[c.dataIndex].v)+(piezasC[c.dataIndex].tot?' (la suma de todas las barras)':'')}}}}});
-    // d) mapa de calor día × emisora
-    const tot={}; F.forEach(f=>D.dias[f].em.forEach(e=>{ tot[e.sym]=(tot[e.sym]||0)+e.ap; }));
-    const syms=Object.keys(tot).filter(s=>F.some(f=>Math.abs(D.dias[f].em.find(e=>e.sym===s)?.ap||0)>=5e-7)).sort((a,b)=>tot[b]-tot[a]);
-    const mx=Math.max(1e-9,...F.flatMap(f=>D.dias[f].em.map(e=>Math.abs(e.ap))));
-    $('#atvCalor').innerHTML=`<thead><tr><th>Emisora</th>${F.map(f=>`<th title="${D.dias[f].est?'MEXTRAC estimado':''}">${fechaCorta(f)}${D.dias[f].est?' ▲':''}</th>`).join('')}<th>Suma</th></tr></thead><tbody>`+
-      syms.map(s=>`<tr><td><b>${s}</b></td>${F.map(f=>calorCelda(D.dias[f].em.find(e=>e.sym===s)?.ap||0,mx)).join('')}<td class="${cl(tot[s])}"><b>${(tot[s]*1e4).toFixed(1)}</b></td></tr>`).join('')+'</tbody>';
+    // d) mapa de calor día × emisora · v6.5: Total | Asignación | Selección | Interacción (Brinson-Fachler), por sector y con stop-loss
+    UI.seg('atv-mapa',['Total','Asignación','Selección','Interacción'],st.mapa,k=>{ st.mapa=k; UI.render(); });
+    const mk={Total:'ap',Asignación:'as',Selección:'se',Interacción:'in'}[st.mapa];
+    const ultF=F[F.length-1], todo=enlazar(F.map(f=>D.dias[f]));                       // todos los días, enlazados con Cariño
+    const emDe=(f,s)=>D.dias[f].em.find(z=>z.sym===s)||{};
+    const val=(f,s)=>emDe(f,s)[mk]||0, lnk=g=>F.reduce((a,f)=>a+g(f)*D.dias[f].k,0)/todo.kP;
+    const syms0=[...new Set(F.flatMap(f=>D.dias[f].em.map(e=>e.sym)))].filter(s=>F.some(f=>{ const e=emDe(f,s);
+      return Math.abs(e.ap||0)>=5e-7 || (e.wp||0)+(e.wb||0)>0; }));
+    const grupos={}; syms0.forEach(s=>{ const sc=emDe(ultF,s).sec||'Otros'; (grupos[sc]||(grupos[sc]=[])).push(s); });
+    const tamSec=sc=>grupos[sc].reduce((a,s)=>a+Math.abs(lnk(f=>val(f,s))),0);
+    const mx=Math.max(1e-9,...F.flatMap(f=>syms0.map(s=>Math.abs(val(f,s)))));
+    const zf=v=>ok(v)?(v<0?'−':'')+Math.abs(v).toFixed(2)+'σ':'—';
+    const chipSL=e=>{ const k={OK:'ok',Vigilar:'vig',STOP:'stop',Ejecutado:'ejec','Sin sobrepeso':'sin'}[e.esl];
+      if(!k) return '<span class="sl-chip sin">—</span>';
+      return `<span class="sl-chip ${k}" title="z propia ${zf(e.za)} · z de TE ${zf(e.zr)}">${esc(e.esl)}${ok(e.zr)?` <small>${zf(e.zr)}</small>`:''}</span>`; };
+    const celda=(f,s)=>{ const d=D.dias[f], e=emDe(f,s), v=val(f,s), a=Math.min(1,Math.abs(v)/mx), c=v>=0?'63,143,230':'229,72,77';
+      const tip=`${s} · ${fdate(f)}\n${st.mapa}: ${fpb(v)}\nw_p ${fpw(e.wp)} · w_b ${fpw(e.wb)}\nr_i ${fps(e.r)} · R_b,S ${fps(e.rbs)} · R_b ${fps(d.rb)}`+
+        (ok(e.zr)?`\nStop-loss: ${e.esl||'—'} · z propia ${zf(e.za)} · z de TE ${zf(e.zr)}`:'');
+      const pt=e.esl==='STOP'?'<i class="pt" aria-label="stop-loss"></i>':(e.esl==='Vigilar'?'<i class="pt vig" aria-label="vigilar"></i>':'');
+      return `<td class="cel" title="${esc(tip)}" style="background:rgba(${c},${(0.08+0.82*a).toFixed(2)});color:${a>.55?'#fff':'var(--txt-2)'};text-align:center">${(v*1e4).toFixed(1)}${pt}</td>`; };
+    const n1=v=>(v*1e4).toFixed(1);
+    let cuerpo='';
+    Object.keys(grupos).sort((a,b)=>tamSec(b)-tamSec(a)).forEach(sc=>{
+      const L_=grupos[sc].sort((a,b)=>lnk(f=>val(f,b))-lnk(f=>val(f,a)));
+      L_.forEach(s=>{ const t=lnk(f=>val(f,s)); cuerpo+=`<tr><td><b>${esc(s)}</b></td>${F.map(f=>celda(f,s)).join('')}<td class="${cl(t)}"><b>${n1(t)}</b></td><td>${chipSL(emDe(ultF,s))}</td></tr>`; });
+      const sub=f=>L_.reduce((a,s)=>a+val(f,s),0);
+      cuerpo+=`<tr class="sub"><td>${esc(sc)}</td>${F.map(f=>`<td style="text-align:center">${n1(sub(f))}</td>`).join('')}<td>${n1(lnk(sub))}</td><td></td></tr>`; });
+    const efe=f=>(st.mapa==='Total'||st.mapa==='Asignación')?(D.dias[f].pz.EFECTIVO?.ap||0):0;      // el efectivo va todo en asignación
+    const totD=f=>syms0.reduce((a,s)=>a+val(f,s),0)+efe(f);
+    cuerpo+=`<tr class="sub"><td>Efectivo</td>${F.map(f=>`<td style="text-align:center">${n1(efe(f))}</td>`).join('')}<td>${n1(lnk(efe))}</td><td></td></tr>`;
+    cuerpo+=`<tr class="tot"><td>Total · emisoras + efectivo</td>${F.map(f=>`<td class="${cl(totD(f))}" style="text-align:center">${n1(totD(f))}</td>`).join('')}<td class="${cl(lnk(totD))}">${n1(lnk(totD))}</td><td></td></tr>`;
+    $('#atvCalor').innerHTML=`<thead><tr><th>Emisora</th>${F.map(f=>`<th title="${D.dias[f].est?'MEXTRAC estimado':''}">${fechaCorta(f)}${D.dias[f].est?' ▲':''}</th>`).join('')}<th>Suma</th><th>Stop-loss</th></tr></thead><tbody>${cuerpo}</tbody>`;
+    $('#atv-mapa-t').textContent={Total:'(w_p − w_b)(r_i − R_b)',Asignación:'(w_p − w_b)(R_b,S − R_b)',Selección:'W_b,S(ŵ_p − ŵ_b)(r_i − R_b,S)',Interacción:'(W_p,S − W_b,S)(ŵ_p − ŵ_b)(r_i − R_b,S)'}[st.mapa];
+    // ejemplo con KIMBERA (o la emisora con más selección) el primer día
+    const d1=D.dias[F[0]], ej=d1.em.find(e=>e.sym==='KIMBERA'&&ok(e.as)) || [...d1.em].filter(e=>ok(e.se)).sort((a,b)=>Math.abs(b.se)-Math.abs(a.se))[0];
+    $('#atv-mapa-nota').innerHTML=`<b>Total</b> es el aporte de la emisora: (peso cartera − peso benchmark) × (rendimiento − MEXTRAC09). Brinson-Fachler lo parte en tres: `+
+      `<b>asignación</b>, por pesar distinto en un sector que le ganó o perdió al MEXTRAC09; <b>selección</b>, por escoger dentro del sector una acción mejor o peor que su sector; `+
+      `<b>interacción</b>, por haber cargado más el sector justo donde escogimos mejor o peor (ŵ = peso dentro del sector).`+
+      (ej?` <b>Ejemplo, ${esc(ej.sym)} el ${fdate(d1.fecha)}:</b> el total es ${fpb(ej.ap)}; dividido, asignación ${fpb(ej.as)}, selección ${fpb(ej.se)} e interacción ${fpb(ej.in)}. `+
+        `La selección es ${ej.se>=0?'positiva':'negativa'} porque tuvimos ${(ok(ej.wps)&&ok(ej.wbs)&&ej.wps>0&&ej.wbs>0&&ej.wp/ej.wps<ej.wb/ej.wbs)?'menos':'más'} ${esc(ej.sym)} que el índice dentro de ${esc(ej.sec)} `+
+        `y ${ej.r>=(ej.rbs??0)?'le ganó':'se quedó atrás de'} su sector (${fps(ej.r)} contra ${fps(ej.rbs)}). Por emisora los tres no suman exactamente el total; lo que cuadra al centavo es cada sector y la cartera.`:'');
+    // banda de alertas: emisoras con sobrepeso en Vigilar o STOP al último cierre
+    const conSL=F.some(f=>D.dias[f].em.some(e=>e.esl)), al=(D.dias[ultF]?.em||[]).filter(e=>e.esl==='STOP'||e.esl==='Vigilar').sort((a,b)=>(a.zr??0)-(b.zr??0));
+    $('#atv-banda').innerHTML=!conSL?'':al.length
+      ?`<div class="atv-banda" role="status"><b>Stop-loss al cierre del ${fdate(ultF)}:</b> ${al.map(e=>`<span class="sl-chip ${e.esl==='STOP'?'stop':'vig'}">${esc(e.sym)} · ${esc(e.esl)} <small>z TE ${zf(e.zr)} · propia ${zf(e.za)}</small></span>`).join(' ')}</div>`
+      :`<div class="atv-banda limpia" role="status">Ninguna emisora con sobrepeso está en Vigilar o STOP al cierre del ${fdate(ultF)}.</div>`;
+    // precios: Price Close de Refinitiv y aviso si algún cierre vino de último hecho
+    const pn=$('#atv-precios'); if(pn){ pn.className='precio-nota'+(D.uh&&D.uh.length?' uh':'');
+      pn.innerHTML='Precios: Price Close de Refinitiv.'+(D.uh&&D.uh.length?' Aviso: '+D.uh.map(u=>`el cierre del ${fdate(u.f)} de ${esc(u.s.split('|').join(', '))}`).join('; ')+
+        ' vino de último hecho porque LSEG no publicó su Price Close.':''); }
     // e) día por día: alfa y sus piezas, con asignación, selección e interacción de cada día
     const filasD=F.map(f=>{ const d=D.dias[f]; return {fecha:f, rp:d.rp, rb:d.rb, alfa:d.alfa,
       em:d.em.reduce((a,e)=>a+e.ap,0), ef:d.pz.EFECTIVO?.ap, asig:total(d,'a'), sel:total(d,'se'), inter:total(d,'i'),
@@ -5186,7 +5330,7 @@ const AtrV=(()=>{
     tabla('atvTSec',[{k:'s',l:'Sector'},{k:'wp',l:'Peso cartera',f:fpw},{k:'wb',l:'Peso benchmark',f:fpw},{k:'rp',l:'Rend. cartera',f:v=>fps(v),c:cl},
       {k:'rb',l:'Rend. benchmark',f:v=>fps(v),c:cl},{k:'a',l:'Asignación',f:fpb,c:cl},{k:'se',l:'Selección',f:fpb,c:cl},{k:'i',l:'Interacción',f:fpb,c:cl},
       {k:'t',l:'Total',f:fpb,c:cl},{k:'txt',l:'Qué pasó',f:v=>`<span class="atv-frase">${esc(v)}</span>`}],
-      se.map(s=>({...s, txt:s.s==='Efectivo'?'El benchmark no tiene caja: cada peso en efectivo es un peso menos en algún sector.':fraseSec(s)})),'t');
+      se.map(s=>({...s, txt:s.s==='Efectivo'?'El benchmark no tiene caja: cada peso en efectivo deja de seguir al MEXTRAC09 (todo va en asignación).':fraseSec(s,E.RB)})),'t');
     const tb=se.reduce((a,s)=>a+s.t,0);
     let cuad='';
     if(st.alcance==='dia'){ const q=(D.sec[st.dia]||[]).find(s=>s.s==='TOTAL')?.q||[];
@@ -6759,15 +6903,16 @@ WALMEX,46.05,45.49,2026-09-14T18:51:21+00:00</pre>
     const u=s?logoUrl(s):null;
     const marca=s?`<span class="lg" style="--h:${logoHue(s)}"><b>${logoMark(s)}</b>${u?`<img src="${u}" alt="" loading="lazy" onerror="this.remove()">`:''}</span>`
       :`<span class="lg" style="--h:210"><b>MX</b></span>`;
-    const tit=n.url?`<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.titulo)}</a>`:esc(n.titulo);
-    return `<article class="noti ${esc(n.tono)}">
+    // v6.5: la tarjeta abre el lector (clic o Enter); el titular ya no es liga para que el clic no salga del tablero
+    const tit=esc(n.titulo), ind=Lector.indicador(n);
+    return `<article class="noti ${esc(n.tono)} ${Lector.leida(n.id)?'leida':''}" data-nid="${esc(n.id)}" tabindex="0" role="button" aria-label="Leer: ${esc(n.titulo)}">
       <span class="sym ${s?'clicable':''}" ${s?`data-ficha="${s}"`:''}>${marca}</span>
       <div class="cuerpo"><h4>${tit}</h4>
         ${n.resumen&&!compacta?`<p>${esc(n.resumen)}</p>`:''}
         <div class="pie">
           ${s?`<span class="chip b">${s}</span>`:'<span class="chip">MERCADO</span>'}
           ${n.impacto?`<span class="chip ${n.impacto==='alto'?'w':''}">impacto ${esc(n.impacto)}</span>`:''}
-          <span>${n.hora||''}</span>${n.fuente?`<span>· ${esc(n.fuente)}</span>`:''}
+          <span>${n.hora||''}</span>${n.fuente?`<span>· ${esc(n.fuente)}</span>`:''}${ind}
         </div></div></article>`;
   }
   function rNoti(){
@@ -6788,14 +6933,18 @@ WALMEX,46.05,45.49,2026-09-14T18:51:21+00:00</pre>
     }
     const porDia={};
     L.forEach(n=>{ (porDia[n.fecha]=porDia[n.fecha]||[]).push(n); });
-    const html=Object.keys(porDia).sort().reverse().map(d=>
+    const dias=Object.keys(porDia).sort().reverse();
+    Lector.lista(dias.flatMap(d=>porDia[d]));                     // anterior y siguiente respetan los filtros
+    Lector.cargar();                                              // el texto completo se baja la primera vez que se ven las noticias
+    const html=dias.map(d=>
       `<div class="noti-fecha">${fdate(d)}</div><div class="nlist">${porDia[d].map(n=>tarjetaNoti(n)).join('')}</div>`).join('');
     // Mismo motivo que el explicador: reescribir esto en cada render repetiría la
     // animación de entrada de todas las tarjetas.
     const caja=$('#notiBody');
-    if(caja.dataset.firma!==html.length+'|'+L.length+'|'+noti.tono+noti.sym+noti.q){
+    const firma=html.length+'|'+L.length+'|'+noti.tono+noti.sym+noti.q+'|'+Lector.firma();
+    if(caja.dataset.firma!==firma){
       caja.innerHTML=html;
-      caja.dataset.firma=html.length+'|'+L.length+'|'+noti.tono+noti.sym+noti.q;
+      caja.dataset.firma=firma;
     }
   }
 
@@ -8178,6 +8327,183 @@ const Guia=(()=>{
   return {iniciar,cerrar,get activa(){return activa}};
 })();
 
+/* ═══════════ 19a. LECTOR DE NOTICIAS (v6.5) ═══════════
+   Cada tarjeta abre la nota completa que el vigilante deja en noticias_texto.json: panel lateral en escritorio y hoja a
+   pantalla completa en el celular. La URL guarda #nota=<id>. Las leídas se guardan en este navegador. */
+const Lector=(()=>{
+  const LS='ns_noticias_leidas', OKT=new Set(['P','UL','OL','LI','STRONG','B','EM','I','TABLE','THEAD','TBODY','TR','TD','TH','H2','H3','H4','BLOCKQUOTE','BR']);
+  let T=null, cargando=null, error='', gen=0, lst=[], actual=null, fondo=null, panel=null, previo=null, leidas=null, toque=null;
+  const urlTextos=()=>(Store.get()?.cfg?.urlNoticias||'https://raw.githubusercontent.com/northstar-strategies/bbva-clinicas/main/noticias.txt')
+    .replace(/noticias\.txt(\?.*)?$/,'noticias_texto.json');
+  function conjunto(){ if(leidas) return leidas; leidas=new Set();
+    try{ JSON.parse(localStorage.getItem(LS)||'[]').forEach(x=>leidas.add(x)); }catch(e){} return leidas; }
+  function marcar(id){ const s=conjunto(); if(s.has(id)) return; s.add(id); gen++;
+    try{ localStorage.setItem(LS,JSON.stringify([...s].slice(-800))); }catch(e){} }
+  const leida=id=>conjunto().has(id);
+  async function cargar(){
+    if(T) return T; if(cargando) return cargando;
+    cargando=(async()=>{
+      const bust=u=>u+(u.includes('?')?'&':'?')+'_ts='+Date.now();
+      try{ let r=null;
+        if(/^https?:$/.test(location.protocol)){ try{ r=await fetch(bust('noticias_texto.json'),{cache:'no-store'}); if(!r.ok) r=null; }catch(e){ r=null; } }
+        if(!r) r=await fetch(bust(urlTextos()),{cache:'no-store'});
+        if(!r.ok) throw new Error('noticias_texto.json: '+r.status);
+        T=await r.json(); error=''; }
+      catch(e){ T={}; error=e.message||String(e); }
+      finally{ cargando=null; gen++; try{ if(UI.view==='noticias') UI.render(); }catch(e){} }
+      return T; })();
+    return cargando;
+  }
+  const palabras=s=>String(s||'').split(/\s+/).filter(Boolean).length;
+  const minutos=w=>Math.max(1,Math.round(w/200));
+  function indicador(n){
+    const t=T&&T[n.id];
+    if(t) return t.sin_texto?'<span class="leer doc">Documento</span>':`<span class="leer">Leer · ${minutos(t.palabras||0)} min</span>`;
+    return `<span class="leer">Leer${!n.lseg&&n.resumen?` · ${minutos(palabras(n.resumen))} min`:''}</span>`;
+  }
+  // El HTML ya viene limpio del vigilante; aquí se vuelve a pasar por una lista de etiquetas permitidas y sin atributos.
+  function limpio(html){
+    const doc=new DOMParser().parseFromString('<div>'+String(html||'')+'</div>','text/html'), raiz=doc.body.firstChild;
+    (function pasar(el){ [...el.children].forEach(h=>{ pasar(h);
+      if(!OKT.has(h.tagName)){ h.replaceWith(...h.childNodes); return; }
+      [...h.attributes].forEach(a=>h.removeAttribute(a.name)); }); })(raiz);
+    return raiz.innerHTML;
+  }
+  const tonoChip=t=>({positiva:'background:var(--pos-bg);color:var(--pos)',negativa:'background:var(--neg-bg);color:var(--neg)'}[t]||'background:var(--info-bg);color:var(--acc,#4A9DF0)');
+  function cartera(s){
+    if(!s) return '';
+    const w=(Portfolio.weights()||{})[s]; if(!(w>0)) return '';
+    let act='', dia='';
+    try{ const A=AtrV.datos(), f=A?.fechas?.[A.fechas.length-1], e=f?A.dias[f].em.find(z=>z.sym===s):null;
+      if(e){ const a=(e.wp-e.wb)*100; act=` · peso activo contra el MEXTRAC09 ${a>=0?'+':'−'}${Math.abs(a).toFixed(2)} pp`;
+        dia=` · cambio del ${fdate(f)}: ${pctS((e.r||0)*100)}`; } }catch(e){}
+    return `<div class="lec-cartera">En cartera: peso ${pct(w)}${act}${dia}</div>`;
+  }
+  function documento(n,t){
+    const lig=(t.ligas||[])[0], id=String(n.id||'').replace(/^lseg:/,'');
+    return `<div class="lec-doc"><h3>Documento de la emisora</h3>
+      <p>LSEG no tiene la versión de texto de este documento (por ejemplo, un reporte IFRS o un aviso de la BMV). Se puede abrir el original${lig?'':' o buscarlo en Workspace con el id de la nota'}.</p>
+      <div class="lec-ligas">${lig?`<a href="${esc(lig.url)}" target="_blank" rel="noopener">Abrir documento original ↗</a>`:''}
+        <button class="lec-btn" data-lec="ws" type="button">Buscar en Workspace</button></div>
+      <p class="lec-dato" style="margin-top:12px">Id de la nota: <code>${esc(id)}</code></p></div>`;
+  }
+  function pintar(){
+    const n=actual; if(!n||!panel) return;
+    const t=T?T[n.id]:null, s=n.sym&&META[n.sym]?n.sym:null, u=s?logoUrl(s):null, i=lst.findIndex(x=>x.id===n.id);
+    const marca='<span class="sym">'+(s?`<span class="lg" style="--h:${logoHue(s)}"><b>${logoMark(s)}</b>${u?`<img src="${u}" alt="" loading="lazy" onerror="this.remove()">`:''}</span>`
+      :`<span class="lg" style="--h:210"><b>MX</b></span>`)+'</span>';
+    const w=t?(t.palabras||0):palabras(n.resumen);
+    const titulo=t&&t.tipo==='tuit'?((t.autor||n.fuente||'Publicación')+' en X'):n.titulo;
+    let cuerpo;
+    if(T===null) cuerpo='<div class="lec-esq" aria-hidden="true"><i class="t"></i><i></i><i></i><i class="c"></i><i></i><i></i><i class="c"></i></div>';
+    else if(t&&t.sin_texto) cuerpo=documento(n,t);
+    else if(t&&t.html_limpio) cuerpo=`<div class="lec-texto">${t.tipo==='tuit'?'<blockquote>'+limpio(t.html_limpio)+'</blockquote>':limpio(t.html_limpio)}</div>`;
+    else if(!n.lseg) cuerpo=`<div class="lec-texto">${String(n.resumen||'').split(/\n{2,}/).map(p=>`<p>${esc(p)}</p>`).join('')||'<p>Sin texto.</p>'}</div>`;
+    else cuerpo=`<p class="lec-aviso">Texto completo disponible en la próxima corrida del vigilante.</p><div class="lec-texto"><p>${esc(n.resumen||'Sin resumen.')}</p></div>`;
+    const ligas=t&&!t.sin_texto&&(t.ligas||[]).length?`<div class="lec-ligas">${t.ligas.map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.texto||l.url)} ↗</a>`).join('')}</div>`
+      :(t&&t.sin_texto&&(t.ligas||[]).length>1?`<div class="lec-ligas">${t.ligas.slice(1).map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.texto||l.url)} ↗</a>`).join('')}</div>`:'');
+    panel.innerHTML=`<div class="lec-asa" aria-hidden="true"></div>
+      <div class="lec-top">
+        <button class="lec-btn" data-lec="ant" type="button" aria-label="Noticia anterior" ${i>0?'':'disabled'}>‹</button>
+        <button class="lec-btn" data-lec="sig" type="button" aria-label="Noticia siguiente" ${i>=0&&i<lst.length-1?'':'disabled'}>›</button>
+        <span class="lec-dato" style="margin:0">${i>=0?(i+1)+' de '+lst.length:''}</span>
+        <span class="spacer"></span>
+        <button class="lec-btn" data-lec="copiar" type="button">Copiar texto</button>
+        <button class="lec-btn" data-lec="cerrar" type="button" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="lec-cuerpo" tabindex="-1">
+        <div class="lec-meta">${marca}
+          ${s?`<span class="chip b clic" data-lec="filtrar" role="button" tabindex="0" title="Ver solo las noticias de ${s}">${s}</span>`:'<span class="chip">MERCADO</span>'}
+          <span class="chip" style="${tonoChip(n.tono)}">${esc(n.tono||'neutral')}</span>
+          ${n.impacto?`<span class="chip ${n.impacto==='alto'?'w':''}">impacto ${esc(n.impacto)}</span>`:''}
+          ${t&&t.tipo&&t.tipo!=='nota'?`<span class="chip">${esc(t.tipo)}</span>`:''}</div>
+        <p class="lec-dato">${fdate(n.fecha)}${n.hora?' · '+esc(n.hora)+' (CDMX)':''}${n.fuente?' · '+esc(n.fuente):''} · ${t&&t.sin_texto?'documento':minutos(w)+' min de lectura'}</p>
+        ${cartera(s)}
+        <h2 id="lec-titulo">${esc(titulo)}</h2>
+        ${cuerpo}${ligas}
+      </div>`;
+    panel.setAttribute('aria-labelledby','lec-titulo');
+  }
+  function montar(){
+    if(panel) return;
+    fondo=document.createElement('div'); fondo.className='lec-fondo'; fondo.hidden=true;
+    panel=document.createElement('aside'); panel.className='lec'; panel.hidden=true;
+    panel.setAttribute('role','dialog'); panel.setAttribute('aria-modal','true');
+    document.body.append(fondo,panel);
+    fondo.addEventListener('click',cerrar);
+    panel.addEventListener('click',ev=>{ const b=ev.target.closest('[data-lec]'); if(!b) return; accion(b.dataset.lec); });
+    panel.addEventListener('keydown',ev=>{ const b=ev.target.closest('[data-lec="filtrar"]'); if(b&&(ev.key==='Enter'||ev.key===' ')){ ev.preventDefault(); accion('filtrar'); } });
+    // en el celular, deslizar hacia abajo cierra la hoja
+    panel.addEventListener('touchstart',ev=>{ const c=panel.querySelector('.lec-cuerpo');
+      toque=(ev.target.closest('.lec-top,.lec-asa')||(c&&c.scrollTop<=0))?{y:ev.touches[0].clientY,dy:0}:null; },{passive:true});
+    panel.addEventListener('touchmove',ev=>{ if(!toque) return; toque.dy=ev.touches[0].clientY-toque.y;
+      if(toque.dy>0){ panel.style.transition='none'; panel.style.transform=`translateY(${toque.dy}px)`; } },{passive:true});
+    panel.addEventListener('touchend',()=>{ if(!toque) return; panel.style.transition=''; panel.style.transform='';
+      const cerrarlo=toque.dy>90; toque=null; if(cerrarlo) cerrar(); });
+  }
+  function teclas(ev){
+    if(!actual) return;
+    if(ev.key==='Escape'){ ev.preventDefault(); cerrar(); return; }
+    if((ev.key==='ArrowLeft'||ev.key==='ArrowRight') && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName||'')){
+      ev.preventDefault(); accion(ev.key==='ArrowLeft'?'ant':'sig'); return; }
+    if(ev.key==='Tab'){ const f=[...panel.querySelectorAll('button:not([disabled]),a[href],[tabindex="0"]')]; if(!f.length) return;
+      const a=f[0], z=f[f.length-1];
+      if(ev.shiftKey && document.activeElement===a){ ev.preventDefault(); z.focus(); }
+      else if(!ev.shiftKey && document.activeElement===z){ ev.preventDefault(); a.focus(); }
+      else if(!panel.contains(document.activeElement)){ ev.preventDefault(); a.focus(); } }
+  }
+  function buscar(id){ return lst.find(x=>x.id===id) || (Store.get().noticias||[]).find(x=>x.id===id) || null; }
+  function abrir(id){
+    const n=buscar(id); if(!n) return false;
+    montar();
+    if(!actual) previo=document.activeElement;
+    actual=n; marcar(n.id);
+    document.querySelectorAll('.noti[data-nid]').forEach(c=>{ if(c.dataset.nid===n.id) c.classList.add('leida'); });
+    pintar();
+    fondo.hidden=panel.hidden=false;
+    requestAnimationFrame(()=>{ fondo.classList.add('on'); panel.classList.add('on'); panel.querySelector('[data-lec="cerrar"]')?.focus({preventScroll:true}); });
+    document.addEventListener('keydown',teclas,true);
+    try{ history.replaceState(null,'','#nota='+encodeURIComponent(n.id)); }catch(e){}
+    if(T===null) cargar().then(()=>{ if(actual&&actual.id===n.id) pintar(); });
+    return true;
+  }
+  function cerrar(){
+    if(!actual) return;
+    actual=null; document.removeEventListener('keydown',teclas,true);
+    fondo.classList.remove('on'); panel.classList.remove('on');
+    setTimeout(()=>{ if(!actual){ fondo.hidden=panel.hidden=true; } },210);
+    try{ history.replaceState(null,'',location.pathname+location.search); }catch(e){}
+    if(previo&&previo.focus) try{ previo.focus({preventScroll:true}); }catch(e){}
+  }
+  function accion(k){
+    const n=actual; if(!n) return;
+    const i=lst.findIndex(x=>x.id===n.id);
+    if(k==='cerrar') return cerrar();
+    if(k==='ant'&&i>0) return abrir(lst[i-1].id), panel.querySelector('.lec-cuerpo').scrollTop=0;
+    if(k==='sig'&&i>=0&&i<lst.length-1) return abrir(lst[i+1].id), panel.querySelector('.lec-cuerpo').scrollTop=0;
+    if(k==='copiar'){ const t=T&&T[n.id];
+      const txt=[n.titulo,'',(t&&t.texto)||n.resumen||'',...((t&&t.ligas)||[]).map(l=>l.url)].join('\n').trim();
+      (navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(()=>toast('Texto copiado','ok'),()=>toast('No se pudo copiar el texto','err')); return; }
+    if(k==='ws'){ const id=String(n.id).replace(/^lseg:/,'');
+      (navigator.clipboard?navigator.clipboard.writeText(id):Promise.reject()).then(()=>toast('Id copiado: péguelo en la búsqueda de noticias de Workspace','ok'),
+        ()=>toast('Id de la nota: '+id,'inf')); return; }
+    if(k==='filtrar' && n.sym){ const s=n.sym; cerrar(); if(UI.view!=='noticias') UI.go('noticias');
+      const q=document.getElementById('qNoti'); if(q){ q.value=s; } UI.render(); }
+  }
+  function iniciar(){
+    document.addEventListener('click',ev=>{ const c=ev.target.closest('.noti[data-nid]');
+      if(!c || ev.target.closest('[data-ficha],a,button')) return; abrir(c.dataset.nid); });
+    document.addEventListener('keydown',ev=>{ if(actual) return; const c=ev.target.closest?.('.noti[data-nid]');
+      if(c && (ev.key==='Enter'||ev.key===' ') && ev.target===c){ ev.preventDefault(); abrir(c.dataset.nid); } });
+    const desdeHash=()=>{ const m=location.hash.match(/^#nota=(.+)$/); if(!m) return;
+      const id=decodeURIComponent(m[1]); let v=0;
+      (function intentar(){ if(abrir(id)){ if(UI.view!=='noticias') UI.go('noticias'); return; } if(++v<40) setTimeout(intentar,500); })(); };
+    addEventListener('hashchange',desdeHash);
+    desdeHash();
+  }
+  return {iniciar, cargar, abrir, cerrar, indicador, leida, lista:a=>{ lst=a||[]; }, firma:()=>gen+':'+(T?Object.keys(T).length:0), get error(){ return error; }};
+})();
+
 /* ═══════════ 19b. RECETAS DESCARGABLES ═══════════
    El puente local con LSEG Workspace. */
 const PUENTE_PY="#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\"\"\"\nPuente local entre LSEG Workspace y el tablero SSOT de North Star Strategies.\n\nPOR QU\u00c9 EXISTE\n    El navegador no puede llamar a api.refinitiv.com: ese endpoint no env\u00eda\n    cabeceras CORS y adem\u00e1s exige un token que la App Key por s\u00ed sola no otorga.\n    El proxy que levanta Workspace s\u00ed acepta llamadas del navegador, pero su\n    formato de respuesta ha cambiado entre versiones y no est\u00e1 documentado.\n    Este puente resuelve las dos cosas: habla con Workspace usando la librer\u00eda\n    oficial de Python y expone el resultado en un formato estable, con CORS\n    abierto, para que el tablero lo consuma sin sorpresas.\n\nUSO\n    pip install lseg-data\n    python puente_refinitiv.py --app-key TU_LLAVE\n    python puente_refinitiv.py --app-key TU_LLAVE --puerto 8787 --refresco 30\n\n    Deje la ventana abierta mientras use el tablero. En la app, elija el\n    proveedor \"Puente local\" y confirme la direcci\u00f3n http://127.0.0.1:8787\n\nENDPOINTS\n    GET /salud       estado del puente y de la sesi\u00f3n\n    GET /precios     { \"corte\": ..., \"precios\": { \"WALMEX\": 45.49, ... } }\n    GET /csv         el mismo corte en formato cotizaciones.csv\n    GET /historico?dias=1250   series diarias para el m\u00f3dulo de riesgo\n\"\"\"\nfrom __future__ import annotations\nimport argparse, json, os, sys, threading, time\nfrom datetime import datetime, timezone, timedelta\nfrom http.server import BaseHTTPRequestHandler, ThreadingHTTPServer\nfrom urllib.parse import urlparse, parse_qs\n\nRICS = {\n    \"AC\":\"AC.MX\",\"AMXB\":\"AMXB.MX\",\"ASURB\":\"ASURB.MX\",\"BBAJIOO\":\"BBAJIOO.MX\",\"BIMBOA\":\"BIMBOA.MX\",\n    \"CEMEXCPO\":\"CEMEXCPO.MX\",\"CHDRAUIB\":\"CHDRAUIB.MX\",\"FEMSAUBD\":\"FEMSAUBD.MX\",\"GAPB\":\"GAPB.MX\",\n    \"GCARSOA1\":\"GCARSOA1.MX\",\"GENTERA\":\"GENTERA.MX\",\"GFNORTEO\":\"GFNORTEO.MX\",\"GMEXICOB\":\"GMEXICOB.MX\",\n    \"GRUMAB\":\"GRUMAB.MX\",\"KIMBERA\":\"KIMBERA.MX\",\"KOFUBL\":\"KOFUBL.MX\",\"MEGACPO\":\"MEGACPO.MX\",\n    \"OMAB\":\"OMAB.MX\",\"PINFRA\":\"PINFRA.MX\",\"Q\":\"Q.MX\",\"RA\":\"RA.MX\",\"SIGMAFA\":\"SIGMAFA.MX\",\n    \"TLEVISACPO\":\"TLEVISACPO.MX\",\"VESTA\":\"VESTA.MX\",\"WALMEX\":\"WALMEX.MX\",\"LIVEPOLC1\":\"LIVEPOLC1.MX\",\n    \"ALSEA\":\"ALSEA.MX\",\"LACOMERUBC\":\"LACOMERUBC.MX\",\"CUERVO\":\"CUERVO.MX\",\"GFINBURO\":\"GFINBURO.MX\",\n    \"BOLSAA\":\"BOLSAA.MX\",\"LABB\":\"LABB.MX\",\"VOLARA\":\"VOLARA.MX\",\"ORBIA\":\"ORBIA.MX\",\"ALPEKA\":\"ALPEKA.MX\",\n    \"GCC\":\"GCC.MX\",\"PEOLES\":\"PE&OLES.MX\",\"MEXTRAC\":\"MEXTRAC09.MX\",\"IPC\":\".MXX\",\n}\nINV = {v: k for k, v in RICS.items()}\nCAMPOS = [\"CF_LAST\", \"TRDPRC_1\", \"CF_CLOSE\"]\nANTERIOR = [\"HST_CLOSE\", \"CF_CLOSE\", \"NETCHNG_1\"]\n\nestado = {\"sesion\": False, \"corte\": None, \"precios\": {}, \"anterior\": {},\n          \"error\": None, \"rondas\": 0, \"libreria\": None}\ncandado = threading.Lock()\nld = None\n\n\ndef abrir(llave: str):\n    \"\"\"Abre sesi\u00f3n de escritorio con la librer\u00eda disponible, de la m\u00e1s nueva a la m\u00e1s vieja.\"\"\"\n    global ld\n    for modulo, etiqueta in ((\"lseg.data\", \"LSEG Data Library\"),\n                             (\"refinitiv.data\", \"Refinitiv Data Library\")):\n        try:\n            mod = __import__(modulo, fromlist=[\"*\"])\n        except ImportError:\n            continue\n        ses = mod.session.desktop.Definition(app_key=llave).get_session()\n        ses.open()\n        mod.session.set_default(ses)\n        ld = mod\n        estado[\"libreria\"] = etiqueta\n        print(f\"  Sesi\u00f3n abierta con {etiqueta}\")\n        return\n    try:\n        import eikon as ek\n        ek.set_app_key(llave)\n        ld = ek\n        estado[\"libreria\"] = \"Eikon Data API\"\n        print(\"  Sesi\u00f3n abierta con Eikon Data API (biblioteca descontinuada)\")\n        return\n    except ImportError:\n        sys.exit(\"No hay ninguna librer\u00eda instalada. Ejecute:  pip install lseg-data\")\n\n\ndef instantanea():\n    \"\"\"Un solo viaje al servidor con todas las emisoras.\"\"\"\n    rics = list(RICS.values())\n    if hasattr(ld, \"get_data\"):\n        df = ld.get_data(universe=rics, fields=CAMPOS + ANTERIOR)\n    else:\n        df, _ = ld.get_data(rics, CAMPOS + ANTERIOR)\n    precios, previos = {}, {}\n    col_ric = df.columns[0]\n    for _, fila in df.iterrows():\n        tick = INV.get(str(fila[col_ric]))\n        if not tick:\n            continue\n        for c in CAMPOS:\n            if c in df.columns:\n                try:\n                    v = float(fila[c])\n                    if v > 0:\n                        precios[tick] = round(v, 4)\n                        break\n                except (TypeError, ValueError):\n                    pass\n        for c in ANTERIOR:\n            if c in df.columns and c != \"NETCHNG_1\":\n                try:\n                    v = float(fila[c])\n                    if v > 0:\n                        previos[tick] = round(v, 4)\n                        break\n                except (TypeError, ValueError):\n                    pass\n    return precios, previos\n\n\ndef ciclo(refresco: int):\n    while True:\n        try:\n            p, a = instantanea()\n            if p:\n                with candado:\n                    estado.update(sesion=True, precios=p, error=None,\n                                  corte=datetime.now(timezone.utc).isoformat(timespec=\"seconds\"))\n                    if a:\n                        estado[\"anterior\"] = a\n                    estado[\"rondas\"] += 1\n                print(f\"  [{datetime.now():%H:%M:%S}] {len(p)} precios \u00b7 ronda {estado['rondas']}\")\n            else:\n                with candado:\n                    estado[\"error\"] = \"El servidor respondi\u00f3 sin precios reconocibles\"\n        except Exception as e:\n            with candado:\n                estado.update(sesion=False, error=str(e)[:200])\n            print(f\"  [{datetime.now():%H:%M:%S}] error: {str(e)[:120]}\")\n        time.sleep(max(5, refresco))\n\n\ndef historico(dias: int):\n    fin = datetime.now(timezone.utc).date()\n    ini = fin - timedelta(days=int(dias * 1.5))\n    fechas, series = set(), {}\n    for tick, ric in RICS.items():\n        try:\n            if hasattr(ld, \"get_history\"):\n                df = ld.get_history(universe=ric, fields=\"TRDPRC_1\", interval=\"daily\",\n                                    start=str(ini), end=str(fin))\n            else:\n                df = ld.get_timeseries(ric, fields=\"CLOSE\", start_date=str(ini),\n                                       end_date=str(fin), interval=\"daily\")\n            if df is None or df.empty:\n                continue\n            s = {}\n            for idx, val in df.iloc[:, 0].items():\n                try:\n                    v = float(val)\n                except (TypeError, ValueError):\n                    continue\n                d = str(idx)[:10]\n                s[d] = round(v, 4)\n                fechas.add(d)\n            if s:\n                series[tick] = s\n        except Exception:\n            pass\n        time.sleep(0.2)\n    D = sorted(fechas)[-dias:]\n    return {\"dates\": D, \"px\": {t: [s.get(d) for d in D] for t, s in series.items()}}\n\n\nclass Mango(BaseHTTPRequestHandler):\n    def log_message(self, *a):\n        pass\n\n    def _responder(self, cuerpo: str, tipo=\"application/json\"):\n        datos = cuerpo.encode(\"utf-8\")\n        self.send_response(200)\n        self.send_header(\"Content-Type\", f\"{tipo}; charset=utf-8\")\n        self.send_header(\"Content-Length\", str(len(datos)))\n        # Sin esto el navegador descarta la respuesta por pol\u00edtica de origen cruzado.\n        self.send_header(\"Access-Control-Allow-Origin\", \"*\")\n        self.send_header(\"Access-Control-Allow-Methods\", \"GET, OPTIONS\")\n        self.send_header(\"Cache-Control\", \"no-store\")\n        self.end_headers()\n        self.wfile.write(datos)\n\n    def do_OPTIONS(self):\n        self._responder(\"\")\n\n    def do_GET(self):\n        ruta = urlparse(self.path)\n        q = parse_qs(ruta.query)\n        with candado:\n            snap = json.loads(json.dumps(estado))\n        if ruta.path in (\"/\", \"/salud\"):\n            return self._responder(json.dumps({\n                \"puente\": \"North Star Strategies \u00b7 Refinitiv\",\n                \"sesion\": snap[\"sesion\"], \"libreria\": snap[\"libreria\"],\n                \"corte\": snap[\"corte\"], \"emisoras\": len(snap[\"precios\"]),\n                \"rondas\": snap[\"rondas\"], \"error\": snap[\"error\"]}, ensure_ascii=False))\n        if ruta.path == \"/precios\":\n            return self._responder(json.dumps({\n                \"corte\": snap[\"corte\"], \"precios\": snap[\"precios\"],\n                \"anterior\": snap[\"anterior\"], \"error\": snap[\"error\"]}, ensure_ascii=False))\n        if ruta.path == \"/csv\":\n            lineas = [\"simbolo,precio,anterior,fecha_hora\"]\n            for t in sorted(snap[\"precios\"]):\n                if t == \"IPC\":\n                    continue\n                lineas.append(f\"{t},{snap['precios'][t]},\"\n                              f\"{snap['anterior'].get(t,'')},{snap['corte'] or ''}\")\n            return self._responder(\"\\n\".join(lineas) + \"\\n\", \"text/csv\")\n        if ruta.path == \"/historico\":\n            dias = int(q.get(\"dias\", [\"1250\"])[0])\n            print(f\"  Descargando hist\u00f3rico de {dias} d\u00edas, esto tarda\u2026\")\n            return self._responder(json.dumps(historico(dias)))\n        self._responder(json.dumps({\"error\": \"ruta desconocida\"}), \"application/json\")\n\n\ndef main():\n    p = argparse.ArgumentParser(description=\"Puente local Refinitiv para el SSOT\")\n    p.add_argument(\"--app-key\", help=\"App Key de Workspace; si se omite se lee LSEG_APP_KEY\")\n    p.add_argument(\"--puerto\", type=int, default=8787)\n    p.add_argument(\"--refresco\", type=int, default=30, help=\"segundos entre consultas\")\n    a = p.parse_args()\n    llave = a.app_key or os.environ.get(\"LSEG_APP_KEY\")\n    if not llave:\n        sys.exit(\"Falta la App Key. P\u00e1sela con --app-key o exporte LSEG_APP_KEY.\")\n\n    print(\"\\n  Puente Refinitiv \u00b7 North Star Strategies\")\n    print(\"  \" + \"\u2500\" * 52)\n    abrir(llave)\n    threading.Thread(target=ciclo, args=(a.refresco,), daemon=True).start()\n    srv = ThreadingHTTPServer((\"127.0.0.1\", a.puerto), Mango)\n    print(f\"  Escuchando en http://127.0.0.1:{a.puerto}\")\n    print(f\"  Refresco cada {a.refresco} s \u00b7 {len(RICS)} instrumentos\")\n    print(\"  En el tablero: Mercado, Fuente de datos, proveedor Puente local\")\n    print(\"  Deje esta ventana abierta. Ctrl+C para detener.\\n\")\n    try:\n        srv.serve_forever()\n    except KeyboardInterrupt:\n        print(\"\\n  Puente detenido.\")\n\n\nif __name__ == \"__main__\":\n    main()\n";
@@ -8241,6 +8567,7 @@ function seedFromModel(S){
   try{ if(typeof Fluido!=='undefined') Fluido.iniciar(); }catch(e){ console.warn('Fluido',e); }
   UI.cintaControles();
   try{ AtrV.iniciar(); }catch(e){ console.warn('Atribución',e); }
+  try{ Lector.iniciar(); }catch(e){ console.warn('Lector de noticias',e); }
   Portfolio.snapshot();
   try{ UI.render(); }
   catch(e){ console.error('Fallo en el primer dibujado:',e); }
