@@ -1,10 +1,8 @@
 {
   "estado": "ok",
-  "detalle": "Publicando",
+  "detalle": "Vigilante iniciado",
   "errores_seguidos": 0,
-  "ultima_revision": "2026-10-21T02:47:21+00:00",
-  "hora_cdmx": "20/10/2026 20:47",
-  "maquina": "DAHEL",
-  "operaciones": 57,
-  "bitacora": "Excel"
+  "ultima_revision": "2026-10-27T00:40:33+00:00",
+  "hora_cdmx": "26/10/2026 18:40",
+  "maquina": "DAHEL"
 }
