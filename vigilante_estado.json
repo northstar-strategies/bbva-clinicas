@@ -1,8 +1,10 @@
 {
   "estado": "ok",
-  "detalle": "Vigilante iniciado",
+  "detalle": "BMV cerrada, en espera",
   "errores_seguidos": 0,
-  "ultima_revision": "2026-10-27T00:40:33+00:00",
-  "hora_cdmx": "26/10/2026 18:40",
-  "maquina": "DAHEL"
+  "ultima_revision": "2026-10-27T00:42:47+00:00",
+  "hora_cdmx": "26/10/2026 18:42",
+  "maquina": "DAHEL",
+  "operaciones": 76,
+  "bitacora": "Excel"
 }
