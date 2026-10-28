@@ -120,6 +120,10 @@ svg.i{width:1em;height:1em;flex:none;stroke:currentColor;fill:none;stroke-width:
 .chart-nota{margin-top:10px;font-size:11.3px;line-height:1.6;color:var(--txt-3);min-height:0}
 .chart-nota:empty{display:none}
 .chart-nota b{color:var(--ice-2);font-weight:600}
+/* v6.6 · caja negativa en la composición: renglón rojo en lugar de rebanada */
+.sobregiro-fila{display:flex;justify-content:space-between;gap:10px;align-items:center;margin:0 0 8px;padding:7px 11px;border-radius:8px;
+  background:var(--neg-bg);border:1px solid rgba(255,84,104,.35);color:var(--neg);font-weight:600;font-size:11.5px}
+.chart-nota .sobregiro-fila b{color:var(--neg)}
 
 /* ---------- GRÁFICAS DE TIEMPO · MOTOR TRADINGVIEW ---------- */
 .tv{position:relative;width:100%;height:100%;border-radius:10px;overflow:hidden;cursor:crosshair}
@@ -1306,6 +1310,7 @@ td{padding:11px 12px} th,thead th{padding:11px 12px}
 
         <div class="pane on" id="p-dash">
           <div class="banner b" id="bannerRef" hidden></div>
+          <div class="banner w" id="bannerIncidente" hidden></div>
           <div class="grid g4 stg" style="margin-bottom:14px">
             <div class="kpi hl"><div class="lbl">Valor del portafolio</div><div class="val" id="k-pv">—</div><div class="delta" id="k-pvd"></div></div>
             <div class="kpi"><div class="lbl">Rendimiento del portafolio</div><div class="val" id="k-rp">—</div><div class="delta" id="k-rpd"></div></div>
@@ -4662,6 +4667,18 @@ const TV=(()=>{
     const f={area:'addAreaSeries',linea:'addLineSeries',base:'addBaselineSeries'}[tipo];
     return R.series[k]=R.chart[f]({crosshairMarkerRadius:3.5,crosshairMarkerBorderWidth:2,...op});
   }
+  /* v6.6 · Banda «Sobregiro»: área de altura completa en una escala propia e invisible (valor 1 en el tramo, hueco
+     fuera de él). Se crea antes que las demás series para quedar detrás. pts = [{time}] con los tiempos de la gráfica. */
+  function banda(R,pts){
+    const s=serie(R,'sobregiro','area',{priceScaleId:'sob',lineColor:'rgba(255,90,95,0)',lineWidth:1,topColor:'rgba(255,90,95,.13)',
+      bottomColor:'rgba(255,90,95,.13)',priceLineVisible:false,lastValueVisible:false,crosshairMarkerVisible:false,
+      priceFormat:{type:'custom',formatter:()=>'',minMove:1},autoscaleInfoProvider:()=>({priceRange:{minValue:0,maxValue:1}})});
+    R.chart.priceScale('sob').applyOptions({scaleMargins:{top:0,bottom:0},visible:false});
+    const dentro=p=>Sobregiro.dentro(new Date(p.time*1000).toISOString().slice(0,10));
+    const d=[]; [...pts].sort((a,b)=>a.time-b.time).forEach(p=>{ if(!d.length || d[d.length-1].time!==p.time) d.push(dentro(p)?{time:p.time,value:1}:{time:p.time}); });
+    s.setData(d);
+    s.setMarkers(d.filter((x,i)=>x.value && !(d[i-1]&&d[i-1].value)).map(x=>({time:x.time,position:'inBar',color:'rgba(255,150,150,.9)',shape:'square',size:0.1,text:'SOBREGIRO'})));
+  }
   // Tiempos estrictamente crecientes y únicos: si dos lecturas caen en el mismo
   // segundo, gana la última.
   function limpio(a){
@@ -4673,17 +4690,39 @@ const TV=(()=>{
   function quitar(id){ if(reg[id]){ try{reg[id].chart.remove();}catch(e){} delete reg[id]; } }
   // Renglón de la leyenda flotante: muestra, color y valor.
   const it=(color,nombre,valor,cls='',guion='')=>`<span class="it"><i class="sw ${guion}" style="--c:${color}"></i>${nombre}<b class="v ${cls}">${valor}</b></span>`;
-  return {listo,crear,serie,limpio,quitar,seg,deFecha,FMT,fPct,fPp,fMx,it,MES,reg,cruz:marcaCruz};
+  return {listo,crear,serie,banda,limpio,quitar,seg,deFecha,FMT,fPct,fPp,fMx,it,MES,reg,cruz:marcaCruz};
 })();
 
 const COL={port:'#D4EDFC', bmk:'#4A9DF0', mdl:'#FFB340', pos:'#30D158', neg:'#FF5A5F', cash:'#30D158',
   portSim:'rgba(212,237,252,.55)', bmkSim:'rgba(74,157,240,.55)'};
+/* v6.6 · Cierres con caja negativa (sobregiro), de rendimientos.csv (misma contabilidad que el tracker). Un tramo va del
+   primer cierre con caja negativa al primer cierre en que vuelve a ser ≥ 0 (o al último): el del 21 al 27-oct. */
+const Sobregiro={
+  tramos(){ const R=(Store.get().rend||[]).filter(r=>r.fecha && r.efectivo!=null), out=[]; let ini=null;
+    R.forEach(r=>{ if(r.efectivo<0){ if(ini===null) ini=r.fecha; } else if(ini!==null){ out.push([ini,r.fecha]); ini=null; } });
+    if(ini!==null && R.length) out.push([ini,R.at(-1).fecha]); return out; },
+  dentro(f){ return this.tramos().some(([a,b])=>f>=a && f<=b); },
+  // índices [i0, i1] de cada tramo dentro de una lista de fechas ISO (eje de categorías de Chart.js)
+  indices(fechas){ return this.tramos().map(([a,b])=>{ let i1=-1; fechas.forEach((f,i)=>{ if(f<=b) i1=i; });
+    return [fechas.findIndex(f=>f>=a),i1]; }).filter(([i0,i1])=>i0>=0 && i1>=i0); }
+};
 const Charts=(()=>{
   const reg={};
   const grad=(ctx,rgb,a=.28)=>{const g=ctx.createLinearGradient(0,0,0,280);
     g.addColorStop(0,`rgba(${rgb},${a})`); g.addColorStop(1,`rgba(${rgb},0)`); return g;};
   /* Marca vertical en la fecha en que arrancó la gestión. Solo aparece cuando la
      gráfica trae tramo simulado, que es cuando hace falta separar uno del otro. */
+  /* v6.6 · Banda roja «SOBREGIRO» detrás de las líneas: options.plugins.bandaSobregiro.tramos = [[i0, i1], …]. */
+  if(typeof Chart!=='undefined' && Chart.register) Chart.register({id:'bandaSobregiro',
+    beforeDatasetsDraw(ch,args,o){
+      const T=o&&o.tramos; if(!T||!T.length||!ch.scales.x) return;
+      const {top,bottom}=ch.chartArea, g=ch.ctx, x=ch.scales.x;
+      g.save();
+      T.forEach(([i0,i1])=>{ const a=x.getPixelForValue(i0), b=x.getPixelForValue(i1);
+        g.fillStyle='rgba(255,90,95,.13)'; g.fillRect(a,top,Math.max(3,b-a),bottom-top);
+        g.fillStyle='rgba(255,150,150,.9)'; g.font='600 10px IBM Plex Mono, monospace'; g.fillText('SOBREGIRO',a+5,top+13); });
+      g.restore();
+    }});
   if(typeof Chart!=='undefined' && Chart.register) Chart.register({id:'lineaInicio',
     afterDatasetsDraw(ch,args,o){
       const i=o&&o.indice; if(i==null||i<0||!ch.scales.x) return;
@@ -4760,9 +4799,10 @@ const Charts=(()=>{
       if(nt) nt.innerHTML=`La gestión arranca el ${new Date(Store.get().cfg.startDate+'T12:00:00').toLocaleDateString('es-MX',{day:'numeric',month:'long'})}. Todavía no hay rendimientos reales que graficar: elija 1M, 3M, 6M o 1A para ver la simulación de la cartera objetivo.`;
       return; }
     const R=TV.crear('chMain'); if(!R) return;
-    const firma=[period,s.length,s[0].t,s.at(-1).t,s.at(-1).pv.toFixed(2),s.at(-1).bv.toFixed(6)].join('|');
+    const firma=[period,s.length,s[0].t,s.at(-1).t,s.at(-1).pv.toFixed(2),s.at(-1).bv.toFixed(6),JSON.stringify(Sobregiro.tramos())].join('|');
     if(R.firma===firma) return; R.firma=firma;
     const {pun,hay,idx,tramo}=puntos(s);
+    TV.banda(R,pun.map(x=>({time:x.t})));          // v6.6: banda «Sobregiro» detrás de las líneas
     const sinMarca={lastValueVisible:false,priceLineVisible:false,crosshairMarkerVisible:false,priceFormat:TV.FMT.pct};
     const simB=TV.serie(R,'simB','linea',{color:COL.bmkSim,lineWidth:2,lineStyle:1,...sinMarca});
     const simP=TV.serie(R,'simP','linea',{color:COL.portSim,lineWidth:2,lineStyle:1,...sinMarca});
@@ -4807,8 +4847,12 @@ const Charts=(()=>{
       filas=Object.values(m).map(f=>({...f, v:f.d+f.e})); caja+=etfV*(bw.__cash||0)/100; }
     filas.sort((a,b)=>b.v-a.v);
     const N=modo==='CUENTA'?9:13, top=filas.slice(0,N), resto=filas.slice(N);
-    const rebs=[...top, ...(resto.length?[{l:`Otras ${resto.length}`, v:resto.reduce((s,f)=>s+f.v,0), otras:resto}]:[]), {l:'Efectivo', v:caja, caja:true}];
-    const tot=rebs.reduce((a,b)=>a+b.v,0)||1, w=v=>(v/tot*100).toFixed(2)+'%';
+    // v6.6: la caja negativa (sobregiro) no puede ser rebanada: sale de la dona y va como renglón rojo; los pesos siguen
+    // siendo sobre el valor del portafolio (con la caja negativa), así que las rebanadas suman más de 100%.
+    const sobregiro=caja<0;
+    const rebs=[...top, ...(resto.length?[{l:`Otras ${resto.length}`, v:resto.reduce((s,f)=>s+f.v,0), otras:resto}]:[]),
+      ...(sobregiro?[]:[{l:'Efectivo', v:caja, caja:true}])];
+    const tot=(rebs.reduce((a,b)=>a+b.v,0)+(sobregiro?caja:0))||1, w=v=>(v/tot*100).toFixed(2)+'%';
     const pal=['#D4EDFC','#1464A5','#4A9DF0','#0B4F8A','#7FB6E8','#2E5E9E','#9CC9EE','#3D7AB8','#5B8FD4','#174A7C','#B8DCF5','#2A78C6','#6AA7E0'];
     const col=rebs.map((r,i)=>r.caja?'#22C77E':r.otras?'#5A6B86':pal[i%pal.length]);
     up('chDonut','doughnut',{labels:rebs.map(r=>r.l),datasets:[{data:rebs.map(r=>r.v),backgroundColor:col,borderColor:'#0A1834',borderWidth:2,hoverOffset:7}]},
@@ -4821,8 +4865,10 @@ const Charts=(()=>{
               .sort((a,b)=>bw[b]-bw[a]).slice(0,6).map(s=>`   ${s} ${w(etfV*bw[s]/100)}`)).concat(['Cambie a «MEXTRAC abierto» para verlo sumado a cada acción']);
             return r.e>0 ? `directo ${w(r.d)} + vía MEXTRAC ${w(r.e)}` : ''; }}}}});
     const n=$('#donutNota'); if(!n.ausente){ const f=filas.find(x=>x.d>0 && x.e>0);
-      n.innerHTML = modo==='CUENTA' ? 'Como está en el contrato: el MEXTRAC09 es una sola posición. Pase el cursor por el MEXTRAC para ver qué trae adentro.'
-        : `El MEXTRAC09 está repartido en las acciones que trae adentro (PCF del ${PCF.fecha}).`+(f?` Ejemplo: ${f.l} pesa ${w(f.v)} = ${w(f.d)} directo + ${w(f.e)} vía MEXTRAC.`:''); }
+      n.innerHTML = (sobregiro?`<span class="sobregiro-fila"><b>Sobregiro</b><span>${money(caja)} · ${w(caja)} del portafolio</span></span>`+
+          `La caja negativa no va en la dona: las rebanadas suman ${w(tot-caja)} y el sobregiro resta ${w(-caja)}. `:'')+
+        (modo==='CUENTA' ? 'Como está en el contrato: el MEXTRAC09 es una sola posición. Pase el cursor por el MEXTRAC para ver qué trae adentro.'
+        : `El MEXTRAC09 está repartido en las acciones que trae adentro (PCF del ${PCF.fecha}).`+(f?` Ejemplo: ${f.l} pesa ${w(f.v)} = ${w(f.d)} directo + ${w(f.e)} vía MEXTRAC.`:'')); }
   }
   function pnl(){
     const pos=Portfolio.positions();
@@ -4853,12 +4899,13 @@ const Charts=(()=>{
   function cum(period){
     const sl=Calc.recorte(period||'ITD'); if(sl.length<2) return;
     const {pun,hay,idx,tramo}=puntos(sl);
-    const firma=[period,sl.length,sl[0].t,sl.at(-1).t,sl.at(-1).pv.toFixed(2)].join('|');
+    const firma=[period,sl.length,sl[0].t,sl.at(-1).t,sl.at(-1).pv.toFixed(2),JSON.stringify(Sobregiro.tramos())].join('|');
     const ult=pun.at(-1), porT=new Map(pun.map(x=>[x.t,x]));
     // ── rendimiento acumulado, con el retorno activo como línea base sobre cero ──
     const R=TV.crear('chCum');
     if(R && R.firma!==firma){
       R.firma=firma;
+      TV.banda(R,pun.map(x=>({time:x.t})));        // v6.6: banda «Sobregiro»
       const sinMarca={lastValueVisible:false,priceLineVisible:false,crosshairMarkerVisible:false};
       const aS=TV.serie(R,'aS','base',{priceScaleId:'act',baseValue:{type:'price',price:0},...sinMarca,priceFormat:TV.FMT.pp,
         topLineColor:'rgba(34,199,126,.4)',topFillColor1:'rgba(34,199,126,.10)',topFillColor2:'rgba(34,199,126,0)',
@@ -4916,17 +4963,19 @@ const Charts=(()=>{
     // El efectivo se cuenta siempre desde la constitución, sin importar el periodo: su
     // historia es el escalón de la compra inicial y luego cada operación.
     const re=Calc.curva().filter(p=>p.cash!=null).map(p=>({t:TV.seg(p.t),cash:p.cash}));
-    const firmaC=[re.length,re.at(-1)?.t,re.at(-1)?.cash].join('|');
+    const firmaC=[re.length,re.at(-1)?.t,re.at(-1)?.cash,JSON.stringify(Sobregiro.tramos())].join('|');
     const R3=TV.crear('chCash');
     if(R3 && re.length>=2 && R3.firma!==firmaC){
       R3.firma=firmaC;
+      TV.banda(R3,re.map(x=>({time:x.t})));         // v6.6: banda «Sobregiro» (caja negativa)
       const c=TV.serie(R3,'c','area',{lineColor:COL.cash,topColor:'rgba(34,199,126,.22)',bottomColor:'rgba(34,199,126,0)',
         lineWidth:2,lineType:1,priceFormat:TV.FMT.mx,priceLineColor:'rgba(34,199,126,.5)',priceLineStyle:2});
       c.setData(TV.limpio(re.map(x=>({time:x.t,value:x.cash}))));
       encuadre(R3,'ITD');
       const ultC=re.at(-1), porC=new Map(re.map(x=>[x.t,x]));
       R3.leyenda=prm=>{ const x=(prm&&porC.get(prm.time))||ultC;
-        R3.ley.innerHTML=`<span class="f">${prm?TV.cruz(x.t):'Último · '+TV.cruz(ultC.t)}</span>`+TV.it(COL.cash,'Efectivo',money(x.cash)); };
+        R3.ley.innerHTML=`<span class="f">${prm?TV.cruz(x.t):'Último · '+TV.cruz(ultC.t)}${x.cash<0?'<span class="tag">SOBREGIRO</span>':''}</span>`+
+          TV.it(x.cash<0?COL.neg:COL.cash,'Efectivo',money(x.cash)); };
       R3.leyenda(null);
     }
     const n3=document.getElementById('cashNota');
@@ -5226,8 +5275,10 @@ const AtrV=(()=>{
         {label:'MEXTRAC09',data:serie.map(s=>s.b*100),borderColor:'#4A9DF0',borderWidth:2,borderDash:[5,3],
          pointRadius:serie.map(s=>s.est?6:2),pointStyle:serie.map(s=>s.est?'triangle':'circle'),pointBackgroundColor:serie.map(s=>s.est?'#F5B93C':'#4A9DF0')}]},
       options:{scales:ejes(v=>v.toFixed(2)+'%'),plugins:{legend:{display:true,position:'top',align:'end'},
+        bandaSobregiro:{tramos:Sobregiro.indices(serie.map(s=>s.f))},                 // v6.6: caja negativa del 21 al 27-oct
         tooltip:{callbacks:{label:c=>' '+c.dataset.label+' '+fps(c.raw/100), afterBody:c=>{ const s=serie[c[0].dataIndex];
-          return ['Alfa acumulado '+fpb(s.p-s.b)].concat(s.est?['MEXTRAC estimado ese día']:[]); }}}},interaction:{mode:'index',intersect:false}}});
+          return ['Alfa acumulado '+fpb(s.p-s.b)].concat(s.est?['MEXTRAC estimado ese día']:[])
+            .concat(Sobregiro.dentro(s.f)?['Sobregiro: caja negativa (ver la nota del Resumen)']:[]); }}}},interaction:{mode:'index',intersect:false}}});
     // b) P&L diario en pesos
     graf('atvPnl',{type:'bar',data:{labels:F.map(fechaCorta),datasets:[
         {label:'Cartera',data:F.map(f=>D.dias[f].pnl),backgroundColor:'rgba(212,237,252,.85)',borderRadius:3},
@@ -5330,7 +5381,9 @@ const AtrV=(()=>{
     tabla('atvTSec',[{k:'s',l:'Sector'},{k:'wp',l:'Peso cartera',f:fpw},{k:'wb',l:'Peso benchmark',f:fpw},{k:'rp',l:'Rend. cartera',f:v=>fps(v),c:cl},
       {k:'rb',l:'Rend. benchmark',f:v=>fps(v),c:cl},{k:'a',l:'Asignación',f:fpb,c:cl},{k:'se',l:'Selección',f:fpb,c:cl},{k:'i',l:'Interacción',f:fpb,c:cl},
       {k:'t',l:'Total',f:fpb,c:cl},{k:'txt',l:'Qué pasó',f:v=>`<span class="atv-frase">${esc(v)}</span>`}],
-      se.map(s=>({...s, txt:s.s==='Efectivo'?'El benchmark no tiene caja: cada peso en efectivo deja de seguir al MEXTRAC09 (todo va en asignación).':fraseSec(s,E.RB)})),'t');
+      se.map(s=>({...s, txt:s.s!=='Efectivo'?fraseSec(s,E.RB)
+        : s.wp<0?`Caja negativa (sobregiro): funcionó como apalancamiento; ${s.t>0?'sumó porque el MEXTRAC subió':s.t<0?'restó porque el MEXTRAC bajó':'no movió el alfa'} (todo va en asignación).`
+        : 'El benchmark no tiene caja: cada peso en efectivo deja de seguir al MEXTRAC09 (todo va en asignación).'})),'t');
     const tb=se.reduce((a,s)=>a+s.t,0);
     let cuad='';
     if(st.alcance==='dia'){ const q=(D.sec[st.dia]||[]).find(s=>s.s==='TOTAL')?.q||[];
@@ -5400,7 +5453,7 @@ const AtrV=(()=>{
         ['valor_ini','valor_fin','var_semana','var_desde_inicio','rend','rb','activo','acum','bacum','aacum','ipc'].forEach(c=>o[c]=x(s[c])); return o; }),'+semana');
     const C_=D.S.COMPOSICION[st.semana]||{}, tot=k=>x(C_.total?.[k]);
     const fila=(l,k)=>{ const a=x(C_[k]?.inicio), b=x(C_[k]?.fin); return {l, a, pa:a/tot('inicio'), b, pb:b/tot('fin'), d:b/tot('fin')-a/tot('inicio')}; };
-    const comp=[fila('Efectivo','efectivo'),fila('MEXTRAC09 (ETF)','etf'),fila('Acciones representativas (control)','representativas'),fila('Acciones activas','activas')];
+    const comp=[fila(x(C_.efectivo?.inicio)<0||x(C_.efectivo?.fin)<0?'Efectivo · sobregiro (caja negativa)':'Efectivo','efectivo'),fila('MEXTRAC09 (ETF)','etf'),fila('Acciones representativas (control)','representativas'),fila('Acciones activas','activas')];
     comp.splice(1,0,{l:'Acciones y ETF', a:tot('inicio')-x(C_.efectivo?.inicio), b:tot('fin')-x(C_.efectivo?.fin)});
     comp[1].pa=comp[1].a/tot('inicio'); comp[1].pb=comp[1].b/tot('fin'); comp[1].d=comp[1].pb-comp[1].pa;
     const pas={l:'Pasiva (MEXTRAC09 + representativas)'}; ['a','b'].forEach(z=>pas[z]=comp[2][z]+comp[3][z]); pas.pa=pas.a/tot('inicio'); pas.pb=pas.b/tot('fin'); pas.d=pas.pb-pas.pa;
@@ -6291,6 +6344,21 @@ const UI=(()=>{
       </div>`;
   }
 
+  /* v6.6 · Nota corta del incidente de caja (compra del 16-oct no capturada). Aparece mientras rendimientos.csv traiga
+     algún cierre con caja negativa; la liga abre la bitácora con las ventas de corrección. */
+  function rIncidente(){
+    const bn=$('#bannerIncidente'); if(bn.ausente) return;
+    const T=Sobregiro.tramos(); bn.hidden=!T.length; if(!T.length) return;
+    const t=`<b>Incidente de caja · sobregiro del ${fdate(T[0][0])} al ${fdate(T[0][1])}</b><br>`+
+      `• 16-oct, 13:40: BBVA compró 307 FEMSAUBD a $232.50 (ID 70707676) y no se capturó; el tracker creía tener $71,625.89 más de caja.<br>`+
+      `• 21-oct: con esa caja se compraron 1,195 FEMSAUBD y la caja real quedó en −$65,708.02 (−0.62%), fuera del mandato (0 a 5%).<br>`+
+      `• 27-oct: se detectó al conciliar con la plataforma; con autorización de los profesores se vendieron FEMSA 120, AMX 1,450, `+
+      `GAP 22 y ASUR 10 (neto $73,913.60). La caja liquidada vuelve a ser positiva el 28-oct.<br>`+
+      `Desde el 27-oct cada ejecución se concilia con la plataforma antes de mandar la siguiente orden. `+
+      `<a href="#" data-ir-bitacora>Ver las operaciones en la bitácora →</a>`;
+    if(bn.dataset.t!==t){ bn.innerHTML=`${ic('warn')}<span>${t}</span>`; bn.dataset.t=t;
+      bn.querySelector('[data-ir-bitacora]').onclick=e=>{ e.preventDefault(); go('operaciones'); goPane('operaciones','log'); }; }
+  }
   /* ——— DASHBOARD ——— */
   function rDash(){
     const S=Store.get(), pv=Portfolio.value(), pos=Portfolio.positions();
@@ -6347,9 +6415,10 @@ const UI=(()=>{
     const sp=Portfolio.strategySplit();
     $('#compBreak').innerHTML=[['Estrategia pasiva',sp.pasiva,sp.pasivaPct,`${POLICY.pasivaMin} a ${POLICY.pasivaMax}%`],
       ['Estrategia activa',sp.activa,sp.activaPct,`${POLICY.activaMin} a ${POLICY.activaMax}%`],
-      ['Efectivo',sp.cash,sp.cashPct,`${POLICY.cashMin} a ${POLICY.cashMax}%`]]
+      [sp.cash<0?'Sobregiro (caja negativa)':'Efectivo',sp.cash,sp.cashPct,`${POLICY.cashMin} a ${POLICY.cashMax}%`]]
       .map(([k,v,p,r])=>`<div class="metric-row"><span class="k">${k}<br><span style="font-size:9.5px;color:var(--txt-3)">política ${r}</span></span>
-        <span class="v">${moneyK(v)} <span class="chip b">${pct(p)}</span></span></div>`).join('');
+        <span class="v">${moneyK(v)} <span class="chip ${v<0?'n':'b'}">${pct(p)}</span></span></div>`).join('');
+    rIncidente();
     const r=Risk.compute();
     $('#riskObs').textContent=r.ok?`${r.n} observaciones ${ADJ[r.freq]||''} · ${r.source==='hist'?'histórico':'sesión'} · pase el cursor para ver el cálculo`:`${r.n} de ${MIN_OBS} observaciones`;
     $('#dashRisk').innerHTML=r.ok?[['sd','Desviación estándar anualizada',pct(r.sdA)],['te','Error de seguimiento (tracking error)',pct(r.te)],
@@ -6888,10 +6957,11 @@ WALMEX,46.05,45.49,2026-09-14T18:51:21+00:00</pre>
     const data={labels:lab,datasets:[
       {label:'Cartera',data:dc,borderColor:COL.port,backgroundColor:'rgba(212,237,252,.08)',fill:false,borderWidth:2,pointRadius:2},
       {label:'MEXTRAC09',data:db,borderColor:COL.bmk,borderDash:[5,4],fill:false,borderWidth:1.6,pointRadius:0}]};
-    if(chDia){ chDia.data=data; chDia.update('none'); return; }
+    const banda={tramos:Sobregiro.indices(R.map(x=>x.fecha))};          // v6.6: caja negativa (sobregiro)
+    if(chDia){ chDia.data=data; chDia.options.plugins.bandaSobregiro=banda; chDia.update('none'); return; }
     chDia=new Chart(el.getContext('2d'),{type:'line',data,options:{responsive:true,maintainAspectRatio:false,
       interaction:{mode:'index',intersect:false},
-      plugins:{legend:{display:true,position:'top',align:'end'},
+      plugins:{legend:{display:true,position:'top',align:'end'},bandaSobregiro:banda,
         tooltip:{callbacks:{label:c=>`${c.dataset.label}: ${pctS(c.parsed.y)}`}}},
       scales:{x:{grid:{color:C.grid},ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:10}},
               y:{grid:{color:C.grid},ticks:{callback:v=>v.toFixed(1)+'%'}}}}});
