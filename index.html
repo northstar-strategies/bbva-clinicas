@@ -124,6 +124,15 @@ svg.i{width:1em;height:1em;flex:none;stroke:currentColor;fill:none;stroke-width:
 .sobregiro-fila{display:flex;justify-content:space-between;gap:10px;align-items:center;margin:0 0 8px;padding:7px 11px;border-radius:8px;
   background:var(--neg-bg);border:1px solid rgba(255,84,104,.35);color:var(--neg);font-weight:600;font-size:11.5px}
 .chart-nota .sobregiro-fila b{color:var(--neg)}
+/* v6.7 · exposición por moneda, macro y calendario */
+.mon-fila{display:grid;grid-template-columns:62px 1fr 54px;gap:8px;align-items:center;font-size:11.5px;padding:3px 0}
+.mon-fila .k{font-family:var(--mono);color:var(--txt-2)} .mon-fila .d{text-align:right;font-family:var(--mono)}
+.mon-barras{display:grid;gap:2px} .mon-barras i{display:block;height:7px;border-radius:3px;min-width:1px}
+.mon-barras i.c{background:#4A9DF0} .mon-barras i.b{background:rgba(212,237,252,.45)}
+.mac td,.mac th{padding:5px 6px;font-size:11.5px;border-bottom:1px solid var(--line)} .mac td.n{font-family:var(--mono);text-align:right;white-space:nowrap}
+.mac{width:100%;border-collapse:collapse;table-layout:fixed} .mac td:first-child{white-space:normal;overflow-wrap:anywhere} .mac th{color:var(--txt-3);font-weight:600;text-align:left} .mac .mv{color:var(--txt-3);font-size:10.5px}
+.cal-it{display:grid;grid-template-columns:70px 1fr;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:11.5px;line-height:1.45}
+.cal-it .f{font-family:var(--mono);color:var(--ice-2)} .cal-it .t{color:var(--txt-3);font-size:10.5px}
 
 /* ---------- GRÁFICAS DE TIEMPO · MOTOR TRADINGVIEW ---------- */
 .tv{position:relative;width:100%;height:100%;border-radius:10px;overflow:hidden;cursor:crosshair}
@@ -135,6 +144,7 @@ svg.i{width:1em;height:1em;flex:none;stroke:currentColor;fill:none;stroke-width:
 .tv-ley .sw.guion{background:linear-gradient(90deg,var(--c) 0 5px,transparent 5px 8px,var(--c) 8px 14px)}
 .tv-ley .sw.punto{background:repeating-linear-gradient(90deg,var(--c) 0 2px,transparent 2px 4px)}
 .tv-ley .sw.barra{height:8px;width:8px;border-radius:2px;opacity:.85}
+.tv-ley .porque{flex-basis:100%;white-space:normal;font-family:var(--sans);font-size:11px;line-height:1.45;color:var(--ice-2);max-width:620px}
 .tv-ley .v{font-weight:600;font-variant-numeric:tabular-nums;color:var(--txt)}
 .tv-ley .v.pos{color:var(--pos)} .tv-ley .v.neg{color:var(--neg)}
 .tv-ley .tag{font-size:8.5px;font-weight:700;letter-spacing:.12em;padding:2px 7px;border-radius:4px;
@@ -1328,6 +1338,13 @@ td{padding:11px 12px} th,thead th{padding:11px 12px}
               <div class="chart-box tall"><canvas id="chMain"></canvas></div><p class="chart-pista">Rueda del ratón para acercar · arrastre para desplazarse · doble clic para reencuadrar</p><p class="chart-nota" id="mainNota"></p></div>
             <div class="card"><div class="card-h"><h3>Composición</h3><div class="spacer"></div><div class="seg" id="segDonut"></div></div>
               <div class="chart-box" style="height:250px"><canvas id="chDonut"></canvas></div><p class="chart-nota" id="donutNota"></p><hr class="sep"><div id="compBreak"></div></div>
+          </div>
+          <div class="grid g3" style="margin-bottom:14px">
+            <div class="card"><div class="card-h"><h3>Exposición por moneda</h3><span class="hint">sum of parts · cartera contra MEXTRAC09</span></div>
+              <div id="monedaTabla"></div><p class="chart-nota" id="monedaNota"></p></div>
+            <div class="card"><div class="card-h"><h3>Macro que mueve la cartera</h3><span class="hint" id="macroHint"></span></div><div id="macroTabla"></div></div>
+            <div class="card"><div class="card-h"><h3>Próximos eventos</h3><div class="spacer"></div>
+              <a class="btn sm" id="btnPdf" href="reporte_semanal.pdf" target="_blank" rel="noopener">Reporte semanal · PDF</a></div><div id="calLista"></div></div>
           </div>
           <div class="grid g2" style="margin-bottom:14px">
             <div class="card"><div class="card-h"><h3>Indicadores de riesgo</h3><span class="hint" id="riskObs"></span></div><div id="dashRisk"></div></div>
@@ -3231,7 +3248,7 @@ const Calc = (()=>{
                : {t:diaLocal(ini).getTime()-3600e3*6, pv:cfg.capital, bv:Market.basePrice('MEXTRAC'), cash:cfg.capital, dia:ini, tipo:'inicio'});
 
     // Lecturas intradía publicadas por el vigilante, desde la constitución.
-    const intraPts=[], diasIntra=new Set();
+    const intraPts=[];
     if(I && I.t && I.t.length){
       const ult={};                                    // arrastra el último precio conocido
       I.t.forEach((t,i)=>{
@@ -3240,13 +3257,13 @@ const Calc = (()=>{
         const pxOf=s=>ult[s]||null;
         const bv=ult.MEXTRAC ?? certAt(pxOf); if(!bv) return;
         const e=est(d), pv=valuar(e,pxOf,bv); if(pv==null) return;
-        intraPts.push({t, pv, bv, cash:e.efectivo, dia:d, tipo:'intradia'}); diasIntra.add(d);
+        intraPts.push({t, pv, bv, cash:e.efectivo, dia:d, tipo:'intradia'});
       });
     }
     // Cierres diarios para los días sin lecturas intradía.
     if(H && H.dates && H.dates.length){
       H.dates.forEach((d,i)=>{
-        if(d<ini || (R && d===ini) || d>=hoyISO || diasIntra.has(d)) return;
+        if(d<ini || (R && d===ini) || d>=hoyISO) return;     // v6.7: también los días con intradía: el cierre de las 15:00 los cierra
         const pxOf=s=>H.px[s]?.[i]>0?H.px[s][i]:null;
         const bv=pxOf('MEXTRAC') ?? certAt(pxOf); if(!bv) return;
         const e=est(d), pv=valuar(e,pxOf,bv);
@@ -3328,7 +3345,7 @@ const Calc = (()=>{
   const isoDe = t => { const d=new Date(t); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); };
   function recorte(key){
     const c=curva();
-    if(key==='ITD' || !DIAS[key]) return c;
+    if(key==='ITD' || !DIAS[key]) return diario(c);
     if(key==='1D'){
       // La sesión en curso, o la última que cerró, anclada en el cierre previo.
       // Antes de las 8:30 o en fin de semana muestra la sesión anterior completa.
@@ -3338,18 +3355,14 @@ const Calc = (()=>{
       if(i>=0){ const s=c.slice(Math.max(0,i-1)).filter(p=>isoDe(p.t)<=dia); if(s.length>=2) return s; }
       return c.slice(-2);                           // sin lecturas de esa sesión: último tramo
     }
-    const lim=Date.now()-DIAS[key]*864e5, limISO=isoDe(lim), ini=inicioMedicion();
-    if(limISO<ini){
-      const pre=proforma(limISO);
-      // Con historia simulada se omite el punto sintético de "inicio": el primer
-      // cierre real ya empalma con el último simulado.
-      if(pre.length) return [...pre, ...c.filter(p=>p.tipo!=='inicio')];
-      return c;
-    }
-    let i=c.findIndex(p=>p.t>=lim);
-    if(i<0) i=c.length-1;
-    return c.slice(Math.max(0,i-1));           // el punto anterior ancla el inicio del periodo
+    // v6.7: sin historia simulada; una ventana más larga que la gestión muestra solo lo real
+    const lim=Date.now()-DIAS[key]*864e5, d=diario(c);
+    let i=d.findIndex(p=>p.t>=lim);
+    if(i<0) i=d.length-1;
+    return d.slice(Math.max(0,i-1));           // el punto anterior ancla el inicio del periodo
   }
+  // v6.7: un punto por día (el cierre oficial de las 15:00, o la última lectura de hoy); el intradía queda solo en 1D
+  const diario=c=>c.filter((p,i)=>p.tipo==='inicio' || i===c.length-1 || isoDe(c[i+1].t)!==isoDe(p.t));
   // Una ventana que empieza antes de la constitución se reporta como "desde el
   // inicio": los rendimientos del fondo solo se miden con datos reales.
   function excedeVida(key){
@@ -4084,6 +4097,7 @@ const Remote=(()=>{
       s=symOf(s); b=String(b||'').toUpperCase(); if(META[s] && /^(ETF|ACTIVA|REPRESENTATIVA)$/.test(b)) BLOQUE[s]=b; });
     if(j.modelo) c.modeloNota=String(j.modelo);
     if(iso(j.fecha_ref_indice)) c.fechaRefIndice=iso(j.fecha_ref_indice);
+    c.penalizacionPb=n(j.penalizacion_pb)||0;             // v6.7: penalización de los profesores sobre el rendimiento final
     if(j.pesos_indice && typeof j.pesos_indice==='object'){
       const w=Object.fromEntries(Object.entries(j.pesos_indice).map(([s,x])=>[symOf(s),+x]).filter(([s,x])=>META[s] && x>0));
       if(Object.keys(w).length) c.pesosIndice=w; }
@@ -4664,7 +4678,7 @@ const TV=(()=>{
   }
   function serie(R,k,tipo,op){
     if(R.series[k]) return R.series[k];
-    const f={area:'addAreaSeries',linea:'addLineSeries',base:'addBaselineSeries'}[tipo];
+    const f={area:'addAreaSeries',linea:'addLineSeries',base:'addBaselineSeries',velas:'addCandlestickSeries'}[tipo];
     return R.series[k]=R.chart[f]({crosshairMarkerRadius:3.5,crosshairMarkerBorderWidth:2,...op});
   }
   /* v6.6 · Banda «Sobregiro»: área de altura completa en una escala propia e invisible (valor 1 en el tramo, hueco
@@ -4676,6 +4690,7 @@ const TV=(()=>{
     R.chart.priceScale('sob').applyOptions({scaleMargins:{top:0,bottom:0},visible:false});
     const dentro=p=>Sobregiro.dentro(new Date(p.time*1000).toISOString().slice(0,10));
     const d=[]; [...pts].sort((a,b)=>a.time-b.time).forEach(p=>{ if(!d.length || d[d.length-1].time!==p.time) d.push(dentro(p)?{time:p.time,value:1}:{time:p.time}); });
+    if(d.length) d.unshift({time:d[0].time-86400});   // un hueco antes del primer punto: la etiqueta «Referencia» no se corta
     s.setData(d);
     s.setMarkers(d.filter((x,i)=>x.value && !(d[i-1]&&d[i-1].value)).map(x=>({time:x.time,position:'inBar',color:'rgba(255,150,150,.9)',shape:'square',size:0.1,text:'SOBREGIRO'})));
   }
@@ -4705,6 +4720,91 @@ const Sobregiro={
   // índices [i0, i1] de cada tramo dentro de una lista de fechas ISO (eje de categorías de Chart.js)
   indices(fechas){ return this.tramos().map(([a,b])=>{ let i1=-1; fechas.forEach((f,i)=>{ if(f<=b) i1=i; });
     return [fechas.findIndex(f=>f>=a),i1]; }).filter(([i0,i1])=>i0>=0 && i1>=i0); }
+};
+/* v6.7 · Contexto que publica el vigilante: velas (ohlc.csv), macro (macro.csv, divisas en pesos por unidad), participación
+   por moneda de cada emisora (sotp.csv) y calendario (calendario.csv). Ruta relativa en GitHub Pages; si no, raw.githubusercontent. */
+const Ctx=(()=>{
+  const RAW='https://raw.githubusercontent.com/northstar-strategies/bbva-clinicas/main/';
+  const D={ohlc:{}, macro:{}, sotp:{}, cal:[], listo:false};
+  const filas=t=>{ const R=IO.parseCSV(String(t||'').trim()); if(R.length<2) return []; const H=R[0].map(h=>String(h).trim());
+    return R.slice(1).filter(r=>r.length>1).map(r=>Object.fromEntries(H.map((h,i)=>[h,r[i]??'']))); };
+  async function texto(f){
+    if(/^https?:$/.test(location.protocol)){ try{ const r=await fetch(f+'?_ts='+Date.now(),{cache:'no-store'}); if(r.ok) return r.text(); }catch(e){} }
+    const r=await fetch(RAW+f+'?_ts='+Date.now(),{cache:'no-store'}); return r.ok?r.text():''; }
+  async function cargar(){
+    const [o,m,s,c]=await Promise.all(['ohlc.csv','macro.csv','sotp.csv','calendario.csv'].map(f=>texto(f).catch(()=>'')));
+    D.ohlc={}; filas(o).forEach(r=>(D.ohlc[r.emisora]||(D.ohlc[r.emisora]=[])).push({f:r.fecha,o:+r.apertura||null,h:+r.maximo||null,l:+r.minimo||null,c:+r.cierre}));
+    D.macro={}; filas(m).forEach(r=>{ const x=D.macro[r.serie]||(D.macro[r.serie]={nombre:r.nombre,moneda:r.moneda,mueve:String(r.mueve||'').split(/\s+/).filter(Boolean),s:[]});
+      x.s.push({f:r.fecha,v:+r.valor}); });
+    D.sotp={}; filas(s).forEach(r=>{ (D.sotp[r.emisora]||(D.sotp[r.emisora]={m:{},fuente:r.fuente})).m[r.moneda]=+r.peso; });
+    // «Emisora o país» puede traer varias claves: «BRASIL FEMSAUBD KOFUBL AMXB»
+    D.cal=filas(c).map(r=>({...r, claves:String(r.emisora||'').toUpperCase().split(/[\s,·]+/).filter(Boolean)}));
+    D.listo=true; Store.emit();
+  }
+  return {D,cargar,RAW};
+})();
+/* v6.7 · Por qué se movió una emisora un día: evento del calendario, la moneda o la materia prima que la mueve (SOTP y
+   macro.csv) y la noticia del día (o de la mañana siguiente). Una emisora se liga a un país si ≥10% de su negocio está en su moneda. */
+const PAIS_MONEDA={BRL:'BRASIL',COP:'COLOMBIA',ARS:'ARGENTINA',PEN:'PERU',CLP:'CHILE',USD:'EUA'};
+const Porque={
+  cambio(serie,f){ const s=Ctx.D.macro[serie]?.s; if(!s) return null; const i=s.findIndex(x=>x.f===f); return i>0?s[i].v/s[i-1].v-1:null; },
+  noticias(f,claves,signo=0){ const d=new Date(f+'T12:00:00'); d.setDate(d.getDate()+1); const f2=d.toISOString().slice(0,10);
+    const contra=signo<0?'positiva':signo>0?'negativa':'';          // una nota de tono contrario al movimiento no lo explica
+    return (Store.get().noticias||[]).filter(n=>claves.includes(n.sym) && (n.fecha===f || (n.fecha===f2 && n.hora<'09:30')) && n.tono!==contra); },
+  emisora(sym,f){
+    const sh=Ctx.D.sotp[sym]?.m||{}, mon=Object.entries(sh).filter(([m,w])=>PAIS_MONEDA[m] && w>=0.1).map(([m])=>m);
+    const claves=[sym,...mon.map(m=>PAIS_MONEDA[m])], out=[];
+    Ctx.D.cal.filter(e=>e.fecha===f && e.claves.some(k=>claves.includes(k))).forEach(e=>out.push((e.tipo==='Evento'?'':e.tipo+': ')+e.titulo));
+    mon.forEach(m=>{ const c=Porque.cambio(m,f); if(c!=null && Math.abs(c)>=0.01) out.push(`${m} ${pctS(c*100,1)} contra el peso (${Math.round(sh[m]*100)}% de su negocio)`); });
+    Object.entries(Ctx.D.macro).forEach(([k,x])=>{ if(x.mueve.includes(sym)){ const c=Porque.cambio(k,f); if(c!=null && Math.abs(c)>=0.015) out.push(`${x.nombre} ${pctS(c*100,1)}`); } });
+    // la noticia solo entra si no hubo evento ni dato macro que lo explique, y se presenta como noticia del día, no como causa
+    if(!out.length) Porque.noticias(f,claves,Porque.signo(sym,f)).slice(0,1).forEach(n=>out.push(`Noticia del día: «${n.titulo}»`));
+    return out;
+  },
+  signo(sym,f){ const v=Ctx.D.ohlc[sym]||[], i=v.findIndex(x=>x.f===f); return i>0?Math.sign(v[i].c-v[i-1].c):0; },
+  // La cartera: las dos emisoras que más movieron el alfa (atribución del tracker), los eventos del día y la noticia más fuerte
+  cartera(f){
+    const A=(typeof AtrV!=='undefined')?AtrV.datos():null, d=A&&A.dias&&A.dias[f]; if(!d || d.alfa==null) return null;
+    const top=[...(d.em||[])].sort((a,b)=>Math.abs(b.ap)-Math.abs(a.ap)).slice(0,2);
+    const pb=v=>`${v>=0?'+':'−'}${Math.abs(v*1e4).toFixed(1)} pb`;
+    const ev=Ctx.D.cal.filter(e=>e.fecha===f && e.tipo==='Evento').map(e=>e.titulo);
+    const sg=Math.sign(d.alfa), no=[...Porque.noticias(f,Object.values(PAIS_MONEDA),sg),...Porque.noticias(f,top.map(e=>e.sym),sg)].filter(n=>n.impacto==='alto').slice(0,1).map(n=>`«${n.titulo}»`);   // primero lo del país
+    const PZ={MEXTRAC:'MEXTRAC09 contra su canasta',OPERACIONES:'operaciones',COMISIONES:'comisión e IVA'};
+    const pz=Object.entries(PZ).filter(([k])=>Math.abs(d.pz?.[k]?.ap||0)>=1e-3).map(([k,n])=>`${n} ${pb(d.pz[k].ap)}`);
+    return {alfa:d.alfa, txt:[`Alfa ${pb(d.alfa)}`, top.map(e=>`${e.sym} ${pb(e.ap)}`).join(', '), ...pz, d.est?'MEXTRAC estimado':'',
+      Sobregiro.dentro(f)?'caja en sobregiro':'', ...ev, ...(ev.length?[]:no)].filter(Boolean).join(' · ')};
+  }
+};
+/* v6.7 · Velas diarias de la emisora en su ficha, con un punto en cada día de movimiento fuerte (≥2σ de 60 días o ≥2%) y la
+   explicación debajo. El MEXTRAC09 no trae apertura, máximo ni mínimo en LSEG: se dibuja como línea. */
+const Velas={
+  dibujar(s){
+    const el=document.getElementById('fichaVelas'), lst=document.getElementById('fichaPorQue'); if(!el) return;
+    const v=(Ctx.D.ohlc[s]||[]).slice(-130), mx=Ctx.D.ohlc.MEXTRAC||[];
+    if(v.length<5){ el.innerHTML=`<div class="insuf">${Ctx.D.listo?'No hay velas de esta emisora en ohlc.csv.':'Cargando velas…'}</div>`; return; }
+    const R=TV.crear('fichaVelas'); if(!R) return;
+    const t=f=>TV.deFecha(f), ohlc=v.every(x=>x.o&&x.h&&x.l);
+    const ser=ohlc ? TV.serie(R,'v','velas',{upColor:COL.pos,downColor:COL.neg,borderVisible:false,wickUpColor:COL.pos,wickDownColor:COL.neg,priceFormat:TV.FMT.mx})
+                   : TV.serie(R,'v','linea',{color:COL.port,lineWidth:2,priceFormat:TV.FMT.mx});
+    ser.setData(v.map(x=>ohlc?{time:t(x.f),open:x.o,high:x.h,low:x.l,close:x.c}:{time:t(x.f),value:x.c}));
+    const r=v.map((x,i)=>i?x.c/v[i-1].c-1:null), rr=r.slice(-60).filter(x=>x!=null);
+    const sd=Math.sqrt(rr.reduce((a,x)=>a+x*x,0)/Math.max(1,rr.length-1));
+    const rb=f=>{ const i=mx.findIndex(x=>x.f===f); return i>0?mx[i].c/mx[i-1].c-1:null; };
+    const fuertes=v.map((x,i)=>({f:x.f,r:r[i]})).filter(z=>z.r!=null && Math.abs(z.r)>=Math.max(0.02,2*sd));
+    const pq={}; fuertes.forEach(z=>pq[z.f]=Porque.emisora(s,z.f));
+    ser.setMarkers(fuertes.map(z=>({time:t(z.f),position:z.r>0?'aboveBar':'belowBar',color:z.r>0?COL.pos:COL.neg,shape:'circle',size:1,text:pctS(z.r*100,1)})));
+    const porT=new Map(v.map((x,i)=>[t(x.f),{...x,r:r[i]}])), ult=v.at(-1);
+    R.leyenda=prm=>{ const x=(prm&&porT.get(prm.time))||{...ult,r:r.at(-1)}, b=rb(x.f);
+      R.ley.innerHTML=`<span class="f">${fdate(x.f)}${pq[x.f]?'<span class="tag">MOVIMIENTO FUERTE</span>':''}</span>`+
+        (ohlc?TV.it(COL.port,'A / Máx / Mín',`${num(x.o)} / ${num(x.h)} / ${num(x.l)}`):'')+TV.it(COL.port,'Cierre',money(x.c))+
+        TV.it(x.r>=0?COL.pos:COL.neg,'Día',pctS((x.r||0)*100),cls(x.r))+(b!=null?TV.it(COL.bmk,'MEXTRAC09',pctS(b*100),cls(b),'guion'):'')+
+        (pq[x.f]&&pq[x.f].length?`<span class="porque">${esc(pq[x.f].join(' · '))}</span>`:''); };
+    R.leyenda(null);
+    R.chart.timeScale().fitContent();
+    if(lst) lst.innerHTML=fuertes.length?`<p class="sub-note" style="margin:10px 0 6px">Días con movimiento fuerte (≥ ${pct(Math.max(2,2*sd*100),1)}) y qué lo explica:</p><ul class="flist">`+
+      fuertes.slice(-8).reverse().map(z=>{ const b=rb(z.f); return `<li><b class="${cls(z.r)}">${fdate(z.f)} · ${pctS(z.r*100)}</b>`+
+        (b!=null?` <span class="neu">(MEXTRAC09 ${pctS(b*100)})</span>`:'')+` — ${pq[z.f].length?esc(pq[z.f].join(' · ')):'sin noticia, evento ni dato macro publicado que lo explique.'}</li>`; }).join('')+'</ul>':'';
+  }
 };
 const Charts=(()=>{
   const reg={};
@@ -4778,13 +4878,19 @@ const Charts=(()=>{
     const tramo=(a,b,k)=>TV.limpio(pun.slice(a,b).map(x=>({time:x.t,value:x[k]})));
     return {pun,hay,idx,tramo};
   }
-  function marcadores(R,serie,pun,idx,hay){
+  function marcadores(R,serie,pun,idx,hay,dias){
     // Solo donde de verdad empezó la gestión: el empalme con la simulación, o el
     // punto de constitución cuando la ventana lo incluye. En 1D o 1S no hay marca.
     const m = hay ? (pun[idx].sim ? null : pun[idx]) : (pun[0] && pun[0].tipo==='inicio' ? pun[0] : null);
-    serie.setMarkers(m?[{time:m.t,position:'belowBar',color:'#D4EDFC',shape:'arrowUp',
-      text:(typeof Calc!=='undefined' && Calc.refBase())?'Referencia':hay?'Inicio':'Asignación'}]:[]);
+    const ref=m?[{time:m.t,position:'belowBar',color:'#D4EDFC',shape:'arrowUp',
+      text:(typeof Calc!=='undefined' && Calc.refBase())?'Referencia':hay?'Inicio':'Asignación'}]:[];
+    // v6.7: un punto por día medido (verde si le ganamos al MEXTRAC09, rojo si no); los 3 días de más alfa llevan su número
+    const xs=dias?pun.filter((x,i)=>x.tipo!=='inicio' && (i===pun.length-1 || fechaTV(pun[i+1].t)!==fechaTV(x.t))).map(x=>({x,q:Porque.cartera(fechaTV(x.t))})).filter(z=>z.q):[];
+    const top=new Set([...xs].sort((a,b)=>Math.abs(b.q.alfa)-Math.abs(a.q.alfa)).slice(0,3).map(z=>z.x.t));
+    serie.setMarkers([...ref,...xs.map(z=>({time:z.x.t,position:z.q.alfa>=0?'aboveBar':'belowBar',color:z.q.alfa>=0?COL.pos:COL.neg,
+      shape:'circle',size:.6,text:top.has(z.x.t)?`${z.q.alfa>=0?'+':'−'}${Math.abs(z.q.alfa*1e4).toFixed(0)} pb`:''}))].sort((a,b)=>a.time-b.time));
   }
+  const fechaTV=t=>new Date(t*1000).toISOString().slice(0,10);      // los tiempos de TV son hora local como si fuera UTC
   /* Al cambiar de periodo siempre se reencuadra. Con datos nuevos del mismo periodo
      también, salvo que el usuario esté explorando con zoom o arrastre. */
   function encuadre(R,clave){
@@ -4799,7 +4905,8 @@ const Charts=(()=>{
       if(nt) nt.innerHTML=`La gestión arranca el ${new Date(Store.get().cfg.startDate+'T12:00:00').toLocaleDateString('es-MX',{day:'numeric',month:'long'})}. Todavía no hay rendimientos reales que graficar: elija 1M, 3M, 6M o 1A para ver la simulación de la cartera objetivo.`;
       return; }
     const R=TV.crear('chMain'); if(!R) return;
-    const firma=[period,s.length,s[0].t,s.at(-1).t,s.at(-1).pv.toFixed(2),s.at(-1).bv.toFixed(6),JSON.stringify(Sobregiro.tramos())].join('|');
+    const firma=[period,s.length,s[0].t,s.at(-1).t,s.at(-1).pv.toFixed(2),s.at(-1).bv.toFixed(6),JSON.stringify(Sobregiro.tramos()),
+      AtrV.datos()?.fechas?.length||0,Ctx.D.listo,(Store.get().noticias||[]).length].join('|');
     if(R.firma===firma) return; R.firma=firma;
     const {pun,hay,idx,tramo}=puntos(s);
     TV.banda(R,pun.map(x=>({time:x.t})));          // v6.6: banda «Sobregiro» detrás de las líneas
@@ -4811,15 +4918,16 @@ const Charts=(()=>{
       lineWidth:2,priceFormat:TV.FMT.pct,priceLineColor:'rgba(212,237,252,.45)',priceLineStyle:2});
     simP.setData(hay?tramo(0,idx+1,'vp'):[]); simB.setData(hay?tramo(0,idx+1,'vb'):[]);
     p.setData(tramo(idx,pun.length,'vp')); b.setData(tramo(idx,pun.length,'vb'));
-    marcadores(R,p,pun,idx,hay);
+    marcadores(R,p,pun,idx,hay,true);
     encuadre(R,period);
     const ult=pun.at(-1), porT=new Map(pun.map(x=>[x.t,x]));
     R.leyenda=prm=>{
-      const x=(prm && porT.get(prm.time)) || ult, act=x.vp-x.vb;
+      const x=(prm && porT.get(prm.time)) || ult, act=x.vp-x.vb, q=prm?Porque.cartera(fechaTV(x.t)):null;
       R.ley.innerHTML=`<span class="f">${prm?TV.cruz(x.t):'Último · '+TV.cruz(ult.t)}${x.sim?'<span class="tag">SIMULADO</span>':''}</span>`+
         TV.it(COL.port,'Portafolio',TV.fPct(x.vp),cls(x.vp))+
         TV.it(COL.bmk,'MEXTRAC 09',TV.fPct(x.vb),cls(x.vb),'guion')+
-        TV.it(act>=0?COL.pos:COL.neg,'Diferencia',TV.fPp(act),cls(act),'barra');
+        TV.it(act>=0?COL.pos:COL.neg,'Diferencia',TV.fPp(act),cls(act),'barra')+
+        (q?`<span class="porque">${esc(q.txt)}</span>`:'');       // v6.7: por qué subió o bajó ese día
     };
     R.leyenda(null);
     avisoPeriodo('mainNota',period,hay);
@@ -4899,7 +5007,7 @@ const Charts=(()=>{
   function cum(period){
     const sl=Calc.recorte(period||'ITD'); if(sl.length<2) return;
     const {pun,hay,idx,tramo}=puntos(sl);
-    const firma=[period,sl.length,sl[0].t,sl.at(-1).t,sl.at(-1).pv.toFixed(2),JSON.stringify(Sobregiro.tramos())].join('|');
+    const firma=[period,sl.length,sl[0].t,sl.at(-1).t,sl.at(-1).pv.toFixed(2),JSON.stringify(Sobregiro.tramos()),AtrV.datos()?.fechas?.length||0,Ctx.D.listo].join('|');
     const ult=pun.at(-1), porT=new Map(pun.map(x=>[x.t,x]));
     // ── rendimiento acumulado, con el retorno activo como línea base sobre cero ──
     const R=TV.crear('chCum');
@@ -4924,7 +5032,7 @@ const Charts=(()=>{
       simP.setData(hay?tramo(0,idx+1,'vp'):[]); simB.setData(hay?tramo(0,idx+1,'vb'):[]);
       aS.setData(hay?tramo(0,idx+1,'va'):[]);
       p.setData(tramo(idx,pun.length,'vp')); b.setData(tramo(idx,pun.length,'vb')); a.setData(tramo(idx,pun.length,'va'));
-      marcadores(R,p,pun,idx,hay);
+      marcadores(R,p,pun,idx,hay,true);
       encuadre(R,period);
       R.leyenda=prm=>{ const x=(prm&&porT.get(prm.time))||ult;
         R.ley.innerHTML=`<span class="f">${prm?TV.cruz(x.t):'Último · '+TV.cruz(ult.t)}${x.sim?'<span class="tag">SIMULADO</span>':''}</span>`+
@@ -4938,6 +5046,7 @@ const Charts=(()=>{
     const R2=TV.crear('chPv');
     if(R2 && R2.firma!==firma){
       R2.firma=firma;
+      TV.banda(R2,pun.map(x=>({time:x.t})));       // v6.7: banda «Sobregiro» y hueco a la izquierda
       const simV=TV.serie(R2,'simV','linea',{color:COL.portSim,lineWidth:2,lineStyle:1,lastValueVisible:false,
         priceLineVisible:false,crosshairMarkerVisible:false,priceFormat:TV.FMT.mx});
       const v=TV.serie(R2,'v','area',{lineColor:COL.port,topColor:'rgba(212,237,252,.22)',bottomColor:'rgba(212,237,252,0)',
@@ -6055,6 +6164,7 @@ const UI=(()=>{
       <div class="ficha-b">
         ${reco}
         ${sec('Posición en el fondo',comp())}
+        ${sec('Velas diarias · últimos seis meses',`<div style="height:300px;position:relative"><div id="fichaVelas" style="height:100%"></div></div><div id="fichaPorQue"></div>`)}
         ${vacio?`<div class="ficha-vacia">Todavía no hay ficha cargada para esta emisora.<br>
           Se arma sola en cuanto aparezca el bloque <b>=== ${s} ===</b> en el archivo de fichas.</div>`:''}
         ${sec('Perfil de la compañía',f.descripcion?`<p>${esc(f.descripcion)}</p>`:'')}
@@ -6071,6 +6181,7 @@ const UI=(()=>{
       </div></div>`;
     const ovl=document.createElement('div'); ovl.className='ovl'; ovl.innerHTML=html;
     document.body.appendChild(ovl);
+    setTimeout(()=>{ try{ Velas.dibujar(s); }catch(e){ console.warn('Velas',e); } },30);   // v6.7 (rAF no corre con la pestaña oculta)
     /* Escritorio: se materializa con transiciones de clase, que al interrumpirse
        regresan desde donde van. Celular: hoja inferior que se arrastra con el dedo. */
     const panel=ovl.querySelector('.ficha');
@@ -6344,6 +6455,40 @@ const UI=(()=>{
       </div>`;
   }
 
+  /* v6.7 · Resumen: exposición por moneda (sum of parts con el MEXTRAC abierto), macro que mueve la cartera y calendario. */
+  function rCtx(){
+    const D=Ctx.D, MON=['MXN','USD','BRL','COP','ARS','PEN','CLP','EUR','Otras','Sin dato'];
+    const pdf=$('#btnPdf'); if(!pdf.ausente && !/^https?:$/.test(location.protocol)) pdf.href=Ctx.RAW+'reporte_semanal.pdf';
+    if(!D.listo){ ['#monedaTabla','#macroTabla','#calLista'].forEach(k=>{ const e=$(k); if(!e.ausente) e.innerHTML='<div class="insuf">Cargando…</div>'; }); return; }
+    const lt=Portfolio.lookThroughWeights(), bw=Bmk.weights(), held=new Set(Portfolio.positions().map(p=>p.sym));
+    const expo=w=>{ const e=Object.fromEntries(MON.map(m=>[m,0]));
+      Object.entries(w).forEach(([s,x])=>{ if(s==='__cash' || s==='MEXTRAC' || !(x>0)) return; const m=D.sotp[s]?.m||{}; let cub=0;
+        Object.entries(m).forEach(([k,v])=>{ if(k in e){ e[k]+=x*v; cub+=v; } }); e['Sin dato']+=x*Math.max(0,1-cub); }); return e; };
+    const ec=expo(lt), eb=expo(bw), mx=Math.max(1,...MON.map(m=>Math.max(ec[m],eb[m])));
+    $('#monedaTabla').innerHTML=`<div class="mon-fila t"><span class="k"></span><span class="mv" style="font-size:10.5px;color:var(--txt-3)">azul: cartera · claro: MEXTRAC09</span><span class="d" style="font-size:10.5px;color:var(--txt-3)">pp</span></div>`+
+      MON.filter(m=>ec[m]>=0.05 || eb[m]>=0.05).map(m=>`<div class="mon-fila"><span class="k">${m}</span><span class="mon-barras">
+        <i class="c" style="width:${ec[m]/mx*100}%" title="Cartera ${pct(ec[m])}"></i><i class="b" style="width:${eb[m]/mx*100}%" title="MEXTRAC09 ${pct(eb[m])}"></i></span>
+        <span class="d ${cls(ec[m]-eb[m])}">${pctS(ec[m]-eb[m]).replace('%','')}</span></div>`).join('');
+    const fuera=[...held].filter(s=>s!=='MEXTRAC' && D.sotp[s]).map(s=>({s,m:Object.entries(D.sotp[s].m).filter(([k])=>k!=='MXN').sort((a,b)=>b[1]-a[1])}))
+      .map(x=>({...x,t:x.m.reduce((a,z)=>a+z[1],0)})).filter(x=>x.t>=0.1).sort((a,b)=>b.t-a.t);
+    const falta=[...held].filter(s=>s!=='MEXTRAC' && !D.sotp[s]);
+    $('#monedaNota').innerHTML=`Fuera del peso: cartera ${pct(MON.slice(1,9).reduce((a,m)=>a+ec[m],0))} contra ${pct(MON.slice(1,9).reduce((a,m)=>a+eb[m],0))} del MEXTRAC09. `+
+      (fuera.length?'Con más negocio fuera de México: '+fuera.slice(0,4).map(x=>`<b>${x.s}</b> ${pct(x.t*100,0)} (${x.m.slice(0,3).map(([k,v])=>k+' '+pct(v*100,0)).join(', ')})`).join(' · ')+'. ':'')+
+      (falta.length?`<span class="wrn">Falta capturar el EBITDA por moneda de ${falta.join(', ')} (hoja SOTP del tracker).</span> `:'')+
+      'Fuente: captura del último reporte o, si no hay, ingresos por región de LSEG.';
+    const ref=Store.get().cfg.refDate, porMon=m=>[...held].filter(s=>(D.sotp[s]?.m||{})[m]>=0.1);
+    const filas=Object.entries(D.macro).map(([k,x])=>{ const s=x.s, u=s.at(-1), a=s.at(-2), r0=[...s].reverse().find(z=>z.f<=ref);
+      const yld=/^(UST10|MBONO10)$/.test(k), ch=(v0)=>v0?(yld?`${u.v-v0.v>=0?'+':'−'}${Math.abs((u.v-v0.v)*100).toFixed(0)} pb`:pctS((u.v/v0.v-1)*100)):'—';
+      const mueve=[...new Set([...(x.moneda?porMon(x.moneda):[]),...x.mueve.filter(e=>held.has(e))])];
+      return `<tr><td>${esc(x.nombre)}${mueve.length?`<div class="mv">mueve a ${mueve.join(', ')}</div>`:''}</td><td class="n">${u.v>=1000?ints(Math.round(u.v)):num(u.v,u.v<10?4:2)}</td>
+        <td class="n ${cls(yld?u.v-(a?.v??u.v):u.v/(a?.v||u.v)-1)}">${ch(a)}</td><td class="n ${cls(yld?u.v-(r0?.v??u.v):u.v/(r0?.v||u.v)-1)}">${ch(r0)}</td></tr>`; });
+    $('#macroTabla').innerHTML=filas.length?`<table class="mac"><colgroup><col><col style="width:62px"><col style="width:56px"><col style="width:64px"></colgroup><tr><th></th><th style="text-align:right">Último</th><th style="text-align:right">Día</th><th style="text-align:right">Desde el día 0</th></tr>${filas.join('')}</table>`
+      :'<div class="insuf">Sin datos macro (macro.csv del vigilante).</div>';
+    const ult=Object.values(D.macro)[0]?.s.at(-1)?.f; $('#macroHint').textContent=ult?`cierre del ${fdate(ult)} · divisas en pesos`:'';
+    const hoy=Habil.hoy(), ev=D.cal.filter(e=>e.fecha>=hoy).slice(0,10);
+    $('#calLista').innerHTML=ev.length?ev.map(e=>`<div class="cal-it"><span class="f">${fdate(e.fecha).slice(0,5)}</span><span><b>${esc(e.claves.join(' · '))}</b> · ${esc(e.tipo)}
+      <div class="t">${esc(e.titulo)}</div></span></div>`).join(''):'<div class="insuf">Sin eventos próximos en calendario.csv.</div>';
+  }
   /* v6.6 · Nota corta del incidente de caja (compra del 16-oct no capturada). Aparece mientras rendimientos.csv traiga
      algún cierre con caja negativa; la liga abre la bitácora con las ventas de corrección. */
   function rIncidente(){
@@ -6396,8 +6541,11 @@ const UI=(()=>{
       kpi('k-rp',`<span class="${cls(rp)}">${pctS(rp)}</span>`,R?`desde el cierre del ${fdate(R.dia)} · referencia`
         :`provisional · desde la asignación del ${fdate(S.cfg.startDate)}`);
       kpi('k-rb',`<span class="${cls(rb)}">${pctS(rb)}</span>`,R?'mismo periodo':'desde la asignación');
-      kpi('k-ra',`<span class="${cls(ra)}">${pctS(ra)}</span>`,Math.abs(ra)<0.005?'<span class="neu">En línea con el índice</span>'
-        :ra>0?'<span class="pos">Por encima del índice</span>':'<span class="neg">Por debajo del índice</span>');
+      const pen=(S.cfg.penalizacionPb||0)/100;             // v6.7: en %, se resta al final
+      kpi('k-ra',`<span class="${cls(ra)}">${pctS(ra)}</span>`,(Math.abs(ra)<0.005?'<span class="neu">En línea con el índice</span>'
+        :ra>0?'<span class="pos">Por encima del índice</span>':'<span class="neg">Por debajo del índice</span>')+
+        (pen?` · <span class="${cls(ra-pen)}">con la penalización de ${S.cfg.penalizacionPb} pb: ${pctS(ra-pen)}</span>`:''));
+      if(pen) $('#k-rpd').innerHTML+=` · <span class="${cls(rp-pen)}">final con penalización: ${pctS(rp-pen)}</span>`;
     }
     const cp=pv?Portfolio.cash()/pv*100:0, PL=Portfolio.porLiquidar();
     kpi('k-cash',money(Portfolio.cash()),antes?`<span class="neu">${pct(cp)} · antes de la asignación</span>`
@@ -6418,7 +6566,7 @@ const UI=(()=>{
       [sp.cash<0?'Sobregiro (caja negativa)':'Efectivo',sp.cash,sp.cashPct,`${POLICY.cashMin} a ${POLICY.cashMax}%`]]
       .map(([k,v,p,r])=>`<div class="metric-row"><span class="k">${k}<br><span style="font-size:9.5px;color:var(--txt-3)">política ${r}</span></span>
         <span class="v">${moneyK(v)} <span class="chip ${v<0?'n':'b'}">${pct(p)}</span></span></div>`).join('');
-    rIncidente();
+    rIncidente(); rCtx();
     const r=Risk.compute();
     $('#riskObs').textContent=r.ok?`${r.n} observaciones ${ADJ[r.freq]||''} · ${r.source==='hist'?'histórico':'sesión'} · pase el cursor para ver el cálculo`:`${r.n} de ${MIN_OBS} observaciones`;
     $('#dashRisk').innerHTML=r.ok?[['sd','Desviación estándar anualizada',pct(r.sdA)],['te','Error de seguimiento (tracking error)',pct(r.te)],
@@ -6980,7 +7128,7 @@ WALMEX,46.05,45.49,2026-09-14T18:51:21+00:00</pre>
       <div class="cuerpo"><h4>${tit}</h4>
         ${n.resumen&&!compacta?`<p>${esc(n.resumen)}</p>`:''}
         <div class="pie">
-          ${s?`<span class="chip b">${s}</span>`:'<span class="chip">MERCADO</span>'}
+          ${s?`<span class="chip b">${s}</span>`:n.sym&&n.sym!=='MERCADO'?`<span class="chip w">${esc(n.sym)}</span>`:'<span class="chip">MERCADO</span>'}
           ${n.impacto?`<span class="chip ${n.impacto==='alto'?'w':''}">impacto ${esc(n.impacto)}</span>`:''}
           <span>${n.hora||''}</span>${n.fuente?`<span>· ${esc(n.fuente)}</span>`:''}${ind}
         </div></div></article>`;
@@ -8637,6 +8785,7 @@ function seedFromModel(S){
   try{ if(typeof Fluido!=='undefined') Fluido.iniciar(); }catch(e){ console.warn('Fluido',e); }
   UI.cintaControles();
   try{ AtrV.iniciar(); }catch(e){ console.warn('Atribución',e); }
+  Ctx.cargar().catch(e=>console.warn('Contexto',e));     // v6.7: velas, macro, SOTP y calendario
   try{ Lector.iniciar(); }catch(e){ console.warn('Lector de noticias',e); }
   Portfolio.snapshot();
   try{ UI.render(); }
