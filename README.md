@@ -1,6 +1,6 @@
 # North Star Strategies · Fondo de Inversión ITESM-BBVA
 
-**Actualizado:** 28/10/2026 17:57 (hora CDMX) · precios **LSEG Refinitiv** · benchmark **MEXTRAC09** (etf)
+**Actualizado:** 28/10/2026 18:04 (hora CDMX) · precios **LSEG Refinitiv** · benchmark **MEXTRAC09** (etf)
 
 
 | | Último cierre (28/10) | Acumulado |
@@ -38,7 +38,7 @@ Valor del portafolio **$10,388,786.99** · día 8 desde el portafolio de referen
 
 Sumaron: BOLSAA +7.1 pb · GMEXICOB +6.2 pb · BIMBOA +6.1 pb · Restaron: MEGACPO -3.8 pb · PINFRA -2.9 pb · PEOLES -2.4 pb
 
-Réplica en Python contra el tracker: diferencia máxima 1.7e-14 (2026-10-28T17:57).
+Réplica en Python contra el tracker: diferencia máxima 1.7e-14 (2026-10-28T18:04).
 
 ## Posiciones · movimiento de hoy
 
