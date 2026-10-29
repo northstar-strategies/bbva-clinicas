@@ -145,6 +145,39 @@ resumen:
   turistas provenientes de Estados Unidos, principal mercado emisor.
 
 ---
+fecha: 2026-10-28 18:01
+emisora: PETROLEO
+titulo: EU energy ministers to discuss soaring fuel prices as winter looms
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261029:nL5N46E2J9:1
+resumen:
+  EU enters winter with gas storage 75% full versus 83% a year earlier European gas
+  prices briefly touch €100/MWh for first time since December 2022 Commission starts
+  dialogue with oil refineries to boost production By Julia Payne BRUSSELS, Oct 29
+  (Reuters) - EU energy ministers will meet on Thursday to discuss energy security ahead
+  of the winter heating season as the wars in Iran, Ukraine and Yemen send oil and
+  natural gas prices soaring.
+
+---
+fecha: 2026-10-28 18:00
+emisora: FED
+titulo: DIARY-Emerging Markets Economic Events to December 30
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261029:nL3N46E1VD:1
+resumen:
+  Oct 29 (Reuters) - For other diaries, please see: Top Economic Events M/DIARY Emerging
+  Markets Economic Events EMRG/DIARY Government Debt Auctions D/DIARY Political and
+  General News POL/DIARY US Federal Reserve FED/DIARY Today in Washington WASH/DIARY
+  ---------------------------------------------------------------- This diary is filed
+  daily. ** Indicates new events
+  ---------------------------------------------------------------- THURSDAY, OCTOBER 29
+  TASHKENT - Uzbekistan's central bank makes key rate decision…
+
+---
 fecha: 2026-10-28 17:58
 emisora: PETROLEO
 titulo: Reports Outline Biological Factors Study Results from Guangxi Academy of Agricultural Sciences (Preparation, Characterization, and Inhibitory Activ...
@@ -152,6 +185,29 @@ fuente: DRUWEE
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hvtti:0
+resumen:
+  Reports Outline Biological Factors Study Results from Guangxi Academy of Agricultural
+  Sciences (Preparation, Characterization, and Inhibitory Activity of Bacillus velezensis
+  Crude Protein-based Composite Film Against the Fungal Pathogen of ...) 2026 OCT 28-- By
+  a News Reporter-Staff News Editor at NewsRx Drug Daily-- Research findings on
+  biological factors are discussed in a new report.
+
+---
+fecha: 2026-10-28 17:58
+emisora: BRASIL
+titulo: AP Top Headlines at 7:54 p.m. EDT
+fuente: ASSOPR
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261028:nNRA2hf6n0:204
+resumen:
+  President Donald Trump is calling for the criminal prosecution of the Democratic
+  candidate running for Senate in Alaska after revelations that her campaign appeared to
+  be involved in recruiting a candidate with the same name as Republican incumbent Dan
+  Sullivan President Donald Trump is continuing his whirlwind rally tour, attempting to
+  keep Republicans in control of Congress after next week's midterm elections A
+  high-speed train has collided with another train in Spain, killing at least 68 people
+  and injuring…
 
 ---
 fecha: 2026-10-28 17:57
@@ -170,6 +226,10 @@ fuente: Reuters
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:reuters.com:20261028:nL2N46E1Q1:1
+resumen:
+  Oct 29 (Reuters) - Google parent Alphabet's results could spark a rocky ride for Asian
+  markets after a subdued offshore session on Wednesday, with the Federal Reserve holding
+  interest rates steady as widely expected.
 
 ---
 fecha: 2026-10-28 17:54
@@ -197,6 +257,51 @@ fuente: X
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:social:20261028:nTWT99K4C2:1
+resumen:
+  There was more stress in the financial markets in the week ending Oct. 23 than in the
+  previous week. The St.
+
+---
+fecha: 2026-10-28 17:51
+emisora: GAPB
+titulo: Grupo Aeroportuario del Pacifico S.A.B. de CV (NYSE:PAC) outpaces Bouygues SA in monthly return
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261028:nNRA2hvsp5:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Grupo Aeroportuario del Pacifico S.A.B. de
+  CV's (NYSE:PAC) ADR price is continuing to outperform that of Bouygues SA (OTC:BOUYY).
+  Grupo Aeroportuario del Pacifico S.A.B. de CV's return over the past 3 months has been
+  3.6% and Bouygues SA's return has been -14.9% over the same period.
+
+---
+fecha: 2026-10-28 17:51
+emisora: GFNORTEO
+titulo: Grupo Financiero Banorte, S.A.B. De C.V. (OTCQX:GBOOY) continues to outperform HSBC Holdings Plc
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261028:nNRA2hvrl5:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Grupo Financiero Banorte, S.A.B. De C.V.'s
+  (OTCQX:GBOOY) ADR price is continuing to outperform that of HSBC Holdings Plc
+  (NYSE:HSBC). Grupo Financiero Banorte, S.A.B.
+
+---
+fecha: 2026-10-28 17:51
+emisora: WALMEX
+titulo: Wal-Mart De Mexico S.A.B. de C.V. (OTCQX:WMMVY) outpaces Compagnie Financiere Richemont AG in monthly return
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261028:nNRA2hvs0e:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Wal-Mart De Mexico S.A.B. de C.V.'s
+  (OTCQX:WMMVY) ADR price is continuing to outperform that of Compagnie Financiere
+  Richemont AG (OTC:CFRUY). Wal-Mart De Mexico S.A.B. de C.V.'s return over the past 3
+  months has been -5.9% and Compagnie Financiere Richemont AG's return has been -16.4%
+  over the same period.
 
 ---
 fecha: 2026-10-28 17:48
@@ -242,6 +347,10 @@ fuente: X
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:social:20261028:nTWTc4Fw3m:1
+resumen:
+  🇧🇷 Itaú Unibanco, Brazil's largest bank, is the first bank approved as a crypto
+  provider under new digital asset rules, giving its 98.5 million customers trading and
+  custody.
 
 ---
 fecha: 2026-10-28 17:39
@@ -381,6 +490,10 @@ fuente: CNBSTR
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hvnz1:0
+resumen:
+  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Wal - Mart De Mexico, S.A.B. De
+  C.V. (BMV:WALMEX MX$48.42), Mexico's largest Retailer/Wholesaler company by market cap,
+  has dipped MX$1.10 (or 2.2%) in the past week to close at MX$48.42.
 
 ---
 fecha: 2026-10-28 17:28
@@ -390,6 +503,11 @@ fuente: CNBSTR
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hvnyz:0
+resumen:
+  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Kimberly - Clark De Mexico
+  S.A.B. De C.V. (BMV:KIMBERA MX$37.75), Mexico's largest Forest products & paper company
+  by market cap, has ticked up 48 Centavo (or 1.3%) in the past week to close at
+  MX$37.75.
 
 ---
 fecha: 2026-10-28 17:28
@@ -399,6 +517,40 @@ fuente: CNBSTR
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hvmin:0
+resumen:
+  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Grupo Financiero Inbursa,
+  S.A.B. De C.V. (BMV:GFINBUR MX$44.66), Mexico's largest Investing/Securities company by
+  market cap, has slipped MX$1.19 (or 2.6%) in the past week to close at MX$44.66.
+
+---
+fecha: 2026-10-28 17:28
+emisora: PEOLES
+titulo: Past Week: Industrias Penoles SAB de CV (BMV:PE&OLES*) in bottom 1% performers of Mexican market in past week; -MX$97.98 [-11.1%]
+fuente: CNBSTR
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261028:nNRA2hvnj9:0
+resumen:
+  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Industrias Penoles SAB de CV
+  (BMV:PE&OLES* MX$786.19), Mexico's 2nd largest Mining company by market cap, has sold
+  off MX$97.98 (or 11.1%) in the past week to close at MX$786.19. This makes it the
+  lowest performer in the Mexican market. Compared with the Prices & Quotations Index of
+  34 stocks which fell 1,067.2 points (or 1.5%) in the week, a relative price change of
+  -9.6%.
+
+---
+fecha: 2026-10-28 17:28
+emisora: PINFRA
+titulo: Past Week: Promotora Y Operadora De Infraestructura, S.A.B. De C.V. (BMV:PINFRA) shares post worst week in six weeks; -MX$5.94 [-1.9%]
+fuente: CNBSTR
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261028:nNRA2hvmil:0
+resumen:
+  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Promotora Y Operadora De
+  Infraestructura, S.A.B. De C.V. (BMV:PINFRA MX$300.26), Mexico's 3rd largest
+  Engineering & construction company by market cap, has ticked lower by MX$5.94 (or 1.9%)
+  in the past week to close at MX$300.26.
 
 ---
 fecha: 2026-10-28 17:23
@@ -493,6 +645,12 @@ fuente: HTAUTP
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hvlkt:0
+resumen:
+  India India, Oct. 29 -- Defeated Brazilian presidential candidate Flavio Bolsonaro and
+  his family arrived in Miami on Wednesday after he refused to concede the election to
+  President Luiz Inacio Lula da Silva and fled the country. In a circuitous journey,
+  Bolsonaro left for Argentina on Tuesday with his wife and two daughters, then travelled
+  to Ecuador, according to Argentina officials and flight data.
 
 ---
 fecha: 2026-10-28 17:17
@@ -624,6 +782,13 @@ fuente: GLOSTK
 tono: negativa
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hvi5i:0
+resumen:
+  MEXICAN STOCK REPORT To mitigate risks in their investments including bankruptcy,
+  insolvency, low levels of liquidity and inflated earnings, investors look at several
+  key metrics and scores to assess each company. Below we include some of the analysis
+  used to mitigate such risks. Solvency of Wal-Mart de Mexico Debt to Equity Ratio of
+  Wal-Mart de Mexico for the half year-ended 30 June 2025 is 0.39; an improvement from
+  0.42 in the year-earlier period.
 
 ---
 fecha: 2026-10-28 17:17
@@ -633,6 +798,11 @@ fuente: GLOSTK
 tono: negativa
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hviuy:0
+resumen:
+  MEXICAN STOCK REPORT To mitigate risks in their investments including bankruptcy,
+  insolvency, low levels of liquidity and inflated earnings, investors look at several
+  key metrics and scores to assess each company. Below we include some of the analysis
+  used to mitigate such risks.
 
 ---
 fecha: 2026-10-28 17:17
@@ -642,6 +812,11 @@ fuente: GLOSTK
 tono: negativa
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hvj7m:0
+resumen:
+  MEXICAN STOCK REPORT To mitigate risks in their investments including bankruptcy,
+  insolvency, low levels of liquidity and inflated earnings, investors look at several
+  key metrics and scores to assess each company. Below we include some of the analysis
+  used to mitigate such risks.
 
 ---
 fecha: 2026-10-28 17:17
@@ -651,6 +826,11 @@ fuente: GLOSTK
 tono: negativa
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hvj7o:0
+resumen:
+  MEXICAN STOCK REPORT To mitigate risks in their investments including bankruptcy,
+  insolvency, low levels of liquidity and inflated earnings, investors look at several
+  key metrics and scores to assess each company. Below we include some of the analysis
+  used to mitigate such risks.
 
 ---
 fecha: 2026-10-28 17:13
@@ -675,6 +855,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hvet5:0
+resumen:
+  The Federal Reserve of the United States (Fed) kept the benchmark interest rates
+  unchanged on Wednesday, in a decision that was not unanimous, maintaining the range at
+  3.75% to 4% annually, amidst higher inflation and the possibility of another increase
+  in December . Experts detail how this could impact Argentina, where the country risk
+  and financing costs are expected to remain high.
 
 ---
 fecha: 2026-10-28 17:10
@@ -841,6 +1027,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261028:nL2N46E0QL:10
+resumen:
+  Changes headline, adds election recognition in paragraph 5, comment from electoral
+  authority chief in paragraph 6 Bolsonaro loses to Lula by around 4.5 million votes
+  Bolsonaro defied a Supreme Court order to surrender his passports Analysts say
+  Bolsonaro's request to annul election result faces little chance of success By Fernando
+  Cardoso and Luciana Magalhaes SAO PAULO, Oct 28 (Reuters) - Senator Flavio Bolsonaro
+  declared himself Brazil's rightful leader on Wednesday after arriving in the United
+  States, alleging…
 
 ---
 fecha: 2026-10-28 16:26
@@ -905,6 +1099,13 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261028:nL6N46E1FO:1
+resumen:
+  Agrega cita BUENOS AIRES, 28 oct (Reuters) - Argentina adjudicó títulos del Tesoro por
+  un valor efectivo de 11,56 billones de pesos (unos 7.497 millones de dólares) en una
+  licitación doméstica de varios instrumentos para refinanciar vencimientos, informó el
+  miércoles la Secretaría de Finanzas. La licitación, por la que se recibió un total de
+  ofertas por 25,79 billones de pesos, abarcó una renovación ('rollover') del 107% de los
+  vencimientos previstos.
 
 ---
 fecha: 2026-10-28 16:13
@@ -914,6 +1115,11 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261028:nNRA2huyh2:0
+resumen:
+  A survey by Banco Provincia on over 320,000 private sector salary accounts concluded
+  that 36% of workers run out of their monthly salary by the 10th of the month . The
+  provincial financial institution noted that income "runs out faster" due to fixed
+  expenses and credit card payments, in a context of widespread declining consumption.
 
 ---
 fecha: 2026-10-28 16:13
@@ -923,6 +1129,12 @@ fuente: NOTENG
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hux86:0
+resumen:
+  For much of the year, the evolution of the Brazilian real helped cushion Argentina's
+  loss of exchange rate competitiveness . However, after Luiz Inácio Lula da Silva
+  surprised everyone at the polls on Sunday and won the elections in Brazil, the currency
+  of the neighboring country depreciated by nearly 8% within the week, putting pressure
+  back on the Argentine real exchange rate.
 
 ---
 fecha: 2026-10-28 16:12
@@ -948,6 +1160,9 @@ fuente: NOTENG
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261028:nNRA2huydi:0
+resumen:
+  The Senate has authorized President Claudia Sheinbaum Pardo to permit the entry of 28
+  members of the U.S. Navy SEALs Team 4 to Mexico for training during Event No.
 
 ---
 fecha: 2026-10-28 16:11
@@ -975,6 +1190,10 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261028:nNRA2huxl0:0
+resumen:
+  In fast track and without debate, the full Senate approved the request made by
+  President Claudia Sheinbaum to allow the entry of 28 armed personnel from Team 4 of the
+  Navy SEALs into national territory.
 
 ---
 fecha: 2026-10-28 15:51
@@ -984,6 +1203,25 @@ fuente: GLORDP
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hunp3:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Wal-Mart De Mexico S.A.B. de C.V.'s
+  (OTCQX:WMMVY) ADR price is continuing to outperform that of Compagnie Financiere
+  Richemont AG (OTC:CFRUY). Wal-Mart De Mexico S.A.B. de C.V.'s return over the past 3
+  months has been -5.9% and Compagnie Financiere Richemont AG's return has been -16.4%
+  over the same period.
+
+---
+fecha: 2026-10-28 15:51
+emisora: GFNORTEO
+titulo: ADR Recap: Grupo Financiero Banorte, S.A.B. De C.V. (OTCQX:GBOOY) continues to outperform HSBC Holdings Plc by 18.3% in the past three months *Upda...
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261028:nNRA2hup7j:0
+resumen:
+  ADR Recap: Grupo Financiero Banorte, S.A.B. De C.V. (OTCQX:GBOOY) continues to
+  outperform HSBC Holdings Plc by 18.3% in the past three months *Updated* GLOBAL ROUND
+  UP ADRS AND DEPOSITORY RECEIPTS Grupo Financiero Banorte, S.A.B.
 
 ---
 fecha: 2026-10-28 15:37
@@ -993,6 +1231,11 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261028:nL2N46E1MA:2
+resumen:
+  Adds further context, detail MEXICO CITY, Oct 28 (Reuters) - Mexican Economy Minister
+  Marcelo Ebrard criticized US trade restrictions on Mexican farm exports on Wednesday,
+  saying duties on products such as tomatoes and strawberries hurt consumers, fail to
+  protect US growers and risk triggering a broader agricultural trade fight.
 
 ---
 fecha: 2026-10-28 15:29
@@ -1015,6 +1258,11 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261028:nS0N44A02L:1
+resumen:
+  MEXICO CITY, Oct 28 (Reuters) - Mexican Economy Minister Marcelo Ebrard criticized US
+  trade restrictions on Mexican farm exports on Wednesday, saying duties on products such
+  as tomatoes and strawberries hurt consumers, fail to protect US growers and risk
+  triggering a broader agricultural trade fight.
 
 ---
 fecha: 2026-10-28 15:09
@@ -1042,6 +1290,12 @@ fuente: CENAFT
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hty7i:0
+resumen:
+  The Mexican Stock Exchange (BMV) starts the day in negative territory, while Wall
+  Street indices trade mixed, influenced by expectations that the Federal Reserve (Fed)
+  will keep its interest rate unchanged. The Price and Quotations Index (IPC) begins this
+  Wednesday with a 0.52% drop, reaching 69,346.03 points (Mexico City, 8:12 AM),
+  according to data from the exchange itself.
 
 ---
 fecha: 2026-10-28 14:24
@@ -1051,6 +1305,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261028:nL2N46E0YE:1
+resumen:
+  Actualiza valores al cierre Por Froilan Romero SANTIAGO, 28 oct (Reuters) - Las
+  principales monedas de América Latina registraron leves variaciones el miércoles,
+  después de que la Reserva Federal de Estados Unidos mantuviera sin cambios las tasas de
+  interés. * Tal como esperaba el mercado, la Fed optó por aplazar cualquier modificación
+  de los costos de endeudamiento hasta después de las elecciones legislativas de Estados
+  Unidos de la próxima semana y de que disponga de más datos sobre la evolución de la
+  inflación.…
 
 ---
 fecha: 2026-10-28 13:42
@@ -1060,6 +1322,11 @@ fuente: DAILYQ
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261028:nNRA2htaqq:0
+resumen:
+  Oct 27, 2026 (Get Free Report) Corporacion Inmobiliaria Vesta, S.A.B. de C.V. Sponsored
+  ADR (NYSE:VTMX - Get Free Report) shares hit a new 52-week high during trading on
+  Monday. The company traded as high as $37.56 and last traded at $37.4530, with a volume
+  of 72,566 shares traded.
 
 ---
 fecha: 2026-10-28 13:42
@@ -1069,6 +1336,13 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261028:nL6N46E19C:5
+resumen:
+  Wal-Mart de México declines after results Brazilian stocks, real under pressure again
+  Chile holds interest rates at 4.5%, as expected Updates with afternoon trading By
+  Sudeshna Ghoshal Oct 28 (Reuters) - Most Latin American currencies slipped on Wednesday
+  as traders parsed the US Federal Reserve's decision to hold rates steady, while
+  attention shifted to President Luiz Inacio Lula da Silva's choice for his cabinet in
+  Brazil.
 
 ---
 fecha: 2026-10-28 13:33
@@ -1109,6 +1383,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261028:nL2N46E1AK:1
+resumen:
+  Actualiza con datos BOGOTÁ, 28 oct (Reuters) - La Cámara de Representantes de Colombia
+  negó el miércoles cambios a un paquete de artículos específicos de una reforma
+  pensional que habían sido retornados al legislativo por la Corte Constitucional para
+  que corrigieran vicios de procedimiento. La Corte Constitucional aprobó en agosto la
+  mayor parte de la reforma al sistema de pensional de 2024.
 
 ---
 fecha: 2026-10-28 13:25
@@ -1118,6 +1398,13 @@ fuente: BNEINT
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261028:nNRA2ht5lj:0
+resumen:
+  Oct 28, 2026 EFE Brazilian President Luiz Inácio Lula da Silva has asked Peruvian
+  President Keiko Fujimori to deepen regional integration through a new development model
+  built around protecting the Amazon and its indigenous peoples,reported on October 27.
+  The exchange came shortly after Lula won re-election in Brazil's presidential runoff.
+  He took 52% of the vote against 48% for far-right senator Flávio Bolsonaro, a margin of
+  roughly 4.4mn votes.
 
 ---
 fecha: 2026-10-28 13:24
@@ -1127,6 +1414,12 @@ fuente: BNEINT
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261028:nNRA2ht3ji:0
+resumen:
+  Oct 28, 2026 Reuters Operations at Antamina, a copper mine in Peru, have been suspended
+  following an accident at its Yanacancha site in which a worker died, according to an
+  October 27 report by. The mine, whose co-owners are Mitsubishi Corp (TYO: 8058), Teck
+  (TSX: TECK.B), Glencore (LON: GLEN) and BHP (ASX: BHP), characterized the stoppage as a
+  precaution.
 
 ---
 fecha: 2026-10-28 13:24
@@ -1136,6 +1429,13 @@ fuente: BNEINT
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261028:nNRA2ht3s0:0
+resumen:
+  Oct 28, 2026 Chilean President José Antonio Kast has committed to attending the
+  inauguration of Luiz Inácio Lula da Silva, Chile's government said, even as Brazil's
+  defeated runoff candidate Flavio Bolsonaro sought to contest the result before fleeing
+  to the US on October 27. Government undersecretary-general Gonzalo Arenas, of the
+  Segegob, said Kast had given Lula his word that he would take part in the handover
+  ceremony.
 
 ---
 fecha: 2026-10-28 13:22
@@ -1145,6 +1445,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261028:nS0N43E013:1
+resumen:
+  BOGOTÁ, 28 oct (Reuters) - La Cámara de Representantes de Colombia negó el miércoles
+  cambios a un paquete de artículos específicos de una reforma pensional que habían sido
+  retornados al legislativo por la Corte Constitucional para que corrigieran vicios de
+  procedimiento. La Corte Constitucional aprobó en agosto la mayor parte de la reforma al
+  sistema de pensional de 2024.
 
 ---
 fecha: 2026-10-28 12:27
@@ -1199,6 +1505,11 @@ fuente: GLORDP
 tono: negativa
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hsdws:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Kimberly-Clark de
+  Mexico, S.A.B de C.V. ADR (OTC:KCDMY $10.02) fell 13.90c (1.4%) from its previous
+  trading session to close at $10.02. Compared with the BNY Mellon Composite ADR Index
+  which rose 1.7 points (0.7%) in the day, the relative price change was -2.0%.
 
 ---
 fecha: 2026-10-28 12:27
@@ -1208,6 +1519,27 @@ fuente: GLORDP
 tono: negativa
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hse4u:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Corporacion
+  Inmobiliaria Vesta, S.A.B. de C.V. ADR (NYSE:VTMX $37.31) lost 18.0c (0.5%) from its
+  previous trading session to close at $37.31. Compared with the BNY Mellon Composite ADR
+  Index which rose 1.7 points (0.7%) in the day, the relative price change was -1.1%.
+
+---
+fecha: 2026-10-28 12:27
+emisora: OMAB
+titulo: Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB) offers dividend yield of 5.5%; +7c [+0.1%]
+fuente: GLORDP
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261028:nNRA2hscyl:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB $99.06) ranks 18 in the Top 20 by
+  dividend yielding ADRs in the BNY Mellon Composite ADR Index of 152 stocks. Bearish
+  Turning Point Relative Strength Index (RSI) The Relative Strength Index (RSI) of 72.1
+  has penetrated the overbought line of 70, suggesting the price gain of 9.5% in the last
+  14 days is unusually high.
 
 ---
 fecha: 2026-10-28 12:13
@@ -1241,6 +1573,12 @@ fuente: GLORDP
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hq92x:0
+resumen:
+  NYSE STOCK REPORT Bottom line: Consumer Sentiment fell to 51.7 in August 2026, down 11%
+  year-over-year - with little bearing on a copper producer whose realizations are set in
+  global markets. Q2 2026 net income rose 71.6% to a record $1,670.0 million and net
+  sales 40.6% to $4,289.0 million, even as mined copper production fell 3.5%: price, not
+  volume, delivered the entire result.
 
 ---
 fecha: 2026-10-28 09:19
@@ -1259,6 +1597,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hppmw:0
+resumen:
+  The Governing Board of the Central Bank of Chile (BCCh) has maintained interest rates
+  at 4.5% for the seventh consecutive meeting, though it will remain vigilant for any
+  signs of greater transmission or persistence of inflation due to shocks and heightened
+  uncertainty, which is "greater than usual." "The risks for inflation have significantly
+  increased.
 
 ---
 fecha: 2026-10-28 09:12
@@ -1268,6 +1612,12 @@ fuente: NOTENG
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hpq5n:0
+resumen:
+  The reelection of Luiz Inácio Lula da Silva in Brazil opens a new landscape for
+  business between Chile and the largest economy in Latin America. Infrastructure,
+  energy, and mining are among the sectors that could provide opportunities for Chilean
+  companies over the next four years, alongside the continuity of the president's agenda
+  for reindustrialization and energy transition.
 
 ---
 fecha: 2026-10-28 08:51
@@ -1305,6 +1655,11 @@ fuente: GLORDP
 tono: negativa
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hpcfr:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
+  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
+  investors look at several key metrics and scores to assess each company. Below we
+  include some of the analysis used to mitigate such risks.
 
 ---
 fecha: 2026-10-28 08:51
@@ -1707,133 +2062,3 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hcetu:0
-
----
-fecha: 2026-10-27 18:12
-emisora: ARGENTINA
-titulo: IMF Provides New Support to Argentina: Agrees to Disbursement of US$ 900 Million
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261028:nNRA2hcdb6:0
-
----
-fecha: 2026-10-27 18:08
-emisora: COLOMBIA
-titulo: Colombian finished steel imports steady as exports weaken
-fuente: KALCOM
-tono: negativa
-impacto: bajo
-id: lseg:urn:link:webnews:20261028:nNRA2hcej6:0
-
----
-fecha: 2026-10-27 18:07
-emisora: GMEXICOB
-titulo: Southern Copper Corporation's (NYSE:SCCO $194.57) 3-Day Rise of 5.98% Fueled by High Volume: Bullish Parameters Update
-fuente: GLORDP
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261028:nNRA2hcas9:0
-resumen:
-  NYSE END-OF-DAY STOCK REPORT PHOENIX, Tuesday, Oct 27, 2026 - Southern Copper
-  Corporation's (NYSE:SCCO $194.57) stock price gained $8.56 (4.6%) from its previous
-  trading session to close at $194.57. Compared with the S&P 500 Index which rose 56.5
-  points (0.7%) in the day, the relative price increase was 3.9%. It posted the highest
-  rise in MCap $7.2 billion with the most influence on the Non ferrous metals sector.
-
----
-fecha: 2026-10-27 18:07
-emisora: MERCADO
-titulo: BBB Foods Inc. Class A's (NYSE:TBBB $57.39) dropped 1.71%: Risk Factors and Bearish Indicators Analysis
-fuente: NEWBTS
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261028:nNRA2hcc2w:0
-
----
-fecha: 2026-10-27 18:02
-emisora: WALMEX
-titulo: Wal-Mart de Mexico SAB de CV (OTCMKTS:WMMVY) Releases Quarterly Earnings Results
-fuente: TRADAJ
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261028:nNRA2hc74e:0
-resumen:
-  Oct 26, 2026 Wal-Mart de Mexico SAB de CV (OTCMKTS:WMMVY - Get Free Report) released
-  its quarterly earnings results on Tuesday. The company reported $0.37 earnings per
-  share for the quarter, missing analysts' consensus estimates of $0.42 by ($0.05), Zacks
-  reports. Wal-Mart de Mexico SAB de CV had a net margin of 4.90% and a return on equity
-  of 21.23%.
-
----
-fecha: 2026-10-27 17:52
-emisora: BOLSAA
-titulo: BMV Attributes Unusual Trading Volume to Market Conditions
-fuente: TIPRAN
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261027:nNRA2hc4ex:0
-resumen:
-  Bolsa Mexicana de Valores SAB de CV ( (MX:BOLSAA) ) has issued an announcement. Bolsa
-  Mexicana de Valores, Mexico's main securities exchange operator, runs integrated
-  platforms for trading equities, derivatives, and debt instruments, complemented by
-  post-trade, information, and ancillary services that support the broader financial
-  market ecosystem.
-
----
-fecha: 2026-10-27 17:51
-emisora: AC
-titulo: Arca Continental Sab De Cv is trading -0.01 percent lower with a volume of MXN 244.8 mn on Tuesday 27th of October
-fuente: STOCKP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261027:nNRA2hc3ti:0
-resumen:
-  Oct 27, 2026 Arca Continental Sab De Cv (AC.MX) traded down -0.01 % during a 24 hours
-  period ending at 11:58 PM Central Europe on Tuesday 27th. One Arca Continental Sab De
-  Cv stock can currently be bought for about MXN 217.55 on popular exchanges. Current
-  supply of Arca Continental Sab De Cv stocks is 1.7 bn.
-
----
-fecha: 2026-10-27 17:51
-emisora: BBAJIOO
-titulo: Banco Del Bajio (BBAJIOO.MX) is trading -0.37 percent lower on Tuesday 27th of October and has a trading volume of MXN 101 mn
-fuente: STOCKP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261027:nNRA2hc3tg:0
-resumen:
-  Oct 27, 2026 Banco Del Bajio (BBAJIOO.MX) traded down -0.37 % during a 24 hours period
-  ending at 11:51 PM Central Europe on Tuesday 27th. One Banco Del Bajio stock can
-  currently be bought for about MXN 57.34 on popular exchanges. Current supply of Banco
-  Del Bajio stocks is 1.2 bn.
-
----
-fecha: 2026-10-27 17:51
-emisora: FEMSAUBD
-titulo: Diageo plc (NYSE:DEO) outpaces Fomento Economico Mexicano, S.A.B de C.V. in monthly return
-fuente: GLORDP
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261027:nNRA2hc4zv:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Diageo plc's (NYSE:DEO) ADR price is
-  continuing to underperform that of Fomento Economico Mexicano, S.A.B de C.V.
-  (NYSE:FMX). Diageo plc's return year to date has been 12.0% and Fomento Economico
-  Mexicano, S.A.B de C.V.'s return has been 27.3% over the same period.
-
----
-fecha: 2026-10-27 17:42
-emisora: AMXB
-titulo: America Movil SAB de CV (FRA:MV91) stock drops 1.9%; -2c [-1.9%]
-fuente: CNBSTR
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261027:nNRA2hc086:0
-resumen:
-  GERMAN END-OF-DAY STOCK REPORT www.buysellsignals.com MEXICO, D.F, Monday, Oct 26, 2026
-  - America Movil SAB de CV's (FRA:MV91 €1.02) stock price dropped 2.0c (1.9%) from its
-  previous trading session to close at €1.02. Compared with the DAX Index which rose
-  288.5 points (1.1%) in the day, the relative price change was -3.1%. There were 1,043
-  shares worth €1,094 ($1,225) traded today; the volume was 0.4 times the average daily
-  trading volume of 2,522 shares.
