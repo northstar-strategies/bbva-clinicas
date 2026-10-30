@@ -4223,7 +4223,7 @@ const Remote=(()=>{
       const sym=symOf(partes[i]); if(!META[sym]) continue;
       const f=campos(partes[i+1]||'');
       f.listas={};
-      ['catalizadores','riesgos','fortalezas'].forEach(k=>{
+      ['catalizadores','riesgos','fortalezas','kpis'].forEach(k=>{
         if(f[k]) f.listas[k]=f[k].split('\n').map(x=>x.replace(/^-\s*/,'').trim()).filter(Boolean);
       });
       out[sym]=f;
@@ -6150,6 +6150,10 @@ const UI=(()=>{
         <span class="neu">${f.analistas_mantener||0} mantener</span>
         <span class="neg">${f.analistas_venta||0} venta</span></div>`:'';
 
+    // KPIs del sector: una línea por KPI, «nombre | valor | periodo | tendencia | por qué importa»
+    const kpisHtml=(f.listas?.kpis||[]).map(x=>x.split('|').map(t=>t.trim())).filter(c=>c[0]).map(([n,v,p,t,w])=>
+      `<div class="fcell"><div class="k">${esc(n)}</div><div class="v">${esc(v||'n/d')}</div>
+        ${p||t?`<div class="c">${esc([p,t].filter(Boolean).join(' · '))}</div>`:''}${w?`<div class="c">${esc(w)}</div>`:''}</div>`).join('');
     const vacio=!Object.keys(f).length;
     const html=`<div class="ficha" role="dialog" aria-modal="true">
       <div class="ficha-h">
@@ -6171,6 +6175,7 @@ const UI=(()=>{
         ${sec('Nuestra tesis',f.tesis?`<p>${esc(f.tesis)}</p>`:'')}
         ${sec('Catalizadores',(f.listas?.catalizadores||[]).length?`<ul class="flist cat">${f.listas.catalizadores.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'')}
         ${sec('Riesgos',(f.listas?.riesgos||[]).length?`<ul class="flist riesgo">${f.listas.riesgos.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'')}
+        ${sec('KPIs del sector',kpisHtml?`<div class="fgrid">${kpisHtml}</div>`:'')}
         ${sec('Valuación',celdas(f,['pe','ev_ebitda','ev_ventas','p_vl','p_fe','div_yield'],'menor'))}
         ${sec('Fundamentales',celdas(f,['margen_bruto','margen_operativo','margen_neto','roe','rotacion_activos','cobertura_intereses','deuda_capital'],'mayor'))}
         ${sec('Estimados',celdas(f,['eps_proximo_ano','ventas_proximo_ano','crecimiento_eps','proximo_reporte']))}
