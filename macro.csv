@@ -1,5 +1,4 @@
 fecha,serie,nombre,valor,moneda,mueve
-2026-04-13,USD,Dólar en pesos,17.301,USD,
 2026-04-14,USD,Dólar en pesos,17.2596,USD,
 2026-04-15,USD,Dólar en pesos,17.2487,USD,
 2026-04-16,USD,Dólar en pesos,17.245,USD,
@@ -142,7 +141,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,USD,Dólar en pesos,18.564,USD,
 2026-10-27,USD,Dólar en pesos,18.669,USD,
 2026-10-28,USD,Dólar en pesos,18.6227,USD,
-2026-04-13,BRL,Real brasileño en pesos,3.462901,BRL,
+2026-10-29,USD,Dólar en pesos,18.8585,USD,
 2026-04-14,BRL,Real brasileño en pesos,3.460641,BRL,
 2026-04-15,BRL,Real brasileño en pesos,3.454507,BRL,
 2026-04-16,BRL,Real brasileño en pesos,3.454527,BRL,
@@ -285,7 +284,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,BRL,Real brasileño en pesos,3.428318,BRL,
 2026-10-27,BRL,Real brasileño en pesos,3.492274,BRL,
 2026-10-28,BRL,Real brasileño en pesos,3.481074,BRL,
-2026-04-13,COP,"Peso colombiano en pesos (×1,000)",4.823251,COP,
+2026-10-29,BRL,Real brasileño en pesos,3.505102,BRL,
 2026-04-14,COP,"Peso colombiano en pesos (×1,000)",4.82074,COP,
 2026-04-15,COP,"Peso colombiano en pesos (×1,000)",4.776512,COP,
 2026-04-16,COP,"Peso colombiano en pesos (×1,000)",4.782267,COP,
@@ -428,7 +427,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,COP,"Peso colombiano en pesos (×1,000)",5.924347,COP,
 2026-10-27,COP,"Peso colombiano en pesos (×1,000)",5.926667,COP,
 2026-10-28,COP,"Peso colombiano en pesos (×1,000)",5.893297,COP,
-2026-04-13,ARS,"Peso argentino en pesos (×1,000)",12.772979,ARS,
+2026-10-29,COP,"Peso colombiano en pesos (×1,000)",5.962842,COP,
 2026-04-14,ARS,"Peso argentino en pesos (×1,000)",12.644396,ARS,
 2026-04-15,ARS,"Peso argentino en pesos (×1,000)",12.701546,ARS,
 2026-04-16,ARS,"Peso argentino en pesos (×1,000)",12.731635,ARS,
@@ -571,7 +570,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,ARS,"Peso argentino en pesos (×1,000)",12.050633,ARS,
 2026-10-27,ARS,"Peso argentino en pesos (×1,000)",12.136554,ARS,
 2026-10-28,ARS,"Peso argentino en pesos (×1,000)",12.080895,ARS,
-2026-04-13,PEN,Sol peruano en pesos,5.133828,PEN,
+2026-10-29,ARS,"Peso argentino en pesos (×1,000)",12.261704,ARS,
 2026-04-14,PEN,Sol peruano en pesos,5.093882,PEN,
 2026-04-15,PEN,Sol peruano en pesos,5.019118,PEN,
 2026-04-16,PEN,Sol peruano en pesos,5.015706,PEN,
@@ -714,6 +713,150 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,PEN,Sol peruano en pesos,5.394943,PEN,
 2026-10-27,PEN,Sol peruano en pesos,5.419945,PEN,
 2026-10-28,PEN,Sol peruano en pesos,5.408701,PEN,
+2026-10-29,PEN,Sol peruano en pesos,5.453113,PEN,
+2026-04-14,CLP,"Peso chileno en pesos (×1,000)",19.480141,CLP,
+2026-04-15,CLP,"Peso chileno en pesos (×1,000)",19.488955,CLP,
+2026-04-16,CLP,"Peso chileno en pesos (×1,000)",19.473553,CLP,
+2026-04-17,CLP,"Peso chileno en pesos (×1,000)",19.683588,CLP,
+2026-04-20,CLP,"Peso chileno en pesos (×1,000)",19.612134,CLP,
+2026-04-21,CLP,"Peso chileno en pesos (×1,000)",19.460704,CLP,
+2026-04-22,CLP,"Peso chileno en pesos (×1,000)",19.511034,CLP,
+2026-04-23,CLP,"Peso chileno en pesos (×1,000)",19.410125,CLP,
+2026-04-24,CLP,"Peso chileno en pesos (×1,000)",19.430188,CLP,
+2026-04-27,CLP,"Peso chileno en pesos (×1,000)",19.432013,CLP,
+2026-04-28,CLP,"Peso chileno en pesos (×1,000)",19.556116,CLP,
+2026-04-29,CLP,"Peso chileno en pesos (×1,000)",19.348179,CLP,
+2026-04-30,CLP,"Peso chileno en pesos (×1,000)",19.456174,CLP,
+2026-05-01,CLP,"Peso chileno en pesos (×1,000)",19.429812,CLP,
+2026-05-04,CLP,"Peso chileno en pesos (×1,000)",19.242676,CLP,
+2026-05-05,CLP,"Peso chileno en pesos (×1,000)",19.189598,CLP,
+2026-05-06,CLP,"Peso chileno en pesos (×1,000)",19.359795,CLP,
+2026-05-07,CLP,"Peso chileno en pesos (×1,000)",19.385308,CLP,
+2026-05-08,CLP,"Peso chileno en pesos (×1,000)",19.23383,CLP,
+2026-05-11,CLP,"Peso chileno en pesos (×1,000)",19.140616,CLP,
+2026-05-12,CLP,"Peso chileno en pesos (×1,000)",19.214544,CLP,
+2026-05-13,CLP,"Peso chileno en pesos (×1,000)",19.342482,CLP,
+2026-05-14,CLP,"Peso chileno en pesos (×1,000)",19.215787,CLP,
+2026-05-15,CLP,"Peso chileno en pesos (×1,000)",19.067424,CLP,
+2026-05-18,CLP,"Peso chileno en pesos (×1,000)",19.189511,CLP,
+2026-05-19,CLP,"Peso chileno en pesos (×1,000)",19.204745,CLP,
+2026-05-20,CLP,"Peso chileno en pesos (×1,000)",19.285969,CLP,
+2026-05-21,CLP,"Peso chileno en pesos (×1,000)",19.260488,CLP,
+2026-05-22,CLP,"Peso chileno en pesos (×1,000)",19.206004,CLP,
+2026-05-25,CLP,"Peso chileno en pesos (×1,000)",19.311621,CLP,
+2026-05-26,CLP,"Peso chileno en pesos (×1,000)",19.367585,CLP,
+2026-05-27,CLP,"Peso chileno en pesos (×1,000)",19.420566,CLP,
+2026-05-28,CLP,"Peso chileno en pesos (×1,000)",19.421845,CLP,
+2026-05-29,CLP,"Peso chileno en pesos (×1,000)",19.527027,CLP,
+2026-06-01,CLP,"Peso chileno en pesos (×1,000)",19.469728,CLP,
+2026-06-02,CLP,"Peso chileno en pesos (×1,000)",19.480358,CLP,
+2026-06-03,CLP,"Peso chileno en pesos (×1,000)",19.359705,CLP,
+2026-06-04,CLP,"Peso chileno en pesos (×1,000)",19.307894,CLP,
+2026-06-05,CLP,"Peso chileno en pesos (×1,000)",19.136408,CLP,
+2026-06-08,CLP,"Peso chileno en pesos (×1,000)",18.934924,CLP,
+2026-06-09,CLP,"Peso chileno en pesos (×1,000)",19.033793,CLP,
+2026-06-10,CLP,"Peso chileno en pesos (×1,000)",19.062695,CLP,
+2026-06-11,CLP,"Peso chileno en pesos (×1,000)",19.119017,CLP,
+2026-06-12,CLP,"Peso chileno en pesos (×1,000)",19.146545,CLP,
+2026-06-15,CLP,"Peso chileno en pesos (×1,000)",19.350343,CLP,
+2026-06-16,CLP,"Peso chileno en pesos (×1,000)",19.397408,CLP,
+2026-06-17,CLP,"Peso chileno en pesos (×1,000)",19.434236,CLP,
+2026-06-18,CLP,"Peso chileno en pesos (×1,000)",19.249778,CLP,
+2026-06-19,CLP,"Peso chileno en pesos (×1,000)",19.167359,CLP,
+2026-06-22,CLP,"Peso chileno en pesos (×1,000)",19.174286,CLP,
+2026-06-23,CLP,"Peso chileno en pesos (×1,000)",19.214347,CLP,
+2026-06-24,CLP,"Peso chileno en pesos (×1,000)",19.153939,CLP,
+2026-06-25,CLP,"Peso chileno en pesos (×1,000)",18.993625,CLP,
+2026-06-26,CLP,"Peso chileno en pesos (×1,000)",18.982591,CLP,
+2026-06-29,CLP,"Peso chileno en pesos (×1,000)",18.951652,CLP,
+2026-06-30,CLP,"Peso chileno en pesos (×1,000)",18.943873,CLP,
+2026-07-01,CLP,"Peso chileno en pesos (×1,000)",18.96973,CLP,
+2026-07-02,CLP,"Peso chileno en pesos (×1,000)",18.844634,CLP,
+2026-07-03,CLP,"Peso chileno en pesos (×1,000)",18.977983,CLP,
+2026-07-06,CLP,"Peso chileno en pesos (×1,000)",18.751753,CLP,
+2026-07-07,CLP,"Peso chileno en pesos (×1,000)",18.835356,CLP,
+2026-07-08,CLP,"Peso chileno en pesos (×1,000)",18.822528,CLP,
+2026-07-09,CLP,"Peso chileno en pesos (×1,000)",18.918295,CLP,
+2026-07-10,CLP,"Peso chileno en pesos (×1,000)",18.905198,CLP,
+2026-07-13,CLP,"Peso chileno en pesos (×1,000)",18.788139,CLP,
+2026-07-14,CLP,"Peso chileno en pesos (×1,000)",18.811918,CLP,
+2026-07-15,CLP,"Peso chileno en pesos (×1,000)",18.777491,CLP,
+2026-07-16,CLP,"Peso chileno en pesos (×1,000)",18.847403,CLP,
+2026-07-17,CLP,"Peso chileno en pesos (×1,000)",18.752742,CLP,
+2026-07-20,CLP,"Peso chileno en pesos (×1,000)",18.663882,CLP,
+2026-07-21,CLP,"Peso chileno en pesos (×1,000)",18.620431,CLP,
+2026-07-22,CLP,"Peso chileno en pesos (×1,000)",18.578838,CLP,
+2026-07-23,CLP,"Peso chileno en pesos (×1,000)",18.512207,CLP,
+2026-07-24,CLP,"Peso chileno en pesos (×1,000)",18.426907,CLP,
+2026-07-27,CLP,"Peso chileno en pesos (×1,000)",18.56635,CLP,
+2026-07-28,CLP,"Peso chileno en pesos (×1,000)",18.729708,CLP,
+2026-07-29,CLP,"Peso chileno en pesos (×1,000)",18.68783,CLP,
+2026-07-30,CLP,"Peso chileno en pesos (×1,000)",18.713769,CLP,
+2026-07-31,CLP,"Peso chileno en pesos (×1,000)",18.622847,CLP,
+2026-08-03,CLP,"Peso chileno en pesos (×1,000)",18.727733,CLP,
+2026-08-04,CLP,"Peso chileno en pesos (×1,000)",18.948438,CLP,
+2026-08-05,CLP,"Peso chileno en pesos (×1,000)",18.849739,CLP,
+2026-08-06,CLP,"Peso chileno en pesos (×1,000)",18.796294,CLP,
+2026-08-07,CLP,"Peso chileno en pesos (×1,000)",18.773505,CLP,
+2026-08-10,CLP,"Peso chileno en pesos (×1,000)",18.698233,CLP,
+2026-08-11,CLP,"Peso chileno en pesos (×1,000)",18.70346,CLP,
+2026-08-12,CLP,"Peso chileno en pesos (×1,000)",18.644883,CLP,
+2026-08-13,CLP,"Peso chileno en pesos (×1,000)",18.629414,CLP,
+2026-08-14,CLP,"Peso chileno en pesos (×1,000)",18.609,CLP,
+2026-08-17,CLP,"Peso chileno en pesos (×1,000)",18.596321,CLP,
+2026-08-18,CLP,"Peso chileno en pesos (×1,000)",18.400889,CLP,
+2026-08-19,CLP,"Peso chileno en pesos (×1,000)",18.397068,CLP,
+2026-08-20,CLP,"Peso chileno en pesos (×1,000)",18.394847,CLP,
+2026-08-21,CLP,"Peso chileno en pesos (×1,000)",18.479022,CLP,
+2026-08-24,CLP,"Peso chileno en pesos (×1,000)",18.56861,CLP,
+2026-08-25,CLP,"Peso chileno en pesos (×1,000)",18.571131,CLP,
+2026-08-26,CLP,"Peso chileno en pesos (×1,000)",18.405103,CLP,
+2026-08-27,CLP,"Peso chileno en pesos (×1,000)",18.329985,CLP,
+2026-08-28,CLP,"Peso chileno en pesos (×1,000)",18.300522,CLP,
+2026-08-31,CLP,"Peso chileno en pesos (×1,000)",18.182694,CLP,
+2026-09-01,CLP,"Peso chileno en pesos (×1,000)",18.130493,CLP,
+2026-09-02,CLP,"Peso chileno en pesos (×1,000)",18.109034,CLP,
+2026-09-03,CLP,"Peso chileno en pesos (×1,000)",18.167466,CLP,
+2026-09-04,CLP,"Peso chileno en pesos (×1,000)",18.079213,CLP,
+2026-09-07,CLP,"Peso chileno en pesos (×1,000)",18.099247,CLP,
+2026-09-08,CLP,"Peso chileno en pesos (×1,000)",18.290438,CLP,
+2026-09-09,CLP,"Peso chileno en pesos (×1,000)",18.216693,CLP,
+2026-09-10,CLP,"Peso chileno en pesos (×1,000)",18.054802,CLP,
+2026-09-11,CLP,"Peso chileno en pesos (×1,000)",18.027265,CLP,
+2026-09-14,CLP,"Peso chileno en pesos (×1,000)",17.913386,CLP,
+2026-09-15,CLP,"Peso chileno en pesos (×1,000)",17.935169,CLP,
+2026-09-16,CLP,"Peso chileno en pesos (×1,000)",18.075101,CLP,
+2026-09-17,CLP,"Peso chileno en pesos (×1,000)",17.86582,CLP,
+2026-09-18,CLP,"Peso chileno en pesos (×1,000)",17.957809,CLP,
+2026-09-21,CLP,"Peso chileno en pesos (×1,000)",18.147043,CLP,
+2026-09-22,CLP,"Peso chileno en pesos (×1,000)",18.255998,CLP,
+2026-09-23,CLP,"Peso chileno en pesos (×1,000)",18.227611,CLP,
+2026-09-24,CLP,"Peso chileno en pesos (×1,000)",18.403739,CLP,
+2026-09-25,CLP,"Peso chileno en pesos (×1,000)",18.408641,CLP,
+2026-09-28,CLP,"Peso chileno en pesos (×1,000)",18.58008,CLP,
+2026-09-29,CLP,"Peso chileno en pesos (×1,000)",18.556086,CLP,
+2026-09-30,CLP,"Peso chileno en pesos (×1,000)",18.587275,CLP,
+2026-10-01,CLP,"Peso chileno en pesos (×1,000)",18.54558,CLP,
+2026-10-02,CLP,"Peso chileno en pesos (×1,000)",18.335691,CLP,
+2026-10-05,CLP,"Peso chileno en pesos (×1,000)",18.616988,CLP,
+2026-10-06,CLP,"Peso chileno en pesos (×1,000)",18.496682,CLP,
+2026-10-07,CLP,"Peso chileno en pesos (×1,000)",18.370225,CLP,
+2026-10-08,CLP,"Peso chileno en pesos (×1,000)",18.604104,CLP,
+2026-10-09,CLP,"Peso chileno en pesos (×1,000)",18.860378,CLP,
+2026-10-12,CLP,"Peso chileno en pesos (×1,000)",18.716797,CLP,
+2026-10-13,CLP,"Peso chileno en pesos (×1,000)",18.695519,CLP,
+2026-10-14,CLP,"Peso chileno en pesos (×1,000)",18.78106,CLP,
+2026-10-15,CLP,"Peso chileno en pesos (×1,000)",18.759433,CLP,
+2026-10-16,CLP,"Peso chileno en pesos (×1,000)",18.774254,CLP,
+2026-10-19,CLP,"Peso chileno en pesos (×1,000)",18.787805,CLP,
+2026-10-20,CLP,"Peso chileno en pesos (×1,000)",18.895561,CLP,
+2026-10-21,CLP,"Peso chileno en pesos (×1,000)",19.030141,CLP,
+2026-10-22,CLP,"Peso chileno en pesos (×1,000)",18.971763,CLP,
+2026-10-23,CLP,"Peso chileno en pesos (×1,000)",18.748241,CLP,
+2026-10-26,CLP,"Peso chileno en pesos (×1,000)",18.77997,CLP,
+2026-10-27,CLP,"Peso chileno en pesos (×1,000)",18.970248,CLP,
+2026-10-28,CLP,"Peso chileno en pesos (×1,000)",18.878121,CLP,
+2026-10-29,CLP,"Peso chileno en pesos (×1,000)",19.094895,CLP,
 2026-04-13,EUR,Euro en pesos,20.3408,EUR,
 2026-04-14,EUR,Euro en pesos,20.3524,EUR,
 2026-04-15,EUR,Euro en pesos,20.35,EUR,
@@ -857,7 +1000,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,EUR,Euro en pesos,20.7397,EUR,
 2026-10-27,EUR,Euro en pesos,20.7637,EUR,
 2026-10-28,EUR,Euro en pesos,20.768,EUR,
-2026-04-13,BRENT,Petróleo Brent (dólares),98.0,,ALPEKA ORBIA VOLARA
+2026-10-29,EUR,Euro en pesos,20.7715,EUR,
 2026-04-14,BRENT,Petróleo Brent (dólares),95.34,,ALPEKA ORBIA VOLARA
 2026-04-15,BRENT,Petróleo Brent (dólares),94.87,,ALPEKA ORBIA VOLARA
 2026-04-16,BRENT,Petróleo Brent (dólares),98.21,,ALPEKA ORBIA VOLARA
@@ -1000,7 +1143,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,BRENT,Petróleo Brent (dólares),115.13,,ALPEKA ORBIA VOLARA
 2026-10-27,BRENT,Petróleo Brent (dólares),114.2,,ALPEKA ORBIA VOLARA
 2026-10-28,BRENT,Petróleo Brent (dólares),114.34,,ALPEKA ORBIA VOLARA
-2026-04-13,COBRE,Cobre (dólares por libra),6.0,,GMEXICOB
+2026-10-29,BRENT,Petróleo Brent (dólares),115.66,,ALPEKA ORBIA VOLARA
 2026-04-14,COBRE,Cobre (dólares por libra),6.068,,GMEXICOB
 2026-04-15,COBRE,Cobre (dólares por libra),6.084,,GMEXICOB
 2026-04-16,COBRE,Cobre (dólares por libra),6.0225,,GMEXICOB
@@ -1134,7 +1277,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,COBRE,Cobre (dólares por libra),6.5095,,GMEXICOB
 2026-10-27,COBRE,Cobre (dólares por libra),6.624,,GMEXICOB
 2026-10-28,COBRE,Cobre (dólares por libra),6.6275,,GMEXICOB
-2026-04-13,PLATA,Plata (dólares por onza),75.575,,PEOLES
+2026-10-29,COBRE,Cobre (dólares por libra),6.5775,,GMEXICOB
 2026-04-14,PLATA,Plata (dólares por onza),79.53,,PEOLES
 2026-04-15,PLATA,Plata (dólares por onza),79.0527,,PEOLES
 2026-04-16,PLATA,Plata (dólares por onza),78.405,,PEOLES
@@ -1277,7 +1420,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,PLATA,Plata (dólares por onza),53.927,,PEOLES
 2026-10-27,PLATA,Plata (dólares por onza),54.36,,PEOLES
 2026-10-28,PLATA,Plata (dólares por onza),53.975,,PEOLES
-2026-04-13,ORO,Oro (dólares por onza),4739.1782,,PEOLES
+2026-10-29,PLATA,Plata (dólares por onza),52.385,,PEOLES
 2026-04-14,ORO,Oro (dólares por onza),4840.34,,PEOLES
 2026-04-15,ORO,Oro (dólares por onza),4789.94,,PEOLES
 2026-04-16,ORO,Oro (dólares por onza),4787.78,,PEOLES
@@ -1420,7 +1563,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,ORO,Oro (dólares por onza),4016.3084,,PEOLES
 2026-10-27,ORO,Oro (dólares por onza),4057.8016,,PEOLES
 2026-10-28,ORO,Oro (dólares por onza),4067.0371,,PEOLES
-2026-04-13,UST10,Bono de EUA a 10 años (rendimiento %),4.297,,GFNORTEO BBAJIOO GFINBURO
+2026-10-29,ORO,Oro (dólares por onza),4020.4233,,PEOLES
 2026-04-14,UST10,Bono de EUA a 10 años (rendimiento %),4.256,,GFNORTEO BBAJIOO GFINBURO
 2026-04-15,UST10,Bono de EUA a 10 años (rendimiento %),4.279,,GFNORTEO BBAJIOO GFINBURO
 2026-04-16,UST10,Bono de EUA a 10 años (rendimiento %),4.309,,GFNORTEO BBAJIOO GFINBURO
@@ -1558,7 +1701,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,UST10,Bono de EUA a 10 años (rendimiento %),4.986,,GFNORTEO BBAJIOO GFINBURO
 2026-10-27,UST10,Bono de EUA a 10 años (rendimiento %),4.993,,GFNORTEO BBAJIOO GFINBURO
 2026-10-28,UST10,Bono de EUA a 10 años (rendimiento %),5.045,,GFNORTEO BBAJIOO GFINBURO
-2026-04-13,MBONO10,Bono M a 10 años (rendimiento %),9.01,,GFNORTEO BBAJIOO GFINBURO
+2026-10-29,UST10,Bono de EUA a 10 años (rendimiento %),4.989,,GFNORTEO BBAJIOO GFINBURO
 2026-04-14,MBONO10,Bono M a 10 años (rendimiento %),9.01,,GFNORTEO BBAJIOO GFINBURO
 2026-04-15,MBONO10,Bono M a 10 años (rendimiento %),9.01,,GFNORTEO BBAJIOO GFINBURO
 2026-04-16,MBONO10,Bono M a 10 años (rendimiento %),9.01,,GFNORTEO BBAJIOO GFINBURO
@@ -1699,7 +1842,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,MBONO10,Bono M a 10 años (rendimiento %),9.361,,GFNORTEO BBAJIOO GFINBURO
 2026-10-27,MBONO10,Bono M a 10 años (rendimiento %),9.385,,GFNORTEO BBAJIOO GFINBURO
 2026-10-28,MBONO10,Bono M a 10 años (rendimiento %),9.368,,GFNORTEO BBAJIOO GFINBURO
-2026-04-13,BOVESPA,Bovespa (Brasil),198000.71,,
+2026-10-29,MBONO10,Bono M a 10 años (rendimiento %),9.327,,GFNORTEO BBAJIOO GFINBURO
 2026-04-14,BOVESPA,Bovespa (Brasil),198657.33,,
 2026-04-15,BOVESPA,Bovespa (Brasil),197737.61,,
 2026-04-16,BOVESPA,Bovespa (Brasil),196818.59,,
@@ -1837,7 +1980,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,BOVESPA,Bovespa (Brasil),176608.23,,
 2026-10-27,BOVESPA,Bovespa (Brasil),175710.05,,
 2026-10-28,BOVESPA,Bovespa (Brasil),171006.1,,
-2026-04-13,SP500,S&P 500 (EUA),6886.24,,
+2026-10-29,BOVESPA,Bovespa (Brasil),169186.42,,
 2026-04-14,SP500,S&P 500 (EUA),6967.38,,
 2026-04-15,SP500,S&P 500 (EUA),7022.95,,
 2026-04-16,SP500,S&P 500 (EUA),7041.28,,
@@ -1976,7 +2119,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,SP500,S&P 500 (EUA),7676.77,,
 2026-10-27,SP500,S&P 500 (EUA),7722.6,,
 2026-10-28,SP500,S&P 500 (EUA),7743.98,,
-2026-04-13,IPC,S&P/BMV IPC,69595.13,,
+2026-10-29,SP500,S&P 500 (EUA),7720.39,,
 2026-04-14,IPC,S&P/BMV IPC,68941.46,,
 2026-04-15,IPC,S&P/BMV IPC,69634.71,,
 2026-04-16,IPC,S&P/BMV IPC,69095.02,,
@@ -2117,3 +2260,4 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-10-26,IPC,S&P/BMV IPC,69470.99,,
 2026-10-27,IPC,S&P/BMV IPC,69711.87,,
 2026-10-28,IPC,S&P/BMV IPC,69182.39,,
+2026-10-29,IPC,S&P/BMV IPC,69787.41,,
