@@ -1,20 +1,13 @@
 fecha,emisora,tipo,titulo,fuente
 2026-10-26,BRASIL FEMSAUBD KOFUBL AMXB,Evento,Elecciones presidenciales en Brasil,LSEG: BRL= y .BVSP del 23 y 26-oct; notas del 27-oct
-2026-10-28,BBAJIOO,Reporte trimestral,Q3 2026 Banco del Bajio SA Institucion de Banca Multiple Earnings Release,LSEG
-2026-10-28,FEMSAUBD,Reporte trimestral,Q3 2026 Fomento Economico Mexicano SAB de CV Earnings Release,LSEG
-2026-10-28,FEMSAUBD,Llamada con analistas,Q3 2026 Fomento Economico Mexicano SAB de CV Earnings Call,LSEG
-2026-10-28,OMAB,Reporte trimestral,Q3 2026 Grupo Aeroportuario del Centro Norte SAB de CV Earnings Release,LSEG
-2026-10-28,PEOLES,Reporte trimestral,Q3 2026 Industrias Penoles SAB de CV Earnings Release,LSEG
-2026-10-28,WALMEX,Llamada con analistas,Q3 2026 Wal Mart de Mexico SAB de CV Earnings Call - Q&A Session,LSEG
-2026-10-29,BBAJIOO,Llamada con analistas,Q3 2026 Banco del Bajio SA Institucion de Banca Multiple Earnings Call,LSEG
-2026-10-29,MEGACPO,Reporte trimestral,Q3 2026 Megacable Holdings SAB de CV Earnings Release,LSEG
-2026-10-29,OMAB,Llamada con analistas,"Q3 2026 Grupo Aeroportuario del Centro Norte, S.A.B. de C.V. Earnings Call",LSEG
 2026-10-30,AC,Reporte trimestral,Q3 2026 Arca Continental SAB de CV Earnings Release,LSEG
 2026-10-30,AC,Llamada con analistas,Q3 2026 Arca Continental SAB de CV Earnings Call,LSEG
 2026-10-30,MEGACPO,Llamada con analistas,Q3 2026 Megacable Holdings SAB de CV Earnings Call,LSEG
+2026-10-30,PEOLES,Reporte trimestral,Q3 2026 Industrias Penoles SAB de CV Earnings Release,LSEG
 2026-11-03,GFNORTEO,Reporte trimestral,Q3 2026 Grupo Financiero Banorte SAB de CV Earnings Release,LSEG
 2026-11-04,GFNORTEO,Llamada con analistas,Q3 2026 Grupo Financiero Banorte SAB de CV Earnings Call,LSEG
 2026-11-05,GAPB,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 20.8 paid on Nov 06, 2026 going ex on Nov 05, 2026",LSEG
+2026-11-06,GAPB,Fecha ex de dividendo,"Interim Cash Dividend of gross BRL 0.372696 paid on Nov 23, 2026 going ex on Nov 06, 2026",LSEG
 2026-11-09,GAPB,Fecha ex de dividendo,"Interim Cash Dividend of gross USD 0.699064 paid on Nov 16, 2026 going ex on Nov 09, 2026",LSEG
 2026-11-10,AMXB,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 0.27 paid on Nov 11, 2026 going ex on Nov 10, 2026",LSEG
 2026-11-17,WALMEX,Fecha ex de dividendo,"Interim Cash Dividend of gross MXN 0.58 paid on Nov 18, 2026 going ex on Nov 17, 2026",LSEG
@@ -22,3 +15,4 @@ fecha,emisora,tipo,titulo,fuente
 2026-12-07,KOFUBL,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 1.935 paid on Dec 08, 2026 going ex on Dec 07, 2026",LSEG
 2026-12-08,WALMEX,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 0.58 paid on Dec 09, 2026 going ex on Dec 08, 2026",LSEG
 2027-01-07,KOFUBL,Reporte trimestral,Q4 2026 Coca-Cola Femsa SAB de CV Earnings Release,LSEG
+2027-01-13,FEMSAUBD,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 0.198 paid on Jan 14, 2027 going ex on Jan 13, 2027",LSEG
