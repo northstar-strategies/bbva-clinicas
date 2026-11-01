@@ -229,17 +229,22 @@
   }
 
   function horaEn(zona) { return new Date().toLocaleTimeString('es-MX', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: zona }); }
+  /* La BMV opera de 9:30 a 16:00 hora de Nueva York: 7:30–14:00 CDMX con el horario de verano de EUA y
+     8:30–15:00 sin él (México ya no cambia de horario). Por eso la sesión se mide en hora de Nueva York. */
+  const partesEn = (zona, d) => Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: zona, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false, weekday: 'short' })
+    .formatToParts(d).map((p) => [p.type, p.value]));
   function estadoBMV() {
     const ahora = new Date();
-    const partes = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Mexico_City', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false, weekday: 'short' })
-      .formatToParts(ahora).map((p) => [p.type, p.value]));
-    const fecha = `${partes.year}-${partes.month}-${partes.day}`;
-    const min = (+partes.hour % 24) * 60 + +partes.minute;
+    const mx = partesEn('America/Mexico_City', ahora), ny = partesEn('America/New_York', ahora);
+    const fecha = `${mx.year}-${mx.month}-${mx.day}`;
+    const minNY = (+ny.hour % 24) * 60 + +ny.minute;
+    const desfase = ((+ny.hour % 24) - (+mx.hour % 24) + 24) % 24;          // 1 o 2 horas
+    const abre = `${9 - desfase}:30`, cierra = `${16 - desfase}:00`;
     const feriados = ((D.universo && D.universo.fondo && D.universo.fondo.feriados) || []);
-    if (['Sat', 'Sun'].includes(partes.weekday)) return { e: 'cerrado', t: 'BMV cerrada · fin de semana' };
+    if (['Sat', 'Sun'].includes(mx.weekday)) return { e: 'cerrado', t: 'BMV cerrada · fin de semana' };
     if (feriados.includes(fecha)) return { e: 'cerrado', t: 'BMV cerrada · día inhábil' };
-    if (min < 510) return { e: 'preapertura', t: 'BMV abre 8:30' };
-    if (min < 900) return { e: 'abierto', t: 'BMV abierta' };
+    if (minNY < 570) return { e: 'preapertura', t: `BMV abre ${abre}` };
+    if (minNY < 960) return { e: 'abierto', t: `BMV abierta hasta ${cierra}` };
     return { e: 'cerrado', t: 'BMV cerrada' };
   }
   function tic() {

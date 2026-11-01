@@ -9,6 +9,8 @@
 #  · Las listas van con guion al inicio, indentadas con dos espacios.
 #  · No hace falta capturar precio ni variación: el tablero los toma del mercado.
 #  · Las líneas que empiezan con # son comentarios.
+#  · kpis: una línea por KPI operativo, «- nombre | valor | periodo | tendencia | por qué importa».
+#    La pestaña KPIs de la ficha (tablero y North Star Terminal) los muestra junto a los KPIs calculados.
 #
 #  CARTERA OBJETIVO (presentada a BBVA; pesos que publica el tracker en pesos.csv)
 #  · Pasiva 45%: ETF MEXTRAC09 25.0% + representativas 19.8%
@@ -113,6 +115,17 @@ riesgos:
   - La administración reconoce que el consumo en México sigue débil y espera una segunda mitad del año más moderada.
   - Es la mayor posición del portafolio: concentra una parte importante del tracking error en un solo nombre.
 
+# ───────── KPIS OPERATIVOS (del reporte trimestral) ─────────
+kpis:
+  - Ventas mismas tiendas OXXO México | +9.5% | 2T26 | ticket +7.4%, tráfico +2.0% | Crecimiento orgánico de la red: el motor de la utilidad
+  - Ingresos OXXO México | +11.8% a/a | 2T26 | utilidad de operación +12.3% | Crecimiento total del negocio principal
+  - Margen operativo OXXO México | 10.0% | 2T26 | +10 pb a/a | Rentabilidad del negocio principal
+  - Usuarios activos Spin by OXXO | 11.5 millones | 2T26 | +22.1% a/a | Ecosistema digital y de pagos
+  - Usuarios Spin Premia | 29.1 millones | 2T26 | +9.4% a/a | Programa de lealtad
+  - Tender de Spin Premia en OXXO México | 50.4% | 2T26 | 45.8% en el 2T25 | Peso del programa de lealtad en las ventas
+  - Margen bruto consolidado | 40.1% | 2T26 | −60 pb a/a | Presión de costos en el grupo
+  - Deuda neta / UAFIDA sin KOF | 1.15x | 2T26 | sube desde 0.93x | Apalancamiento del grupo
+
 
 === GMEXICOB ===
 nombre: Grupo México, S.A.B. de C.V.
@@ -159,6 +172,15 @@ riesgos:
   - La producción de cobre del 2T26 fue de 257,537 toneladas, −3.7% a/a, y −3.2% en el semestre: el resultado depende del precio, que subió 28.6% en el semestre.
   - Beta de 1.37 contra el MEXTRAC: amplifica las correcciones del mercado.
   - Relación con el cobre medida con estadístico t de 4.12: un choque al metal pega directo.
+
+# ───────── KPIS OPERATIVOS (del reporte trimestral) ─────────
+kpis:
+  - Producción de cobre | 257,537 t | 2T26 | −3.7% a/a (−3.2% en el semestre) | Volumen: hoy el resultado depende más del precio
+  - Cash cost neto de subproductos | US$0.40 por libra | 2T26 | −56.7% a/a; US$0.31 en el semestre | Margen de seguridad ante una caída del cobre
+  - Ventas consolidadas | US$11,283 millones | 1S26 | +33.8% a/a | Crecimiento del grupo
+  - UAFIDA consolidado | US$6,850 millones | 1S26 | +49.6% a/a | Generación operativa de caja
+  - UAFIDA de la División Minera | US$5,918 millones | 1S26 | +61.3% a/a | El negocio que más pesa
+  - Deuda a tasa fija | 85% | 2T26 | deuda neta / UAFIDA negativa | Protección ante tasas altas
 
 
 === PEOLES ===
@@ -210,6 +232,15 @@ riesgos:
   - No está en el índice: los 7.5 pp completos son riesgo activo y pesan directo en el tracking error.
   - Volatilidad de 53.6% anual, la más alta del universo.
 
+# ───────── KPIS OPERATIVOS (del reporte trimestral) ─────────
+kpis:
+  - Ventas netas | US$2,886.9 millones | 2T26 | +38.9% a/a | Crecimiento impulsado por precios
+  - UAFIDA | US$1,444.3 millones | 2T26 | +112.3% a/a | Apalancamiento operativo al precio de los metales
+  - Margen operativo | 44.5% | 2T26 | utilidad de operación +150.8% | Rentabilidad
+  - Precio promedio de la plata | +118.6% a/a | 2T26 | oro +37.4%, cobre +40.0%, zinc +31.2% | La mejora viene sobre todo de precio
+  - Producción minera de oro | +6.5% a/a | 2T26 | plata +2.4% | Volumen de las minas
+  - Producción metalúrgica (Met-Mex) | oro −29.0%, plata −23.4% | 2T26 | zinc refinado −33.9% | Volumen de refinación
+
 
 === KOFUBL ===
 nombre: Coca-Cola FEMSA, S.A.B. de C.V.
@@ -256,6 +287,16 @@ catalizadores:
 riesgos:
   - México y Centroamérica: volumen +1.4%, ingresos +0.3% y utilidad de operación −7.0%; el entorno doméstico todavía no permite asumir una aceleración.
   - Impuestos a bebidas azucaradas en varias jurisdicciones.
+
+# ───────── KPIS OPERATIVOS (del reporte trimestral) ─────────
+kpis:
+  - Volumen | 1,071.8 millones de cajas unidad | 2T26 | +3.5% a/a | Crecimiento físico, sin efecto precio
+  - Ingresos | $76,318 millones | 2T26 | +4.7% a/a | Crecimiento total
+  - UAFIDA ajustado | $15,008 millones | 2T26 | +12.1% a/a | Generación operativa de caja
+  - Margen operativo | 14.0% | 2T26 | +60 pb a/a | Rentabilidad
+  - Margen bruto | 47.1% | 2T26 | +180 pb a/a | Menores costos de edulcorantes y PET, coberturas y monedas
+  - Sudamérica | volumen +6.9% | 2T26 | ingresos +11.8%, utilidad de operación +46.5%, margen 13.9% | Diversificación geográfica
+  - México y Centroamérica | volumen +1.4% | 2T26 | ingresos +0.3%, utilidad de operación −7.0% | Consumo doméstico todavía débil
 
 
 === BOLSAA ===
@@ -314,6 +355,17 @@ riesgos:
   - La apreciación del peso restó $98 millones a los ingresos del primer semestre de 2026.
   - No está en el índice: toda la posición es riesgo activo.
 
+# ───────── KPIS OPERATIVOS (del reporte trimestral) ─────────
+kpis:
+  - Ingresos | $1,197.6 millones | 2T26 | +8.2% a/a | Crecimiento total
+  - Margen UAFIDA | 55.5% | UDM | contracción de 2.4 pp en el ciclo | Rentabilidad del modelo integrado
+  - Custodia (Indeval) en los ingresos | 31.5% | 2T26 | información 16.6%, OTC 16% | Ingreso recurrente
+  - Participación de mercado | 82% | 2T26 | | Posición dominante
+  - ROE | 24.2% | 2T26 | ROA 19.4% | Rentabilidad sobre el capital
+  - Margen de flujo libre | 36.8% | 2T26 | | Conversión de utilidad a caja
+  - Deuda neta / UAFIDA | −1.16x | 2T26 | sin deuda bursátil ni bancaria | Caja neta
+  - Nocional de swaps de TIIE | −53.5% | 2T26 | | Ingreso sensible a la tasa de Banxico
+
 
 === PINFRA ===
 nombre: Promotora y Operadora de Infraestructura, S.A.B. de C.V.
@@ -360,6 +412,14 @@ riesgos:
   - El margen UAFIDA consolidado bajó de 64% a 56% por la mayor participación del negocio de construcción.
   - Riesgo regulatorio y de renegociación de concesiones.
   - Bursatilidad moderada: el costo de entrar y salir de la posición es mayor que en las grandes.
+
+# ───────── KPIS OPERATIVOS (del reporte trimestral) ─────────
+kpis:
+  - Tráfico promedio diario | 326,733 vehículos | 2T26 | +4% a/a | Aforo: el motor de los ingresos por cuota
+  - Ingresos de autopistas | $4,028.3 millones | 2T26 | +15% a/a | Tráfico más incrementos tarifarios
+  - Ingresos del segmento de concesiones | $4,087.0 millones | 2T26 | +4.0% a/a | Núcleo recurrente
+  - UAFIDA de concesiones | $3,241.3 millones | 2T26 | +4.1% a/a | Generación de caja de las concesiones
+  - Margen UAFIDA consolidado | 56% | 2T26 | baja desde 64% | Lo diluye el negocio de construcción
 
 
 === BBAJIOO ===
@@ -413,6 +473,15 @@ riesgos:
   - Crecimiento de ingresos LTM de −4.2% por el ciclo de recortes de la tasa de referencia.
   - ESG de S&P de 34 en un índice con sesgo ESG.
 
+# ───────── KPIS OPERATIVOS (del reporte trimestral) ─────────
+kpis:
+  - Margen de interés neto (MIN) | 5.40% | 2T26 | −71 pb a/a | Sensible a la TIIE
+  - Índice de morosidad (IMOR) | 1.81% | 2T26 | | Calidad de la cartera
+  - Índice de eficiencia | 44.0% | 2T26 | | Gastos sobre ingresos
+  - ICAP | 14.7% | 2T26 | | Capitalización
+  - ROE | 18.1% | 2T26 | ROA 2.1% | Rentabilidad sobre el capital
+  - Crecimiento de ingresos | −4.2% | UDM | ciclo de recortes de tasa | Presión en el margen
+
 
 === MEGACPO ===
 nombre: Megacable Holdings, S.A.B. de C.V.
@@ -462,6 +531,16 @@ riesgos:
   - Competencia directa de Totalplay e Izzi en las mismas zonas.
   - Su ESG de S&P (28) es de los más bajos del universo, en un índice con sesgo ESG.
 
+# ───────── KPIS OPERATIVOS (del reporte trimestral) ─────────
+kpis:
+  - Suscriptores de internet | 6.0 millones | 2T26 | +8.5% contra 2025 | Crecimiento de la base
+  - Casas pasadas | 19.7 millones | 2T26 | | Alcance de la red
+  - ARPU | $440.9 | 2T26 | | Ingreso promedio por usuario
+  - RGU por suscriptor | 2.45 | 2T26 | | Servicios contratados por cliente
+  - CAPEX / ingresos | 25.9% | 2025 | 21.3% proyectado para 2026 | Libera flujo libre al bajar
+  - Deuda neta / UAFIDA | 1.31x a 1.37x | 2T26 | 100% en pesos | Apalancamiento
+  - Red de fibra óptica | 86% | mar-26 | la más alta del sector | Calidad de la red
+
 
 
 # ══════════════════════════════ REPRESENTATIVAS · CARTERA PASIVA ══════════════════════════════
@@ -507,6 +586,11 @@ riesgos:
   - Subponderada 3.03 pp: si repunta más que el índice, resta al retorno activo.
   - Sensible a la demanda de viaje discrecional y al tipo de cambio.
   - La regulación tarifaria acota el margen de maniobra en precios.
+
+# ───────── KPIS OPERATIVOS (del reporte trimestral) ─────────
+kpis:
+  - UAFIDA | +8.4% a/a | último reporte | | Generación operativa de caja
+  - Margen UAFIDA | 69.3% | último reporte | 67.1% un año antes | Rentabilidad
 
 
 === AMXB ===
@@ -555,6 +639,12 @@ riesgos:
   - Litigios abiertos con el IFT, el IRS y en Brasil.
   - 64% de los ingresos fuera de México: el resultado reportado depende de la conversión cambiaria.
 
+# ───────── KPIS OPERATIVOS (del reporte trimestral) ─────────
+kpis:
+  - Utilidad neta | +9.2% a/a | 2T26 | | Crecimiento de la utilidad
+  - Apalancamiento (deuda neta / UAFIDA) | 1.31x | 2T26 | | Holgura financiera
+  - Ingresos fuera de México | 64% | | | Sensibilidad al tipo de cambio por conversión
+
 
 === GFNORTEO ===
 nombre: Grupo Financiero Banorte, S.A.B. de C.V.
@@ -602,6 +692,13 @@ riesgos:
   - Subponderada 3.04 pp: si repunta más que el índice, resta al retorno activo.
   - Perspectiva negativa por el vínculo soberano: un ajuste a la calificación de México se transmite directo.
   - El índice de morosidad subió a 1.50%.
+
+# ───────── KPIS OPERATIVOS (del reporte trimestral) ─────────
+kpis:
+  - ROE | 24.8% | 1S26 | | Rentabilidad sobre el capital
+  - Margen de interés neto | 6.8% | 1S26 | | Lo que gana por prestar
+  - Índice de morosidad | 1.50% | 1S26 | al alza | Calidad de la cartera
+  - Guía de utilidad neta | $62,000 a $64,000 millones | 2026 | | Expectativa de la administración
 
 
 === AC ===
@@ -1082,6 +1179,11 @@ tesis:
 riesgos:
   - Subponderada 0.50 pp: si el mercado revalúa la emisora, resta al retorno activo.
 
+# ───────── KPIS OPERATIVOS (del reporte trimestral) ─────────
+kpis:
+  - Utilidad neta | pérdida | 2T26 | | Rentabilidad débil (regla anti value-trap)
+  - Dividendo 2026 | suspendido | 2026 | | Retorno al accionista
+
 
 === GENTERA ===
 nombre: Gentera, S.A.B. de C.V.
@@ -1531,6 +1633,10 @@ tesis:
   Queda fuera por la regla anti value-trap: una emisora con Value z mayor a 0.3 y profitability menor a −0.25 no puede ser over, porque puede parecer barata y tener un deterioro fundamental detrás.
   Su pilar de Profitability es -0.29. Value z de 1.60 con Quality z de −0.08: queda fuera por la regla aunque su utilidad neta del 2T26 creció 55.4% (Quality -0.08, Value +1.60, Momentum +0.54; z del ciclo +0.58, percentil 73.0%).
   No forma parte del índice, así que no tenerla no genera desviación.
+
+# ───────── KPIS OPERATIVOS (del reporte trimestral) ─────────
+kpis:
+  - Utilidad neta | +55.4% a/a | 2T26 | | Crecimiento de la utilidad
 
 
 === ORBIA ===

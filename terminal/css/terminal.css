@@ -222,7 +222,7 @@ svg.spk{display:inline-block;vertical-align:middle}
 .kpi-sec{margin-bottom:10px}
 .kpi-sec h3{display:flex;align-items:center;gap:8px;font-size:10.5px;color:var(--acc);letter-spacing:.1em;text-transform:uppercase;margin:4px 0 6px}
 .kpi-sec h3 .nota{color:var(--txt-3);text-transform:none;letter-spacing:0;font-weight:500}
-.kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:6px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:6px;align-items:start}
 .kpi{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--line-3);border-radius:var(--r);padding:7px 9px;min-width:0;position:relative}
 .kpi.mejor{border-left-color:var(--pos)}
 .kpi.peor{border-left-color:var(--neg)}

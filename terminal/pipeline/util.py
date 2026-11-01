@@ -13,10 +13,27 @@ from datetime import date, datetime, timedelta, timezone
 from statistics import median
 from typing import Any, Iterable, Sequence
 
-# México no tiene horario de verano desde 2022: la BMV opera siempre en UTC-6.
+# México no tiene horario de verano desde 2022 (UTC-6 todo el año), pero la BMV se alinea con Nueva York:
+# opera de 9:30 a 16:00 hora del Este, o sea 7:30–14:00 CDMX con el horario de verano de EUA y 8:30–15:00 sin él.
 CDMX = timezone(timedelta(hours=-6), "CDMX")
-APERTURA_BMV = (8, 30)
-CIERRE_BMV = (15, 0)
+try:
+    from zoneinfo import ZoneInfo
+    NUEVA_YORK = ZoneInfo("America/New_York")
+except Exception:  # sin base de zonas horarias: se aproxima con las reglas de EUA
+    NUEVA_YORK = None
+APERTURA_NY = (9, 30)
+CIERRE_NY = (16, 0)
+
+
+def _hora_ny(m: datetime) -> datetime:
+    if NUEVA_YORK is not None:
+        return m.astimezone(NUEVA_YORK)
+    # Horario de verano de EUA: segundo domingo de marzo a primer domingo de noviembre (2:00 locales)
+    y = m.year
+    marzo = datetime(y, 3, 8 + (6 - datetime(y, 3, 8).weekday()) % 7, 7, tzinfo=timezone.utc)
+    nov = datetime(y, 11, 1 + (6 - datetime(y, 11, 1).weekday()) % 7, 6, tzinfo=timezone.utc)
+    off = -4 if marzo <= m.astimezone(timezone.utc) < nov else -5
+    return m.astimezone(timezone(timedelta(hours=off)))
 
 
 # ───────────────────────────── archivos ─────────────────────────────
@@ -184,24 +201,37 @@ def etiqueta_anio(fecha: str | date) -> str:
     return f"{fecha.year}"
 
 
+def horario_bmv(momento: datetime | None = None) -> tuple[str, str]:
+    """Apertura y cierre del día en hora de CDMX ('7:30', '14:00' o '8:30', '15:00')."""
+    m = momento or ahora_utc()
+    ny = _hora_ny(m)
+    desfase = (ny.utcoffset() - timedelta(hours=-6)).total_seconds() / 3600   # horas que NY va adelante de CDMX
+    a = APERTURA_NY[0] - desfase
+    c = CIERRE_NY[0] - desfase
+    return f"{int(a)}:{APERTURA_NY[1]:02d}", f"{int(c)}:00"
+
+
 def estado_mercado(momento: datetime | None = None, feriados: Iterable[str] = ()) -> dict:
-    """Estado de la BMV en hora de Ciudad de México."""
-    m = (momento or ahora_utc()).astimezone(CDMX)
-    hoy = m.date().isoformat()
-    minutos = m.hour * 60 + m.minute
-    abre = APERTURA_BMV[0] * 60 + APERTURA_BMV[1]
-    cierra = CIERRE_BMV[0] * 60 + CIERRE_BMV[1]
-    if m.weekday() >= 5:
+    """Estado de la BMV. La sesión se mide en hora de Nueva York (9:30 a 16:00), igual que la BMV."""
+    m = momento or ahora_utc()
+    cdmx, ny = m.astimezone(CDMX), _hora_ny(m)
+    hoy = cdmx.date().isoformat()
+    minutos = ny.hour * 60 + ny.minute
+    abre = APERTURA_NY[0] * 60 + APERTURA_NY[1]
+    cierra = CIERRE_NY[0] * 60 + CIERRE_NY[1]
+    h_abre, h_cierra = horario_bmv(m)
+    if cdmx.weekday() >= 5:
         estado, texto = "cerrado", "Fin de semana"
     elif hoy in set(feriados):
         estado, texto = "cerrado", "Día inhábil en la BMV"
     elif minutos < abre:
-        estado, texto = "preapertura", "Abre a las 8:30"
+        estado, texto = "preapertura", f"Abre a las {h_abre}"
     elif minutos < cierra:
-        estado, texto = "abierto", "Sesión continua hasta las 15:00"
+        estado, texto = "abierto", f"Sesión continua hasta las {h_cierra}"
     else:
         estado, texto = "cerrado", "Sesión terminada"
-    return {"estado": estado, "texto": texto, "hora_cdmx": m.strftime("%Y-%m-%d %H:%M"), "fecha": hoy}
+    return {"estado": estado, "texto": texto, "hora_cdmx": cdmx.strftime("%Y-%m-%d %H:%M"), "fecha": hoy,
+            "horario": f"{h_abre}–{h_cierra} CDMX"}
 
 
 def fecha_cdmx(dt: datetime) -> str:

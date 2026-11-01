@@ -717,14 +717,14 @@ def mercado(t: str, v: dict | None, ref: dict | None, cetes: float | None) -> li
         ra, rb = alinear({f: x for f, x in serie.items() if f >= (hoy - timedelta(days=366)).isoformat()}, ref)
         vb = desv(rb)
         beta = covarianza(ra, rb) / (vb ** 2) if vb else None
-        out.append(_k("beta_1a", "Beta contra el IPC (diaria, 1 año)", beta, "x", "riesgo", "12 meses", mejor="bajo",
+        out.append(_k("beta_1a", "Beta contra el IPC (diaria, 1 año)", beta, "num", "riesgo", "12 meses", mejor="bajo",
                       formula="cov(r emisora, r IPC) ÷ var(r IPC)",
                       que="Si el IPC sube 1%, cuánto se espera que se mueva la emisora."))
         sa, sb = semanales(serie), semanales(ref)
         ra5, rb5 = alinear({f: x for f, x in sa.items() if f >= (hoy - timedelta(days=5 * 366)).isoformat()}, sb)
         vb5 = desv(rb5)
         beta5 = covarianza(ra5, rb5) / (vb5 ** 2) if vb5 and len(ra5) > 52 else None
-        out.append(_k("beta_5a", "Beta contra el IPC (semanal, 5 años)", beta5, "x", "riesgo", "5 años", mejor="bajo",
+        out.append(_k("beta_5a", "Beta contra el IPC (semanal, 5 años)", beta5, "num", "riesgo", "5 años", mejor="bajo",
                       formula="cov(r semanal emisora, r semanal IPC) ÷ var(r semanal IPC)",
                       que="Misma medida que publica Refinitiv, con 260 semanas."))
         if ra and rb:
@@ -732,7 +732,7 @@ def mercado(t: str, v: dict | None, ref: dict | None, cetes: float | None) -> li
             sa_, sb_ = desv(ra), desv(rb)
             if sa_ and sb_:
                 corr = covarianza(ra, rb) / (sa_ * sb_)
-            out.append(_k("correlacion_ipc", "Correlación con el IPC", corr, "x", "riesgo", "12 meses",
+            out.append(_k("correlacion_ipc", "Correlación con el IPC", corr, "num", "riesgo", "12 meses",
                           formula="correlación de los rendimientos diarios", mejor="bajo",
                           que="Qué tanto diversifica frente al mercado mexicano."))
     out.append(_k("max_caida", "Caída máxima desde un pico (12 meses)", max_caida(c[-253:]), "%", "riesgo",
@@ -741,7 +741,7 @@ def mercado(t: str, v: dict | None, ref: dict | None, cetes: float | None) -> li
     if vol_a and len(r) > 20:
         rf = cetes if cetes is not None else 0.07
         r1 = _rend(c, min(252, len(c) - 1))
-        out.append(_k("sharpe", "Razón de Sharpe (12 meses)", (r1 - rf) / vol_a if r1 is not None else None, "x",
+        out.append(_k("sharpe", "Razón de Sharpe (12 meses)", (r1 - rf) / vol_a if r1 is not None else None, "num",
                       "riesgo", "12 meses", formula=f"(rendimiento 12 meses − CETES {rf:.2%}) ÷ volatilidad anual",
                       que="Rendimiento extra sobre CETES por unidad de riesgo."))
     ventana = c[-252:]

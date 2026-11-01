@@ -167,7 +167,7 @@
             ${UI.panel('Atajos', `<table class="t ayuda-tabla"><tbody><tr><td>/ · Ctrl+K</td><td>Ir a la línea de comandos</td></tr><tr><td>↑ ↓ · Tab</td><td>Moverse y completar sugerencias</td></tr>
               <tr><td>F1 F2 F3 F4 F6 F7 F8 F9 F10</td><td>Ayuda, panel, mercado, emisora, portafolio, noticias, macro, filtro, comparar</td></tr><tr><td>Esc</td><td>Regresar al panel</td></tr></tbody></table>`, { p0: true })}
             ${UI.panel('De dónde salen los datos', `<div class="texto" style="font-size:11.5px"><p>Ya no hace falta encender el vigilante. Un workflow de <b>GitHub Actions</b> descarga todo en la nube y lo publica en la rama <b>datos</b> del repositorio:</p>
-              <p>· Cada 15 minutos en horario de la BMV (8:30 a 15:00 CDMX): cotizaciones, intradía y portafolio.<br>· Al cierre de cada día hábil: velas de cinco años, estados financieros, múltiplos, consenso, KPIs, noticias y macro.<br>
+              <p>· Cada 15 minutos durante la sesión de la BMV (9:30 a 16:00 de Nueva York: 7:30–14:00 CDMX con horario de verano de EUA, 8:30–15:00 sin él): cotizaciones, intradía y portafolio.<br>· A las 6:20 y a las 16:40 CDMX de cada día hábil: velas de cinco años, estados financieros, múltiplos, consenso, KPIs, noticias y macro.<br>
               · Cada vez que se edita empresas.txt, noticias.txt u operaciones.csv en main.</p>
               <p>Fuentes: Yahoo Finance, Google Noticias, Banxico (opcional) y los archivos del equipo. La página revisa cada minuto si hay datos nuevos.</p></div>`)}
             ${UI.panel('Capturar KPIs operativos', `<div class="texto" style="font-size:11.5px"><p>En <b>empresas.txt</b>, dentro del bloque de la emisora:</p></div>

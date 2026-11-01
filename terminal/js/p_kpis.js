@@ -49,18 +49,29 @@
     </div>`;
   }
 
+  // ¿Un KPI del catálogo ya está capturado? Se comparan palabras clave, expandiendo siglas (VMT, MIN, IMOR...).
+  const ABR = { vmt: 'ventas mismas tiendas', min: 'margen interes neto', imor: 'morosidad', asm: 'capacidad asientos', abr: 'area bruta rentable' };
+  const VACIAS = new Set(['del', 'las', 'los', 'por', 'con', 'sin', 'para', 'que', 'una', 'sobre', 'contra']);
+  const fichas = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9 ]/g, ' ')
+    .split(/\s+/).filter((w) => w.length > 2 && !VACIAS.has(w)).flatMap((w) => (ABR[w] ? ABR[w].split(' ') : [w]));
+  function capturado(nombreCat, capturados) {
+    const t = fichas(nombreCat); if (!t.length) return false;
+    return capturados.some((c) => { const u = new Set(fichas([c.nombre, c.valor, c.tendencia].join(' '))); return t.filter((w) => u.has(w)).length / t.length >= 0.5; });
+  }
+
   function operativos(t, kp) {
     const e = D.U[t] || {};
     const cat = ((D.kpisArch && D.kpisArch.catalogo) || {})[e.grupo] || [];
     const capturados = (kp && kp.operativos) || [];
-    const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-    const yaEsta = (nombre) => capturados.some((c) => norm(c.nombre).includes(norm(nombre).split(/[ (/]/)[0]) || norm(nombre).includes(norm(c.nombre).split(/[ (/]/)[0]));
-    const pendientes = cat.filter(([n]) => !yaEsta(n));
-    const tarjetas = capturados.map((c) => `<div class="kpi-op"><div class="k">${esc(c.nombre)}</div><div class="v">${esc(c.valor || 'n/d')}</div>
-      <div class="p">${esc([c.periodo, c.tendencia].filter(Boolean).join(' · '))}</div>${c.porque ? `<div class="w">${esc(c.porque)}</div>` : ''}</div>`).join('')
-      + pendientes.map(([n, w]) => `<div class="kpi-op pendiente"><div class="k">${esc(n)}</div><div class="v">por capturar</div><div class="w">${esc(w)}</div></div>`).join('');
+    const pendientes = cat.filter(([n]) => !capturado(n, capturados));
+    const tarjeta = (c) => `<div class="kpi-op"><div class="k">${esc(c.nombre)}</div><div class="v">${esc(c.valor || 'n/d')}</div>
+      <div class="p">${esc([c.periodo, c.tendencia].filter(Boolean).join(' · '))}</div>${c.porque ? `<div class="w">${esc(c.porque)}</div>` : ''}</div>`;
+    const porCapturar = ([n, w]) => `<div class="kpi-op pendiente"><div class="k">${esc(n)}</div><div class="v">por capturar</div><div class="w">${esc(w)}</div></div>`;
+    const cuerpo = capturados.length
+      ? `<div class="kpis">${capturados.map(tarjeta).join('')}</div>${pendientes.length ? `<p class="dim" style="font-size:10.5px;margin-top:6px">También conviene vigilar en ${esc(e.grupo_n || 'el sector')}: ${pendientes.map(([n, w]) => `<span title="${esc(w)}" class="chip">${esc(n)}</span>`).join(' ')}</p>` : ''}`
+      : `<div class="kpis">${cat.map(porCapturar).join('') || '<div class="vacio">Sin catálogo para este sector.</div>'}</div>`;
     return `<div class="kpi-sec"><h3>KPIs operativos · ${esc(e.grupo_n || e.sub || '')} <span class="nota">${capturados.length ? `${capturados.length} capturados por el equipo de los reportes trimestrales` : 'catálogo de lo que conviene vigilar en el sector'}</span></h3>
-      <div class="kpis">${tarjetas || '<div class="vacio">Sin catálogo para este sector.</div>'}</div>
+      ${cuerpo}
       <p class="dim" style="font-size:10.5px;margin-top:6px">Para capturar o actualizar uno, agrega una línea en el bloque <b class="acc">=== ${esc(t)} ===</b> de <b>empresas.txt</b>:
       <code class="acc">kpis:</code> seguido de <code class="acc">- nombre | valor | periodo | tendencia | por qué importa</code>. La terminal y el tablero lo leen solos.</p></div>`;
   }
