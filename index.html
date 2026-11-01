@@ -1213,6 +1213,27 @@ td{padding:11px 12px} th,thead th{padding:11px 12px}
   .lec-texto{font-size:15px}
 }
 @media (prefers-reduced-motion:reduce){.lec,.lec-fondo,.noti[data-nid]{transition:none}.lec-esq i{animation:none}}
+
+/* ── v6.8 · Ficha con pestañas: «Ficha» y «KPIs» (los KPIs calculados vienen de la rama datos) ── */
+.ficha-tabs{display:flex;gap:4px;padding:8px 22px 0;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
+.ficha-tabs::-webkit-scrollbar{display:none}
+.ficha-tabs button{font:inherit;font-family:var(--sans);font-size:.8125rem;font-weight:600;color:var(--txt-3);background:none;border:0;
+  padding:9px 12px;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap}
+.ficha-tabs button:hover{color:var(--txt-2)}
+.ficha-tabs button.on{color:var(--txt);border-bottom-color:var(--ice-2)}
+.ficha-tabs .nuevo{font-size:.625rem;margin-left:6px;padding:1px 6px;border-radius:5px;background:rgba(127,182,232,.16);color:var(--ice-2);vertical-align:1px}
+.ficha-pane[hidden]{display:none}
+.kpi-cab{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.75rem;color:var(--txt-3);margin:4px 0 16px}
+.kpi-cab b{color:var(--txt-2);font-weight:600}
+.kpi-cab a{margin-left:auto;color:var(--ice-2);text-decoration:none;font-weight:600}
+.fcell.kpi-c{cursor:pointer}
+.fcell .pct{height:3px;border-radius:2px;background:rgba(212,237,252,.1);margin-top:8px;overflow:hidden}
+.fcell .pct i{display:block;height:100%;background:var(--ice-2)}
+.fcell .fx{display:none;font-size:.68rem;color:var(--txt-3);margin-top:7px;line-height:1.5}
+.fcell .fx code{display:block;font-family:var(--mono);color:var(--ice-2);margin-top:3px;white-space:normal}
+.fcell.abierta .fx{display:block}
+.fcell.pend .v{color:var(--txt-3);font-size:.875rem;font-weight:500}
+.kpi-aviso{font-size:.78rem;color:var(--txt-3);padding:14px 16px;border-radius:12px;background:rgba(255,255,255,.035);line-height:1.6}
 </style>
 </head>
 <body>
@@ -1265,6 +1286,7 @@ td{padding:11px 12px} th,thead th{padding:11px 12px}
       <button class="nav-item" data-v="simulador"><svg class="i ic"><use href="#i-scale"/></svg>Simulador de órdenes</button>
       <button class="nav-item" data-v="noticias"><svg class="i ic"><use href="#i-news"/></svg>Noticias<span class="badge" id="bdgNoti">0</span></button>
       <div class="nav-group">Datos</div>
+      <a class="nav-item" href="terminal/" title="Terminal financiera: fichas con KPIs, mercado, macro y filtro · se actualiza sola"><svg class="i ic"><use href="#i-chart"/></svg>North Star Terminal<span class="badge">nuevo</span></a>
       <button class="nav-item" data-v="mercado"><svg class="i ic"><use href="#i-pulse"/></svg>Mercado</button>
       <div class="nav-group">Análisis y control</div>
       <button class="nav-item" data-v="analisis"><svg class="i ic"><use href="#i-chart"/></svg>Análisis</button>
@@ -4143,12 +4165,32 @@ const Remote=(()=>{
     if(unk.length) put('warn','Emisoras fuera del universo, ignoradas: '+unk.join(', '));
     return out;
   }
+  /* v6.8 · Sin vigilante. GitHub Actions publica el mismo cotizaciones.csv (Yahoo Finance) en la rama «datos» cada
+     15 minutos de sesión. Se leen los dos y gana el corte más reciente: con el vigilante encendido sus precios de
+     Refinitiv siguen mandando; apagado, el tablero sigue al día solo. */
+  const COTIZ_ACCIONES='https://raw.githubusercontent.com/northstar-strategies/bbva-clinicas/datos/terminal/datos/legado/cotizaciones.csv';
+  const corteDe=txt=>{ try{ return parseCotiz(txt).map(r=>r.ts).filter(Boolean).sort().pop()||''; }catch(e){ return ''; } };
+  // Actions publica cada 15 minutos y el CDN de GitHub guarda 5: basta con preguntarle una vez por minuto.
+  const memAcciones={t:0, txt:''};
+  async function cotizAcciones(){
+    if(Date.now()-memAcciones.t<60000) return memAcciones.txt;
+    memAcciones.t=Date.now();
+    try{ memAcciones.txt=await fetchText(COTIZ_ACCIONES); }catch(e){ memAcciones.txt=''; }
+    return memAcciones.txt;
+  }
   async function pullCotiz(url,silencioso=false){
-    const u=url||Store.get().cfg.urlCotiz;
-    const txt=await fetchText(u);
+    const u0=url||Store.get().cfg.urlCotiz;
+    let u=u0, txt='';
+    try{ txt=await fetchText(u0); }catch(e){ if(url) throw e; }
+    if(!url && u0!==COTIZ_ACCIONES){
+      const alt=await cotizAcciones();                       // vacío si la rama datos todavía no existe
+      if(alt && (!txt || corteDe(alt)>corteDe(txt))){ txt=alt; u=COTIZ_ACCIONES; }
+    }
+    if(!txt) throw new Error('No hay archivo de cotizaciones disponible');
     if(silencioso && !cambio(u,txt)){ Store.get().cfg.lastCotizSync=new Date().toISOString(); return {n:0, sinCambio:true}; }
     cambio(u,txt);
     const list=parseCotiz(txt), S=Store.get();
+    S.pxAcciones=(u===COTIZ_ACCIONES);
     if(!list.length) throw new Error('No se reconoció ninguna emisora');
     const vistos={};
     list.forEach(r=>{
@@ -4157,7 +4199,7 @@ const Remote=(()=>{
     });
     S.cotizVistos=vistos;
     const ts=list.map(r=>r.ts).filter(Boolean).sort().pop();
-    S.lastUpdate=new Date().toISOString(); S.pxSource='cotiz';
+    S.lastUpdate=new Date().toISOString(); S.pxSource=S.pxAcciones?'acciones':'cotiz';
     S.cfg.lastCotizSync=S.lastUpdate; S.pxStamp=ts||'';
     if(!enLote){ Portfolio.snapshot(); Store.emit(); }
     put('ok',`Cotizaciones: ${list.length} precios${ts?` · corte ${new Date(ts).toLocaleString('es-MX')}`:''}`);
@@ -5666,7 +5708,7 @@ const UI=(()=>{
   /* ¿Qué tan viejo es el último precio publicado? El punto verde no debe decir "Actualizado" cuando las cotizaciones
      son de la semana pasada: se compara el día del dato con la última sesión de la BMV que ya abrió. */
   function rezagoPrecios(){
-    const S=Store.get(); if(!S || S.pxSource!=='cotiz' || !S.pxStamp) return null;
+    const S=Store.get(); if(!S || !['cotiz','acciones'].includes(S.pxSource) || !S.pxStamp) return null;
     const t=Date.parse(S.pxStamp); if(!isFinite(t)) return null;
     const d=new Date(t), medianoche=d.getUTCHours()===0 && d.getUTCMinutes()===0;          // cierre diario fechado a 00:00 UTC
     const diaDato=medianoche?d.toISOString().slice(0,10):new Date(t-6*3600e3).toISOString().slice(0,10);
@@ -6087,6 +6129,78 @@ const UI=(()=>{
     cab.onkeydown=ev=>{ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); alternar(); } };
   }
 
+  /* ═══════════ v6.8 · PESTAÑA DE KPIs DE LA FICHA ═══════════
+     Lee kpis.json de la rama «datos», que publica GitHub Actions sin necesidad del vigilante:
+     KPIs operativos del sector (empresas.txt) + financieros, de valuación y de mercado contra la
+     mediana de sus pares y del universo. Lo mismo que muestra North Star Terminal. */
+  const KpisFicha=(()=>{
+    let prom=null;
+    const repo=(()=>{ if(/\.github\.io$/i.test(location.hostname)){ const r=location.pathname.split('/').filter(Boolean)[0];
+      if(r) return location.hostname.split('.')[0]+'/'+r; } return 'northstar-strategies/bbva-clinicas'; })();
+    const traer=async(url)=>{ const r=await fetch(url+'?t='+Date.now(),{cache:'no-store'}); if(!r.ok) throw new Error(r.status); return r.json(); };
+    function cargar(){
+      if(!prom) prom=traer(`https://raw.githubusercontent.com/${repo}/datos/terminal/datos/kpis.json`)
+        .catch(()=>/^https?:$/.test(location.protocol)?traer('terminal/datos/kpis.json'):null).catch(()=>null);
+      return prom;
+    }
+    const FAM=['crecimiento','margenes','rentabilidad','balance','flujo','bancario','seguros','valuacion','mercado','riesgo','tecnico','liquidez'];
+    const fmt=(v,u,m)=>{
+      if(v==null||!isFinite(v)) return 'n/d';
+      if(u==='%') return (v*100).toLocaleString('es-MX',{maximumFractionDigits:Math.abs(v)>=.1?1:2})+'%';
+      if(u==='x') return v.toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2})+'x';
+      if(u==='dinero') return (m==='USD'?'US$':'$')+(v/1e6).toLocaleString('es-MX',{maximumFractionDigits:0})+(m==='USD'?' MDD':' MDP');
+      if(u==='días') return Math.round(v)+' días';
+      return v.toLocaleString('es-MX',{maximumFractionDigits:2});
+    };
+    function calif(k){
+      if(k.valor==null||k.mejor==='neutral') return '';
+      const ref=k.mediana_sector!=null?k.mediana_sector:k.mediana_universo; if(ref==null||ref===k.valor) return '';
+      return (k.mejor==='bajo'?k.valor<ref:k.valor>ref)?' mejor':' peor';
+    }
+    function celda(k){
+      const p=k.percentil!=null?Math.round(k.percentil*100):null;
+      return `<div class="fcell kpi-c${calif(k)}" title="Clic: qué mide y fórmula"><div class="k">${esc(k.nombre||k.clave)}</div>
+        <div class="v">${esc(fmt(k.valor,k.unidad,k.moneda))}</div>
+        <div class="c">${esc(k.periodo||'')}${k.tendencia?` · ${esc(k.tendencia)}`:''}</div>
+        <div class="c">pares ${esc(fmt(k.mediana_sector,k.unidad,k.moneda))} · universo ${esc(fmt(k.mediana_universo,k.unidad,k.moneda))}</div>
+        ${p!=null?`<div class="pct" title="Percentil ${p} en el universo (100 = el mejor)"><i style="width:${p}%"></i></div>`:''}
+        <div class="fx">${esc(k.que||'')}${k.formula?`<code>${esc(k.formula)}</code>`:''}${k.detalle&&k.detalle.nota?`${esc(k.detalle.nota)} `:''}${k.detalle&&k.detalle.fuente?`Fuente: ${esc(k.detalle.fuente)}. `:''}${p!=null?`Percentil ${p} de 100 en el universo.`:''}</div></div>`;
+    }
+    async function pintar(el,s,f,kpisHtml){
+      el.innerHTML='<div class="kpi-aviso">Cargando KPIs…</div>';
+      const arch=await cargar();
+      const e=arch&&arch.emisoras&&arch.emisoras[s];
+      const defs=(arch&&arch.definiciones)||{}, fams=(arch&&arch.familias)||{};
+      const cat=((arch&&arch.catalogo)||{})[e&&e.grupo]||[];
+      // ¿Un KPI del catálogo ya está capturado? Palabras clave en común, expandiendo siglas (VMT, MIN, IMOR).
+      const ABR={vmt:'ventas mismas tiendas',min:'margen interes neto',imor:'morosidad'};
+      const pal=x=>String(x||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]/g,' ').split(/\s+/)
+        .filter(w=>w.length>2&&!['del','las','los','por','con','sin','para'].includes(w)).flatMap(w=>ABR[w]?ABR[w].split(' '):[w]);
+      const capt=(f.listas?.kpis||[]).map(x=>new Set(pal(x.split('|').slice(0,4).join(' '))));
+      const pend=cat.filter(([n])=>{ const t=pal(n); return !t.length||!capt.some(u=>t.filter(w=>u.has(w)).length/t.length>=.5); });
+      const operativos=kpisHtml
+        ? kpisHtml+(pend.length?`</div><p class="kpi-cab" style="margin:10px 0 0">También conviene vigilar: ${pend.map(([n])=>esc(n)).join(' · ')}</p><div class="fgrid" hidden>`:'')
+        : pend.map(([n,w])=>`<div class="fcell pend"><div class="k">${esc(n)}</div><div class="v">por capturar</div><div class="c">${esc(w)}</div></div>`).join('');
+      const ks=((e&&e.kpis)||[]).map(x=>Object.assign({},defs[x.clave]||{},x));
+      const z=(e&&e.factores_equipo)||{}, q=(e&&e.qvm)||{};
+      const zf=v=>v==null?'—':(v>0?'+':'')+Number(v).toFixed(2);
+      el.innerHTML=`<div class="kpi-cab"><span>Último trimestre reportado <b>${esc((e&&e.ultimo_trimestre)||'n/d')}</b></span>
+          <span>pares <b>${esc(((e&&e.pares)||[]).join(', ')||'—')}</b></span>
+          <span>verde = mejor que la mediana de sus pares · rojo = peor · barra = percentil en el universo</span>
+          <a href="terminal/#/eq/${encodeURIComponent(s)}/kpis" target="_blank" rel="noopener">Abrir en North Star Terminal ›</a></div>
+        ${!arch?`<div class="kpi-aviso" style="margin-bottom:18px">Los KPIs calculados los publica GitHub Actions en la rama <b>datos</b>. En cuanto corra el workflow «Terminal · datos» aparecen aquí solos, sin encender el vigilante.</div>`:''}
+        ${s!=='MEXTRAC'?sec(`KPIs operativos · ${esc((e&&e.grupo_n)||m_sub(s))}`,operativos?`<div class="fgrid">${operativos}</div><p class="kpi-cab" style="margin-top:10px">Se capturan en empresas.txt, en el bloque === ${esc(s)} ===: «kpis:» y una línea por KPI con «- nombre | valor | periodo | tendencia | por qué importa».</p>`:''):''}
+        ${FAM.map(fa=>{ const xs=ks.filter(k=>k.familia===fa); return xs.length?sec(esc(fams[fa]||fa),`<div class="fgrid">${xs.map(celda).join('')}</div>`):''; }).join('')}
+        ${(z.quality!=null||q.z!=null)?sec('Factores del modelo QVM',`<div class="fgrid">${[['Quality',z.quality,q.quality],['Value',z.value,q.value],['Momentum',z.momentum,q.momentum],['Compuesto',z.z_ciclo,q.z]]
+          .map(([n,a,b])=>`<div class="fcell"><div class="k">${n}</div><div class="v">${zf(a)}</div><div class="c">equipo · en vivo ${zf(b)}</div></div>`).join('')}</div>`):''}
+        ${arch&&!ks.some(k=>['crecimiento','margenes','rentabilidad','bancario'].includes(k.familia))&&s!=='MEXTRAC'?`<div class="kpi-aviso">Los KPIs de estados financieros llegan con la descarga diaria de Yahoo Finance; por ahora se muestran los de mercado.</div>`:''}`;
+      el.querySelectorAll('.fcell.kpi-c').forEach(c=>c.onclick=()=>c.classList.toggle('abierta'));
+    }
+    const m_sub=s=>(META[s]&&META[s].sub)||'';
+    const sec=(t,html)=>html?`<div class="fsec"><h4>${t}</h4>${html}</div>`:'';
+    return {pintar,cargar};
+  })();
+
   /* ═══════════ FICHA DE EMISORA ═══════════ */
   const ETIQ={pe:'Precio / utilidad (P/U)',ev_ebitda:'Valor de la empresa / UAFIDA',ev_ventas:'Valor de la empresa / ventas',
     p_vl:'Precio / valor en libros',p_fe:'Precio / flujo de efectivo',div_yield:'Rendimiento por dividendo',
@@ -6165,7 +6279,9 @@ const UI=(()=>{
           <div class="v ${cls(chg)}">${chg>0?'▲':chg<0?'▼':'•'} ${pctS(chg)}</div></div>
         <button class="ficha-cerrar" aria-label="Cerrar">${ic('x')}</button>
       </div>
-      <div class="ficha-b">
+      <nav class="ficha-tabs" role="tablist"><button class="on" data-tab="ficha" role="tab">Ficha</button>
+        <button data-tab="kpis" role="tab">KPIs<span class="nuevo">nuevo</span></button></nav>
+      <div class="ficha-b ficha-pane" data-pane="ficha">
         ${reco}
         ${sec('Posición en el fondo',comp())}
         ${sec('Velas diarias · últimos seis meses',`<div style="height:300px;position:relative"><div id="fichaVelas" style="height:100%"></div></div><div id="fichaPorQue"></div>`)}
@@ -6175,7 +6291,6 @@ const UI=(()=>{
         ${sec('Nuestra tesis',f.tesis?`<p>${esc(f.tesis)}</p>`:'')}
         ${sec('Catalizadores',(f.listas?.catalizadores||[]).length?`<ul class="flist cat">${f.listas.catalizadores.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'')}
         ${sec('Riesgos',(f.listas?.riesgos||[]).length?`<ul class="flist riesgo">${f.listas.riesgos.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'')}
-        ${sec('KPIs del sector',kpisHtml?`<div class="fgrid">${kpisHtml}</div>`:'')}
         ${sec('Valuación',celdas(f,['pe','ev_ebitda','ev_ventas','p_vl','p_fe','div_yield'],'menor'))}
         ${sec('Fundamentales',celdas(f,['margen_bruto','margen_operativo','margen_neto','roe','rotacion_activos','cobertura_intereses','deuda_capital'],'mayor'))}
         ${sec('Estimados',celdas(f,['eps_proximo_ano','ventas_proximo_ano','crecimiento_eps','proximo_reporte']))}
@@ -6183,7 +6298,8 @@ const UI=(()=>{
         ${sec('Datos de mercado',celdas(f,['valor_mercado','acciones_circulacion','float','rango_52s','volumen_promedio','beta_5a','ytd','empleados','fundada','ipo']))}
         ${sec('Sustentabilidad',celdas(f,['esg_combinado','esg_ambiental','esg_social','esg_gobernanza','esg_controversias']))}
         ${sec('Noticias recientes',noticias.length?`<div class="nlist">${noticias.map(n=>tarjetaNoti(n,true)).join('')}</div>`:'')}
-      </div></div>`;
+      </div>
+      <div class="ficha-b ficha-pane" data-pane="kpis" hidden></div></div>`;
     const ovl=document.createElement('div'); ovl.className='ovl'; ovl.innerHTML=html;
     document.body.appendChild(ovl);
     setTimeout(()=>{ try{ Velas.dibujar(s); }catch(e){ console.warn('Velas',e); } },30);   // v6.7 (rAF no corre con la pestaña oculta)
@@ -6203,6 +6319,14 @@ const UI=(()=>{
     const esc2=ev=>{ if(ev.key==='Escape') cerrar(); };
     ovl.onclick=ev=>{ if(ev.target===ovl) cerrar(); };
     ovl.querySelector('.ficha-cerrar').onclick=cerrar;
+    // v6.8 · pestañas de la ficha. La de KPIs se dibuja la primera vez que se abre.
+    ovl.querySelectorAll('.ficha-tabs [data-tab]').forEach(b=>b.onclick=()=>{
+      ovl.querySelectorAll('.ficha-tabs [data-tab]').forEach(x=>x.classList.toggle('on',x===b));
+      ovl.querySelectorAll('.ficha-pane').forEach(p=>{ p.hidden=p.dataset.pane!==b.dataset.tab; });
+      const pane=ovl.querySelector('.ficha-pane[data-pane="kpis"]');
+      if(b.dataset.tab==='kpis' && !pane.dataset.listo){ pane.dataset.listo='1'; KpisFicha.pintar(pane,s,f,kpisHtml); }
+      panel.scrollTop=0;
+    });
     document.addEventListener('keydown',esc2);
     document.body.classList.add('con-hoja');
     requestAnimationFrame(()=>requestAnimationFrame(()=>{ ovl.classList.add('visible'); if(hoja) hoja.abrir(); }));
@@ -6390,6 +6514,7 @@ const UI=(()=>{
   const FUENTE_PX={
     seed:{n:'Cierres BMV incorporados al archivo', d:'Cierres reales embebidos en el documento. No son cotizaciones en vivo.'},
     cotiz:{n:'LSEG Refinitiv', d:'Publicados cada 5 minutos durante la sesión de la BMV por el vigilante conectado a LSEG Workspace.'},
+    acciones:{n:'Yahoo Finance · GitHub Actions', d:'Publicados cada 15 minutos de sesión por GitHub Actions en la rama datos, sin necesidad del vigilante.'},
     sim:{n:'LSEG Refinitiv', d:'Cotizaciones que publica el vigilante conectado a LSEG Workspace.'},
     csv:{n:'Carga manual por CSV', d:'Precios cargados a mano desde un archivo local.'},
     remote:{n:'Archivo de precios del equipo', d:'Tomados de la hoja que mantiene el gestor en el repositorio.'},
@@ -6401,7 +6526,7 @@ const UI=(()=>{
   const fechaHora = t => new Date(t).toLocaleString('es-MX',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
   function renderFuentes(){
     const S=Store.get(), f=FUENTE_PX[S.pxSource]||FUENTE_PX.seed;
-    const vivo=S.pxSource==='cotiz', simulado=S.pxSource==='sim';
+    const vivo=['cotiz','acciones'].includes(S.pxSource), simulado=S.pxSource==='sim';
     // Dos horas distintas que antes se confundían: cuándo se generó el dato y
     // cuándo lo leyó este navegador.
     const tDato=S.pxStamp?Date.parse(S.pxStamp):NaN, tLeido=S.lastUpdate?Date.parse(S.lastUpdate):NaN;

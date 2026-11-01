@@ -1,0 +1,2 @@
+# Solo para el pipeline (GitHub Actions). La terminal y el servidor MCP no necesitan nada.
+yfinance>=1.7.0,<2
