@@ -371,11 +371,7 @@ def armar_kpis(c: Corrida, v: dict, info: dict, estados: dict, multiplos: dict, 
             "operativos": (fichas.get(t) or {}).get("kpis", []),
             "factores_equipo": (fichas.get(t) or {}).get("factores_z"),
         }
-    # Pares: mismo grupo si hay al menos otro, si no el mismo sector.
-    cuenta = {}
-    for e in emis:
-        cuenta[e["grupo"]] = cuenta.get(e["grupo"], 0) + 1
-    pares = {e["t"]: (e["grupo"] if cuenta[e["grupo"]] >= 2 else e["sector"]) for e in emis}
+    pares = {e["t"]: U.pares_de(e["t"]) for e in emis}
     K.comparar(por_emisora, pares)
     qvm = K.factores_qvm({t: ks for t, ks in por_emisora.items() if t != "MEXTRAC"})
     # Lo descriptivo (nombre, fórmula, para qué sirve) va una sola vez en «definiciones».
@@ -393,7 +389,7 @@ def armar_kpis(c: Corrida, v: dict, info: dict, estados: dict, multiplos: dict, 
             valores.append(fila)
         salida[t]["kpis"] = valores
         salida[t]["qvm"] = qvm.get(t)
-        salida[t]["pares"] = sorted(u for u, p in pares.items() if p == pares[t] and u != t)
+        salida[t]["pares"] = pares.get(t, [])
     return {"generado": ahora_utc().isoformat(), "definiciones": defs, "catalogo": K.CATALOGO, "grupos": U.GRUPOS,
             "familias": K.FAMILIAS, "emisoras": salida}
 
@@ -564,6 +560,7 @@ def correr(modo: str, datos: str) -> int:
     q: dict = {}
     if modo == "semilla":
         v, q = semilla(c)
+        v = {t: sumar_sesion(x, q.get(t)) for t, x in v.items()}
         info, estados, multiplos, eventos = {}, {}, {}, {}
         c.escribir("cierres.json", armar_cierres(v))
         c.escribir("kpis.json", armar_kpis(c, v, info, estados, multiplos, fichas, q))

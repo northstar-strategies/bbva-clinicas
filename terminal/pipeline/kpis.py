@@ -770,17 +770,21 @@ def mercado(t: str, v: dict | None, ref: dict | None, cetes: float | None) -> li
 
 # ───────────────────────────── comparación contra pares ─────────────────────────────
 
-def comparar(por_emisora: dict[str, list[dict]], sectores: dict[str, str]) -> None:
-    """Agrega mediana del sector, mediana del universo y percentil a cada KPI (en el mismo dict)."""
+def comparar(por_emisora: dict[str, list[dict]], pares_de: dict[str, list[str]]) -> None:
+    """Agrega mediana de los pares, mediana del universo y percentil a cada KPI (en el mismo dict).
+
+    El percentil y la mediana del universo excluyen al ETF para no mezclar peras con manzanas."""
     claves = {}
     for t, kpis in por_emisora.items():
+        if t == "MEXTRAC":
+            continue
         for k in kpis:
             claves.setdefault(k["clave"], {})[t] = k.get("valor")
     for t, kpis in por_emisora.items():
-        sec = sectores.get(t)
+        mios = set(pares_de.get(t, []))
         for k in kpis:
             valores = claves.get(k["clave"], {})
-            pares = [v for u, v in valores.items() if sectores.get(u) == sec and u != t]
+            pares = [v for u, v in valores.items() if u in mios]
             k["mediana_sector"] = limpiar(mediana(pares)) if len(pares) >= 1 else None
             k["n_sector"] = len([p for p in pares if num(p) is not None])
             k["mediana_universo"] = limpiar(mediana(valores.values()))

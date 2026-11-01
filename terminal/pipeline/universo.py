@@ -141,6 +141,40 @@ GRUPOS = {
 
 FINANCIERAS = {"bancos", "microfinanzas", "seguros"}
 
+# Con qué grupos se compara cada emisora (los de un solo miembro se apoyan en negocios parecidos).
+PARES_GRUPO = {
+    "autoservicio": ["autoservicio", "departamental", "comercio_proximidad"],
+    "departamental": ["departamental", "autoservicio", "restaurantes"],
+    "comercio_proximidad": ["comercio_proximidad", "autoservicio", "bebidas"],
+    "bebidas": ["bebidas", "destilados", "comercio_proximidad"],
+    "destilados": ["destilados", "bebidas"],
+    "alimentos": ["alimentos", "consumo_hogar"],
+    "consumo_hogar": ["consumo_hogar", "alimentos", "farma"],
+    "farma": ["farma", "consumo_hogar"],
+    "restaurantes": ["restaurantes", "departamental"],
+    "aeropuertos": ["aeropuertos"],
+    "aerolinea": ["aerolinea", "aeropuertos"],
+    "autopistas": ["autopistas", "aeropuertos"],
+    "conglomerado": ["conglomerado", "quimicos", "cemento"],
+    "bancos": ["bancos"],
+    "microfinanzas": ["microfinanzas", "bancos"],
+    "seguros": ["seguros", "bancos"],
+    "bolsa": ["bolsa", "bancos"],
+    "telecom": ["telecom"],
+    "mineria": ["mineria"],
+    "cemento": ["cemento", "inmobiliario_industrial"],
+    "quimicos": ["quimicos", "conglomerado"],
+    "inmobiliario_industrial": ["inmobiliario_industrial", "autopistas", "cemento"],
+    "etf": [],
+}
+
+
+def pares_de(t: str) -> list[str]:
+    """Emisoras contra las que se compara t (sin incluirla)."""
+    por_t = {e["t"]: e["grupo"] for e in emisoras()}
+    grupos = PARES_GRUPO.get(por_t.get(t), [])
+    return sorted(u for u, g in por_t.items() if g in grupos and u != t)
+
 
 def emisoras(incluir_etf: bool = True) -> list[dict]:
     filas = EMISORAS + ([ETF] if incluir_etf else [])
