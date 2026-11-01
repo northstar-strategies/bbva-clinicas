@@ -367,7 +367,7 @@ def armar_kpis(c: Corrida, v: dict, info: dict, estados: dict, multiplos: dict, 
         per_q = ((est or {}).get("resultados", {}).get("trimestral", {}) or {}).get("periodos") or []
         salida[t] = {
             "grupo": g, "grupo_n": U.GRUPOS.get(g, g),
-            "ultimo_trimestre": etiqueta_trimestre(per_q[-1]) if per_q else None,
+            "ultimo_trimestre": etiqueta_trimestre(per_q[K.ultimo_valido(est)]) if per_q and K.ultimo_valido(est) is not None else None,
             "moneda_reporte": inf.get("financialCurrency"),
             "operativos": (fichas.get(t) or {}).get("kpis", []),
             "factores_equipo": (fichas.get(t) or {}).get("factores_z"),

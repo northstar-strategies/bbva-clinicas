@@ -241,6 +241,13 @@ def test_trimestre_roto_y_crecimiento():
     assert ks["crec_ventas"]["valor"] is None and ks["crec_utilidad"]["valor"] is None
     assert abs(ks["crec_ventas_udm"]["valor"] - (247467 / 219384 - 1)) < 1e-6 and ks["crec_ventas_udm"]["periodo"] == "2025"
     assert "eficiencia" not in ks
+    # Trimestre más reciente publicado a medias (sin ingresos): se mide contra el último válido.
+    est2 = {"resultados": {"trimestral": {"periodos": ["2025-06-30", "2025-09-30", "2025-12-31", "2026-03-31", "2026-06-30", "2026-09-30"],
+                                          "filas": {"TotalRevenue": [100e6, 110e6, 120e6, 130e6, 115e6, None],
+                                                    "NetIncomeCommonStockholders": [10e6, 11e6, 12e6, 13e6, 12e6, 9e6]}}}}
+    ks2 = {k["clave"]: k for k in K.financieros("BOLSAA", "bolsa", est2, {}, 30)}
+    assert abs(ks2["crec_ventas"]["valor"] - 0.15) < 1e-9 and ks2["crec_ventas"]["periodo"] == "2T26"
+    assert K.ultimo_valido(est2) == 4
     from util import crecimiento
     assert crecimiento(10, -5) is None and crecimiento(10, 0) is None and abs(crecimiento(12, 10) - 0.2) < 1e-12
 

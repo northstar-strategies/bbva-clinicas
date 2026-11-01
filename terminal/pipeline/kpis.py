@@ -306,6 +306,15 @@ def _trimestre_valido(est: dict, i: int) -> bool:
     return v is not None and v > 0
 
 
+def ultimo_valido(est: dict | None) -> int | None:
+    """Índice del último trimestre con ingresos positivos."""
+    per = _periodos(est or {}, "resultados", "trimestral")
+    for i in range(len(per) - 1, -1, -1):
+        if _trimestre_valido(est, i):
+            return i
+    return None
+
+
 def _q(est: dict, estado: str, claves: tuple, i: int) -> float | None:
     if estado == "resultados" and not _trimestre_valido(est, i):
         return None
@@ -387,7 +396,8 @@ def financieros(t: str, grupo: str, est: dict | None, info: dict | None, precio:
     fin = grupo in FINANCIERAS
     moneda = info.get("financialCurrency") or info.get("currency") or "MXN"
     per_q = _periodos(est, "resultados", "trimestral")
-    ult_q = etiqueta_trimestre(per_q[-1]) if per_q else None
+    iu = ultimo_valido(est)                     # último trimestre con ingresos (Yahoo publica trimestres parciales)
+    ult_q = etiqueta_trimestre(per_q[iu]) if iu is not None else None
 
     ventas_udm = _udm(est, "resultados", VENTAS)
     neta_udm = _udm(est, "resultados", UTIL_NETA)
@@ -404,7 +414,7 @@ def financieros(t: str, grupo: str, est: dict | None, info: dict | None, precio:
         return fn
 
     s_ventas = _serie_trimestral(est, g_yoy(VENTAS))
-    v_q = s_ventas[-1]["v"] if s_ventas else None
+    v_q = s_ventas[iu]["v"] if iu is not None and iu < len(s_ventas) else None
     out.append(_k("crec_ventas", "Crecimiento de ingresos (a/a)", v_q, "%", "crecimiento", ult_q,
                   [{"p": s["p"], "v": _q(est, "resultados", VENTAS, i)} for i, s in enumerate(s_ventas)],
                   "ingresos del trimestre ÷ mismo trimestre del año anterior − 1",
@@ -423,7 +433,7 @@ def financieros(t: str, grupo: str, est: dict | None, info: dict | None, precio:
                       formula=f"(ingresos del último año ÷ ingresos de hace {n} años)^(1/{n}) − 1",
                       que="Ritmo de crecimiento de mediano plazo."))
     s_neta = _serie_trimestral(est, g_yoy(UTIL_NETA))
-    out.append(_k("crec_utilidad", "Crecimiento de la utilidad neta (a/a)", s_neta[-1]["v"] if s_neta else None,
+    out.append(_k("crec_utilidad", "Crecimiento de la utilidad neta (a/a)", s_neta[iu]["v"] if iu is not None and iu < len(s_neta) else None,
                   "%", "crecimiento", ult_q,
                   [{"p": s["p"], "v": _q(est, "resultados", UTIL_NETA, i)} for i, s in enumerate(s_neta)],
                   "utilidad neta del trimestre ÷ mismo trimestre del año anterior − 1",
@@ -431,7 +441,7 @@ def financieros(t: str, grupo: str, est: dict | None, info: dict | None, precio:
                   serie_nombre="Utilidad neta por trimestre", moneda=moneda))
     if not fin:
         s_uaf = _serie_trimestral(est, g_yoy(UAFIDA))
-        out.append(_k("crec_uafida", "Crecimiento de la UAFIDA (a/a)", s_uaf[-1]["v"] if s_uaf else None, "%",
+        out.append(_k("crec_uafida", "Crecimiento de la UAFIDA (a/a)", s_uaf[iu]["v"] if iu is not None and iu < len(s_uaf) else None, "%",
                       "crecimiento", ult_q, formula="UAFIDA del trimestre ÷ mismo trimestre del año anterior − 1",
                       que="Crecimiento de la generación operativa de caja antes de inversiones."))
 
