@@ -4170,12 +4170,20 @@ const Remote=(()=>{
      Refinitiv siguen mandando; apagado, el tablero sigue al día solo. */
   const COTIZ_ACCIONES='https://raw.githubusercontent.com/northstar-strategies/bbva-clinicas/datos/terminal/datos/legado/cotizaciones.csv';
   const corteDe=txt=>{ try{ return parseCotiz(txt).map(r=>r.ts).filter(Boolean).sort().pop()||''; }catch(e){ return ''; } };
+  // Actions publica cada 15 minutos y el CDN de GitHub guarda 5: basta con preguntarle una vez por minuto.
+  const memAcciones={t:0, txt:''};
+  async function cotizAcciones(){
+    if(Date.now()-memAcciones.t<60000) return memAcciones.txt;
+    memAcciones.t=Date.now();
+    try{ memAcciones.txt=await fetchText(COTIZ_ACCIONES); }catch(e){ memAcciones.txt=''; }
+    return memAcciones.txt;
+  }
   async function pullCotiz(url,silencioso=false){
     const u0=url||Store.get().cfg.urlCotiz;
     let u=u0, txt='';
     try{ txt=await fetchText(u0); }catch(e){ if(url) throw e; }
     if(!url && u0!==COTIZ_ACCIONES){
-      let alt=''; try{ alt=await fetchText(COTIZ_ACCIONES); }catch(e){ /* rama datos todavía sin publicar */ }
+      const alt=await cotizAcciones();                       // vacío si la rama datos todavía no existe
       if(alt && (!txt || corteDe(alt)>corteDe(txt))){ txt=alt; u=COTIZ_ACCIONES; }
     }
     if(!txt) throw new Error('No hay archivo de cotizaciones disponible');
