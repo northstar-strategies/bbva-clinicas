@@ -6164,7 +6164,7 @@ const UI=(()=>{
         <div class="c">${esc(k.periodo||'')}${k.tendencia?` · ${esc(k.tendencia)}`:''}</div>
         <div class="c">pares ${esc(fmt(k.mediana_sector,k.unidad,k.moneda))} · universo ${esc(fmt(k.mediana_universo,k.unidad,k.moneda))}</div>
         ${p!=null?`<div class="pct" title="Percentil ${p} en el universo (100 = el mejor)"><i style="width:${p}%"></i></div>`:''}
-        <div class="fx">${esc(k.que||'')}${k.formula?`<code>${esc(k.formula)}</code>`:''}${p!=null?`Percentil ${p} de 100 en el universo.`:''}</div></div>`;
+        <div class="fx">${esc(k.que||'')}${k.formula?`<code>${esc(k.formula)}</code>`:''}${k.detalle&&k.detalle.nota?`${esc(k.detalle.nota)} `:''}${k.detalle&&k.detalle.fuente?`Fuente: ${esc(k.detalle.fuente)}. `:''}${p!=null?`Percentil ${p} de 100 en el universo.`:''}</div></div>`;
     }
     async function pintar(el,s,f,kpisHtml){
       el.innerHTML='<div class="kpi-aviso">Cargando KPIs…</div>';

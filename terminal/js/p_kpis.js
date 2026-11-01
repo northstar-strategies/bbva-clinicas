@@ -38,6 +38,8 @@
       ? `Inventario ${F.num(k.detalle.inventario, 0)} d · cobro ${F.num(k.detalle.cobro, 0)} d · pago ${F.num(k.detalle.pago, 0)} d`
       : k.clave === 'vs_sma200' && k.detalle ? `PM 50 ${F.precio(k.detalle.sma50)} · PM 200 ${F.precio(k.detalle.sma200)}${k.detalle.cruce ? ` · cruce ${esc(k.detalle.cruce)}` : ''}`
         : k.clave === 'dist_maximo' && k.detalle ? `Máximo ${F.precio(k.detalle.maximo)} · mínimo ${F.precio(k.detalle.minimo)}` : '';
+    const extra = [k.detalle && k.detalle.nota ? esc(k.detalle.nota) : '', k.detalle && k.detalle.fuente ? `Fuente: ${esc(k.detalle.fuente)}` : '']
+      .filter(Boolean).map((x) => `<div style="margin-top:3px">${x}</div>`).join('');
     return `<div class="kpi ${cal}" data-k="${esc(k.clave)}">
       <div class="k"><span>${esc(k.nombre || k.clave)}</span><button type="button" aria-label="Qué mide y cómo se calcula" data-exp>i</button></div>
       <div class="fila"><div><div class="v ${k.unidad === '%' && /^(crec|rend|momentum|vs_|dist|max_caida)/.test(k.clave) ? F.cls(k.valor) : ''}" data-rank title="Ver el ranking del universo">${esc(F.kpi(k.valor, k.unidad, k.moneda))}</div>
@@ -45,7 +47,7 @@
         <div>${serie.length > 1 ? N.barras(k.serie, { w: 84, h: 26, unidad: k.serie_nombre ? 'dinero' : k.unidad }) : ''}</div></div>
       <div class="cmp"><span>pares <b>${esc(F.kpi(k.mediana_sector, k.unidad, k.moneda))}</b></span><span>universo <b>${esc(F.kpi(k.mediana_universo, k.unidad, k.moneda))}</b></span></div>
       ${pct !== null ? `<div class="pct" title="Percentil ${pct} en el universo (100 = el mejor)"><i style="width:${pct}%"></i></div>` : ''}
-      <div class="exp">${esc(k.que || '')}${k.formula ? `<code>${esc(k.formula)}</code>` : ''}${k.serie_nombre ? `<div class="dim" style="margin-top:3px">Barras: ${esc(k.serie_nombre)}</div>` : ''}${detalle ? `<div style="margin-top:3px">${detalle}</div>` : ''}${pct !== null ? `<div class="dim" style="margin-top:3px">Percentil ${pct} de ${D.emisoras(false).length} emisoras · 100 = el mejor</div>` : ''}</div>
+      <div class="exp">${esc(k.que || '')}${k.formula ? `<code>${esc(k.formula)}</code>` : ''}${k.serie_nombre ? `<div class="dim" style="margin-top:3px">Barras: ${esc(k.serie_nombre)}</div>` : ''}${detalle ? `<div style="margin-top:3px">${detalle}</div>` : ''}${extra}${pct !== null ? `<div class="dim" style="margin-top:3px">Percentil ${pct} de ${D.emisoras(false).length} emisoras · 100 = el mejor</div>` : ''}</div>
     </div>`;
   }
 
@@ -118,7 +120,9 @@
     const kpis = ((kp && kp.kpis) || []).map((x) => Object.assign({}, D.def(x.clave), x));
     const porClave = Object.fromEntries(kpis.map((k) => [k.clave, k]));
     const tipo = DESTACADOS[e.grupo] ? e.grupo : 'general';
-    const dest = DESTACADOS[tipo].map((c) => porClave[c]).filter(Boolean);
+    // Si Yahoo no trae el trimestre de hace un año, el crecimiento a/a queda vacío: en lo esencial va el de 12 meses.
+    const dest = DESTACADOS[tipo].map((c) => (c === 'crec_ventas' && !N.esNum((porClave[c] || {}).valor) ? porClave.crec_ventas_udm || porClave[c] : porClave[c])).filter(Boolean);
+    const usados = new Set(dest.map((k) => k.clave));
     const fam = (D.kpisArch.familias) || {};
     const sinFin = !kpis.some((k) => ['crecimiento', 'margenes', 'rentabilidad', 'bancario'].includes(k.familia) && N.esNum(k.valor));
     const fuentes = `Último trimestre reportado <b class="acc">${esc((kp && kp.ultimo_trimestre) || 'n/d')}</b> · estados en <b>${esc((kp && kp.moneda_reporte) || 'MXN')}</b>
@@ -131,7 +135,7 @@
       ${dest.length ? `<div class="kpi-sec"><h3>Lo esencial <span class="nota">${tipo === 'general' ? 'crecimiento, rentabilidad, deuda y valuación' : 'indicadores clave del sector'}</span></h3><div class="kpis">${dest.map((k) => tarjeta(t, k)).join('')}</div></div>` : ''}
       ${t !== 'MEXTRAC' ? operativos(t, kp) : ''}
       ${ORDEN.map((f) => {
-        const ks = kpis.filter((k) => k.familia === f && !DESTACADOS[tipo].includes(k.clave));
+        const ks = kpis.filter((k) => k.familia === f && !usados.has(k.clave));
         return ks.length ? `<div class="kpi-sec"><h3>${esc(fam[f] || f)}</h3><div class="kpis">${ks.map((k) => tarjeta(t, k)).join('')}</div></div>` : '';
       }).join('')}
       ${t !== 'MEXTRAC' ? factores(t, kp) : ''}

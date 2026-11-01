@@ -142,6 +142,8 @@ terminal/
 ## Notas y límites
 
 - Yahoo Finance publica los precios de la BMV con unos minutos de retraso y a veces deja huecos. El pipeline reintenta y conserva el último dato bueno. Si una emisora no responde, su precio aparece marcado con `*`.
-- Algunos KPIs bancarios y de seguros son **aproximaciones con datos públicos**: el margen financiero sobre activos aproxima el MIN y los siniestros sobre ingresos aproximan la siniestralidad. Los oficiales (MIN, IMOR, ICAP, índice combinado) van como KPIs operativos en `empresas.txt`.
+- Yahoo a veces omite un trimestre o lo publica a medias. Las comparaciones contra el año anterior se buscan **por fecha**: si falta el trimestre base, el KPI queda «n/d» en lugar de comparar contra otro trimestre, y en «Lo esencial» se muestra el crecimiento de 12 meses. Los trimestres con ingresos negativos o vacíos se descartan.
+- Algunos KPIs bancarios y de seguros son **aproximaciones con datos públicos**: el margen financiero sobre activos aproxima el MIN y los siniestros sobre ingresos aproximan la siniestralidad. El índice de eficiencia bancario no se calcula porque los gastos de operación de Yahoo mezclan partidas. Los oficiales (MIN, IMOR, eficiencia, ICAP, índice combinado) van como KPIs operativos en `empresas.txt`.
+- Los múltiplos (P/U, P/VL, VE/UAFIDA) son los de Yahoo, que salen de cifras por acción; si difieren más de 3 veces del cálculo propio (señal de que Yahoo no convirtió dólares a pesos, como en Grupo México), se usa el propio. La fuente aparece en el detalle de cada KPI.
 - El QVM en vivo es una aproximación del modelo M-tilt para ver si la señal sigue vigente entre rebalanceos; la referencia es el modelo del equipo.
 - **Licencias:** el código es original; no copia código de FinceptTerminal (AGPL-3.0), y «Fincept» es marca de Fincept Corporation. Las gráficas usan [Lightweight Charts](https://github.com/tradingview/lightweight-charts) de TradingView (Apache-2.0, con su logotipo de atribución).
