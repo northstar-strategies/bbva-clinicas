@@ -59,10 +59,16 @@ def tono(texto: str) -> tuple[str, int]:
     return ("positiva" if s > 0 else "negativa" if s < 0 else "neutral"), s
 
 
+def excluidas(consulta: str) -> list[str]:
+    """Términos con guion en la búsqueda ('Megacable -Pereira' → ['pereira']): se descartan también en el titular."""
+    return [_plano(w) for w in re.findall(r"(?:^|\s)-([\wÁÉÍÓÚÑáéíóúñ]+)", consulta)]
+
+
 def palabras_clave(consulta: str) -> list[str]:
-    """'FEMSA OR OXXO' → ['femsa', 'oxxo']; '"Grupo Bimbo"' → ['grupo bimbo']."""
+    """'FEMSA OR OXXO' → ['femsa', 'oxxo']; '"Grupo Bimbo"' → ['grupo bimbo']. Ignora los términos excluidos."""
     frases = re.findall(r'"([^"]+)"', consulta)
     resto = re.sub(r'"[^"]+"', " ", consulta)
+    resto = re.sub(r"(?:^|\s)-[\wÁÉÍÓÚÑáéíóúñ]+", " ", resto)
     sueltas = [w for w in re.findall(r"[\wÁÉÍÓÚÑáéíóúñ&]+", resto) if w.upper() not in {"OR", "AND"} and len(w) > 2]
     claves = [_plano(x) for x in frases] or [_plano(w) for w in sueltas[:2]]
     if frases and sueltas and sueltas[0][0].isupper():
@@ -85,6 +91,7 @@ def _pedir(url: str, intentos: int = 3) -> bytes:
 
 
 def buscar(consulta: str, dias: int = 30, maximo: int = 12, filtrar: list[str] | None = None) -> list[dict]:
+    fuera = excluidas(consulta)
     q = urllib.parse.quote(f"{consulta} when:{dias}d")
     crudo = _pedir(RSS.format(q=q))
     raiz = ET.fromstring(crudo)
@@ -106,7 +113,7 @@ def buscar(consulta: str, dias: int = 30, maximo: int = 12, filtrar: list[str] |
             continue
         if filtrar and not any(k in _plano(titulo) for k in filtrar):
             continue
-        if es_ruido(titulo):
+        if es_ruido(titulo) or any(x in _plano(titulo) for x in fuera):
             continue
         t, s = tono(titulo)
         out.append({

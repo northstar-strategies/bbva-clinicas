@@ -226,6 +226,23 @@ def test_tono_y_palabras():
     assert N.tono("Peñoles cae tras recorte de producción")[0] == "negativa"
     assert N.palabras_clave('FEMSA OR OXXO') == ["femsa", "oxxo"]
     assert N.palabras_clave('"Grupo Bimbo"') == ["grupo bimbo"]
+    assert N.palabras_clave('Megacable -Pereira -teleférico') == ["megacable"]
+    assert N.excluidas('Megacable -Pereira -teleférico') == ["pereira", "teleferico"]
+    assert N.es_ruido("Ven con nosotros al Estadio Banorte") and not N.es_ruido("Banorte eleva su guía de utilidad")
+
+
+def test_trimestre_roto_y_crecimiento():
+    """Un trimestre con ingresos negativos (dato roto de Yahoo) no debe producir crecimientos absurdos."""
+    est = {"resultados": {"trimestral": {"periodos": ["2025-03-31", "2025-06-30", "2025-09-30", "2025-12-31", "2026-03-31", "2026-06-30"],
+                                         "filas": {"TotalRevenue": [63406e6, -13555e6, None, 57788e6, 67892e6, 62586e6],
+                                                   "NetIncomeCommonStockholders": [15288e6, -670e6, None, 15874e6, 15458e6, 15550e6]}},
+                          "anual": {"periodos": ["2024-12-31", "2025-12-31"], "filas": {"TotalRevenue": [219384e6, 247467e6]}}}}
+    ks = {k["clave"]: k for k in K.financieros("GFNORTEO", "bancos", est, {}, 200)}
+    assert ks["crec_ventas"]["valor"] is None and ks["crec_utilidad"]["valor"] is None
+    assert abs(ks["crec_ventas_udm"]["valor"] - (247467 / 219384 - 1)) < 1e-6 and ks["crec_ventas_udm"]["periodo"] == "2025"
+    assert "eficiencia" not in ks
+    from util import crecimiento
+    assert crecimiento(10, -5) is None and crecimiento(10, 0) is None and abs(crecimiento(12, 10) - 0.2) < 1e-12
 
 
 def test_rsi_y_caida():

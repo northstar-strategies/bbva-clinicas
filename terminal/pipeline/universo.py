@@ -65,7 +65,7 @@ EMISORAS = [
     ("LIVEPOLC1", "LIVEPOLC-1.MX", "Liverpool", "Consumo discrecional", "Tiendas departamentales", "departamental",
      "Liverpool_1_Positivo.svg", '"El Puerto de Liverpool"'),
     ("MEGACPO", "MEGACPO.MX", "Megacable", "Comunicaciones", "Cable y banda ancha", "telecom",
-     "Megacable.svg", 'Megacable'),
+     "Megacable.svg", 'Megacable -Pereira -teleférico'),
     ("OMAB", "OMAB.MX", "OMA", "Industriales", "Aeropuertos", "aeropuertos",
      "Grupo_Aeroportuario_Centro_Norte_logo.svg", '"Grupo Aeroportuario Centro Norte" OR "OMA" aeropuertos'),
     ("ORBIA", "ORBIA.MX", "Orbia", "Materiales", "Químicos", "quimicos",

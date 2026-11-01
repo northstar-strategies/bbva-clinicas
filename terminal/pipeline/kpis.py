@@ -228,7 +228,8 @@ def _udm(est: dict, estado: str, claves: tuple) -> float | None:
         if v is not None:
             return v
     for k in claves:
-        q = [num(x) for x in _fila(est, estado, "trimestral", k)]
+        q = [num(x) if estado != "resultados" or _trimestre_valido(est, i) else None
+             for i, x in enumerate(_fila(est, estado, "trimestral", k))]
         if len(q) >= 4 and all(x is not None for x in q[-4:]):
             return sum(q[-4:])
     for k in claves:
@@ -238,17 +239,19 @@ def _udm(est: dict, estado: str, claves: tuple) -> float | None:
     return None
 
 
-def _udm_anterior(est: dict, estado: str, claves: tuple) -> float | None:
-    """Doce meses que terminan un año antes (para crecimiento UDM): suma de los trimestres -8..-5."""
+def _crecimiento_anual(est: dict, claves: tuple) -> tuple[float | None, str | None]:
+    """Crecimiento de doce meses: UDM contra los doce meses previos si hay ocho trimestres buenos;
+    si no, el del último año fiscal contra el anterior (con su etiqueta, para no mezclar periodos)."""
     for k in claves:
-        q = [num(x) for x in _fila(est, estado, "trimestral", k)]
-        if len(q) >= 8 and all(x is not None for x in q[-8:-4]):
-            return sum(q[-8:-4])
+        q = [num(x) if _trimestre_valido(est, i) else None for i, x in enumerate(_fila(est, "resultados", "trimestral", k))]
+        if len(q) >= 8 and all(x is not None for x in q[-8:]):
+            return crecimiento(sum(q[-4:]), sum(q[-8:-4])), "UDM"
+    per = _periodos(est, "resultados", "anual")
     for k in claves:
-        a = [num(x) for x in _fila(est, estado, "anual", k)]
-        if len(a) >= 2 and a[-2] is not None:
-            return a[-2]
-    return None
+        a = [num(x) for x in _fila(est, "resultados", "anual", k)]
+        if len(a) >= 2 and a[-1] is not None and a[-2] is not None:
+            return crecimiento(a[-1], a[-2]), (per[-1][:4] if per else None)
+    return None, None
 
 
 def _saldo(est: dict, claves: tuple, atras: int = 0) -> float | None:
@@ -294,7 +297,18 @@ def _serie_trimestral(est: dict, fn) -> list[dict]:
     return out
 
 
+def _trimestre_valido(est: dict, i: int) -> bool:
+    """Yahoo a veces publica un trimestre roto (ingresos negativos o vacíos mientras otras partidas sí vienen)."""
+    f = _primera(est, "resultados", "trimestral", ("TotalRevenue", "OperatingRevenue"))
+    if not f:
+        return True
+    v = num(f[i]) if i < len(f) else None
+    return v is not None and v > 0
+
+
 def _q(est: dict, estado: str, claves: tuple, i: int) -> float | None:
+    if estado == "resultados" and not _trimestre_valido(est, i):
+        return None
     f = _primera(est, estado, "trimestral", claves)
     return num(f[i]) if i < len(f) else None
 
@@ -376,9 +390,7 @@ def financieros(t: str, grupo: str, est: dict | None, info: dict | None, precio:
     ult_q = etiqueta_trimestre(per_q[-1]) if per_q else None
 
     ventas_udm = _udm(est, "resultados", VENTAS)
-    ventas_ant = _udm_anterior(est, "resultados", VENTAS)
     neta_udm = _udm(est, "resultados", UTIL_NETA)
-    neta_ant = _udm_anterior(est, "resultados", UTIL_NETA)
     uafida_udm = _udm(est, "resultados", UAFIDA)
     oper_udm = _udm(est, "resultados", UTIL_OPER)
     bruta_udm = _udm(est, "resultados", UTIL_BRUTA)
@@ -393,15 +405,14 @@ def financieros(t: str, grupo: str, est: dict | None, info: dict | None, precio:
 
     s_ventas = _serie_trimestral(est, g_yoy(VENTAS))
     v_q = s_ventas[-1]["v"] if s_ventas else None
-    if v_q is None and ventas_udm is not None and ventas_ant:
-        v_q = crecimiento(ventas_udm, ventas_ant)
     out.append(_k("crec_ventas", "Crecimiento de ingresos (a/a)", v_q, "%", "crecimiento", ult_q,
                   [{"p": s["p"], "v": _q(est, "resultados", VENTAS, i)} for i, s in enumerate(s_ventas)],
                   "ingresos del trimestre ÷ mismo trimestre del año anterior − 1",
                   "Cuánto crece el negocio frente al año pasado, sin efectos de estacionalidad.",
                   serie_nombre="Ingresos por trimestre", moneda=moneda))
-    out.append(_k("crec_ventas_udm", "Crecimiento de ingresos UDM", crecimiento(ventas_udm, ventas_ant), "%",
-                  "crecimiento", "UDM", formula="ingresos de los últimos 12 meses ÷ los 12 meses previos − 1",
+    g12, p12 = _crecimiento_anual(est, VENTAS)
+    out.append(_k("crec_ventas_udm", "Crecimiento de ingresos (12 meses)", g12, "%", "crecimiento", p12,
+                  formula="ingresos de los últimos 12 meses ÷ los 12 meses previos − 1 (o último año fiscal ÷ el anterior)",
                   que="Crecimiento anual suavizado: elimina el ruido de un solo trimestre."))
     anual = [num(x) for x in _primera(est, "resultados", "anual", VENTAS)]
     anual = [x for x in anual if x is not None]
@@ -545,10 +556,8 @@ def financieros(t: str, grupo: str, est: dict | None, info: dict | None, precio:
         out.append(_k("min_activos", "Margen financiero / activos", div(mf, act_prom), "%", "bancario", "UDM",
                       formula="margen financiero (ingresos − gastos por intereses) UDM ÷ activos promedio",
                       que="Aproximación al margen de interés neto (MIN) con datos públicos."))
-        gastos = _udm(est, "resultados", ("SellingGeneralAndAdministration",))
-        out.append(_k("eficiencia", "Índice de eficiencia", div(gastos, ventas_udm), "%", "bancario", "UDM",
-                      formula="gastos de administración UDM ÷ ingresos totales UDM", mejor="bajo",
-                      que="Cuánto cuesta generar cada peso de ingreso. Debajo de 45% es muy eficiente."))
+        # El índice de eficiencia no se calcula: en Yahoo los gastos de operación de los bancos mezclan
+        # partidas y el resultado se aleja del reportado. El oficial va como KPI operativo en empresas.txt.
         prov = _udm(est, "resultados", PROVISIONES)
         cart = _saldo_promedio(est, CARTERA)
         out.append(_k("costo_riesgo", "Costo de riesgo", div(prov, cart), "%", "bancario", "UDM",

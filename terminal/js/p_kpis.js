@@ -13,8 +13,8 @@
   const ORDEN = ['crecimiento', 'margenes', 'rentabilidad', 'balance', 'flujo', 'bancario', 'seguros', 'valuacion', 'mercado', 'riesgo', 'tecnico', 'liquidez'];
   const DESTACADOS = {
     general: ['crec_ventas', 'margen_uafida', 'roe', 'roic', 'deuda_neta_uafida', 'margen_flujo_libre', 'pe', 've_uafida'],
-    bancos: ['roe', 'min_activos', 'eficiencia', 'costo_riesgo', 'crec_cartera', 'p_vl', 'pe', 'rend_dividendo'],
-    microfinanzas: ['roe', 'min_activos', 'costo_riesgo', 'crec_cartera', 'eficiencia', 'p_vl', 'pe', 'rend_dividendo'],
+    bancos: ['roe', 'min_activos', 'costo_riesgo', 'crec_cartera', 'capital_activos', 'p_vl', 'pe', 'rend_dividendo'],
+    microfinanzas: ['roe', 'min_activos', 'costo_riesgo', 'crec_cartera', 'capital_activos', 'p_vl', 'pe', 'rend_dividendo'],
     seguros: ['roe', 'crec_ventas', 'siniestralidad', 'margen_neto', 'p_vl', 'pe', 'rend_dividendo', 'beta_1a'],
     etf: ['rend_ytd', 'rend_1a', 'volatilidad', 'beta_1a', 'max_caida', 'importe_diario', 'sharpe', 'rsi14'],
   };

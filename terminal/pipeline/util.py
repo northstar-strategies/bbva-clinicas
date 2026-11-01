@@ -120,11 +120,11 @@ def div(a: Any, b: Any) -> float | None:
 
 
 def crecimiento(nuevo: Any, viejo: Any) -> float | None:
-    """Cambio relativo. Si la base es negativa se usa su valor absoluto para que el signo tenga sentido."""
+    """Cambio relativo. Con base cero o negativa (pérdidas, datos rotos) no tiene sentido: None."""
     n, v = num(nuevo), num(viejo)
-    if n is None or v is None or v == 0:
+    if n is None or v is None or v <= 0:
         return None
-    return (n - v) / abs(v)
+    return (n - v) / v
 
 
 def mediana(valores: Iterable[Any]) -> float | None:
