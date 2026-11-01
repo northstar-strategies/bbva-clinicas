@@ -248,6 +248,18 @@ def test_trimestre_roto_y_crecimiento():
     ks2 = {k["clave"]: k for k in K.financieros("BOLSAA", "bolsa", est2, {}, 30)}
     assert abs(ks2["crec_ventas"]["valor"] - 0.15) < 1e-9 and ks2["crec_ventas"]["periodo"] == "2T26"
     assert K.ultimo_valido(est2) == 4
+    # Trimestre faltante en la lista de Yahoo: el a/a se busca por fecha, no por posición.
+    est3 = {"resultados": {"trimestral": {"periodos": ["2025-03-31", "2025-06-30", "2025-12-31", "2026-03-31", "2026-06-30", "2026-09-30"],
+                                          "filas": {"TotalRevenue": [90e6, 100e6, 120e6, 95e6, 110e6, 130e6]}}},
+            "balance": {"trimestral": {"periodos": ["2025-06-30", "2025-12-31", "2026-06-30"],
+                                       "filas": {"NetLoan": [500e6, 520e6, 560e6], "TotalAssets": [900e6, 950e6, 1000e6]}}}}
+    ks3 = {k["clave"]: k for k in K.financieros("RA", "bancos", est3, {}, 100)}
+    assert ks3["crec_ventas"]["valor"] is None                                     # 3T25 no viene: no se inventa
+    s3 = {x["p"]: x["v"] for x in ks3["crec_ventas"]["serie"]}
+    assert s3["2T26"] == 110e6
+    assert abs(ks3["crec_cartera"]["valor"] - (560 / 500 - 1)) < 1e-9               # 2T26 contra 2T25 por fecha
+    assert K._consecutivos(["2025-12-31", "2026-03-31", "2026-06-30", "2026-09-30"], 4)
+    assert not K._consecutivos(["2025-06-30", "2025-12-31", "2026-03-31", "2026-06-30"], 4)
     from util import crecimiento
     assert crecimiento(10, -5) is None and crecimiento(10, 0) is None and abs(crecimiento(12, 10) - 0.2) < 1e-12
 

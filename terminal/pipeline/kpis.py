@@ -227,10 +227,11 @@ def _udm(est: dict, estado: str, claves: tuple) -> float | None:
         v = _ultimo(_fila(est, estado, "udm", k))
         if v is not None:
             return v
+    per = _periodos(est, estado, "trimestral")
     for k in claves:
         q = [num(x) if estado != "resultados" or _trimestre_valido(est, i) else None
              for i, x in enumerate(_fila(est, estado, "trimestral", k))]
-        if len(q) >= 4 and all(x is not None for x in q[-4:]):
+        if len(q) >= 4 and _consecutivos(per, 4) and all(x is not None for x in q[-4:]):
             return sum(q[-4:])
     for k in claves:
         v = _ultimo(_fila(est, estado, "anual", k))
@@ -242,9 +243,10 @@ def _udm(est: dict, estado: str, claves: tuple) -> float | None:
 def _crecimiento_anual(est: dict, claves: tuple) -> tuple[float | None, str | None]:
     """Crecimiento de doce meses: UDM contra los doce meses previos si hay ocho trimestres buenos;
     si no, el del último año fiscal contra el anterior (con su etiqueta, para no mezclar periodos)."""
+    per_q = _periodos(est, "resultados", "trimestral")
     for k in claves:
         q = [num(x) if _trimestre_valido(est, i) else None for i, x in enumerate(_fila(est, "resultados", "trimestral", k))]
-        if len(q) >= 8 and all(x is not None for x in q[-8:]):
+        if len(q) >= 8 and _consecutivos(per_q, 8) and all(x is not None for x in q[-8:]):
             return crecimiento(sum(q[-4:]), sum(q[-8:-4])), "UDM"
     per = _periodos(est, "resultados", "anual")
     for k in claves:
@@ -254,34 +256,43 @@ def _crecimiento_anual(est: dict, claves: tuple) -> tuple[float | None, str | No
     return None, None
 
 
-def _saldo(est: dict, claves: tuple, atras: int = 0) -> float | None:
-    """Saldo de balance más reciente (o el de hace `atras` trimestres)."""
+def _saldo(est: dict, claves: tuple) -> float | None:
+    """Saldo de balance más reciente."""
     for k in claves:
-        q = [num(x) for x in _fila(est, "balance", "trimestral", k)]
-        q = [x for x in q if x is not None]
-        if len(q) > atras:
-            return q[-1 - atras]
-    if atras == 0:
-        for k in claves:
-            v = _ultimo(_fila(est, "balance", "anual", k))
-            if v is not None:
-                return v
+        v = _ultimo(_fila(est, "balance", "trimestral", k))
+        if v is not None:
+            return v
+    for k in claves:
+        v = _ultimo(_fila(est, "balance", "anual", k))
+        if v is not None:
+            return v
+    return None
+
+
+def _saldo_hace_un_anio(est: dict, claves: tuple) -> float | None:
+    """Saldo al mismo cierre de trimestre del año anterior (buscado por fecha); si no, el del año fiscal previo."""
+    per = _periodos(est, "balance", "trimestral")
+    for k in claves:
+        f = _fila(est, "balance", "trimestral", k)
+        validos = [i for i, x in enumerate(f) if num(x) is not None]
+        if validos:
+            j = _hace_un_anio(per, validos[-1])
+            if j is not None and num(f[j]) is not None:
+                return num(f[j])
+    for k in claves:
+        a = [num(x) for x in _fila(est, "balance", "anual", k)]
+        if len(a) >= 2 and a[-2] is not None:
+            return a[-2]
     return None
 
 
 def _saldo_promedio(est: dict, claves: tuple) -> float | None:
-    """Promedio del saldo actual y el de hace un año (o el anual previo)."""
+    """Promedio del saldo actual y el de hace un año."""
     hoy = _saldo(est, claves)
     if hoy is None:
         return None
-    for k in claves:
-        q = [num(x) for x in _fila(est, "balance", "trimestral", k)]
-        if len(q) >= 5 and q[-5] is not None:
-            return (hoy + q[-5]) / 2
-        a = [num(x) for x in _fila(est, "balance", "anual", k)]
-        if len(a) >= 2 and a[-2] is not None:
-            return (hoy + a[-2]) / 2
-    return hoy
+    antes = _saldo_hace_un_anio(est, claves)
+    return (hoy + antes) / 2 if antes is not None else hoy
 
 
 def _serie_trimestral(est: dict, fn) -> list[dict]:
@@ -313,6 +324,24 @@ def ultimo_valido(est: dict | None) -> int | None:
         if _trimestre_valido(est, i):
             return i
     return None
+
+
+def _hace_un_anio(periodos: list[str], i: int) -> int | None:
+    """Índice del mismo cierre de trimestre un año antes, buscado por fecha (Yahoo a veces se salta trimestres)."""
+    if i is None or i >= len(periodos):
+        return None
+    f = periodos[i]
+    objetivo = f"{int(f[:4]) - 1}{f[4:10]}"
+    return periodos.index(objetivo) if objetivo in periodos else None
+
+
+def _consecutivos(periodos: list[str], n: int) -> bool:
+    """¿Los últimos n periodos son trimestres seguidos (sin huecos)?"""
+    if len(periodos) < n:
+        return False
+    ult = periodos[-n:]
+    meses = [int(p[:4]) * 12 + int(p[5:7]) for p in ult]
+    return all(b - a == 3 for a, b in zip(meses, meses[1:]))
 
 
 def _q(est: dict, estado: str, claves: tuple, i: int) -> float | None:
@@ -370,17 +399,23 @@ def _nota_margen(v: float | None) -> dict | None:
 
 
 def _tendencia(serie: list[dict], mejor: str = "alto") -> str | None:
-    """Compara el último dato contra el de hace un año (o el primero disponible)."""
-    vals = [s["v"] for s in serie if num(s.get("v")) is not None]
+    """Compara el último dato contra el mismo trimestre del año anterior (por etiqueta) o el primero disponible."""
+    vals = [s for s in serie if num(s.get("v")) is not None]
     if len(vals) < 2:
         return None
-    ult, base = vals[-1], vals[-5] if len(vals) >= 5 else vals[0]
-    if base == 0:
+    ult = vals[-1]
+    try:
+        t, a = ult["p"].split("T")
+        previo = next((s for s in vals if s["p"] == f"{t}T{int(a) - 1:02d}"), vals[0])
+    except (ValueError, AttributeError):
+        previo = vals[0]
+    base, x = num(previo["v"]), num(ult["v"])
+    if not base:
         return None
-    cambio = (ult - base) / abs(base)
+    cambio = (x - base) / abs(base)
     if abs(cambio) < 0.02:
         return "estable"
-    sube = ult > base
+    sube = x > base
     return "mejora" if (sube and mejor == "alto") or (not sube and mejor == "bajo") else "empeora"
 
 
@@ -408,9 +443,10 @@ def financieros(t: str, grupo: str, est: dict | None, info: dict | None, precio:
     # ── Crecimiento
     def g_yoy(claves):
         def fn(i):
-            if i < 4:
+            j = _hace_un_anio(per_q, i)
+            if j is None:
                 return None
-            return crecimiento(_q(est, "resultados", claves, i), _q(est, "resultados", claves, i - 4))
+            return crecimiento(_q(est, "resultados", claves, i), _q(est, "resultados", claves, j))
         return fn
 
     s_ventas = _serie_trimestral(est, g_yoy(VENTAS))
@@ -573,7 +609,7 @@ def financieros(t: str, grupo: str, est: dict | None, info: dict | None, precio:
         out.append(_k("costo_riesgo", "Costo de riesgo", div(prov, cart), "%", "bancario", "UDM",
                       formula="estimación preventiva para riesgos crediticios UDM ÷ cartera neta promedio",
                       mejor="bajo", que="Lo que se reserva por créditos que podrían no pagarse."))
-        cart_hoy, cart_ant = _saldo(est, CARTERA), _saldo(est, CARTERA, 4)
+        cart_hoy, cart_ant = _saldo(est, CARTERA), _saldo_hace_un_anio(est, CARTERA)
         out.append(_k("crec_cartera", "Crecimiento de la cartera (a/a)", crecimiento(cart_hoy, cart_ant), "%",
                       "bancario", ult_q, formula="cartera neta ÷ cartera de hace un año − 1",
                       que="Ritmo al que el banco expande el crédito."))
