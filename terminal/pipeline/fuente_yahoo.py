@@ -131,48 +131,70 @@ def _fecha(idx: Any) -> str:
 
 # ───────────────────────────── precios ─────────────────────────────
 
+def _positivo(v: Any) -> float | None:
+    """Yahoo manda 0 en lugar de vacío en algunos campos del meta (máximos y mínimos de índices de tasas)."""
+    x = num(v)
+    return x if x is not None and x > 0 else None
+
+
 def cotizacion_intradia(simbolo: str) -> dict | None:
-    """Barras de 5 minutos de la última sesión y la cotización que reporta Yahoo en el meta."""
-    def pedir():
+    """Barras de la última sesión y la cotización que reporta Yahoo en el meta.
+
+    Con la sesión cerrada (fin de semana, futuros en pausa) el rango de un día puede venir vacío:
+    entonces se piden cinco días y se toma la última sesión, con el cierre de la anterior como referencia."""
+    def pedir(periodo: str, intervalo: str):
         t = yf().Ticker(simbolo)
-        h = t.history(period="1d", interval="5m", auto_adjust=False, prepost=False)
+        h = t.history(period=periodo, interval=intervalo, auto_adjust=False, prepost=False)
         try:
             meta = t.get_history_metadata() or {}
         except Exception:
             meta = getattr(t, "history_metadata", {}) or {}
         return h, meta
 
-    h, meta = reintentar(pedir, etiqueta=f"intradía {simbolo}")
+    h, meta, anterior_sesion = None, {}, None
+    try:
+        h, meta = reintentar(lambda: pedir("1d", "5m"), intentos=2, etiqueta=f"intradía {simbolo}")
+    except Exception:
+        h = None
+    if h is None or not len(h):
+        h5, meta = reintentar(lambda: pedir("5d", "15m"), etiqueta=f"intradía 5d {simbolo}")
+        if h5 is None or not len(h5):
+            return None
+        dias = [i.date() for i in h5.index]
+        ultimo = max(dias)
+        previos = [i for i, d in enumerate(dias) if d < ultimo]
+        if previos:
+            anterior_sesion = num(h5.iloc[previos[-1]]["Close"])
+        h = h5[[d == ultimo for d in dias]]
     barras = []
-    if h is not None and len(h):
-        for idx, fila in h.iterrows():
-            c = num(fila.get("Close"))
-            if c is None:
-                continue
-            ts = idx.tz_convert("UTC") if getattr(idx, "tzinfo", None) else idx
-            barras.append([ts.strftime("%Y-%m-%dT%H:%M:%SZ"), round(c, 4), int(num(fila.get("Volume")) or 0)])
-    precio = num(meta.get("regularMarketPrice")) or (barras[-1][1] if barras else None)
+    for idx, fila in h.iterrows():
+        c = num(fila.get("Close"))
+        if c is None:
+            continue
+        ts = idx.tz_convert("UTC") if getattr(idx, "tzinfo", None) else idx
+        barras.append([ts.strftime("%Y-%m-%dT%H:%M:%SZ"), round(c, 4), int(num(fila.get("Volume")) or 0)])
+    precio = _positivo(meta.get("regularMarketPrice")) or (barras[-1][1] if barras else None)
     if precio is None:
         return None
-    anterior = num(meta.get("previousClose")) or num(meta.get("chartPreviousClose"))
-    apertura = num(h.iloc[0]["Open"]) if h is not None and len(h) else None
+    anterior = _positivo(meta.get("previousClose")) or anterior_sesion or _positivo(meta.get("chartPreviousClose"))
+    apertura = _positivo(h.iloc[0]["Open"]) if len(h) else None
     ts = meta.get("regularMarketTime")
     if isinstance(ts, (int, float)):
         ts = datetime.fromtimestamp(ts, timezone.utc).isoformat()
     elif isinstance(ts, datetime):
         ts = ts.astimezone(timezone.utc).isoformat()
     vol = num(meta.get("regularMarketVolume"))
-    if vol is None and barras:
-        vol = sum(b[2] for b in barras)
+    if not vol and barras:
+        vol = sum(b[2] for b in barras) or vol
     return limpiar({
         "p": precio,
         "a": anterior,
         "ab": apertura,
-        "max": num(meta.get("regularMarketDayHigh")),
-        "min": num(meta.get("regularMarketDayLow")),
+        "max": _positivo(meta.get("regularMarketDayHigh")),
+        "min": _positivo(meta.get("regularMarketDayLow")),
         "v": vol,
-        "hi52": num(meta.get("fiftyTwoWeekHigh")),
-        "lo52": num(meta.get("fiftyTwoWeekLow")),
+        "hi52": _positivo(meta.get("fiftyTwoWeekHigh")),
+        "lo52": _positivo(meta.get("fiftyTwoWeekLow")),
         "m": meta.get("currency"),
         "ts": ts,
         "barras": barras,

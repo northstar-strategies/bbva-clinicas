@@ -171,7 +171,7 @@ def test_conversiones_y_kpis():
     assert ks["roe"]["valor"] and 0.1 < ks["roe"]["valor"] < 0.2
     val = {k["clave"]: k for k in K.valuacion("FEMSAUBD", "comercio_proximidad", est, inf, 101.1, 1.0, 3.0,
                                                 Y.multiplos_historicos("FEMSAUBD.MX"))}
-    assert abs(val["pe"]["valor"] - 500e9 / 40e9) < 1e-6
+    assert val["pe"]["valor"] == 15.0 and val["pe"]["detalle"]["fuente"] == "Yahoo Finance"   # Yahoo, coherente con el cálculo
     assert val["pe"]["serie"][-1]["p"] == "2T26"
     banco = {k["clave"]: k for k in K.financieros("GFNORTEO", "bancos", Y.estados("GFNORTEO.MX"), inf, 100)}
     assert banco["costo_riesgo"]["valor"] > 0 and "margen_bruto" not in banco
@@ -182,10 +182,14 @@ def test_conversiones_y_kpis():
 def test_conversion_moneda_en_valuacion():
     instalar_yf_falso()
     est = Y.estados("GMEXICOB.MX")
-    inf = Y.info("GMEXICOB.MX")
+    inf = dict(Y.info("GMEXICOB.MX"), trailingPE=None)
     sin = {k["clave"]: k["valor"] for k in K.valuacion("GMEXICOB", "mineria", est, inf, 100, 1.0, None, None)}
     con = {k["clave"]: k["valor"] for k in K.valuacion("GMEXICOB", "mineria", est, inf, 100, 18.0, None, None)}
     assert abs(sin["pe"] / con["pe"] - 18.0) < 1e-4
+    # Si el P/U de Yahoo discrepa 18 veces del propio (moneda sin convertir), gana el cálculo propio.
+    inf2 = dict(inf, trailingPE=12.5)
+    con2 = {k["clave"]: k for k in K.valuacion("GMEXICOB", "mineria", est, inf2, 100, 18.0, None, None)}
+    assert con2["pe"]["detalle"]["fuente"] == "cálculo de la terminal" and abs(con2["pe"]["valor"] - con["pe"]) < 1e-9
 
 
 def test_corrida_completa_con_fallas():

@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import math
 from datetime import date, timedelta
+from typing import Any
 
 from universo import FINANCIERAS
 from util import (covarianza, crecimiento, desv, div, etiqueta_trimestre, limpiar, media, mediana, num,
@@ -185,6 +186,9 @@ CATALOGO = {
     ],
 }
 
+CON_INVENTARIOS = {"autoservicio", "departamental", "comercio_proximidad", "bebidas", "alimentos", "destilados",
+                   "consumo_hogar", "restaurantes", "farma", "cemento", "quimicos", "mineria", "conglomerado"}
+
 FAMILIAS = {
     "crecimiento": "Crecimiento", "margenes": "Márgenes", "rentabilidad": "Rentabilidad",
     "balance": "Balance y liquidez", "flujo": "Flujo de efectivo", "bancario": "Indicadores bancarios",
@@ -336,6 +340,12 @@ def _k(clave, nombre, valor, unidad, familia, periodo=None, serie=None, formula=
     return k
 
 
+def _nota_margen(v: float | None) -> dict | None:
+    if v is not None and abs(v) > 1:
+        return {"nota": "Mayor a 100%: la utilidad incluye partidas no operativas, como la revaluación de propiedades de inversión."}
+    return None
+
+
 def _tendencia(serie: list[dict], mejor: str = "alto") -> str | None:
     """Compara el último dato contra el de hace un año (o el primero disponible)."""
     vals = [s["v"] for s in serie if num(s.get("v")) is not None]
@@ -428,12 +438,14 @@ def financieros(t: str, grupo: str, est: dict | None, info: dict | None, precio:
              "Rentabilidad después de todos los gastos de operación."),
         ):
             s = _serie_trimestral(est, margen(claves))
-            out.append(_k(clave, nombre, div(udm, ventas_udm) if udm is not None else (s[-1]["v"] if s else None),
-                          "%", "margenes", "UDM", s, formula, que, tend=_tendencia(s)))
+            valor = div(udm, ventas_udm) if udm is not None else (s[-1]["v"] if s else None)
+            out.append(_k(clave, nombre, valor, "%", "margenes", "UDM", s, formula, que, tend=_tendencia(s),
+                          detalle=_nota_margen(valor)))
     s_mn = _serie_trimestral(est, margen(UTIL_NETA))
-    out.append(_k("margen_neto", "Margen neto", div(neta_udm, ventas_udm), "%", "margenes", "UDM", s_mn,
+    mn = div(neta_udm, ventas_udm)
+    out.append(_k("margen_neto", "Margen neto", mn, "%", "margenes", "UDM", s_mn,
                   "utilidad neta ÷ ingresos", "Cuántos centavos de utilidad deja cada peso vendido.",
-                  tend=_tendencia(s_mn)))
+                  tend=_tendencia(s_mn), detalle=_nota_margen(mn)))
 
     # ── Rentabilidad
     cap_prom = _saldo_promedio(est, CAPITAL)
@@ -486,12 +498,13 @@ def financieros(t: str, grupo: str, est: dict | None, info: dict | None, precio:
         out.append(_k("razon_circulante", "Razón circulante", div(_saldo(est, ACT_CIRC), _saldo(est, PAS_CIRC)), "x",
                       "balance", ult_q, formula="activo circulante ÷ pasivo circulante",
                       que="Capacidad de cubrir las obligaciones de corto plazo."))
-        # Ciclo de conversión de efectivo
+    # Ciclo de conversión de efectivo: solo tiene sentido con inventarios y cuentas de clientes y proveedores.
+    if grupo in CON_INVENTARIOS:
         costo_udm = _udm(est, "resultados", COSTO)
         dias_inv = div(_saldo(est, INVENTARIO), costo_udm)
         dias_cxc = div(_saldo(est, CXC), ventas_udm)
         dias_cxp = div(_saldo(est, CXP), costo_udm)
-        if dias_cxc is not None:
+        if dias_cxc is not None and costo_udm:
             ciclo = (dias_inv or 0) * 365 + dias_cxc * 365 - (dias_cxp or 0) * 365
             out.append(_k("ciclo_efectivo", "Ciclo de conversión de efectivo", ciclo, "días", "balance", ult_q,
                           formula="días de inventario + días de cobro − días de pago", mejor="bajo",
@@ -558,16 +571,27 @@ def financieros(t: str, grupo: str, est: dict | None, info: dict | None, precio:
 
 # ───────────────────────────── KPIs de valuación ─────────────────────────────
 
+def _elegir(yahoo: Any, propio: float | None) -> tuple[float | None, str]:
+    """Múltiplo de Yahoo (sale de cifras por acción, así que no depende de cómo se cuenten las series de
+    acciones) salvo que discrepe más de 3 veces del cálculo propio: eso delata una moneda sin convertir."""
+    y = num(yahoo)
+    if y is not None and 0 < y < 1000:
+        if propio is None or propio <= 0 or 1 / 3 <= y / propio <= 3:
+            return y, "Yahoo Finance"
+    return propio, "cálculo de la terminal"
+
+
 def valuacion(t: str, grupo: str, est: dict | None, info: dict | None, precio: float | None,
               fx_financiera: float, divs_12m: float | None, hist_multiplos: dict | None) -> list[dict]:
     est = est or {}
     info = info or {}
     fin = grupo in FINANCIERAS
-    mc = num(info.get("marketCap"))
-    acciones = num(info.get("sharesOutstanding"))
-    if precio and acciones and mc is None:
-        mc = precio * acciones
     fx = fx_financiera or 1.0
+    conv = (lambda v: v * fx if v is not None else None)
+    acciones = num(info.get("sharesOutstanding")) or num(info.get("impliedSharesOutstanding")) or _saldo(est, ("OrdinarySharesNumber",))
+    mc = num(info.get("marketCap"))
+    if mc is None and precio and acciones:
+        mc = precio * acciones
     neta = _udm(est, "resultados", UTIL_NETA)
     ventas = _udm(est, "resultados", VENTAS)
     uafida = _udm(est, "resultados", UAFIDA)
@@ -575,42 +599,47 @@ def valuacion(t: str, grupo: str, est: dict | None, info: dict | None, precio: f
     deuda, efectivo = _saldo(est, DEUDA), _saldo(est, EFECTIVO)
     minoritario = _saldo(est, ("MinorityInterest",))
     fl = _udm(est, "flujo", FLUJO_LIBRE)
-    conv = (lambda v: v * fx if v is not None else None)
+    if fl is None:
+        fo, cx = _udm(est, "flujo", FLUJO_OPER), _udm(est, "flujo", CAPEX)
+        fl = fo + cx if fo is not None and cx is not None else None
     ve = None
     if mc is not None and not fin:
         ve = mc + conv(deuda or 0) - conv(efectivo or 0) + conv(minoritario or 0)
     hist = (hist_multiplos or {}).get("filas", {})
 
-    def k(clave, nombre, valor, formula, que, mejor="bajo", clave_hist=None):
+    pe, f_pe = _elegir(info.get("trailingPE"), div(mc, conv(neta)) if neta and neta > 0 else None)
+    pvl, f_pvl = _elegir(info.get("priceToBook"), div(mc, conv(capital)) if capital and capital > 0 else None)
+    evu, f_evu = _elegir(info.get("enterpriseToEbitda"), div(ve, conv(uafida)) if uafida and uafida > 0 and ve else None)
+    evv, f_evv = _elegir(info.get("enterpriseToRevenue"), div(ve, conv(ventas)) if ventas and ve else None)
+
+    def k(clave, nombre, valor, formula, que, mejor="bajo", clave_hist=None, fuente=None):
         serie = []
         if clave_hist and hist.get(clave_hist):
             per = (hist_multiplos or {}).get("periodos", [])
             serie = [{"p": etiqueta_trimestre(p), "v": v} for p, v in zip(per, hist[clave_hist])]
-        return _k(clave, nombre, valor, "x" if clave not in ("rend_dividendo", "rend_utilidades", "rend_flujo") else "%",
-                  "valuacion", "actual", serie, formula, que, mejor)
+        x = _k(clave, nombre, valor, "x" if clave not in ("rend_dividendo", "rend_utilidades", "rend_flujo") else "%",
+               "valuacion", "actual", serie, formula, que, mejor)
+        x["detalle"] = {"fuente": fuente} if fuente else None
+        return x
 
-    pe = div(mc, conv(neta)) if neta and neta > 0 else None
-    out = [k("pe", "Precio / utilidad (P/U)", pe, "valor de mercado ÷ utilidad neta UDM",
-             "Años de utilidad que paga el mercado. Menor = más barata, si la utilidad es sostenible.", clave_hist="pe")]
-    out.append(k("p_vl", "Precio / valor en libros", div(mc, conv(capital)) if capital and capital > 0 else None,
-                 "valor de mercado ÷ capital contable", "Clave en bancos y aseguradoras.", clave_hist="p_vl"))
+    out = [k("pe", "Precio / utilidad (P/U)", pe, "precio ÷ utilidad por acción de los últimos 12 meses",
+             "Años de utilidad que paga el mercado. Menor = más barata, si la utilidad es sostenible.", clave_hist="pe", fuente=f_pe)]
+    out.append(k("p_vl", "Precio / valor en libros", pvl, "precio ÷ valor en libros por acción",
+                 "Clave en bancos y aseguradoras.", clave_hist="p_vl", fuente=f_pvl))
     if not fin:
-        out.append(k("ve_uafida", "Valor empresa / UAFIDA", div(ve, conv(uafida)) if uafida and uafida > 0 else None,
-                     "(valor de mercado + deuda − efectivo + minoritario) ÷ UAFIDA UDM",
-                     "El múltiplo más usado para comparar empresas con distinta deuda.", clave_hist="ve_uafida"))
-        out.append(k("ve_ventas", "Valor empresa / ventas", div(ve, conv(ventas)) if ventas else None,
-                     "valor de la empresa ÷ ingresos UDM", "Útil cuando la utilidad es baja o volátil.",
-                     clave_hist="ve_ventas"))
-        out.append(k("rend_flujo", "Rendimiento de flujo libre", div(conv(fl), mc) if fl is not None else None,
-                     "flujo libre UDM ÷ valor de mercado", "El flujo que «rinde» la acción a su precio actual.",
-                     mejor="alto"))
-    out.append(k("rend_utilidades", "Rendimiento de utilidades (inverso del P/U)", div(conv(neta), mc),
-                 "utilidad neta UDM ÷ valor de mercado", "Se compara contra la tasa de CETES.", mejor="alto"))
+        out.append(k("ve_uafida", "Valor empresa / UAFIDA", evu, "(valor de mercado + deuda − efectivo) ÷ UAFIDA UDM",
+                     "El múltiplo más usado para comparar empresas con distinta deuda.", clave_hist="ve_uafida", fuente=f_evu))
+        out.append(k("ve_ventas", "Valor empresa / ventas", evv, "valor de la empresa ÷ ingresos UDM",
+                     "Útil cuando la utilidad es baja o volátil.", clave_hist="ve_ventas", fuente=f_evv))
+        # Rendimiento de flujo = (flujo libre ÷ utilidad) ÷ P/U: así queda en la misma base que el P/U.
+        rf = div(div(fl, neta), pe) if fl is not None and neta and neta > 0 and pe else (div(conv(fl), mc) if fl is not None else None)
+        out.append(k("rend_flujo", "Rendimiento de flujo libre", rf, "flujo libre UDM ÷ valor de mercado",
+                     "El flujo que «rinde» la acción a su precio actual.", mejor="alto"))
+    out.append(k("rend_utilidades", "Rendimiento de utilidades (inverso del P/U)", div(1, pe) if pe and pe > 0 else None,
+                 "1 ÷ P/U", "Se compara contra la tasa de CETES.", mejor="alto"))
     dy = div(divs_12m, precio) if divs_12m and precio else num(info.get("trailingAnnualDividendYield"))
     out.append(k("rend_dividendo", "Rendimiento por dividendo", dy, "dividendos pagados en 12 meses ÷ precio",
-                 "Retorno en efectivo al accionista.", mejor="alto"))
-    for kpi in out:
-        kpi["detalle"] = {"valor_mercado": mc, "valor_empresa": ve, "moneda_reporte_a_cotizacion": fx}
+                 "Retorno en efectivo al accionista.", mejor="alto", fuente="dividendos de las velas diarias" if divs_12m else None))
     return [limpiar(x) for x in out]
 
 

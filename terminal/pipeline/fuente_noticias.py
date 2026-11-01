@@ -42,6 +42,15 @@ def _plano(s: str) -> str:
     return "".join(c for c in s if unicodedata.category(c) != "Mn")
 
 
+# Titulares que coinciden por nombre pero no hablan del negocio (estadios, patrocinios, deportes).
+_RUIDO = re.compile(r"\b(estadio|boletos?|partido|futbol|liga mx|concierto|torneo|jugador|goles?|selecci[oó]n mexicana|"
+                    r"club am[eé]rica|rayados|tigres|sorteo|promoci[oó]n)\b", re.I)
+
+
+def es_ruido(titulo: str) -> bool:
+    return bool(_RUIDO.search(_plano(titulo)))
+
+
 def tono(texto: str) -> tuple[str, int]:
     palabras = re.findall(r"[a-zñ]+", _plano(texto))
     p = sum(1 for w in palabras if w in _POS_S)
@@ -96,6 +105,8 @@ def buscar(consulta: str, dias: int = 30, maximo: int = 12, filtrar: list[str] |
         if fecha < limite:
             continue
         if filtrar and not any(k in _plano(titulo) for k in filtrar):
+            continue
+        if es_ruido(titulo):
             continue
         t, s = tono(titulo)
         out.append({

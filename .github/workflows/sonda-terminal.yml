@@ -36,7 +36,7 @@ jobs:
           print("ESTADO", json.dumps({k: e.get(k) for k in ("modo", "fuentes", "cobertura", "errores", "n_avisos", "duracion_s", "mercado")}, ensure_ascii=False))
           for a in (e.get("avisos") or [])[:40]: print("AVISO", a)
           q = (j("cotizaciones.json", {}) or {}).get("q", {})
-          for t in ["FEMSAUBD", "GMEXICOB", "PEOLES", "LIVEPOLC1", "MEXTRAC", "IPC", "USDMXN", "UST10", "COBRE"]:
+          for t in ["FEMSAUBD", "GMEXICOB", "PEOLES", "LIVEPOLC1", "MEXTRAC", "IPC", "USDMXN", "UST10", "COBRE", "ORO", "BRENT", "DXY", "MAIZ"]:
               print("COT", t, json.dumps(q.get(t), ensure_ascii=False)[:260])
           intr = j("intradia.json", {}) or {}
           print("INTRADIA", intr.get("fecha"), {t: len(v) for t, v in list((intr.get("s") or {}).items())[:6]})
@@ -73,6 +73,24 @@ jobs:
               v = j(f"velas/{t}.json", {}) or {}
               print("VELAS", t, v.get("fuente"), len(v.get("d", [])), (v.get("d") or [None])[0], (v.get("d") or [None])[-1], v.get("c", [None])[-1], sum(1 for z in v.get("v", []) if z == 0), len(v.get("div", [])))
           print("TAMANOS", {os.path.relpath(p2, D): os.path.getsize(p2) for p2 in sorted(glob.glob(D + "/*.json"))})
+          PART = ["TotalRevenue", "OperatingRevenue", "InterestIncome", "InterestExpense", "NetInterestIncome", "SellingGeneralAndAdministration",
+                  "OperatingExpense", "TotalExpenses", "ProvisionForDoubtfulAccounts", "PretaxIncome", "NetIncomeCommonStockholders",
+                  "NetPolicyholderBenefitsAndClaims"]
+          for t in ["GFNORTEO", "BBAJIOO", "GFINBURO", "RA", "GENTERA", "Q"]:
+              est = j(f"estados/{t}.json", {}) or {}
+              for fr in ("trimestral", "anual", "udm"):
+                  tb = (est.get("resultados") or {}).get(fr) or {}
+                  print("RAW", t, fr, tb.get("periodos"))
+                  for k2 in PART:
+                      if k2 in tb.get("filas", {}): print("   ", k2, [None if v is None else round(v / 1e6) for v in tb["filas"][k2]])
+              bq = (est.get("balance") or {}).get("trimestral") or {}
+              for k2 in ["TotalAssets", "NetLoan", "StockholdersEquity", "TotalDebt"]:
+                  if k2 in bq.get("filas", {}): print("   B", k2, bq.get("periodos"), [None if v is None else round(v / 1e6) for v in bq["filas"][k2]])
+          for t in ["FEMSAUBD", "GFNORTEO", "GMEXICOB", "AMXB", "KOFUBL"]:
+              x = f.get(t, {})
+              print("ACC", t, {k2: x.get(k2) for k2 in ("sharesOutstanding", "impliedSharesOutstanding", "floatShares", "marketCap", "enterpriseValue", "trailingEps", "bookValue", "trailingPE", "priceToBook", "enterpriseToEbitda", "enterpriseToRevenue")})
+              kk = {y["clave"]: y for y in (k.get("emisoras") or {}).get(t, {}).get("kpis", [])}
+              print("VAL", t, [(c, kk.get(c, {}).get("valor"), (kk.get(c, {}).get("detalle") or {}).get("fuente")) for c in ("pe", "p_vl", "ve_uafida", "ve_ventas", "rend_flujo", "rend_utilidades", "rend_dividendo")])
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -402,12 +402,13 @@ def armar_calendario(eventos: dict) -> dict:
             out.append({"fecha": r["fecha"], "t": r.get("emisora", ""), "tipo": r.get("tipo", ""),
                         "titulo": r.get("titulo", ""), "fuente": r.get("fuente", "equipo")})
     vistos = {(x["fecha"], x["t"], x["tipo"]) for x in out}
+    limite = (date.today() - timedelta(days=45)).isoformat()      # Yahoo deja la última fecha aunque sea vieja
     for t, ev in (eventos or {}).items():
         for f in ev.get("reporte") or []:
-            if (f, t, "Reporte trimestral") not in vistos:
+            if f >= limite and (f, t, "Reporte trimestral") not in vistos:
                 out.append({"fecha": f, "t": t, "tipo": "Reporte trimestral", "titulo": "Reporte de resultados (fecha estimada por Yahoo)",
                             "fuente": "Yahoo Finance"})
-        if ev.get("ex_dividendo"):
+        if ev.get("ex_dividendo") and ev["ex_dividendo"] >= limite:
             out.append({"fecha": ev["ex_dividendo"], "t": t, "tipo": "Dividendo", "titulo": "Fecha ex-dividendo",
                         "fuente": "Yahoo Finance"})
     out.sort(key=lambda x: x["fecha"])
@@ -437,7 +438,15 @@ def armar_portafolio(c: Corrida, v: dict, q: dict) -> None:
                 cierres.setdefault(f, {})[t] = x
                 if t == "MEXTRAC" and vt.get("fuente", "").startswith("Yahoo") and i < len(vols) and vols[i] == 0:
                     sin_op.add(f)
-    # La sesión en curso entra con la última cotización.
+    # Los días que ya registró el tracker se valúan con sus cierres oficiales de Refinitiv (historico.csv), para que
+    # la serie cuadre al centavo con rendimientos.csv; los días posteriores, con las velas de Yahoo.
+    oficiales = {r["fecha"]: r for r in F.leer_csv("historico.csv") if r.get("fecha", "") >= inicio}
+    for f, fila in oficiales.items():
+        cierres[f] = {t: num(fila.get(t)) for t in tickers if num(fila.get(t)) is not None}
+        if num(fila.get("MEXTRAC")) is None:
+            sin_op.add(f)
+        else:
+            sin_op.discard(f)
     hoy = fecha_cdmx(ahora_utc())
     serie = P.serie_diaria(ops, cierres, cap, ref, pesos, sin_op)
     mercado = estado_mercado(feriados=par.get("feriados", []))
