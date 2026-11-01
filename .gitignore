@@ -1,0 +1,4 @@
+# Datos de la terminal: los publica GitHub Actions en la rama «datos», no en main.
+terminal/datos/
+__pycache__/
+*.pyc
