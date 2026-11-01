@@ -45,7 +45,9 @@ input:focus,select:focus{border-color:var(--acc)}
 .app{display:grid;grid-template-rows:auto auto auto 1fr auto;height:100vh;height:100dvh}
 .barra{display:flex;align-items:center;gap:10px;padding:6px 10px;background:var(--panel);border-bottom:1px solid var(--line)}
 .marca{display:flex;align-items:center;gap:8px;flex:none;color:var(--acc);font-weight:700;letter-spacing:.08em;font-size:12px}
-.marca svg{width:18px;height:18px}
+.marca img{width:auto;height:24px;flex:none;filter:drop-shadow(0 0 4px rgba(255,255,255,.12))}
+.marca:hover,.marca:focus{text-decoration:none}
+.marca:hover span{color:var(--acc-2)}
 .marca small{color:var(--txt-3);font-weight:500;letter-spacing:.04em}
 .cmd{position:relative;flex:1;min-width:0;max-width:760px}
 .cmd-caja{display:flex;align-items:center;gap:6px;background:#000;border:1px solid var(--acc-line);border-radius:var(--r);padding:0 8px;height:28px}
@@ -155,7 +157,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px}
 .t tfoot td{border-top:1px solid var(--line-2);font-weight:700}
 .sym{display:inline-flex;align-items:center;gap:7px;color:var(--info);font-weight:600;cursor:pointer}
 .sym .lg{width:18px;height:18px;border-radius:3px;background:#fff;display:grid;place-items:center;overflow:hidden;flex:none;position:relative}
-.sym .lg img{width:100%;height:100%;object-fit:contain;padding:1px}
+.sym .lg img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:1px;background:#fff}
 .sym .lg b{font-size:7px;color:#111;font-weight:800}
 .nombre{color:var(--txt-2);font-weight:400;max-width:190px;overflow:hidden;text-overflow:ellipsis;display:inline-block;vertical-align:bottom}
 .pos{color:var(--pos)} .neg{color:var(--neg)} .neu{color:var(--neu)} .acc{color:var(--acc)} .dim{color:var(--txt-3)} .warn{color:var(--warn)}
@@ -196,7 +198,7 @@ svg.spk{display:inline-block;vertical-align:middle}
 .eq-h{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--line);
   border-radius:var(--r);padding:10px 12px;margin-bottom:8px}
 .eq-h .lg{width:46px;height:46px;border-radius:5px;background:#fff;display:grid;place-items:center;overflow:hidden;position:relative}
-.eq-h .lg img{width:100%;height:100%;object-fit:contain;padding:4px}
+.eq-h .lg img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:4px;background:#fff}
 .eq-h .lg b{font-size:13px;color:#111;font-weight:800}
 .eq-h h2{font-family:var(--sans);font-size:17px;font-weight:600;letter-spacing:-.01em;line-height:1.2}
 .eq-h .tk{color:var(--acc);font-weight:700;margin-top:2px;font-size:11.5px;letter-spacing:.04em}
@@ -315,4 +317,57 @@ svg.spk{display:inline-block;vertical-align:middle}
   .graf{height:320px}
   .criterio{grid-template-columns:1fr 64px 1fr auto}
   .pie .opc{display:none}
+}
+
+/* Atribución del alfa por posición */
+.atr-cuadre{padding:8px 9px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:5px}
+.atr-total{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.atr-total b{font-size:18px;font-weight:600}
+.atr-piezas{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline;font-size:11px}
+.atr-piezas i{color:var(--txt-3);font-style:normal}
+.atr-ok{font-size:10.5px;color:var(--txt-2);font-family:var(--sans);line-height:1.5}
+.atr-nota{font-size:10.5px;padding:4px 9px;font-family:var(--sans);line-height:1.5}
+.bdiv{position:relative;display:inline-block;width:100%;min-width:60px;height:8px;background:var(--panel-3);border-radius:2px;vertical-align:middle}
+.bdiv::after{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--line-3)}
+.bdiv i{position:absolute;top:0;bottom:0;border-radius:2px}
+.t td.nota-larga{white-space:normal;min-width:220px;font-family:var(--sans);color:var(--txt-2);font-size:11px;line-height:1.45}
+
+/* Investigación, drivers y simulador */
+.texto.inv{max-width:none;font-size:12px}
+.texto.inv p{margin:0 0 7px}
+.inv-tt{color:var(--acc);font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;margin:8px 0 4px;font-family:var(--mono)}
+.inv-nota{font-size:10.5px;padding:5px 9px;line-height:1.5;font-family:var(--sans)}
+.texto .inv-nota{padding:4px 0}
+.nv{color:var(--txt-3);font-style:italic}
+a.cita{font-size:8.5px;vertical-align:super;line-height:0;margin-left:1px;padding:0 2px;border:1px solid var(--line-2);border-radius:2px;color:var(--info)}
+a.cita:hover{text-decoration:none;border-color:var(--info)}
+.inv-lista li{font-size:12px}
+.t.inv-tabla td{white-space:normal;min-width:90px;font-size:11px;vertical-align:top}
+.t.inv-tabla td.i{min-width:170px;color:var(--txt)}
+.t.drivers td{vertical-align:top}
+.t.drivers td.drv{white-space:normal;min-width:210px;font-family:var(--sans)}
+.t.drivers td.drv .dim{font-size:10.5px;line-height:1.4;margin-top:2px}
+.t.drivers td.drv-act{white-space:normal;min-width:170px;font-size:11px;color:var(--txt-2);font-family:var(--sans)}
+.t td.fx{white-space:normal;font-size:10.5px;color:var(--acc-2);background:var(--panel-2)}
+.t.kv td{white-space:normal;vertical-align:top}
+.t.kv td:first-child{width:46%}
+.t.glosario td{font-family:var(--sans);font-size:11.5px;line-height:1.45}
+.sim{display:flex;flex-direction:column;gap:7px}
+.sim-f{display:grid;grid-template-columns:minmax(0,1fr) minmax(90px,140px) 76px;gap:8px;align-items:center;font-size:11px}
+.sim-n{color:var(--txt-2);font-family:var(--sans)}
+.sim-f input[type=range]{width:100%;accent-color:var(--acc);padding:0;border:0;background:none}
+.sim-f output{text-align:right;color:var(--acc-2);font-weight:600}
+.sim-res{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:4px;border-top:1px solid var(--line);padding-top:7px}
+.sim-tot{display:flex;flex-direction:column;gap:1px}
+.sim-tot b{font-size:16px;font-weight:600}
+.panel.juicio{border-left:3px solid var(--acc)}
+@media (max-width:720px){
+  .sim-f{grid-template-columns:1fr 70px;}
+  .sim-f input[type=range]{grid-column:1/-1;grid-row:2}
+  .t.kv td:first-child{width:50%}
+}
+.solo-cel{display:none}
+@media (max-width:720px){
+  .solo-cel{display:block;font-size:11px;margin-top:2px;color:var(--txt-2)}
+  .t.drivers td.drv{min-width:190px}
 }

@@ -13,6 +13,11 @@ from datetime import date, datetime, timedelta, timezone
 from statistics import median
 from typing import Any, Iterable, Sequence
 
+# Etiquetas públicas de las fuentes (lo que se muestra en la terminal). La descarga técnica está en fuente_yahoo.py.
+FUENTE_MERCADO = "Mercado · diferido"
+FUENTE_ESTADOS = "Estados financieros reportados"
+FUENTE_CALENDARIO = "Calendario de mercado (estimado)"
+
 # México no tiene horario de verano desde 2022 (UTC-6 todo el año), pero la BMV se alinea con Nueva York:
 # opera de 9:30 a 16:00 hora del Este, o sea 7:30–14:00 CDMX con el horario de verano de EUA y 8:30–15:00 sin él.
 CDMX = timezone(timedelta(hours=-6), "CDMX")

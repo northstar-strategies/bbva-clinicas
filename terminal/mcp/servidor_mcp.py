@@ -57,7 +57,7 @@ class Datos:
         return datos
 
     def opcional(self, nombre: str, defecto=None):
-        """Archivos que pueden no existir todavía (p. ej. sin la primera descarga de Yahoo)."""
+        """Archivos que pueden no existir todavía (p. ej. antes de la primera corrida completa)."""
         try:
             return self.json(nombre)
         except Exception:
@@ -98,6 +98,16 @@ def resolver(d: Datos, texto: str) -> str:
 
 
 # ───────────────────────────── formato ─────────────────────────────
+
+def fuente(s) -> str:
+    """Etiqueta pública de la fuente (los datos ya publicados pueden traer el nombre del agregador)."""
+    import re
+    return re.sub(r"Yahoo Finance|Yahoo", "Mercado · diferido", str(s or ""), flags=re.I)
+
+
+def pb(x, d=1):
+    return "n/d" if x is None else f"{x * 1e4:+.{d}f} pb"
+
 
 def pct(x, d=2):
     return "n/d" if x is None else f"{x * 100:+.{d}f}%"
@@ -148,7 +158,7 @@ def h_cotizacion(d, a):
     for t in claves:
         x = q.get(t, {})
         filas.append([t, U.get(t, {}).get("n", t), x.get("p"), pct(x.get("cp")), x.get("min"), x.get("max"), x.get("lo52"), x.get("hi52"),
-                      x.get("ts", "")[:16], x.get("fuente", "")])
+                      x.get("ts", "")[:16], fuente(x.get("fuente", ""))])
     return tabla(["Clave", "Nombre", "Último", "Cambio", "Mín. día", "Máx. día", "Mín. 52s", "Máx. 52s", "Hora (UTC)", "Fuente"], filas)
 
 
@@ -300,7 +310,7 @@ def h_estados(d, a):
     t = resolver(d, a.get("emisora"))
     est = d.opcional(f"estados/{t}.json")
     if not est:
-        return f"Todavía no hay estados financieros de {t}: llegan con la descarga diaria de Yahoo Finance."
+        return f"Todavía no hay estados financieros de {t}: llegan con la descarga diaria de GitHub Actions."
     e, fr = a.get("estado", "resultados"), a.get("frecuencia", "trimestral")
     tb = (est.get(e) or {}).get(fr)
     if not tb:
@@ -315,6 +325,121 @@ def h_comparar(d, a):
     defs = d.kpis().get("definiciones", {})
     claves = a.get("kpis") or ["rend_ytd", "rend_1a", "volatilidad", "beta_1a", "crec_ventas", "margen_uafida", "margen_neto", "roe", "deuda_neta_uafida", "pe", "ve_uafida", "p_vl", "rend_dividendo"]
     return tabla(["KPI", *ts], [[defs.get(c, {}).get("nombre", c), *[kfmt(_valor(d, t, c), defs.get(c, {}).get("unidad")) for t in ts]] for c in claves])
+
+
+def h_atribucion(d, a):
+    p = d.json("portafolio.json")
+    at = p.get("atribucion") or {}
+    if not at.get("posiciones"):
+        return "Todavía no hay atribución: se calcula con operaciones.csv en cada corrida del pipeline."
+    grupo = (a.get("grupo") or "").lower()
+    n = int(a.get("n") or 40)
+    c = at.get("componentes", {})
+    suma = lambda est: sum(x["aporte"] for x in at["posiciones"] if x["estado"] == est)  # noqa: E731
+    lineas = [f"Alfa acumulado del {at['desde']} al {at['hasta']} ({at['dias']} días): {pb(at['alfa'])} "
+              f"(cartera {pct(at['rend'])} vs MEXTRAC {pct(at['bench'])}).",
+              f"= abiertas {pb(suma('abierta'))} + cerradas {pb(suma('cerrada'))} + solo vía índice {pb(suma('indice'))} "
+              f"+ efectivo {pb(c.get('efectivo'))} + premio del ETF {pb(c.get('etf'))} + operaciones {pb(c.get('operaciones'))} "
+              f"+ comisiones {pb(c.get('comisiones'))}" + (f" + sin explicar {pb(c.get('residual'))}" if abs(c.get("residual") or 0) > 1e-6 else ""),
+              f"Método: {at.get('metodo', '')} Pesos del índice: {at.get('pesos_benchmark', '')}."]
+    if at.get("verificacion"):
+        v = at["verificacion"]
+        lineas.append(f"Verificado contra el tracker de Excel: {v['comparados']} aportes diarios, diferencia máxima {v['max_dif'] * 1e4:.4f} pb.")
+    for est, titulo in (("abierta", "Posiciones abiertas"), ("cerrada", "Posiciones cerradas"), ("indice", "Solo vía índice (subponderadas por no tenerlas directo)")):
+        if grupo and not est.startswith(grupo[:4]):
+            continue
+        xs = [x for x in at["posiciones"] if x["estado"] == est and (est != "indice" or abs(x["aporte"]) > 5e-7)][:n]
+        lineas += ["", f"## {titulo}", tabla(["Clave", "Aporte al alfa", "Peso activo", "Peso efectivo", "Índice", "Rend. total", "G/P total"],
+                                             [[x["t"], pb(x["aporte"]), f"{(x.get('activo') or 0) * 100:+.2f} pp", f"{(x.get('peso_lt') or 0) * 100:.2f}%",
+                                               f"{(x.get('peso_b') or 0) * 100:.2f}%", pct(x.get("rend")),
+                                               "" if est == "indice" else f"${x.get('pyg_total') or 0:,.0f}"] for x in xs]) if xs else "Ninguna."]
+    if not grupo or grupo.startswith("vent"):
+        vs = at.get("ventas") or []
+        lineas += ["", "## Ventas (cierres parciales o totales)", tabla(["Fecha", "Clave", "Motivo", "Títulos", "Precio", "Costo prom.", "Realizado", "Quedan"],
+                   [[x["f"], x["t"], x.get("motivo", ""), f"{x['titulos']:,}", f"{x['precio']:.2f}", f"{x['costo_promedio']:.2f}", f"${x['realizado']:,.2f}",
+                     "cerrada" if x.get("cierre_total") else f"{x.get('queda', 0):,}"] for x in vs]) if vs else "Sin ventas."]
+    return "\n".join(lineas)
+
+
+def _investigacion(d, t=None):
+    docs = d.opcional("investigacion.json").get("documentos", [])
+    if t is None:
+        return docs[0] if docs else None
+    for doc in docs:
+        if t in (doc.get("emisoras") or {}):
+            return doc, doc["emisoras"][t]
+    return None, None
+
+
+def h_investigacion(d, a):
+    if not a.get("emisora"):
+        doc = _investigacion(d)
+        if not doc:
+            return "Sin documentos en investigacion/."
+        out = [f"# {doc.get('titulo')}", f"Corte: {doc.get('corte')} · {doc.get('alcance') or ''} · archivo {doc.get('archivo')}", "", "## TL;DR",
+               *[f"- {x}" for x in doc.get("tldr", [])], "", "## Hallazgos", *[f"- {x}" for x in doc.get("hallazgos", [])], "", "## Catalizadores macro",
+               tabla(["Catalizador", "Estado", "Emisoras afectadas"], [[m["catalizador"], m["estado"][:300], m["afectadas"]] for m in doc.get("macro", [])]),
+               "", "## Recomendaciones", *[f"- {x}" for x in doc.get("recomendaciones", [])], "", "## Limitaciones", *[f"- {x}" for x in doc.get("caveats", [])]]
+        return "\n".join(out)
+    t = resolver(d, a["emisora"])
+    doc, e = _investigacion(d, t)
+    if not e:
+        return f"La investigación no cubre {t}."
+    out = [f"# {e.get('nombre')} ({t}) · Nivel {e.get('nivel') or '—'} · {e.get('encabezado') or ''}", f"Investigación al {doc.get('corte')} · {doc.get('archivo')}"]
+    r = e.get("resumen") or {}
+    if r:
+        out.append(f"KPIs clave: {r.get('kpis')} · tendencia 4 años: {r.get('tendencia')} · catalizador de corto plazo: {r.get('catalizador')}")
+    for p in e.get("piezas", []):
+        if p["tipo"] == "tabla":
+            out += ["", f"### {p.get('titulo') or 'Tabla de KPIs'}", tabla(p["cols"], p["filas"])] + ([f"Nota: {p['nota']}"] if p.get("nota") else [])
+        elif p["tipo"] == "lista":
+            out += [f"- {(it.get('etiqueta') + ': ') if it.get('etiqueta') else ''}{it['md']}" + "".join(f"\n  - {x}" for x in it.get("sub", [])) for it in p["items"]]
+        else:
+            out += ["", (f"**{p['etiqueta']}.** " if p.get("etiqueta") else "") + p["md"]]
+    if e.get("compacto"):
+        out += ["", tabla(["Campo", "Valor"], [[k, v] for k, v in e["compacto"].items()])]
+    if e.get("macro"):
+        out += ["", "Catalizadores macro que la tocan:", *[f"- {m['catalizador']}: {m['afectadas']}" for m in e["macro"]]]
+    if e.get("recomendaciones"):
+        out += ["", "Recomendaciones del documento que la mencionan:", *[f"- {x}" for x in e["recomendaciones"]]]
+    return "\n".join(out)
+
+
+def h_sensibilidad(d, a):
+    t = resolver(d, a.get("emisora"))
+    s = (d.opcional("sensibilidad.json").get("emisoras") or {}).get(t) or {}
+    m, mk = s.get("modelo"), s.get("mercado")
+    if not m and not mk:
+        return f"Sin sensibilidades para {t} (se calculan en la corrida completa)."
+    precio = (d.q().get(t) or {}).get("p") or ((m or {}).get("base") or {}).get("precio")
+    out = [f"# Sensibilidad de {t} · precio {precio}"]
+    if m:
+        b = m.get("base") or {}
+        out.append(f"Base: {'utilidad con P/U constante' if b.get('tipo') == 'utilidad' else 'UAFIDA con VE/UAFIDA constante'}; "
+                   f"cada 1% de la base mueve el precio {b.get('L') or 1:.2f}%." + (f" {m['segmentos']}" if m.get("segmentos") else ""))
+        if m.get("nota"):
+            out.append(m["nota"])
+        out.append(tabla(["Driver", "Estado actual", "Movimiento", "Efecto en la base", "Efecto en el precio", "Precio implícito", "Fórmula"],
+                         [[x["n"], x.get("actual", ""), f"{x.get('paso')} {x.get('unidad')}",
+                           pct((x.get("e_base") or 0) * x.get("paso", 1)) if x.get("e_base") is not None else "n/d",
+                           pct(x.get("efecto_paso")) if x.get("efecto_paso") is not None else "n/d",
+                           f"{precio * (1 + x['efecto_paso']):.2f}" if x.get("efecto_paso") is not None and precio else "",
+                           x.get("formula", "")] for x in m.get("drivers", [])]))
+        esc = a.get("escenario") or {}
+        if esc:
+            ds = {x["id"]: x for x in m.get("drivers", [])}
+            dp = sum((ds[k].get("e_precio") or 0) * float(v) for k, v in esc.items() if k in ds)
+            db = sum((ds[k].get("e_base") or 0) * float(v) for k, v in esc.items() if k in ds)
+            fuera = [k for k in esc if k not in ds]
+            out.append(f"Escenario {esc}: base {pct(db)} · precio {pct(dp)}" + (f" → {precio * (1 + dp):.2f}" if precio else "")
+                       + (f" (drivers desconocidos: {', '.join(fuera)}; opciones: {', '.join(ds)})" if fuera else ""))
+    if mk and mk.get("ipc"):
+        out += ["", f"Mercado ({mk['semanas']} semanas): beta IPC {mk['ipc']['beta']:.2f} (R² {mk['ipc']['r2'] * 100:.0f}%).",
+                tabla(["Factor", "Beta neta del IPC", "t", "Beta simple", "Semana típica", "Clave"],
+                      [[f["n"], f"{f['beta']:.2f}", f"{f['t']:.1f}" if f.get("t") is not None else "", f"{f['beta_simple']:.2f}" if f.get("beta_simple") is not None else "",
+                        f"±{abs(f['efecto_1sd']) * 100:.1f}%" if f.get("efecto_1sd") is not None else "", "sí" if f.get("relevante") else ""]
+                       for f in mk.get("factores", [])[:10]])]
+    return "\n".join(out)
 
 
 def h_estado(d, a):
@@ -352,6 +477,12 @@ HERRAMIENTAS = {
                                           estado={"type": "string", "enum": ["resultados", "balance", "flujo"]}, frecuencia={"type": "string", "enum": ["trimestral", "anual"]})),
     "comparar": (h_comparar, _p("Compara KPIs de varias emisoras lado a lado.", emisoras={"type": "array", "items": {"type": "string"}, "_req": True},
                                 kpis={"type": "array", "items": {"type": "string"}, "description": "Claves de KPI; vacío = selección estándar"})),
+    "atribucion_alfa": (h_atribucion, _p("Contribución al alfa (contra el MEXTRAC) de cada posición: abiertas, cerradas, solo vía índice, ventas realizadas y efectos de efectivo, premio del ETF, operaciones y comisiones. Cuadra con el alfa acumulado y se verifica contra el tracker.",
+                                         grupo={"type": "string", "description": "Opcional: abiertas, cerradas, indice o ventas"}, n={"type": "integer", "description": "Máximo de renglones por grupo"})),
+    "investigacion": (h_investigacion, _p("Investigación del equipo (KPIs operativos 2022–3T26 y catalizadores): de una emisora (modelo de negocio, tabla de KPIs, narrativa, catalizadores, consenso, juicio, fuentes) o, sin emisora, el resumen del documento (TL;DR, hallazgos, catalizadores macro, recomendaciones).",
+                                          emisora={"type": "string", "description": "Clave o nombre; vacío = resumen del documento"})),
+    "sensibilidad": (h_sensibilidad, _p("Drivers de valor de una emisora y cuánto movería el precio un cambio en cada uno (puente de valuación a múltiplo constante), más las betas semanales contra el IPC, dólar, cobre, oro, tasas, etc. Acepta un escenario para combinarlos.",
+                                        emisora=dict(EMISORA), escenario={"type": "object", "description": "Opcional: {id_driver: movimiento en su unidad}, p. ej. {\"precio_cu\": -10, \"fx\": 5}"})),
     "estado_datos": (h_estado, _p("Cuándo se actualizaron los datos de la terminal, con qué fuentes y qué falló.")),
 }
 

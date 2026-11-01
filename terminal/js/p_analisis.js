@@ -59,7 +59,7 @@
       cont.innerHTML = `${UI.titulo('Macro y mercados', 'Índices, divisas, tasas y materias primas que mueven a las emisoras del fondo')}
         <div class="rejilla g2">${grupos.map(([n, xs]) => UI.panel(n, tabla(xs), { p0: true })).join('')}</div>
         <div class="rejilla g21" style="margin-top:8px">
-          ${UI.panel(`${esc(sel)} · ${esc((M[sel] || {}).n || '')}`, '<div class="graf medio" id="mGraf"></div>', { nota: esc((M[sel] || {}).fuente || '') })}
+          ${UI.panel(`${esc(sel)} · ${esc((M[sel] || {}).n || '')}`, '<div class="graf medio" id="mGraf"></div>', { nota: esc(N.fuente((M[sel] || {}).fuente || '')) })}
           ${UI.panel('Qué emisoras se mueven con esta serie', '<div id="mSens1"></div>', { p0: true, nota: 'correlación de rendimientos diarios · 12 meses' })}
         </div>
         ${UI.panel('Matriz de sensibilidad', '<div id="mMatriz"></div>', { p0: true, nota: 'correlación diaria a 12 meses de cada emisora con cada factor · verde = se mueven juntos', clase: 'ancho' })}

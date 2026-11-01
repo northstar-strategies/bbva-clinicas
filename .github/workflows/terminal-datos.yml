@@ -5,6 +5,7 @@
 #     (la BMV abre 7:30–14:00 CDMX con el horario de verano de EUA y 8:30–15:00 sin él; se cubren ambos)
 #   · 6:20 y 16:40 (CDMX, lunes a viernes) ......................... modo completo: velas, estados, KPIs, noticias, macro
 #   · Al editar empresas.txt, noticias.txt, operaciones.csv, etc. en main ... recalcula al momento
+#     (la investigación en investigacion/ y el código del pipeline disparan el modo completo)
 #   · Manual: pestaña Actions → «Terminal · datos» → Run workflow
 #
 # México está en UTC-6 todo el año; los cron de GitHub van en UTC.
@@ -30,6 +31,10 @@ on:
       - 'operaciones.csv'
       - 'parametros.json'
       - 'calendario.csv'
+      - 'atribucion_diaria.csv'
+      - 'dividendos.csv'
+      - 'dividendos_historicos.csv'
+      - 'investigacion/**'
       - 'terminal/pipeline/**'
       - '.github/workflows/terminal-datos.yml'
 
@@ -80,7 +85,7 @@ jobs:
             push)
               # Si cambió el código del pipeline se recalcula todo; si solo cambiaron archivos del equipo basta el rápido.
               if git fetch -q --depth=1 origin "${{ github.event.before }}" 2>/dev/null && \
-                 git diff --name-only FETCH_HEAD HEAD | grep -qE '^(terminal/pipeline/|\.github/workflows/)'; then MODO=completo; fi ;;
+                 git diff --name-only FETCH_HEAD HEAD | grep -qE '^(terminal/pipeline/|\.github/workflows/|investigacion/)'; then MODO=completo; fi ;;
           esac
           if [ "${{ steps.previo.outputs.existe }}" = "no" ]; then MODO=completo; fi
           echo "modo=$MODO" >> "$GITHUB_OUTPUT"

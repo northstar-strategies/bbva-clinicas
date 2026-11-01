@@ -38,7 +38,7 @@
       ? `Inventario ${F.num(k.detalle.inventario, 0)} d · cobro ${F.num(k.detalle.cobro, 0)} d · pago ${F.num(k.detalle.pago, 0)} d`
       : k.clave === 'vs_sma200' && k.detalle ? `PM 50 ${F.precio(k.detalle.sma50)} · PM 200 ${F.precio(k.detalle.sma200)}${k.detalle.cruce ? ` · cruce ${esc(k.detalle.cruce)}` : ''}`
         : k.clave === 'dist_maximo' && k.detalle ? `Máximo ${F.precio(k.detalle.maximo)} · mínimo ${F.precio(k.detalle.minimo)}` : '';
-    const extra = [k.detalle && k.detalle.nota ? esc(k.detalle.nota) : '', k.detalle && k.detalle.fuente ? `Fuente: ${esc(k.detalle.fuente)}` : '']
+    const extra = [k.detalle && k.detalle.nota ? esc(k.detalle.nota) : '', k.detalle && k.detalle.fuente ? `Fuente: ${esc(N.fuente(k.detalle.fuente))}` : '']
       .filter(Boolean).map((x) => `<div style="margin-top:3px">${x}</div>`).join('');
     return `<div class="kpi ${cal}" data-k="${esc(k.clave)}">
       <div class="k"><span>${esc(k.nombre || k.clave)}</span><button type="button" aria-label="Qué mide y cómo se calcula" data-exp>i</button></div>
@@ -89,7 +89,7 @@
     };
     return `<div class="kpi-sec"><h3>Factores del modelo QVM · Quality 40 · Value 10 · Momentum 50 <span class="nota">ámbar = modelo del equipo (empresas.txt) · cian = aproximación con datos públicos de hoy</span></h3>
       <div class="rejilla g2"><div class="panel"><div class="panel-b">${fila('Quality', eq.quality, vivo.quality)}${fila('Value', eq.value, vivo.value)}${fila('Momentum', eq.momentum, vivo.momentum)}${fila('Compuesto', eq.z_ciclo, vivo.z)}</div></div>
-      <div class="panel"><div class="panel-b"><table class="t"><tbody>
+      <div class="panel"><div class="panel-b"><table class="t kv"><tbody>
         <tr><td class="i dim">Percentil del equipo</td><td>${N.esNum(eq.percentil) ? F.num(eq.percentil, 1) + '%' : '—'}</td></tr>
         <tr><td class="i dim">Rango en vivo</td><td>${vivo.rango ? `${vivo.rango} de ${D.emisoras(false).length}` : '—'}</td></tr>
         <tr><td class="i dim">Percentil en vivo</td><td>${N.esNum(vivo.percentil) ? F.pct(vivo.percentil, 0) : '—'}</td></tr></tbody></table>
@@ -120,7 +120,7 @@
     const kpis = ((kp && kp.kpis) || []).map((x) => Object.assign({}, D.def(x.clave), x));
     const porClave = Object.fromEntries(kpis.map((k) => [k.clave, k]));
     const tipo = DESTACADOS[e.grupo] ? e.grupo : 'general';
-    // Si Yahoo no trae el trimestre de hace un año, el crecimiento a/a queda vacío: en lo esencial va el de 12 meses.
+    // Si falta el trimestre de hace un año, el crecimiento a/a queda vacío: en lo esencial va el de 12 meses.
     const dest = DESTACADOS[tipo].map((c) => (c === 'crec_ventas' && !N.esNum((porClave[c] || {}).valor) ? porClave.crec_ventas_udm || porClave[c] : porClave[c])).filter(Boolean);
     const usados = new Set(dest.map((k) => k.clave));
     const fam = (D.kpisArch.familias) || {};
@@ -131,8 +131,9 @@
       <div class="leyenda"><span>${fuentes}</span></div>
       <div class="leyenda"><span><i style="background:var(--pos)"></i>mejor que la mediana de sus pares</span><span><i style="background:var(--neg)"></i>peor que la mediana</span>
         <span><i style="background:var(--acc);height:3px"></i>percentil en el universo</span><span>UDM = últimos doce meses · <b class="acc">i</b> = qué mide y fórmula · clic en el valor = ranking</span></div>
-      ${sinFin && t !== 'MEXTRAC' ? '<div class="aviso-barra info">Los KPIs de estados financieros llegan con la descarga diaria de Yahoo Finance (GitHub Actions). Mientras tanto se muestran los de mercado, calculados con el histórico.</div>' : ''}
+      ${sinFin && t !== 'MEXTRAC' ? '<div class="aviso-barra info">Los KPIs de estados financieros llegan con la descarga diaria de GitHub Actions. Mientras tanto se muestran los de mercado, calculados con el histórico.</div>' : ''}
       ${dest.length ? `<div class="kpi-sec"><h3>Lo esencial <span class="nota">${tipo === 'general' ? 'crecimiento, rentabilidad, deuda y valuación' : 'indicadores clave del sector'}</span></h3><div class="kpis">${dest.map((k) => tarjeta(t, k)).join('')}</div></div>` : ''}
+      ${t !== 'MEXTRAC' && N.Modelo ? N.Modelo.historia(t) : ''}
       ${t !== 'MEXTRAC' ? operativos(t, kp) : ''}
       ${ORDEN.map((f) => {
         const ks = kpis.filter((k) => k.familia === f && !usados.has(k.clave));
@@ -140,7 +141,8 @@
       }).join('')}
       ${t !== 'MEXTRAC' ? factores(t, kp) : ''}
       <div id="kRank" style="margin-top:8px"></div>
-      <p class="dim" style="font-size:10.5px;margin-top:8px">Fuentes: estados financieros, múltiplos y consenso de Yahoo Finance; precios del histórico de la terminal; KPIs operativos y factores del equipo (empresas.txt). Los múltiplos convierten la moneda del reporte a pesos cuando la emisora reporta en dólares.</p>`;
+      <p class="dim" style="font-size:10.5px;margin-top:8px">Fuentes: estados financieros reportados por las emisoras, múltiplos y consenso público; precios de mercado diferidos del histórico de la terminal; KPIs operativos y factores del equipo (empresas.txt). Los múltiplos convierten la moneda del reporte a pesos cuando la emisora reporta en dólares.</p>`;
+    if (N.Modelo && t !== 'MEXTRAC') N.Modelo.llenarHistoria(cont, t);
     $$('.kpi [data-exp]', cont).forEach((b) => b.addEventListener('click', () => b.closest('.kpi').classList.toggle('abierto')));
     $$('.kpi [data-rank]', cont).forEach((v) => { v.style.cursor = 'pointer'; v.addEventListener('click', () => ranking($('#kRank', cont), t, v.closest('.kpi').dataset.k)); });
   }

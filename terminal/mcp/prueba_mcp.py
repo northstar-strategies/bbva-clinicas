@@ -36,7 +36,7 @@ def main():
     assert r["result"]["protocolVersion"] == "2025-06-18" and "tools" in r["result"]["capabilities"]
     pedir("notifications/initialized", notificacion=True)
     herramientas = {t["name"]: t for t in pedir("tools/list")["result"]["tools"]}
-    assert {"kpis", "ficha", "portafolio", "filtrar"} <= set(herramientas)
+    assert {"kpis", "ficha", "portafolio", "filtrar", "atribucion_alfa", "investigacion", "sensibilidad"} <= set(herramientas)
     for h in herramientas.values():
         assert h["inputSchema"]["type"] == "object" and h["description"]
     casos = [
@@ -52,6 +52,11 @@ def main():
         ("comparar", {"emisoras": ["FEMSAUBD", "KOFUBL"]}, "KOFUBL"),
         ("estados_financieros", {"emisora": "WALMEX"}, "WALMEX"),
         ("estado_datos", {}, "semilla"),
+        ("atribucion_alfa", {}, "Alfa acumulado"),
+        ("atribucion_alfa", {"grupo": "ventas"}, "Corrección de sobregiro"),
+        ("investigacion", {}, "TL;DR"),
+        ("investigacion", {"emisora": "femsa"}, "OXXO"),
+        ("sensibilidad", {"emisora": "GMEXICOB", "escenario": {"precio_cu": -10}}, "Escenario"),
     ]
     for nombre, args, esperado in casos:
         r = pedir("tools/call", {"name": nombre, "arguments": args})["result"]

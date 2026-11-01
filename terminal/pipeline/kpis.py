@@ -632,7 +632,7 @@ def _elegir(yahoo: Any, propio: float | None) -> tuple[float | None, str]:
     y = num(yahoo)
     if y is not None and 0 < y < 1000:
         if propio is None or propio <= 0 or 1 / 3 <= y / propio <= 3:
-            return y, "Yahoo Finance"
+            return y, "múltiplo reportado (cifras por acción)"
     return propio, "cálculo de la terminal"
 
 

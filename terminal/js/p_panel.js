@@ -55,7 +55,7 @@
       ['Error de seguimiento ex post', `<span class="${(u.te_expost || 0) > 0.1 ? 'neg' : ''}">${F.pct(u.te_expost)}</span> <span class="dim">límite 10%</span>`],
       ['Efectivo', `${F.pesos(a.efectivo)} <span class="dim">${F.pct(a.efectivo_pct)}</span>`],
     ];
-    return `<table class="t"><tbody>${filas.map(([k, v]) => `<tr><td class="i dim">${k}</td><td>${v}</td></tr>`).join('')}</tbody></table>
+    return `<table class="t kv"><tbody>${filas.map(([k, v]) => `<tr><td class="i dim">${k}</td><td>${v}</td></tr>`).join('')}</tbody></table>
       <div class="graf bajo" id="panelFondo" style="margin-top:8px"></div>`;
   }
 
@@ -80,7 +80,7 @@
     const xs = (D.cal.eventos || []).filter((e) => e.fecha >= hoy).slice(0, 12);
     if (!xs.length) return '<div class="vacio">Sin eventos próximos.</div>';
     return `<table class="t"><tbody>${xs.map((e) => `<tr><td class="i">${F.fechaCorta(e.fecha)}</td><td class="i">${String(e.t || '').split(/\s+/).filter((t) => D.U[t]).map((t) => UI.sym(t)).join(' ') || esc(e.t)}</td>
-      <td class="i"><span class="chip">${esc(e.tipo)}</span></td><td class="i" style="white-space:normal">${esc(e.titulo)}</td></tr>`).join('')}</tbody></table>`;
+      <td class="i"><span class="chip">${esc(e.tipo)}</span></td><td class="i" style="white-space:normal">${esc(N.fuente(e.titulo))}</td></tr>`).join('')}</tbody></table>`;
   }
 
   App.registrar('panel', {
@@ -88,7 +88,7 @@
     pintar(cont) {
       const p = Local.leer('panel:periodo', '1D');
       const [arriba, abajo, operadas] = movidas();
-      const sem = D.qSemilla ? '<div class="aviso-barra info">Mostrando el último corte de Refinitiv que dejó el vigilante. En cuanto corra GitHub Actions, la terminal toma precios de Yahoo Finance automáticamente.</div>' : '';
+      const sem = D.qSemilla ? '<div class="aviso-barra info">Mostrando el último corte de Refinitiv que dejó el vigilante. En cuanto corra GitHub Actions, la terminal toma precios de mercado diferidos automáticamente.</div>' : '';
       cont.innerHTML = `${UI.titulo('Panel', `Corte ${D.qGenerado ? F.fechaHora(D.qGenerado) : '—'} · ${D.emisoras(false).length} emisoras del universo`)}
         ${sem}${mosaicos()}
         <div class="rejilla g21" style="margin-top:8px">
