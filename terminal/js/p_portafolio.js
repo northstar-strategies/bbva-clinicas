@@ -30,6 +30,96 @@
     return { n: rp.length, vol: sd(rp) * Math.sqrt(252), te: sd(act) * Math.sqrt(252), beta: cov / vb, var95: -ord[Math.floor(0.05 * ord.length)], volB: Math.sqrt(vb) * Math.sqrt(252) };
   }
 
+  // ───────────── contribución al alfa por posición ─────────────
+  const GRUPOS = [
+    ['abierta', 'Abiertas', 'Posiciones que el fondo tiene hoy.'],
+    ['cerrada', 'Cerradas', 'Emisoras que el fondo tuvo y vendió por completo.'],
+    ['indice', 'Solo vía índice', 'No las tenemos directo: su único peso viene del ETF, así que quedan subponderadas contra el MEXTRAC. Si suben más que el índice, restan alfa; si bajan, suman.'],
+    ['ventas', 'Ventas', 'Cada venta con su utilidad realizada contra el costo promedio.'],
+    ['efectos', 'Otros efectos', 'Lo que no es de una emisora: efectivo, premio del ETF, operaciones del día y comisiones.'],
+  ];
+  let grupoAtr = N.Local.leer('atrGrupo', 'abierta');
+
+  function barraDiv(x, max) {
+    if (!N.esNum(x) || !max) return '';
+    const w = Math.min(50, (Math.abs(x) / max) * 50).toFixed(1);
+    return `<span class="bdiv" aria-hidden="true"><i style="${x >= 0 ? 'left:50%' : `right:50%`};width:${w}%;background:${x >= 0 ? 'var(--pos)' : 'var(--neg)'}"></i></span>`;
+  }
+
+  function pintarAtribucion(el, at) {
+    if (!el) return;
+    const pos = at.posiciones || [], ventas = at.ventas || [], ef = at.efectos || [];
+    const n = { abierta: pos.filter((x) => x.estado === 'abierta').length, cerrada: pos.filter((x) => x.estado === 'cerrada').length,
+      indice: pos.filter((x) => x.estado === 'indice' && Math.abs(x.aporte) > 5e-7).length, ventas: ventas.length, efectos: ef.length };
+    if (!GRUPOS.some(([k]) => k === grupoAtr)) grupoAtr = 'abierta';
+    const c = at.componentes || {};
+    const sumaGrupo = (k) => pos.filter((x) => x.estado === k).reduce((s, x) => s + x.aporte, 0);
+    const piezas = [['Abiertas', sumaGrupo('abierta')], ['Cerradas', sumaGrupo('cerrada')], ['Solo vía índice', sumaGrupo('indice')],
+      ['Efectivo', c.efectivo], ['Premio ETF', c.etf], ['Operaciones', c.operaciones], ['Comisiones', c.comisiones]]
+      .concat(Math.abs(c.residual || 0) > 1e-6 ? [['Sin explicar', c.residual]] : []).filter(([, v]) => N.esNum(v) && Math.abs(v) > 5e-7);
+    const ver = at.verificacion;
+    const cuadra = Math.abs((at.suma || 0) - (at.alfa || 0)) < 1e-6;
+    const cab = `<div class="atr-cuadre">
+        <div class="atr-total"><span class="dim">Alfa acumulado</span><b class="${F.cls(at.alfa)}">${F.pb(at.alfa)}</b>
+          <span class="dim">cartera ${F.pctS(at.rend)} · MEXTRAC ${F.pctS(at.bench)}</span></div>
+        <div class="atr-piezas">${piezas.map(([k, v]) => `<span><span class="dim">${k}</span> <b class="${F.cls(v)}">${F.pb(v)}</b></span>`).join('<i>+</i>')}</div>
+        <div class="atr-ok">${cuadra ? '<span class="pos">✔</span> La suma cuadra con la diferencia acumulada del fondo.' : '<span class="neg">✖</span> La suma no cuadra: revisar operaciones.csv.'}
+          ${ver ? ` <span class="pos">✔</span> ${F.ent(ver.comparados)} aportes diarios comparados con el tracker de Excel; diferencia máxima ${F.num((ver.max_dif || 0) * 1e4, 4)} pb.` : ''}</div>
+      </div>
+      <div class="graf-barra" style="padding:6px 9px 0">${GRUPOS.map(([k, t]) => `<button class="btn sm ${k === grupoAtr ? 'on' : ''}" data-g="${k}">${t} <span class="dim">${n[k]}</span></button>`).join('')}</div>
+      <p class="dim atr-nota">${esc((GRUPOS.find((g) => g[0] === grupoAtr) || [])[2] || '')}</p>
+      <div id="pAtrT"></div>
+      <p class="dim atr-nota">Método: ${esc(at.metodo || '')} Pesos del índice: ${esc(at.pesos_benchmark || '')}.</p>`;
+    el.innerHTML = cab;
+    N.$$('[data-g]', el).forEach((b) => b.addEventListener('click', () => { grupoAtr = b.dataset.g; N.Local.guardar('atrGrupo', grupoAtr); pintarAtribucion(el, at); }));
+    const dest = $('#pAtrT', el);
+    if (grupoAtr === 'ventas') {
+      UI.tabla(dest, [
+        { k: 'f', t: 'Fecha', i: true, f: (x) => F.fecha(x.f) }, { k: 't', t: 'Emisora', i: true, f: (x) => UI.sym(x.t) },
+        { k: 'motivo', t: 'Motivo', i: true, f: (x) => `<span class="dim">${esc(x.motivo)}</span>` },
+        { k: 'titulos', t: 'Títulos', f: (x) => F.ent(x.titulos) }, { k: 'precio', t: 'Precio', f: (x) => F.precio(x.precio) },
+        { k: 'costo_promedio', t: 'Costo prom.', f: (x) => F.precio(x.costo_promedio) },
+        { k: 'realizado', t: 'Utilidad realizada', f: (x) => UI.num(x.realizado, F.pesos) }, { k: 'rend', t: 'Rend.', f: (x) => UI.cambio(x.rend) },
+        { k: 'queda', t: 'Quedan', f: (x) => (x.cierre_total ? '<span class="chip neg">cerrada</span>' : F.ent(x.queda)) },
+      ], ventas.slice().reverse(), { idFila: (x) => `${x.f}-${x.t}`,
+        pie: `<tr><td class="i" colspan="6">Total realizado</td><td>${UI.num(ventas.reduce((s, x) => s + x.realizado, 0), F.pesos)}</td><td colspan="2"></td></tr>` });
+      return;
+    }
+    if (grupoAtr === 'efectos') {
+      const mx = Math.max(...ef.map((x) => Math.abs(x.aporte)), 1e-6);
+      dest.innerHTML = `<div class="tabla-env"><table class="t"><thead><tr><th class="i">Concepto</th><th>Aporte</th><th></th><th class="i">Qué mide</th></tr></thead><tbody>
+        ${ef.map((x) => `<tr><td class="i">${esc(x.n)}</td><td class="${F.cls(x.aporte)}">${F.pb(x.aporte, 2)}</td><td style="width:110px">${barraDiv(x.aporte, mx)}</td><td class="i nota-larga">${esc(x.nota)}</td></tr>`).join('')}
+        </tbody></table></div>`;
+      return;
+    }
+    const filas = pos.filter((x) => x.estado === grupoAtr && (grupoAtr !== 'indice' || Math.abs(x.aporte) > 5e-7));
+    if (!filas.length) {
+      dest.innerHTML = `<div class="vacio">${grupoAtr === 'cerrada' ? `Ninguna posición se ha cerrado por completo desde el ${F.fecha(at.desde)}. Las ventas parciales están en «Ventas».` : 'Sin posiciones en este grupo.'}</div>`;
+      return;
+    }
+    const mx = Math.max(...filas.map((x) => Math.abs(x.aporte)), 1e-6);
+    const directa = grupoAtr !== 'indice';
+    UI.tabla(dest, [
+      { k: 't', t: 'Emisora', i: true, f: (x) => UI.sym(x.t) },
+      { k: 'aporte', t: 'Aporte al alfa', f: (x) => `<b class="${F.cls(x.aporte)}">${F.pb(x.aporte)}</b>`, title: 'ligado con Cariño; la suma de todos los renglones y efectos da el alfa acumulado' },
+      { k: 'bar', t: '', v: (x) => x.aporte, f: (x) => barraDiv(x.aporte, mx) },
+      { k: 'activo', t: 'Activo', f: (x) => `<span class="${F.cls(x.activo)}">${F.pp(x.activo)}</span>`, title: 'peso efectivo − peso en el índice' },
+      { k: 'rend', t: 'Rend.', f: (x) => UI.cambio(x.rend), title: `rendimiento total desde el ${F.fecha(at.desde)}` },
+      { k: 'rel', t: 'vs MEXTRAC', v: (x) => (N.esNum(x.rend) ? x.rend - at.bench : null), f: (x) => (N.esNum(x.rend) ? `<span class="${F.cls(x.rend - at.bench)}">${F.pp(x.rend - at.bench)}</span>` : '—') },
+      { k: 'peso_lt', t: 'Peso efectivo', f: (x) => F.pct(x.peso_lt), title: 'peso directo + peso del ETF × peso en el índice' },
+      { k: 'peso_b', t: 'Índice', f: (x) => F.pct(x.peso_b) },
+      { k: 'serie', t: 'Evolución', v: (x) => x.aporte, f: (x) => N.spark(x.serie, { w: 70, h: 18, base: 0, area: false }) },
+      ...(directa ? [
+        { k: 'pyg_total', t: 'G/P total', f: (x) => UI.num(x.pyg_total, F.pesos), title: 'no realizada + realizada + dividendos cobrados' },
+        { k: 'pyg_realizado', t: 'Realizada', f: (x) => (x.pyg_realizado ? UI.num(x.pyg_realizado, F.pesos) : '<span class="dim">—</span>') },
+        { k: 'bloque', t: 'Bloque', i: true, f: (x) => (x.bloque ? `<span class="chip ${x.bloque === 'ACTIVA' ? 'acc' : 'info'}">${esc(x.bloque)}</span>` : '') },
+      ] : []),
+    ], filas, { orden: 'aporte', alClic: (t) => App.ir(`#/eq/${t}`),
+      pie: `<tr><td class="i">Subtotal</td><td class="${F.cls(filas.reduce((s, x) => s + x.aporte, 0))}">${F.pb(filas.reduce((s, x) => s + x.aporte, 0))}</td><td></td>
+        <td>${F.pp(filas.reduce((s, x) => s + (x.activo || 0), 0))}</td><td></td><td></td><td>${F.pct(filas.reduce((s, x) => s + (x.peso_lt || 0), 0))}</td><td>${F.pct(filas.reduce((s, x) => s + (x.peso_b || 0), 0))}</td><td></td>
+        ${directa ? `<td>${UI.num(filas.reduce((s, x) => s + (x.pyg_total || 0), 0), F.pesos)}</td><td></td><td></td>` : ''}</tr>` });
+  }
+
   App.registrar('port', {
     titulo: () => 'Portafolio',
     pintar(cont) {
@@ -61,9 +151,11 @@
         <div class="rejilla g6">${tiles.map(([k, v, n]) => `<div class="mos-it" style="cursor:default"><div class="n">${k}</div><div class="v">${v}</div><div class="c dim">${n}</div></div>`).join('')}</div>
         <div class="rejilla g21" style="margin-top:8px">
           ${UI.panel('Rendimiento acumulado contra el MEXTRAC', '<div class="graf medio" id="pAcum"></div>', { nota: 'precio del MEXTRAC09, estimado con la canasta los días sin operación' })}
-          ${UI.panel('Política de inversión', `<table class="t"><tbody>${reglas.map(([k, v, ok, lim]) => `<tr><td class="i">${ok === null ? '<span class="dim">●</span>' : ok ? '<span class="pos">✔</span>' : '<span class="neg">✖</span>'} ${k}</td><td>${v}</td><td class="dim">${lim}</td></tr>`).join('')}</tbody></table>
+          ${UI.panel('Política de inversión', `<table class="t kv"><tbody>${reglas.map(([k, v, ok, lim]) => `<tr><td class="i">${ok === null ? '<span class="dim">●</span>' : ok ? '<span class="pos">✔</span>' : '<span class="neg">✖</span>'} ${k}</td><td>${v}</td><td class="dim">${lim}</td></tr>`).join('')}</tbody></table>
             ${r ? `<p class="dim" style="font-size:10.5px;padding:6px 9px">Ex ante: pesos de hoy sobre ${r.n} rendimientos diarios · volatilidad ${F.pct(r.vol)} (MEXTRAC ${F.pct(r.volB)}) · VaR 95% de un día ${F.pct(r.var95)} (${F.pesos(r.var95 * a.valor)})</p>` : ''}`, { p0: true })}
         </div>
+        ${p.atribucion && p.atribucion.posiciones ? UI.panel('Contribución al alfa por posición', '<div id="pAtr"></div>', { p0: true, id: 'atribucion',
+          nota: `desde el ${F.fecha(p.atribucion.desde)} · ${p.atribucion.dias} días · ligada con Cariño` }) : ''}
         ${UI.panel('Posiciones', '<div id="pPos"></div>', { p0: true, nota: `pasiva ${F.pct(pasiva)} · activa ${F.pct(activa)} · efectivo ${F.pct(a.efectivo_pct)}` })}
         <div class="rejilla g2" style="margin-top:8px">
           ${UI.panel('Sobre y subponderaciones contra el índice', '<div id="pDev"></div>', { nota: 'peso efectivo (ETF desglosado) − peso en el índice' })}
@@ -75,6 +167,8 @@
         { titulo: 'MEXTRAC', datos: s.map((x) => ({ time: x.f, value: (x.bench_acum || 0) * 100 })), punteada: true },
         { titulo: 'Diferencia', datos: s.map((x) => ({ time: x.f, value: (x.activo_acum || 0) * 100 })), color: '#9aa3ad', grosor: 1 },
       ], { porcentaje: 'pct' });
+      const det = Object.fromEntries(((p.atribucion && p.atribucion.detalle) || []).map((x) => [x.f, x]));
+      const otros = (x) => (x ? x.efectivo + x.etf + x.operaciones + x.comisiones + (x.residual || 0) : null);
       const ef = a.pesos_efectivos || {}, ix = (D.universo && D.universo.fondo && D.universo.fondo.pesos_indice) || {};
       const totIx = Object.values(ix).reduce((t, v) => t + v, 0) || 1;
       UI.tabla($('#pPos', cont), [
@@ -101,8 +195,11 @@
         { k: 'valor', t: 'Valor', f: (x) => F.pesos(x.valor) }, { k: 'rend_dia', t: 'Cartera', f: (x) => UI.cambio(x.rend_dia) },
         { k: 'bench_dia', t: 'MEXTRAC', f: (x) => UI.cambio(x.bench_dia) }, { k: 'activo_dia', t: 'Dif.', f: (x) => `<span class="${F.cls(x.activo_dia)}">${F.pp(x.activo_dia)}</span>` },
         { k: 'activo_acum', t: 'Dif. acum.', f: (x) => `<span class="${F.cls(x.activo_acum)}">${F.pp(x.activo_acum)}</span>` },
+        { k: 'emis', t: 'Emisoras', v: (x) => (det[x.f] || {}).emisoras, f: (x) => (det[x.f] ? UI.num(det[x.f].emisoras, F.pb) : '—'), title: 'aporte de las emisoras a la diferencia del día' },
+        { k: 'otros', t: 'Otros', v: (x) => otros(det[x.f]), f: (x) => (det[x.f] ? UI.num(otros(det[x.f]), F.pb) : '—'), title: 'efectivo + premio del ETF + operaciones + comisiones' },
         { k: 'te_expost', t: 'TE', f: (x) => F.pct(x.te_expost) },
       ], s.slice().reverse(), { idFila: (x) => x.f });
+      if (p.atribucion && p.atribucion.posiciones) pintarAtribucion($('#pAtr', cont), p.atribucion);
     },
     vivo: true,
   });

@@ -4,7 +4,7 @@
   const { F, esc, $, $$, D, UI, App, Local } = N;
 
   // ───────────────────────── NOTICIAS ─────────────────────────
-  const ORIGEN = { equipo: ['EQUIPO', 'acc'], lseg: ['LSEG', 'info'], google: ['GOOGLE', ''], yahoo: ['YAHOO', ''] };
+  const ORIGEN = { equipo: ['EQUIPO', 'acc'], lseg: ['LSEG', 'info'], google: ['GOOGLE', ''], yahoo: ['PRENSA', ''] };
   const Noticias = {
     tarjeta(n, { corta = false, sinEmisora = false } = {}) {
       const [o, oc] = ORIGEN[n.origen] || [String(n.origen || '').toUpperCase(), ''];
@@ -13,7 +13,7 @@
       return `<article class="noti ${esc(n.tono || '')}">
         <div class="h">${esc(F.fechaCorta(fecha.slice(0, 10)))}<br>${esc(fecha.slice(11, 16))}</div>
         <div class="tit">${n.url ? `<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.titulo)}</a>` : esc(n.titulo)}</div>
-        <div class="meta">${sinEmisora ? '' : t}<span>${esc(n.fuente || '')}</span><span class="chip ${oc}">${o}</span>
+        <div class="meta">${sinEmisora ? '' : t}<span>${esc(N.fuente(n.fuente || ''))}</span><span class="chip ${oc}">${o}</span>
           ${n.tono && n.tono !== 'neutral' ? `<span class="chip ${n.tono === 'positiva' ? 'pos' : 'neg'}">${n.tono}${n.tono_auto ? ' · auto' : ''}</span>` : ''}
           ${n.impacto ? `<span class="chip warn">impacto ${esc(n.impacto)}</span>` : ''}</div>
         ${!corta && n.resumen ? `<div class="res">${esc(n.resumen)}</div>` : ''}
@@ -131,12 +131,12 @@
       const xs = (D.cal.eventos || []).filter((e) => (modo === 'proximos' ? e.fecha >= hoy : e.fecha < hoy));
       if (modo !== 'proximos') xs.reverse();
       const porFecha = {}; xs.forEach((e) => { (porFecha[e.fecha] = porFecha[e.fecha] || []).push(e); });
-      cont.innerHTML = `${UI.titulo('Calendario', 'Reportes trimestrales, dividendos y eventos · equipo, LSEG y Yahoo Finance')}
+      cont.innerHTML = `${UI.titulo('Calendario', 'Reportes trimestrales, dividendos y eventos · equipo, LSEG y calendario de mercado')}
         <div class="graf-barra"><button class="btn sm ${modo === 'proximos' ? 'on' : ''}" data-m="proximos">PRÓXIMOS</button><button class="btn sm ${modo !== 'proximos' ? 'on' : ''}" data-m="pasados">PASADOS</button></div>
         <div class="panel"><div class="panel-b p0"><table class="t"><tbody>${Object.keys(porFecha).map((f) => `<tr class="grupo"><td colspan="4">${F.fecha(f)}${f === hoy ? ' · HOY' : ''}</td></tr>${porFecha[f].map((e) => {
           const ts = String(e.t || '').split(/\s+/).filter((t) => D.U[t]);
           return `<tr><td class="i">${ts.map((t) => UI.sym(t) + (fondo.has(t) ? ' <span class="chip acc">FONDO</span>' : '')).join(' ') || `<span class="chip">${esc(e.t || 'MERCADO')}</span>`}</td>
-            <td class="i"><span class="chip ${/reporte/i.test(e.tipo) ? 'info' : /dividendo/i.test(e.tipo) ? 'pos' : ''}">${esc(e.tipo)}</span></td><td class="i" style="white-space:normal">${esc(e.titulo)}</td><td class="i dim">${esc(e.fuente || '')}</td></tr>`;
+            <td class="i"><span class="chip ${/reporte/i.test(e.tipo) ? 'info' : /dividendo/i.test(e.tipo) ? 'pos' : ''}">${esc(e.tipo)}</span></td><td class="i" style="white-space:normal">${esc(N.fuente(e.titulo))}</td><td class="i dim">${esc(N.fuente(e.fuente || ''))}</td></tr>`;
         }).join('')}`).join('') || '<tr><td class="i dim">Sin eventos.</td></tr>'}</tbody></table></div></div>`;
       $$('[data-m]', cont).forEach((b) => b.addEventListener('click', () => { Local.guardar('cal:modo', b.dataset.m); App.pintar(); }));
     },
@@ -169,7 +169,7 @@
             ${UI.panel('De dónde salen los datos', `<div class="texto" style="font-size:11.5px"><p>Ya no hace falta encender el vigilante. Un workflow de <b>GitHub Actions</b> descarga todo en la nube y lo publica en la rama <b>datos</b> del repositorio:</p>
               <p>· Cada 15 minutos durante la sesión de la BMV (9:30 a 16:00 de Nueva York: 7:30–14:00 CDMX con horario de verano de EUA, 8:30–15:00 sin él): cotizaciones, intradía y portafolio.<br>· A las 6:20 y a las 16:40 CDMX de cada día hábil: velas de cinco años, estados financieros, múltiplos, consenso, KPIs, noticias y macro.<br>
               · Cada vez que se edita empresas.txt, noticias.txt u operaciones.csv en main.</p>
-              <p>Fuentes: Yahoo Finance, Google Noticias, Banxico (opcional) y los archivos del equipo. La página revisa cada minuto si hay datos nuevos.</p></div>`)}
+              <p>Fuentes: precios de mercado diferidos, estados financieros reportados por las emisoras, Google Noticias, Banxico (opcional) y los archivos del equipo. La página revisa cada minuto si hay datos nuevos.</p></div>`)}
             ${UI.panel('Capturar KPIs operativos', `<div class="texto" style="font-size:11.5px"><p>En <b>empresas.txt</b>, dentro del bloque de la emisora:</p></div>
               <div class="mono-bloque">=== FEMSAUBD ===\nkpis:\n  - VMT OXXO México | +9.5% | 2T26 | ticket +7.4%, tráfico +2.0% | crecimiento orgánico\n  - Margen operativo OXXO | 10.0% | 2T26 | +10 pb a/a | rentabilidad del negocio</div>`)}
           </div></div>
@@ -205,13 +205,13 @@
     pintar(cont) {
       const e = D.estado || {};
       const filas = [['Última actualización', `${F.fechaHora(e.generado)} (${F.hace(e.generado)})`], ['Modo', e.modo], ['Última corrida completa', F.fechaHora(e.ultimo_completo)],
-        ['Última corrida rápida', F.fechaHora(e.ultimo_rapido)], ['Fuentes', (e.fuentes || []).join(' · ')], ['Duración', e.duracion_s ? e.duracion_s + ' s' : '—'],
+        ['Última corrida rápida', F.fechaHora(e.ultimo_rapido)], ['Fuentes', [...new Set((e.fuentes || []).map(N.fuente))].join(' · ')], ['Duración', e.duracion_s ? e.duracion_s + ' s' : '—'],
         ['Origen', e.origen], ['Datos leídos de', `<a href="${esc(D.base)}estado.json" target="_blank" rel="noopener">${esc(D.base)}</a>`],
         ['Mercado al correr', e.mercado ? `${esc(e.mercado.texto)} · ${esc(e.mercado.hora_cdmx)}` : '—']];
       const act = `https://github.com/${D.repo}/actions/workflows/terminal-datos.yml`;
       cont.innerHTML = `${UI.titulo('Estado de los datos', 'Lo que hizo la última corrida de GitHub Actions')}
         <div class="rejilla g2">
-          ${UI.panel('Corrida', `<table class="t"><tbody>${filas.map(([k, v]) => `<tr><td class="i dim">${k}</td><td class="i" style="white-space:normal">${v || '—'}</td></tr>`).join('')}</tbody></table>
+          ${UI.panel('Corrida', `<table class="t kv"><tbody>${filas.map(([k, v]) => `<tr><td class="i dim">${k}</td><td class="i" style="white-space:normal">${v || '—'}</td></tr>`).join('')}</tbody></table>
             <div class="graf-barra" style="padding:8px"><a class="btn" href="${act}" target="_blank" rel="noopener">ABRIR GITHUB ACTIONS</a><span class="dim">Ahí, «Run workflow» fuerza una descarga en cualquier momento.</span></div>`, { p0: true })}
           ${UI.panel('Cobertura', `<table class="t"><tbody>${Object.entries(e.cobertura || {}).map(([k, v]) => `<tr><td class="i">${esc(k)}</td><td>${esc(v)}</td></tr>`).join('') || '<tr><td class="i dim">—</td></tr>'}</tbody></table>`, { p0: true })}
           ${UI.panel(`Errores (${(e.errores || []).length})`, (e.errores || []).map((x) => `<div class="neg" style="padding:3px 0">${esc(x)}</div>`).join('') || '<div class="pos">Sin errores.</div>')}

@@ -171,7 +171,7 @@ def test_conversiones_y_kpis():
     assert ks["roe"]["valor"] and 0.1 < ks["roe"]["valor"] < 0.2
     val = {k["clave"]: k for k in K.valuacion("FEMSAUBD", "comercio_proximidad", est, inf, 101.1, 1.0, 3.0,
                                                 Y.multiplos_historicos("FEMSAUBD.MX"))}
-    assert val["pe"]["valor"] == 15.0 and val["pe"]["detalle"]["fuente"] == "Yahoo Finance"   # Yahoo, coherente con el cálculo
+    assert val["pe"]["valor"] == 15.0 and val["pe"]["detalle"]["fuente"] == "múltiplo reportado (cifras por acción)"   # coherente con el cálculo
     assert val["pe"]["serie"][-1]["p"] == "2T26"
     banco = {k["clave"]: k for k in K.financieros("GFNORTEO", "bancos", Y.estados("GFNORTEO.MX"), inf, 100)}
     assert banco["costo_riesgo"]["valor"] > 0 and "margen_bruto" not in banco
@@ -267,6 +267,158 @@ def test_trimestre_roto_y_crecimiento():
 def test_rsi_y_caida():
     assert K.rsi([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]) == 100.0
     assert abs(K.max_caida([100, 120, 90, 130]) - (90 / 120 - 1)) < 1e-12
+
+
+# ───────────────────────────── atribución, investigación y sensibilidades ─────────────────────────────
+
+def test_atribucion_cuadra_con_tracker():
+    """Con las operaciones y cierres oficiales del repo, la atribución reproduce al tracker de Excel y cuadra con el alfa."""
+    import fichas as F
+    import portafolio as P
+    from util import num
+    par = U.leer_parametros()
+    ops = F.leer_csv("operaciones.csv")
+    hist = {r["fecha"]: r for r in F.leer_csv("historico.csv")}
+    if not ops or not hist or not F.leer_csv("atribucion_diaria.csv"):
+        return                                                    # repositorio sin datos del fondo
+    pesos = par["pesos_indice"]
+    ticks = set(pesos) | {o["simbolo"] for o in ops} | {"MEXTRAC"}
+    cierres = {f: {t: num(r.get(t)) for t in ticks if num(r.get(t)) is not None} for f, r in hist.items() if f >= "2026-10-01"}
+    sin_op = {f for f in cierres if num(hist[f].get("MEXTRAC")) is None}
+    v = {}
+    pt, at = A.tracker_atribucion()
+    divs = A.dividendos_por_fecha(v, ticks)
+    a = P.atribucion(ops, cierres, float(par["capital"]), par["fecha_referencia"], pesos, par.get("fecha_ref_indice"), sin_op,
+                     divs, pt, at, par.get("bloques"), par.get("inicio"))
+    serie = P.serie_diaria(ops, cierres, float(par["capital"]), par["fecha_referencia"], pesos, sin_op)
+    assert abs(a["alfa"] - serie[-1]["activo_acum"]) < 1e-6                      # cuadra con la serie del fondo (6 decimales)
+    assert abs(a["suma"] - a["alfa"]) < 1e-9                                    # Σ componentes = alfa
+    assert abs(sum(x["aporte"] for x in a["posiciones"]) - a["componentes"]["emisoras"]) < 1e-6   # redondeo a 8 decimales
+    assert a["verificacion"]["comparados"] > 300 and a["verificacion"]["max_dif"] < 1e-10   # igual al tracker
+    assert abs(a["componentes"]["residual"]) < 1e-9
+    estados = {x["estado"] for x in a["posiciones"]}
+    assert "abierta" in estados and "indice" in estados
+    ventas = a["ventas"]
+    assert ventas and all(x["titulos"] > 0 for x in ventas)
+
+
+def test_atribucion_posicion_cerrada():
+    """Una emisora que se vende completa pasa a «cerrada» y conserva su aporte mientras se tuvo."""
+    import portafolio as P
+    ops = [{"fecha": "2026-01-02", "simbolo": "AAA", "tipo": "COMPRA", "titulos": "100", "precio": "10", "caja": "-1000"},
+           {"fecha": "2026-01-02", "simbolo": "MEXTRAC", "tipo": "COMPRA", "titulos": "100", "precio": "10", "caja": "-1000"},
+           {"fecha": "2026-01-06", "simbolo": "AAA", "tipo": "VENTA", "titulos": "100", "precio": "12", "caja": "1200"}]
+    px = {"2026-01-02": (10, 10, 10), "2026-01-05": (11, 10.2, 10.1), "2026-01-06": (12, 10.4, 10.3), "2026-01-07": (12.5, 10.5, 10.6)}
+    cierres = {f: {"AAA": a, "BBB": b, "MEXTRAC": m} for f, (a, b, m) in px.items()}
+    pesos = {"AAA": 0.5, "BBB": 0.5}
+    a = P.atribucion(ops, cierres, 2000.0, "2026-01-02", pesos, None, set(), {}, None, None, {}, "2026-01-02")
+    serie = P.serie_diaria(ops, cierres, 2000.0, "2026-01-02", pesos, set())
+    assert abs(a["alfa"] - serie[-1]["activo_acum"]) < 1e-12
+    fila = {x["t"]: x for x in a["posiciones"]}
+    assert fila["AAA"]["estado"] == "cerrada" and fila["BBB"]["estado"] == "indice"
+    assert fila["AAA"]["dias_tenencia"] == 2 and abs(fila["AAA"]["pyg_realizado"] - 200) < 1e-9
+    assert a["ventas"][0]["cierre_total"] is True
+    assert abs(a["suma"] - a["alfa"]) < 1e-12
+
+
+def test_dividendos_se_suman_y_no_se_duplican():
+    v = {"FEMSAUBD": {"div": [["2026-10-15", 3.0]]}, "AC": {"div": [["2026-10-27", 2.0], ["2011-01-03", 1.0]]}}
+    d = A.dividendos_por_fecha(v, {"FEMSAUBD", "AC"})
+    if not A.F.leer_csv("dividendos.csv"):
+        return
+    assert abs(d["2026-10-14"]["FEMSAUBD"] - (2.014925 + 1.188)) < 1e-9      # dos pagos el mismo día se suman
+    assert "2026-10-15" not in d or "FEMSAUBD" not in d["2026-10-15"]         # el de las velas, a ±3 días, no se duplica
+    assert d["2026-10-27"]["AC"] == 2.0 and d["2011-01-03"]["AC"] == 1.0       # sin registro de Refinitiv: se toma de las velas
+
+
+def test_calendario_sin_dividendos_duplicados():
+    ev = A.armar_calendario({"GAPB": {"ex_dividendo": "2026-11-05"}, "KOFUBL": {"ex_dividendo": "2099-01-01"}})
+    if not any(e["t"] == "GAPB" and "ividendo" in e["tipo"] for e in ev["eventos"] if e.get("fuente") == "LSEG"):
+        return
+    gap = [e for e in ev["eventos"] if e["t"] == "GAPB" and e["fecha"] == "2026-11-05"]
+    assert len(gap) == 1 and gap[0]["fuente"] == "LSEG"
+    assert any(e["t"] == "KOFUBL" and e["fecha"] == "2099-01-01" for e in ev["eventos"])
+    assert not any("Yahoo" in (e.get("fuente") or "") + (e.get("titulo") or "") for e in ev["eventos"])
+
+
+def test_investigacion_por_emisora():
+    import investigacion as INV
+    docs = INV.leer_todo()["documentos"]
+    if not docs:
+        return
+    d = docs[0]
+    assert d["corte"] and len(d["emisoras"]) == 37 and len(d["resumen"]) == 37
+    fem = d["emisoras"]["FEMSAUBD"]
+    assert fem["nivel"] == 1 and fem["modelo"].startswith("El valor de FEMSA")
+    assert fem["tablas"] and fem["tablas"][0]["cols"][0] == "KPI" and len(fem["tablas"][0]["filas"]) >= 10
+    assert [p["clave"] for p in fem["piezas"] if p["tipo"] == "texto"][:2] == ["modelo", "narrativa"]
+    assert d["emisoras"]["GAPB"]["juicio"].startswith("GAP es la mayor")
+    assert d["emisoras"]["OMAB"]["juicio"]                                     # viene en una viñeta
+    assert d["emisoras"]["VOLARA"]["nombre"] == "Volaris"                     # «Nivel 3 — Volaris (VOLARA)»
+    assert d["emisoras"]["VESTA"]["compacto"] and d["emisoras"]["Q"]["modelo"]
+    macro = {m["catalizador"]: m["emisoras"] for m in d["macro"]}
+    assert "BBAJIOO" in macro["Tasa de Banxico"] and "GMEXICOB" in macro["Cobre y plata"]
+    assert INV.tickers_en("GMéxico/Peñoles (costos en MXN), GAP/ASUR/OMA") == ["GMEXICOB", "PEOLES", "GAPB", "ASURB", "OMAB"]
+
+
+def test_sensibilidad_puente_de_valuacion():
+    import sensibilidad as S
+    cfg = {"impuestos": 0.30, "sector": {"aeropuertos": {"margen_incremental": 0.85}}, "emisoras": {
+        "X": {"base": "uafida", "drivers": [
+            {"id": "v", "n": "Ventas", "unidad": "%", "tipo": "ingresos", "peso": 0.5, "margen_incremental": 0.3, "paso": 1},
+            {"id": "m", "n": "Margen", "unidad": "pb", "tipo": "margen", "peso": 1, "paso": 50},
+            {"id": "c", "n": "Cobre", "unidad": "%", "tipo": "precio_volumen", "serie": "COBRE", "volumen": 1e9, "fuga": 0.1, "moneda": "USD", "paso": 10},
+            {"id": "k", "n": "Cash cost", "unidad": "US$/lb", "tipo": "costo_unitario", "volumen": 1e9, "moneda": "USD", "paso": 0.1}]},
+        "B": {"base": "utilidad", "utilidad_base": 1000, "cartera": 20000, "drivers": [
+            {"id": "min", "n": "MIN", "unidad": "pb", "tipo": "min", "paso": 10},
+            {"id": "c", "n": "Cartera", "unidad": "pp", "tipo": "cartera", "spread": 0.05, "paso": 1}]}}}
+    kp = {"ve_uafida": 10.0, "deuda_neta_uafida": 2.0, "margen_uafida": 0.2, "margen_bruto": 0.4}
+    m = S.modelo_emisora("X", "mineria", kp, {"ebitda": 4e9, "financialCurrency": "USD"}, 100.0, 20.0, None, cfg, {"COBRE": 5.0})
+    L = 10 / 8
+    d = {x["id"]: x for x in m["drivers"]}
+    assert abs(m["base"]["L"] - L) < 1e-12
+    assert abs(d["v"]["e_precio"] - L * 0.5 * 0.3 / 0.2 / 100) < 1e-12         # 1% de ventas
+    assert abs(d["m"]["efecto_paso"] - L * 50 / 1e4 / 0.2) < 1e-12               # +50 pb de margen
+    assert abs(d["c"]["e_base"] - 0.01 * 5.0 * 1e9 * 0.9 / 1e6 / 4000) < 1e-12  # 1% de precio × volumen
+    assert d["k"]["e_base"] < 0 and abs(d["k"]["e_base"] + 1e9 / 1e6 / 4000) < 1e-12
+    b = S.modelo_emisora("B", "bancos", {"pe": 9.0}, {}, 50.0, 20.0, None, cfg, {})
+    db = {x["id"]: x for x in b["drivers"]}
+    assert abs(db["min"]["e_precio"] - 1e-4 * 20000 * 0.7 / 1000) < 1e-12      # P/U constante
+    assert abs(db["c"]["e_precio"] - 0.01 * 20000 * 0.05 * 0.7 / 1000) < 1e-12
+    # UAFIDA casi nula: el modelo no se aplica
+    z = S.modelo_emisora("Z", "aerolinea", {"ve_uafida": 90.0, "deuda_neta_uafida": 75.0, "margen_uafida": 0.01}, {}, 10.0, 20.0, None, cfg, {})
+    assert z["nota"] and all(x["e_precio"] is None for x in z["drivers"])
+    # El archivo del equipo es JSON válido y sus drivers tienen tipo conocido
+    real = S.leer_drivers()
+    tipos = {"ingresos", "margen", "uafida_segmento", "precio_volumen", "costo_unitario", "fx", "min", "costo_riesgo", "cartera", "siniestralidad"}
+    for t, e in (real.get("emisoras") or {}).items():
+        assert t in {x[0] for x in U.EMISORAS}, t
+        for x in e["drivers"]:
+            assert x["tipo"] in tipos and x.get("paso"), (t, x["id"])
+
+
+def test_betas_recuperan_la_sensibilidad():
+    import random
+    import sensibilidad as S
+    random.seed(7)
+    fechas, ipc, cu, acc = [], [100.0], [4.0], [50.0]
+    d0 = datetime(2024, 1, 1)
+    for i in range(1, 760):
+        dia = d0 + timedelta(days=i)
+        if dia.weekday() >= 5:
+            continue
+        fechas.append(dia.strftime("%Y-%m-%d"))
+        ri, rc = random.gauss(0, 0.01), random.gauss(0, 0.015)
+        ipc.append(ipc[-1] * (1 + ri))
+        cu.append(cu[-1] * (1 + rc))
+        acc.append(acc[-1] * (1 + 0.9 * ri + 0.6 * rc + random.gauss(0, 0.004)))
+    n = len(fechas)
+    cierres = {"d": fechas, "s": {"IPC": ipc[1:n + 1], "GMEXICOB": acc[1:n + 1]}}
+    macro = {"COBRE": {"d": fechas, "c": cu[1:n + 1]}}
+    b = S.betas_mercado(cierres, macro, {"COBRE": ["GMEXICOB"]})
+    f = b["GMEXICOB"]["factores"][0]
+    assert f["clave"] == "COBRE" and abs(f["beta"] - 0.6) < 0.1 and f["t"] > 5 and f["relevante"]
+    assert abs(b["GMEXICOB"]["ipc"]["beta"] - 0.9) < 0.25
 
 
 if __name__ == "__main__":

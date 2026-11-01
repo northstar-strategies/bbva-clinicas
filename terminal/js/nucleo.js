@@ -14,6 +14,8 @@ window.NST = window.NST || {};
     pct(x, d = 2) { return esNum(x) ? NF[d].format(x * 100) + '%' : '—'; },
     pctS(x, d = 2) { return esNum(x) ? (x > 0 ? '+' : x < 0 ? '−' : '') + NF[d].format(Math.abs(x * 100)) + '%' : '—'; },
     pp(x, d = 2) { return esNum(x) ? (x > 0 ? '+' : x < 0 ? '−' : '') + NF[d].format(Math.abs(x * 100)) + ' pp' : '—'; },
+    /** Puntos base con signo (1 pb = 0.01%). */
+    pb(x, d = 1) { if (!esNum(x)) return '—'; const v = x * 1e4; return (v > 0.05 ? '+' : v < -0.05 ? '−' : '') + NF[d].format(Math.abs(v)) + ' pb'; },
     precio(x) { if (!esNum(x)) return '—'; const a = Math.abs(x); return NF[a >= 1000 ? 2 : a >= 1 ? 2 : 4].format(x); },
     /** Montos grandes con la convención de los reportes en México: MDP (millones de pesos) o MDD (de dólares). */
     dinero(x, m = '') {
@@ -74,6 +76,9 @@ window.NST = window.NST || {};
     },
   };
 
+  /** Etiqueta pública de la fuente de un dato. Los precios y estados se descargan de un agregador
+      público de mercado; la terminal los presenta por su naturaleza (diferidos, reportados), no por marca. */
+  const fuente = (s) => String(s ?? '').replace(/Yahoo Finance|Yahoo/gi, 'Mercado · diferido').replace(/\(fecha estimada por Mercado · diferido\)/g, '(fecha estimada)');
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const $ = (sel, raiz = document) => raiz.querySelector(sel);
   const $$ = (sel, raiz = document) => Array.from(raiz.querySelectorAll(sel));
@@ -140,5 +145,5 @@ window.NST = window.NST || {};
     setTimeout(() => d.remove(), ms);
   }
 
-  Object.assign(N, { F, esc, $, $$, Local, Bus, spark, barras, calor, toast, esNum });
+  Object.assign(N, { F, esc, $, $$, Local, Bus, spark, barras, calor, toast, esNum, fuente });
 })(window.NST);

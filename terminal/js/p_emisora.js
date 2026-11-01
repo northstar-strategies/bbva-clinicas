@@ -5,7 +5,7 @@
 
   const PESTANAS = [
     ['resumen', 'Resumen', 'DES'], ['grafica', 'Gráfica', 'GP'], ['financieros', 'Financieros', 'FA'], ['kpis', 'KPIs', 'KPI'],
-    ['pares', 'Pares y valuación', 'RV'], ['noticias', 'Noticias', 'N'], ['tesis', 'Tesis del equipo', 'TESIS'], ['dividendos', 'Dividendos', 'DVD'],
+    ['modelo', 'Modelo y drivers', 'MOD'], ['pares', 'Pares y valuación', 'RV'], ['noticias', 'Noticias', 'N'], ['tesis', 'Tesis del equipo', 'TESIS'], ['dividendos', 'Dividendos', 'DVD'],
   ];
   const BLOQUE = { ACTIVA: 'acc', REPRESENTATIVA: 'info', ETF: 'pos', FUERA: '' };
 
@@ -25,7 +25,7 @@
         </div></div>
       <div class="px"><div class="p">${F.precio(q.p)}</div>
         <div class="c ${F.cls(q.cp)}">${F.flecha(q.cp)} ${q.c != null ? F.num(q.c, 2) : ''} (${F.pctS(q.cp)})</div>
-        <div class="t">${q.ts ? F.fechaHora(q.ts) : ''} · ${esc(q.fuente || '')}</div></div>
+        <div class="t">${q.ts ? F.fechaHora(q.ts) : ''} · ${esc(N.fuente(q.fuente || ''))}</div></div>
     </div>`;
   }
 
@@ -52,26 +52,31 @@
     ];
     const desc = f.descripcion || inf.longBusinessSummary || '';
     const rec = an.recomendaciones;
-    let consenso = '<div class="vacio">Sin consenso publicado en Yahoo Finance.</div>';
+    let consenso = '<div class="vacio">Sin consenso de analistas publicado.</div>';
     if (rec) {
       const tot = rec.strongBuy + rec.buy + rec.hold + rec.sell + rec.strongSell;
       if (tot) {
         const seg = [['strongBuy', 'Compra fuerte', 'var(--pos)'], ['buy', 'Compra', '#5fe0a0'], ['hold', 'Mantener', 'var(--neu)'], ['sell', 'Venta', '#ff8a96'], ['strongSell', 'Venta fuerte', 'var(--neg)']];
         consenso = `<div style="display:flex;height:12px;border-radius:2px;overflow:hidden">${seg.map(([c, , col]) => rec[c] ? `<i style="flex:${rec[c]};background:${col}" title="${rec[c]}"></i>` : '').join('')}</div>
           <div class="chips" style="margin-top:6px">${seg.map(([c, n]) => `<span class="chip">${n} ${rec[c]}</span>`).join('')}</div>
-          ${an.objetivo ? `<table class="t" style="margin-top:6px"><tbody><tr><td class="i dim">Objetivo bajo / promedio / alto</td><td>${F.precio(an.objetivo.low)} / <b>${F.precio(an.objetivo.mean)}</b> / ${F.precio(an.objetivo.high)}</td></tr></tbody></table>` : ''}`;
+          ${an.objetivo ? `<table class="t kv" style="margin-top:6px"><tbody><tr><td class="i dim">Objetivo bajo / promedio / alto</td><td>${F.precio(an.objetivo.low)} / <b>${F.precio(an.objetivo.mean)}</b> / ${F.precio(an.objetivo.high)}</td></tr></tbody></table>` : ''}`;
       }
     }
     const pos = D.port && D.port.actual && D.port.actual.posiciones.find((x) => x.t === t);
     const ef = D.port && D.port.actual && D.port.actual.pesos_efectivos ? D.port.actual.pesos_efectivos[t] : null;
     const dev = D.port && D.port.actual && D.port.actual.desviacion ? D.port.actual.desviacion[t] : null;
-    const posicion = `<table class="t"><tbody>
+    const atr = D.atrib(t);
+    const posicion = `<table class="t kv"><tbody>
       ${pos ? `<tr><td class="i dim">Títulos</td><td>${F.ent(pos.titulos)}</td></tr><tr><td class="i dim">Valor</td><td>${F.pesos(pos.valor)}</td></tr>
       <tr><td class="i dim">Costo promedio</td><td>${F.precio(pos.costo_promedio)}</td></tr><tr><td class="i dim">Ganancia o pérdida</td><td>${UI.num(pos.pyg, F.pesos)} ${UI.cambio(pos.pyg_pct)}</td></tr>
       <tr><td class="i dim">Peso directo</td><td>${F.pct(pos.peso)}</td></tr>` : '<tr><td class="i dim" colspan="2">Sin posición directa</td></tr>'}
       <tr><td class="i dim">Peso efectivo (con el ETF desglosado)</td><td>${F.pct(ef)}</td></tr>
       <tr><td class="i dim">Peso en el índice</td><td>${F.pct((D.U[t] || {}).peso_indice)}</td></tr>
-      <tr><td class="i dim">Desviación contra el índice</td><td class="${F.cls(dev)}">${F.pp(dev)}</td></tr></tbody></table>`;
+      <tr><td class="i dim">Desviación contra el índice</td><td class="${F.cls(dev)}">${F.pp(dev)}</td></tr>
+      ${atr ? `<tr><td class="i dim">Aporte al alfa desde el ${F.fechaCorta(D.port.atribucion.desde)}</td><td><b class="${F.cls(atr.aporte)}">${F.pb(atr.aporte)}</b> <span class="dim">${{ abierta: 'posición abierta', cerrada: 'posición cerrada', indice: 'solo vía índice' }[atr.estado] || ''}</span></td></tr>
+      <tr><td class="i dim">Rendimiento total desde el ${F.fechaCorta(D.port.atribucion.desde)}</td><td>${UI.cambio(atr.rend)} <span class="dim">MEXTRAC ${F.pctS(D.port.atribucion.bench)}</span></td></tr>
+      ${atr.estado !== 'indice' ? `<tr><td class="i dim">G/P total (con realizada y dividendos)</td><td>${UI.num(atr.pyg_total, F.pesos)}</td></tr>` : ''}` : ''}</tbody></table>
+      ${atr ? `<p class="dim" style="font-size:10.5px;padding:5px 9px"><a data-ir="#/port">Ver la contribución de todas las posiciones ›</a></p>` : ''}`;
     const evs = D.eventosDe(t).filter((e) => e.fecha >= new Date().toISOString().slice(0, 10)).slice(0, 4);
     cont.innerHTML = `<div class="rejilla g21">
       <div class="rejilla" style="align-content:start">
@@ -84,8 +89,8 @@
       <div class="rejilla" style="align-content:start">
         ${UI.panel('Seis meses', '<div class="graf medio" id="eqMini"></div>', { acciones: `<a class="btn sm" data-ir="#/eq/${t}/grafica">GP ›</a>` })}
         ${UI.panel('Posición en el fondo', posicion, { p0: true })}
-        ${UI.panel('Consenso de analistas', consenso, { nota: 'Yahoo Finance' })}
-        ${UI.panel('Próximos eventos', evs.length ? `<table class="t"><tbody>${evs.map((e) => `<tr><td class="i">${F.fecha(e.fecha)}</td><td class="i" style="white-space:normal">${esc(e.tipo)} · ${esc(e.titulo)}</td></tr>`).join('')}</tbody></table>` : '<div class="vacio">Sin eventos próximos.</div>', { p0: true })}
+        ${UI.panel('Consenso de analistas', consenso, { nota: 'consenso público de corredurías' })}
+        ${UI.panel('Próximos eventos', evs.length ? `<table class="t kv"><tbody>${evs.map((e) => `<tr><td class="i">${F.fecha(e.fecha)}</td><td class="i" style="white-space:normal">${esc(e.tipo)} · ${esc(N.fuente(e.titulo))}</td></tr>`).join('')}</tbody></table>` : '<div class="vacio">Sin eventos próximos.</div>', { p0: true })}
       </div></div>`;
     D.velas(t).then((v) => {
       const el = $('#eqMini', cont); if (!v || !el || !el.isConnected) return;
@@ -125,7 +130,7 @@
     Promise.all([D.velas(t), D.velas('IPC')]).then(([v, ipc]) => {
       const el = $('#gPrin', cont); if (!el || !el.isConnected) return;
       if (!v) { el.innerHTML = '<div class="vacio">Sin velas para esta emisora.</div>'; return; }
-      $('#gFuente', cont).textContent = v.fuente || 'Yahoo Finance';
+      $('#gFuente', cont).textContent = N.fuente(v.fuente || 'Mercado · diferido');
       ctrl = N.G.velas(el, v, { bajo: $('#gInf', cont), ipc });
       if (!ctrl) return;
       pref.capas.forEach((k) => ctrl.alternar(k, true));
@@ -179,7 +184,7 @@
         <span class="sep"></span>${[['trimestral', 'Trimestral'], ['anual', 'Anual']].map(([k, n]) => `<button class="btn sm ${pref.f === k ? 'on' : ''}" data-f="${k}">${n}</button>`).join('')}</div>`;
       const tabla = est && est[pref.e] && est[pref.e][pref.f];
       if (!tabla) {
-        cont.innerHTML = barra + `<div class="vacio">Todavía no hay estados financieros de ${esc(t)}.<br>Los descarga GitHub Actions de Yahoo Finance al cierre de cada día hábil${t === 'MEXTRAC' ? '; un ETF no publica estados.' : '.'}</div>`;
+        cont.innerHTML = barra + `<div class="vacio">Todavía no hay estados financieros de ${esc(t)}.<br>Los descarga GitHub Actions de los reportes publicados, al cierre de cada día hábil${t === 'MEXTRAC' ? '; un ETF no publica estados.' : '.'}</div>`;
       } else {
         const per = tabla.periodos;
         const etiqueta = (p) => (pref.f === 'trimestral' ? `${Math.floor((+p.slice(5, 7) - 1) / 3) + 1}T${p.slice(2, 4)}` : p.slice(0, 4));
@@ -196,7 +201,7 @@
         }).join('');
         cont.innerHTML = barra + UI.panel(`${{ resultados: 'Estado de resultados', balance: 'Balance general', flujo: 'Flujo de efectivo' }[pref.e]} · ${pref.f}`,
           `<div class="tabla-env"><table class="t"><thead><tr><th class="i">Millones de ${esc(mon)}</th>${per.map((p) => `<th>${etiqueta(p)}</th>`).join('')}<th>${pref.f === 'trimestral' ? 'a/a' : 'vs año previo'}</th><th>Tendencia</th></tr></thead><tbody>${filas}</tbody></table></div>`,
-          { p0: true, nota: `Yahoo Finance · ${mon}${(est.avisos || []).length ? ' · faltaron: ' + esc(est.avisos.join(', ')) : ''}` });
+          { p0: true, nota: `estados financieros reportados · ${mon}${(est.avisos || []).length ? ' · faltaron: ' + esc(est.avisos.join(', ')) : ''}` });
       }
       $$('[data-e]', cont).forEach((b) => b.addEventListener('click', () => { pref.e = b.dataset.e; Local.guardar('fin', pref); financieros(cont, t); }));
       $$('[data-f]', cont).forEach((b) => b.addEventListener('click', () => { pref.f = b.dataset.f; Local.guardar('fin', pref); financieros(cont, t); }));
@@ -220,8 +225,8 @@
       ${UI.panel('Comparables', '<div id="parT"></div>', { p0: true, nota: `pares: ${(k.pares || []).join(', ') || '—'} · resto del sector ${esc(sector || '')}` })}
       ${UI.panel('ROE contra precio / valor en libros', '<div id="parG"></div>', { nota: 'todo el universo · resaltados los pares' })}
     </div>
-    <div class="rejilla g2" style="margin-top:8px">${UI.panel('P/U contra su propia historia', '<div id="parH1"></div>', { nota: 'trimestral · Yahoo Finance' })}
-      ${UI.panel('VE/UAFIDA contra su propia historia', '<div id="parH2"></div>', { nota: 'trimestral · Yahoo Finance' })}</div>`;
+    <div class="rejilla g2" style="margin-top:8px">${UI.panel('P/U contra su propia historia', '<div id="parH1"></div>', { nota: 'trimestral' })}
+      ${UI.panel('VE/UAFIDA contra su propia historia', '<div id="parH2"></div>', { nota: 'trimestral' })}</div>`;
     UI.tabla($('#parT', cont), [
       { k: 't', t: 'Emisora', i: true, f: (x) => UI.sym(x.t) + (x.grupo === 'sector' ? ' <span class="dim">sector</span>' : '') },
       { k: 'p', t: 'Precio', f: (x) => F.precio(x.p) }, { k: 'cp', t: 'Hoy', f: (x) => UI.cambio(x.cp) },
@@ -271,10 +276,10 @@
         ${f.fortalezas ? UI.panel('Fortalezas', lst(f.fortalezas, '')) : ''}
       </div>
       <div class="rejilla" style="align-content:start">
-        ${UI.panel('Postura en el fondo', `<table class="t"><tbody>${datos.map(([k, v]) => `<tr><td class="i dim">${k}</td><td style="white-space:normal">${esc(v)}</td></tr>`).join('')}</tbody></table>`, { p0: true })}
+        ${UI.panel('Postura en el fondo', `<table class="t kv"><tbody>${datos.map(([k, v]) => `<tr><td class="i dim">${k}</td><td style="white-space:normal">${esc(v)}</td></tr>`).join('')}</tbody></table>`, { p0: true })}
         ${UI.panel('Factores del modelo QVM', `${barra('Quality', z.quality)}${barra('Value', z.value)}${barra('Momentum', z.momentum)}${barra('z del ciclo', z.z_ciclo)}
           <p class="dim" style="margin-top:6px;font-size:10.5px">${esc(f.factores || '')}</p>`, { nota: 'del equipo · empresas.txt' })}
-        ${UI.panel('Datos de mercado de la ficha', `<table class="t"><tbody>${[['Rango 52 semanas', f.rango_52s], ['En el año', f.ytd], ['1 año', f.rend_1a], ['3 años', f.rend_3a], ['5 años', f.rend_5a], ['Beta 5 años', f.beta_5a], ['Volatilidad anual', f.volatilidad_anual], ['R² contra el índice', f.r2_vs_indice]]
+        ${UI.panel('Datos de mercado de la ficha', `<table class="t kv"><tbody>${[['Rango 52 semanas', f.rango_52s], ['En el año', f.ytd], ['1 año', f.rend_1a], ['3 años', f.rend_3a], ['5 años', f.rend_5a], ['Beta 5 años', f.beta_5a], ['Volatilidad anual', f.volatilidad_anual], ['R² contra el índice', f.r2_vs_indice]]
           .filter(([, v]) => v).map(([k, v]) => `<tr><td class="i dim">${k}</td><td>${esc(v)}</td></tr>`).join('')}</tbody></table>`, { p0: true, nota: 'capturados por el equipo con Refinitiv' })}
       </div></div>`;
   }
@@ -293,11 +298,11 @@
       const anios = Object.keys(porAnio).sort();
       const p = D.precio(t);
       cont.innerHTML = `<div class="rejilla g12">
-        ${UI.panel('Resumen', `<table class="t"><tbody><tr><td class="i dim">Pagado en los últimos 12 meses</td><td>${F.precio(udm)}</td></tr>
+        ${UI.panel('Resumen', `<table class="t kv"><tbody><tr><td class="i dim">Pagado en los últimos 12 meses</td><td>${F.precio(udm)}</td></tr>
           <tr><td class="i dim">Rendimiento sobre el precio actual</td><td>${F.pct(p ? udm / p : null)}</td></tr>
           ${divs.filter((d) => d[0] > hoy).map((d) => `<tr><td class="i dim">Anunciado · ex ${F.fecha(d[0])}</td><td class="acc">${F.precio(d[1])}</td></tr>`).join('')}</tbody></table>
           <div style="margin-top:10px">${N.barras(anios.map((a) => ({ p: a, v: porAnio[a] })), { w: 300, h: 80 })}</div><p class="dim" style="font-size:10.5px">Pago anual por acción · ${anios[0]}–${anios[anios.length - 1]}</p>`)}
-        ${UI.panel('Historial', `<table class="t"><thead><tr><th class="i">Fecha ex</th><th>Monto por acción</th><th>Sobre el precio de hoy</th></tr></thead><tbody>${divs.slice(0, 40).map((d) => `<tr><td class="i">${F.fecha(d[0])}${d[0] > hoy ? ' <span class="chip acc">próximo</span>' : ''}</td><td>${F.num(d[1], 4)}</td><td>${F.pct(p ? d[1] / p : null)}</td></tr>`).join('')}</tbody></table>`, { p0: true, nota: esc(v.fuente || '') })}
+        ${UI.panel('Historial', `<table class="t"><thead><tr><th class="i">Fecha ex</th><th>Monto por acción</th><th>Sobre el precio de hoy</th></tr></thead><tbody>${divs.slice(0, 40).map((d) => `<tr><td class="i">${F.fecha(d[0])}${d[0] > hoy ? ' <span class="chip acc">próximo</span>' : ''}</td><td>${F.num(d[1], 4)}</td><td>${F.pct(p ? d[1] / p : null)}</td></tr>`).join('')}</tbody></table>`, { p0: true, nota: esc(N.fuente(v.fuente || '')) })}
       </div>`;
     });
   }
@@ -309,9 +314,9 @@
       if (!D.U[t]) { cont.innerHTML = `<div class="aviso-barra">No encuentro la emisora «${esc(t)}». Escriba su clave en la línea de comandos.</div>`; return; }
       const p = (args[1] || 'resumen').toLowerCase();
       const pest = PESTANAS.find((x) => x[0] === p) ? p : 'resumen';
-      cont.innerHTML = `${encabezado(t)}<nav class="pest">${PESTANAS.map(([k, n, c]) => `<button class="${k === pest ? 'on' : ''} ${k === 'kpis' ? 'nuevo' : ''}" data-ir="#/eq/${t}/${k}">${n}<b>${c}</b></button>`).join('')}</nav><div id="eqCuerpo"></div>`;
+      cont.innerHTML = `${encabezado(t)}<nav class="pest">${PESTANAS.map(([k, n, c]) => `<button class="${k === pest ? 'on' : ''} ${k === 'modelo' ? 'nuevo' : ''}" data-ir="#/eq/${t}/${k}">${n}<b>${c}</b></button>`).join('')}</nav><div id="eqCuerpo"></div>`;
       const cuerpo = $('#eqCuerpo', cont);
-      ({ resumen, grafica, financieros, kpis: (c, x) => N.KPIs.pintar(c, x), pares, noticias: (c, x) => N.Noticias.lista(c, D.noticiasDe(x, 200), { sinEmisora: true }), tesis, dividendos }[pest])(cuerpo, t);
+      ({ resumen, grafica, financieros, kpis: (c, x) => N.KPIs.pintar(c, x), modelo: (c, x) => N.Modelo.pintar(c, x), pares, noticias: (c, x) => N.Noticias.lista(c, D.noticiasDe(x, 200), { sinEmisora: true }), tesis, dividendos }[pest])(cuerpo, t);
     },
     refrescar(cont, args) {
       // Solo se actualiza el encabezado para no reiniciar gráficas ni pestañas.

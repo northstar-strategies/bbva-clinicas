@@ -46,7 +46,7 @@
   const D = {
     repo: repoActual(), base: null, estado: null, universo: null, U: {}, lista: [], q: {}, intradia: {},
     kpisArch: null, fund: {}, fichas: {}, noticias: [], macro: {}, cierres: null, cal: { eventos: [], analistas: {} },
-    port: null, multiplos: {}, _velas: {}, _estados: {}, cargado: false, error: null, version: '',
+    port: null, multiplos: {}, investigacion: [], sens: {}, sensMeta: {}, _velas: {}, _estados: {}, cargado: false, error: null, version: '',
 
     async iniciar() {
       for (const base of candidatos()) {
@@ -91,7 +91,7 @@
     async cargarTodo() {
       this.version = this.estado.ultimo_completo || this.estado.generado;
       const v = this.version;
-      const nombres = ['universo', 'kpis', 'fundamentales', 'noticias', 'macro', 'cierres', 'calendario', 'multiplos'];
+      const nombres = ['universo', 'kpis', 'fundamentales', 'noticias', 'macro', 'cierres', 'calendario', 'multiplos', 'investigacion', 'sensibilidad'];
       const res = await Promise.allSettled(nombres.map((n) => pedir(this.url(n + '.json', v))));
       const r = Object.fromEntries(nombres.map((n, i) => [n, res[i].status === 'fulfilled' ? res[i].value : null]));
       if (r.universo) {
@@ -106,6 +106,9 @@
       this.cierres = r.cierres;
       this.cal = r.calendario || { eventos: [], analistas: {} };
       this.multiplos = (r.multiplos && r.multiplos.emisoras) || {};
+      this.investigacion = (r.investigacion && r.investigacion.documentos) || [];
+      this.sens = (r.sensibilidad && r.sensibilidad.emisoras) || {};
+      this.sensMeta = r.sensibilidad || {};
       this._velas = {}; this._estados = {};
       this._idx = null;
       await this.cargarRapido();
@@ -177,6 +180,15 @@
     noticiasDe(t, n = 50) { return this.noticias.filter((x) => x.t === t).slice(0, n); },
     eventosDe(t) { return (this.cal.eventos || []).filter((e) => String(e.t || '').split(/\s+/).includes(t)); },
     enCartera(t) { const p = this.port && this.port.actual; return !!(p && p.posiciones.find((x) => x.t === t)); },
+    /** Investigación del equipo sobre la emisora: la del documento más reciente que la cubra. */
+    inv(t) {
+      for (const d of this.investigacion || []) { const e = d.emisoras && d.emisoras[t]; if (e) return Object.assign({ doc: d }, e); }
+      return null;
+    },
+    /** Puente de valuación (drivers) y betas de mercado de la emisora. */
+    sensDe(t) { return (this.sens && this.sens[t]) || null; },
+    /** Aporte de la emisora al alfa del fondo (atribución ligada desde la fecha de referencia). */
+    atrib(t) { const a = this.port && this.port.atribucion; return (a && (a.posiciones || []).find((x) => x.t === t)) || null; },
     logo(t) {
       const e = this.U[t]; if (!e || !e.logo) return null;
       return '../' + encodeURIComponent(e.logo);

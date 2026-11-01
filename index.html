@@ -4165,7 +4165,7 @@ const Remote=(()=>{
     if(unk.length) put('warn','Emisoras fuera del universo, ignoradas: '+unk.join(', '));
     return out;
   }
-  /* v6.8 · Sin vigilante. GitHub Actions publica el mismo cotizaciones.csv (Yahoo Finance) en la rama «datos» cada
+  /* v6.8 · Sin vigilante. GitHub Actions publica el mismo cotizaciones.csv (precios de mercado diferidos) en la rama «datos» cada
      15 minutos de sesión. Se leen los dos y gana el corte más reciente: con el vigilante encendido sus precios de
      Refinitiv siguen mandando; apagado, el tablero sigue al día solo. */
   const COTIZ_ACCIONES='https://raw.githubusercontent.com/northstar-strategies/bbva-clinicas/datos/terminal/datos/legado/cotizaciones.csv';
@@ -6193,7 +6193,7 @@ const UI=(()=>{
         ${FAM.map(fa=>{ const xs=ks.filter(k=>k.familia===fa); return xs.length?sec(esc(fams[fa]||fa),`<div class="fgrid">${xs.map(celda).join('')}</div>`):''; }).join('')}
         ${(z.quality!=null||q.z!=null)?sec('Factores del modelo QVM',`<div class="fgrid">${[['Quality',z.quality,q.quality],['Value',z.value,q.value],['Momentum',z.momentum,q.momentum],['Compuesto',z.z_ciclo,q.z]]
           .map(([n,a,b])=>`<div class="fcell"><div class="k">${n}</div><div class="v">${zf(a)}</div><div class="c">equipo · en vivo ${zf(b)}</div></div>`).join('')}</div>`):''}
-        ${arch&&!ks.some(k=>['crecimiento','margenes','rentabilidad','bancario'].includes(k.familia))&&s!=='MEXTRAC'?`<div class="kpi-aviso">Los KPIs de estados financieros llegan con la descarga diaria de Yahoo Finance; por ahora se muestran los de mercado.</div>`:''}`;
+        ${arch&&!ks.some(k=>['crecimiento','margenes','rentabilidad','bancario'].includes(k.familia))&&s!=='MEXTRAC'?`<div class="kpi-aviso">Los KPIs de estados financieros llegan con la descarga diaria de GitHub Actions; por ahora se muestran los de mercado.</div>`:''}`;
       el.querySelectorAll('.fcell.kpi-c').forEach(c=>c.onclick=()=>c.classList.toggle('abierta'));
     }
     const m_sub=s=>(META[s]&&META[s].sub)||'';
@@ -6514,7 +6514,7 @@ const UI=(()=>{
   const FUENTE_PX={
     seed:{n:'Cierres BMV incorporados al archivo', d:'Cierres reales embebidos en el documento. No son cotizaciones en vivo.'},
     cotiz:{n:'LSEG Refinitiv', d:'Publicados cada 5 minutos durante la sesión de la BMV por el vigilante conectado a LSEG Workspace.'},
-    acciones:{n:'Yahoo Finance · GitHub Actions', d:'Publicados cada 15 minutos de sesión por GitHub Actions en la rama datos, sin necesidad del vigilante.'},
+    acciones:{n:'Mercado diferido · GitHub Actions', d:'Publicados cada 15 minutos de sesión por GitHub Actions en la rama datos, sin necesidad del vigilante.'},
     sim:{n:'LSEG Refinitiv', d:'Cotizaciones que publica el vigilante conectado a LSEG Workspace.'},
     csv:{n:'Carga manual por CSV', d:'Precios cargados a mano desde un archivo local.'},
     remote:{n:'Archivo de precios del equipo', d:'Tomados de la hoja que mantiene el gestor en el repositorio.'},

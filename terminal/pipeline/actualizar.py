@@ -24,11 +24,13 @@ from datetime import date, datetime, timedelta, timezone
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import fichas as F  # noqa: E402
+import investigacion as INV  # noqa: E402
 import kpis as K  # noqa: E402
 import portafolio as P  # noqa: E402
+import sensibilidad as S  # noqa: E402
 import universo as U  # noqa: E402
-from util import (CDMX, ahora_utc, escribir_json, estado_mercado, etiqueta_trimestre, fecha_cdmx, leer_json,  # noqa: E402
-                  limpiar, num)
+from util import (CDMX, FUENTE_CALENDARIO, FUENTE_ESTADOS, FUENTE_MERCADO, ahora_utc, escribir_json,  # noqa: E402
+                  estado_mercado, etiqueta_trimestre, fecha_cdmx, leer_json, limpiar, num)
 
 log = logging.getLogger("terminal")
 VERSION = 1
@@ -79,14 +81,14 @@ def cotizaciones(c: Corrida) -> dict:
     if n_emis < 0.5 * len(emis):
         c.error(f"Cobertura de cotizaciones insuficiente ({n_emis}/{len(emis)}); se conserva lo publicado")
         return q_prev
-    c.fuentes.add("Yahoo Finance")
+    c.fuentes.add(FUENTE_MERCADO)
     q = dict(q_prev)
     barras = {}
     for t, v in frescos.items():
         barras[t] = v.pop("barras", [])
         v["c"] = (v["p"] - v["a"]) if v.get("a") else None
         v["cp"] = (v["p"] / v["a"] - 1) if v.get("a") else None
-        v["fuente"] = "Yahoo Finance"
+        v["fuente"] = FUENTE_MERCADO
         q[t] = limpiar(v)
     for t in q:
         if t not in frescos and t in q_prev:
@@ -131,7 +133,7 @@ def velas(c: Corrida) -> dict[str, dict]:
         if len(v["d"]) < 30:
             c.avisos.append(f"velas {t}: solo {len(v['d'])} días; se conserva lo previo")
             continue
-        v["fuente"] = "Yahoo Finance"
+        v["fuente"] = FUENTE_MERCADO
         out[t] = v
         c.escribir(f"velas/{t}.json", {"t": t, **v})
     for y, e in err.items():
@@ -160,7 +162,7 @@ def fundamentales(c: Corrida) -> tuple[dict, dict, dict, dict]:
         c.avisos.append(f"info {por_y[y]}: {e}")
     c.cobertura["fundamentales"] = f"{len(info_ok)}/{len(ys)}"
     if info_ok:
-        c.fuentes.add("Yahoo Finance")
+        c.fuentes.add(FUENTE_ESTADOS)
         c.escribir("fundamentales.json", {"generado": ahora_utc().isoformat(), "emisoras": info})
 
     est_ok, est_err = Y.en_paralelo(Y.estados, ys, hilos=3)
@@ -313,7 +315,7 @@ def armar_macro(v: dict[str, dict], previo: dict) -> dict:
         if clave in v:
             d, c = v[clave]["d"][-520:], v[clave]["c"][-520:]
             out[clave] = {"n": nombre, "u": unidad, "tipo": tipo, "mueve": mueve, "d": d, "c": c,
-                          "fuente": v[clave].get("fuente", "Yahoo Finance")}
+                          "fuente": v[clave].get("fuente", FUENTE_MERCADO)}
     return out
 
 
@@ -395,6 +397,64 @@ def armar_kpis(c: Corrida, v: dict, info: dict, estados: dict, multiplos: dict, 
             "familias": K.FAMILIAS, "emisoras": salida}
 
 
+def armar_sensibilidad(c: Corrida, kj: dict, info: dict, estados: dict, q: dict, cierres: dict, macro: dict) -> dict:
+    """Puente de valuación por driver (investigacion/drivers.json) y betas semanales contra factores macro."""
+    cfg = S.leer_drivers()
+    usd = num((q.get("USDMXN") or {}).get("p")) or ((macro.get("USDMXN") or {}).get("c") or [None])[-1]
+    ult = {k: (x.get("c") or [None])[-1] for k, x in (macro or {}).items()}
+    for k in ("COBRE", "ORO", "PLATA", "BRENT"):
+        p = num((q.get(k) or {}).get("p"))
+        if p:
+            ult[k] = p
+    mueve = {cl: list(mv) for (cl, _y, _n, _t, _u, mv) in U.MACRO}
+    try:
+        betas = S.betas_mercado(cierres, macro, mueve)
+    except Exception as e:
+        c.avisos.append(f"betas: {type(e).__name__}: {e}")
+        betas = {}
+    out = {}
+    for t, e in (kj.get("emisoras") or {}).items():
+        kp = {x["clave"]: x.get("valor") for x in e.get("kpis") or []}
+        precio = num((q.get(t) or {}).get("p")) or ((cierres.get("s") or {}).get(t) or [None])[-1]
+        try:
+            mod = S.modelo_emisora(t, e.get("grupo"), kp, info.get(t) or {}, precio, usd, estados.get(t), cfg, ult) if t != "MEXTRAC" else None
+        except Exception as ex:
+            c.avisos.append(f"sensibilidad {t}: {type(ex).__name__}: {ex}")
+            mod = None
+        out[t] = {"modelo": mod, "mercado": betas.get(t)}
+    return limpiar({"generado": ahora_utc().isoformat(), "impuestos": cfg.get("impuestos"), "leeme": cfg.get("_leeme"),
+                    "factores": {k: {"n": n, "absoluto": a} for k, (n, a) in S.FACTORES.items()}, "emisoras": out}, 6)
+
+
+def armar_investigacion(c: Corrida) -> None:
+    try:
+        docs = INV.leer_todo()
+    except Exception as e:
+        c.error(f"investigación: {type(e).__name__}: {e}")
+        return
+    for d in docs.get("documentos", []):
+        if d.get("error"):
+            c.avisos.append(f"investigación {d.get('archivo')}: {d['error']}")
+    c.escribir("investigacion.json", {"generado": ahora_utc().isoformat(), **docs})
+
+
+def _dividendo_registrado(eventos: list[dict], t: str, fecha: str, dias: int = 3) -> bool:
+    """¿El equipo o LSEG ya registraron un dividendo de la emisora a ±3 días de esa fecha?"""
+    try:
+        f0 = date.fromisoformat(fecha)
+    except ValueError:
+        return False
+    for e in eventos:
+        if "dividendo" not in str(e.get("tipo", "")).lower() or t not in str(e.get("t", "")).split():
+            continue
+        try:
+            if abs((date.fromisoformat(e["fecha"]) - f0).days) <= dias:
+                return True
+        except (ValueError, KeyError):
+            continue
+    return False
+
+
 def armar_calendario(eventos: dict) -> dict:
     out = []
     for r in F.leer_csv("calendario.csv"):
@@ -402,15 +462,15 @@ def armar_calendario(eventos: dict) -> dict:
             out.append({"fecha": r["fecha"], "t": r.get("emisora", ""), "tipo": r.get("tipo", ""),
                         "titulo": r.get("titulo", ""), "fuente": r.get("fuente", "equipo")})
     vistos = {(x["fecha"], x["t"], x["tipo"]) for x in out}
-    limite = (date.today() - timedelta(days=45)).isoformat()      # Yahoo deja la última fecha aunque sea vieja
+    limite = (date.today() - timedelta(days=45)).isoformat()      # la fuente deja la última fecha aunque sea vieja
     for t, ev in (eventos or {}).items():
         for f in ev.get("reporte") or []:
             if f >= limite and (f, t, "Reporte trimestral") not in vistos:
-                out.append({"fecha": f, "t": t, "tipo": "Reporte trimestral", "titulo": "Reporte de resultados (fecha estimada por Yahoo)",
-                            "fuente": "Yahoo Finance"})
-        if ev.get("ex_dividendo") and ev["ex_dividendo"] >= limite:
+                out.append({"fecha": f, "t": t, "tipo": "Reporte trimestral", "titulo": "Reporte de resultados (fecha estimada)",
+                            "fuente": FUENTE_CALENDARIO})
+        if ev.get("ex_dividendo") and ev["ex_dividendo"] >= limite and not _dividendo_registrado(out, t, ev["ex_dividendo"]):
             out.append({"fecha": ev["ex_dividendo"], "t": t, "tipo": "Dividendo", "titulo": "Fecha ex-dividendo",
-                        "fuente": "Yahoo Finance"})
+                        "fuente": FUENTE_CALENDARIO})
     out.sort(key=lambda x: x["fecha"])
     return {"generado": ahora_utc().isoformat(), "eventos": out,
             "analistas": {t: {k: ev.get(k) for k in ("recomendaciones", "objetivo", "upa_estimada", "ventas_estimadas") if ev.get(k)}
@@ -436,10 +496,11 @@ def armar_portafolio(c: Corrida, v: dict, q: dict) -> None:
         for i, (f, x) in enumerate(zip(vt["d"], vt["c"])):
             if f >= (date.fromisoformat(inicio) - timedelta(days=10)).isoformat():
                 cierres.setdefault(f, {})[t] = x
-                if t == "MEXTRAC" and vt.get("fuente", "").startswith("Yahoo") and i < len(vols) and vols[i] == 0:
+                # Volumen 0 en las velas de mercado = el ETF no operó ese día (la semilla de Refinitiv no trae volumen).
+                if t == "MEXTRAC" and not str(vt.get("fuente", "")).startswith("LSEG") and i < len(vols) and vols[i] == 0:
                     sin_op.add(f)
     # Los días que ya registró el tracker se valúan con sus cierres oficiales de Refinitiv (historico.csv), para que
-    # la serie cuadre al centavo con rendimientos.csv; los días posteriores, con las velas de Yahoo.
+    # la serie cuadre al centavo con rendimientos.csv; los días posteriores, con las velas de mercado.
     oficiales = {r["fecha"]: r for r in F.leer_csv("historico.csv") if r.get("fecha", "") >= inicio}
     for f, fila in oficiales.items():
         cierres[f] = {t: num(fila.get(t)) for t in tickers if num(fila.get(t)) is not None}
@@ -458,14 +519,70 @@ def armar_portafolio(c: Corrida, v: dict, q: dict) -> None:
     foto["bench_dia"] = mex.get("cp")
     if foto.get("rend_dia") is not None and mex.get("cp") is not None:
         foto["activo_dia"] = foto["rend_dia"] - mex["cp"]
+    try:
+        pesos_tracker, aportes_tracker = tracker_atribucion()
+        atrib = P.atribucion(ops, cierres, cap, ref, pesos, par.get("fecha_ref_indice"), sin_op,
+                             dividendos_por_fecha(v, tickers), pesos_tracker, aportes_tracker, bloques, inicio)
+    except Exception as e:  # la atribución nunca debe tumbar la serie del fondo
+        c.error(f"atribución: {type(e).__name__}: {e}")
+        atrib = {}
+    if atrib and serie and abs((atrib.get("alfa") or 0) - (serie[-1].get("activo_acum") or 0)) > 1e-6:
+        c.avisos.append(f"atribución: alfa {atrib.get('alfa'):.6f} ≠ serie {serie[-1].get('activo_acum'):.6f}")
     c.escribir("portafolio.json", limpiar({
         "generado": ahora_utc().isoformat(), "capital": cap, "inicio": inicio, "referencia": ref,
         "fin": par.get("fin"), "benchmark": "MEXTRAC", "modelo": par.get("modelo"),
         "operaciones": len(ops), "ultima_operacion": max((o.get("fecha") or "") for o in ops),
-        "actual": foto, "serie": serie,
+        "actual": foto, "serie": serie, "atribucion": atrib,
         "politica": {"te_max": 0.10, "beta": [0.70, 1.30], "efectivo": [0.0, 0.05], "pasiva": [0.40, 0.60],
                      "desviacion_max_pp": 10},
-    }))
+    }, 8))
+
+
+def tracker_atribucion() -> tuple[dict, dict]:
+    """Pesos del índice y aportes por emisora que registró el tracker (atribucion_diaria.csv), por fecha."""
+    pesos, aportes = {}, {}
+    for r in F.leer_csv("atribucion_diaria.csv"):
+        if r.get("concepto") != "EMISORA" or not r.get("emisora"):
+            continue
+        pb, ap = num(r.get("peso_benchmark")), num(r.get("aporte"))
+        if pb is not None:
+            pesos.setdefault(r["fecha"], {})[r["emisora"]] = pb
+        if ap is not None:
+            aportes.setdefault(r["fecha"], {})[r["emisora"]] = ap
+    return pesos, aportes
+
+
+def dividendos_por_fecha(v: dict, tickers: set[str]) -> dict[str, dict[str, float]]:
+    """Dividendo por acción en su fecha ex. Fuentes en orden de prioridad: Refinitiv (CSV del equipo) y velas.
+
+    Dentro de una fuente se suman los pagos del mismo día (ordinario + extraordinario); entre fuentes, un
+    pago a ±3 días de otro ya registrado del mismo símbolo se toma como el mismo y no se duplica.
+    """
+    fuentes: list[dict[tuple[str, str], float]] = []
+    for nombre in ("dividendos_historicos.csv", "dividendos.csv"):
+        x: dict[tuple[str, str], float] = {}
+        for r in F.leer_csv(nombre):
+            s_, f, m = r.get("simbolo"), r.get("fecha_ex"), num(r.get("dividendo"))
+            if s_ in tickers and f and m:
+                x[(s_, f)] = x.get((s_, f), 0) + m
+        fuentes.append(x)
+    fuentes.append({(s_, f): m for s_ in tickers for f, m in ((v.get(s_) or {}).get("div") or []) if num(m)})
+    out: dict[str, dict[str, float]] = {}
+    tomadas: dict[str, list[date]] = {}
+    for x in fuentes:
+        nuevas: dict[str, list[date]] = {}
+        for (s_, f), m in sorted(x.items()):
+            try:
+                d = date.fromisoformat(f)
+            except ValueError:
+                continue
+            if any(abs((d - y).days) <= 3 for y in tomadas.get(s_, [])):
+                continue
+            nuevas.setdefault(s_, []).append(d)
+            out.setdefault(f, {})[s_] = m
+        for s_, ds in nuevas.items():
+            tomadas.setdefault(s_, []).extend(ds)
+    return out
 
 
 # ───────────────────────────── semilla (sin red) ─────────────────────────────
@@ -572,8 +689,13 @@ def correr(modo: str, datos: str) -> int:
         v, q = semilla(c)
         v = {t: sumar_sesion(x, q.get(t)) for t, x in v.items()}
         info, estados, multiplos, eventos = {}, {}, {}, {}
-        c.escribir("cierres.json", armar_cierres(v))
-        c.escribir("kpis.json", armar_kpis(c, v, info, estados, multiplos, fichas, q))
+        cierres = armar_cierres(v)
+        c.escribir("cierres.json", cierres)
+        kj = armar_kpis(c, v, info, estados, multiplos, fichas, q)
+        c.escribir("kpis.json", kj)
+        c.escribir("sensibilidad.json", armar_sensibilidad(c, kj, info, estados, q, cierres,
+                                                           (c.leer("macro.json", {}) or {}).get("series", {})))
+        armar_investigacion(c)
         c.escribir("calendario.json", armar_calendario({}))
         noticias_semilla(c)
         armar_portafolio(c, v, q)
@@ -590,7 +712,8 @@ def correr(modo: str, datos: str) -> int:
                 c.error(f"velas: {type(e).__name__}: {e}")
             if not v:
                 v = {t: x for t in U.mapa_yahoo() if (x := c.leer(f"velas/{t}.json"))}
-            c.escribir("cierres.json", armar_cierres(v))
+            cierres = armar_cierres(v)
+            c.escribir("cierres.json", cierres)
             macro = armar_macro(v, (c.leer("macro.json", {}) or {}).get("series", {}))
             macro_banxico(c, macro)
             c.escribir("macro.json", {"generado": ahora_utc().isoformat(), "series": macro})
@@ -606,7 +729,13 @@ def correr(modo: str, datos: str) -> int:
                         estados[em["t"]] = previo_est
                 multiplos = (c.leer("multiplos.json", {}) or {}).get("emisoras", {})
                 eventos = {}
-            c.escribir("kpis.json", armar_kpis(c, v, info, estados, multiplos, fichas, q))
+            kj = armar_kpis(c, v, info, estados, multiplos, fichas, q)
+            c.escribir("kpis.json", kj)
+            try:
+                c.escribir("sensibilidad.json", armar_sensibilidad(c, kj, info, estados, q, cierres, macro))
+            except Exception as e:
+                c.error(f"sensibilidad: {type(e).__name__}: {e}")
+            armar_investigacion(c)
             if eventos:
                 c.escribir("calendario.json", armar_calendario(eventos))
             try:

@@ -35,7 +35,7 @@
       const cols = [
         { k: 't', t: 'Emisora', i: true, f: (x) => `${UI.sym(x.t)}${x.cartera ? ' <span class="chip acc" title="Posición en el fondo">FONDO</span>' : ''}`, v: (x) => x.t },
         { k: 'n', t: 'Nombre', i: true, f: (x) => `<span class="nombre">${esc(x.n)}</span>`, v: (x) => x.n },
-        { k: 'p', t: 'Último', f: (x) => `${F.precio(x.p)}${x.conservado ? ' <span class="warn" title="Yahoo no respondió en la última corrida: precio anterior">*</span>' : ''}` },
+        { k: 'p', t: 'Último', f: (x) => `${F.precio(x.p)}${x.conservado ? ' <span class="warn" title="La fuente no respondió en la última corrida: precio anterior">*</span>' : ''}` },
         { k: 'c', t: 'Cambio', f: (x) => UI.num(x.c, (v) => F.num(v, 2)) },
         { k: 'cp', t: '%', f: (x) => UI.cambio(x.cp) },
         { k: 'rd', t: 'Rango día', f: (x) => UI.rango(x.min, x.max, x.p), v: (x) => (x.max > x.min ? (x.p - x.min) / (x.max - x.min) : null) },

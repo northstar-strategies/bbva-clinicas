@@ -106,7 +106,7 @@
   };
   const PESTANAS = {
     resumen: ['DES', 'RESUMEN', 'GO'], grafica: ['GP', 'GRAF', 'GRAFICA', 'GIP', 'CHART'], financieros: ['FA', 'FIN', 'FINANCIEROS', 'EF'],
-    kpis: ['KPI', 'KPIS', 'IND', 'INDICADORES'], pares: ['RV', 'PARES', 'VAL', 'VALUACION', 'COMP'], noticias: ['N', 'NOT', 'NOTICIAS', 'CN'],
+    kpis: ['KPI', 'KPIS', 'IND', 'INDICADORES'], modelo: ['MOD', 'MODELO', 'DRV', 'DRIVERS', 'SENS', 'SIM'], pares: ['RV', 'PARES', 'VAL', 'VALUACION', 'COMP'], noticias: ['N', 'NOT', 'NOTICIAS', 'CN'],
     tesis: ['TESIS', 'TES', 'ANR', 'POSTURA'], dividendos: ['DVD', 'DIV', 'DIVIDENDOS'],
   };
   const DESC = {
@@ -167,7 +167,7 @@
     } else if (D.U[tok[0]] || buscarEmisoras(tok[0]).length) {
       const t = D.U[tok[0]] ? tok[0] : buscarEmisoras(tok[0])[0].t;
       const nombres = { resumen: 'Resumen y datos clave', grafica: 'Gráfica de velas con indicadores', financieros: 'Estados financieros',
-        kpis: 'Pestaña de KPIs', pares: 'Valuación contra pares', noticias: 'Noticias de la emisora', tesis: 'Tesis del equipo', dividendos: 'Historial de dividendos' };
+        kpis: 'Pestaña de KPIs', modelo: 'Modelo de negocio, drivers y simulador', pares: 'Valuación contra pares', noticias: 'Noticias de la emisora', tesis: 'Tesis del equipo', dividendos: 'Historial de dividendos' };
       Object.keys(PESTANAS).forEach((k) => {
         if (PESTANAS[k].some((a) => a.startsWith(tok[1]))) out.push({ k: `${t} ${PESTANAS[k][0]}`, d: nombres[k], t: D.nombre(t), h: `#/eq/${t}/${k}` });
       });
@@ -261,7 +261,7 @@
     const min = e.generado ? (Date.now() - new Date(e.generado)) / 60000 : Infinity;
     const b = estadoBMV();
     const viejo = b.e === 'abierto' ? min > 45 : min > 60 * 30;
-    const fuentes = (e.fuentes || []).join(' · ') || '—';
+    const fuentes = [...new Set((e.fuentes || []).map(N.fuente))].join(' · ') || '—';
     const errores = (e.errores || []).length;
     pie.innerHTML = `<span class="${viejo ? 'av' : 'ok'}">● ${viejo ? 'Datos atrasados' : 'Datos al día'}</span>
       <span>Actualizado <b>${e.generado ? F.fechaHora(e.generado) : '—'}</b> (${e.generado ? F.hace(e.generado) : '—'})</span>

@@ -3,10 +3,10 @@ name: Terminal · pruebas
 
 on:
   pull_request:
-    paths: ['terminal/**', '.github/workflows/terminal-*.yml']
+    paths: ['terminal/**', 'investigacion/**', '.github/workflows/terminal-*.yml']
   push:
     branches: [main]
-    paths: ['terminal/**']
+    paths: ['terminal/**', 'investigacion/**']
   workflow_dispatch:
 
 permissions:
@@ -29,4 +29,14 @@ jobs:
       - name: Servidor MCP
         run: python terminal/mcp/prueba_mcp.py
       - name: Semilla sin red
-        run: python terminal/pipeline/actualizar.py --modo semilla --datos /tmp/datos && test -s /tmp/datos/kpis.json
+        run: |
+          python terminal/pipeline/actualizar.py --modo semilla --datos /tmp/datos
+          test -s /tmp/datos/kpis.json && test -s /tmp/datos/investigacion.json && test -s /tmp/datos/sensibilidad.json
+          python - <<'EOF'
+          import json
+          p = json.load(open("/tmp/datos/portafolio.json"))
+          a, s = p["atribucion"], p["serie"][-1]
+          assert abs(a["alfa"] - s["activo_acum"]) < 1e-6, (a["alfa"], s["activo_acum"])
+          assert abs(a["suma"] - a["alfa"]) < 1e-6
+          print(f"Atribución cuadra: alfa {a['alfa'] * 1e4:.1f} pb en {a['dias']} días; tracker: {a.get('verificacion')}")
+          EOF

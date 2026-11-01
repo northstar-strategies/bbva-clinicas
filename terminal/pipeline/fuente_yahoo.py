@@ -377,7 +377,7 @@ def noticias_yahoo(simbolo: str, n: int = 8) -> list[dict]:
             fecha = datetime.fromtimestamp(c["providerPublishTime"], timezone.utc).isoformat()
         out.append({
             "titulo": titulo, "url": url or "", "fecha_utc": str(fecha),
-            "fuente": (c.get("provider") or {}).get("displayName") or c.get("publisher") or "Yahoo Finance",
+            "fuente": (c.get("provider") or {}).get("displayName") or c.get("publisher") or "Prensa",
             "resumen": (c.get("summary") or "")[:400],
         })
     return out
