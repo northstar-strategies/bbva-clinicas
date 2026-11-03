@@ -145,6 +145,381 @@ resumen:
   turistas provenientes de Estados Unidos, principal mercado emisor.
 
 ---
+fecha: 2026-11-03 17:52
+emisora: FED
+titulo: OCBC: Markets can absorb a 25-bps Fed rate hike
+fuente: IDNFIN
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261103:nNRA2kloqc:0
+
+---
+fecha: 2026-11-03 17:51
+emisora: GFNORTEO
+titulo: Grupo Financiero Banorte, S.A.B. De C.V.'s (OTCQX:GBOOY) 3-Year Earnings Growth Outperforms HDFC Bank Ltd. *Updated*
+fuente: GLORDP
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261103:nNRA2klq1d:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Grupo Financiero Banorte, S.A.B. De C.V.'s
+  growth in EPS (earnings per share) has been 8.9% annualized over 3 years. Over the same
+  time period its ADR price has gone up 74.3% or 31% annualized.
+
+---
+fecha: 2026-11-03 17:40
+emisora: PETROLEO
+titulo: Oil reforms lift oil output by 600,000bpd – NNPC
+fuente: PUNCHA
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261103:nNRA2klm81:0
+
+---
+fecha: 2026-11-03 17:40
+emisora: PETROLEO
+titulo: SHH Margin Trading -- Dalian Port <601880.SS> Margin Long Amount is 1,435 (x10000) yuan, Short Selling Volume is 12 (x10000) shares
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261103:nAZN4TSTK1:1
+resumen:
+  03 Nov 2026 Dalian Port 601880.SS today’s Margin Long Amount is 1,435 (x10000) yuan,
+  Short Selling Volume is 12 (x10000) shares. Detail information is as follows Margin
+  long Margin Long Margin Long Short Selling Short Selling Short close Balance Amount
+  Close Balance Volume Volume Amount Amount Volume ----------- ----------- -----------
+  ------------- ------------- ------------- 22,867 1,435 1,252 466 12 28 The figures in
+  the above table are displayed as (x10000) yuan or shares.
+
+---
+fecha: 2026-11-03 17:40
+emisora: PETROLEO
+titulo: SHH Margin Trading -- Tianjin Port <600717.SS> Margin Long Amount is 1,018 (x10000) yuan, Short Selling Volume is 6 (x10000) shares
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261103:nAZN4TSTBT:1
+resumen:
+  03 Nov 2026 Tianjin Port 600717.SS today’s Margin Long Amount is 1,018 (x10000) yuan,
+  Short Selling Volume is 6 (x10000) shares. Detail information is as follows Margin long
+  Margin Long Margin Long Short Selling Short Selling Short close Balance Amount Close
+  Balance Volume Volume Amount Amount Volume ----------- ----------- -----------
+  ------------- ------------- ------------- 26,415 1,018 1,462 68 6 5 The figures in the
+  above table are displayed as (x10000) yuan or shares.
+
+---
+fecha: 2026-11-03 17:40
+emisora: PETROLEO
+titulo: SHH Margin Trading -- Rizhao Port <600017.SS> Margin Long Amount is 1,045 (x10000) yuan, Short Selling Volume is 10 (x10000) shares
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261103:nAZN4TSSQD:1
+resumen:
+  03 Nov 2026 Rizhao Port 600017.SS today’s Margin Long Amount is 1,045 (x10000) yuan,
+  Short Selling Volume is 10 (x10000) shares.
+
+---
+fecha: 2026-11-03 17:37
+emisora: PETROLEO
+titulo: ACTUALIZA 2-Suncor Energy supera las previsiones de beneficios gracias al aumento de los precios del petróleo y de los márgenes
+fuente: Reuters
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261103:nL5N46K2Z5:2
+resumen:
+  Los ingresos por la producción de arenas bituminosas se disparan un 32 % hasta alcanzar
+  los 9.32 mil millones de dólares canadienses en el trimestre Tanto la producción en la
+  fase de exploración y producción como el volumen de procesamiento de las refinerías
+  disminuyeron en el tercer trimestre Suncor aumentó la recompra mensual de acciones a
+  750 millones de dólares canadienses a partir de octubre Se añaden detalles y contexto a
+  lo largo del texto 3 nov (Reuters) - La productora integrada de petróleo y gas…
+
+---
+fecha: 2026-11-03 17:35
+emisora: BOLSAA
+titulo: BMV - Acuerdos de Tenedores de la SIPYTCB 13
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261103:nNDLbJsL1P:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-03 17:30
+emisora: FED
+titulo: RPT-ROI-As markets sway, safe havens shine. Except gold: McGeever
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261103:nL6N46K0R1:1
+resumen:
+  Repeats Tuesday's column to additional subscribers without any changes. The opinions
+  expressed here are those of the author, a columnist for Reuters. By Jamie McGeever
+  ORLANDO, Florida, Nov 3 (Reuters) - The AI-fueled turbulence hitting markets in recent
+  weeks has revived demand for many traditional safe-haven assets, with one glaring
+  exception: gold.
+
+---
+fecha: 2026-11-03 17:28
+emisora: MERCADO
+titulo: HR Ratings de México SA de CV - Comunicado ARRENCB 25
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261103:nNDLcNzpy:1
+
+---
+fecha: 2026-11-03 17:21
+emisora: COLOMBIA
+titulo: Colombia Market Daily- Colombian Market: Top Movers and Top Value End of Day (EOD)
+fuente: GLORDP
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261103:nNRA2klgt8:0
+resumen:
+  COLOMBIAN MARKET REPORT The Colombian Market traded at its low of 2,064.4. The sector
+  has fallen 10.4 points (or 0.5%) to close at 2,127. Compared with the COLCAP Index
+  which rose 35.9 points (or 1.4%) on the day, this represented a relative price change
+  of -1.9%.
+
+---
+fecha: 2026-11-03 17:15
+emisora: BRASIL
+titulo: Brazil sets second straight monthly output record as pre-salt reaches 5.1 MMboed November 03, 2026
+fuente: WORCOO
+tono: positiva
+impacto: bajo
+id: lseg:urn:link:webnews:20261103:nNRA2kldi0:0
+
+---
+fecha: 2026-11-03 17:14
+emisora: BOLSAA
+titulo: BMV - Aviso de Tenedores de BBVAMX 23-3
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261103:nNDL4HHbJD:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-03 17:13
+emisora: MERCADO
+titulo: Mexico's economy is expected to grow more in 2026 and 2027, says Banxico survey
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kldqo:0
+resumen:
+  The Mexican economy is expected to grow more, according to the October Survey of
+  Private Sector Economic Specialists' Expectations by Banco de México. The growth
+  forecast for 2026 increased from 1.40% in September to 1.61% in October. For 2027, the
+  average forecast for GDP rose from 1.77% to 1.86%, according to the central bank.
+
+---
+fecha: 2026-11-03 17:13
+emisora: MERCADO
+titulo: Remittances to Mexico rebound in September
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kleha:0
+resumen:
+  November 3 (Axis negocios) -- The remittances sent to Mexico by workers abroad returned
+  to a growth trend in September, as the year heads toward a flat advance amid an economy
+  facing challenges. During September 2026, the country received $5,362.2 million in
+  remittances, marking an increase of 1.55% compared to the same month last year,
+  according to a statement from Banco de México.
+
+---
+fecha: 2026-11-03 17:13
+emisora: MERCADO
+titulo: Mexico's manufacturing PMI drops to 49.5 points in October, returning to contraction territory
+fuente: NOTENG
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kleh2:0
+resumen:
+  The Purchasing Managers' Index (PMI) for the manufacturing sector in Mexico fell from
+  50.3 in September to 49.5 in October, returning to contraction territory, according to
+  data from S&P Global. This result was attributed to a significant decline in industrial
+  production, marking its largest drop in the last six months and extending the slowdown
+  that began in July 2024.
+
+---
+fecha: 2026-11-03 17:12
+emisora: MERCADO
+titulo: Mexican stock market begins November with gains; significantly trims initial advance
+fuente: NOTENG
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261103:nNRA2klcyn:0
+resumen:
+  The stock exchanges in Mexico closed with moderate gains on Tuesday. The local indices
+  trimmed the solid advances seen at the opening during a session marked by the midterm
+  elections in the United States and labor figures. The main index, S&P/BMV IPC, of the
+  Mexican Stock Exchange (BMV), which comprises the most traded local shares, rose by
+  0.52% to 70,143.09 points.
+
+---
+fecha: 2026-11-03 17:07
+emisora: GMEXICOB
+titulo: Southern Copper Corporation's (NYSE:SCCO $173.68): Recent News and Research Digest
+fuente: NEWBTS
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kl99q:0
+resumen:
+  NYSE END-OF-DAY STOCK REPORT PHOENIX, Tuesday, Nov 03, 2026 - Southern Copper
+  Corporation's (NYSE:SCCO $173.68) stock price traded at its 97-day low of $171.53. The
+  last time the price hit that low level was on Wednesday, Jul 29, 2026. Southern Copper
+  Corporation's stock price fell $3.73 (2.1%) from its previous trading session to close
+  at $173.68.
+
+---
+fecha: 2026-11-03 17:06
+emisora: GFNORTEO
+titulo: Grupo Financiero Banorte SAB de CV - Información derivados 3T26
+fuente: PUBT
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261103:nNDLc62wVl:1
+
+---
+fecha: 2026-11-03 17:05
+emisora: GFNORTEO
+titulo: Grupo Financiero Banorte SAB de CV - Información Trimestral 3T26 2 DE 2
+fuente: PUBT
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261103:nNDL9NtK4y:1
+resumen:
+  CLAVE DE COTIZACIÓN: GFNORTE TRIMESTRE: 03 AÑO: 2026 GRUPO FINANCIERO BANORTE, S.A.B DE
+  C.V.
+
+---
+fecha: 2026-11-03 17:04
+emisora: GFNORTEO
+titulo: Grupo Financiero Banorte SAB de CV - Información Trimestral 3T26 1 DE 2
+fuente: PUBT
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261103:nNDL2MCblp:1
+
+---
+fecha: 2026-11-03 17:01
+emisora: GFNORTEO
+titulo: Grupo Financiero Banorte SAB de CV - Constancia suscrita 3T26
+fuente: PUBT
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261103:nNDL5wCQxN:1
+
+---
+fecha: 2026-11-03 16:53
+emisora: BOLSAA
+titulo: BMV - Aviso de Tenedores de FACTOR 01325
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261103:nNDLbn26bW:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-03 16:53
+emisora: BOLSAA
+titulo: BMV - Aviso de Tenedores de FACTOR 01425
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261103:nNDLb7wsVH:1
+
+---
+fecha: 2026-11-03 16:42
+emisora: BOLSAA
+titulo: BMV - Aviso de Tenedores de BACOMER 109-26
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261103:nNDL9x05sn:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-03 16:37
+emisora: EUA
+titulo: US corn sales to Mexico lag as domestic production recovers
+fuente: HELSHI
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261103:nNRA2kkzli:0
+
+---
+fecha: 2026-11-03 16:16
+emisora: BRASIL
+titulo: DAILY NEWSLETTER: FORBES 2000 STOCKS IN BRAZIL End of Day (EOD)
+fuente: GLORDP
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kkt1b:0
+resumen:
+  The Forbes 2000 list of companies 2026 includes 12 companies listed on the Brazil. Of
+  these 12, 8 (61.5%) falls and 4 (30.8%) rises. 1 (7.7%) was untraded.
+
+---
+fecha: 2026-11-03 16:16
+emisora: BRASIL
+titulo: Brazil Sector Daily- Apparel sector: Top Movers and Top Value End of Day (EOD)
+fuente: GLORDP
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kktvh:0
+resumen:
+  The Apparel sector extended its slide Tuesday, shedding an additional 259.2 points (or
+  1%) to close at 26,600. The sector has plummeted 7,603.9 points (or 22.2%) over the
+  past six trading days. Compared with the Bovespa Index which fell 39,553.6 points (or
+  19.3%) in the six days, this represented a relative price change of -2.9%.
+
+---
+fecha: 2026-11-03 16:16
+emisora: BRASIL
+titulo: Brazil Sector Daily- Chemicals sector: Top Movers and Top Value End of Day (EOD)
+fuente: GLORDP
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kkso1:0
+resumen:
+  The Chemicals sector extended its slide Tuesday, shedding an additional 466.7 points
+  (or 2%) to close at 22,962. The sector has plummeted 6,023.2 points (or 20.8%) over the
+  past eight trading days. Compared with the Bovespa Index which fell 40,966.3 points (or
+  19.8%) in the eight days, this represented a relative price change of -0.9%.
+
+---
+fecha: 2026-11-03 16:16
+emisora: BRASIL
+titulo: Brazil Sector Daily- Textiles sector: Top Movers and Top Value End of Day (EOD)
+fuente: GLORDP
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kktvg:0
+resumen:
+  The Textiles sector hit a 52-week low of 1,772.5 during the day, but closed higher at
+  1,816. The sector has increased 11.6 points (or 0.6%) to close at 1,816. Compared with
+  the Bovespa Index which fell 2,392.9 points (or 1.4%) on the day, this represented a
+  relative price increase of 2.1%.
+
+---
 fecha: 2026-11-03 16:13
 emisora: GMEXICOB
 titulo: Firefighters and Civil Protection Trained in Hazardous Materials Management
@@ -168,6 +543,11 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261103:nNRA2kkrs7:0
+resumen:
+  Mexico produced 257,480t of rice in 2025, 17.3% more than the 219,587t recorded in
+  2024, according to the Ministry of Agriculture and Rural Development (SADER). Despite
+  the increase, domestic production remains insufficient to meet national consumption,
+  and the government set a 200,000t duty-free import quota for 2026 to complement supply.
 
 ---
 fecha: 2026-11-03 16:13
@@ -177,6 +557,13 @@ fuente: CNBSTR
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261103:nNRA2kkt4m:0
+resumen:
+  BRAZILIAN END-OF-DAY STOCK REPORT www.buysellsignals.com Usinas Siderurgicas de Minas
+  Gerais SA's (SA:USIM3 R$4.94) stock price lifted 7.0 centavos (1.4%) from its previous
+  trading session to close at R$4.94. Compared with the Bovespa Index which fell 2,392.9
+  points (1.4%) in the day, the relative price increase was 2.9%. In the Brazilian
+  market, the stock's relative price strength percentile is rising at 16 for 6 months, 18
+  for 3 months, and 22 for 1 month.
 
 ---
 fecha: 2026-11-03 16:13
@@ -186,6 +573,13 @@ fuente: NOTENG
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261103:nNRA2kkt5x:0
+resumen:
+  Amid many negative perspectives regarding Lula's fourth presidential term, one
+  particular issue should worry all Brazilians, regardless of political preference: his
+  support for Davi Alcolumbre for another two years as President of the Senate. It is
+  important to recall that Alcolumbre has stalled all impeachment requests against
+  Supreme Court ministers, particularly Alexandre de Moraes, who is deeply entangled with
+  Daniel Vorcaro.
 
 ---
 fecha: 2026-11-03 16:12
@@ -195,6 +589,9 @@ fuente: NOTENG
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261103:nNRA2kkrop:0
+resumen:
+  The midterm elections in the United States are shaping up to be a decisive moment for
+  the country's internal politics and its relationship with Mexico.
 
 ---
 fecha: 2026-11-03 16:12
@@ -204,6 +601,13 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261103:nNRA2kkrgi:0
+resumen:
+  The United States is holding its midterm elections on November 3, and it appears that
+  Xavier Becerra may emerge victorious as the governor of California. This victory would
+  be historic as it would mark the first time a governor of California with Mexican
+  heritage has been elected. Xavier Becerra's story is one of a man who helped support
+  his family by working with his father in construction and who became the first member
+  of his family to attend college.
 
 ---
 fecha: 2026-11-03 16:12
@@ -213,6 +617,11 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261103:nNRA2kks2l:0
+resumen:
+  MEXICO CITY (apro) .- Even if the Democrats take control of the United States Congress
+  away from Donald Trump, it does not guarantee relief for Mexico. On the contrary, the
+  Republican could tighten his protectionist policies by 2027 and keep the future of the
+  United States-Mexico-Canada Agreement (USMCA) uncertain, analysts have agreed.
 
 ---
 fecha: 2026-11-03 16:07
@@ -317,6 +726,13 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261103:nL6N46K16N:1
+resumen:
+  NEW YORK, Nov 3 (Reuters) - US crude oil and distillate stocks eased, while gasoline
+  inventories rose in the latest week, market sources said on Tuesday, citing data from
+  the American Petroleum Institute. Crude stocks fell by 5.27 million barrels in the week
+  ended October 30, the sources said on the condition of anonymity. Gasoline stocks rose
+  by 1.43 million barrels, while distillate inventories fell by 1.19 million barrels
+  compared with a week earlier, the sources said.
 
 ---
 fecha: 2026-11-03 15:52
@@ -397,13 +813,16 @@ fuente: INDPAK
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261103:nNRA2kkjie:0
+resumen:
+  Argentine Ambassador Sebastian Sayus has offered Argentina's expertise in advanced
+  agricultural machinery, grain storage technologies and post-harvest management to help
+  Pakistan tackle significant losses in its agricultural produce, while identifying
+  promising opportunities for joint ventures and business-to-business partnerships in...
 
 ---
 fecha: 2026-11-03 15:30
 emisora: PETROLEO
-titulo: @Rory_Johnston: As I've been noting, the current blowout in Western Canadian Select heavy crude differentials (recently at their widest since 2018) isn't due to insufficient pipeline capacity in Western Canada.
-
-But that doesn't mean I'm not worried about egress, and we'll likely get close to https://t.co/fSB8RataHz
+titulo: @Rory_Johnston: As I've been noting, the current blowout in Western Canadian Select heavy crude differentials (recently at their widest since 2018) isn't due to insufficient pipeline capacity in Western Canada. But that doesn't mean I'm not worried about egress, and we'll likely get close to https://t.co/fSB8RataHz
 fuente: X
 tono: neutral
 impacto: bajo
@@ -547,6 +966,21 @@ resumen:
   fell 7.4 points (2.8%) in the four days for a relative price increase of 10.0%.
 
 ---
+fecha: 2026-11-03 15:06
+emisora: AMXB
+titulo: America Movil S.A.B. de CV ADR (NYSE:AMX) increases, lifts 3.1% for week; +6c [0.2%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kk7am:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
+  S.A.B. de CV (NYSE:AMX $24.80), has increased 6.0c (0.2%) to trade at $24.80 at 15:26
+  pm, Tuesday. Compared with the BNY Mellon Composite ADR Index which is down 0.7 points
+  (0.3%) to 260.5, the relative price increase is 0.5%. The ADR lifted 3.1% in the past
+  week.
+
+---
 fecha: 2026-11-03 15:02
 emisora: ARGENTINA
 titulo: ACTUALIZA 1-Negocios financieros de Argentina centran mirada en riesgo país y elecciones en EEUU
@@ -568,8 +1002,6 @@ id: lseg:urn:newsml:reuters.com:20261103:nIfp9K9WX:2
 fecha: 2026-11-03 14:56
 emisora: FED
 titulo: @PeterSchiff: Retweeted @SchiffGold: St. Louis Fed President Alberto Musalem says more interest rate hikes may be “necessary, and soon.” With inflation above 3%, real wages under pressure, and housing already struggling, can the Fed tighten policy without further damaging the economy?
-
-https://t.co/E04h62VLrc
 fuente: X
 tono: neutral
 impacto: bajo
@@ -679,6 +1111,22 @@ resumen:
   traded so far today.
 
 ---
+fecha: 2026-11-03 14:21
+emisora: AMXB
+titulo: America Movil S.A.B. de CV ADR (NYSE:AMX) in 4th consecutive rise; +10c [0.4%]
+fuente: GLORDP
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kjsls:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
+  S.A.B. de CV (NYSE:AMX $24.84), ADR price extended its gains on Tuesday, rising an
+  additional 10.0c (0.4%) to trade at $24.84 at 14:44 pm, Tuesday. This brought its 4-day
+  rise to 3.8%; compared with the BNY Mellon Composite ADR Index which fell 7.1 points
+  (2.7%) in the four days for a relative price increase of 6.5%. There were 1,433,416
+  ADRs worth $35.6 million traded so far today.
+
+---
 fecha: 2026-11-03 14:18
 emisora: BOLSAA
 titulo: BMV - Aviso de Tenedores de OMA 22L
@@ -774,6 +1222,19 @@ fuente: JAMGLE
 tono: neutral
 impacto: medio
 id: lseg:urn:link:webnews:20261103:nNRA2kjkdq:0
+
+---
+fecha: 2026-11-03 13:51
+emisora: AMXB
+titulo: America Movil S.A.B. de CV's (NYSE:AMX) dividend in perspective: comparison with Its Peers *Updated*
+fuente: GLORDP
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kjk0f:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS America Movil S.A.B. de CV's trailing
+  twelve months dividend is 58.89c. Its dividend yield at its current price is 2.38%. Its
+  current price is at a 12.03% discount to its 52 week high.
 
 ---
 fecha: 2026-11-03 13:40
@@ -923,6 +1384,35 @@ fuente: GLORDP
 tono: positiva
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261103:nNRA2kjejg:0
+
+---
+fecha: 2026-11-03 13:37
+emisora: AMXB
+titulo: America Movil S.A.B. de CV ADR (NYSE:AMX) increases ; +17c [0.7%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kjf5e:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
+  S.A.B. de CV (NYSE:AMX $24.91) has increased 17.0c (0.7%) to trade at $24.91 at 14:02
+  pm, Tuesday. Compared with the BNY Mellon Composite ADR Index which is up 0.04 points
+  (0.02%) to 261.28, the relative price increase is 0.7%. There were 1,343,854 ADRs worth
+  $33.5 million traded so far today.
+
+---
+fecha: 2026-11-03 13:37
+emisora: AMXB
+titulo: America Movil S.A.B. de CV ADR (NYSE:AMX) outperforms 91% of the stocks, lifts 26.0c to close at $24.74; +26c [+1.1%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kjefk:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
+  S.A.B. de CV ADR (NYSE:AMX $24.74) lifted 26.0c (1.1%) from its previous trading
+  session to close at $24.74. Compared with the BNY Mellon Composite ADR Index which fell
+  1.0 points (0.4%) in the day, the relative price increase was 1.4%.
 
 ---
 fecha: 2026-11-03 13:35
@@ -1265,6 +1755,20 @@ impacto: medio
 id: lseg:urn:newsml:newsroom:20261103:nNRA2kch3n:0
 
 ---
+fecha: 2026-11-03 05:57
+emisora: AC
+titulo: Will Arca Continental SAB de CV's (BMV:AC), recent surge keep climbing?
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kcg5o:0
+resumen:
+  MEXICAN STOCK REPORT Ahead of this morning's market opening, Arca Continental SAB de CV
+  has shown some strength in recent days. Arca Continental SAB de CV (BMV:AC), Mexico's
+  largest Beverages company by market cap, lifted 1.6% during its previous trading
+  session to close at $222.20.
+
+---
 fecha: 2026-11-03 04:12
 emisora: KOFUBL
 titulo: COCA-COLA FEMSA SAB DE CV <KOF.N>: BARCLAYS RAISES TARGET PRICE TO $125 FROM $122
@@ -1359,6 +1863,21 @@ impacto: bajo
 id: lseg:urn:newsml:newsroom:20261102:nNRA2k0asb:0
 
 ---
+fecha: 2026-11-02 02:47
+emisora: AC
+titulo: Topo Chico has been harder to find, but shortages of beverage are easing
+fuente: WASHPO
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261102:nNRA2jqu2k:1
+resumen:
+  Shayne O'Brien loves Topo Chico so much that when he heard that the cult favorite
+  sparkling water might be disappearing from shelves, he rushed to stockpile more than
+  200 bottles. Even that wouldn't be enough to get him through the great Topo Chico
+  drought of 2026. O'Brien, a cattle rancher and pastor outside Austin, notes that he is
+  the author of a book on grief.
+
+---
 fecha: 2026-11-02 00:23
 emisora: MEGACPO
 titulo: Megacable descarta un cambio estratégico.
@@ -1375,6 +1894,19 @@ resumen:
   operador móvil más grande del país.
 
 ---
+fecha: 2026-11-02 00:12
+emisora: AC
+titulo: Arca Continental Surpasses Estimates in Q3 Driven by Mexico and South America
+fuente: NOTENG
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261102:nNRA2jo22b:0
+resumen:
+  Arca Continental, one of the five largest Coca-Cola bottlers globally, increased its
+  sales and operating cash flow (EBITDA) by 6% in the third quarter, surpassing analysts'
+  expectations, driven by its performance in Latin America.
+
+---
 fecha: 2026-11-01 22:21
 emisora: MEGACPO
 titulo: Megacable descarta giro estratégico
@@ -1388,6 +1920,35 @@ resumen:
   del negocio móvil de AT&T en México, por parte de su competidor Grupo Televisa.
 
 ---
+fecha: 2026-11-01 19:12
+emisora: AC
+titulo: Arca Continental anticipates that Coca-Cola price increases will outpace inflation in Mexico
+fuente: NOTENG
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261102:nNRA2jlow0:0
+resumen:
+  In light of inflationary pressures and the potential for further adjustments to its
+  products, Arca Continental, one of the leading bottlers of Coca-Cola, anticipates that
+  price increases in Mexico will remain above inflation levels. "We expect to continue
+  having prices above inflation.
+
+---
+fecha: 2026-11-01 17:51
+emisora: AC
+titulo: Monthly Update: Arca Continental SAB de CV (BMV) up 15%, 3 months' volume in a month
+fuente: GLOSTK
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261101:nNRA2jl1c9:0
+resumen:
+  MEXICAN END-OF-MONTH STOCK REPORT www.buysellsignals.com Arca Continental SAB de CV
+  (BMV:AC MX$222.20), Mexico's largest Beverages company by market cap, has been up
+  MX$28.96 (or 15.0%) in the past month to close at MX$222.20 on Friday October 30.
+  Compared with the Prices & Quotations Index which rose 5,564.8 points (or 8.7%) in the
+  month, this represented a relative price increase of 6.3%.
+
+---
 fecha: 2026-10-30 10:10
 emisora: FED
 titulo: USD SWAPS UPDATE – Swaps snap tighter, mo-end related rate receiving adds to offers
@@ -1395,461 +1956,3 @@ fuente: IFR
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261030:nIfp8xD2zt:1
-
----
-fecha: 2026-10-30 10:10
-emisora: PETROLEO
-titulo: Freight rates for Russian oil stay at record highs amid tanker shortage, Black Sea risks, sources say
-fuente: MARFRA
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261030:nNRA2iuk8e:0
-
----
-fecha: 2026-10-30 10:09
-emisora: AC
-titulo: Arca Continental SAB de CV - III TRIM 2026 AC
-fuente: PUBT
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:reuters.com:20261030:nNDL1xblKz:1
-
----
-fecha: 2026-10-30 10:08
-emisora: FED
-titulo: The US Dollar And Gold Face Different Risks After The Fed's October Hold
-fuente: EXCORG
-tono: negativa
-impacto: bajo
-id: lseg:urn:link:webnews:20261030:nNRA2iuju0:0
-
----
-fecha: 2026-10-30 10:08
-emisora: PETROLEO
-titulo: @GasBuddyGuy: US getting closer to hitting 14 million barrels a day of oil production https://t.co/64ANjZhlUb | @staunovo US crude oil production rose 19kbpd m/m to 13.965mbpd in August from revised  13.946kbpd in July -EIA #oott https://t.co/7xcvv0FibN
-fuente: X
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:social:20261030:nTWT1WLDS8:1
-
----
-fecha: 2026-10-30 10:07
-emisora: AC
-titulo: Arca Continental, S.A.B. de C.V. -- Interim Q3 (89880069)
-fuente: GLFILE
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:reuters.com:20261030:nGLF9bQGsf:2
-resumen:
-  https://filings.ica.int.thomsonreuters.com/filings.viewer/Download.asp...
-
----
-fecha: 2026-10-30 10:07
-emisora: PETROLEO
-titulo: Oil Prices Soar To Record Highs... Brent Crude Surpasses $117
-fuente: NATIRA
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261030:nNRA2iukgi:0
-
----
-fecha: 2026-10-30 10:07
-emisora: PETROLEO
-titulo: Shares of precious metals-related companies are trading lower as gold prices fall below $4,000 per ounce and silver drops below $50, with both meta...
-fuente: BENZIN
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261030:nNRA2iukg6:0
-
----
-fecha: 2026-10-30 10:07
-emisora: PETROLEO
-titulo: Crude Oil Prices Rally as Concerns Continue About Possible Post-Election US Attack on Iran
-fuente: BARCHA
-tono: neutral
-impacto: alto
-id: lseg:urn:link:webnews:20261030:nNRA2iukeo:0
-
----
-fecha: 2026-10-30 10:06
-emisora: FED
-titulo: FED'S DALY: AI MATTERS TO PRICE STABLITY AND EMPLOYMENT MANDATES
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261030:nSPN46E01R:3
-
----
-fecha: 2026-10-30 10:06
-emisora: FED
-titulo: FED'S DALY: AI REALLY MATTERS FOR HOW WE THINK ABOUT POLICY IN NEAR AND MEDIUM TERM
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261030:nSPN46E01R:1
-
----
-fecha: 2026-10-30 10:03
-emisora: AC
-titulo: Arca Continental B de C : REPORTS REVENUE GROWTH OF 5.9% AND EBITDA INCREASE OF 6.2% FOR 3Q26
-fuente: MARFRA
-tono: neutral
-impacto: medio
-id: lseg:urn:link:webnews:20261030:nNRA2iuitg:0
-
----
-fecha: 2026-10-30 10:02
-emisora: EUA
-titulo: Ottawa inspired by NAFTA as it pursues a new Canada-EU alliance, Joly says
-fuente: MSNCAN
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261030:nNRA2iugq5:0
-
----
-fecha: 2026-10-30 10:01
-emisora: COLOMBIA
-titulo: Desempleo urbano en Colombia sube a 8,3% en septiembre
-fuente: Reuters
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261030:nL6N46G140:1
-
----
-fecha: 2026-10-30 10:00
-emisora: MERCADO
-titulo: EMERGING MARKETS-Brazilian stocks, currency head for steep monthly losses on post-election jitters
-fuente: Reuters
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261030:nL3N46G1NJ:2
-
----
-fecha: 2026-10-30 10:00
-emisora: MERCADO
-titulo: AVISO A CLIENTES-Mercados mexicanos cierran el lunes por feriado, bolsa retoma horario habitual el martes
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261030:nL2N46F17F:1
-
----
-fecha: 2026-10-30 10:00
-emisora: FED
-titulo: @ecb: Coming up at 17:10 CET: Chief Economist Philip R. Lane delivers a keynote speech on AI adoption in Europe at the 2026 Economic Research Symposium “AI and the Economy”, organised by the Federal Reserve Bank of San Francisco. Follow the livestream https://t.co/AUib0MlAtw
-fuente: X
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:social:20261030:nTWT7zWWkk:1
-
----
-fecha: 2026-10-30 09:59
-emisora: BRASIL
-titulo: BRICS+ payments system feasible, common currency faces hurdles, report says
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261030:nL5N46G1K7:1
-
----
-fecha: 2026-10-30 09:57
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de VWLEASE 26-3
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261030:nNDL93P8rh:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-10-30 09:57
-emisora: BOLSAA
-titulo: BMV - Servicios Adicionales
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261030:nNDLc75zDr:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. Servicios Adicionales del Auditor Externo Aprobados por el Comite de Auditoria
-  FECHA: 30/10/2026 BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-10-30 09:54
-emisora: GMEXICOB
-titulo: Southern Copper Corporation (NYSE:SCCO) tumbles 5.3%; -$10.21 [-5.3%]
-fuente: GLOTRA
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261030:nNRA2iue59:0
-resumen:
-  NYSE INTRA-DAY STOCK REPORT www.buysellsignals.com PHOENIX, Friday, October 30 2026 -
-  Southern Copper Corporation (NYSE:SCCO $181.54) has tumbled $10.21 (5.3%) to trade at
-  $181.54 at 11:28 am, New York time Friday. Compared with the S&P 500 Index which is
-  down 109.4 points (1.4%) to 7,611.01, the relative price change is -3.9%. There were
-  307,250 shares worth $55.8 million traded so far today.
-
----
-fecha: 2026-10-30 09:54
-emisora: ARGENTINA
-titulo: Argentina's Senate passes incentive regime for investments of US$12mn or more
-fuente: BNACHI
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261030:nNRA2iuec4:0
-
----
-fecha: 2026-10-30 09:53
-emisora: EUA
-titulo: Ottawa inspired by NAFTA as it pursues a new Canada-EU alliance: Joly
-fuente: INVEXE
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261030:nNRA2iud9y:0
-
----
-fecha: 2026-10-30 09:52
-emisora: GMEXICOB
-titulo: Southern Copper Corporation (NYSE:SCCO) keeps sliding, down 6.6% in 3 days; -$10.21 [-5.3%]
-fuente: GLORDP
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261030:nNRA2iucv5:0
-resumen:
-  NYSE INTRA-DAY STOCK REPORT www.buysellsignals.com PHOENIX, Friday, October 30 2026 -
-  Southern Copper Corporation (NYSE:SCCO $181.54), stock price extended its slide on
-  Friday, shedding an additional $10.21 (5.3%) to trade at $181.54 at 11:28 am, New York
-  time Friday. The shares have tumbled $12.89 (6.6%) over the past three trading days;
-  compared with the S&P 500 Index which fell 111.6 points (1.4%) in the three days for a
-  relative price change of -5.2%.
-
----
-fecha: 2026-10-30 09:51
-emisora: GMEXICOB
-titulo: Southern Copper Corporation (NYSE:SCCO) drops to three-month low; -$10.21 [-5.3%]
-fuente: GLORDP
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261030:nNRA2iuc4y:0
-resumen:
-  NYSE INTRA-DAY STOCK REPORT www.buysellsignals.com PHOENIX, Friday, October 30 2026 -
-  Southern Copper Corporation (NYSE:SCCO $181.54) traded at its 88-day low of $180.55.
-  Southern Copper Corporation's stock price has tumbled $10.21 (5.3%) to trade at $181.54
-  at 11:28 am, New York time Friday. Compared with the S&P 500 Index which is down 109.4
-  points (1.4%) to 7,611.01, the relative price change is -3.9%.
-
----
-fecha: 2026-10-30 09:48
-emisora: GMEXICOB
-titulo: Southern Copper Corporation (NYSE:SCCO) accelerates decline, down 6.4% in 2 days; -$10.21 [-5.3%]
-fuente: GLOTRA
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261030:nNRA2iubkw:0
-resumen:
-  NYSE INTRA-DAY STOCK REPORT www.buysellsignals.com PHOENIX, Friday, October 30 2026 -
-  Southern Copper Corporation (NYSE:SCCO $181.54), stock price tumbled $12.37 (6.4%) over
-  the past two trading days; compared with the S&P 500 Index which fell 133.0 points
-  (1.7%) in the two days for a relative price change of -4.7%. The shares fell $2.2
-  (1.1%) on Thursday and $10.2 (5.3%) on Friday to trade at $181.54 at 11:28 am, New York
-  time Friday.
-
----
-fecha: 2026-10-30 09:44
-emisora: AC
-titulo: Arca Continental SAB de CV - ARCA CONTINENTAL REPORTA RESULTADOS DEL 3T26 CON AUMENTO DE 5.9% EN VENTAS Y 6.2% EN EBITDA
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261030:nNDL7qzFPP:1
-resumen:
-  Monterrey, México, 30 de octubre 2026 - Arca Continental, S.A.B. de C.V. (BMV: AC*)
-  ("Arca Continental" o "AC"), el segundo embotellador más grande de Coca-Cola en América
-  Latina, anunció sus resultados para el tercer trimestre de 2026 y acumulado a
-  septiembre 2026 ("3T26" y "9M26"). DATOS RELEVANTES PARA EL TERCER TRIMESTRE DE 2026
-  Ventas Netas incrementaron 5.9% en comparación con el 3T25, registrando Ps.
-
----
-fecha: 2026-10-30 09:44
-emisora: AC
-titulo: Arca Continental SAB de CV - ARCA CONTINENTAL REPORTS REVENUE GROWTH OF 5.9% AND EBITDA INCREASE OF 6.2% FOR 3Q26
-fuente: PUBT
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:reuters.com:20261030:nNDL5Zx807:1
-resumen:
-  Monterrey, Mexico, October 30, 2026 -Arca Continental, S.A.B. de C.V. (BMV: AC*) ("Arca
-  Continental" or "AC"), the second-largest Coca-Cola bottler in Latin America, announced
-  its results for the third quarter and first nine months of 2026 ("3Q26" and "9M26").
-  THIRD QUARTER 2026 HIGHLIGHTS Net sales increased 5.9% when compared to 3Q25, totaling
-  Ps.
-
----
-fecha: 2026-10-30 09:42
-emisora: BRASIL
-titulo: October 31, 2026: General Cable CelCat May See Slower Q3 Export Growth at 6.5%
-fuente: CNBSTR
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261030:nNRA2iu6f4:0
-
----
-fecha: 2026-10-30 09:32
-emisora: AMXB
-titulo: America Movil S.A.B. de CV ADR (NYSE:AMX) up 2.6% in 2 days; +42c [1.7%]
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261030:nNRA2iu2p0:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
-  S.A.B. de CV (NYSE:AMX $24.55), ADR price extended its gains on Friday, rising an
-  additional 42.0c (1.7%) to trade at $24.55 at 11:02 am, Friday. The ADRs have lifted
-  62.0c (2.6%) over the past two trading days; compared with the BNY Mellon Composite ADR
-  Index which fell 3.6 points (1.4%) in the two days for a relative price increase of
-  3.9%.
-
----
-fecha: 2026-10-30 09:32
-emisora: ASURB
-titulo: Grupo Aeroportuario del Sureste S.A. de C.V. ADR (NYSE:ASR) weakens below moving average price; -25c [-0.1%]
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261030:nNRA2iu2ox:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
-  del Sureste S.A. de C.V. (NYSE:ASR $252.69) has decreased 25.0c (0.1%) to trade at
-  $252.69 at 11:02 am, Friday. Compared with the BNY Mellon Composite ADR Index which is
-  down 3.9 points (1.4%) to 264.27, the relative price increase is 1.3%.
-
----
-fecha: 2026-10-30 09:32
-emisora: FEMSAUBD
-titulo: Fomento Economico Mexicano, S.A.B de C.V. ADR (NYSE:FMX) climbs 1.4% against the trend; +$1.79 [1.4%]
-fuente: GLORDP
-tono: positiva
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261030:nNRA2iu28y:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Fomento Economico
-  Mexicano, S.A.B de C.V. (NYSE:FMX $126.07)Fomento Economico Mexicano, S.A.B de C.V.'s
-  ADR price has lifted $1.79 (1.4%) to trade at $126.07 at 11:02 am, Friday. Compared
-  with the BNY Mellon Composite ADR Index which is down 3.9 points (1.4%) to 264.27, the
-  relative price increase is 2.9%.
-
----
-fecha: 2026-10-30 09:28
-emisora: GMEXICOB
-titulo: Confirmatory Bearish Trend: Southern Copper Corporation (NYSE:SCCO) accelerates decline, down 5.6% in 2 days Saturday October 31, 2026 01:30 AEDT7
-fuente: GLOSTK
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261030:nNRA2itzel:0
-resumen:
-  NYSE CONFIRMATORY BEARISH TREND PHOENIX, Friday, October 30 2026 - Southern Copper
-  Corporation (NYSE:SCCO $183.12), stock price sunk $10.79 (5.6%) over the past two
-  trading days; compared with the S&P 500 Index which fell 116.6 points (1.5%) in the two
-  days for a relative price change of -4.1%. The shares fell $2.2 (1.1%) on Thursday and
-  $8.6 (4.5%) on Friday to trade at $183.12 at 09:46 am, New York time Friday.
-
----
-fecha: 2026-10-30 09:09
-emisora: BRASIL
-titulo: MERCADOS A.LATINA-Monedas suben en medio de estabilidad del dólar y expectativas alza de tasas Fed
-fuente: Reuters
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261030:nL2N46G0OX:1
-
----
-fecha: 2026-10-30 09:09
-emisora: ARGENTINA
-titulo: Rio Tinto opens $1.4-billion lithium projects in Argentina
-fuente: CHEENI
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261030:nNRA2itllt:0
-
----
-fecha: 2026-10-30 09:08
-emisora: COLOMBIA
-titulo: Colombia's urban jobless rate rises to 8.3% in September
-fuente: Reuters
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261030:nL5N46G1SP:2
-
----
-fecha: 2026-10-30 09:05
-emisora: BRASIL
-titulo: Trump 'will not endorse Bolsonaro as Brazilian leader'
-fuente: YAHCAN
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261030:nNRA2itje9:0
-
----
-fecha: 2026-10-30 08:51
-emisora: BOLSAA
-titulo: BMV - Avisos de Derechos Emisoras del SIC
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261030:nNDL4xQdWf:1
-resumen:
-  BOLSA MEXICANA DE VALORES, S.A.B DE C.V, INFORMA: FOLIO DE REFERENCIA DEL EVENTO
-  CORPORATIVO 290128 FOLIO DE REFERENCIA INDEVAL 952880C005 TIPO DE MENSAJE Replace
-  COMPLETO / INCOMPLETO COMPLETE CONFIRMADO / NO CONFIRMADO CONFIRMED CLAVE DE COTIZACIÓN
-  6981 RAZÓN SOCIAL MURATA MANUFACTURING CO., LTD.
-
----
-fecha: 2026-10-30 08:42
-emisora: AMXB
-titulo: America Movil S.A.B. de CV ADR (NYSE:AMX) in 2nd consecutive rise; +27c [1.1%]
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261030:nNRA2it3tz:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
-  S.A.B. de CV (NYSE:AMX $24.40), ADR price extended its gains on Friday, rising an
-  additional 27.0c (1.1%) to trade at $24.40 at 10:16 am, Friday. This brought its 2-day
-  rise to 2.0%; compared with the BNY Mellon Composite ADR Index which fell 3.5 points
-  (1.3%) in the two days for a relative price increase of 3.3%. There were 87,796 ADRs
-  worth $2.1 million traded so far today.
-
----
-fecha: 2026-10-30 08:42
-emisora: FEMSAUBD
-titulo: Fomento Economico Mexicano, S.A.B de C.V. ADR (NYSE:FMX) in 2nd consecutive rise; +$1.58 [1.3%]
-fuente: GLORDP
-tono: positiva
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261030:nNRA2it53b:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Fomento Economico
-  Mexicano, S.A.B de C.V. (NYSE:FMX $125.86), ADR price extended its gains on Friday,
-  rising an additional $1.58 (1.3%) to trade at $125.86 at 10:16 am, Friday. This brought
-  its 2-day rise to 1.7%; compared with the BNY Mellon Composite ADR Index which fell 3.5
-  points (1.3%) in the two days for a relative price increase of 3.0%.
-
----
-fecha: 2026-10-30 08:42
-emisora: GAPB
-titulo: Raul Revuelta Musalem's Grupo Aeroportuario del Pacifico SAB de CV (BMV:GAP) shares up 14.7% MTD Friday October 30, 2026
-fuente: NEWBTS
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261030:nNRA2it3um:0
-resumen:
-  NEWS BITES - PEOPLE IN BUSINESS Grupo Aeroportuario del Pacifico SAB de CV (BMV:GAP)
-  has drawn investor attention under CEO Raul Revuelta Musalem's leadership after posting
-  a month-to-date gain in its share price. Grupo Aeroportuario del Pacifico SAB de CV
-  under Raul Revuelta Musalem, ranks in the top20 quartile of BuySellSignals performers
-  for the month-to-date, with a percentile ranking of 86.4 among 139 companies listed on
-  the Mexico Stock Exchange.
