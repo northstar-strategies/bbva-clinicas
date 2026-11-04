@@ -145,6 +145,1072 @@ resumen:
   turistas provenientes de Estados Unidos, principal mercado emisor.
 
 ---
+fecha: 2026-11-04 16:16
+emisora: BRASIL
+titulo: Brazil's Central Bank Stops Easing Cycle as Inflation Remains High
+fuente: MARFRA
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261104:nNRA2l4s6t:0
+
+---
+fecha: 2026-11-04 16:16
+emisora: FED
+titulo: Trading Day: Oil tanks, stocks leap on US midterms
+fuente: GLOREV
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261104:nNRA2l4rf3:0
+
+---
+fecha: 2026-11-04 16:16
+emisora: PETROLEO
+titulo: US Iran war: UAE plans third crude oil pipeline to avoid Strait of Hormuz
+fuente: ECOCOM
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261104:nNRA2l4sse:0
+
+---
+fecha: 2026-11-04 16:13
+emisora: MERCADO
+titulo: The Bank of Mexico prepares for a meeting with the expectation of keeping the rate at 6.5%
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l4qvq:0
+
+---
+fecha: 2026-11-04 16:13
+emisora: COLOMBIA
+titulo: Silver economy gains ground in Colombia: it now accounts for nearly 12% of GDP and generates $121 trillion
+fuente: NOTENG
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l4r90:0
+
+---
+fecha: 2026-11-04 16:12
+emisora: MERCADO
+titulo: U.S. Trade Deficit with Mexico Grows by 26.1% Through September
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l4qt6:0
+
+---
+fecha: 2026-11-04 16:12
+emisora: MERCADO
+titulo: Nearly a Year of Records in 2026: Car Sales in Mexico Exceed 1.2 Million Units
+fuente: NOTENG
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l4r5x:0
+
+---
+fecha: 2026-11-04 16:08
+emisora: PETROLEO
+titulo: U.S. Dollar Slides As Crude Oil Nosedives Following Democrats' Win In Mid-term Elections
+fuente: FUTTRA
+tono: neutral
+impacto: alto
+id: lseg:urn:link:webnews:20261104:nNRA2l4pgl:0
+
+---
+fecha: 2026-11-04 16:06
+emisora: GMEXICOB
+titulo: Southern Copper Corporation's (NYSE:SCCO $176.85) lifted 1.94% to $176.85: Comprehensive Stock Performance Summary
+fuente: NEWBTS
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l4ofs:0
+resumen:
+  NYSE END-OF-DAY STOCK REPORT PHOENIX, Wednesday, Nov 04, 2026 - Southern Copper
+  Corporation's (NYSE:SCCO $176.85) stock price lifted 1.9% but fell short of the 12-day
+  Exponential Moving Average [EMA] of $184.31. Compared with the S&P 500 Index which rose
+  129.9 points (1.7%) in the day, the relative price increase was 0.2%. The stock last
+  traded at $176.85.
+
+---
+fecha: 2026-11-04 16:06
+emisora: BRASIL
+titulo: Tubarão Gains, Ponta da Madeira Retreats: Brazil's Iron Ore Freight Outlook
+fuente: HELSHI
+tono: positiva
+impacto: bajo
+id: lseg:urn:link:webnews:20261104:nNRA2l4nln:0
+
+---
+fecha: 2026-11-04 16:06
+emisora: PETROLEO
+titulo: SERVICE ALERT - New York Mercantile Exchange - WITHDRAWN see page <ALERW35>
+fuente: LSEG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261102:nVEN395242:7
+
+---
+fecha: 2026-11-04 16:05
+emisora: PETROLEO
+titulo: Crude Oil Inventories Decline Less Than Expected, Impacting Prices
+fuente: HELSHI
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261104:nNRA2l4o3x:0
+
+---
+fecha: 2026-11-04 16:04
+emisora: PETROLEO
+titulo: Refining Margins Widen and LNG Equipment Orders Land as WTI Settles Near $96
+fuente: GLOMAI
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261104:nNRA2l4o1i:0
+
+---
+fecha: 2026-11-04 16:01
+emisora: FED
+titulo: DÍA DE NEGOCIACIÓN-El petróleo cae mientras las acciones se disparan tras las elecciones de mitad de mandato en EEUU
+fuente: Reuters
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nL5N46L3FT:1
+
+---
+fecha: 2026-11-04 16:00
+emisora: FED
+titulo: TRADING DAY-Oil tanks, stocks leap on US midterms
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nL6N46L1DT:1
+
+---
+fecha: 2026-11-04 15:54
+emisora: BRASIL
+titulo: UPDATE 1-Brazil's central bank ends run of rate cuts after Lula election win
+fuente: Reuters
+tono: negativa
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nL6N46L1FT:5
+
+---
+fecha: 2026-11-04 15:45
+emisora: BRASIL
+titulo: Banco Central de Brasil pone fin a serie de recortes de tasas de interés tras la victoria de Lula
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nL2N46L1KD:1
+
+---
+fecha: 2026-11-04 15:43
+emisora: BOLSAA
+titulo: BMV - Aviso de Tenedores de AFIRALM 05326
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDL8y1YmQ:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. Aviso a Tenedores FECHA: 04/11/2026 BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-04 15:43
+emisora: BOLSAA
+titulo: BMV - Amortizaciones AFIRFAC 02326
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDL7sPxT2:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. Amortizacion FECHA: 04/11/2026 BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-04 15:42
+emisora: BOLSAA
+titulo: BMV - Amortizaciones AFIRMAR 03626
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDLrhfdr:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. Amortizacion FECHA: 04/11/2026 BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-04 15:42
+emisora: MERCADO
+titulo: Southern Copper Corporation (NYSE:SCCO) inches higher, resistance at 12-day EMA; +$3.37 [+1.9%]
+fuente: GLORDP
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l4gkz:0
+
+---
+fecha: 2026-11-04 15:42
+emisora: BRASIL
+titulo: Brazil's central bank ends run of rate cuts after Lula election win
+fuente: MARFRA
+tono: negativa
+impacto: alto
+id: lseg:urn:link:webnews:20261104:nNRA2l4hu4:0
+
+---
+fecha: 2026-11-04 15:41
+emisora: BOLSAA
+titulo: BMV - Amortizaciones AFIRFAC 01826
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDL9Z5n36:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. Amortizacion FECHA: 04/11/2026 BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-04 15:35
+emisora: BOLSAA
+titulo: BMV - Amortizaciones AFIRALM 17926
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDL6KHSPH:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. Amortizacion FECHA: 04/11/2026 BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-04 15:22
+emisora: AMXB
+titulo: America Movil S.A.B. de CV ADR (NYSE:AMX) in 5th consecutive rise; +13c [0.5%]
+fuente: GLORDP
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l496e:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
+  S.A.B. de CV (NYSE:AMX $24.88), ADR price extended its gains on Wednesday, rising an
+  additional 13.0c (0.5%) to trade at $24.88 at 15:26 pm, Wednesday. This brought its
+  5-day rise to 4.0%; compared with the BNY Mellon Composite ADR Index which fell 3.8
+  points (1.4%) in the five days for a relative price increase of 5.4%. There were
+  1,682,389 ADRs worth $41.9 million traded so far today.
+
+---
+fecha: 2026-11-04 15:22
+emisora: ASURB
+titulo: Grupo Aeroportuario del Sureste S.A. de C.V. ADR (NYSE:ASR) climbs 2.2%; +$5.69 [2.2%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l49j6:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Sureste S.A. de C.V. (NYSE:ASR $263.89) has climbed $5.69 (2.2%) to trade at
+  $263.89 at 15:26 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which
+  is up 3.5 points (1.4%) to 264.09, the relative price increase is 0.9%.
+
+---
+fecha: 2026-11-04 15:22
+emisora: FEMSAUBD
+titulo: Fomento Economico Mexicano, S.A.B de C.V. ADR (NYSE:FMX) gains 2.2% on firm volume; +$2.75 [2.2%]
+fuente: GLORDP
+tono: positiva
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l48tn:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Fomento Economico
+  Mexicano, S.A.B de C.V. (NYSE:FMX $129.78) has climbed $2.75 (2.2%) to trade at $129.78
+  at 15:26 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which is up
+  3.5 points (1.4%) to 264.09, the relative price increase is 0.8%.
+
+---
+fecha: 2026-11-04 15:22
+emisora: GAPB
+titulo: Grupo Aeroportuario del Pacifico S.A.B. de CV ADR (NYSE:PAC) climbs 2.9%; +$6.89 [2.9%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l4a5d:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Pacifico S.A.B. de CV (NYSE:PAC $245.0) has climbed $6.89 (2.9%) to trade at $245.0
+  at 15:26 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which is up
+  3.5 points (1.4%) to 264.09, the relative price increase is 1.5%. There were 146,626
+  ADRs worth $35.9 million traded so far today.
+
+---
+fecha: 2026-11-04 15:17
+emisora: FED
+titulo: US GOVTS WRAP - AI hedges monetization fuels fleeting risk-on rally as oil plunge reverses yields
+fuente: IFR
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nIfpsMnP6:2
+
+---
+fecha: 2026-11-04 15:13
+emisora: COLOMBIA
+titulo: Colombia achieved its highest export figures since 2014 in September, with oil as the main driver for the month
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l46ot:0
+
+---
+fecha: 2026-11-04 15:13
+emisora: EUA
+titulo: U.S. election results strengthen continuity of USMCA: BBVA
+fuente: NOTENG
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l45p2:0
+
+---
+fecha: 2026-11-04 15:13
+emisora: EUA
+titulo: It is estimated that Mexico will receive $66.7 billion in remittances by 2027
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l46o9:0
+
+---
+fecha: 2026-11-04 15:12
+emisora: COLOMBIA
+titulo: Colombia and the United States: What Lies Ahead for the Country After the U.S. Elections?
+fuente: NOTENG
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l45m2:0
+
+---
+fecha: 2026-11-04 15:12
+emisora: CHILE
+titulo: Dollar Plummets in Chile: Four Reasons Behind Its Sharp Decline Following U.S. Elections
+fuente: NOTENG
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l448t:0
+
+---
+fecha: 2026-11-04 15:03
+emisora: ARGENTINA
+titulo: ACTUALIZA 1-Peso argentino renueva piso récord, riesgo país supera los 850 puntos básicos
+fuente: Reuters
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nL2N46L13F:1
+
+---
+fecha: 2026-11-04 15:02
+emisora: ARGENTINA
+titulo: BOLSA DE ARGENTINA <.MMXMRVLGA> CAE 2,28% AL CIERRE, RIESGO PAÍS SUPERA LOS 850 PUNTOS BÁSICOS: OPERADORES
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nL6N46L1CO:1
+
+---
+fecha: 2026-11-04 14:52
+emisora: GMEXICOB
+titulo: Southern Copper Corporation (NYSE:SCCO) adds $2.7 billion (1.9%) in MCap, top heavyweight rise in Non ferrous metals sector; +$3.21 [1.9%]
+fuente: NEWBTS
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l3yi8:0
+resumen:
+  NYSE END-OF-DAY STOCK REPORT www.buysellsignals.com PHOENIX, Wednesday, Nov 04, 2026 -
+  Southern Copper Corporation's (NYSE:SCCO $176.71) stock price lifted $3.21 (1.9%) from
+  its previous trading session to close at $176.71. Compared with the S&P 500 Index which
+  rose 129.9 points (1.7%) in the day, the relative price increase was 0.1%. It posted
+  the highest rise in MCap $2.7 billion with the most influence on the Non ferrous metals
+  sector.
+
+---
+fecha: 2026-11-04 14:37
+emisora: GMEXICOB
+titulo: Moody's de Mexico SA de CV - Moody’s Local México retira la calificación de INVTACB 25
+fuente: PUBT
+tono: negativa
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDL3h37Vm:1
+
+---
+fecha: 2026-11-04 14:23
+emisora: FEMSAUBD
+titulo: Coca Cola FEMSA (KOF) – Investment Analysts' Recent Ratings Updates
+fuente: TRADAJ
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l3oge:0
+resumen:
+  Nov 03, 2026 Several brokerages have updated their recommendations and price targets on
+  shares of Coca Cola FEMSA (NYSE: KOF) in the last few weeks: Shares of NYSE KOF traded
+  up $1.91 during midday trading on Wednesday, hitting $118.33. 160,819 shares of the
+  company's stock traded hands, compared to its average volume of 172,108. The company
+  has a debt-to-equity ratio of 0.45, a quick ratio of 0.96 and a current ratio of 1.14.
+
+---
+fecha: 2026-11-04 14:23
+emisora: GMEXICOB
+titulo: Research Analysts' Recent Ratings Updates for Southern Copper (SCCO)
+fuente: TRADAJ
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l3pst:0
+resumen:
+  Nov 03, 2026 Several brokerages have updated their recommendations and price targets on
+  shares of Southern Copper (NYSE: SCCO) in the last few weeks: Shares of Southern Copper
+  stock traded up $3.19 during trading hours on Wednesday, reaching $176.68. 950,730
+  shares of the company's stock were exchanged, compared to its average volume of
+  1,516,910. The business has a fifty day moving average of $197.31 and a two-hundred day
+  moving average of $185.56.
+
+---
+fecha: 2026-11-04 14:18
+emisora: COLOMBIA
+titulo: MERCADOS A.LATINA-Monedas y bolsas suben tras sólida victoria de demócratas en elecciones de medio término EEUU
+fuente: Reuters
+tono: positiva
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nL2N46L1A6:1
+
+---
+fecha: 2026-11-04 14:14
+emisora: GMEXICOB
+titulo: Firefighters prepare with Ferromex to respond to emergencies involving trains and hazardous materials
+fuente: NOTENG
+tono: negativa
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l3ji2:0
+resumen:
+  Acuña, Coahuila - Fire department personnel participated in the specialized railway
+  safety workshop "TRANSCAER Piedras Negras-Nava 2026," organized by Ferromex and Grupo
+  México , which took place in Piedras Negras. The objective was to prepare first
+  responders for potential railway accidents and leaks related to the transport of
+  high-risk substances such as liquefied petroleum gas (LPG), ammonium nitrate, and
+  fuels.
+
+---
+fecha: 2026-11-04 14:13
+emisora: PERU
+titulo: Norwegian Ambassador: "Peru exports nearly 10 times more to Norway than we do to Peru"
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l3hst:0
+
+---
+fecha: 2026-11-04 14:13
+emisora: EUA
+titulo: US Midterm Shift Raises Stakes for Mexico Trade, USMCA Review
+fuente: NOTENG
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l3j5r:0
+
+---
+fecha: 2026-11-04 14:12
+emisora: EUA
+titulo: Sheinbaum explains that the trade negotiation is with the Trump administration and not with the U.S. Congress
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l3i3k:0
+
+---
+fecha: 2026-11-04 14:11
+emisora: COLOMBIA
+titulo: MERCADOS EMERGENTES-Los activos de Latinoamérica suben tras la toma del control del Congreso por parte de los demócratas
+fuente: Reuters
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nL5N46L373:1
+
+---
+fecha: 2026-11-04 14:10
+emisora: ARGENTINA
+titulo: EMERGING MARKETS-LatAm assets advance as Democrats take control of Congress
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nL2N46L179:5
+
+---
+fecha: 2026-11-04 13:52
+emisora: AMXB
+titulo: America Movil S.A.B. de CV ADR (NYSE:AMX) in 5th consecutive rise; +23c [0.9%]
+fuente: GLORDP
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l39au:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
+  S.A.B. de CV (NYSE:AMX $24.98), ADR price extended its gains on Wednesday, rising an
+  additional 23.0c (0.9%) to trade at $24.98 at 14:02 pm, Wednesday. This brought its
+  5-day rise to 4.4%; compared with the BNY Mellon Composite ADR Index which fell 3.6
+  points (1.3%) in the five days for a relative price increase of 5.7%. There were
+  1,394,783 ADRs worth $34.8 million traded so far today.
+
+---
+fecha: 2026-11-04 13:52
+emisora: ASURB
+titulo: Grupo Aeroportuario del Sureste S.A. de C.V. ADR (NYSE:ASR) climbs 2.6%; +$6.74 [2.6%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l39zq:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Sureste S.A. de C.V. (NYSE:ASR $264.94) has climbed $6.74 (2.6%) to trade at
+  $264.94 at 14:02 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which
+  is up 3.8 points (1.4%) to 264.34, the relative price increase is 1.2%.
+
+---
+fecha: 2026-11-04 13:52
+emisora: FEMSAUBD
+titulo: Fomento Economico Mexicano, S.A.B de C.V. ADR (NYSE:FMX) gains 2.2% on average volume; +$2.84 [2.2%]
+fuente: GLORDP
+tono: positiva
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l3anw:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Fomento Economico
+  Mexicano, S.A.B de C.V. (NYSE:FMX $129.87) has climbed $2.84 (2.2%) to trade at $129.87
+  at 14:02 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which is up
+  3.8 points (1.4%) to 264.34, the relative price increase is 0.8%.
+
+---
+fecha: 2026-11-04 13:52
+emisora: GAPB
+titulo: Grupo Aeroportuario del Pacifico S.A.B. de CV ADR (NYSE:PAC) gains 3.7%; +$8.74 [3.7%]
+fuente: GLORDP
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l39zr:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Pacifico S.A.B. de CV (NYSE:PAC $246.85) has gained $8.74 (3.7%) to trade at
+  $246.85 at 14:02 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which
+  is up 3.8 points (1.4%) to 264.34, the relative price increase is 2.2%. There were
+  99,290 ADRs worth $24.5 million traded so far today.
+
+---
+fecha: 2026-11-04 13:51
+emisora: AMXB
+titulo: Benchmarking America Movil S.A.B. de CV's (NYSE:AMX) dividend against Its Peers *Updated*
+fuente: GLORDP
+tono: positiva
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l38s6:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS America Movil S.A.B. de CV's trailing
+  twelve months dividend is 58.89c. Its dividend yield at its current price is 2.38%. Its
+  current price is at a 12% discount to its 52 week high.
+
+---
+fecha: 2026-11-04 13:51
+emisora: WALMEX
+titulo: Benchmarking Wal-Mart De Mexico S.A.B. de C.V.'s (OTCQX:WMMVY) dividend against Its Peers *Updated*
+fuente: GLORDP
+tono: positiva
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l37gu:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Wal-Mart De Mexico S.A.B. de C.V.'s
+  trailing twelve months dividend is 92.52c. Its dividend yield at its current price is
+  3.48%. Its current price is at a 24.4% discount to its 52 week high.
+
+---
+fecha: 2026-11-04 13:33
+emisora: ASURB
+titulo: Grupo Aeroportuario del Sureste S.A. de C.V. ADR (NYSE:ASR) offers dividend yield of 5.4%, hits 68-day high; +$2.79 [+1.1%]
+fuente: GLORDP
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l31t7:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Sureste S.A. de C.V. ADR (NYSE:ASR $258.20) ranks 14 in the Top 20 by dividend
+  yielding ADRs in the BNY Mellon Composite ADR Index of 152 stocks.
+
+---
+fecha: 2026-11-04 13:33
+emisora: FEMSAUBD
+titulo: Fomento Economico Mexicano, S.A.B de C.V. ADR (NYSE:FMX) ADR ticks down 0.1%; -17c [-0.1%]
+fuente: GLORDP
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l31t3:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Fomento Economico
+  Mexicano, S.A.B de C.V. ADR (NYSE:FMX $127.03) ticked down 17.0c (0.1%) from its
+  previous trading session to close at $127.03. Compared with the BNY Mellon Composite
+  ADR Index which fell 0.7 points (0.3%) in the day, the relative price increase was
+  0.1%.
+
+---
+fecha: 2026-11-04 13:33
+emisora: KOFUBL
+titulo: Coca-Cola FEMSA S.A.B de CV ADR (NYSE:KOF) ADR decreases 0.5%; -63c [-0.5%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l31tq:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Coca-Cola FEMSA
+  S.A.B de CV ADR (NYSE:KOF $116.42) decreased 63.0c (0.5%) from its previous trading
+  session to close at $116.42. Compared with the BNY Mellon Composite ADR Index which
+  fell 0.7 points (0.3%) in the day, the relative price change was -0.3%. There were
+  281,996 ADRs worth $32.8 million traded today.
+
+---
+fecha: 2026-11-04 13:33
+emisora: KIMBERA
+titulo: Kimberly-Clark de Mexico, S.A.B de C.V. ADR (OTC:KCDMY) lifts 1.0% against the trend; +10c [+1.0%]
+fuente: GLORDP
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l31mn:0
+
+---
+fecha: 2026-11-04 13:32
+emisora: AMXB
+titulo: America Movil S.A.B. de CV ADR (NYSE:AMX) increases 1.0c on firm volume to close at $24.75, hits 91-day high; +1c [+0.04%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l31sd:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
+  S.A.B. de CV ADR (NYSE:AMX $24.75) increased 1.0c (0.04%) from its previous trading
+  session to close at $24.75. Compared with the BNY Mellon Composite ADR Index which fell
+  0.7 points (0.3%) in the day, the relative price increase was 0.3%. There were
+  2,447,004 ADRs worth $60.6 million traded today; the volume was 1.1 times the average
+  daily trading volume of 2.2 million ADRs.
+
+---
+fecha: 2026-11-04 13:32
+emisora: GAPB
+titulo: Grupo Aeroportuario del Pacifico S.A.B. de CV ADR (NYSE:PAC) lifts 1.2% on rising relative strength, hits 119-day high; +$2.74 [+1.2%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l31si:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Pacifico S.A.B. de CV ADR (NYSE:PAC $238.11) lifted $2.74 (1.2%) from its previous
+  trading session to close at $238.11. Compared with the BNY Mellon Composite ADR Index
+  which fell 0.7 points (0.3%) in the day, the relative price increase was 1.4%.
+
+---
+fecha: 2026-11-04 13:32
+emisora: OMAB
+titulo: Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB) posts a fourth straight gain, rallying 7.7% in 4 days; increases $1.02 to clo...
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l32nb:0
+resumen:
+  Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB) posts a fourth
+  straight gain, rallying 7.7% in 4 days; increases $1.02 to close at $105.77; +$7.52
+  [+7.7%] GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo
+  Aeroportuario del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB $105.77) extended its
+  gains on Tuesday, rising an additional $1.02 (1.0%) to close at $105.77.
+
+---
+fecha: 2026-11-04 13:32
+emisora: VESTA
+titulo: Corporacion Inmobiliaria Vesta, S.A.B. de C.V. ADR (NYSE:VTMX) decreases 0.7% in today's session; -27c [-0.7%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l31kj:0
+
+---
+fecha: 2026-11-04 13:27
+emisora: AMXB
+titulo: America Movil SAB de CV (FRA:MV91) increases 1.0% against the trend; +1c [+1.0%]
+fuente: CNBSTR
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l3120:0
+resumen:
+  GERMAN END-OF-DAY STOCK REPORT www.buysellsignals.com MEXICO, D.F, Tuesday, Nov 03,
+  2026 - America Movil SAB de CV's (FRA:MV91 €1.04) stock price increased 1.0c (1.0%)
+  from its previous trading session to close at €1.04. Compared with the DAX Index which
+  fell 82.0 points (0.3%) in the day, the relative price increase was 1.3%. The stock did
+  not trade on Monday, November 02.
+
+---
+fecha: 2026-11-04 13:13
+emisora: VESTA
+titulo: Vesta Real Estate Corporation SAB de CV - Presentación del tercer trimestre de 2026
+fuente: PUBT
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261104:nNDL9nlZ9X:1
+
+---
+fecha: 2026-11-04 12:57
+emisora: ASURB
+titulo: Grupo Aeroportuario del Sureste S.A. de C.V. ADR (NYSE:ASR) gains 3.2%; +$8.32 [3.2%]
+fuente: GLORDP
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l2m94:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Sureste S.A. de C.V. (NYSE:ASR $266.52) has gained $8.32 (3.2%) to trade at $266.52
+  at 13:20 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which is up
+  4.2 points (1.6%) to 264.74, the relative price increase is 1.6%.
+
+---
+fecha: 2026-11-04 12:57
+emisora: FEMSAUBD
+titulo: Fomento Economico Mexicano, S.A.B de C.V. ADR (NYSE:FMX) climbs 2.3% on firm volume; +$2.96 [2.3%]
+fuente: GLORDP
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l2m93:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Fomento Economico
+  Mexicano, S.A.B de C.V. (NYSE:FMX $129.99) has climbed $2.96 (2.3%) to trade at $129.99
+  at 13:20 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which is up
+  4.2 points (1.6%) to 264.74, the relative price increase is 0.7%.
+
+---
+fecha: 2026-11-04 12:57
+emisora: GAPB
+titulo: Grupo Aeroportuario del Pacifico S.A.B. de CV ADR (NYSE:PAC) gains 3.8%; +$9.15 [3.8%]
+fuente: GLORDP
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l2lwc:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Pacifico S.A.B. de CV (NYSE:PAC $247.26) has gained $9.15 (3.8%) to trade at
+  $247.26 at 13:20 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which
+  is up 4.2 points (1.6%) to 264.74, the relative price increase is 2.2%. There were
+  90,412 ADRs worth $22.4 million traded so far today.
+
+---
+fecha: 2026-11-04 12:12
+emisora: PERU
+titulo: Medical College of Peru: Election of Executive Committee Members of the National Council
+fuente: NOTENG
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l26tr:0
+
+---
+fecha: 2026-11-04 12:07
+emisora: ASURB
+titulo: Grupo Aeroportuario del Sureste S.A. de C.V. ADR (NYSE:ASR) gains 4.0%, jumps 8.4% for week; +$10.42 [4.0%]
+fuente: GLORDP
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l255f:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Sureste S.A. de C.V. (NYSE:ASR $268.62), has gained $10.42 (4.0%) to trade at
+  $268.62 at 12:36 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which
+  is up 4.8 points (1.8%) to 265.36, the relative price increase is 2.2%.
+
+---
+fecha: 2026-11-04 12:07
+emisora: GAPB
+titulo: Grupo Aeroportuario del Pacifico S.A.B. de CV ADR (NYSE:PAC) gains 4.6%, surges 12% for week; +$11.01 [4.6%]
+fuente: GLORDP
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l264z:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Pacifico S.A.B. de CV (NYSE:PAC $249.12), has gained $11.01 (4.6%) to trade at
+  $249.12 at 12:36 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which
+  is up 4.8 points (1.8%) to 265.36, the relative price increase is 2.8%. The ADR surged
+  12.1% in the past week.
+
+---
+fecha: 2026-11-04 11:22
+emisora: GFNORTEO
+titulo: Grupo Financiero Banorte B de C : GFNorte's GOM – December 1st, 2026
+fuente: MARFRA
+tono: neutral
+impacto: medio
+id: lseg:urn:link:webnews:20261104:nNRA2l1l1t:0
+
+---
+fecha: 2026-11-04 11:21
+emisora: GFNORTEO
+titulo: Grupo Financiero Banorte SAB de CV - AGOA - Propuesta de Resolución (A Informacion para Asamblea GFNorte dic26 vf)
+fuente: PUBT
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261104:nNDL8jQz3V:1
+
+---
+fecha: 2026-11-04 11:20
+emisora: GFNORTEO
+titulo: Grupo Financiero Banorte SAB de CV - Proxy Format (C Anexo 1 Formato Proxy para Asamblea GFNorte dic26 vf ingles)
+fuente: PUBT
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261104:nNDLc90M4c:1
+
+---
+fecha: 2026-11-04 11:20
+emisora: GFNORTEO
+titulo: Grupo Financiero Banorte SAB de CV - Primera Convocatoria AGOA (B Convocatoria para Asamblea GFNorte dic26 vf)
+fuente: PUBT
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261104:nNDL2bTfWP:1
+
+---
+fecha: 2026-11-04 11:17
+emisora: CHILE
+titulo: Las importaciones de cobre de EEUU en septiembre caen un 3,1% respecto a agosto
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nL6N46L17B:1
+
+---
+fecha: 2026-11-04 10:59
+emisora: CHILE
+titulo: US September copper imports fall 3.1% from August
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nL2N46L12J:2
+
+---
+fecha: 2026-11-04 10:25
+emisora: PERU
+titulo: Southern Peru boosts investment plans to $10.38bn
+fuente: BNEINT
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l0qrs:0
+
+---
+fecha: 2026-11-04 10:25
+emisora: PERU
+titulo: Peru avocado exports rise 8.6% to $1.348bn
+fuente: BNEINT
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l0s0i:0
+
+---
+fecha: 2026-11-04 10:12
+emisora: VESTA
+titulo: Vesta Real Estate Corporation SAB de CV - REPORTE OPERACIONES CON VALORES
+fuente: PUBT
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261104:nNDL6PWKhw:1
+
+---
+fecha: 2026-11-04 10:08
+emisora: WALMEX
+titulo: Wal-Mart De MexicoB. de (OTCQX:WMMVY) Solvency and Other Financial Risk Metrics
+fuente: GLORDP
+tono: negativa
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l0jii:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
+  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
+  investors look at several key metrics and scores to assess each company. Below we
+  include some of the analysis used to mitigate such risks.
+
+---
+fecha: 2026-11-04 10:08
+emisora: KIMBERA
+titulo: Kimberly-Clark de Mexico,B de (OTC:KCDMY) Solvency and Other Financial Risk Metrics
+fuente: GLORDP
+tono: negativa
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l0ibs:0
+
+---
+fecha: 2026-11-04 10:08
+emisora: VESTA
+titulo: Corporacion Inmobiliaria Vesta,B. de (NYSE:VTMX) Solvency and Other Financial Risk Metrics
+fuente: GLORDP
+tono: negativa
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l0i9l:0
+
+---
+fecha: 2026-11-04 10:07
+emisora: KOFUBL
+titulo: Coca-Cola FEMSAB de (NYSE:KOF) Solvency and Other Financial Risk Metrics
+fuente: GLORDP
+tono: negativa
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l0g21:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
+  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
+  investors look at several key metrics and scores to assess each company. Below we
+  include some of the analysis used to mitigate such risks.
+
+---
+fecha: 2026-11-04 10:07
+emisora: OMAB
+titulo: Grupo Aeroportuario del Centro NorteB. de (NASDAQ:OMAB) Solvency and Other Financial Risk Metrics
+fuente: GLORDP
+tono: negativa
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l0gee:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
+  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
+  investors look at several key metrics and scores to assess each company. Below we
+  include some of the analysis used to mitigate such risks.
+
+---
+fecha: 2026-11-04 09:57
+emisora: PERU
+titulo: Every Bus Ride Costs More: Why Peru's Transport Inflation Hit a 3-Year High, and What Comes Next for Commuters?
+fuente: LATTIM
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l09b4:0
+
+---
+fecha: 2026-11-04 09:55
+emisora: KOFUBL
+titulo: Contrasting Coca Cola FEMSA (NYSE:KOF) and Embotelladora Andina (NYSE:AKO.B)
+fuente: ZOLCOM
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l0a79:0
+resumen:
+  Nov 03, 2026 (Get Free Report)(Get Free Report) Coca Cola FEMSA (NYSE:KOF - Get Free
+  Report) and Embotelladora Andina (NYSE:AKO.B - Get Free Report) are both consumer
+  staples companies, but which is the better stock? We will compare the two businesses
+  based on the strength of their profitability, dividends, risk, institutional ownership,
+  valuation, earnings and analyst recommendations.
+
+---
+fecha: 2026-11-04 09:27
+emisora: VESTA
+titulo: Vesta Real Estate Corporation SAB de CV - Presentation 3Q26
+fuente: PUBT
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261104:nNDLb88btw:1
+
+---
+fecha: 2026-11-04 09:11
+emisora: CHILE
+titulo: Chile: Can Injustice Diminish Admiration?
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2kzmh3:0
+
+---
+fecha: 2026-11-04 08:48
+emisora: KOFUBL
+titulo: Coca-Cola FEMSAB de (NYSE:KOF) Ohlson O-Score and Other Financial Risk Metrics
+fuente: GLORDP
+tono: negativa
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2kz9bt:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
+  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
+  investors look at several key metrics and scores to assess each company. Below we
+  include some of the analysis used to mitigate such risks.
+
+---
+fecha: 2026-11-04 08:48
+emisora: OMAB
+titulo: Grupo Aeroportuario del Centro NorteB. de (NASDAQ:OMAB) Ohlson O-Score and Other Financial Risk Metrics
+fuente: GLORDP
+tono: negativa
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2kz94o:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
+  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
+  investors look at several key metrics and scores to assess each company. Below we
+  include some of the analysis used to mitigate such risks.
+
+---
+fecha: 2026-11-04 08:47
+emisora: WALMEX
+titulo: Wal-Mart De MexicoB. de (OTCQX:WMMVY) Ohlson O-Score and Other Financial Risk Metrics
+fuente: GLORDP
+tono: negativa
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2kz8iz:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
+  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
+  investors look at several key metrics and scores to assess each company. Below we
+  include some of the analysis used to mitigate such risks.
+
+---
+fecha: 2026-11-04 08:46
+emisora: KIMBERA
+titulo: Kimberly-Clark de Mexico,B de (OTC:KCDMY) Ohlson O-Score and Other Financial Risk Metrics
+fuente: GLORDP
+tono: negativa
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2kz7e3:0
+
+---
+fecha: 2026-11-04 08:41
+emisora: WALMEX
+titulo: Walmart, Chedraui, and La Comer Increase Revenue; Soriana Faces Greater Consumer Caution
+fuente: CENAFT
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2kz4rv:0
+resumen:
+  The major supermarkets listed on the Mexican Stock Exchange (BMV), such as Walmart,
+  Chedraui, and La Comer, experienced total revenue growth in the Mexican market during
+  the third quarter of the year, a different situation from that of Organización Soriana.
+  Despite these results, analysts and the companies themselves emphasize that consumer
+  behavior remains cautious.
+
+---
+fecha: 2026-11-04 08:17
+emisora: OMAB
+titulo: Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB) hits three-month high on firm volume; +$1.02 [+1.0%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2kyq7b:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB $105.77) traded at its 81-day high of
+  $106.72. The last time the price hit that high level was on Friday, Aug 14, 2026.
+
+---
+fecha: 2026-11-04 08:12
+emisora: CHILE
+titulo: Chile: Can injustice end admiration?
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2kyjwf:0
+
+---
 fecha: 2026-11-04 07:47
 emisora: MERCADO
 titulo: Investors look to see if Codere Online US Corp (NASDAQ:CDRO)'s recent rally will continue
@@ -880,1318 +1946,3 @@ id: lseg:urn:newsml:newsroom:20261104:nNRA2kwatd:0
 resumen:
   MEXICAN STOCK REPORT Ahead of this morning's market opening, Wal - Mart De Mexico,
   S.A.B. De C.V. closed lower the previous trading day. Wal - Mart De Mexico, S.A.B.
-
----
-fecha: 2026-11-04 06:01
-emisora: KIMBERA
-titulo: ICYMI: Wednesday's Preview: Can Kimberly - Clark De Mexico S.A.B. De C.V. (BMV:KIMBERA), continue its recent gains?
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwatc:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Kimberly - Clark De Mexico
-  S.A.B. De C.V. has shown some strength in recent days. Kimberly - Clark De Mexico
-  S.A.B.
-
----
-fecha: 2026-11-04 06:01
-emisora: VESTA
-titulo: Will Corp Inmobiliaria Vesta SAB de CV (BMV:VESTA), bounce back this Wednesday?
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwath:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Corp Inmobiliaria Vesta
-  SAB de CV has shown some weakness in recent days. Corp Inmobiliaria Vesta SAB de CV
-  (BMV:VESTA), Mexico's largest Real estate company by market cap, decreased 0.1% during
-  its previous trading session to close at $68.05.
-
----
-fecha: 2026-11-04 05:58
-emisora: GMEXICOB
-titulo: Update: Wednesday's Preview: Can Southern Copper Corporation (NYSE:SCCO), rebound after being down?
-fuente: NEWBTS
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwab4:0
-resumen:
-  NYSE STOCK REPORT PHOENIX, Tuesday, November 03 2026 - Ahead of this morning's market
-  opening, Southern Copper Corporation closed lower the previous trading day. Southern
-  Copper Corporation (NYSE:SCCO), the NYSE's largest Non ferrous metals sector company by
-  market cap, fell 2.2% during its previous trading session to close at $173.49.
-
----
-fecha: 2026-11-04 05:57
-emisora: CHILE
-titulo: Consejeros Banco Central chileno vieron plausible opciones de mantener o aumentar tasa de interés: minutas
-fuente: Reuters
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nL2N46L0JB:1
-resumen:
-  SANTIAGO, 4 nov (Reuters) - Los consejeros del Banco Central de Chile estuvieron de
-  acuerdo en la última reunión de política monetaria, de fines de octubre, en que era
-  plausible evaluar tanto mantener la tasa en 4,5% como aumentarla en 25 puntos base,
-  aunque primó la primera opción, según las minutas del encuentro publicadas el
-  miércoles.
-
----
-fecha: 2026-11-04 05:51
-emisora: CHILE
-titulo: Chile central bank considered holding or hiking rate as 'plausible' options, minutes show
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nS0N45D04F:1
-resumen:
-  SANTIAGO, Nov 4 (Reuters) - Policymakers at Chile's central bank considered keeping the
-  rate unchanged or increasing it by 25 basis points as "plausible" options at its last
-  meeting, minutes showed on Wednesday. The bank's board unanimously decided to hold
-  borrowing costs at 4.5% at the meeting last week. (Reporting by Aida Pelaez-Fernandez
-  and Natalia Ramos; Editing by Andrew Heavens) ((
-  Aida.Pelaez-Fernandez@thomsonreuters.com ;))
-
----
-fecha: 2026-11-04 05:48
-emisora: PERU
-titulo: HOCHSCHILD MINING PLC -- Prelim-Full Year (89929328)
-fuente: GLFILE
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nGLF4ZjmtG:2
-resumen:
-  https://filings.ica.int.thomsonreuters.com/filings.viewer/Download.asp...
-
----
-fecha: 2026-11-04 05:41
-emisora: CHILE
-titulo: CONSEJEROS COINCIDIERON EN QUE EVOLUCIÓN ESPERADA DE LA ECONOMÍA ERA IMPORTANTE PARA EL ANÁLISIS DE REALIZAR AJUSTES FUTUROS A LA TASA: MINUTAS
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nL2N46L0JB:2
-resumen:
-  SANTIAGO, 4 nov (Reuters) - Los consejeros del Banco Central de Chile estuvieron de
-  acuerdo en la última reunión de política monetaria, de fines de octubre, en que era
-  plausible evaluar tanto mantener la tasa en 4,5% como aumentarla en 25 puntos base,
-  aunque primó la primera opción, según las minutas del encuentro publicadas el
-  miércoles.
-
----
-fecha: 2026-11-04 05:12
-emisora: COLOMBIA
-titulo: Regularized Colombian and Venezuelan immigrants lead employment increases in Spain
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kvgyv:0
-resumen:
-  Madrid, November 4 (EFE) - Workers from Colombia and Venezuela lead the registrations
-  in the Spanish Social Security related to the extraordinary regularization process for
-  immigrants that began in April. According to data collected until the end of October,
-  the number of employment registrations for foreigners reached 490,586. Of this total,
-  27.6% were Colombians and 15.7% were Venezuelans, as detailed by the Social Security
-  office on Thursday.
-
----
-fecha: 2026-11-04 05:11
-emisora: EUA
-titulo: Eleven years ago, Trump said that Mexico was sending "the worst"; today he is defeated by Latinos and politicians of Mexican descent
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kvijc:0
-resumen:
-  A little more than a decade ago, Donald Trump began his journey to the White House with
-  a racist warning that Mexico was sending to the United States "rapists," "criminals,"
-  and "the worst" of its people. Eleven years later, the American political landscape
-  sent him a very different message: a historic defeat driven largely by the Latino vote
-  and the rise of politicians of Mexican descent and other minority groups that
-  reconfigured the balance of power in Washington.
-
----
-fecha: 2026-11-04 04:35
-emisora: AC
-titulo: Arca Continental Sab De Cv trades 0.65 percent higher on Wednesday 4th of November
-fuente: STOCKP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kut50:0
-resumen:
-  Nov 04, 2026 Arca Continental Sab De Cv (AC.MX) traded up 0.65 % during a 24 hours
-  period ending at 10:27 AM Central Europe on Wednesday 4th. One Arca Continental Sab De
-  Cv stock can currently be bought for about MXN 223.64 on popular exchanges. Current
-  supply of Arca Continental Sab De Cv stocks is 1.7 bn.
-
----
-fecha: 2026-11-04 04:17
-emisora: VESTA
-titulo: Insider Trading: PUCHEU ROMERO ALEJANDRO, CHIEF LEGAL COUNSEL dispose of 52,350 shares of Vesta Real Estate Corporation, S.A.B. de C.V. [ VTMX ]
-fuente: USOFFI
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2ku9t4:0
-resumen:
-  Washington: Vesta Real Estate Corporation, S.A.B. de C.V. [ VTMX ] has filed a Form 4
-  with The Securities and Exchange Commission on November 03, 2026. PUCHEU ROMERO
-  ALEJANDRO, CHIEF LEGAL COUNSEL disposed of 52,350 shares of Vesta Real Estate
-  Corporation, S.A.B. de C.V. [ VTMX ] at the rate of $3.64 per share on November 03,
-  2026. Note: EXERCISE PRICE REPRESENTS A PER ORDINARY SHARE SALE PRICE OF MXN$68.51
-
----
-fecha: 2026-11-04 04:15
-emisora: EUA
-titulo: Federal Register Notice: Certain Softwood Lumber Products From Canada: Notice of NAFTA Panel Decision (Updated on 03-Nov-2026)
-fuente: USOFFI
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2ku4tj:0
-resumen:
-  Washington: Office of the Federal Register has issued the following notice: AGENCY:
-  Enforcement and Compliance, International Trade Administration, Department of Commerce.
-  SUMMARY: On October 19, 2026, the North American Free Trade Agreement (NAFTA)
-  Secretariat issued a Notice of Final Panel Action. The U.S.
-
----
-fecha: 2026-11-04 03:25
-emisora: OMAB
-titulo: Grupo Aeroportuario del Centro Norte S.A.B. de C.V. (NASDAQ:OMAB) Stock Has Average Price Target of $134.00 According to Analysts
-fuente: CERGEM
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kt6ig:0
-resumen:
-  Nov 03, 2026 Shares of Grupo Aeroportuario del Centro Norte S.A.B. de C.V. (NASDAQ:OMAB
-  - Get Free Report) have been given a consensus recommendation of "Hold" by the five
-  brokerages that are currently covering the company, Marketbeat.com reports. One
-  investment analyst has rated the stock with a sell recommendation, two have issued a
-  hold recommendation and two have issued a buy recommendation on the company.
-
----
-fecha: 2026-11-04 03:24
-emisora: VESTA
-titulo: Corporacion Inmobiliaria Vesta (NYSE:VTMX) Stock: Insider Romero Alejandro Pucheu Sells 57,650 Shares
-fuente: STOOBS
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kt5s9:0
-resumen:
-  Nov 03, 2026 Corporacion Inmobiliaria Vesta, S.A.B. de C.V. Sponsored ADR (NYSE:VTMX -
-  Get Free Report) insider Romero Pucheu sold 57,650 shares of the stock in a transaction
-  that occurred on Friday, October 30th. The stock was sold at an average price of $3.63,
-  for a total value of $209,269.50.
-
----
-fecha: 2026-11-04 03:12
-emisora: ARGENTINA
-titulo: Chivite met before the 2023 general elections with the leader of the PSOE in Argentina, a promoter of the Grandchildren's Law
-fuente: NOTENG
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kt0mp:0
-resumen:
-  María Chivite, Socialist President of Navarra , was in Argentina a few months before
-  the general elections of 2023 to meet with Lorena Suárez , the former leader of the
-  PSOE in the South American country from 2022 to 2024, during which she promoted the
-  Grandchildren's Law that facilitated the naturalization of foreigners by providing
-  crucial information and advice.
-
----
-fecha: 2026-11-04 02:22
-emisora: AMXB
-titulo: America Movil SAB de CV (FRA:MV91) stock nudges 1.0% higher; +1c [+1.0%]
-fuente: CNBSTR
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2ksdpw:0
-resumen:
-  GERMAN END-OF-DAY STOCK REPORT www.buysellsignals.com MEXICO, D.F, Tuesday, Nov 03,
-  2026 - America Movil SAB de CV's (FRA:MV91 €1.04) stock price increased 1.0c (1.0%)
-  from its previous trading session to close at €1.04. Compared with the DAX Index which
-  fell 82.0 points (0.3%) in the day, the relative price increase was 1.3%. The stock did
-  not trade on Monday, November 02.
-
----
-fecha: 2026-11-04 02:21
-emisora: AMXB
-titulo: America Movil, S.A.B. de C.V. (FRA:MV90) ADR ticks up 1.9%; +40c [+1.9%]
-fuente: CNBSTR
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2ksdjt:0
-resumen:
-  GERMAN END-OF-DAY STOCK REPORT www.buysellsignals.com America Movil, S.A.B. de C.V.'s
-  (FRA:MV90 €21.60) ADR price ticked up 40.0c (1.9%) from its previous trading session to
-  close at €21.60. Compared with the DAX Index which fell 82.0 points (0.3%) in the day,
-  the relative price increase was 2.2%. The stock did not trade on Monday, November 02.
-
----
-fecha: 2026-11-04 01:07
-emisora: AMXB
-titulo: Will America Movil S.A.B. de CV's (NYSE:AMX), recent surge keep climbing?
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kqwu7:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Ahead of this morning's market opening,
-  America Movil S.A.B. de CV ADR has shown some strength in recent days. America Movil
-  S.A.B. de CV (NYSE:AMX), the International Depository Receipt (IDR) market's 3rd
-  largest Telecommunication company by market cap, increased 0.04% during its previous
-  trading session to close at $24.75.
-
----
-fecha: 2026-11-04 01:07
-emisora: ASURB
-titulo: Traders look to see if Grupo Aeroportuario del Sureste S.A. de C.V.'s (NYSE:ASR), recent rally will continue
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kqx3g:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Ahead of this morning's market opening,
-  Grupo Aeroportuario del Sureste S.A. de C.V. ADR has shown some strength in recent
-  days. Grupo Aeroportuario del Sureste S.A. de C.V.
-
----
-fecha: 2026-11-04 01:07
-emisora: FEMSAUBD
-titulo: Will Fomento Economico Mexicano, S.A.B de C.V. (NYSE:FMX), climb back after its latest drop?
-fuente: GLORDP
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kqwtc:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Ahead of this morning's market opening,
-  Fomento Economico Mexicano, S.A.B de C.V. ADR closed lower the previous trading day.
-  Fomento Economico Mexicano, S.A.B de C.V.
-
----
-fecha: 2026-11-04 01:07
-emisora: GAPB
-titulo: Will Grupo Aeroportuario del Pacifico S.A.B. de CV's (NYSE:PAC), recent surge keep climbing?
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kqw3b:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Ahead of this morning's market opening,
-  Grupo Aeroportuario del Pacifico S.A.B. de CV ADR has shown some strength in recent
-  days. Grupo Aeroportuario del Pacifico S.A.B. de CV (NYSE:PAC), the International
-  Depository Receipt (IDR) market's 4th largest Engineering & construction company by
-  market cap, lifted 1.2% during its previous trading session to close at $238.11.
-
----
-fecha: 2026-11-04 00:54
-emisora: BBAJIOO
-titulo: Banco del Bajío, S.A., Institución de Banca Múltiple (OTCMKTS:BBAJF) Shares Shorted: Short Interest Up 69.1% in October
-fuente: TRADAJ
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kqpyx:0
-resumen:
-  Nov 03, 2026 Banco del Bajío, S.A., Institución de Banca Múltiple (OTCMKTS:BBAJF - Get
-  Free Report) was the target of a large increase in short interest in the month of
-  October. As of October 15th, there was short interest totaling 4,095,711 shares, an
-  increase of 69.1% from the September 30th total of 2,422,159 shares. Based on an
-  average daily volume of 1,832 shares, the days-to-cover ratio is currently 2,235.7
-  days.
-
----
-fecha: 2026-11-04 00:51
-emisora: BOLSAA
-titulo: Bolsa Mexicana De Valores is trading -0.19 percent lower with a volume of MXN 75.9 mn on Wednesday 4th of November
-fuente: STOCKP
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kqmhj:0
-resumen:
-  Nov 04, 2026 Bolsa Mexicana De Valores (BOLSAA.MX) traded down -0.19 % during a 24
-  hours period ending at 07:06 AM Central Europe on Wednesday 4th. One Bolsa Mexicana De
-  Valores stock can currently be bought for about MXN 36.31 on popular exchanges. Current
-  supply of Bolsa Mexicana De Valores stocks is 549.1 mn.
-
----
-fecha: 2026-11-04 00:23
-emisora: GFNORTEO
-titulo: Banorte pagará más impuestos en 2027 debido a cambios en la Ley de Ingresos, dice el CEO Marcos Ramírez.
-fuente: NOTFIN
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kq6kp:0
-resumen:
-  Los cambios en las deducciones del impuesto sobre la renta (ISR) y las modificaciones a
-  las pérdidas fiscales aprobadas por el Congreso de la Unión afectarán las finanzas de
-  Grupo Financiero Banorte, resultando en un aumento en los pagos de impuestos, según su
-  CEO, José Marcos Ramírez Miguel. Banorte pagó 17.407 millones de pesos en impuestos
-  entre enero y septiembre, un incremento anual del 11%.
-
----
-fecha: 2026-11-04 00:13
-emisora: GFNORTEO
-titulo: Banorte will pay more taxes in 2027 due to changes in the Income Law, says CEO Marcos Ramírez
-fuente: NOTENG
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kpznp:0
-resumen:
-  Changes to income tax (ISR) deductions, as well as modifications to tax losses approved
-  by the Congress of the Union, will indeed have an impact on the finances of Grupo
-  Financiero Banorte, resulting in higher tax payments, according to its CEO, José Marcos
-  Ramírez Miguel. "We already have a fiscal impact that we are going to measure carefully
-  and budget for next year when we prepare the budget.
-
----
-fecha: 2026-11-04 00:12
-emisora: AMXB
-titulo: Monthly: America Movil S.A.B. de CV ADR (NYSE:AMX) in top 3% performers of BNY Mellon Composite ADR Index in October 2026
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kpz7l:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
-  S.A.B. de CV (NYSE:AMX $24.48), the International Depository Receipt (IDR) market's 3rd
-  largest Telecommunication company by market cap, has climbed $3.29 (or 15.5%) in the
-  past month to close at $24.48 on Friday. The ADR was the sixth highest performer in the
-  BNY Mellon Composite ADR Index of 143 ADRs which was down 4.0% in the past month, a
-  relative price increase of 19.5%.
-
----
-fecha: 2026-11-04 00:12
-emisora: FEMSAUBD
-titulo: Monthly: Fomento Economico Mexicano, S.A.B de C.V. ADR (NYSE:FMX) shares post best month in four months
-fuente: GLORDP
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kpz7m:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Fomento Economico
-  Mexicano, S.A.B de C.V. (NYSE:FMX $126.10), the International Depository Receipt (IDR)
-  market's 5th largest Beverages company by market cap, has climbed $8.19 (or 6.9%) in
-  the past month to close at $126.10 on Friday October 30. Compared with the BNY Mellon
-  Composite ADR Index which fell 10.9 points (or 4.0%) in the past month, this
-  represented a relative price increase of 10.9%.
-
----
-fecha: 2026-11-04 00:12
-emisora: GFNORTEO
-titulo: Banorte expects to have a strong close to 2026 despite the impact of taxes
-fuente: NOTENG
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kpzu6:0
-resumen:
-  Grupo Financiero Banorte reported on Tuesday a year-over-year growth of 13% in
-  traditional deposits and 11% in its loan portfolio during the third quarter of 2026,
-  despite the impact of the removal of the deductibility of contributions to the
-  Institute for the Protection of Bank Savings (IPAB) and the increase in VAT on
-  insurance.
-
----
-fecha: 2026-11-04 00:12
-emisora: KOFUBL
-titulo: Monthly: Coca-Cola FEMSA S.A.B de CV ADR (NYSE:KOF) shares post best month in nine months
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kpz7g:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Coca-Cola FEMSA
-  S.A.B de CV (NYSE:KOF $115.68), the International Depository Receipt (IDR) market's
-  13th largest Beverages company by market cap, has climbed $8.71 (or 8.1%) in the past
-  month to close at $115.68 on Friday October 30. Compared with the BNY Mellon Composite
-  ADR Index which fell 10.9 points (or 4.0%) in the past month, this represented a
-  relative price increase of 12.1%.
-
----
-fecha: 2026-11-04 00:11
-emisora: PINFRA
-titulo: Monthly: Promotora Y Operadora de Infraestructura SA ADR (OTC:PUODY) rises 8% on high volatility in October 2026
-fuente: GLORDP
-tono: positiva
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kpxe7:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Promotora Y
-  Operadora de Infraestructura SA (OTC:PUODY $323.11), the International Depository
-  Receipt (IDR) market's 10th largest Engineering & Construction company by market cap,
-  traded between a ten-month low of $282.0 and a five-month high of $335.0.
-
----
-fecha: 2026-11-03 23:18
-emisora: GFNORTEO
-titulo: Monthly: Grupo Financiero Banorte, S.A.B. De C.V. ADR (OTCQX:GBOOY) lifts 6% on firm volume in October 2026
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kp7go:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Financiero
-  Banorte, S.A.B. De C.V. (OTCQX:GBOOY $55.57), the International Depository Receipt
-  (IDR) market's 39th largest Bank by market cap, has lifted $3.04 (or 5.8%) in the past
-  month to close at $55.57 on Friday October 30, ending a two-month streak of losses.
-
----
-fecha: 2026-11-03 23:17
-emisora: GAPB
-titulo: Monthly: Grupo Aeroportuario del Pacifico S.A.B. de CV ADR (NYSE:PAC) shares post best month in eleven months
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kp5bp:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
-  del Pacifico S.A.B. de CV (NYSE:PAC $230.59), the International Depository Receipt
-  (IDR) market's 6th largest Engineering & Construction company by market cap, has jumped
-  $25.18 (or 12.3%) in the past month to close at $230.59 on Friday October 30.
-
----
-fecha: 2026-11-03 23:12
-emisora: FEMSAUBD
-titulo: Oxxo closes 140 stores in Mexico and expects to fall short of its expansion goal for 2026
-fuente: NOTENG
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kp1f4:0
-resumen:
-  The Mexican convenience store chain Oxxo, owned by Femsa, closed 140 locations during
-  the third quarter of 2026 as part of a review process of its outlet network aimed at
-  prioritizing the profitability of the business. In the latest conference with analysts,
-  Femsa's CEO, José Antonio Fernández, explained that the closures are related to older,
-  underperforming stores and are part of a broader optimization process involving
-  approximately 250 establishments.
-
----
-fecha: 2026-11-03 23:12
-emisora: COLOMBIA
-titulo: The dollar in Colombia could reach $3,250 this week: how the currency is trading this Tuesday, November 3
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kp2y8:0
-resumen:
-  The Colombian foreign exchange market begins operations on Tuesday, November 3, marked
-  by the official Representative Market Rate set at $3,182.99. The trading session opens
-  following the holiday on Monday, leaving four working days in which the exchange rate
-  of the US dollar will be influenced by recent monetary policy decisions at both the
-  local and international levels. During the last week of October, the dollar accumulated
-  an increase of $24.56.
-
----
-fecha: 2026-11-03 23:07
-emisora: ASURB
-titulo: Grupo Aeroportuario del Sureste S.A. de C.V.'s (NYSE:ASR $258.20): Recent News and Research Digest
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kozgh:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Grupo Aeroportuario del Sureste S.A. de
-  C.V. ADR (NYSE:ASR $258.20) lifted $2.79 (1.1%) from its previous trading session to
-  close at $258.20. Compared with the BNY Mellon Composite ADR Index which fell 0.7
-  points (0.3%) in the day, the relative price increase was 1.4%.
-
----
-fecha: 2026-11-03 23:07
-emisora: FEMSAUBD
-titulo: Fomento Economico Mexicano, S.A.B de C.V.'s (NYSE:FMX $127.03): Recent News and Research Digest
-fuente: GLORDP
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kp0md:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Fomento Economico Mexicano, S.A.B de C.V.
-  ADR (NYSE:FMX $127.03) declined 17.0c (0.1%) from its previous trading session to close
-  at $127.03. Compared with the BNY Mellon Composite ADR Index which fell 0.7 points
-  (0.3%) in the day, the relative price increase was 0.1%.
-
----
-fecha: 2026-11-03 22:44
-emisora: ASURB
-titulo: Grupo Aeroportuario del Sureste S.A. de C.V. ADR (NYSE:ASR) falls 7% in past 3 months
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2koq9w:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
-  del Sureste S.A. de C.V. (NYSE:ASR) last traded at $258.20 for a year to date return of
-  -18.6%. Grupo Aeroportuario del Sureste S.A. de C.V., has fallen $20.40 (or 7.3%) in
-  the past 3 months to close at $258.20 today.
-
----
-fecha: 2026-11-03 22:44
-emisora: KIMBERA
-titulo: Kimberly-Clark de Mexico, S.A.B de C.V. ADR (OTC:KCDMY) tumbles 12% in past 3 months
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kopfq:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Kimberly-Clark de
-  Mexico, S.A.B de C.V. (OTC:KCDMY) last traded at $10.07 for a year to date return of
-  -1.9%. Kimberly-Clark de Mexico, S.A.B de C.V., has tumbled $1.39 (or 12.1%) in the
-  past 3 months to close at $10.07 today.
-
----
-fecha: 2026-11-03 22:43
-emisora: KOFUBL
-titulo: Coca-Cola FEMSA S.A.B de CV ADR (NYSE:KOF) advances 10% in past 3 months
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kopcw:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Coca-Cola FEMSA
-  S.A.B de CV (NYSE:KOF) last traded at $116.42 for a year to date return of 25.6%.
-  Coca-Cola FEMSA S.A.B de CV, has advanced $10.47 (or 9.9%) in the past 3 months to
-  close at $116.42 today. Compared with the BNY Mellon Composite ADR Index which fell
-  11.8 points (or 4.3%) in the past 3 months, this represented a relative price change of
-  nil.
-
----
-fecha: 2026-11-03 22:43
-emisora: OMAB
-titulo: Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB) dips 0.9% in past 3 months
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2koqls:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
-  del Centro Norte S.A.B. de C.V., has dipped 96.0c (or 0.9%) in the past 3 months to
-  close at $105.77 today. Compared with the BNY Mellon Composite ADR Index which fell
-  11.8 points (or 4.3%) in the past 3 months, this represented a relative price change of
-  nil.
-
----
-fecha: 2026-11-03 22:43
-emisora: WALMEX
-titulo: Wal-Mart De Mexico S.A.B. de C.V. ADR (OTCQX:WMMVY) falls 8% in past 3 months
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2koqhz:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Wal-Mart De Mexico
-  S.A.B. de C.V. (OTCQX:WMMVY) last traded at $26.61 for a year to date return of -14.6%.
-  Wal-Mart De Mexico S.A.B. de C.V., has fallen $2.21 (or 7.7%) in the past 3 months to
-  close at $26.61 today.
-
----
-fecha: 2026-11-03 22:43
-emisora: VESTA
-titulo: Corporacion Inmobiliaria Vesta, S.A.B. de C.V. ADR (NYSE:VTMX) lifts 5% in past 3 months
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2koq7h:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Corporacion
-  Inmobiliaria Vesta, S.A.B. de C.V. (NYSE:VTMX) last traded at $36.05 for a year to date
-  return of 20.4%. Corporacion Inmobiliaria Vesta, S.A.B. de C.V., has lifted $1.87 (or
-  5.5%) in the past 3 months to close at $36.05 today.
-
----
-fecha: 2026-11-03 22:41
-emisora: BOLSAA
-titulo: BMV Joins Volaris' Surge; Dow Jones Feels the Impact of Apple's Decline
-fuente: CENAFT
-tono: positiva
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2koq29:0
-resumen:
-  The Mexican Stock Exchange (BMV) ends with gains, while Wall Street indices close
-  mixed, influenced by investor caution in anticipation of the results of the midterm
-  elections in the United States. The Price and Quotations Index (IPC) closed this
-  Tuesday's session with an increase of 0.52%, reaching 70,143.09 points, according to
-  data from the exchange itself. Meanwhile, Wall Street indices finished with uneven
-  results: The S&P 500 rose 0.36%, to 7,568.92 points.
-
----
-fecha: 2026-11-03 22:16
-emisora: OMAB
-titulo: Monthly: Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB) shares post best month in four months
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2koe82:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
-  del Centro Norte S.A.B. de C.V. (NASDAQ:OMAB $102.92), the International Depository
-  Receipt (IDR) market's 12th largest Airlines company by market cap, has climbed $6.31
-  (or 6.5%) in the past month to close at $102.92 on Friday October 30. Compared with the
-  BNY Mellon Composite ADR Index which fell 10.9 points (or 4.0%) in the past month, this
-  represented a relative price increase of 10.5%.
-
----
-fecha: 2026-11-03 22:16
-emisora: WALMEX
-titulo: Monthly: Wal-Mart De Mexico S.A.B. de C.V. ADR (OTCQX:WMMVY) lifts 5% on robust volume in October 2026
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2koe8p:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Wal-Mart De Mexico
-  S.A.B. de C.V. (OTCQX:WMMVY $26.73), the International Depository Receipt (IDR)
-  market's 9th largest Retailer by market cap, has lifted $1.29 (or 5.0%) in the past
-  month to close at $26.73 on Friday October 30, ending a five-month streak of losses.
-  Compared with the BNY Mellon Composite ADR Index which fell 10.9 points (or 4.0%) in
-  the month, this represented a relative price increase of 9%.
-
----
-fecha: 2026-11-03 22:16
-emisora: VESTA
-titulo: Monthly: Corporacion Inmobiliaria Vesta, S.A.B. de C.V. ADR (NYSE:VTMX) up 13% in October, highest gainer amongst Real Estate sector
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kofdn:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Corporacion
-  Inmobiliaria Vesta, S.A.B. de C.V. (NYSE:VTMX $36.09), the International Depository
-  Receipt (IDR) market's 21st largest Real Estate company by market cap, has climbed
-  $4.10 (or 12.8%) in the month ended October 31 to close at $36.09. Compared with the
-  BNY Mellon Composite ADR Index which fell 10.9 points (or 4.0%) in the month, this
-  represented a relative price increase of 16.8%.
-
----
-fecha: 2026-11-03 21:42
-emisora: OMAB
-titulo: Past Week: Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB:$105.77) in top 3% performers of BNY Mellon Composite ADR Index in ...
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2ko17u:0
-resumen:
-  Past Week: Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADR
-  (NASDAQ:OMAB:$105.77) in top 3% performers of BNY Mellon Composite ADR Index in past
-  week; +$6.71 [6.8%] GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com
-  Grupo Aeroportuario del Centro Norte S.A.B. de C.V.
-
----
-fecha: 2026-11-03 21:42
-emisora: KIMBERA
-titulo: Past Week: Kimberly-Clark de Mexico, S.A.B de C.V. ADR (OTC:KCDMY:$10.07) edges up 0.5%, 2 weeks' volume in a week; +4.91c [0.5%]
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2ko01x:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Kimberly-Clark de
-  Mexico, S.A.B de C.V. (OTC:KCDMY $10.07), the International Depository Receipt (IDR)
-  market's 19th largest Health care company by market cap, has edged up 4.91c (or 0.5%)
-  in the past week to close at $10.07. Compared with the BNY Mellon Composite ADR Index
-  which fell 7.2 points (or 2.7%) in the week, this represented a relative price increase
-  of 3.2%.
-
----
-fecha: 2026-11-03 21:22
-emisora: KOFUBL
-titulo: Coca-Cola FEMSA S.A.B de CV ADR (NYSE:KOF) ADRs fall 0.5%; -63c [-0.5%]
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2knw8v:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Coca-Cola FEMSA
-  S.A.B de CV ADR (NYSE:KOF $116.42) fell 63.0c (0.5%) from its previous trading session
-  to close at $116.42. Compared with the BNY Mellon Composite ADR Index which fell 0.7
-  points (0.3%) in the day, the relative price change was -0.3%. There were 281,996 ADRs
-  worth $32.8 million traded today.
-
----
-fecha: 2026-11-03 21:22
-emisora: KIMBERA
-titulo: Kimberly-Clark de Mexico, S.A.B de C.V. ADR (OTC:KCDMY) inches higher, resistance at 12-day EMA; +10c [1.0%]
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2knw8t:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Kimberly-Clark de
-  Mexico, S.A.B de C.V. ADR (OTC:KCDMY $10.07) lifted 1.0% but fell short of the 12-day
-  Exponential Moving Average [EMA] of $10.09. Compared with the BNY Mellon Composite ADR
-  Index which fell 0.7 points (0.3%) in the day, the relative price increase was 1.3%.
-
----
-fecha: 2026-11-03 19:25
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de MTROFCB 08
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261104:nNDL4WJsls:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-11-03 19:03
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de GMFIN 26-3
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261104:nNDL17q6lt:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. Aviso a Tenedores FECHA: 03/11/2026 BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-11-03 18:43
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de ALMER 00526
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261104:nNDLK3tqG:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. Aviso a Tenedores FECHA: 03/11/2026 BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-11-03 18:28
-emisora: AC
-titulo: Past Week: Arca Continental SAB de CV (BMV:AC) rises for a fifth consecutive week, a five-week rise of 15%; +MX$28.59 [14.7%]
-fuente: CNBSTR
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2km4y8:0
-resumen:
-  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Arca Continental SAB de CV
-  (BMV:AC MX$223.73), Mexico's largest Beverages company by market cap, has risen MX$5.87
-  (or 2.7%) on high volume to close at MX$223.73. The stock rose for a fifth consecutive
-  week on Tuesday bringing its a five-week rise to MX$28.59 or 14.7%. Compared with the
-  Prices & Quotations Index which rose 5,073.8 points (or 7.8%) in the five weeks, this
-  represented a relative price increase of 6.9%.
-
----
-fecha: 2026-11-03 18:28
-emisora: MEGACPO
-titulo: Past Week: Megacable Holdings (BMV:MEGA) in top 4% performers of Mexican market in past week; +MX$4.45 [8.3%]
-fuente: CNBSTR
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2km4g2:0
-resumen:
-  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Megacable Holdings (BMV:MEGA
-  MX$57.91), Mexico's largest Media company by market cap, has rallied MX$4.45 (or 8.3%)
-  in the past week to close at MX$57.91. This makes it the fourth highest performer in
-  the Mexican market. Compared with the Prices & Quotations Index of 34 stocks which rose
-  472.5 points (or 0.7%) in the week, a relative price increase of 7.6%.
-
----
-fecha: 2026-11-03 18:28
-emisora: PEOLES
-titulo: Past Week: Industrias Penoles SAB de CV (BMV:PE&OLES*) in bottom 1% performers of Mexican market in past week; -MX$67.81 [-8.5%]
-fuente: CNBSTR
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2km4g4:0
-resumen:
-  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Industrias Penoles SAB de CV
-  (BMV:PE&OLES* MX$734.50), Mexico's 2nd largest Mining company by market cap, has sagged
-  MX$67.81 (or 8.5%) in the past week to close at MX$734.50. This makes it the lowest
-  performer in the Mexican market. Compared with the Prices & Quotations Index of 34
-  stocks which rose 472.5 points (or 0.7%) in the week, a relative price change of -9.1%.
-
----
-fecha: 2026-11-03 18:28
-emisora: PINFRA
-titulo: Past Week: Promotora Y Operadora De Infraestructura, S.A.B. De C.V. (BMV:PINFRA) shares post worst week in seven weeks; -MX$7.68 [-2.5%]
-fuente: CNBSTR
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2km4nw:0
-resumen:
-  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Promotora Y Operadora De
-  Infraestructura, S.A.B. De C.V. (BMV:PINFRA MX$301.17), Mexico's 3rd largest
-  Engineering & construction company by market cap, has dipped MX$7.68 (or 2.5%) in the
-  past week to close at MX$301.17.
-
----
-fecha: 2026-11-03 18:12
-emisora: PERU
-titulo: Susana Baca is thrilled to share that she will sing for Pope Leo XIII in Peru: “I am a fortunate woman”
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2klwrh:0
-resumen:
-  Just days before León XIV's first visit to Peru as pontiff, it continues to be revealed
-  which famous individuals may have some type of contact with Robert Francis Prevost, who
-  has a close connection to the country. In addition to Lita Pezo and Tania Libertad, on
-  Tuesday, November 3, the singer Susana Baca herself revealed that she will have the
-  opportunity to perform for the highest representative of the Catholic Church.
-
----
-fecha: 2026-11-03 18:12
-emisora: PERU
-titulo: Peru Signs Nuclear Memorandum with the U.S. and Becomes Fifth Bilateral Partner of Washington in Latin America
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2klvyg:0
-resumen:
-  While the United States voted on the formation of its new Congress, another decision
-  with regional implications was being finalized at a hotel in Miraflores. Energy and
-  Mines Minister Guillermo Shinno and Thomas DiNanno, the U.S. Under Secretary of State
-  for Arms Control and International Security, signed the Memorandum of Understanding on
-  Civil Nuclear Cooperation (NCMOU).
-
----
-fecha: 2026-11-03 17:52
-emisora: FED
-titulo: OCBC: Markets can absorb a 25-bps Fed rate hike
-fuente: IDNFIN
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261103:nNRA2kloqc:0
-
----
-fecha: 2026-11-03 17:51
-emisora: GFNORTEO
-titulo: Grupo Financiero Banorte, S.A.B. De C.V.'s (OTCQX:GBOOY) 3-Year Earnings Growth Outperforms HDFC Bank Ltd. *Updated*
-fuente: GLORDP
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261103:nNRA2klq1d:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Grupo Financiero Banorte, S.A.B. De C.V.'s
-  growth in EPS (earnings per share) has been 8.9% annualized over 3 years. Over the same
-  time period its ADR price has gone up 74.3% or 31% annualized.
-
----
-fecha: 2026-11-03 17:40
-emisora: PETROLEO
-titulo: Oil reforms lift oil output by 600,000bpd – NNPC
-fuente: PUNCHA
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261103:nNRA2klm81:0
-
----
-fecha: 2026-11-03 17:40
-emisora: PETROLEO
-titulo: SHH Margin Trading -- Dalian Port <601880.SS> Margin Long Amount is 1,435 (x10000) yuan, Short Selling Volume is 12 (x10000) shares
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261103:nAZN4TSTK1:1
-resumen:
-  03 Nov 2026 Dalian Port 601880.SS today’s Margin Long Amount is 1,435 (x10000) yuan,
-  Short Selling Volume is 12 (x10000) shares. Detail information is as follows Margin
-  long Margin Long Margin Long Short Selling Short Selling Short close Balance Amount
-  Close Balance Volume Volume Amount Amount Volume ----------- ----------- -----------
-  ------------- ------------- ------------- 22,867 1,435 1,252 466 12 28 The figures in
-  the above table are displayed as (x10000) yuan or shares.
-
----
-fecha: 2026-11-03 17:40
-emisora: PETROLEO
-titulo: SHH Margin Trading -- Tianjin Port <600717.SS> Margin Long Amount is 1,018 (x10000) yuan, Short Selling Volume is 6 (x10000) shares
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261103:nAZN4TSTBT:1
-resumen:
-  03 Nov 2026 Tianjin Port 600717.SS today’s Margin Long Amount is 1,018 (x10000) yuan,
-  Short Selling Volume is 6 (x10000) shares. Detail information is as follows Margin long
-  Margin Long Margin Long Short Selling Short Selling Short close Balance Amount Close
-  Balance Volume Volume Amount Amount Volume ----------- ----------- -----------
-  ------------- ------------- ------------- 26,415 1,018 1,462 68 6 5 The figures in the
-  above table are displayed as (x10000) yuan or shares.
-
----
-fecha: 2026-11-03 17:40
-emisora: PETROLEO
-titulo: SHH Margin Trading -- Rizhao Port <600017.SS> Margin Long Amount is 1,045 (x10000) yuan, Short Selling Volume is 10 (x10000) shares
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261103:nAZN4TSSQD:1
-resumen:
-  03 Nov 2026 Rizhao Port 600017.SS today’s Margin Long Amount is 1,045 (x10000) yuan,
-  Short Selling Volume is 10 (x10000) shares.
-
----
-fecha: 2026-11-03 17:37
-emisora: PETROLEO
-titulo: ACTUALIZA 2-Suncor Energy supera las previsiones de beneficios gracias al aumento de los precios del petróleo y de los márgenes
-fuente: Reuters
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261103:nL5N46K2Z5:2
-resumen:
-  Los ingresos por la producción de arenas bituminosas se disparan un 32 % hasta alcanzar
-  los 9.32 mil millones de dólares canadienses en el trimestre Tanto la producción en la
-  fase de exploración y producción como el volumen de procesamiento de las refinerías
-  disminuyeron en el tercer trimestre Suncor aumentó la recompra mensual de acciones a
-  750 millones de dólares canadienses a partir de octubre Se añaden detalles y contexto a
-  lo largo del texto 3 nov (Reuters) - La productora integrada de petróleo y gas…
-
----
-fecha: 2026-11-03 17:35
-emisora: BOLSAA
-titulo: BMV - Acuerdos de Tenedores de la SIPYTCB 13
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261103:nNDLbJsL1P:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-11-03 17:30
-emisora: FED
-titulo: RPT-ROI-As markets sway, safe havens shine. Except gold: McGeever
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261103:nL6N46K0R1:1
-resumen:
-  Repeats Tuesday's column to additional subscribers without any changes. The opinions
-  expressed here are those of the author, a columnist for Reuters. By Jamie McGeever
-  ORLANDO, Florida, Nov 3 (Reuters) - The AI-fueled turbulence hitting markets in recent
-  weeks has revived demand for many traditional safe-haven assets, with one glaring
-  exception: gold.
-
----
-fecha: 2026-11-03 17:28
-emisora: MERCADO
-titulo: HR Ratings de México SA de CV - Comunicado ARRENCB 25
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261103:nNDLcNzpy:1
-
----
-fecha: 2026-11-03 17:21
-emisora: COLOMBIA
-titulo: Colombia Market Daily- Colombian Market: Top Movers and Top Value End of Day (EOD)
-fuente: GLORDP
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261103:nNRA2klgt8:0
-resumen:
-  COLOMBIAN MARKET REPORT The Colombian Market traded at its low of 2,064.4. The sector
-  has fallen 10.4 points (or 0.5%) to close at 2,127. Compared with the COLCAP Index
-  which rose 35.9 points (or 1.4%) on the day, this represented a relative price change
-  of -1.9%.
-
----
-fecha: 2026-11-03 17:15
-emisora: BRASIL
-titulo: Brazil sets second straight monthly output record as pre-salt reaches 5.1 MMboed November 03, 2026
-fuente: WORCOO
-tono: positiva
-impacto: bajo
-id: lseg:urn:link:webnews:20261103:nNRA2kldi0:0
-
----
-fecha: 2026-11-03 17:14
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de BBVAMX 23-3
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261103:nNDL4HHbJD:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-11-03 17:13
-emisora: MERCADO
-titulo: Mexico's economy is expected to grow more in 2026 and 2027, says Banxico survey
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kldqo:0
-resumen:
-  The Mexican economy is expected to grow more, according to the October Survey of
-  Private Sector Economic Specialists' Expectations by Banco de México. The growth
-  forecast for 2026 increased from 1.40% in September to 1.61% in October. For 2027, the
-  average forecast for GDP rose from 1.77% to 1.86%, according to the central bank.
-
----
-fecha: 2026-11-03 17:13
-emisora: MERCADO
-titulo: Remittances to Mexico rebound in September
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kleha:0
-resumen:
-  November 3 (Axis negocios) -- The remittances sent to Mexico by workers abroad returned
-  to a growth trend in September, as the year heads toward a flat advance amid an economy
-  facing challenges. During September 2026, the country received $5,362.2 million in
-  remittances, marking an increase of 1.55% compared to the same month last year,
-  according to a statement from Banco de México.
-
----
-fecha: 2026-11-03 17:13
-emisora: MERCADO
-titulo: Mexico's manufacturing PMI drops to 49.5 points in October, returning to contraction territory
-fuente: NOTENG
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kleh2:0
-resumen:
-  The Purchasing Managers' Index (PMI) for the manufacturing sector in Mexico fell from
-  50.3 in September to 49.5 in October, returning to contraction territory, according to
-  data from S&P Global. This result was attributed to a significant decline in industrial
-  production, marking its largest drop in the last six months and extending the slowdown
-  that began in July 2024.
-
----
-fecha: 2026-11-03 17:12
-emisora: MERCADO
-titulo: Mexican stock market begins November with gains; significantly trims initial advance
-fuente: NOTENG
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261103:nNRA2klcyn:0
-resumen:
-  The stock exchanges in Mexico closed with moderate gains on Tuesday. The local indices
-  trimmed the solid advances seen at the opening during a session marked by the midterm
-  elections in the United States and labor figures. The main index, S&P/BMV IPC, of the
-  Mexican Stock Exchange (BMV), which comprises the most traded local shares, rose by
-  0.52% to 70,143.09 points.
-
----
-fecha: 2026-11-03 17:07
-emisora: GMEXICOB
-titulo: Southern Copper Corporation's (NYSE:SCCO $173.68): Recent News and Research Digest
-fuente: NEWBTS
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kl99q:0
-resumen:
-  NYSE END-OF-DAY STOCK REPORT PHOENIX, Tuesday, Nov 03, 2026 - Southern Copper
-  Corporation's (NYSE:SCCO $173.68) stock price traded at its 97-day low of $171.53. The
-  last time the price hit that low level was on Wednesday, Jul 29, 2026. Southern Copper
-  Corporation's stock price fell $3.73 (2.1%) from its previous trading session to close
-  at $173.68.
-
----
-fecha: 2026-11-03 17:06
-emisora: GFNORTEO
-titulo: Grupo Financiero Banorte SAB de CV - Información derivados 3T26
-fuente: PUBT
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:reuters.com:20261103:nNDLc62wVl:1
-
----
-fecha: 2026-11-03 17:05
-emisora: GFNORTEO
-titulo: Grupo Financiero Banorte SAB de CV - Información Trimestral 3T26 2 DE 2
-fuente: PUBT
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:reuters.com:20261103:nNDL9NtK4y:1
-resumen:
-  CLAVE DE COTIZACIÓN: GFNORTE TRIMESTRE: 03 AÑO: 2026 GRUPO FINANCIERO BANORTE, S.A.B DE
-  C.V.
-
----
-fecha: 2026-11-03 17:04
-emisora: GFNORTEO
-titulo: Grupo Financiero Banorte SAB de CV - Información Trimestral 3T26 1 DE 2
-fuente: PUBT
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:reuters.com:20261103:nNDL2MCblp:1
-
----
-fecha: 2026-11-03 17:01
-emisora: GFNORTEO
-titulo: Grupo Financiero Banorte SAB de CV - Constancia suscrita 3T26
-fuente: PUBT
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:reuters.com:20261103:nNDL5wCQxN:1
-
----
-fecha: 2026-11-03 16:53
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de FACTOR 01325
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261103:nNDLbn26bW:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-11-03 16:53
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de FACTOR 01425
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261103:nNDLb7wsVH:1
-
----
-fecha: 2026-11-03 16:42
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de BACOMER 109-26
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261103:nNDL9x05sn:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-11-03 16:37
-emisora: EUA
-titulo: US corn sales to Mexico lag as domestic production recovers
-fuente: HELSHI
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261103:nNRA2kkzli:0
-
----
-fecha: 2026-11-03 16:16
-emisora: BRASIL
-titulo: DAILY NEWSLETTER: FORBES 2000 STOCKS IN BRAZIL End of Day (EOD)
-fuente: GLORDP
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kkt1b:0
-resumen:
-  The Forbes 2000 list of companies 2026 includes 12 companies listed on the Brazil. Of
-  these 12, 8 (61.5%) falls and 4 (30.8%) rises. 1 (7.7%) was untraded.
-
----
-fecha: 2026-11-03 16:16
-emisora: BRASIL
-titulo: Brazil Sector Daily- Apparel sector: Top Movers and Top Value End of Day (EOD)
-fuente: GLORDP
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kktvh:0
-resumen:
-  The Apparel sector extended its slide Tuesday, shedding an additional 259.2 points (or
-  1%) to close at 26,600. The sector has plummeted 7,603.9 points (or 22.2%) over the
-  past six trading days. Compared with the Bovespa Index which fell 39,553.6 points (or
-  19.3%) in the six days, this represented a relative price change of -2.9%.
-
----
-fecha: 2026-11-03 16:16
-emisora: BRASIL
-titulo: Brazil Sector Daily- Chemicals sector: Top Movers and Top Value End of Day (EOD)
-fuente: GLORDP
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kkso1:0
-resumen:
-  The Chemicals sector extended its slide Tuesday, shedding an additional 466.7 points
-  (or 2%) to close at 22,962. The sector has plummeted 6,023.2 points (or 20.8%) over the
-  past eight trading days. Compared with the Bovespa Index which fell 40,966.3 points (or
-  19.8%) in the eight days, this represented a relative price change of -0.9%.
-
----
-fecha: 2026-11-03 16:16
-emisora: BRASIL
-titulo: Brazil Sector Daily- Textiles sector: Top Movers and Top Value End of Day (EOD)
-fuente: GLORDP
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kktvg:0
-resumen:
-  The Textiles sector hit a 52-week low of 1,772.5 during the day, but closed higher at
-  1,816. The sector has increased 11.6 points (or 0.6%) to close at 1,816. Compared with
-  the Bovespa Index which fell 2,392.9 points (or 1.4%) on the day, this represented a
-  relative price increase of 2.1%.
-
----
-fecha: 2026-11-03 16:13
-emisora: GMEXICOB
-titulo: Firefighters and Civil Protection Trained in Hazardous Materials Management
-fuente: NOTENG
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kksvr:0
-resumen:
-  Piedras Negras, Coahuila - The regional and municipal Civil Protection coordinations
-  from the Central-Desert, Carboniferous, and Northern areas were summoned by the company
-  Ferromex to participate in a training course on hazardous materials handling, which
-  will take place at the railway company's facilities located on the borders of Nava and
-  Piedras Negras, reported Francisco Contreras Obregón, the regional Civil Protection
-  coordinator for Coahuila.
-
----
-fecha: 2026-11-03 16:13
-emisora: MERCADO
-titulo: Mexico's Rice Output Up 17.3% in 2025
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kkrs7:0
-resumen:
-  Mexico produced 257,480t of rice in 2025, 17.3% more than the 219,587t recorded in
-  2024, according to the Ministry of Agriculture and Rural Development (SADER). Despite
-  the increase, domestic production remains insufficient to meet national consumption,
-  and the government set a 200,000t duty-free import quota for 2026 to complement supply.
-
----
-fecha: 2026-11-03 16:13
-emisora: MERCADO
-titulo: Usinas Siderurgicas de Minas Gerais SA (SA:USIM3) lifts 1.4% on rising relative strength; +7 centavos [+1.4%]
-fuente: CNBSTR
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kkt4m:0
-resumen:
-  BRAZILIAN END-OF-DAY STOCK REPORT www.buysellsignals.com Usinas Siderurgicas de Minas
-  Gerais SA's (SA:USIM3 R$4.94) stock price lifted 7.0 centavos (1.4%) from its previous
-  trading session to close at R$4.94. Compared with the Bovespa Index which fell 2,392.9
-  points (1.4%) in the day, the relative price increase was 2.9%. In the Brazilian
-  market, the stock's relative price strength percentile is rising at 16 for 6 months, 18
-  for 3 months, and 22 for 1 month.
-
----
-fecha: 2026-11-03 16:13
-emisora: BRASIL
-titulo: Alcolumbre's re-election is already being plotted; it is necessary to put a stop to it
-fuente: NOTENG
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kkt5x:0
-resumen:
-  Amid many negative perspectives regarding Lula's fourth presidential term, one
-  particular issue should worry all Brazilians, regardless of political preference: his
-  support for Davi Alcolumbre for another two years as President of the Senate. It is
-  important to recall that Alcolumbre has stalled all impeachment requests against
-  Supreme Court ministers, particularly Alexandre de Moraes, who is deeply entangled with
-  Daniel Vorcaro.
-
----
-fecha: 2026-11-03 16:12
-emisora: EUA
-titulo: Elections in the United States: What to Expect for the Relationship with Mexico?
-fuente: NOTENG
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kkrop:0
-resumen:
-  The midterm elections in the United States are shaping up to be a decisive moment for
-  the country's internal politics and its relationship with Mexico.
