@@ -145,6 +145,29 @@ resumen:
   turistas provenientes de Estados Unidos, principal mercado emisor.
 
 ---
+fecha: 2026-11-04 07:47
+emisora: MERCADO
+titulo: Investors look to see if Codere Online US Corp (NASDAQ:CDRO)'s recent rally will continue
+fuente: NEWBTS
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2ky7s2:0
+resumen:
+  NASDAQ STOCK REPORT Ahead of this morning's market opening, Codere Online US Corp has
+  shown some strength in recent days. Codere Online US Corp (NASDAQ:CDRO), the NASDAQ's
+  6th largest Leisure & recreation/product company by market cap, lifted 2.0% during its
+  previous trading session to close at $8.69.
+
+---
+fecha: 2026-11-04 07:47
+emisora: BRASIL
+titulo: Brazilian Real: Rate-cut pause but medium-term gains – Commerzbank
+fuente: FORSTR
+tono: positiva
+impacto: bajo
+id: lseg:urn:link:webnews:20261104:nNRA2ky7vu:0
+
+---
 fecha: 2026-11-04 07:45
 emisora: PETROLEO
 titulo: Oil Markets During Election
@@ -1512,6 +1535,13 @@ fuente: GLORDP
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261104:nNRA2koe8p:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Wal-Mart De Mexico
+  S.A.B. de C.V. (OTCQX:WMMVY $26.73), the International Depository Receipt (IDR)
+  market's 9th largest Retailer by market cap, has lifted $1.29 (or 5.0%) in the past
+  month to close at $26.73 on Friday October 30, ending a five-month streak of losses.
+  Compared with the BNY Mellon Composite ADR Index which fell 10.9 points (or 4.0%) in
+  the month, this represented a relative price increase of 9%.
 
 ---
 fecha: 2026-11-03 22:16
@@ -1521,6 +1551,13 @@ fuente: GLORDP
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kofdn:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Corporacion
+  Inmobiliaria Vesta, S.A.B. de C.V. (NYSE:VTMX $36.09), the International Depository
+  Receipt (IDR) market's 21st largest Real Estate company by market cap, has climbed
+  $4.10 (or 12.8%) in the month ended October 31 to close at $36.09. Compared with the
+  BNY Mellon Composite ADR Index which fell 10.9 points (or 4.0%) in the month, this
+  represented a relative price increase of 16.8%.
 
 ---
 fecha: 2026-11-03 21:42
@@ -1544,6 +1581,13 @@ fuente: GLORDP
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261104:nNRA2ko01x:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Kimberly-Clark de
+  Mexico, S.A.B de C.V. (OTC:KCDMY $10.07), the International Depository Receipt (IDR)
+  market's 19th largest Health care company by market cap, has edged up 4.91c (or 0.5%)
+  in the past week to close at $10.07. Compared with the BNY Mellon Composite ADR Index
+  which fell 7.2 points (or 2.7%) in the week, this represented a relative price increase
+  of 3.2%.
 
 ---
 fecha: 2026-11-03 21:22
@@ -1568,6 +1612,11 @@ fuente: GLORDP
 tono: positiva
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261104:nNRA2knw8t:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Kimberly-Clark de
+  Mexico, S.A.B de C.V. ADR (OTC:KCDMY $10.07) lifted 1.0% but fell short of the 12-day
+  Exponential Moving Average [EMA] of $10.09. Compared with the BNY Mellon Composite ADR
+  Index which fell 0.7 points (0.3%) in the day, the relative price increase was 1.3%.
 
 ---
 fecha: 2026-11-03 19:25
@@ -1676,6 +1725,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2klwrh:0
+resumen:
+  Just days before León XIV's first visit to Peru as pontiff, it continues to be revealed
+  which famous individuals may have some type of contact with Robert Francis Prevost, who
+  has a close connection to the country. In addition to Lita Pezo and Tania Libertad, on
+  Tuesday, November 3, the singer Susana Baca herself revealed that she will have the
+  opportunity to perform for the highest representative of the Catholic Church.
 
 ---
 fecha: 2026-11-03 18:12
@@ -1685,6 +1740,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2klvyg:0
+resumen:
+  While the United States voted on the formation of its new Congress, another decision
+  with regional implications was being finalized at a hotel in Miraflores. Energy and
+  Mines Minister Guillermo Shinno and Thomas DiNanno, the U.S. Under Secretary of State
+  for Arms Control and International Security, signed the Memorandum of Understanding on
+  Civil Nuclear Cooperation (NCMOU).
 
 ---
 fecha: 2026-11-03 17:52
@@ -2134,33 +2195,3 @@ id: lseg:urn:newsml:newsroom:20261103:nNRA2kkrop:0
 resumen:
   The midterm elections in the United States are shaping up to be a decisive moment for
   the country's internal politics and its relationship with Mexico.
-
----
-fecha: 2026-11-03 16:12
-emisora: EUA
-titulo: Who is Xavier Becerra? The California gubernatorial candidate of Mexican heritage
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kkrgi:0
-resumen:
-  The United States is holding its midterm elections on November 3, and it appears that
-  Xavier Becerra may emerge victorious as the governor of California. This victory would
-  be historic as it would mark the first time a governor of California with Mexican
-  heritage has been elected. Xavier Becerra's story is one of a man who helped support
-  his family by working with his father in construction and who became the first member
-  of his family to attend college.
-
----
-fecha: 2026-11-03 16:12
-emisora: EUA
-titulo: Democrats' victory does not guarantee that Trump will continue to commercially target Mexico, nor the extension of the USMCA
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kks2l:0
-resumen:
-  MEXICO CITY (apro) .- Even if the Democrats take control of the United States Congress
-  away from Donald Trump, it does not guarantee relief for Mexico. On the contrary, the
-  Republican could tighten his protectionist policies by 2027 and keep the future of the
-  United States-Mexico-Canada Agreement (USMCA) uncertain, analysts have agreed.
