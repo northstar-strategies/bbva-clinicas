@@ -145,6 +145,20 @@ resumen:
   turistas provenientes de Estados Unidos, principal mercado emisor.
 
 ---
+fecha: 2026-11-04 07:42
+emisora: GMEXICOB
+titulo: Update: Southern Copper Corporation (NYSE:SCCO), stock sees decline previous trading day
+fuente: NEWBTS
+tono: negativa
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2ky44p:0
+resumen:
+  NYSE STOCK REPORT PHOENIX, Tuesday, November 03 2026 - Ahead of this morning's market
+  opening, Southern Copper Corporation closed lower the previous trading day. Southern
+  Copper Corporation (NYSE:SCCO), the NYSE's largest Non ferrous metals sector company by
+  market cap, fell 2.2% during its previous trading session to close at $173.49.
+
+---
 fecha: 2026-11-04 07:39
 emisora: PETROLEO
 titulo: TWO SIDESE ENCOURAGE ENERGY COMPANIES TO EXPLORE TRADE, TECHNOLOGY, INVESTMENT AND PROJECT COOPERATION OPPORTUNITIES - STATEMENT
@@ -161,6 +175,8 @@ fuente: X
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:social:20261104:nTWT63b7vl:1
+resumen:
+  BRENT AND US CRUDE FUTURES EXTEND DECLINE, DOWN OVER $2 A BARREL
 
 ---
 fecha: 2026-11-04 07:38
@@ -197,6 +213,11 @@ fuente: GLORDP
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261104:nNRA2ky1yr:0
+resumen:
+  NYSE STOCK REPORT Southern Copper Corporation's growth in EPS (earnings per share) has
+  been 16.7% annualized over 3 years. Over the same time period its stock price has gone
+  up 182.9% or 43.8% annualized. In comparison, BHP Group Limited's growth in EPS
+  (earnings per share) has been -8.8% annualized over 3 years.
 
 ---
 fecha: 2026-11-04 07:35
@@ -206,6 +227,11 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nL2N46L0RX:1
+resumen:
+  CIUDAD DE MÉXICO, 4 nov (Reuters) - Analistas de grupos financieros y corredurías
+  opinan sobre los mercados mexicanos y la economía. A continuación, un resumen de los
+  reportes del 4 de noviembre. Las opiniones reflejadas no representan puntos de vista de
+  Reuters.
 
 ---
 fecha: 2026-11-04 07:34
@@ -233,6 +259,8 @@ fuente: IFR
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nIfp8JcHMz:1
+resumen:
+  By Theodore Littleton BOSTON, Nov 4 (IFR) - More to come on ifre.com...
 
 ---
 fecha: 2026-11-04 07:31
@@ -242,6 +270,12 @@ fuente: IFR
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nIfp62ddt5:1
+resumen:
+  By Roseanne Briggen Treasuries have seen little movement following the higher than
+  expected ADP job gains. Flows turned mixed following the the non-stop buying ahead of
+  the CME open led by the Democrats’ election sweep on bets AI spending is likely to slow
+  down. Hedge funds took back some hedges in the long end and pension funds were outright
+  buyers.
 
 ---
 fecha: 2026-11-04 07:30
@@ -251,6 +285,9 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nAQN2MS7M2:1
+resumen:
+  For the full results of the Federal Reserve Bank of New York's daily Standing Repo
+  operation see: https://www.newyorkfed.org/markets/desk-operations/repo
 
 ---
 fecha: 2026-11-04 07:30
@@ -260,6 +297,11 @@ fuente: IFR
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nIfp7Ms7hj:1
+resumen:
+  By Roseanne Briggen Treasury announced the November 2026 Quarterly Refunding package of
+  $125bn, unchanged from the August 2026 package. The auctions will settle on Monday,
+  November 16 and raise $28bn in new cash as Treasury matures $98bn in outstanding debt.
+  More to follow… Roseanne.Briggen@LSEG.com
 
 ---
 fecha: 2026-11-04 07:21
@@ -305,6 +347,13 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kxpup:0
+resumen:
+  The Weekly Consumer Price Index (IPC-S) decelerated in the seven capitals surveyed at
+  the end of October, according to the Getulio Vargas Foundation (FGV). The index rose by
+  0.32%, a result lower than the previous report of 0.46%, during the transition from the
+  third to the fourth four-week period of the month. The most significant deceleration
+  among the capitals occurred in Recife (from 0.92% to 0.79%) and São Paulo (from 0.52%
+  to 0.37%).
 
 ---
 fecha: 2026-11-04 07:12
@@ -314,6 +363,13 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kxnnm:0
+resumen:
+  Exports of goods from Latin America and the Caribbean outpaced the global average in
+  the first half of the year, with Mexico leading the way due to increased sales of
+  equipment for artificial intelligence (AI) infrastructure in the United States, as
+  highlighted by the Inter-American Development Bank (IDB). Shipments from the region
+  rose 19.5 percent annually in the first semester, surpassing the 14.5 percent growth in
+  global trade.
 
 ---
 fecha: 2026-11-04 07:12
@@ -323,6 +379,12 @@ fuente: NOTENG
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kxnw1:0
+resumen:
+  For months, the world has been waiting for the U.S. legislative elections to see if the
+  conflict in the Middle East can finally be resolved. With Iran previously refusing to
+  negotiate, using the opportunity to politically harm Donald Trump in the elections
+  through high oil prices, the situation is shifting with this Democratic victory that
+  opens up new scenarios.
 
 ---
 fecha: 2026-11-04 07:11
@@ -332,6 +394,13 @@ fuente: NOTENG
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kxp8d:0
+resumen:
+  Certificates of Deposit (CDTs) in Colombia may begin to offer lower yields in the
+  coming months, depending on market expectations regarding the decisions of the Banco de
+  la República. For now, the Issuer's decision to maintain the interest rate at 12.25%
+  will allow these products to retain their current yields in the coming weeks, with
+  offers reaching up to 13.1% annual effective rate for one-year investments, according
+  to the fintech MejorCDT.
 
 ---
 fecha: 2026-11-04 07:11
@@ -341,6 +410,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kxp7x:0
+resumen:
+  The archive of LA PATRIA preserves encounters with Antonio Navarro Wolff that allow us
+  to remember some of the reflections he shared about Colombia, its political history,
+  and the pursuit of peace. The former commander of the M-19, who passed away in Bogotá
+  last Sunday (November 1), spoke with this newspaper in 2005 and participated in a
+  meeting with students in Manizales in 2016.
 
 ---
 fecha: 2026-11-04 07:09
@@ -350,6 +425,13 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261103:nL6N46K0CQ:3
+resumen:
+  The US dollar will slip in coming months according to FX strategists polled by Reuters
+  who have clung to their long-held bearish view running into Tuesday’s midterm
+  elections, saying the main risk is a more resilient greenback than they predict.
+  Reuters surveyed over 100 foreign exchange strategists October 30-November 4 on US
+  dollar rates versus major currencies as well as the Chinese yuan, Indian rupee,
+  Brazilian real, Turkish lira, South African rand and others.
 
 ---
 fecha: 2026-11-04 07:05
@@ -359,6 +441,13 @@ fuente: Reuters
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nL6N46L0N0:2
+resumen:
+  Open Poll data on Brazil real Open Poll data on Mexican peso By Gabriel Burin BUENOS
+  AIRES, Nov 4 (Reuters) - The outlook for Brazil's currency has weakened on policy
+  doubts following the re-election of President Luiz Inacio Lula da Silva, a Reuters poll
+  of foreign exchange strategists showed. Market players worry Lula may fail to deliver
+  sufficient fiscal adjustment to tackle Brazil's chronic budget issues compounded by
+  spending promises during the election campaign.
 
 ---
 fecha: 2026-11-04 06:48
@@ -405,6 +494,20 @@ resumen:
   market cap, fell 2.2% during its previous trading session to close at $173.49.
 
 ---
+fecha: 2026-11-04 06:35
+emisora: GAPB
+titulo: Sangster airport to stage emergency simulation exercise on Wednesday
+fuente: GLEKIN
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2kwvn3:0
+resumen:
+  MBJ Airports Limited, the operator of Sangster International Airport in Montego Bay, St
+  James, is advising the public that it will conduct a full-scale emergency simulation
+  exercise at the facility on Wednesday, November 4. The exercise, dubbed Exercise Red
+  Falcon, is scheduled to begin at 7:00 a.m. and last approximately two hours.
+
+---
 fecha: 2026-11-04 06:13
 emisora: COLOMBIA
 titulo: Euro today in Colombia: price and exchange rate of the currency on Wednesday, November 4, 2026
@@ -412,6 +515,13 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kwhxq:0
+resumen:
+  The euro in Colombia is trading this Wednesday, November 4, 2026, at 3,603 Colombian
+  pesos , according to the latest official update. The exchange rate is one of the
+  central variables of the economy, and its daily fluctuations impact both the markets
+  and consumers' wallets. Compared to yesterday's close, the euro in Colombia shows a
+  variation of +0.56% , having closed at 3,582 Colombian pesos on Tuesday, November 3,
+  2026.
 
 ---
 fecha: 2026-11-04 06:13
@@ -421,6 +531,11 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kwiw9:0
+resumen:
+  The euro in Peru is quoted this Wednesday, November 4, 2026, at 3.88 soles , according
+  to the latest official update. The exchange rate is one of the central variables of the
+  economy, and its daily fluctuations impact both the markets and people's wallets. The
+  euro showed no change from the previous day, when it was quoted at 3.88 soles .
 
 ---
 fecha: 2026-11-04 06:13
@@ -430,6 +545,13 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kwj9b:0
+resumen:
+  The euro in Chile is trading this Wednesday, November 4, 2026, at 1,094 Chilean pesos ,
+  according to the latest official update. The exchange rate is one of the central
+  variables in the economy, and its daily fluctuations impact both the markets and
+  consumers' wallets. Compared to yesterday's close, the euro in Chile has recorded a
+  variation of -1.79% , considering it closed at 1,114 Chilean pesos on Tuesday, November
+  3, 2026.
 
 ---
 fecha: 2026-11-04 06:13
@@ -439,6 +561,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kwiaa:0
+resumen:
+  "Authoritarianism simply attracts people who cannot tolerate complexity; there is
+  nothing intrinsically leftist or rightist about this instinct." Anne Applebaum, The
+  Twilight of Democracy I hear many comments labeling Donald Trump as a right-wing or
+  extreme right President. However, the Peterson Institute for International Economics
+  published an article in September by Collen S.
 
 ---
 fecha: 2026-11-04 06:12
@@ -448,6 +576,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kwhif:0
+resumen:
+  Since Javier Milei and Donald Trump strengthened their political ties, the relationship
+  between Argentina and the United States has begun to translate into an increasingly
+  broad economic agenda. The alignment between the two leaders has resulted in trade
+  agreements, financial negotiations, and investment projects in strategic sectors. This
+  relationship has multiple dimensions.
 
 ---
 fecha: 2026-11-04 06:12
@@ -457,6 +591,12 @@ fuente: NOTENG
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kwhg6:0
+resumen:
+  On January 1, 1994, while Mexico celebrated the implementation of the North American
+  Free Trade Agreement and the government projected the image of a nation moving toward
+  the first world, the uprising of the Zapatista Army of National Liberation (EZLN)
+  exposed a reality that this narrative kept on the sidelines: the historic abandonment
+  of indigenous peoples.
 
 ---
 fecha: 2026-11-04 06:12
@@ -466,6 +606,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kwi4n:0
+resumen:
+  As the blue wave expanded across the United States, political and business leaders
+  viewed the election results as a blow to President Donald Trump and his movement.
+  Bernie Sanders, the Democratic senator, celebrated the Democrats' victory over
+  Republicans in Congress. "The Democrats will now control the House of Representatives
+  and the Senate and will be able to hold Trump accountable.
 
 ---
 fecha: 2026-11-04 06:11
@@ -491,6 +637,11 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nL2N46L0KV:2
+resumen:
+  Adds detail from minutes report SANTIAGO, Nov 4 (Reuters) - Policymakers at Chile's
+  central bank considered keeping the rate unchanged or increasing it by 25 basis points
+  as "plausible" options at its last meeting, minutes showed on Wednesday. The bank's
+  board unanimously decided to hold borrowing costs at 4.5% at the meeting last week.
 
 ---
 fecha: 2026-11-04 06:07
@@ -691,6 +842,10 @@ fuente: GLORDP
 tono: positiva
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kwatc:0
+resumen:
+  MEXICAN STOCK REPORT Ahead of this morning's market opening, Kimberly - Clark De Mexico
+  S.A.B. De C.V. has shown some strength in recent days. Kimberly - Clark De Mexico
+  S.A.B.
 
 ---
 fecha: 2026-11-04 06:01
@@ -700,6 +855,11 @@ fuente: GLORDP
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kwath:0
+resumen:
+  MEXICAN STOCK REPORT Ahead of this morning's market opening, Corp Inmobiliaria Vesta
+  SAB de CV has shown some weakness in recent days. Corp Inmobiliaria Vesta SAB de CV
+  (BMV:VESTA), Mexico's largest Real estate company by market cap, decreased 0.1% during
+  its previous trading session to close at $68.05.
 
 ---
 fecha: 2026-11-04 05:58
@@ -1919,21 +2079,3 @@ fuente: YAHNEX
 tono: neutral
 impacto: alto
 id: lseg:urn:link:webnews:20261103:nNRA2kkp51:0
-
----
-fecha: 2026-11-03 16:03
-emisora: PETROLEO
-titulo: US Crude Oil Inventories Still in Freefall
-fuente: OILCOM
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261103:nNRA2kkom7:0
-
----
-fecha: 2026-11-03 16:02
-emisora: PETROLEO
-titulo: API: Crude -5.267M, Gasoline +1.427M, Distillates -270K
-fuente: FORFAC
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261103:nNRA2kkp3n:0
