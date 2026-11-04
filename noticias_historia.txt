@@ -1,13 +1,31 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
-fecha: 2026-11-04 15:54
-emisora: BRASIL
-titulo: UPDATE 1-Brazil's central bank ends run of rate cuts after Lula election win
+fecha: 2026-11-04 16:13
+emisora: MERCADO
+titulo: The Bank of Mexico prepares for a meeting with the expectation of keeping the rate at 6.5%
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l4qvq:0
+
+---
+fecha: 2026-11-04 16:13
+emisora: BANXICO
+titulo: Dollar price in Mexico today, Wednesday, November 4, 2026: USD to MXN exchange rate, value, Banxico quotation
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l4rlg:0
+
+---
+fecha: 2026-11-04 16:01
+emisora: FED
+titulo: DÍA DE NEGOCIACIÓN-El petróleo cae mientras las acciones se disparan tras las elecciones de mitad de mandato en EEUU
 fuente: Reuters
-tono: negativa
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261104:nL6N46L1FT:5
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261104:nL5N46L3FT:1
 
 ---
 fecha: 2026-11-04 15:38
@@ -19,15 +37,6 @@ relevancia: 14
 id: lseg:urn:newsml:reuters.com:20261104:nL2N46L1DG:1
 resumen:
   CIUDAD DE MÉXICO, 4 nov (Reuters) - El peso mexicano se apreció el miércoles apoyado por un retroceso global del dólar y una mejora del apetito por riesgo tras la amplia victoria demócrata en las elecciones legislativas estadounidenses, mientras que la bolsa avanzó impulsada por Volaris y Peñoles. La atención se desplazará el jueves a la decisión de Banco de México.
-
----
-fecha: 2026-11-04 15:13
-emisora: EUA
-titulo: U.S. election results strengthen continuity of USMCA: BBVA
-fuente: NOTENG
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:newsroom:20261104:nNRA2l45p2:0
 
 ---
 fecha: 2026-11-04 14:49
@@ -166,6 +175,17 @@ fuente: Reuters
 tono: negativa
 relevancia: 13
 id: lseg:urn:newsml:reuters.com:20261103:nL2N46K10Z:1
+resumen:
+  Actualiza con cotizaciones por la tarde Por Manuel Farías SANTIAGO, 3 nov (Reuters) - Las principales monedas de América Latina bajaron el martes, mientras los inversores se mantenían atentos a las elecciones de medio término en Estados Unidos y a las negociaciones para terminar con la guerra en Oriente Medio. * Los comicios estadounidenses acaparaban la atención de los mercados, con expectativas de que los demócratas recuperen el control de al menos una de las cámaras del Congreso, lo que podría modificar el…
+
+---
+fecha: 2026-11-03 13:41
+emisora: BANXICO
+titulo: Mexican peso strengthens against the dollar and 'sets its sights' on the U.S. elections
+fuente: CENAFT
+tono: positiva
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kjh19:0
 
 ---
 fecha: 2026-11-03 13:13
@@ -186,6 +206,15 @@ relevancia: 9
 id: lseg:urn:newsml:newsroom:20261103:nNRA2khzs1:0
 
 ---
+fecha: 2026-11-03 10:13
+emisora: EUA
+titulo: Mexican peso depreciates against the dollar as the market watches U.S. elections
+fuente: NOTENG
+tono: positiva
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261103:nNRA2kh2tu:0
+
+---
 fecha: 2026-11-03 09:51
 emisora: MERCADO
 titulo: EMERGING MARKETS-Latam markets decline ahead of key central bank decisions; US midterms in focus
@@ -193,6 +222,8 @@ fuente: Reuters
 tono: neutral
 relevancia: 12
 id: lseg:urn:newsml:reuters.com:20261103:nL3N46K14C:4
+resumen:
+  Brazil economists raise inflation, rate forecasts after Lula reelection Colombian peso in focus after central bank's dollar purchase from government Mexican rate cut could trigger 'disorderly' peso drop, JPMorgan warns By Sudeshna Ghoshal and Ragini Mathur Nov 3 (Reuters) - Most Latin American stocks and currencies fell on Tuesday as weaker commodity prices weighed on markets and investors braced for central bank decisions and US midterm election results that could shape the outlook for interest rates and…
 
 ---
 fecha: 2026-11-03 08:45
@@ -235,44 +266,6 @@ relevancia: 10
 id: lseg:urn:newsml:newsroom:20261103:nNRA2k898x:0
 
 ---
-fecha: 2026-11-02 22:12
-emisora: FED
-titulo: PRECIOUS-Gold eases ahead of US midterm elections
-fuente: Reuters
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261103:nL2N46K01M:4
-
----
-fecha: 2026-11-02 21:07
-emisora: Q
-titulo: October 30, 2026: Willkie Advises AIG on Acquisition of Everests Insurance Operations in Chile
-fuente: NEWBTS
-tono: neutral
-relevancia: 7
-id: lseg:urn:newsml:newsroom:20261103:nNRA2k45kf:0
-resumen:
-  NEWS BITES - PRIVATE COMPANIES (US) Willkie is advising American International Group, Inc. (NYSE: AIG) on its acquisition of Everest CompaNia de Seguros Generales Chile S.A. ("Everest Chile"), Everest Group Ltd.'s (NYSE: EG) insurance subsidiary in Chile.
-
----
-fecha: 2026-11-02 19:11
-emisora: EUA
-titulo: Elections in the U.S.: One good thing and three bad ones for Mexico
-fuente: NOTENG
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:newsroom:20261103:nNRA2k31t0:0
-
----
-fecha: 2026-11-02 18:12
-emisora: EUA
-titulo: Increased pressure from Trump on Mexico expected if he loses Congress in the elections
-fuente: NOTENG
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:newsroom:20261103:nNRA2k2dgy:0
-
----
 fecha: 2026-11-02 15:53
 emisora: ARGENTINA
 titulo: ACTUALIZA 2-Mercados de Argentina inician noviembre con selectividad, riesgo país supera los 800 puntos
@@ -302,6 +295,8 @@ fuente: Reuters
 tono: positiva
 relevancia: 7
 id: lseg:urn:newsml:reuters.com:20261102:nL2N46J0Q5:1
+resumen:
+  BUENOS AIRES, 2 nov (Reuters) - La recaudación tributaria de Argentina subió un 33,7% interanual en octubre al totalizar 21,61 billones de pesos (14.059 millones de dólares), informó el lunes la Agencia de Recaudación y Control Aduanero (ARCA). Este aumento resulta ligeramente superior a la inflación acumulada del 33,4% en los últimos 12 meses a septiembre, el último dato oficial comparativo.
 
 ---
 fecha: 2026-11-02 14:27
@@ -324,6 +319,15 @@ resumen:
   Los mercados de Brasil, Colombia y México cierran por festivos Los precios al consumo en Perú suben un 0,57 % intermensual en octubre La actividad económica de Chile supera las previsiones en septiembre Actualización con la sesión bursátil de la tarde Por Ragini Mathur y Avinash P 2 nov (Reuters) - La mayoría de las divisas y los mercados bursátiles latinoamericanos registraron ganancias el lunes, respaldados por un dólar más débil y una fuerte caída de los precios del petróleo, mientras que los indicios de una…
 
 ---
+fecha: 2026-11-02 13:41
+emisora: BANXICO
+titulo: Mexican Peso Surpasses the Dollar as Hopes for Peace Agreement in the Middle East Rise
+fuente: CENAFT
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261102:nNRA2jzx2f:0
+
+---
 fecha: 2026-11-02 05:53
 emisora: CHILE
 titulo: ACTUALIZA 1-Economía chilena crece 0,2% interanual en septiembre
@@ -331,6 +335,15 @@ fuente: Reuters
 tono: positiva
 relevancia: 7
 id: lseg:urn:newsml:reuters.com:20261102:nL2N46J0DM:1
+
+---
+fecha: 2026-11-02 01:13
+emisora: EUA
+titulo: Trump wants to add oil to dialogue with Mexico: Guajardo
+fuente: NOTENG
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:newsroom:20261102:nNRA2jpi0n:0
 
 ---
 fecha: 2026-11-02 00:13
@@ -355,17 +368,6 @@ resumen:
   Industrias Peñoles, the world's largest silver producer, reported favorable results during the third quarter of the year, thanks to high metal prices, particularly gold and silver, which offset a decline in production. From July to September, the mining company's consolidated revenue reached $2.3649 billion, representing a year-on-year growth of 19.5 percent.
 
 ---
-fecha: 2026-11-01 23:02
-emisora: FED
-titulo: PRECIOUS-Gold rises on softer oil; Markets parse Fed signals
-fuente: Reuters
-tono: positiva
-relevancia: 6
-id: lseg:urn:newsml:reuters.com:20261102:nL2N46J02T:3
-resumen:
-  Adds comments, graphic and updates prices Gold below key $4,000/oz level, near one-year low Iranian, Qatari officials met in Doha on Sunday Traders price in 73% chance of Fed rate hike in December By Sukanya Mitra Nov 2 (Reuters) - Gold prices bounced on Monday, after a selloff in the previous session, as weaker oil prices tempered inflation concerns, while investors assessed comments from the Federal Reserve for clues on the path of US interest rates.
-
----
 fecha: 2026-11-01 22:48
 emisora: PETROLEO
 titulo: MERCADOS MUNDIALES-Las acciones repuntan ante la proximidad de la publicación de resultados de Apple; el petróleo cae
@@ -373,6 +375,8 @@ fuente: Reuters
 tono: neutral
 relevancia: 7
 id: lseg:urn:newsml:reuters.com:20261102:nL5N46J04P:1
+resumen:
+  Los futuros del Nikkei y de Wall Street repuntan tras un octubre complicado Los inversores esperan que los resultados de Apple ayuden a contrarrestar las preocupaciones sobre la inversión en IA El petróleo retrocede desde sus máximos, mientras que el oro repunta desde sus mínimos de un año Se añaden las acciones chinas y se actualizan los precios Por Wayne Cole SÍDNEY, 2 nov (Reuters) - Los mercados bursátiles repuntaron este lunes en Asia, ya que los inversores esperaban que los resultados de Apple, que se darían…
 
 ---
 fecha: 2026-11-01 22:47
@@ -384,17 +388,6 @@ relevancia: 10
 id: lseg:urn:newsml:reuters.com:20261102:nL2N46J028:4
 resumen:
   Nikkei, Wall St futures bounce after tough October Investors hope Apple results can help offset AI capex concerns Oil eases from highs, gold up from one-year lows Adds China stocks, updates prices By Wayne Cole SYDNEY, Nov 2 (Reuters) - Share markets bounced in Asia on Monday as investors hoped for Apple earnings later in the session to provide some relief from AI cash-burn worries, while oil prices slid after talks continued between Iranian and Qatari mediators.
-
----
-fecha: 2026-11-01 19:12
-emisora: MERCADO
-titulo: Arca Continental anticipates that Coca-Cola price increases will outpace inflation in Mexico
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261102:nNRA2jlow0:0
-resumen:
-  In light of inflationary pressures and the potential for further adjustments to its products, Arca Continental, one of the leading bottlers of Coca-Cola, anticipates that price increases in Mexico will remain above inflation levels. "We expect to continue having prices above inflation.
 
 ---
 fecha: 2026-11-01 13:11
@@ -539,6 +532,33 @@ relevancia: 6
 id: lseg:urn:newsml:newsroom:20261031:nNRA2j8gc5:0
 
 ---
+fecha: 2026-10-31 08:12
+emisora: EUA
+titulo: EU Upholds Entry of Mexican Livestock
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261031:nNRA2j8944:0
+
+---
+fecha: 2026-10-31 05:12
+emisora: EUA
+titulo: EU Maintains Entry of Mexican Livestock; Opens Crossing Points
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261031:nNRA2j6ja2:0
+
+---
+fecha: 2026-10-31 01:11
+emisora: EUA
+titulo: The United States urges Mexico and Canada to coordinate in order to compete against China and proposes shifting supply chains that currently depend...
+fuente: NOTENG
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261031:nNRA2j40f8:0
+
+---
 fecha: 2026-10-31 00:13
 emisora: EUA
 titulo: KBRA affirmed Mexico's credit rating at BBB: Treasury
@@ -679,15 +699,6 @@ relevancia: 8
 id: lseg:urn:newsml:newsroom:20261030:nNRA2ihz9i:0
 
 ---
-fecha: 2026-10-29 17:30
-emisora: CHILE
-titulo: ACTUALIZA 1-Chilena Codelco despide a ocho personas en marco de pesquisa por exceso en cifras de producción
-fuente: Reuters
-tono: neutral
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261029:nL2N46F1RL:1
-
----
 fecha: 2026-10-29 16:02
 emisora: EUA
 titulo: Mexico and Washington Race Against the Midterm Clock to Clinch a Last-Minute Trade Deal
@@ -817,6 +828,15 @@ relevancia: 9
 id: lseg:urn:newsml:newsroom:20261029:nNRA2hwnzv:0
 
 ---
+fecha: 2026-10-28 15:37
+emisora: EUA
+titulo: UPDATE 1-Mexico economy minister warns US farm trade curbs could trigger broader retaliation
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261028:nL2N46E1MA:3
+
+---
 fecha: 2026-10-28 14:24
 emisora: MERCADO
 titulo: MERCADOS A.LATINA-Monedas registran leves variaciones tras decisión de la Fed de mantener las tasas
@@ -866,6 +886,8 @@ fuente: Reuters
 tono: neutral
 relevancia: 12
 id: lseg:urn:newsml:reuters.com:20261028:nL6N46E11D:1
+resumen:
+  Actualiza con citas y contexto a partir del párrafo 2 México y EEUU intensifican diálogo comercial. Sheinbaum confirma contactos de alto nivel entre ambos países. México busca reducir aranceles de Trump a autos, acero y aluminio.
 
 ---
 fecha: 2026-10-28 09:00
@@ -906,35 +928,6 @@ relevancia: 10
 id: lseg:urn:newsml:reuters.com:20261028:nTRNchjGp4:1
 
 ---
-fecha: 2026-10-27 22:41
-emisora: MERCADO
-titulo: Mexico Contributes 8.3% of U.S. Tariff Revenue
-fuente: CENAFT
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:newsroom:20261028:nNRA2hf6ke:0
-
----
-fecha: 2026-10-27 22:13
-emisora: EUA
-titulo: Trump anticipates 25% tariff imposed on imported cars from Mexico; celebrates companies relocating to the U.S.
-fuente: NOTENG
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:newsroom:20261028:nNRA2hex85:0
-
----
-fecha: 2026-10-27 18:13
-emisora: BANXICO
-titulo: International reserves of Banco de México decline for the first time in three weeks
-fuente: NOTENG
-tono: neutral
-relevancia: 7
-id: lseg:urn:newsml:newsroom:20261028:nNRA2hcfdb:0
-resumen:
-  The Bank of Mexico announced that the country's international reserves decreased by 61 million dollars during the week ending October 23, bringing the total to 257.016 billion dollars. The reserves, which are a fund managed by the Central Institute to contribute to the country's financial stability, ended a two-week upward streak.
-
----
 fecha: 2026-10-27 18:02
 emisora: WALMEX
 titulo: Wal-Mart de Mexico SAB de CV (OTCMKTS:WMMVY) Releases Quarterly Earnings Results
@@ -944,15 +937,6 @@ relevancia: 10
 id: lseg:urn:newsml:newsroom:20261028:nNRA2hc74e:0
 resumen:
   Oct 26, 2026 Wal-Mart de Mexico SAB de CV (OTCMKTS:WMMVY - Get Free Report) released its quarterly earnings results on Tuesday. The company reported $0.37 earnings per share for the quarter, missing analysts' consensus estimates of $0.42 by ($0.05), Zacks reports. Wal-Mart de Mexico SAB de CV had a net margin of 4.90% and a return on equity of 21.23%.
-
----
-fecha: 2026-10-27 17:12
-emisora: EUA
-titulo: This Doesn't Please Trump: Cuba Says It Is Working with Mexico to Resume Oil Shipments to the Island
-fuente: NOTENG
-tono: neutral
-relevancia: 7
-id: lseg:urn:newsml:newsroom:20261027:nNRA2hbrxn:0
 
 ---
 fecha: 2026-10-27 16:21
@@ -966,6 +950,15 @@ resumen:
   Incluye detalles de la retransmisión en directo de los resultados Por Kylie Madry y Natalia Siniawski CIUDAD DE MÉXICO, 27 oct (Reuters) - La filial de Walmart en México WALMEX.MX no alcanzó el martes las previsiones de beneficios para el tercer trimestre, ya que el aumento de los costos y las inversiones mermaron los márgenes, eclipsando el crecimiento de dos dígitos del comercio electrónico.
 
 ---
+fecha: 2026-10-27 15:16
+emisora: ORBIA
+titulo: ORBIA ANNOUNCES THIRD QUARTER 2026 FINANCIAL RESULTS
+fuente: Reuters
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:reuters.com:20261027:nTUA5M62YV:1
+
+---
 fecha: 2026-10-27 15:12
 emisora: CHILE
 titulo: ACTUALIZA 1-Banco Central de Chile mantiene tasa clave de interés en 4,5%
@@ -973,6 +966,8 @@ fuente: Reuters
 tono: neutral
 relevancia: 7
 id: lseg:urn:newsml:reuters.com:20261027:nL6N46D1JX:1
+resumen:
+  Agrega detalles SANTIAGO, 27 oct (Reuters) - El Banco Central de Chile mantuvo el martes su tasa de interés de referencia en 4,5%, en una decisión unánime y en línea con las expectativas del mercado. La Tasa de Política Monetaria (TPM) se mantiene en ese nivel desde diciembre. "Si bien se anticipa que la economía local retomará impulso hacia 2027, no puede descartarse que su debilidad actual sea más persistente que lo previsto", dijo en su comunicado.
 
 ---
 fecha: 2026-10-27 14:22
@@ -1002,6 +997,8 @@ fuente: NOTENG
 tono: positiva
 relevancia: 8
 id: lseg:urn:newsml:newsroom:20261027:nNRA2h9gok:0
+resumen:
+  The United States raises $14.439 billion from tariffs on Mexican products between January and August 2026, accounting for 8.3% of its total tariff revenues; while tariffs on goods from Mexico and Canada amount to $22.489 billion, negotiations to reduce the 25% tariffs on Mexican cars and 50% on steel and aluminum face resistance from Secretary of Commerce Howard Lutnick amid the review of the USMCA and experts' calls to maintain dialogue with Washington for more favorable trade conditions The United States…
 
 ---
 fecha: 2026-10-27 13:01
@@ -1031,6 +1028,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 11
 id: lseg:urn:newsml:newsroom:20261027:nNRA2gwkwe:0
+resumen:
+  The President of Mexico, Claudia Sheinbaum, spoke via telephone on Monday with Luiz Inácio Lula da Silva to congratulate him on his re-election following the runoff in Brazil. In a brief message shared on her social media account on platform X, the federal leader announced that she agreed to meet soon with her Brazilian counterpart. "I spoke today with President Lula.
 
 ---
 fecha: 2026-10-26 22:13
@@ -1062,6 +1061,15 @@ relevancia: 7
 id: lseg:urn:newsml:reuters.com:20261027:nNRA2gvdfq:1
 
 ---
+fecha: 2026-10-26 16:13
+emisora: EUA
+titulo: Checo Pérez's return will boost F1's economic impact by 6%: Concanaco; record revenue anticipated in Mexico City
+fuente: NOTENG
+tono: positiva
+relevancia: 7
+id: lseg:urn:newsml:newsroom:20261026:nNRA2grj1b:0
+
+---
 fecha: 2026-10-26 14:21
 emisora: MERCADO
 titulo: MERCADOS A.LATINA-Activos brasileños se hunden tras reelección de Lula, monedas cierran con ganancias
@@ -1073,6 +1081,24 @@ resumen:
   Actualiza valores al cierre Por Froilan Romero SANTIAGO, 26 oct (Reuters) - La mayoría de las principales monedas de América Latina subieron el lunes, mientras que los activos brasileños se hundieron tras la reelección del presidente de izquierda Luiz Inácio Lula Da Silva, en el inicio de una semana marcada por la reunión de política monetaria de la Reserva Federal de Estados Unidos. * Lula logró el domingo un cuarto mandato, algo sin precedentes en Brasil, en un resultado que supuso la primera vez que un…
 
 ---
+fecha: 2026-10-26 14:07
+emisora: ARGENTINA
+titulo: ACTUALIZA 2-Mercados argentinos se derrumban tras resultado electoral en Brasil
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261026:nL2N46C0QY:2
+
+---
+fecha: 2026-10-26 13:08
+emisora: CHILE
+titulo: Canada's Capstone Copper announces $3 billion investment plan in Chile
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261026:nS0N43904D:2
+
+---
 fecha: 2026-10-26 11:13
 emisora: EUA
 titulo: Sheinbaum admits that there is still no agreement with the U.S. to reduce tariffs on steel, aluminum, and cars
@@ -1082,6 +1108,15 @@ relevancia: 8
 id: lseg:urn:newsml:newsroom:20261026:nNRA2gnx1h:0
 
 ---
+fecha: 2026-10-26 10:15
+emisora: COLOMBIA
+titulo: SONDEO-Banco Central de Colombia subiría su tasa de interés en octubre por última vez en el año
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261026:nL2N46C0K8:1
+
+---
 fecha: 2026-10-26 08:23
 emisora: ARGENTINA
 titulo: Mercados argentinos se derrumban tras elecciones en Brasil
@@ -1089,6 +1124,8 @@ fuente: Reuters
 tono: neutral
 relevancia: 9
 id: lseg:urn:newsml:reuters.com:20261026:nL2N46C0KZ:1
+resumen:
+  BUENOS AIRES, 26 oct (Reuters) - La plaza financiera argentina caía el lunes acompañando el retroceso en los mercados de su principal socio económico, Brasil, luego de que se confirmara el triunfo del socialista Luiz Inácio Lula da Silva en las elecciones presidenciales del domingo. El índice accionario argentino, el MSCI Merval .MMXMRVLGA caía un fuerte 6,24% a las 1410 GMT, mientras que la operatoria de acciones en su par brasileño, el Bovespa .BVSP, se hundía más de un 17%.
 
 ---
 fecha: 2026-10-26 08:12
@@ -1140,66 +1177,15 @@ resumen:
   Following the second electoral round in Brazil, the political landscape of Latin America has been decisively reconfigured. The establishment of Brazil's head of state transcends its borders and directly impacts diplomacy, energy agreements, and the balance of power in Mexico. In MILENIO, we discuss the implications for Mexico following Luiz Inácio Lula da Silva's victory in the 2026 presidential elections.
 
 ---
-fecha: 2026-10-25 23:54
-emisora: FED
-titulo: PRECIOUS-Gold gains on softer oil prices; Fed decision in focus
-fuente: Reuters
-tono: positiva
-relevancia: 6
-id: lseg:urn:newsml:reuters.com:20261026:nL2N46C06E:3
-resumen:
-  Oil prices ease from near six-month highs FOMC interest rate decision meeting on Oct 27-28 Traders price in 77% chance of a Fed rate hike in December Updates prices By Sukanya Mitra Oct 26 (Reuters) - Gold edged higher on Monday as softer oil prices tempered inflation concerns, while investors awaited the Federal Reserve's policy decision later this week.
-
----
-fecha: 2026-10-25 23:23
-emisora: MERCADO
-titulo: EMERGING MARKETS-Indonesia's rupiah at 3-month low as Asian currencies struggle; Brazil in focus
-fuente: Reuters
-tono: neutral
-relevancia: 10
-id: lseg:urn:newsml:reuters.com:20261026:nL2N46C061:4
-resumen:
-  Rupiah slips beyond 18,100 per USD mark Philippine peso weakens to record low Central bank decisions in focus this week . By Roshan Thomas Oct 26 (Reuters) - Most emerging Asian currencies struggled to gain traction on Monday, with Indonesia's rupiah slipping past the 18,100-per-dollar level to its weakest since late July, while investors monitored political developments in Brazil.
-
----
 fecha: 2026-10-25 23:12
-emisora: EUA
-titulo: The economic cycles of Mexico and the United States are diverging further
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261026:nNRA2ge1sc:0
-resumen:
-  Due to differences in investment, productivity, and the composition of their growth engines, the economic cycles of Mexico and the United States are diverging, analysts from J.P. Morgan and UBS agreed. This decoupling limits the Mexican economy's ability to translate the dynamism of its main trading partner into greater domestic growth, they separately noted.
-
----
-fecha: 2026-10-25 20:58
-emisora: CHILE
-titulo: QUOTES-Global leaders congratulate Brazil President Lula on reelection
-fuente: Reuters
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261026:nL2N46C02W:9
-resumen:
-  Adds Canada and Peru SAO PAULO, Oct 25 (Reuters) - World leaders hailed the victory of Brazil's leftist President Luiz Inacio Lula da Silva in Sunday's presidential election runoff, as he defeated right-wing Senator Flavio Bolsonaro to secure a fourth non-consecutive term. Here are some reactions: CANADIAN PRIME MINISTER MARK CARNEY: "The relationship between Canada and Brazil has flourished under our partnership.
-
----
-fecha: 2026-10-25 19:42
-emisora: BANXICO
-titulo: Mexican issuance heads to record as yields tumble
-fuente: LATMIA
-tono: positiva
-relevancia: 6
-id: lseg:urn:link:webnews:20261026:nNRA2gch1u:0
-
----
-fecha: 2026-10-25 18:12
 emisora: MERCADO
-titulo: Dollar price in Mexico today, Saturday, October 25
+titulo: Kimberly-Clark de México says that consumption will remain weak until the end of the year and will gradually improve in 2027
 fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261026:nNRA2gbuth:0
+tono: negativa
+relevancia: 7
+id: lseg:urn:newsml:newsroom:20261026:nNRA2ge01i:0
+resumen:
+  Kimberly-Clark de México expects consumer weakness to persist until the end of 2026, given low consumer sentiment and caution among retail chains. However, the company anticipates that demand will gradually improve next year as the economic recovery progresses.
 
 ---
 fecha: 2026-10-25 13:12
@@ -1209,6 +1195,8 @@ fuente: NOTENG
 tono: negativa
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261025:nNRA2g9wvk:0
+resumen:
+  While Ebrard acknowledged that the USMCA was indeed at risk of disappearing, the maquiladora industry in Mexico experienced its worst employment contraction since 2020, with a decrease of 2.03% in just eight months The manufacturing and maquiladora sector in Mexico is experiencing a dual pressure of economic and geopolitical challenges.
 
 ---
 fecha: 2026-10-25 11:12
@@ -1218,6 +1206,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261025:nNRA2g98yl:0
+resumen:
+  The government of Mexico confirmed the delivery of 431 million cubic meters of water to the United States as part of its annual obligations under the 1944 Water Treaty . This volume corresponds to the first year of Cycle 37 of the agreement, which spans from October 2025 to October 2030. However, despite this compliance, the hydric debt accumulated in previous cycles continues to be a source of tension and negotiation between the two countries.
 
 ---
 fecha: 2026-10-25 09:12
@@ -1227,6 +1217,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261025:nNRA2g8fv7:0
+resumen:
+  MEXICO.- Today, Sunday, October 25, 2026, the dollar is trading at an average of 18.66 to 18.69 pesos per dollar in the digital exchange market. The U.S. currency has once again surpassed 18 pesos in sales in this border zone. The Mexican peso ended a week of losses against the U.S. dollar after starting Monday, October 19, with slight gains and an exchange rate near 18.45 pesos per dollar.
 
 ---
 fecha: 2026-10-25 08:12
@@ -1258,6 +1250,42 @@ relevancia: 8
 id: lseg:urn:link:webnews:20261025:nNRA2g6vu6:0
 
 ---
+fecha: 2026-10-25 03:12
+emisora: BANXICO
+titulo: Is the dollar rising? What this means for your wallet and the Mexican economy
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261025:nNRA2g5ge9:0
+
+---
+fecha: 2026-10-25 02:11
+emisora: MERCADO
+titulo: Mexico delivers 431 million cubic meters of water to the United States to fulfill the 1944 Treaty, but the agreement does not settle the outstandin...
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261025:nNRA2g4xwa:0
+
+---
+fecha: 2026-10-25 00:25
+emisora: VESTA
+titulo: What Corporacion Inmobiliaria Vesta (VTMX) Said on Its Q3 Earnings Call
+fuente: CERGEM
+tono: positiva
+relevancia: 4
+id: lseg:urn:newsml:newsroom:20261025:nNRA2g43ep:0
+
+---
+fecha: 2026-10-25 00:24
+emisora: ASURB
+titulo: What Grupo Aeroportuario del Sureste (ASR) Said on Its Q3 Earnings Call
+fuente: DEFWOS
+tono: positiva
+relevancia: 4
+id: lseg:urn:newsml:newsroom:20261025:nNRA2g433m:0
+
+---
 fecha: 2026-10-24 11:11
 emisora: MERCADO
 titulo: Meat Imports in Mexico: The United States Dominates Supply While Brazil Loses Ground
@@ -1278,15 +1306,6 @@ relevancia: 6
 id: lseg:urn:newsml:newsroom:20261024:nNRA2fz1qr:0
 resumen:
   If you are wondering about the current dollar exchange rate, you should know that as of the start of operations today, October 24, the interbank exchange rate is at 18.65 pesos per dollar, reflecting a decrease of 0.33 percent, according to data from Bloomberg.
-
----
-fecha: 2026-10-24 09:02
-emisora: VESTA
-titulo: Corporacion Inmobiliaria Vesta (NYSE:VTMX) Posts Quarterly Earnings Results, Beats Estimates By $0.72 EPS
-fuente: TRADAJ
-tono: positiva
-relevancia: 4
-id: lseg:urn:newsml:newsroom:20261024:nNRA2fygzy:0
 
 ---
 fecha: 2026-10-24 08:37
@@ -1318,6 +1337,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:newsroom:20261024:nNRA2fwbvq:0
+resumen:
+  U.S. President Donald Trump stated that he is close to reaching a trade agreement with Mexico, although he warned that he will only sign it if it benefits his country. Meanwhile, the Secretary of Economy, Marcelo Ebrard Casaubón, reported from Washington on progress in negotiations with Mexico, urging the reduction of tariffs on the automotive, steel, and aluminum industries.
 
 ---
 fecha: 2026-10-24 02:12
@@ -1338,6 +1359,19 @@ fuente: NOTENG
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:newsroom:20261024:nNRA2ft1cc:0
+resumen:
+  President Donald Trump signed a decree on October 23, 2026 , eliminating a 50% tariff on nine categories of agricultural and forestry products from Canada . This decision, which will take effect on October 30 , is part of a political strategy to strengthen the position of Republicans ahead of the midterm elections on November 3 . The measure was championed by Senator Susan Collins , who is seeking re-election in Maine, a border state that has felt the impact of the trade war.
+
+---
+fecha: 2026-10-23 23:12
+emisora: MERCADO
+titulo: Mexican peso shows signs of beginning to recover from the dollar; exchange rate at the close TODAY, Friday, October 23
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261024:nNRA2fsm0w:0
+resumen:
+  The Mexican peso closed this Friday, October 23 , at 18.6601 units per dollar , according to the reference exchange rate from the Bank of Mexico (Banxico) . This represented a slight appreciation compared to the previous close of 18.6670 pesos per dollar , reflecting an approximate variation of 0.04% . The difference between the two quotations was 0.0069 pesos , meaning the national currency essentially finished unchanged, though with a marginal advance at the week's close.
 
 ---
 fecha: 2026-10-23 22:41
@@ -1347,6 +1381,8 @@ fuente: CENAFT
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:newsroom:20261024:nNRA2fsdpi:0
+resumen:
+  The President of the United States, Donald Trump, stated on Friday that he is "very close" to reaching a trade agreement with Mexico to reduce tariffs, echoing remarks made by Mexican President Claudia Sheinbaum on Tuesday. "We are very close to an agreement with Mexico. It will be a very good agreement, I hope it will be for them as well.
 
 ---
 fecha: 2026-10-23 21:13
@@ -1356,6 +1392,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:newsroom:20261024:nNRA2fribv:0
+resumen:
+  Washington, October 23 (EFE) - U.S. President Donald Trump stated on Friday that he is "very close" to reaching a trade agreement with Mexico to reduce tariffs, following similar comments made on Tuesday by Mexican President Claudia Sheinbaum. EFE (photo)(video)
 
 ---
 fecha: 2026-10-23 20:12
@@ -1403,6 +1441,8 @@ fuente: Reuters
 tono: neutral
 relevancia: 9
 id: lseg:urn:newsml:reuters.com:20261023:nL1N46911G:1
+resumen:
+  Ajusta título, agrega detalles y actualiza mercado al cierre semanal BUENOS AIRES, 23 oct (Reuters) - Los negocios financieros de Argentina mostraban un sesgo selectivo el viernes con las miradas enfocadas básicamente en temas de la política internacional, previo a elecciones presidenciales clave en el vecino Brasil y un nuevo incremento en el precio del petróleo. Las acciones bursátiles fueron las estrellas de la ronda con una fuerte recuperación.
 
 ---
 fecha: 2026-10-23 13:44
@@ -1454,6 +1494,17 @@ resumen:
   CIUDAD DE MÉXICO, 23 oct (Reuters) - La bolsa mexicana avanzaba el viernes, desligada de un débil inicio de jornada de los mercados en Wall Street, mientras los inversionistas seguían de cerca los reportes de la temporada local de resultados corporativos del tercer trimestre. El referencial índice accionario S&P/BMV IPC .MXX subía un 0.20% a 70,031.76 puntos, poco después de la apertura.
 
 ---
+fecha: 2026-10-23 03:12
+emisora: EUA
+titulo: Julio A. Berdegué and Marco L. Ramírez: Mexican agriculture is not collapsing
+fuente: NOTENG
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:newsroom:20261023:nNRA2ffdt3:0
+resumen:
+  It has been claimed that Mexican agriculture is facing a collapse. Some attribute this to NAFTA and the USMCA, as well as to neoliberal policies. Others point to the Fourth Transformation (4T) and the shift in the allocation and use of the federal budget for the agricultural sector.
+
+---
 fecha: 2026-10-22 23:44
 emisora: FED
 titulo: METALES PRECIOSOS-El oro apunta a una fuerte caída semanal ante las expectativas de tasas de la Fed
@@ -1503,6 +1554,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:newsroom:20261022:nNRA2faoz4:0
+resumen:
+  The president stated that the production chains of Mexico, the United States, and Canada maintain an interdependence that is difficult to break. Mexico will defend the productive integration of North America during trade negotiations with the United States, in light of the tariff policies driven by President Donald Trump, affirmed Claudia Sheinbaum Pardo, emphasizing that the industrial chains of the three countries operate through shared processes.
 
 ---
 fecha: 2026-10-22 14:04
@@ -1554,6 +1607,15 @@ resumen:
   Índice general se acelera a 3.62% Subyacente repunta a 3.78% Suben electricidad y transporte aéreo Actualiza con detalles y contexto CIUDAD DE MÉXICO, 22 oct (Reuters) - La inflación general de México se aceleró en la primera quincena de octubre, ligeramente por encima de lo previsto, mientras que el índice subyacente repuntó de forma inesperada, apoyando la perspectiva de que Banco de México mantendría sin cambios su tasa clave de interés durante un periodo prolongado.
 
 ---
+fecha: 2026-10-22 05:35
+emisora: CHILE
+titulo: Banco Central de Chile mantendrá tasa clave de interés en 4,5% en octubre y por dos años: operadores
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261022:nL1N4680KI:1
+
+---
 fecha: 2026-10-22 03:12
 emisora: EUA
 titulo: Mexico negotiates tariff reductions on cars, steel...
@@ -1572,15 +1634,6 @@ relevancia: 9
 id: lseg:urn:newsml:reuters.com:20261022:nL6N4680MB:1
 resumen:
   Mexican peso popular part of carry trades thriving with stocks Stocks and carry trades have thrived during global trade war Since it became clear US i/rate would rise peso has slumped USD/MXN 16.8570 Sep 5 reaching 18.7949 Oct 22 This week 55-DMA crosses over 200/100-DMAs - golden cross MXN plunge suggests other components carry trades exposed ZAR, HUF, BRL may drop while JPY, CHF rally (Jeremy Boulton is a Reuters market analyst.
-
----
-fecha: 2026-10-21 20:13
-emisora: BANXICO
-titulo: América Móvil Boosts BMV Above 70,000 Points; Peso Falls to 18.68 per Dollar
-fuente: NOTENG
-tono: negativa
-relevancia: 7
-id: lseg:urn:newsml:newsroom:20261022:nNRA2f2e59:0
 
 ---
 fecha: 2026-10-21 17:23
@@ -1665,33 +1718,6 @@ relevancia: 9
 id: lseg:urn:link:webnews:20261021:nNRA2evbzh:0
 
 ---
-fecha: 2026-10-21 07:30
-emisora: EUA
-titulo: Integrated U.S.-Mexico Avocado Supply Chain Fuels Economic Growth, Generating $7.1 Billion in U.S. Output
-fuente: PR Newswire
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261021:nPn4DsB04a:1
-
----
-fecha: 2026-10-21 03:11
-emisora: EUA
-titulo: Mexico and the United States have yet to reach a trade agreement despite acknowledging progress, as Sheinbaum seeks to reduce tariffs on key sector...
-fuente: NOTENG
-tono: negativa
-relevancia: 8
-id: lseg:urn:newsml:newsroom:20261021:nNRA2er7lo:0
-
----
-fecha: 2026-10-21 02:23
-emisora: CHILE
-titulo: LMEWEEK-Chile plans five new lithium tenders in push to double output
-fuente: Reuters
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261021:nL8N4661Y7:5
-
----
 fecha: 2026-10-20 22:13
 emisora: BANXICO
 titulo: Grupo México seeks financial flexibility; declares dividend only in shares
@@ -1750,13 +1776,22 @@ resumen:
   Actualiza con detalles CIUDAD DE MÉXICO, 20 oct (Reuters) - La mayor compañía de telecomunicaciones de América Latina, América Móvil AMXB.MX, informó el martes un aumento del 7% en su beneficio neto del tercer trimestre, impulsado por mayores ingresos de los servicios móviles y el crecimiento de suscriptores pospago en Brasil. A pesar del mejor desempeño en comparación con el año pasado, los resultados no alcanzaron las previsiones de los analistas encuestados por LSEG.
 
 ---
-fecha: 2026-10-20 16:33
-emisora: EUA
-titulo: USDA plans to resume imports of Mexican cattle at more ports of entry
+fecha: 2026-10-20 15:36
+emisora: COLOMBIA
+titulo: ACTUALIZA 3-Congreso de Colombia aprueba presupuesto de gastos para 2027 por 634,9 billones de pesos
+fuente: Reuters
+tono: positiva
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261020:nL1N46608T:4
+
+---
+fecha: 2026-10-20 14:35
+emisora: ARGENTINA
+titulo: Argentina canjea títulos por 3.896 mln dlr: Tesoro
 fuente: Reuters
 tono: neutral
-relevancia: 9
-id: lseg:urn:newsml:reuters.com:20261020:nL1N46615I:3
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261020:nL1N4660YU:1
 
 ---
 fecha: 2026-10-20 14:32
@@ -1892,6 +1927,24 @@ relevancia: 8
 id: lseg:urn:newsml:newsroom:20261019:nNRA2dz705:0
 
 ---
+fecha: 2026-10-19 14:03
+emisora: ARGENTINA
+titulo: ACTUALIZA 2-Plaza cambiaria argentina se mantiene controlada con seguimiento de banco central
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261019:nL1N4650QO:2
+
+---
+fecha: 2026-10-19 13:25
+emisora: COLOMBIA
+titulo: Actividad económica de Colombia se contrae en agosto por primera vez en 16 meses
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261019:nL6N46516M:1
+
+---
 fecha: 2026-10-19 13:13
 emisora: EUA
 titulo: Mexico's New Tariff Play: Balancing SKD Assembly and Content
@@ -1901,6 +1954,15 @@ relevancia: 8
 id: lseg:urn:newsml:newsroom:20261019:nNRA2dyi8h:0
 
 ---
+fecha: 2026-10-19 13:03
+emisora: ARGENTINA
+titulo: Balanza comercial de Argentina anota superávit de 2.976 mln dlr en septiembre: INDEC
+fuente: Reuters
+tono: positiva
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261019:nAQN2MOYPI:1
+
+---
 fecha: 2026-10-19 10:11
 emisora: MERCADO
 titulo: MERCADOS EMERGENTES-Las divisas latinoamericanas suben, con la atención puesta en las elecciones de Brasil
@@ -1908,6 +1970,8 @@ fuente: Reuters
 tono: positiva
 relevancia: 13
 id: lseg:urn:newsml:reuters.com:20261019:nL8N4651JB:1
+resumen:
+  El real brasileño se mantiene estable mientras se ajustan los resultados de la segunda vuelta El aumento de las tasas de interés en Colombia podría no frenar la inflación, según un responsable del banco central Indonesia excluirá de los índices las acciones con una alta concentración de la propiedad Hungría reducirá el déficit por debajo del 5 % del PIB en el primer plan presupuestario de Magyar Por Sudeshna Ghoshal y Johann M Cherian 19 oct (Reuters) - La mayoría de las divisas latinoamericanas subieron…
 
 ---
 fecha: 2026-10-19 09:24
@@ -1930,13 +1994,13 @@ relevancia: 9
 id: lseg:urn:newsml:reuters.com:20261019:nL6N4650Q5:1
 
 ---
-fecha: 2026-10-18 23:21
-emisora: PETROLEO
-titulo: PETRÓLEO-El crudo cae ante posible aumento de oferta tras levantamiento de sanciones a Rusia
+fecha: 2026-10-19 04:00
+emisora: CHILE
+titulo: Brazil's airlines fear tax rise impact as election nears
 fuente: Reuters
-tono: negativa
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261019:nL6N4650BE:1
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261019:nL1N45V0FW:3
 
 ---
 fecha: 2026-10-18 23:01
@@ -1948,39 +2012,6 @@ relevancia: 10
 id: lseg:urn:newsml:reuters.com:20261019:nL1N46502T:2
 resumen:
   Nikkei extends decline on tech woes, S&P futures bounce Oil retreats after Trump waives some Russian sanctions Euro eases as French riots add to political worries China GDP rises 4.5% y/y, retail sales beat forecast Adds Meta outlook, Indonesia stocks By Wayne Cole SYDNEY, Oct 19 (Reuters) - Asian share markets mostly slipped on Monday as unease over AI's enormous funding needs undermined confidence ahead of a week packed with earnings, while Chinese economic data pipped forecasts in a positive for world growth.
-
----
-fecha: 2026-10-18 21:09
-emisora: FED
-titulo: PRECIOUS-Gold edges higher on softer oil; Fed rate outlook in focus
-fuente: Reuters
-tono: positiva
-relevancia: 6
-id: lseg:urn:newsml:reuters.com:20261019:nL1N46501U:3
-resumen:
-  Oil tumbles on Trump's Russia sanctions waiver FOMC interest-rate decision meeting next week Traders price in only a 16% chance of a Fed rate hike this month Adds details, context and updates prices By Sukanya Mitra Oct 19 (Reuters) - Gold prices edged higher on Monday as softer oil prices offered support, while investors assessed the chances of a Federal Reserve interest rate hike later this year and looked for fresh signals on the US central bank's policy trajectory.
-
----
-fecha: 2026-10-18 20:32
-emisora: MERCADO
-titulo: BBVA Mexico supports FEFA in issuing Mexico's first Biodiversity Bond
-fuente: INDBAN
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261019:nNRA2dmkwt:0
-resumen:
-  Key Highlights: * Transaction boosts financing for agri-food sector and biodiversity conservation. * Total demand MXN 6,52 billion, 1.3x oversubscribed. * Biodiversity Bond priced 2 bps inside IPTs, supports sustainable agriculture. Original Press Release: Oct.
-
----
-fecha: 2026-10-18 16:11
-emisora: MERCADO
-titulo: Call for Unemployment Insurance Opens in Mexico City
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261018:nNRA2dl1jy:0
-resumen:
-  The Secretariat of Labor and Employment Promotion will open registration for the Unemployment Insurance. Residents of Mexico City will be able to apply for this financial support on Tuesday, October 20. The program assists individuals who have recently lost their formal employment.
 
 ---
 fecha: 2026-10-18 12:12
@@ -2012,6 +2043,8 @@ fuente: NOTENG
 tono: positiva
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261018:nNRA2die6m:0
+resumen:
+  MEXICO.- On Sunday, October 18, 2026, the U.S. dollar is trading at around 18.49 Mexican pesos, according to data from Investing.com. Since it is a non-business day for banks, the foreign exchange market is using the closing levels from the previous week as a reference, while the platform open.er-api.com reports a reference exchange rate of 18.47 pesos per dollar.
 
 ---
 fecha: 2026-10-18 08:42
@@ -2021,6 +2054,8 @@ fuente: NEWBTS
 tono: neutral
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261018:nNRA2di5gz:0
+resumen:
+  NEWS BITES - PEOPLE IN BUSINESS Grupo Aeroportuario del Pacifico SAB de CV (BMV:GAP) has drawn investor attention under CEO Raul Revuelta Musalem's leadership after posting a month-to-date gain in its share price. Grupo Aeroportuario del Pacifico SAB de CV under Raul Revuelta Musalem, ranks in the third quartile of BuySellSignals performers for the month-to-date, with a percentile ranking of 43.3 among 139 companies listed on the Mexico Stock Exchange.
 
 ---
 fecha: 2026-10-18 00:12
@@ -2030,6 +2065,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261018:nNRA2de1jk:0
+resumen:
+  Mexico City, October 17 (EFE) - The Government of Mexico dismissed the presence of foot-and-mouth disease in Sonora, in the northwest of the country, on Saturday, while state authorities announced that exports to the United States will resume on Tuesday after being suspended as a precautionary measure.
 
 ---
 fecha: 2026-10-17 23:12
@@ -2039,6 +2076,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:newsroom:20261018:nNRA2ddkpt:0
+resumen:
+  The President of the United States, Donald Trump, claimed that Mexico has "paid many times" for the cost of the border wall constructed during his two terms, asserting that tariffs imposed by Washington covered the expenses of the infrastructure. "Mexico did pay for that wall, to be clear," Trump stated during a campaign rally held in Highland Heights, Kentucky, where he defended his trade and immigration policies once again.
 
 ---
 fecha: 2026-10-17 23:12
@@ -2096,15 +2135,6 @@ resumen:
   U.S. President Donald Trump claimed that Mexico has "paid many times" for the cost of the border wall built during his two terms, thanks to tariffs that Washington has imposed on its southern neighbor. "Mexico did pay for that wall - just to be clear - because I imposed massive tariffs and charged them costs they had never paid in their entire history," the president stated during a campaign rally held on Saturday in Highland Heights, Kentucky.
 
 ---
-fecha: 2026-10-17 17:12
-emisora: MERCADO
-titulo: Dollar exchange rate in Mexico today, Saturday, October 17
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261017:nNRA2dbols:0
-
----
 fecha: 2026-10-17 16:13
 emisora: EUA
 titulo: Trump claims that Mexico has paid for the border wall "many times" through tariffs
@@ -2112,6 +2142,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:newsroom:20261017:nNRA2dbhe7:0
+resumen:
+  Los Angeles (U.S.), October 17 (EFE) - U.S. President Donald Trump asserted on Saturday that Mexico has "paid many times" for the construction of the border wall during his two terms, thanks to the tariffs that Washington has imposed on the neighboring country.
 
 ---
 fecha: 2026-10-17 15:12
@@ -2150,6 +2182,24 @@ relevancia: 6
 id: lseg:urn:newsml:newsroom:20261017:nNRA2d9g59:0
 
 ---
+fecha: 2026-10-17 08:57
+emisora: MERCADO
+titulo: Grupo Mexico (BMV:GMEXICO) led by German Larrea Mota Velasco delivers 62% gain Saturday October 17, 2026
+fuente: NEWBTS
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261017:nNRA2d8r1t:0
+
+---
+fecha: 2026-10-16 23:12
+emisora: PETROLEO
+titulo: Mexican Blend surpasses $99 as oil breaks the $100 barrier amid tensions in the Middle East
+fuente: NOTENG
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:newsroom:20261017:nNRA2d2v5z:0
+
+---
 fecha: 2026-10-16 22:41
 emisora: MERCADO
 titulo: Tariffs imposed by MEXICO have not stopped the growth of the TRADE DEFICIT with CHINA
@@ -2157,6 +2207,8 @@ fuente: CENAFT
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:newsroom:20261017:nNRA2d2ipg:0
+resumen:
+  The tariffs imposed by Mexico have not stopped the growth of the trade deficit with China, which increased to an annual rate of 4.8% from January to August 2026, reaching $82.721 billion, according to data from Inegi. If this trend continues for the remainder of 2026, Mexico is on track to record a third consecutive record high in both imports from China and the trade deficit with this country.
 
 ---
 fecha: 2026-10-16 20:12
@@ -2166,6 +2218,8 @@ fuente: NOTENG
 tono: negativa
 relevancia: 8
 id: lseg:urn:newsml:newsroom:20261017:nNRA2d18wg:0
+resumen:
+  Due to the protectionist stance in foreign trade taken by the United States government, Mexico has faced tariffs; however, currently, around 85% of national exports to the United States do not encounter these duties, highlighted Marcelo Ebrard, head of the Ministry of Economy (SE), during his appearance before the Chamber of Deputies regarding the review of the second government report.
 
 ---
 fecha: 2026-10-16 19:13
@@ -2268,6 +2322,15 @@ relevancia: 8
 id: lseg:urn:newsml:newsroom:20261016:nNRA2cpfen:0
 
 ---
+fecha: 2026-10-16 01:12
+emisora: EUA
+titulo: Lutnick halts tariff agreement between Mexico and the U.S.
+fuente: NOTENG
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261016:nNRA2clt8p:0
+
+---
 fecha: 2026-10-15 23:46
 emisora: EUA
 titulo: Las negociaciones para un acuerdo arancelario entre EEUU y México se estancan, según el WSJ
@@ -2279,17 +2342,6 @@ resumen:
   16 oct (Reuters) - Las negociaciones para alcanzar un acuerdo arancelario entre Estados Unidos y México se han estancado tras la oposición del secretario de Comercio estadounidense, Howard Lutnick, informó el jueves el Wall Street Journal, que citó a personas familiarizadas con las conversaciones.
 
 ---
-fecha: 2026-10-15 23:12
-emisora: MERCADO
-titulo: Fracking does not guarantee natural gas sovereignty against the U.S.: Mexico's Climate Initiative
-fuente: NOTENG
-tono: positiva
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261016:nNRA2ck43o:0
-resumen:
-  The exploitation of natural gas through hydraulic fracturing, known as fracking, will not resolve Mexico's dependency on imports from the United States, as even in an optimistic scenario, its production would only replace a maximum of one-quarter of the fuel that the country purchases abroad, warned Adrián Fernández, executive director of the Mexican Climate Initiative (ICM).
-
----
 fecha: 2026-10-15 22:41
 emisora: MERCADO
 titulo: Trade deficit with China grows by 4.8% despite Mexico's tariffs
@@ -2299,42 +2351,6 @@ relevancia: 8
 id: lseg:urn:newsml:newsroom:20261016:nNRA2cjqk4:0
 resumen:
   The tariffs imposed by Mexico have not prevented the growth of the trade deficit in products with China, which increased at an annual rate of 4.8% from January to August 2026, reaching $82.721 billion, according to data from Inegi. On one hand, Mexican imports of Chinese products totaled $92.655 billion in the first eight months of the current year, an increase of 8.7% compared to the same period in 2025.
-
----
-fecha: 2026-10-15 21:41
-emisora: MERCADO
-titulo: In Mexico, there will be no food security if women are not included in decision-making processes
-fuente: CENAFT
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261016:nNRA2cj28y:0
-
----
-fecha: 2026-10-15 21:41
-emisora: BANXICO
-titulo: Amid criticism of Banxico's cuts, Sheinbaum backed the central bank
-fuente: CENAFT
-tono: negativa
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261016:nNRA2cj1as:0
-
----
-fecha: 2026-10-15 21:07
-emisora: MERCADO
-titulo: Betterware de Mexico S.A.B. de C.V.'s (NYSE:BWMX $16.31) Down 9.84% in Quarter: Key Risk Factors and Vulnerabilities
-fuente: NEWBTS
-tono: negativa
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261016:nNRA2cinkx:0
-
----
-fecha: 2026-10-15 19:12
-emisora: MERCADO
-titulo: Tariffs will limit Mexico's automotive growth despite negotiations with the U.S.: HSBC
-fuente: NOTENG
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:newsroom:20261016:nNRA2chip8:0
 
 ---
 fecha: 2026-10-15 18:04
@@ -2359,15 +2375,6 @@ resumen:
   Oct 15 (Reuters) - Progress toward a United States-Mexico tariff deal has stalled after opposition from Commerce Secretary Howard Lutnick, the Wall Street Journal reported on Thursday, citing people familiar with the talks. Reuters could not immediately verify the report. (Reporting by Mrinmay Dey in Mexico City; Editing by Christian Schmollinger) (( mrinmay.dey@tr.com ; +91 7362903319; ))
 
 ---
-fecha: 2026-10-15 17:13
-emisora: BANXICO
-titulo: Mexican Stock Exchange closes with gains; Grupo Carso's progress stands out
-fuente: NOTENG
-tono: positiva
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261015:nNRA2cgdj2:0
-
----
 fecha: 2026-10-15 16:32
 emisora: EUA
 titulo: Rotting meat smell sparks protest at Mexico's screwworm sterile-fly plant
@@ -2377,12 +2384,3 @@ relevancia: 9
 id: lseg:urn:newsml:reuters.com:20261015:nL6N4611EC:1
 resumen:
   Residents describe nauseating odor permeating from sterile fly plant Odor has spread beyond the facility, reaching nearby schools and disrupting classes Residents want federal authorities to relocate the plant away from the town center By Jose Torres and Cassandra Garrison METAPA DE DOMINGUEZ, Mexico, Oct 15 (Reuters) - A rotten smell hanging over a town in Mexico's southern Chiapas state drove residents into the streets on Thursday to demand the removal of a sterile-fly plant at the center of the US-Mexican fight…
-
----
-fecha: 2026-10-15 16:14
-emisora: BANXICO
-titulo: Dollar Price in Mexico Today, Thursday, October 15, 2026: What is the Closing Exchange Rate for USD to MXN?
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261015:nNRA2cftzy:0
