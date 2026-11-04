@@ -1290,6 +1290,8 @@ td{padding:11px 12px} th,thead th{padding:11px 12px}
 .hv em{display:block;margin-top:6px;font-style:normal;font-size:.6563rem;color:var(--txt-4)}
 
 .hp-fondo{position:fixed;inset:0;z-index:190;display:grid;place-items:center;padding:20px;background:rgba(2,8,20,0);transition:background .22s var(--crit),backdrop-filter .22s var(--crit)}
+.hp-fondo[hidden]{display:none}
+.hp-fondo:not(.on){pointer-events:none}
 .hp-fondo.on{background:rgba(2,8,20,.58);backdrop-filter:blur(8px) saturate(115%);-webkit-backdrop-filter:blur(8px) saturate(115%)}
 .hp{width:min(760px,100%);max-height:min(88vh,860px);display:flex;flex-direction:column;border-radius:20px;background:#0A1734;box-shadow:var(--sh-3);overflow:hidden;position:relative;
   opacity:0;transform:scale(.62);transition:opacity .16s var(--crit),transform .38s var(--pop)}
@@ -5270,7 +5272,7 @@ const Historia=(()=>{
     actual=f; pintar(); fondo.hidden=false;
     const r=panel.getBoundingClientRect();
     panel.style.transformOrigin=o?`${o.x-r.left}px ${o.y-r.top}px`:'50% 50%';
-    requestAnimationFrame(()=>{ fondo.classList.add('on'); panel.querySelector('[data-hp="cerrar"]')?.focus({preventScroll:true}); });
+    requestAnimationFrame(()=>{ if(!actual) return; fondo.classList.add('on'); panel.querySelector('[data-hp="cerrar"]')?.focus({preventScroll:true}); });
     document.addEventListener('keydown',teclas,true);
   }
   function cerrar(){
