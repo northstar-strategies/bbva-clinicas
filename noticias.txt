@@ -145,6 +145,30 @@ resumen:
   turistas provenientes de Estados Unidos, principal mercado emisor.
 
 ---
+fecha: 2026-11-04 07:45
+emisora: PETROLEO
+titulo: Oil Markets During Election
+fuente: ANGBEA
+tono: neutral
+impacto: alto
+id: lseg:urn:link:webnews:20261104:nNRA2ky4n6:0
+
+---
+fecha: 2026-11-04 07:45
+emisora: PETROLEO
+titulo: RPT-UPDATE 1-US crude, gasoline inventories likely rose last week, distillates seen down
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nL6N46K17Q:1
+resumen:
+  Repeats November 3 story on November 4 with no changes Nov 3 (Reuters) - US crude oil
+  and gasoline inventories were expected to have risen last week, while distillate
+  stockpiles likely declined, an extended Reuters poll showed on Tuesday. Eight analysts
+  polled by Reuters estimated, on average, that crude inventories rose by about 880,000
+  barrels in the week ended October 30.
+
+---
 fecha: 2026-11-04 07:42
 emisora: GMEXICOB
 titulo: Update: Southern Copper Corporation (NYSE:SCCO), stock sees decline previous trading day
@@ -883,6 +907,12 @@ fuente: Reuters
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nL2N46L0JB:1
+resumen:
+  SANTIAGO, 4 nov (Reuters) - Los consejeros del Banco Central de Chile estuvieron de
+  acuerdo en la última reunión de política monetaria, de fines de octubre, en que era
+  plausible evaluar tanto mantener la tasa en 4,5% como aumentarla en 25 puntos base,
+  aunque primó la primera opción, según las minutas del encuentro publicadas el
+  miércoles.
 
 ---
 fecha: 2026-11-04 05:51
@@ -892,6 +922,13 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nS0N45D04F:1
+resumen:
+  SANTIAGO, Nov 4 (Reuters) - Policymakers at Chile's central bank considered keeping the
+  rate unchanged or increasing it by 25 basis points as "plausible" options at its last
+  meeting, minutes showed on Wednesday. The bank's board unanimously decided to hold
+  borrowing costs at 4.5% at the meeting last week. (Reporting by Aida Pelaez-Fernandez
+  and Natalia Ramos; Editing by Andrew Heavens) ((
+  Aida.Pelaez-Fernandez@thomsonreuters.com ;))
 
 ---
 fecha: 2026-11-04 05:48
@@ -901,6 +938,8 @@ fuente: GLFILE
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nGLF4ZjmtG:2
+resumen:
+  https://filings.ica.int.thomsonreuters.com/filings.viewer/Download.asp...
 
 ---
 fecha: 2026-11-04 05:41
@@ -910,6 +949,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nL2N46L0JB:2
+resumen:
+  SANTIAGO, 4 nov (Reuters) - Los consejeros del Banco Central de Chile estuvieron de
+  acuerdo en la última reunión de política monetaria, de fines de octubre, en que era
+  plausible evaluar tanto mantener la tasa en 4,5% como aumentarla en 25 puntos base,
+  aunque primó la primera opción, según las minutas del encuentro publicadas el
+  miércoles.
 
 ---
 fecha: 2026-11-04 05:12
@@ -919,6 +964,13 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kvgyv:0
+resumen:
+  Madrid, November 4 (EFE) - Workers from Colombia and Venezuela lead the registrations
+  in the Spanish Social Security related to the extraordinary regularization process for
+  immigrants that began in April. According to data collected until the end of October,
+  the number of employment registrations for foreigners reached 490,586. Of this total,
+  27.6% were Colombians and 15.7% were Venezuelans, as detailed by the Social Security
+  office on Thursday.
 
 ---
 fecha: 2026-11-04 05:11
@@ -928,6 +980,13 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kvijc:0
+resumen:
+  A little more than a decade ago, Donald Trump began his journey to the White House with
+  a racist warning that Mexico was sending to the United States "rapists," "criminals,"
+  and "the worst" of its people. Eleven years later, the American political landscape
+  sent him a very different message: a historic defeat driven largely by the Latino vote
+  and the rise of politicians of Mexican descent and other minority groups that
+  reconfigured the balance of power in Washington.
 
 ---
 fecha: 2026-11-04 04:35
@@ -951,6 +1010,12 @@ fuente: USOFFI
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261104:nNRA2ku9t4:0
+resumen:
+  Washington: Vesta Real Estate Corporation, S.A.B. de C.V. [ VTMX ] has filed a Form 4
+  with The Securities and Exchange Commission on November 03, 2026. PUCHEU ROMERO
+  ALEJANDRO, CHIEF LEGAL COUNSEL disposed of 52,350 shares of Vesta Real Estate
+  Corporation, S.A.B. de C.V. [ VTMX ] at the rate of $3.64 per share on November 03,
+  2026. Note: EXERCISE PRICE REPRESENTS A PER ORDINARY SHARE SALE PRICE OF MXN$68.51
 
 ---
 fecha: 2026-11-04 04:15
@@ -960,6 +1025,11 @@ fuente: USOFFI
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2ku4tj:0
+resumen:
+  Washington: Office of the Federal Register has issued the following notice: AGENCY:
+  Enforcement and Compliance, International Trade Administration, Department of Commerce.
+  SUMMARY: On October 19, 2026, the North American Free Trade Agreement (NAFTA)
+  Secretariat issued a Notice of Final Panel Action. The U.S.
 
 ---
 fecha: 2026-11-04 03:25
@@ -984,6 +1054,11 @@ fuente: STOOBS
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kt5s9:0
+resumen:
+  Nov 03, 2026 Corporacion Inmobiliaria Vesta, S.A.B. de C.V. Sponsored ADR (NYSE:VTMX -
+  Get Free Report) insider Romero Pucheu sold 57,650 shares of the stock in a transaction
+  that occurred on Friday, October 30th. The stock was sold at an average price of $3.63,
+  for a total value of $209,269.50.
 
 ---
 fecha: 2026-11-04 03:12
@@ -993,6 +1068,12 @@ fuente: NOTENG
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kt0mp:0
+resumen:
+  María Chivite, Socialist President of Navarra , was in Argentina a few months before
+  the general elections of 2023 to meet with Lorena Suárez , the former leader of the
+  PSOE in the South American country from 2022 to 2024, during which she promoted the
+  Grandchildren's Law that facilitated the naturalization of foreigners by providing
+  crucial information and advice.
 
 ---
 fecha: 2026-11-04 02:22
@@ -1268,6 +1349,13 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kp2y8:0
+resumen:
+  The Colombian foreign exchange market begins operations on Tuesday, November 3, marked
+  by the official Representative Market Rate set at $3,182.99. The trading session opens
+  following the holiday on Monday, leaving four working days in which the exchange rate
+  of the US dollar will be influenced by recent monetary policy decisions at both the
+  local and international levels. During the last week of October, the dollar accumulated
+  an increase of $24.56.
 
 ---
 fecha: 2026-11-03 23:07
@@ -1319,6 +1407,11 @@ fuente: GLORDP
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261104:nNRA2kopfq:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Kimberly-Clark de
+  Mexico, S.A.B de C.V. (OTC:KCDMY) last traded at $10.07 for a year to date return of
+  -1.9%. Kimberly-Clark de Mexico, S.A.B de C.V., has tumbled $1.39 (or 12.1%) in the
+  past 3 months to close at $10.07 today.
 
 ---
 fecha: 2026-11-03 22:43
@@ -1359,6 +1452,11 @@ fuente: GLORDP
 tono: negativa
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261104:nNRA2koqhz:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Wal-Mart De Mexico
+  S.A.B. de C.V. (OTCQX:WMMVY) last traded at $26.61 for a year to date return of -14.6%.
+  Wal-Mart De Mexico S.A.B. de C.V., has fallen $2.21 (or 7.7%) in the past 3 months to
+  close at $26.61 today.
 
 ---
 fecha: 2026-11-03 22:43
@@ -1368,6 +1466,11 @@ fuente: GLORDP
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261104:nNRA2koq7h:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Corporacion
+  Inmobiliaria Vesta, S.A.B. de C.V. (NYSE:VTMX) last traded at $36.05 for a year to date
+  return of 20.4%. Corporacion Inmobiliaria Vesta, S.A.B. de C.V., has lifted $1.87 (or
+  5.5%) in the past 3 months to close at $36.05 today.
 
 ---
 fecha: 2026-11-03 22:41
@@ -2061,21 +2164,3 @@ resumen:
   away from Donald Trump, it does not guarantee relief for Mexico. On the contrary, the
   Republican could tighten his protectionist policies by 2027 and keep the future of the
   United States-Mexico-Canada Agreement (USMCA) uncertain, analysts have agreed.
-
----
-fecha: 2026-11-03 16:07
-emisora: PETROLEO
-titulo: API: Crude -5.267M, Cushing +0.51M, Gasoline +1.427M, Distillates -1.19M
-fuente: FORFAC
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261103:nNRA2kkr73:0
-
----
-fecha: 2026-11-03 16:03
-emisora: BRASIL
-titulo: Brazil economists raise inflation, rate forecasts after Lula reelection
-fuente: YAHNEX
-tono: neutral
-impacto: alto
-id: lseg:urn:link:webnews:20261103:nNRA2kkp51:0
