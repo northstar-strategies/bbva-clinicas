@@ -145,6 +145,585 @@ resumen:
   turistas provenientes de Estados Unidos, principal mercado emisor.
 
 ---
+fecha: 2026-11-04 18:00
+emisora: FED
+titulo: DIARY-Top Economic Events to December 30
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261105:nL3N46L1TZ:1
+resumen:
+  Nov 5 (Reuters) - For other diaries, please see: Top Economic Events M/DIARY Emerging
+  Markets Economic Events EMRG/DIARY Government Debt Auctions D/DIARY Political and
+  General News POL/DIARY U.S. Federal Reserve FED/DIARY Today in Washington WASH/DIARY
+  ------------------------------------------------------------- This Diary is filed
+  daily.
+
+---
+fecha: 2026-11-04 18:00
+emisora: FED
+titulo: DIARY-Emerging Markets Economic Events to December 30
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261105:nL3N46L1TY:1
+resumen:
+  Nov 5 (Reuters) - For other diaries, please see: Top Economic Events M/DIARY Emerging
+  Markets Economic Events EMRG/DIARY Government Debt Auctions D/DIARY Political and
+  General News POL/DIARY US Federal Reserve FED/DIARY Today in Washington WASH/DIARY
+  ---------------------------------------------------------------- This diary is filed
+  daily. ** Indicates new events
+  ---------------------------------------------------------------- THURSDAY, NOVEMBER 05
+  BANGKOK -Bank of Thailand Governor Vitai Ratanakorn speaks at a…
+
+---
+fecha: 2026-11-04 18:00
+emisora: PETROLEO
+titulo: BUZZ-USD/THB lower, tumble in oil prices weigh
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261105:nL2N46M000:1
+resumen:
+  USD/THB opens lower, fall in oil prices boost risk sentiment Oil tumbles as investors
+  eye possible end to Iran war after elections Brent crude -8.67% to $94.62/bbl, WTI last
+  at $88.26/bbl USD/THB traded 33.59-72 range overnight, closed at 33.61 in NY Supports
+  at 33.50, 33.40 intraday; resistance at 33.70, 33.80 DXY last at 101.47, dipped to
+  101.21 low in NY UST yields down, 10yr last t 4.89%, 30yr at 5.27% Wall Street stocks
+  jump following Democratic victory For more click on FXBUZ (Catherine Tan is a Reuters…
+
+---
+fecha: 2026-11-04 17:59
+emisora: PETROLEO
+titulo: BUZZ-Asia Day Ahead-Sliding oil, surging stocks, soft dollar lead
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nL2N46L1RF:1
+resumen:
+  Nov 5 (Reuters) - Investors embraced risk on Wednesday as a resounding victory for the
+  Democrats in the US midterm electionsraised hopes of an end to the US-Iran conflict,
+  driving an 8% slump in oil prices. While Asian markets are likely to extend the
+  positive trend on Thursday, tech-heavy indexes may lag amid concerns over tougher
+  oversight of AI sector growth and data centres. Australia's September trade data and
+  Indonesia's Q3 GDP dominate a busy regional calendar.
+
+---
+fecha: 2026-11-04 17:55
+emisora: PETROLEO
+titulo: Sugar Prices Pressured by Weakness in Crude Oil
+fuente: YAHNEX
+tono: negativa
+impacto: bajo
+id: lseg:urn:link:webnews:20261104:nNRA2l5rqa:0
+
+---
+fecha: 2026-11-04 17:53
+emisora: MERCADO
+titulo: Mexican Peso Climbs On Democratic Sweep Ahead Of Banxico Call
+fuente: TALKMA
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5q02:0
+resumen:
+  Nov 04, 2026 Source The Mexican Peso rallies against the US Dollar following the
+  Democratic blue sweep in the US midterm elections, with Democrats set to control the US
+  Senate and the House of Representatives starting in January 2027. Despite this, the
+  lack of an agreement between the US and Iran could derail the emerging market currency
+  and boost the Greenback. The USD/MXN trades at 18.59, down by over 1.29%.
+
+---
+fecha: 2026-11-04 17:52
+emisora: COLOMBIA
+titulo: Colombia central bank cuts 2026 growth view, raises inflation outlook
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nS0N443003:1
+resumen:
+  BOGOTA, Nov 4 (Reuters) - The technical team of Colombia's central bank on Wednesday
+  cut its 2026 economic growth estimates to 2% from the previous 2.5%, and raised its
+  inflation estimate for the year to 7.1% from the prior 6.9% estimate. For 2027, the
+  bank lowered its GDP growth estimate to 1.7% from the previous projection of 1.9%, and
+  raised its inflation estimate to 4.8% from the earlier outlook of 4.3%.
+
+---
+fecha: 2026-11-04 17:50
+emisora: MERCADO
+titulo: HR Ratings de México SA de CV - Comunicado Molymet Programa Dual 2026
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDL4MtD2y:1
+
+---
+fecha: 2026-11-04 17:49
+emisora: MERCADO
+titulo: HR Ratings de México SA de CV - Comunicado Molymet Emisiones
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDLbP52Wl:1
+
+---
+fecha: 2026-11-04 17:49
+emisora: MERCADO
+titulo: Fitch México SA de CV - Ratifica Calificación de Axtel en ‘A(mex)’
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDL88hwTB:1
+resumen:
+   Sign In | Register RATING ACTION COMMENTARY Fitch Ratifica Calificación de Axtel en
+  'A(mex)'; Perspectiva Se Revisa a Negativa desde Estable Mexico Wed 04 Nov, 2026 - 2:03
+  PM ET Fitch Ratings - Monterrey - 04 Nov 2026: Fitch Ratings afirmó las calificaciones
+  internacionales de riesgo emisor (IDR; issuer default rating) de largo plazo en moneda
+  extranjera y local de Axtel, S.A.B. de C.V. (Axtel) en 'BB'.
+
+---
+fecha: 2026-11-04 17:49
+emisora: MERCADO
+titulo: Fitch México SA de CV - Asigna Calificación de ‘AAA(mex)vra’ a un Crédito del Estado
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDL9fLy6H:1
+resumen:
+   Sign In | Register RATING ACTION COMMENTARY Fitch Asigna Calificación de
+  'AAA(mex)vra' a un Crédito del Estado de Campeche Mexico Wed 04 Nov, 2026 - 2:58 PM ET
+  Fitch Ratings - Monterrey - 04 Nov 2026: Fitch Ratings asignó la calificación de
+  'AAA(mex)vra' al crédito BBVA 26 contratado por un monto de hasta MXN1,000 millones por
+  el estado de Campeche con BBVA México, S.A., Institución de Banca Múltiple, Grupo
+  Financiero BBVA México (BBVA México).
+
+---
+fecha: 2026-11-04 17:47
+emisora: PETROLEO
+titulo: Discount on Western Canada Select narrows
+fuente: BOEREP
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261104:nNRA2l5ntr:0
+
+---
+fecha: 2026-11-04 17:47
+emisora: PETROLEO
+titulo: US Cash Products -Chicago gasoline drops as trading rolls over into new cycle
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nL2N46L1JZ:1
+
+---
+fecha: 2026-11-04 17:46
+emisora: BOLSAA
+titulo: BMV - Aviso de Tenedores de BACOMER 130-25
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDL8W32fw:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-04 17:45
+emisora: COLOMBIA
+titulo: Equipo técnico de Banco Central de Colombia ve mayor inflación y menor crecimiento económico este y el próximo año
+fuente: Reuters
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nS0N443002:1
+resumen:
+  BOGOTÁ, 4 nov (Reuters) - El equipo técnico del Banco Central de Colombia revisó al
+  alza su estimación de inflación para 2026 a un 7,1%, desde un 6,9% previo, reveló el
+  miércoles el organismo en su informe trimestral. Para 2027, el equipo técnico, cuyas
+  consideraciones toma en cuenta la junta directiva del banco en sus decisiones de
+  política monetaria, modificó su pronóstico de inflación a un 4,8%, desde un 4,3%.
+
+---
+fecha: 2026-11-04 17:40
+emisora: FED
+titulo: White House sets hearing on Fed's Cook for December 14, NYT says
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nL6N46L1JF:1
+resumen:
+  Nov 4 (Reuters) - The White House has scheduled for December 14 a planned hearing into
+  allegations of mortgage fraud by Federal Reserve Governor Lisa Cook, the New York Times
+  reported on Wednesday, citing an unnamed White House official, in a new phase of
+  President Donald Trump's effort to fire her.
+
+---
+fecha: 2026-11-04 17:39
+emisora: COLOMBIA
+titulo: EQUIPO TÉCNICO DEL BANCO CENTRAL DE COLOMBIA REVISA PRONÓSTICO DE CRECIMIENTO ECONÓMICO PARA 2027 A 1,7% DESDE PREVIO DE 1,9%
+fuente: Reuters
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nS0N443002:7
+resumen:
+  BOGOTÁ, 4 nov (Reuters) - El equipo técnico del Banco Central de Colombia revisó al
+  alza su estimación de inflación para 2026 a un 7,1%, desde un 6,9% previo, reveló el
+  miércoles el organismo en su informe trimestral. Para 2027, el equipo técnico, cuyas
+  consideraciones toma en cuenta la junta directiva del banco en sus decisiones de
+  política monetaria, modificó su pronóstico de inflación a un 4,8%, desde un 4,3%.
+
+---
+fecha: 2026-11-04 17:39
+emisora: COLOMBIA
+titulo: COLOMBIA CENTRAL BANK TECHNICAL TEAM SEES 2027 GDP GROWTH AT 1.7%, FROM PREVIOUS 1.9%
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nS0N443003:7
+resumen:
+  BOGOTA, Nov 4 (Reuters) - The technical team of Colombia's central bank on Wednesday
+  cut its 2026 economic growth estimates to 2% from the previous 2.5%, and raised its
+  inflation estimate for the year to 7.1% from the prior 6.9% estimate. For 2027, the
+  bank lowered its GDP growth estimate to 1.7% from the previous projection of 1.9%, and
+  raised its inflation estimate to 4.8% from the earlier outlook of 4.3%.
+
+---
+fecha: 2026-11-04 17:38
+emisora: BOLSAA
+titulo: BMV - Información Adicional de Avisos de Derechos del SIC
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDL3zp9V9:1
+resumen:
+  Información Adicional de Avisos de Derechos del SIC Ciudad de México, 04/11/2026
+  EMISORA CDEI - CALVERT US LARGE-CAP DIVERSITY, EQUITY AND INCLUSION INDEX ETF ASUNTO
+  Cancelación de aviso de derechos INFORMACIÓN ADICIONAL DE AVISOS DE DERECHOS DEL SIC
+  FOLIO DE REFERENCIA DE EVENTO CORPORATIVO: 282902 MOTIVO DE LA CANCELACION:
+  Cancellation due to a processing error.
+
+---
+fecha: 2026-11-04 17:37
+emisora: BOLSAA
+titulo: BMV - Aviso de Tenedores de BACOMER 58-26
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDL335V8T:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-04 17:37
+emisora: BOLSAA
+titulo: BMV - Aviso de Tenedores de BACOMER 62-26
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDL9pW17T:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-04 17:37
+emisora: BOLSAA
+titulo: BMV - Aviso de Tenedores de BACOMER 85-26
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDL6C7tSw:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. Aviso a Tenedores FECHA: 04/11/2026 BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-04 17:37
+emisora: BRASIL
+titulo: UPDATE 2-Brazil's central bank ends run of rate cuts after Lula election win
+fuente: Reuters
+tono: negativa
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nL6N46L1FT:6
+resumen:
+  Recasts with comment from economists, context and more details from policy statement
+  Central bank keeps benchmark rate on hold Committee votes unanimously for no change
+  Policymakers note inflation and slowdown risks Statement stresses need for caution on
+  next decisions By Marcela Ayres BRASILIA, Nov 4 (Reuters) - Brazil's central bank ended
+  a run of interest rate cuts and kept borrowing costs on hold on Wednesday as it
+  grappled with a worsening inflation outlook following President Luiz Inacio Lula da
+  Silva's…
+
+---
+fecha: 2026-11-04 17:35
+emisora: GMEXICOB
+titulo: Moody's de Mexico SA de CV - Moody’s Local México afirma las calificaciones de OMA
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nNDL9V1QXT:1
+
+---
+fecha: 2026-11-04 17:31
+emisora: FED
+titulo: RPT-ROI-La derrota aplastante de Trump en las elecciones de mitad de mandato pone de relieve el carácter políticamente letal de la inflación: McGeever
+fuente: Reuters
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261104:nL5N46L3NY:1
+resumen:
+  Se reproduce la columna del miércoles para otros suscriptores sin ningún cambio. Las
+  opiniones aquí expresadas son las del autor, columnista de Reuters. Por Jamie McGeever
+  ORLANDO, Florida, 4 nov (Reuters) - La aplastante derrota sufrida por el Partido
+  Republicano del presidente de EEUU, Donald Trump, en las elecciones de mitad de mandato
+  (link) nos recuerda lo políticamente tóxica que es la inflación.
+
+---
+fecha: 2026-11-04 17:30
+emisora: CHILE
+titulo: @ABCPolitics: ABC News’ Sophie Flay reports on what to expect as Democrats win big in the midterm elections and Congress returns to a divided government. https://t.co/FwY1Lz3MBQ https://t.co/Ku5oY5rPga
+fuente: X
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:social:20261104:nTWT3nmnqX:1
+resumen:
+  ABC News’ Sophie Flay reports on what to expect as Democrats win big in the midterm
+  elections and Congress returns to a divided government.
+
+---
+fecha: 2026-11-04 17:30
+emisora: FED
+titulo: RPT-ROI-Trump's midterm trouncing underscores inflation's political poison: McGeever
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261104:nL2N46L0TL:1
+resumen:
+  Repeats Wednesday's column to additional subscribers without any changes. The opinions
+  expressed here are those of the author, a columnist for Reuters. By Jamie McGeever
+  ORLANDO, Florida, Nov 4 (Reuters) - The crushing defeat suffered by US President Donald
+  Trump's Republican Party in the midterm elections is a reminder of just how politically
+  toxic inflation is.
+
+---
+fecha: 2026-11-04 17:24
+emisora: GFNORTEO
+titulo: Banorte propondrá un dividendo extraordinario a raíz de un aumento de capital.
+fuente: NOTFIN
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5hj0:0
+resumen:
+  Grupo Financiero Banorte, el segundo mayor prestamista del país, confirmó que propondrá
+  un pago extraordinario de dividendos a sus accionistas para fin de año, como ha estado
+  evaluando desde el último trimestre. En una reunión programada para el 1 de diciembre,
+  se votará sobre el monto del pago, que aún no se ha definido, pero que elevará el total
+  de pagos del año al 70%.
+
+---
+fecha: 2026-11-04 17:15
+emisora: EUA
+titulo: Meet Xavier Becerra, who becomes California's first Latino governor in over a century, defeats Trump-backed Steve Hilton; know about his political ...
+fuente: ECOCOM
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261104:nNRA2l5egc:0
+
+---
+fecha: 2026-11-04 17:14
+emisora: BRASIL
+titulo: The Central Bank of Brazil keeps interest rates at 13.75%
+fuente: NOTENG
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5d1y:0
+resumen:
+  São Paulo, November 4 (EFE) - The Central Bank of Brazil decided on Wednesday to halt
+  its policy of interest rate cuts, maintaining the official rate at 13.75% per annum due
+  to increased inflationary pressures and geopolitical tensions. This marks the first
+  time the central bank has opted to keep interest rates unchanged after five consecutive
+  cuts, which began last March when the rate was at 15% per annum. EFE
+
+---
+fecha: 2026-11-04 17:14
+emisora: BRASIL
+titulo: Copom ends cycle of rate cuts and maintains Selic at 13.75%
+fuente: NOTENG
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5ee8:0
+resumen:
+  The Monetary Policy Committee (Copom) of the Central Bank decided on Wednesday (4) to
+  halt the cycle of interest rate cuts and maintain the Selic, the basic interest rate of
+  the economy, at 13.75% per year. This marks the first meeting following President Luiz
+  Inácio Lula da Silva's (PT) re-election. The decision was unanimous.
+
+---
+fecha: 2026-11-04 17:13
+emisora: AMXB
+titulo: Telesites seeks to merge its towers in Mexico with those of Sitios Latam
+fuente: NOTENG
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5df0:0
+resumen:
+  Operadora de Sites Mexicanos, a telecommunications infrastructure company spun off from
+  América Móvil better known as Telesites, will propose to its shareholders a merger with
+  Sitios Latinoamérica (Sitios Latam), another infrastructure operator in southern Mexico
+  that also emerged from the asset separation of the telecommunications giant founded by
+  Carlos Slim.
+
+---
+fecha: 2026-11-04 17:13
+emisora: AMXB
+titulo: Telcel workers form union to protect against layoffs and job changes
+fuente: NOTENG
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5ed0:0
+resumen:
+  Telcel workers have formed the Mobile and Data Workers Union to confront layoffs and
+  labor changes currently being implemented by the company. The movement seeks to
+  establish its own representation in relation to the company's existing trade union.
+
+---
+fecha: 2026-11-04 17:13
+emisora: GFNORTEO
+titulo: Banorte to Propose Extraordinary Dividend in Light of Capital Increase
+fuente: NOTENG
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5df1:0
+resumen:
+  Grupo Financiero Banorte, the second-largest lender in the country, confirmed that it
+  will propose an extraordinary dividend payment to its shareholders for the year's end,
+  as it has been evaluating since last quarter. In a meeting scheduled for December 1, a
+  vote will be held on the payment amount, which has not yet been defined, but it will
+  raise the total payout for the entire year to 70%, the company announced during its
+  third-quarter earnings call.
+
+---
+fecha: 2026-11-04 17:13
+emisora: EUA
+titulo: Mexico must continue building agreements with the US, says Manolo Jiménez on the election
+fuente: NOTENG
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5dd7:0
+resumen:
+  Saltillo, Coahuila - Regarding the elections in the United States , including the
+  gubernatorial election in Texas, which borders Coahuila, Governor Manolo Jiménez
+  Salinas stated that regardless of the outcome, Mexico must continue building agreements
+  with the government of the neighboring country .
+
+---
+fecha: 2026-11-04 17:13
+emisora: EUA
+titulo: After elections in the U.S., U.S.-Mexico foreign trade remains unchanged, but customs agents see positive indirect effects
+fuente: NOTENG
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5dvv:0
+resumen:
+  After the results of the midterm elections in the United States, which represented a
+  defeat for President Donald Trump and his Republican Party, the Latin American
+  Confederation of Customs Brokers (Claa) considered that the situation regarding foreign
+  trade with Mexico will remain largely the same, although some positive indirect effects
+  may be experienced.
+
+---
+fecha: 2026-11-04 17:13
+emisora: EUA
+titulo: The leader of the UAW union in the U.S. points to wages in Mexico as a trade issue
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5cyy:0
+resumen:
+  Washington, November 4 (EFE) - Shawn Fain, president of the United Auto Workers (UAW),
+  stated on Wednesday that low wages in Mexico, as well as in China, are among the main
+  trade issues facing the United States, while advocating for "strategic tariffs" to
+  protect domestic companies. In a press conference following the Democrats' victory in
+  the legislative elections on Tuesday, Fain defended Mexican workers and blamed large
+  corporations for exploiting wage differentials.
+
+---
+fecha: 2026-11-04 17:12
+emisora: BRASIL
+titulo: Democrat thanks Brazil for 'showing the way' and mentions Lula's army
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5buk:0
+resumen:
+  Democratic Party activist Isaiah Martin took to social media on Wednesday (November 4)
+  to celebrate the victories of allies in the U.S. midterm elections and to thank Brazil
+  for having "shown the way." In his post, Martin used the term "explode," referencing a
+  comment made by federal deputy André Janones (Rede-MG) used on the channel "Exército do
+  Lula." Follow Correio Braziliense on WhatsApp and receive the day's top news on your
+  phone.
+
+---
+fecha: 2026-11-04 17:12
+emisora: ARGENTINA
+titulo: After two days without accumulating foreign currency, the Central Bank resumed purchasing dollars
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5e89:0
+resumen:
+  After two days of not intervening in the foreign exchange market, the Central Bank of
+  the Argentine Republic (BCRA) resumed purchasing foreign currency this Wednesday. The
+  monetary authority acquired USD 9 million, bringing gross international reserves close
+  to USD 50.5 billion. Since the beginning of the fourth stage of the monetary program in
+  January 2026, the Central Bank has acquired USD 15.972 billion both inside and outside
+  the foreign exchange market.
+
+---
+fecha: 2026-11-04 17:12
+emisora: PERU
+titulo: Only surpassed by Mexico worldwide: the agricultural treasure of the Peruvian countryside that is setting historic records and already generating o...
+fuente: NOTENG
+tono: positiva
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5d8x:0
+resumen:
+  Only surpassed by Mexico worldwide: the agricultural treasure of the Peruvian
+  countryside that is setting historic records and already generating over US$ 1.34
+  billion abroad Peruvian avocado exports reached US$1,342.8 million between January and
+  August 2026, according to figures from the Ministry of Agrarian Development and
+  Irrigation (Midagri) .
+
+---
+fecha: 2026-11-04 17:06
+emisora: GMEXICOB
+titulo: Southern Copper Corporation's (NYSE:SCCO $176.85): Recent News and Research Digest
+fuente: NEWBTS
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5a99:0
+resumen:
+  NYSE END-OF-DAY STOCK REPORT PHOENIX, Wednesday, Nov 04, 2026 - Southern Copper
+  Corporation's (NYSE:SCCO $176.85) stock price lifted $3.37 (1.9%) from its previous
+  trading session to close at $176.85. Compared with the S&P 500 Index which rose 129.9
+  points (1.7%) in the day, the relative price increase was 0.2%. It posted the highest
+  rise in MCap $2.8 billion with the most influence on the Non ferrous metals sector.
+
+---
+fecha: 2026-11-04 16:40
+emisora: VESTA
+titulo: Vesta Real Estate Corporation, S.A.B. de C.V. -- 4 (89937154)
+fuente: EDG
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261104:nEOL3ZrDfb:1
+resumen:
+  https://filings.ica.int.thomsonreuters.com/filings.viewer/Download.asp...
+
+---
 fecha: 2026-11-04 16:16
 emisora: BRASIL
 titulo: Brazil's Central Bank Stops Easing Cycle as Inflation Remains High
@@ -179,6 +758,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2l4qvq:0
+resumen:
+  Mexico City, November 4 (EFE) - The Bank of Mexico (Banxico) will announce its
+  penultimate monetary decision for 2026 this Thursday, amid widespread expectations that
+  it will maintain its interest rate at 6.5%, due to warnings about inflationary and
+  exchange rate risks, despite indications of openness from some members of its Board of
+  Governors.
 
 ---
 fecha: 2026-11-04 16:13
@@ -188,6 +773,13 @@ fuente: NOTENG
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2l4r90:0
+resumen:
+  The population over 50 years old is gaining weight in the Colombian economy. About 14
+  million people belong to this age group, with around 8 million surpassing the age of
+  60, according to figures from Dane. Their capacity for consumption, savings, work, and
+  entrepreneurship is driving a market that currently represents nearly 12% of the
+  national Gross Domestic Product (GDP), with an estimated annual spending of $121
+  trillion.
 
 ---
 fecha: 2026-11-04 16:12
@@ -197,6 +789,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2l4qt6:0
+resumen:
+  The deficit of the United States in trade of goods with Mexico grew at an annual rate
+  of 26.1% from January to September 2026, reaching a record of $184.019 billion, the
+  Census Bureau reported on Wednesday. The balance resulted from a 20.7% increase in U.S.
+  imports of Mexican goods, amounting to $481.586 billion, and a 17.6% rise in U.S.
+  exports to Mexico, totaling $297.567 billion.
 
 ---
 fecha: 2026-11-04 16:12
@@ -206,6 +804,12 @@ fuente: NOTENG
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2l4r5x:0
+resumen:
+  Light vehicle sales in Mexico increased by 3.1% year-on-year, reaching a total of
+  137,438 units sold in October 2026. Cumulative sales from January to October 2026
+  amounted to 1,287,268 units, marking the highest sales for the month of October since
+  2016 and setting a record for the tenth month of this year. Read the full article at
+  vanguardia.com.mx
 
 ---
 fecha: 2026-11-04 16:08
@@ -248,6 +852,11 @@ fuente: LSEG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261102:nVEN395242:7
+resumen:
+  This Alert has now been withdrawn, please refer to LSEG page ALERW35 for further
+  information. The index page for the Alert system can be accessed via the LSEG page
+  ALERT. This Alert has been issued by the LSEG Service Communications Team, a subsequent
+  news headline will be issued if the status changes.
 
 ---
 fecha: 2026-11-04 16:05
@@ -275,6 +884,12 @@ fuente: Reuters
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:reuters.com:20261104:nL5N46L3FT:1
+resumen:
+  Por Jamie McGeever ORLANDO, Florida, 4 nov (Reuters) - (link)Los inversores pusieron su
+  dinero a trabajar el miércoles, lanzándose a por acciones (link), bonos, divisas
+  distintas del dólar y oro (link) tras las históricas elecciones de mitad de mandato en
+  EEUU (link), en las que los demócratas consiguieron el control (link) de ambas cámaras
+  del Congreso, arrebatándoselo al Partido Republicano del presidente Donald Trump .
 
 ---
 fecha: 2026-11-04 16:00
@@ -284,6 +899,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nL6N46L1DT:1
+resumen:
+  By Jamie McGeever ORLANDO, Florida, Nov 4 (Reuters) - Investors put money to work on
+  Wednesday, piling into stocks, bonds, non-dollar currencies and gold following historic
+  US midterm elections that saw the Democrats win control of both houses of Congress from
+  President Donald Trump's Republican Party. The widespread bullishness was also fueled
+  by a steep fall in global oil prices.
 
 ---
 fecha: 2026-11-04 15:54
@@ -293,6 +914,13 @@ fuente: Reuters
 tono: negativa
 impacto: alto
 id: lseg:urn:newsml:reuters.com:20261104:nL6N46L1FT:5
+resumen:
+  Adds details from statement in paragraphs 3-4 BRASILIA, Nov 4 (Reuters) - Brazil's
+  central bank on Wednesday ended a run of interest rates cuts that began in March and
+  kept borrowing costs on hold as it faced the prospect of higher inflation following
+  President Luiz Inacio Lula da Silva's reelection. The central bank's rate-setting
+  committee, Copom, unanimously voted to keep its benchmark Selic rate at 13.75%, as
+  expected by 33 of 48 economists polled by Reuters.
 
 ---
 fecha: 2026-11-04 15:45
@@ -302,6 +930,11 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nL2N46L1KD:1
+resumen:
+  BRASILIA, 4 nov (Reuters) - El banco central de Brasil puso fin el miércoles a una
+  serie de recortes de las tasas de interés que comenzó en marzo, y mantuvo los costos de
+  endeudamiento sin cambios por la perspectiva de una mayor inflación tras la reelección
+  del presidente Luiz Inácio Lula da Silva.
 
 ---
 fecha: 2026-11-04 15:43
@@ -350,6 +983,12 @@ fuente: GLORDP
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2l4gkz:0
+resumen:
+  NYSE END-OF-DAY STOCK REPORT www.buysellsignals.com PHOENIX, Wednesday, Nov 04, 2026 -
+  Southern Copper Corporation's (NYSE:SCCO $176.85) stock price lifted 1.9% but fell
+  short of the 12-day Exponential Moving Average [EMA] of $184.31. Compared with the S&P
+  500 Index which rose 129.9 points (1.7%) in the day, the relative price increase was
+  0.2%. The stock last traded at $176.85.
 
 ---
 fecha: 2026-11-04 15:42
@@ -453,6 +1092,14 @@ fuente: IFR
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nIfpsMnP6:2
+resumen:
+  Refiled story: refiled with edits By Duncan Balsbaugh November 4 (IFR) Hedge
+  monetization fuels fleeting risk-on rally as oil plunge reverses yields Blue tsunami's
+  AI slowdown threatens to crush tech earnings outlook The tactical bias is flat, looks
+  to trade in the 5.05% to 4.80% 10s range Thurs Challenger job cuts, jobless claims,
+  Productivity, three Fedspeakers Treasuries initially came under renewed selling
+  pressure (10s high 4.964%) following another round of surprisingly resilient economic
+  data, with October…
 
 ---
 fecha: 2026-11-04 15:13
@@ -462,6 +1109,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2l46ot:0
+resumen:
+  Colombian exports reached a value of US$541.7 million in September 2023, the highest
+  recorded for that month since 2014, according to figures from Dane. This result was
+  primarily driven by oil, reflecting a growth of 16.4% compared to September 2022. The
+  sales of oil and its derivatives played a crucial role in this performance, showing an
+  annual increase of 4.2%.
 
 ---
 fecha: 2026-11-04 15:13
@@ -471,6 +1124,11 @@ fuente: NOTENG
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261104:nNRA2l45p2:0
+resumen:
+  The continuity of the USMCA is secured following the Democratic Party's victory in the
+  Congress and Senate of the United States. BBVA Mexico is confident that there is no
+  risk of a new trade agreement, as this decision would need to be voted on in Congress,
+  which is no longer controlled by President Donald Trump.
 
 ---
 fecha: 2026-11-04 15:13
@@ -480,6 +1138,13 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2l46o9:0
+resumen:
+  Remittances to Mexico are expected to recover this year, with growth projected at up to
+  4.1% by 2027, according to forecasts by BBVA Research. An analysis by the bank, in
+  collaboration with the National Population Council (Conapo), estimated that next year
+  the country will receive $66.7 billion in remittances. For this year, BBVA estimates
+  that Mexico will receive $64.1 billion in remittances, marking a 2.6% increase compared
+  to 2025.
 
 ---
 fecha: 2026-11-04 15:12
@@ -489,6 +1154,12 @@ fuente: NOTENG
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261104:nNRA2l45m2:0
+resumen:
+  The midterm elections in the United States have concluded. This process saw the entire
+  House of Representatives, part of the Senate, and 36 governorships up for election. As
+  projections indicated, the elections solidified a Democratic majority, which is crucial
+  for the diplomatic relations between the administration of Abelardo de la Espriella and
+  the government of Donald Trump.
 
 ---
 fecha: 2026-11-04 15:12
@@ -498,6 +1169,12 @@ fuente: NOTENG
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261104:nNRA2l448t:0
+resumen:
+  The dollar experienced a significant decline this Wednesday in the Chilean foreign
+  exchange market, dropping nearly $12 and closing the day at $969.9 for buyers and
+  $970.2 for sellers . With this result, the U.S. currency broke below the $970 mark and
+  reached its lowest exchange rate since mid-October, amid movements in international
+  markets following the results of the elections in the United States .
 
 ---
 fecha: 2026-11-04 15:03
@@ -507,6 +1184,11 @@ fuente: Reuters
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261104:nL2N46L13F:1
+resumen:
+  Ajusta título, agrega detalles, citas y actualiza datos al cierre de mercados BUENOS
+  AIRES, 4 nov (Reuters) - La ronda cambiaria de Argentina registró el miércoles su nuevo
+  mínimo histórico para el peso doméstico ante una sigilosa recomposición de carteras en
+  dólares frente a diversas presiones en danza.
 
 ---
 fecha: 2026-11-04 15:02
@@ -532,6 +1214,19 @@ resumen:
   rose 129.9 points (1.7%) in the day, the relative price increase was 0.1%. It posted
   the highest rise in MCap $2.7 billion with the most influence on the Non ferrous metals
   sector.
+
+---
+fecha: 2026-11-04 14:52
+emisora: GFNORTEO
+titulo: Grupo Financiero Banorte, S.A.B. De C.V.'s (OTCQX:GBOOY) 3-Year Earnings Growth Outperforms Commonwealth Bank of Australia *Updated*
+fuente: GLORDP
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l3y03:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Grupo Financiero Banorte, S.A.B. De C.V.'s
+  growth in EPS (earnings per share) has been 8.9% annualized over 3 years. Over the same
+  time period its ADR price has gone up 74.3% or 31% annualized.
 
 ---
 fecha: 2026-11-04 14:37
@@ -581,6 +1276,14 @@ fuente: Reuters
 tono: positiva
 impacto: alto
 id: lseg:urn:newsml:reuters.com:20261104:nL2N46L1A6:1
+resumen:
+  Actualiza con cotizaciones por la tarde Por Manuel Farías SANTIAGO, 4 nov (Reuters) -
+  Las monedas latinoamericanas se apreciaron el miércoles frente al dóla, luego de que el
+  Partido Demócrata logró un desempeño mejor al esperado en las elecciones de medio
+  término en Estados Unidos, lo que generó alivio en los mercados emergentes. * Los
+  demócratas se hicieron el martes con el control del Senado y de la Cámara de
+  Representantes, logrando victorias arrolladoras en bastiones republicanos por primera
+  vez en…
 
 ---
 fecha: 2026-11-04 14:14
@@ -606,6 +1309,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261104:nNRA2l3hst:0
+resumen:
+  Per Anders Nilsen, Norway's ambassador to Chile and Peru, highlighted to El Comercio
+  the presence of Norwegian companies in our country, indicating that there are between
+  10 and 15 companies making investments in Peru. During the 'Norway-Peru Investment
+  Forum 2026', he stated that a similar event is expected to take place in Oslo, the
+  capital of the Nordic country, in November.
 
 ---
 fecha: 2026-11-04 14:13
@@ -1202,6 +1911,20 @@ resumen:
   $106.72. The last time the price hit that high level was on Friday, Aug 14, 2026.
 
 ---
+fecha: 2026-11-04 08:17
+emisora: KIMBERA
+titulo: Kimberly-Clark de Mexico, S.A.B de C.V. ADR (OTC:KCDMY) inches higher, resistance at 12-day EMA; +10c [+1.0%]
+fuente: GLORDP
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261104:nNRA2kyqrv:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Kimberly-Clark de
+  Mexico, S.A.B de C.V. ADR (OTC:KCDMY $10.07) lifted 1.0% but fell short of the 12-day
+  Exponential Moving Average [EMA] of $10.09. Compared with the BNY Mellon Composite ADR
+  Index which fell 0.7 points (0.3%) in the day, the relative price increase was 1.3%.
+
+---
 fecha: 2026-11-04 08:12
 emisora: CHILE
 titulo: Chile: Can injustice end admiration?
@@ -1345,604 +2068,3 @@ resumen:
   opinan sobre los mercados mexicanos y la economía. A continuación, un resumen de los
   reportes del 4 de noviembre. Las opiniones reflejadas no representan puntos de vista de
   Reuters.
-
----
-fecha: 2026-11-04 07:34
-emisora: MERCADO
-titulo: EU-Mexico agreement, pending ratification by Mexico
-fuente: FREPLA
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261104:nNRA2ky0ut:0
-
----
-fecha: 2026-11-04 07:32
-emisora: BRASIL
-titulo: Sanchez Says US Election Results Signal Decline of Far-Right Political Wave
-fuente: MENCOM
-tono: neutral
-impacto: alto
-id: lseg:urn:link:webnews:20261104:nNRA2kxxxb:0
-
----
-fecha: 2026-11-04 07:31
-emisora: FED
-titulo: US ECON - International trade deficit slips to $105.0bn, under forecasts
-fuente: IFR
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nIfp8JcHMz:1
-resumen:
-  By Theodore Littleton BOSTON, Nov 4 (IFR) - More to come on ifre.com...
-
----
-fecha: 2026-11-04 07:31
-emisora: FED
-titulo: US GOVTS –Two-way flows follow higher ADP job gains, focus on Treasury refunding
-fuente: IFR
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nIfp62ddt5:1
-resumen:
-  By Roseanne Briggen Treasuries have seen little movement following the higher than
-  expected ADP job gains. Flows turned mixed following the the non-stop buying ahead of
-  the CME open led by the Democrats’ election sweep on bets AI spending is likely to slow
-  down. Hedge funds took back some hedges in the long end and pension funds were outright
-  buyers.
-
----
-fecha: 2026-11-04 07:30
-emisora: FED
-titulo: New York Fed releases Standing Repo Operation data
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nAQN2MS7M2:1
-resumen:
-  For the full results of the Federal Reserve Bank of New York's daily Standing Repo
-  operation see: https://www.newyorkfed.org/markets/desk-operations/repo
-
----
-fecha: 2026-11-04 07:30
-emisora: FED
-titulo: US GOVTS: Tsy Refunding $125bn; to sell $58bn 3s, $42bn 10s, $25bn 30s on Nov 9, 10, 12, respectively
-fuente: IFR
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nIfp7Ms7hj:1
-resumen:
-  By Roseanne Briggen Treasury announced the November 2026 Quarterly Refunding package of
-  $125bn, unchanged from the August 2026 package. The auctions will settle on Monday,
-  November 16 and raise $28bn in new cash as Treasury matures $98bn in outstanding debt.
-  More to follow… Roseanne.Briggen@LSEG.com
-
----
-fecha: 2026-11-04 07:21
-emisora: ARGENTINA
-titulo: ARGENTINE PESO <ARS=RASL> WEAKENS 0.89% TO A RECORD LOW ON EARLY TRADING AT 1,565 PER USD: TRADERS
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nL2N46L0S2:1
-
----
-fecha: 2026-11-04 07:18
-emisora: BRASIL
-titulo: Apple imports rise in India, Vietnam, and Brazil despite global decline
-fuente: FREPLA
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261104:nNRA2kxsfo:0
-
----
-fecha: 2026-11-04 07:16
-emisora: ARGENTINA
-titulo: PESO ARGENTINO <ARS=RASL> SE DEPRECIA 0,89% A PISO RÉCORD DE 1.565 POR DÓLAR EN PRIMEROS NEGOCIOS INTERBANCARIOS: OPERADORES
-fuente: Reuters
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nL6N46L0Y2:1
-
----
-fecha: 2026-11-04 07:15
-emisora: WALMEX
-titulo: DE SUPERAMA A MINI SUPERCENTER, WALMART EXPRESS EVOLUCIONA
-fuente: VISOR
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:reuters.com:20261104:nVIS7D0xjT:1
-
----
-fecha: 2026-11-04 07:14
-emisora: BRASIL
-titulo: The most significant slowdown among the capitals was observed in Recife (from 0.92% to 0.79%) and in São Paulo (from 0.52% to 0.37%)
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kxpup:0
-resumen:
-  The Weekly Consumer Price Index (IPC-S) decelerated in the seven capitals surveyed at
-  the end of October, according to the Getulio Vargas Foundation (FGV). The index rose by
-  0.32%, a result lower than the previous report of 0.46%, during the transition from the
-  third to the fourth four-week period of the month. The most significant deceleration
-  among the capitals occurred in Recife (from 0.92% to 0.79%) and São Paulo (from 0.52%
-  to 0.37%).
-
----
-fecha: 2026-11-04 07:12
-emisora: MERCADO
-titulo: Mexico Leads Export Surge in Latin America: IDB
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kxnnm:0
-resumen:
-  Exports of goods from Latin America and the Caribbean outpaced the global average in
-  the first half of the year, with Mexico leading the way due to increased sales of
-  equipment for artificial intelligence (AI) infrastructure in the United States, as
-  highlighted by the Inter-American Development Bank (IDB). Shipments from the region
-  rose 19.5 percent annually in the first semester, surpassing the 14.5 percent growth in
-  global trade.
-
----
-fecha: 2026-11-04 07:12
-emisora: ARGENTINA
-titulo: What will happen to oil prices after the elections in the U.S., and what is beneficial for Argentina?
-fuente: NOTENG
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kxnw1:0
-resumen:
-  For months, the world has been waiting for the U.S. legislative elections to see if the
-  conflict in the Middle East can finally be resolved. With Iran previously refusing to
-  negotiate, using the opportunity to politically harm Donald Trump in the elections
-  through high oil prices, the situation is shifting with this Democratic victory that
-  opens up new scenarios.
-
----
-fecha: 2026-11-04 07:11
-emisora: COLOMBIA
-titulo: Do you have a CDT or are you considering opening one? Banks could lower interest rates, and here are the reasons
-fuente: NOTENG
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kxp8d:0
-resumen:
-  Certificates of Deposit (CDTs) in Colombia may begin to offer lower yields in the
-  coming months, depending on market expectations regarding the decisions of the Banco de
-  la República. For now, the Issuer's decision to maintain the interest rate at 12.25%
-  will allow these products to retain their current yields in the coming weeks, with
-  offers reaching up to 13.1% annual effective rate for one-year investments, according
-  to the fintech MejorCDT.
-
----
-fecha: 2026-11-04 07:11
-emisora: COLOMBIA
-titulo: Antonio Navarro Wolff Discussed Peace, Politics, and Democracy in Two Meetings with LA PATRIA
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kxp7x:0
-resumen:
-  The archive of LA PATRIA preserves encounters with Antonio Navarro Wolff that allow us
-  to remember some of the reflections he shared about Colombia, its political history,
-  and the pursuit of peace. The former commander of the M-19, who passed away in Bogotá
-  last Sunday (November 1), spoke with this newspaper in 2005 and participated in a
-  meeting with students in Manizales in 2016.
-
----
-fecha: 2026-11-04 07:09
-emisora: MERCADO
-titulo: POLL-TAKE A LOOK-Reuters November foreign exchange poll
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261103:nL6N46K0CQ:3
-resumen:
-  The US dollar will slip in coming months according to FX strategists polled by Reuters
-  who have clung to their long-held bearish view running into Tuesday’s midterm
-  elections, saying the main risk is a more resilient greenback than they predict.
-  Reuters surveyed over 100 foreign exchange strategists October 30-November 4 on US
-  dollar rates versus major currencies as well as the Chinese yuan, Indian rupee,
-  Brazilian real, Turkish lira, South African rand and others.
-
----
-fecha: 2026-11-04 07:05
-emisora: BRASIL
-titulo: REUTERS POLL-BRAZILIAN REAL 12-MONTH ESTIMATE AT 5.37 PER DOLLAR IS 2.6% WEAKER THAN 5.23 IN OCTOBER POLL
-fuente: Reuters
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nL6N46L0N0:2
-resumen:
-  Open Poll data on Brazil real Open Poll data on Mexican peso By Gabriel Burin BUENOS
-  AIRES, Nov 4 (Reuters) - The outlook for Brazil's currency has weakened on policy
-  doubts following the re-election of President Luiz Inacio Lula da Silva, a Reuters poll
-  of foreign exchange strategists showed. Market players worry Lula may fail to deliver
-  sufficient fiscal adjustment to tackle Brazil's chronic budget issues compounded by
-  spending promises during the election campaign.
-
----
-fecha: 2026-11-04 06:48
-emisora: GMEXICOB
-titulo: THE NYSE PRE-MARKET BEARISH STOCK SNIPPETS SOUTHERN COPPER CORPORATION (SCCO: $173.49) Wednesday November 04, 2026 07:11 EST
-fuente: GLOSTK
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kx44j:0
-resumen:
-  BEARISH SNIPPETS FROM THE NYSE SECTION 1 PRE-MARKET CUES FROM ITS GERMAN TRADING:
-  Southern Copper Corp. (FRA:PCU) extends losing streak, drops 10.0% in 4 days; closes at
-  €154.70 down €1.88 PHOENIX, Tuesday, Nov 03, 2026 - Southern Copper Corp.'s (FRA:PCU
-  €154.70) stock price extended its slide on Tuesday, shedding an additional €1.88 (1.2%)
-  to close at €154.70.
-
----
-fecha: 2026-11-04 06:48
-emisora: GMEXICOB
-titulo: Southern Copper Corporation (NYSE:SCCO) drops to four-month low Wednesday November 04, 2026 07:11 EST
-fuente: GLOSTK
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kx4gm:0
-resumen:
-  TODAY'S THEME: BEARISH STOCK REPORT FROM THE NYSE PHOENIX, Tuesday, Nov 03, 2026 -
-  Southern Copper Corporation's (NYSE:SCCO $173.68) stock price traded at its 97-day low
-  of $171.53. The last time the price hit that low level was on Wednesday, Jul 29, 2026.
-  Southern Copper Corporation's stock price fell $3.73 (2.1%) from its previous trading
-  session to close at $173.68.
-
----
-fecha: 2026-11-04 06:44
-emisora: GMEXICOB
-titulo: Update: Can Southern Copper Corporation (NYSE:SCCO), rebound after recent dip?
-fuente: NEWBTS
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwzpo:0
-resumen:
-  NYSE STOCK REPORT PHOENIX, Tuesday, November 03 2026 - Ahead of this morning's market
-  opening, Southern Copper Corporation closed lower the previous trading day. Southern
-  Copper Corporation (NYSE:SCCO), the NYSE's largest Non ferrous metals sector company by
-  market cap, fell 2.2% during its previous trading session to close at $173.49.
-
----
-fecha: 2026-11-04 06:35
-emisora: GAPB
-titulo: Sangster airport to stage emergency simulation exercise on Wednesday
-fuente: GLEKIN
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwvn3:0
-resumen:
-  MBJ Airports Limited, the operator of Sangster International Airport in Montego Bay, St
-  James, is advising the public that it will conduct a full-scale emergency simulation
-  exercise at the facility on Wednesday, November 4. The exercise, dubbed Exercise Red
-  Falcon, is scheduled to begin at 7:00 a.m. and last approximately two hours.
-
----
-fecha: 2026-11-04 06:13
-emisora: COLOMBIA
-titulo: Euro today in Colombia: price and exchange rate of the currency on Wednesday, November 4, 2026
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwhxq:0
-resumen:
-  The euro in Colombia is trading this Wednesday, November 4, 2026, at 3,603 Colombian
-  pesos , according to the latest official update. The exchange rate is one of the
-  central variables of the economy, and its daily fluctuations impact both the markets
-  and consumers' wallets. Compared to yesterday's close, the euro in Colombia shows a
-  variation of +0.56% , having closed at 3,582 Colombian pesos on Tuesday, November 3,
-  2026.
-
----
-fecha: 2026-11-04 06:13
-emisora: PERU
-titulo: Euro today in Peru: price and exchange rate of the currency this Wednesday, November 4, 2026
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwiw9:0
-resumen:
-  The euro in Peru is quoted this Wednesday, November 4, 2026, at 3.88 soles , according
-  to the latest official update. The exchange rate is one of the central variables of the
-  economy, and its daily fluctuations impact both the markets and people's wallets. The
-  euro showed no change from the previous day, when it was quoted at 3.88 soles .
-
----
-fecha: 2026-11-04 06:13
-emisora: CHILE
-titulo: Euro today in Chile: price and exchange rate of the currency this Wednesday, November 4, 2026
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwj9b:0
-resumen:
-  The euro in Chile is trading this Wednesday, November 4, 2026, at 1,094 Chilean pesos ,
-  according to the latest official update. The exchange rate is one of the central
-  variables in the economy, and its daily fluctuations impact both the markets and
-  consumers' wallets. Compared to yesterday's close, the euro in Chile has recorded a
-  variation of -1.79% , considering it closed at 1,114 Chilean pesos on Tuesday, November
-  3, 2026.
-
----
-fecha: 2026-11-04 06:13
-emisora: EUA
-titulo: Trump, the Leftist
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwiaa:0
-resumen:
-  "Authoritarianism simply attracts people who cannot tolerate complexity; there is
-  nothing intrinsically leftist or rightist about this instinct." Anne Applebaum, The
-  Twilight of Democracy I hear many comments labeling Donald Trump as a right-wing or
-  extreme right President. However, the Peterson Institute for International Economics
-  published an article in September by Collen S.
-
----
-fecha: 2026-11-04 06:12
-emisora: ARGENTINA
-titulo: Trade, investment, and financial support: the key elements of the economic relationship between Argentina and the United States
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwhif:0
-resumen:
-  Since Javier Milei and Donald Trump strengthened their political ties, the relationship
-  between Argentina and the United States has begun to translate into an increasingly
-  broad economic agenda. The alignment between the two leaders has resulted in trade
-  agreements, financial negotiations, and investment projects in strategic sectors. This
-  relationship has multiple dimensions.
-
----
-fecha: 2026-11-04 06:12
-emisora: EUA
-titulo: Diego Osorno. The Relevance of Zapatismo 30 Years Later
-fuente: NOTENG
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwhg6:0
-resumen:
-  On January 1, 1994, while Mexico celebrated the implementation of the North American
-  Free Trade Agreement and the government projected the image of a nation moving toward
-  the first world, the uprising of the Zapatista Army of National Liberation (EZLN)
-  exposed a reality that this narrative kept on the sidelines: the historic abandonment
-  of indigenous peoples.
-
----
-fecha: 2026-11-04 06:12
-emisora: EUA
-titulo: In the EU, a blow to Trump and new challenges in Mexico
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwi4n:0
-resumen:
-  As the blue wave expanded across the United States, political and business leaders
-  viewed the election results as a blow to President Donald Trump and his movement.
-  Bernie Sanders, the Democratic senator, celebrated the Democrats' victory over
-  Republicans in Congress. "The Democrats will now control the House of Representatives
-  and the Senate and will be able to hold Trump accountable.
-
----
-fecha: 2026-11-04 06:11
-emisora: WALMEX
-titulo: Retail chain growth slows due to decreased consumer spending
-fuente: NOTENG
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwhe8:0
-resumen:
-  During the first nine months of the year, revenues for La Comer, Walmart de México,
-  Soriana, and Chedraui grew by 0.4 percent year-on-year, increasing from 1,113.8 million
-  to 1,118.1 million pesos compared to the same period in 2025. According to the
-  financial information from these companies, this stagnation is attributed to
-  inflationary pressures, higher operating costs, consumer caution, and intense
-  competition.
-
----
-fecha: 2026-11-04 06:10
-emisora: CHILE
-titulo: UPDATE 1-Chile central bank considered holding or hiking rate as 'plausible' options
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nL2N46L0KV:2
-resumen:
-  Adds detail from minutes report SANTIAGO, Nov 4 (Reuters) - Policymakers at Chile's
-  central bank considered keeping the rate unchanged or increasing it by 25 basis points
-  as "plausible" options at its last meeting, minutes showed on Wednesday. The bank's
-  board unanimously decided to hold borrowing costs at 4.5% at the meeting last week.
-
----
-fecha: 2026-11-04 06:07
-emisora: FEMSAUBD
-titulo: ICYMI: Wednesday's Preview: Can Fomento Economico Mexicano, S.A.B de C.V. (NYSE:FMX), rebound after being down?
-fuente: GLORDP
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwe43:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Ahead of this morning's market opening,
-  Fomento Economico Mexicano, S.A.B de C.V. ADR closed lower the previous trading day.
-  Fomento Economico Mexicano, S.A.B de C.V.
-
----
-fecha: 2026-11-04 06:06
-emisora: AMXB
-titulo: What's Next for America Movil S.A.B. de CV's (NYSE:AMX), Growth Trajectory
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kweos:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Ahead of this morning's market opening,
-  America Movil S.A.B. de CV ADR has shown some strength in recent days. America Movil
-  S.A.B. de CV (NYSE:AMX), the International Depository Receipt (IDR) market's 3rd
-  largest Telecommunication company by market cap, increased 0.04% during its previous
-  trading session to close at $24.75.
-
----
-fecha: 2026-11-04 06:06
-emisora: ASURB
-titulo: Can Grupo Aeroportuario del Sureste S.A. de C.V. (NYSE:ASR), continue its gains?
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwcz3:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Ahead of this morning's market opening,
-  Grupo Aeroportuario del Sureste S.A. de C.V. ADR has shown some strength in recent
-  days. Grupo Aeroportuario del Sureste S.A. de C.V.
-
----
-fecha: 2026-11-04 06:06
-emisora: GAPB
-titulo: What's Next for Grupo Aeroportuario del Pacifico S.A.B. de CV's (NYSE:PAC), Growth Trajectory
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwcyj:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Ahead of this morning's market opening,
-  Grupo Aeroportuario del Pacifico S.A.B. de CV ADR has shown some strength in recent
-  days. Grupo Aeroportuario del Pacifico S.A.B. de CV (NYSE:PAC), the International
-  Depository Receipt (IDR) market's 4th largest Engineering & construction company by
-  market cap, lifted 1.2% during its previous trading session to close at $238.11.
-
----
-fecha: 2026-11-04 06:01
-emisora: AC
-titulo: How Far Can Arca Continental SAB de CV (BMV:AC), Push Its Gains
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwaha:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Arca Continental SAB de CV
-  has shown some strength in recent days. Arca Continental SAB de CV (BMV:AC), Mexico's
-  largest Beverages company by market cap, increased 0.7% during its previous trading
-  session to close at $223.73.
-
----
-fecha: 2026-11-04 06:01
-emisora: ASURB
-titulo: Wednesday's Preview: Can Grupo Aeroportuario del Sureste SAB de CV (BMV:ASUR), continue its recent rise?
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwat9:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Grupo Aeroportuario del
-  Sureste SAB de CV closed higher the previous trading day. Grupo Aeroportuario del
-  Sureste SAB de CV (BMV:ASUR), Mexico's 2nd largest Engineering & construction company
-  by market cap, gained 3.3% during its previous trading session to close at $486.42.
-
----
-fecha: 2026-11-04 06:01
-emisora: GAPB
-titulo: Traders look to see if Grupo Aeroportuario del Pacifico SAB de CV's (BMV:GAP), recent rally will continue
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kw9gr:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Grupo Aeroportuario del
-  Pacifico SAB de CV has shown some strength in recent days. Grupo Aeroportuario del
-  Pacifico SAB de CV (BMV:GAP), Mexico's largest Engineering & construction company by
-  market cap, climbed 2.6% during its previous trading session to close at $446.70.
-
----
-fecha: 2026-11-04 06:01
-emisora: GFNORTEO
-titulo: ICYMI: Traders look to see if Grupo Financiero Banorte, S.A.B De C.V.'s (BMV:GFNORTE), recent rise will continue
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwa8g:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Grupo Financiero Banorte,
-  S.A.B De C.V. closed higher the previous trading day. Grupo Financiero Banorte, S.A.B
-  De C.V. (BMV:GFNORTE), Mexico's 3rd largest Bank by market cap, increased 0.5% during
-  its previous trading session to close at $211.0.
-
----
-fecha: 2026-11-04 06:01
-emisora: GMEXICOB
-titulo: Can Grupo Mexico, S.A.B. De C.V. (BMV:GMEXICO), rebound after recent dip?
-fuente: GLORDP
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kw9gt:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Grupo Mexico, S.A.B. De
-  C.V. has shown some weakness in recent days. Grupo Mexico, S.A.B.
-
----
-fecha: 2026-11-04 06:01
-emisora: MEGACPO
-titulo: How Far Can Megacable Holdings (BMV:MEGA), Push Its Gains
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwatf:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Megacable Holdings has
-  shown some strength in recent days. Megacable Holdings (BMV:MEGA), Mexico's largest
-  Media company by market cap, gained 3.9% during its previous trading session to close
-  at $57.91. Bullish Turning Point Price/MAP200 The P/MAP [Price/Moving Average Price]
-  was previously below 1 and falling.
-
----
-fecha: 2026-11-04 06:01
-emisora: OMAB
-titulo: Market Watch Moves to Grupo Aeroportuario Del Centro Norte, S.A.B. De C.V. (BMV:OMA),. Will the Rally Continue?
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kw9gv:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Grupo Aeroportuario Del
-  Centro Norte, S.A.B. De C.V. has shown some strength in recent days. Grupo
-  Aeroportuario Del Centro Norte, S.A.B.
-
----
-fecha: 2026-11-04 06:01
-emisora: PEOLES
-titulo: Can Industrias Penoles SAB de CV (BMV:PE&OLES*), reverse its recent decline?
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwati:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Industrias Penoles SAB de
-  CV has shown some weakness in recent days. Industrias Penoles SAB de CV (BMV:PE&OLES*),
-  Mexico's 2nd largest Mining company by market cap, slid 4.0% during its previous
-  trading session to close at $734.50.
-
----
-fecha: 2026-11-04 06:01
-emisora: PINFRA
-titulo: Recent drop for Promotora Y Operadora De Infraestructura, S.A.B. De C.V. (BMV:PINFRA), raises questions
-fuente: GLORDP
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwa8h:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Promotora Y Operadora De
-  Infraestructura, S.A.B. De C.V. has shown some weakness in recent days. Promotora Y
-  Operadora De Infraestructura, S.A.B.
-
----
-fecha: 2026-11-04 06:01
-emisora: WALMEX
-titulo: Will Wal - Mart De Mexico, S.A.B. De C.V. (BMV:WALMEX), climb back after its latest drop?
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kwatd:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Wal - Mart De Mexico,
-  S.A.B. De C.V. closed lower the previous trading day. Wal - Mart De Mexico, S.A.B.

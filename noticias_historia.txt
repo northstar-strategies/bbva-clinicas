@@ -1,6 +1,71 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
+fecha: 2026-11-04 17:45
+emisora: COLOMBIA
+titulo: Equipo técnico de Banco Central de Colombia ve mayor inflación y menor crecimiento económico este y el próximo año
+fuente: Reuters
+tono: positiva
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261104:nS0N443002:1
+
+---
+fecha: 2026-11-04 17:37
+emisora: BRASIL
+titulo: UPDATE 2-Brazil's central bank ends run of rate cuts after Lula election win
+fuente: Reuters
+tono: negativa
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261104:nL6N46L1FT:6
+
+---
+fecha: 2026-11-04 17:24
+emisora: GFNORTEO
+titulo: Banorte propondrá un dividendo extraordinario a raíz de un aumento de capital.
+fuente: NOTFIN
+tono: neutral
+relevancia: 5
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5hj0:0
+
+---
+fecha: 2026-11-04 17:13
+emisora: EUA
+titulo: Mexico must continue building agreements with the US, says Manolo Jiménez on the election
+fuente: NOTENG
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5dd7:0
+
+---
+fecha: 2026-11-04 17:12
+emisora: PERU
+titulo: Only surpassed by Mexico worldwide: the agricultural treasure of the Peruvian countryside that is setting historic records and already generating o...
+fuente: NOTENG
+tono: positiva
+relevancia: 13
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5d8x:0
+resumen:
+  Only surpassed by Mexico worldwide: the agricultural treasure of the Peruvian countryside that is setting historic records and already generating over US$ 1.34 billion abroad Peruvian avocado exports reached US$1,342.8 million between January and August 2026, according to figures from the Ministry of Agrarian Development and Irrigation (Midagri) .
+
+---
+fecha: 2026-11-04 17:12
+emisora: MERCADO
+titulo: Chinese brands drive record car sales in Mexico
+fuente: NOTENG
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261104:nNRA2l5cxj:0
+
+---
+fecha: 2026-11-04 16:55
+emisora: PETROLEO
+titulo: ACTUALIZA 2-Proyecto Colombiano Sirius, de Ecopetrol y Petrobras, entraría en operación en 2031
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261104:nL2N46L1KF:2
+
+---
 fecha: 2026-11-04 16:13
 emisora: MERCADO
 titulo: The Bank of Mexico prepares for a meeting with the expectation of keeping the rate at 6.5%
@@ -90,6 +155,15 @@ resumen:
   Mexico's benchmark stock index hit a multi-month high Brazil central bank decision in focus after five consecutive rate cuts Brazil currency outlook weakens on policy doubts after Lula's re-election By Ragini Mathur and Sudeshna Ghoshal Nov 4 (Reuters) - Mexico's stocks and currency led gains among Latin American markets on Wednesday as a Democratic sweep in the US midterm elections weakened the dollar and boosted appetite for riskier emerging-market assets.
 
 ---
+fecha: 2026-11-04 09:22
+emisora: EUA
+titulo: México acordó con productores aguacate Michoacán retomar exportación a EEUU
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261104:nL6N46L131:1
+
+---
 fecha: 2026-11-04 08:47
 emisora: MERCADO
 titulo: MEXICO'S MAIN STOCK INDEX UP AROUND 2% IN EARLY TRADING
@@ -97,6 +171,17 @@ fuente: Reuters
 tono: neutral
 relevancia: 12
 id: lseg:urn:newsml:reuters.com:20261104:nS0N45Q02B:1
+
+---
+fecha: 2026-11-04 08:44
+emisora: EUA
+titulo: Presidenta mexicana dice resultado elecciones en EEUU muestran sentimiento de la gente
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261104:nS0N3PB04L:1
+resumen:
+  CIUDAD DE MÉXICO, 4 nov (Reuters) - La presidenta de México, Claudia Sheinbaum, dijo el miércoles que los resultados de las elecciones intermedias de la víspera en Estados Unidos muestran el sentimiento de la gente, y destacó de forma particular el triunfo de candidatos origen mexicano a las gubernaturas de Texas y California.
 
 ---
 fecha: 2026-11-04 08:41
@@ -117,24 +202,6 @@ fuente: Reuters
 tono: neutral
 relevancia: 10
 id: lseg:urn:newsml:reuters.com:20261104:nL2N46L0RX:1
-
----
-fecha: 2026-11-04 05:11
-emisora: EUA
-titulo: Eleven years ago, Trump said that Mexico was sending "the worst"; today he is defeated by Latinos and politicians of Mexican descent
-fuente: NOTENG
-tono: neutral
-relevancia: 9
-id: lseg:urn:newsml:newsroom:20261104:nNRA2kvijc:0
-
----
-fecha: 2026-11-03 18:13
-emisora: EUA
-titulo: Mexico must strengthen its relationship with the United States after the elections: Manolo Jiménez
-fuente: NOTENG
-tono: neutral
-relevancia: 9
-id: lseg:urn:newsml:newsroom:20261104:nNRA2klxtb:0
 
 ---
 fecha: 2026-11-03 16:28
@@ -206,15 +273,6 @@ relevancia: 9
 id: lseg:urn:newsml:newsroom:20261103:nNRA2khzs1:0
 
 ---
-fecha: 2026-11-03 10:13
-emisora: EUA
-titulo: Mexican peso depreciates against the dollar as the market watches U.S. elections
-fuente: NOTENG
-tono: positiva
-relevancia: 8
-id: lseg:urn:newsml:newsroom:20261103:nNRA2kh2tu:0
-
----
 fecha: 2026-11-03 09:51
 emisora: MERCADO
 titulo: EMERGING MARKETS-Latam markets decline ahead of key central bank decisions; US midterms in focus
@@ -224,6 +282,15 @@ relevancia: 12
 id: lseg:urn:newsml:reuters.com:20261103:nL3N46K14C:4
 resumen:
   Brazil economists raise inflation, rate forecasts after Lula reelection Colombian peso in focus after central bank's dollar purchase from government Mexican rate cut could trigger 'disorderly' peso drop, JPMorgan warns By Sudeshna Ghoshal and Ragini Mathur Nov 3 (Reuters) - Most Latin American stocks and currencies fell on Tuesday as weaker commodity prices weighed on markets and investors braced for central bank decisions and US midterm election results that could shape the outlook for interest rates and…
+
+---
+fecha: 2026-11-03 09:11
+emisora: BANXICO
+titulo: Analistas sector privado elevan ligeramente pronóstico inflación México 2026, mejoran crecimiento PIB: sondeo
+fuente: Reuters
+tono: positiva
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261103:nS0N3PM01K:1
 
 ---
 fecha: 2026-11-03 08:45
