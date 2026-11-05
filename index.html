@@ -1408,6 +1408,87 @@ td{padding:11px 12px} th,thead th{padding:11px 12px}
   .cd-num span{max-width:none}
 }
 @media (prefers-reduced-motion:reduce){.cd-num b,.cd-cap{animation:none}}
+
+/* ── Fed Watch (Mercado) ── */
+.fw-cabezas{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-bottom:14px}
+.fw-c{padding:20px 22px;border-radius:var(--r-lg);background:var(--s1);box-shadow:var(--sh-1);animation:cdEntra .5s var(--crit) both}
+.fw-c-t{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.fw-c h3{margin:0;font-family:var(--display);font-size:1.375rem;font-weight:600;letter-spacing:-.02em;color:var(--txt)}
+.fw-c-t span{font-size:.8125rem;color:var(--txt-3);font-variant-numeric:tabular-nums}
+.fw-c-t b{color:var(--txt);font-weight:600}
+.fw-prox{margin:6px 0 14px;font-size:.8125rem;color:var(--txt-2)}
+.fw-prox b{color:var(--txt);font-weight:600}
+.fw-prox em{font-style:normal;margin-left:6px;padding:2px 7px;border-radius:6px;background:rgba(212,237,252,.1);color:#D4EDFC;font-size:.72rem}
+.fw-bar{display:flex;gap:2px;height:12px;border-radius:6px;overflow:hidden;transform-origin:left;animation:fwBarra .6s var(--crit) .1s both}
+.fw-bar i{display:block;flex-basis:0;min-width:0}
+@keyframes fwBarra{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.fw-ley{display:flex;flex-wrap:wrap;gap:4px 14px;margin:10px 0;font-size:.75rem;color:var(--txt-3);font-variant-numeric:tabular-nums}
+.fw-ley i{display:inline-block;width:8px;height:8px;margin-right:5px;border-radius:2px}
+.fw-ley b{color:var(--txt);font-weight:600}
+.fw-txt{margin:0;font-size:.875rem;line-height:1.5;color:var(--txt-2)}
+.fw-txt b{color:var(--txt);font-weight:600}
+.fw-k{margin-bottom:14px}
+.fw-sub{margin:0 0 10px;font-size:.8125rem;line-height:1.5;color:var(--txt-3)}
+.fw-tablas{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:14px}
+.fw-t td small{display:block;font-size:.6875rem;color:var(--txt-3);white-space:nowrap}
+.fw-t td,.fw-t th{white-space:nowrap}
+.fw-pc{min-width:240px;text-align:left}
+.fw-pc .fw-bar{height:8px;margin-bottom:4px;animation:none}
+.fw-p{margin:0 0 10px;font-size:.8438rem;line-height:1.55;color:var(--txt-2);max-width:88ch}
+.fw-p b{color:var(--txt);font-weight:600}
+.fw-p code{font-family:var(--code);font-size:.75rem;color:#7FB6E8}
+@media (prefers-reduced-motion:reduce){.fw-c,.fw-bar{animation:none}}
+
+/* ── Stock picking y timing (Atribución y reporte) ── */
+.pk-hero{display:grid;grid-template-columns:minmax(260px,.85fr) minmax(0,1.15fr);gap:20px 34px;margin-bottom:14px;padding:24px 26px;border-radius:var(--r-lg);box-shadow:var(--sh-1);
+  background:radial-gradient(90% 150% at 0% 0%,rgba(20,100,165,.38),transparent 62%),var(--s1)}
+.pk-et{font-size:.75rem;color:var(--txt-3)}
+.pk-izq>b{display:block;margin:6px 0 10px;font-family:var(--display);font-size:2.75rem;line-height:1.05;font-weight:600;letter-spacing:-.035em;font-variant-numeric:tabular-nums;white-space:nowrap;animation:cdEntra .55s var(--pop) both}
+.pk-izq p{margin:0 0 8px;font-size:.8438rem;line-height:1.5;color:var(--txt-2)}
+.pk-izq p b{font-weight:600}
+.pk-izq .pk-j{font-family:var(--display);font-size:1rem;font-weight:600;color:var(--txt)}
+.pk-b{display:grid;grid-template-columns:minmax(120px,190px) minmax(90px,1fr) 78px;gap:10px;align-items:center;padding:7px 0;font-size:.8125rem;color:var(--txt-2);animation:hpFila .4s var(--crit) both;animation-delay:calc(var(--i,0)*45ms + 80ms)}
+.pk-bn small{display:block;font-size:.6875rem;line-height:1.3;color:var(--txt-3)}
+.pk-b.fuerte .pk-bn{color:var(--txt);font-weight:600}
+.pk-b.fuerte .pk-bn small{font-weight:400}
+.pk-b>b{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+.pk-b.tot{margin-top:4px;border-top:1px solid var(--line);color:var(--txt);font-weight:600;animation:none}
+.pk-eje{position:relative;display:block;height:10px;background:linear-gradient(var(--line-3),var(--line-3)) center/1px 100% no-repeat}
+.pk-eje i{position:absolute;top:0;bottom:0;width:var(--w);border-radius:3px;animation:pkCrece .6s var(--crit) both;animation-delay:calc(var(--i,0)*45ms + 120ms)}
+.pk-eje i.p{left:50%;background:var(--pos);transform-origin:left}
+.pk-eje i.n{right:50%;background:var(--neg);transform-origin:right}
+@keyframes pkCrece{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.pk-m{display:grid;grid-template-columns:minmax(76px,.7fr) 1fr 1fr;gap:6px}
+.pk-mh{align-self:end;padding-bottom:2px;font-size:.72rem;color:var(--txt-3);text-align:center}
+.pk-mf{align-self:center;font-size:.75rem;line-height:1.3;color:var(--txt-2)}
+.pk-q{display:flex;flex-direction:column;align-items:center;gap:1px;padding:11px 8px;border-radius:11px;background:rgba(255,255,255,.045);text-align:center}
+.pk-q span{font-size:.6875rem;font-weight:600;color:var(--txt-3)}
+.pk-q b{font-family:var(--display);font-size:1.1875rem;font-weight:600;letter-spacing:-.015em;font-variant-numeric:tabular-nums;color:var(--txt)}
+.pk-q small{font-size:.6875rem;line-height:1.25;color:var(--txt-3)}
+.pk-q.real{background:rgba(74,157,240,.2)}
+.pk-r{display:grid;grid-template-columns:minmax(130px,190px) 1fr 54px;gap:10px;align-items:center;padding:6px 0;font-size:.8125rem;color:var(--txt-2)}
+.pk-r>b{text-align:right;font-weight:600;font-variant-numeric:tabular-nums;color:var(--txt)}
+.pk-rb{display:block;height:8px;border-radius:4px;background:rgba(255,255,255,.06);overflow:hidden}
+.pk-rb i{display:block;height:100%;width:var(--w);border-radius:4px;background:#7FB6E8;transform-origin:left;animation:pkCrece .6s var(--crit) .1s both}
+.pk-rb i.p{background:var(--pos)} .pk-rb i.n{background:var(--neg)}
+.pk-e{display:grid;grid-template-columns:minmax(104px,130px) 1fr 66px;gap:3px 10px;align-items:center;padding:7px 0;border-top:1px solid var(--line);animation:hpFila .4s var(--crit) both;animation-delay:calc(var(--i)*40ms)}
+.pk-e:first-of-type{border-top:0}
+.pk-e>b{text-align:right;font-size:.8125rem;font-weight:600;font-variant-numeric:tabular-nums}
+.pk-e small{grid-column:1/-1;font-size:.6875rem;line-height:1.35;color:var(--txt-3)}
+.pk-en{font-size:.8125rem;min-width:0}
+.pk-k{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 18px;margin-top:12px}
+.pk-k span{display:block;font-size:.72rem;line-height:1.3;color:var(--txt-3)}
+.pk-k b{display:block;margin-top:3px;font-family:var(--display);font-size:1.0625rem;font-weight:600;letter-spacing:-.012em;font-variant-numeric:tabular-nums}
+.pk-k small{display:block;font-size:.6875rem;line-height:1.3;color:var(--txt-3)}
+.pk-ojo{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px 20px}
+.pk-ojo div{font-size:.8125rem;line-height:1.5;color:var(--txt-2)}
+.pk-ojo b{display:block;margin-bottom:2px;font-family:var(--display);font-size:.875rem;font-weight:600;color:var(--txt)}
+@media (max-width:760px){
+  .pk-hero{grid-template-columns:1fr;padding:20px 18px}
+  .pk-b{grid-template-columns:minmax(104px,130px) minmax(50px,1fr) 66px;gap:7px}
+  .pk-k{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){.pk-izq>b,.pk-b,.pk-eje i,.pk-rb i,.pk-e{animation:none}}
 </style>
 </head>
 <body>
@@ -1910,6 +1991,7 @@ c 810 FEMSAUBD a 202.18</pre>
       <section class="view" id="v-mercado">
         <div class="tabs" data-tabs="mercado">
           <button class="tab on" data-p="px">Precios</button>
+          <button class="tab" data-p="fedw">Fed Watch</button>
           <button class="tab" data-p="feed">Fuente de datos</button>
           <button class="tab" data-p="nube">Archivos en la nube</button>
           <span class="tab-ink"></span>
@@ -1922,6 +2004,19 @@ c 810 FEMSAUBD a 202.18</pre>
               <div class="seg" id="segPxUni"></div></div>
             <div class="tbl-wrap" style="max-height:680px"><table id="tPx"></table></div>
           </div>
+        </div>
+        <div class="pane" id="p-fedw">
+          <div class="fw-cabezas" id="fwCabezas"></div>
+          <div class="card" style="margin-bottom:14px"><div class="card-h"><h3><svg class="i"><use href="#i-chart"/></svg>Diferencial de tasas: Banxico contra la Fed</h3><span class="hint">en puntos base · línea punteada: lo que descuenta el mercado</span></div>
+            <div class="grid g4 fw-k" id="fwDifK"></div>
+            <div class="chart-box" style="height:300px"><div id="chFwDif"></div></div>
+            <p class="chart-nota" id="fwDifT"></p></div>
+          <div class="grid g2" style="margin-bottom:14px">
+            <div class="card"><div class="card-h"><h3>Hacia dónde ve el mercado las tasas</h3></div><p class="fw-sub">Tasa esperada después de cada reunión.</p><div class="chart-box" style="height:250px"><div id="chFwRuta"></div></div></div>
+            <div class="card"><div class="card-h"><h3>Cómo ha cambiado la expectativa</h3></div><p class="fw-sub">Lo que descuenta el mercado para la próxima reunión de cada banco, en puntos base contra su tasa de hoy.</p><div class="chart-box" style="height:250px"><div id="chFwExp"></div></div></div>
+          </div>
+          <div class="fw-tablas" id="fwTablas"></div>
+          <div class="card" id="fwComo"></div>
         </div>
         <div class="pane" id="p-feed">
           <div class="card" style="margin-bottom:14px">
@@ -2195,6 +2290,7 @@ c 810 FEMSAUBD a 202.18</pre>
           <button class="tab" data-p="atrsem">Reporte semanal</button>
           <button class="tab" data-p="atrops">Operaciones abiertas y cerradas</button>
           <button class="tab" data-p="atrrank">Ranking</button>
+          <button class="tab" data-p="atrpick">Stock picking y timing</button>
           <button class="tab" data-p="atrcash">Cash drag</button>
           <span class="tab-ink"></span>
         </div>
@@ -2318,6 +2414,26 @@ c 810 FEMSAUBD a 202.18</pre>
           <p class="atv-expl" id="atv-rknota"></p>
           <div class="card pad0"><div class="card-h" style="padding:18px 19px 0"><h3>Ranking de emisoras del universo</h3><span class="hint">clic en el encabezado para ordenar</span></div>
             <div class="tbl-wrap" style="max-height:700px"><table id="atvTRank"></table></div></div>
+        </div>
+
+        <div class="pane" id="p-atrpick">
+          <div class="pk-hero" id="pkHero"></div>
+          <div class="card" style="margin-bottom:14px"><div class="card-h"><h3>Qué significa cada una</h3></div>
+            <div class="pk-ojo"><div><b>Stock picking</b>Dentro de cada sector, ¿escogimos acciones que le ganaron a ese sector? Es el cuadrante III − I.</div>
+              <div><b>Timing</b>¿Pesamos más en los sectores que le ganaron al MEXTRAC09 y menos en los que se quedaron atrás? Es el cuadrante II − I, e incluye el efectivo.</div>
+              <div><b>Ojo con la palabra «timing»</b>Aquí aparece de tres formas: el de los sectores (arriba), el de cada operación (más abajo) y el market timing de Treynor-Mazuy (al final).</div></div></div>
+          <div class="card" style="margin-bottom:14px"><div class="card-h"><h3><svg class="i"><use href="#i-chart"/></svg>Cómo se fue formando</h3><span class="hint">desde el día 0 · en puntos base</span></div>
+            <div class="chart-box" style="height:300px"><div id="chPick"></div></div><p class="chart-nota" id="pkNota"></p></div>
+          <div class="grid g2" style="margin-bottom:14px"><div class="card" id="pkBHB"></div><div class="card" id="pkR2"></div></div>
+          <div class="card pad0" style="margin-bottom:14px"><div class="card-h" style="padding:18px 19px 0"><h3>Por sector</h3><span class="hint">clic en el encabezado para ordenar</span></div>
+            <div class="tbl-wrap"><table id="pkSec"></table></div></div>
+          <div class="grid g2" style="margin-bottom:14px"><div class="card" id="pkTop"></div><div class="card" id="pkPeor"></div></div>
+          <div class="card pad0" style="margin-bottom:14px"><div class="card-h" style="padding:18px 19px 0"><h3>El timing de lo que hicimos</h3><span class="hint">operaciones desde el día 0</span></div>
+            <p class="atv-expl" id="pkOpsN" style="padding:0 19px"></p>
+            <div class="tbl-wrap"><table id="pkOps"></table></div></div>
+          <div class="card" id="pkTM" style="margin-bottom:14px"></div>
+          <div class="card pad0"><div class="card-h" style="padding:18px 19px 0"><h3>Día por día</h3><span class="hint">las piezas suman el alfa de cada día</span></div>
+            <div class="tbl-wrap"><table id="pkDia"></table></div></div>
         </div>
 
         <div class="pane" id="p-atrcash">
@@ -4960,14 +5076,16 @@ const Sobregiro={
    por moneda de cada emisora (sotp.csv) y calendario (calendario.csv). Ruta relativa en GitHub Pages; si no, raw.githubusercontent. */
 const Ctx=(()=>{
   const RAW='https://raw.githubusercontent.com/northstar-strategies/bbva-clinicas/main/';
-  const D={ohlc:{}, macro:{}, sotp:{}, cal:[], hist:[], listo:false};
+  const D={ohlc:{}, macro:{}, sotp:{}, cal:[], hist:[], fw:[], listo:false};
   const filas=t=>{ const R=IO.parseCSV(String(t||'').trim()); if(R.length<2) return []; const H=R[0].map(h=>String(h).trim());
     return R.slice(1).filter(r=>r.length>1).map(r=>Object.fromEntries(H.map((h,i)=>[h,r[i]??'']))); };
   async function texto(f){
     if(/^https?:$/.test(location.protocol)){ try{ const r=await fetch(f+'?_ts='+Date.now(),{cache:'no-store'}); if(r.ok) return r.text(); }catch(e){} }
     const r=await fetch(RAW+f+'?_ts='+Date.now(),{cache:'no-store'}); return r.ok?r.text():''; }
   async function cargar(){
-    const [o,m,s,c,h]=await Promise.all(['ohlc.csv','macro.csv','sotp.csv','calendario.csv','noticias_historia.txt'].map(f=>texto(f).catch(()=>'')));
+    const [o,m,s,c,h,fw]=await Promise.all(['ohlc.csv','macro.csv','sotp.csv','calendario.csv','noticias_historia.txt','fedwatch.csv'].map(f=>texto(f).catch(()=>'')));
+    const nv=v=>v===''||v==null?null:+v;
+    D.fw=filas(fw).map(r=>({fecha:r.fecha,banco:r.banco,n:+r.n,reunion:r.reunion,objetivo:nv(r.objetivo),pb:nv(r.pb),p_mayor:nv(r.p_mayor),p_menor:nv(r.p_menor),tasa_mayor:nv(r.tasa_mayor),tasa_menor:nv(r.tasa_menor)}));
     D.hist=h?Remote.parseNoticias(h):[];                 // v6.9: la línea del tiempo; noticias.txt solo trae 7 días
     D.ohlc={}; filas(o).forEach(r=>(D.ohlc[r.emisora]||(D.ohlc[r.emisora]=[])).push({f:r.fecha,o:+r.apertura||null,h:+r.maximo||null,l:+r.minimo||null,c:+r.cierre}));
     D.macro={}; filas(m).forEach(r=>{ const x=D.macro[r.serie]||(D.macro[r.serie]={nombre:r.nombre,moneda:r.moneda,mueve:String(r.mueve||'').split(/\s+/).filter(Boolean),s:[]});
@@ -5292,6 +5410,114 @@ const Historia=(()=>{
       if(dat) R.chart.setCrosshairPosition(dat.close,dat.time,R.hSerie); else R.chart.clearCrosshairPosition(); });
   }
   return {iniciar,rail,ligar,abrir,cerrar,info,lista,marcas:f=>{ const q=A()&&A().dias[f]?hitos(f,A().dias[f],ops(f)):[]; return q.filter(h=>h.m).map(h=>h.m); }};
+})();
+/* Fed Watch: lo que el mercado descuenta para las tasas de la Fed y de Banxico, según LSEG (fedwatch.csv, cadenas 0#USDIRPR y 0#MXNIRPR) y el diferencial entre las dos.
+   LSEG publica la probabilidad solo de la siguiente reunión; para las demás se aplica su misma regla (cada 25 pb descontados = 100% de un movimiento) a lo que cambia de una reunión a otra. */
+const FedW=(()=>{
+  const C={FED:'#D4EDFC',BANXICO:'#4A9DF0',alza:'#FFB340',igual:'rgba(255,255,255,.2)',baja:'#4A9DF0'};
+  const NOM={FED:'Fed',BANXICO:'Banxico'};
+  const pb=(v,d=1)=>(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(d)+' pb';
+  const pc=v=>(v*100).toFixed(1)+'%';
+  const fF=(f,y)=>new Date(f+'T12:00:00').toLocaleDateString('es-MX',{day:'numeric',month:'short',...(y?{year:'numeric'}:{})}).replace(/\./g,'');
+  const tasa=(banco,v)=>banco==='FED'?`${(v-.125).toFixed(2)}–${(v+.125).toFixed(2)}%`:`${v.toFixed(2)}%`;      // la Fed fija un rango y LSEG usa su punto medio
+  const cuando=f=>{ const d=Math.round((new Date(f+'T12:00:00')-new Date(new Date().toDateString()+' 12:00'))/864e5);
+    return d<0?'ya pasó':d===0?'hoy':d===1?'mañana':`en ${d} días`; };
+  const filasDe=b=>(Ctx.D.fw||[]).filter(r=>r.banco===b);
+  function curva(b){ const R=filasDe(b); if(!R.length) return []; const u=R.reduce((a,r)=>r.fecha>a?r.fecha:a,''); return R.filter(r=>r.fecha===u).sort((x,y)=>x.n-y.n); }
+  // Probabilidad de alza, sin cambio y baja en cada reunión: la de LSEG en la siguiente; en las demás, su misma regla sobre lo que cambia desde la reunión anterior.
+  function prob(r,prev){
+    const inc=r.pb-(prev?prev.pb:0);
+    if(r.p_mayor!=null&&r.p_menor!=null&&r.tasa_mayor!=null&&r.tasa_menor!=null){
+      const P={alza:0,igual:0,baja:0}, pon=(t,p)=>{ P[t>r.objetivo+1e-9?'alza':t<r.objetivo-1e-9?'baja':'igual']+=p/100; };
+      pon(r.tasa_mayor,r.p_mayor); pon(r.tasa_menor,r.p_menor); return {...P,inc,lseg:true}; }
+    const m=Math.min(1,Math.abs(inc)/25); return {alza:inc>0?m:0,baja:inc<0?m:0,igual:1-m,inc,lseg:false};
+  }
+  const conProb=c=>c.map((r,i)=>({...r,esp:r.objetivo+r.pb/100,P:prob(r,c[i-1])}));
+  const barra=P=>`<span class="fw-bar" role="img" aria-label="Baja ${pc(P.baja)}, sin cambio ${pc(P.igual)}, alza ${pc(P.alza)}"><i style="flex-grow:${P.baja};background:${C.baja}"></i><i style="flex-grow:${P.igual};background:${C.igual}"></i><i style="flex-grow:${P.alza};background:${C.alza}"></i></span>`;
+  function frase(b,r){ const P=r.P, sube=P.alza>P.baja, q=sube?P.alza:P.baja, nueva=r.objetivo+(sube?.25:-.25);
+    if(q<.005) return `El mercado no descuenta cambios: ${pc(P.igual)} de que se quede igual.`;
+    return `El mercado ve <b>${pc(q)}</b> de que ${sube?'suba':'baje'} 25 pb, a ${tasa(b,nueva)}, y ${pc(P.igual)} de que no se mueva.`; }
+  function cabeza(b,c){ const r=c[0];
+    return `<article class="fw-c" style="--c:${C[b]}"><div class="fw-c-t"><h3>${NOM[b]}</h3><span>Tasa objetivo <b>${tasa(b,r.objetivo)}</b></span></div>
+      <p class="fw-prox">Siguiente decisión: <b>${fF(r.reunion,true)}</b> <em>${cuando(r.reunion)}</em></p>${barra(r.P)}
+      <div class="fw-ley"><span><i style="background:${C.baja}"></i>Baja <b>${pc(r.P.baja)}</b></span><span><i style="background:${C.igual}"></i>Sin cambio <b>${pc(r.P.igual)}</b></span><span><i style="background:${C.alza}"></i>Alza <b>${pc(r.P.alza)}</b></span></div>
+      <p class="fw-txt">${frase(b,r)}</p></article>`; }
+  function tabla(b,c){
+    return `<div class="card pad0"><div class="card-h" style="padding:18px 19px 0"><h3>${NOM[b]}: reunión por reunión</h3><span class="hint">${c.length} ${c.length===1?'reunión':'reuniones'} en LSEG</span></div>
+      <div class="tbl-wrap"><table class="fw-t"><thead><tr><th>Reunión</th><th>Tasa esperada</th><th>Acumulado</th><th>En esa reunión</th><th>Probabilidad en esa reunión</th></tr></thead><tbody>${c.map(r=>`<tr>
+        <td><b>${fF(r.reunion,true)}</b><small>${cuando(r.reunion)}</small></td><td>${r.esp.toFixed(3)}%</td><td>${pb(r.pb)}</td><td>${pb(r.P.inc)}</td>
+        <td class="fw-pc">${barra(r.P)}<small>${r.P.baja>=.005?`Baja ${pc(r.P.baja)} · `:''}Sin cambio ${pc(r.P.igual)}${r.P.alza>=.005?` · Alza ${pc(r.P.alza)}`:''}${r.P.lseg?'':' · regla'}</small></td></tr>`).join('')}</tbody></table></div></div>`; }
+  // Tasa objetivo de cada banco por fecha (renglones de la reunión siguiente), para el diferencial histórico
+  const objetivos=b=>new Map(filasDe(b).filter(r=>r.n===1).map(r=>[r.fecha,r.objetivo]));
+  function historia(){
+    const F=objetivos('FED'), B=objetivos('BANXICO'), fechas=[...F.keys()].filter(f=>B.has(f)).sort();
+    return fechas.map(f=>({f,v:(B.get(f)-F.get(f))*100}));
+  }
+  function proyeccion(cf,cb){ // tasa esperada de cada banco justo después de cada reunión, hasta donde LSEG publica a los dos
+    if(!cf.length||!cb.length) return [];
+    const fin=cb.at(-1).reunion, tope=(c,f)=>{ let v=c[0].objetivo; c.forEach(r=>{ if(r.reunion<=f) v=r.esp; }); return v; };
+    return [...new Set([...cf,...cb].map(r=>r.reunion))].filter(f=>f<=fin).sort().map(f=>({f,fed:tope(cf,f),bx:tope(cb,f),v:(tope(cb,f)-tope(cf,f))*100}));
+  }
+  const ultMacro=k=>Ctx.D.macro[k]?.s?.at(-1)?.v;
+  let firma='';
+  function render(){
+    const fw=Ctx.D.fw||[], el=document.getElementById('fwCabezas'); if(!el) return;
+    if(!fw.length){ el.innerHTML=`<div class="insuf">${Ctx.D.listo?'Todavía no se publica <code>fedwatch.csv</code>: lo baja el vigilante con <code>--descargar</code>.':'Cargando el Fed Watch…'}</div>`; return; }
+    const f0=[fw.length,fw.at(-1).fecha,Ctx.D.listo].join('|'); if(f0===firma && TV.reg.chFwDif && document.body.contains(TV.reg.chFwDif.el)) return; firma=f0;
+    const cf=conProb(curva('FED')), cb=conProb(curva('BANXICO')); if(!cf.length||!cb.length) return;
+    el.innerHTML=cabeza('FED',cf)+cabeza('BANXICO',cb);
+    // El diferencial de bonos solo se calcula con las dos tasas de la misma fecha: sus series no siempre llegan al mismo día
+    const MB=new Map((Ctx.D.macro.MBONO10?.s||[]).map(x=>[x.f,x.v])), bonos=(Ctx.D.macro.UST10?.s||[]).filter(x=>MB.has(x.f)).map(x=>({f:x.f,us:x.v,mx:MB.get(x.f),v:(MB.get(x.f)-x.v)*100}));
+    const hoy=(cb[0].objetivo-cf[0].objetivo)*100, pr=proyeccion(cf,cb), fin=pr.at(-1), ub=bonos.at(-1), usd=ultMacro('USD');
+    const cambio=fin?fin.v-hoy:0, mueve=[...new Set([...(Ctx.D.macro.UST10?.mueve||[]),...(Ctx.D.macro.MBONO10?.mueve||[])])];
+    document.getElementById('fwDifK').innerHTML=`<div class="kpi hl"><div class="lbl">Banxico − Fed hoy</div><div class="val sm">${pb(hoy)}</div><div class="delta">${tasa('BANXICO',cb[0].objetivo)} contra ${tasa('FED',cf[0].objetivo)}</div></div>
+      <div class="kpi"><div class="lbl">Lo que descuenta el mercado${fin?` al ${fF(fin.f)}`:''}</div><div class="val sm">${fin?pb(fin.v):'—'}</div><div class="delta">${fin?`${pb(cambio)} contra hoy`:''}</div></div>
+      <div class="kpi"><div class="lbl">Bono M − Bono de EUA a 10 años</div><div class="val sm">${ub?pb(ub.v):'—'}</div><div class="delta">${ub?`${ub.mx.toFixed(2)}% contra ${ub.us.toFixed(2)}% · ${fF(ub.f)}`:''}</div></div>
+      <div class="kpi"><div class="lbl">Dólar en pesos</div><div class="val sm">${usd==null?'—':money(usd)}</div><div class="delta">último cierre en macro.csv</div></div>`;
+    document.getElementById('fwDifT').innerHTML=`<b>Por qué importa:</b> Banxico paga más que la Fed, y esa diferencia es parte de lo que hace atractivo traer dinero a pesos. ${cambio<-1?`Hoy el mercado espera que se <b>angoste ${Math.abs(cambio).toFixed(0)} pb</b>${fin?` para el ${fF(fin.f)}`:''}: el peso tendría menos colchón.`:cambio>1?`Hoy el mercado espera que se <b>amplíe ${cambio.toFixed(0)} pb</b>${fin?` para el ${fF(fin.f)}`:''}: el peso tendría más colchón.`:'Hoy el mercado no espera grandes cambios.'}${mueve.length?` Las tasas también mueven a ${mueve.map(esc).join(', ')} (macro.csv).`:''} Es contexto para leer el mercado, no una causa demostrada de lo que haga el portafolio.`;
+    document.getElementById('fwTablas').innerHTML=tabla('FED',cf)+tabla('BANXICO',cb);
+    const ex=cf[0], exb=cb[0], sube=ex.pb>=0;
+    document.getElementById('fwComo').innerHTML=`<div class="card-h"><h3>Cómo se lee</h3><span class="hint">datos de LSEG · Refinitiv</span></div>
+      <p class="fw-p"><b>Qué es.</b> No es lo que va a pasar ni lo que dicen los bancos centrales: es lo que el mercado ya trae en precios. LSEG lo calcula y lo publica en sus cadenas <code>0#USDIRPR</code> (Fed, con futuros de fondos federales) y <code>0#MXNIRPR</code> (Banxico).</p>
+      <p class="fw-p"><b>La regla.</b> Cada 25 pb que descuenta el mercado equivalen a 100% de un movimiento. Para el ${fF(ex.reunion)}, la Fed trae ${pb(ex.pb,2)}: ${Math.abs(ex.pb).toFixed(2)} ÷ 25 = ${(Math.abs(ex.pb)/25*100).toFixed(1)}% de ${sube?'alza':'baja'}. Banxico trae ${pb(exb.pb,2)} para el ${fF(exb.reunion)}: ${(Math.abs(exb.pb)/25*100).toFixed(1)}% de ${exb.pb>=0?'alza':'baja'}.</p>
+      <p class="fw-p"><b>Las reuniones siguientes.</b> LSEG publica la probabilidad solo de la siguiente reunión. En las demás (marcadas «regla») aplicamos esa misma regla a lo que cambia de una reunión a otra. Si cambia más de 25 pb, la barra se llena: el mercado espera más de un movimiento.</p>
+      <p class="fw-p" style="margin:0"><b>Dos avisos.</b> La Fed fija un rango y LSEG usa su punto medio (${ex.objetivo.toFixed(3)}%). De Banxico, LSEG solo publica ${cb.length} ${cb.length===1?'reunión':'reuniones'}, así que el diferencial esperado llega hasta ahí. Datos al cierre del ${fF(ex.fecha,true)}.</p>`;
+
+    /* —— gráficas: una sola unidad por gráfica —— */
+    const t=f=>TV.deFecha(f), fmtPb={type:'custom',formatter:v=>(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(0)+' pb',minMove:.1}, fmtR={type:'custom',formatter:v=>v.toFixed(2)+'%',minMove:.001};
+    const hist=historia(), R1=TV.crear('chFwDif',{marca:''}), R2=TV.crear('chFwRuta',{marca:''}), R3=TV.crear('chFwExp',{marca:''}); if(!R1||!R2||!R3) return;
+    const sD=TV.serie(R1,'dif','linea',{color:C.FED,lineWidth:2,lineType:1,priceFormat:fmtPb,priceLineVisible:false});
+    const sE=TV.serie(R1,'esp','linea',{color:C.FED,lineWidth:2,lineStyle:2,lineType:1,priceFormat:fmtPb,priceLineVisible:false,lastValueVisible:true});
+    const sB=TV.serie(R1,'bono','linea',{color:C.BANXICO,lineWidth:2,priceFormat:fmtPb,priceLineVisible:false});
+    sD.setData(hist.map(x=>({time:t(x.f),value:x.v})));
+    const ultH=hist.at(-1); sE.setData(ultH?[{time:t(ultH.f),value:ultH.v},...pr.filter(x=>x.f>ultH.f).map(x=>({time:t(x.f),value:x.v}))]:[]);
+    sB.setData(bonos.map(x=>({time:t(x.f),value:x.v})));
+    const porH=new Map(hist.map(x=>[t(x.f),x.v])), porE=new Map(pr.map(x=>[t(x.f),x.v])), porB=new Map(bonos.map(x=>[t(x.f),x.v]));
+    R1.leyenda=p=>{ const T=p?p.time:null, h=T?porH.get(T):ultH?.v, e=T?porE.get(T):null, b=T?porB.get(T):bonos.at(-1)?.v;
+      R1.ley.innerHTML=`<span class="f">${T?TV.cruz(T):'Último'}</span>`+(h!=null?TV.it(C.FED,'Banxico − Fed',pb(h)):'')+(e!=null?TV.it(C.FED,'Esperado',pb(e),'','guion'):'')+(b!=null?TV.it(C.BANXICO,'Bono M − Bono EUA 10 años',pb(b)):''); };
+    R1.leyenda(null); R1.chart.timeScale().fitContent();
+
+    const hoyT=t(ex.fecha), ruta=c=>[{time:hoyT,value:c[0].objetivo},...c.filter(r=>r.reunion>ex.fecha).map(r=>({time:t(r.reunion),value:r.esp}))];
+    const sF=TV.serie(R2,'fed','linea',{color:C.FED,lineWidth:2,lineType:1,priceFormat:fmtR,priceLineVisible:false,pointMarkersVisible:true});
+    const sX=TV.serie(R2,'bx','linea',{color:C.BANXICO,lineWidth:2,lineType:1,priceFormat:fmtR,priceLineVisible:false,pointMarkersVisible:true});
+    sF.setData(ruta(cf)); sX.setData(ruta(cb));
+    const pF=new Map(ruta(cf).map(x=>[x.time,x.value])), pX=new Map(ruta(cb).map(x=>[x.time,x.value]));
+    R2.leyenda=p=>{ const T=p?p.time:null, a=T?pF.get(T):cf.at(-1).esp, b=T?pX.get(T):cb.at(-1).esp;
+      R2.ley.innerHTML=`<span class="f">${T?TV.cruz(T):'Última reunión publicada'}</span>`+(a!=null?TV.it(C.FED,'Fed',a.toFixed(3)+'%'):'')+(b!=null?TV.it(C.BANXICO,'Banxico',b.toFixed(3)+'%'):''); };
+    R2.leyenda(null); R2.chart.timeScale().fitContent();
+
+    // Para la próxima reunión de cada banco: cómo ha cambiado lo que descuenta el mercado, sin importar en qué lugar de la cadena venía.
+    // LSEG mide los pb contra la tasa de ese día; aquí todo va contra la tasa de hoy, para que un cambio de tasa no parezca un cambio de expectativa.
+    const deReunion=(b,f,hoyObj)=>filasDe(b).filter(r=>r.reunion===f).sort((x,y)=>x.fecha.localeCompare(y.fecha)).map(r=>({time:t(r.fecha),value:(r.objetivo+r.pb/100-hoyObj)*100}));
+    const sa=TV.serie(R3,'fed','linea',{color:C.FED,lineWidth:2,priceFormat:{type:'custom',formatter:v=>pb(v),minMove:.01},priceLineVisible:false});
+    const sb=TV.serie(R3,'bx','linea',{color:C.BANXICO,lineWidth:2,priceFormat:{type:'custom',formatter:v=>pb(v),minMove:.01},priceLineVisible:false});
+    const da=deReunion('FED',ex.reunion,ex.objetivo), db=deReunion('BANXICO',exb.reunion,exb.objetivo); sa.setData(da); sb.setData(db);
+    const mA=new Map(da.map(x=>[x.time,x.value])), mB=new Map(db.map(x=>[x.time,x.value]));
+    R3.leyenda=p=>{ const T=p?p.time:null, a=T?mA.get(T):da.at(-1)?.value, b=T?mB.get(T):db.at(-1)?.value;
+      R3.ley.innerHTML=`<span class="f">${T?TV.cruz(T):'Último'}</span>`+(a!=null?TV.it(C.FED,`Fed · ${fF(ex.reunion)}`,pb(a)):'')+(b!=null?TV.it(C.BANXICO,`Banxico · ${fF(exb.reunion)}`,pb(b)):''); };
+    R3.leyenda(null); R3.chart.timeScale().fitContent();
+  }
+  return {render,curva,conProb,proyeccion,historia};
 })();
 const Charts=(()=>{
   const reg={};
@@ -6249,11 +6475,128 @@ const AtrV=(()=>{
       dias.map((d,i)=>({f:d.fecha,w:w(d),rb:d.rb,ap:ap(d),ac:acum[i],m:ap(d)*d.v0,x:frase(d)})),'f');
   }
 
+  /* ═════ PESTAÑA · STOCK PICKING Y TIMING ═════
+     Términos de Brinson, Hood y Beebower: timing = cuadrante II − I (pesar distinto) y stock picking = III − I (escoger acciones). No hay cuenta nueva: son la asignación y la selección
+     del renglón TOTAL de atribucion_sector.csv, enlazadas con Cariño. Con la interacción, el MEXTRAC contra su canasta, las operaciones y las comisiones suman exacto el alfa. */
+  // Mínimos cuadrados: coeficientes y sus errores estándar, para la lectura de Treynor-Mazuy
+  function mco(X,y){
+    const k=X[0].length, A=Array.from({length:k},(_,i)=>Array.from({length:k},(_,j)=>X.reduce((s,f)=>s+f[i]*f[j],0))), M=A.map((f,i)=>[...f,...f.map((_,j)=>i===j?1:0)]);
+    for(let i=0;i<k;i++){ let m=i; for(let r=i+1;r<k;r++) if(Math.abs(M[r][i])>Math.abs(M[m][i])) m=r;
+      [M[i],M[m]]=[M[m],M[i]]; const p=M[i][i]; if(Math.abs(p)<1e-18) return null; M[i]=M[i].map(v=>v/p);
+      for(let r=0;r<k;r++) if(r!==i){ const q=M[r][i]; M[r]=M[r].map((v,c)=>v-q*M[i][c]); } }
+    const inv=M.map(f=>f.slice(k)), Xy=Array.from({length:k},(_,i)=>X.reduce((s,f,n)=>s+f[i]*y[n],0)), b=inv.map(f=>f.reduce((s,v,j)=>s+v*Xy[j],0));
+    const res=y.map((v,n)=>v-X[n].reduce((s,x,j)=>s+x*b[j],0)), gl=y.length-k;
+    if(gl<1) return null;
+    const s2=res.reduce((s,e)=>s+e*e,0)/gl; return {b,se:inv.map((f,i)=>Math.sqrt(s2*f[i])),gl};
+  }
+  const pkR2=(x,y)=>{ const n=x.length, mx=x.reduce((a,v)=>a+v,0)/n, my=y.reduce((a,v)=>a+v,0)/n; let sxy=0,sxx=0,syy=0;
+    x.forEach((v,i)=>{ sxy+=(v-mx)*(y[i]-my); sxx+=(v-mx)**2; syy+=(y[i]-my)**2; }); return sxx&&syy?sxy*sxy/(sxx*syy):null; };
+  const pkLogo=s=>{ const u=logoUrl(s); return `<span class="sym clicable" data-ficha="${s}" title="Ver ficha de ${s}"><span class="lg" style="--h:${logoHue(s)}"><b>${logoMark(s)}</b>${u?`<img src="${u}" alt="" loading="lazy" onerror="this.remove()">`:''}</span>${s}</span>`; };
+  let pkFirma='';
+  function rPick(){
+    const dias=D.fechas.map(f=>D.dias[f]).filter(d=>total(d,'a')!=null); if(!dias.length) return;
+    const S0=Store.get(), firma=[dias.length,dias.at(-1).fecha,dias.at(-1).alfa,(S0.ops||[]).length,S0.cfg.cetes28,Ctx.D.listo].join('|');
+    if(firma===pkFirma && TV.reg.chPick && document.body.contains(TV.reg.chPick.el)) return; pkFirma=firma;
+    const E=enlazar(dias), P=piezas(E), en=d=>d.k/E.kP, tim=d=>total(d,'a'), pic=d=>total(d,'se'), int=d=>total(d,'i');
+    const T=E.L(tim), S=E.L(pic), I=E.L(int), sec=porSector(E);
+
+    /* —— el resultado: de dónde viene el alfa —— */
+    const trozos=[{l:'Stock picking',d:'escoger mejores o peores acciones',v:S,f:1},{l:'Timing',d:'pesar distinto en sectores y efectivo',v:T,f:1},{l:'Interacción',d:'cargar más justo donde escogimos mejor o peor',v:I},
+      {l:'MEXTRAC09 contra su canasta',v:P.mextrac},{l:'Operaciones',v:P.ops},{l:'Comisión e IVA',v:P.com}];
+    const mx=Math.max(...trozos.map(x=>Math.abs(x.v)),1e-9);
+    const parte=v=>Math.abs(v/E.alfa)*100, secNeg=k=>[...sec].filter(x=>x.s!=='Efectivo').sort((a,b)=>Math.abs(b[k])-Math.abs(a[k]))[0];
+    const sp=secNeg('se'), st_=secNeg('a');
+    const verbo=v=>v<0?'restó':'sumó', juicio=T<0&&S<0?`Las dos restan: el stock picking ${Math.abs(S)>=Math.abs(T)?'pesa más':'pesa menos'} que el timing.`:T>0&&S>0?'Las dos suman.':`El stock picking ${verbo(S)} y el timing ${verbo(T)}.`;
+    $('#pkHero').innerHTML=`<div class="pk-izq"><span class="pk-et">Alfa acumulado desde el día 0</span><b class="${cl(E.alfa)}">${cdPb(E.alfa,2)}</b>
+        <p class="pk-j">${juicio}</p>
+        <p>Stock picking <b class="${cl(S)}">${cdPb(S)}</b> (${parte(S).toFixed(0)}% del alfa). El sector que más pesó fue ${esc(sp.s)}, con ${cdPb(sp.se)}.</p>
+        <p>Timing <b class="${cl(T)}">${cdPb(T)}</b> (${parte(T).toFixed(0)}% del alfa). El sector que más pesó fue ${esc(st_.s)}, con ${cdPb(st_.a)}. Incluye ${cdPb(P.efectivo)} del efectivo.</p></div>
+      <div class="pk-der">${trozos.map((x,i)=>`<div class="pk-b ${x.f?'fuerte':''}" style="--i:${i}"><span class="pk-bn">${x.l}${x.d?`<small>${x.d}</small>`:''}</span>
+          <span class="pk-eje"><i class="${x.v>=0?'p':'n'}" style="--w:${(Math.abs(x.v)/mx*50).toFixed(2)}%"></i></span><b class="${cl(x.v)}">${cdPb(x.v)}</b></div>`).join('')}
+        <div class="pk-b tot"><span class="pk-bn">Alfa</span><span></span><b class="${cl(E.alfa)}">${cdPb(E.alfa,2)}</b></div></div>`;
+
+    /* —— la evolución: una unidad, tres líneas —— */
+    const acum=dias.map((_,i)=>{ const e=enlazar(dias.slice(0,i+1)); return {t:e.L(tim),s:e.L(pic),a:e.alfa}; });
+    const fmt={type:'custom',formatter:v=>(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(0)+' pb',minMove:.1}, t=f=>TV.deFecha(f);
+    const R=TV.crear('chPick',{marca:''}); if(!R) return;
+    const serie=k=>[{time:t(D.d0),value:0},...dias.map((d,i)=>({time:t(d.fecha),value:acum[i][k]*1e4}))];
+    TV.banda(R,serie('t'));
+    const CT='#D4EDFC', CS='#4A9DF0', CA='rgba(236,243,251,.45)';
+    const sa=TV.serie(R,'alfa','linea',{color:CA,lineWidth:1,lineStyle:2,priceFormat:fmt,priceLineVisible:false,lastValueVisible:false,crosshairMarkerVisible:false});
+    const st2=TV.serie(R,'tim','linea',{color:CT,lineWidth:2,priceFormat:fmt,priceLineVisible:false});
+    const ss=TV.serie(R,'pic','linea',{color:CS,lineWidth:2,priceFormat:fmt,priceLineVisible:false});
+    sa.setData(serie('a')); st2.setData(serie('t')); ss.setData(serie('s'));
+    const porT=new Map(dias.map((d,i)=>[t(d.fecha),{d,...acum[i]}])), ultT=t(dias.at(-1).fecha);
+    R.leyenda=p=>{ const x=porT.get(p?p.time:ultT);
+      R.ley.innerHTML=`<span class="f">${x?(p?TV.cruz(p.time):'Último · '+TV.cruz(ultT)):'Día 0 · aquí empieza a medirse'}</span>`+(x?TV.it(CS,'Stock picking',cdPb(x.s),cl(x.s))+TV.it(CT,'Timing',cdPb(x.t),cl(x.t))+TV.it(CA,'Alfa',cdPb(x.a,2),cl(x.a),'guion'):''); };
+    R.leyenda(null); R.chart.timeScale().fitContent();
+    $('#pkNota').innerHTML='Acumulado desde el día 0. El <b>alfa</b> se separa de las otras dos sobre todo el 21 y el 22-oct, cuando el precio del MEXTRAC09 se alejó de su canasta y luego regresó: eso no es ni picking ni timing. La <b>banda roja</b> marca los días con caja negativa.';
+
+    /* —— los cuatro cuadrantes del artículo —— */
+    const q=[0,1,2,3].map(k=>dias.reduce((a,d)=>a*(1+(total(d,'q')?.[k]||0)),1)-1), serieQ=k=>dias.map(d=>total(d,'q')?.[k]||0);
+    const cel=(n,l,v,x='')=>`<div class="pk-q ${x}"><span>${n}</span><b>${fps(v)}</b><small>${l}</small></div>`;
+    $('#pkBHB').innerHTML=`<div class="card-h"><h3>Los cuatro cuadrantes</h3><span class="hint">Brinson, Hood y Beebower</span></div>
+      <div class="pk-m"><span></span><span class="pk-mh">Acciones del benchmark</span><span class="pk-mh">Nuestras acciones</span>
+        <span class="pk-mf">Pesos del benchmark</span>${cel('I','Política',q[0])}${cel('III','Política + stock picking',q[2])}
+        <span class="pk-mf">Nuestros pesos</span>${cel('II','Política + timing',q[1])}${cel('IV','Lo que rindieron de verdad',q[3],'real')}</div>
+      <p class="atv-expl" style="margin:12px 0 0">De I a II cambiamos solo los pesos: eso es el <b>timing</b> (${((q[1]-q[0])*100).toFixed(2).replace('-','−')} pp). De I a III cambiamos solo las acciones: eso es el <b>stock picking</b> (${((q[2]-q[0])*100).toFixed(2).replace('-','−')} pp). Estas restas son aproximadas porque los rendimientos se componen; los puntos base de arriba, enlazados con Cariño, sí suman exacto. El cuadrante I es la canasta del MEXTRAC09, por eso difiere del ${fps(E.RB)} de su precio.</p>`;
+
+    const R2=[['Solo la política (I)',pkR2(serieQ(0),serieQ(3))],['Política + timing (II)',pkR2(serieQ(1),serieQ(3))],['Política + stock picking (III)',pkR2(serieQ(2),serieQ(3))]];
+    $('#pkR2').innerHTML=`<div class="card-h"><h3>¿Cuánto explica cada pieza?</h3><span class="hint">${dias.length} días</span></div>
+      <p class="atv-expl">De las subidas y bajadas diarias de lo que rindieron nuestras acciones (cuadrante IV), cuánto se explica con cada cuadrante (R²).</p>
+      ${R2.map(([l,v])=>`<div class="pk-r"><span>${l}</span><span class="pk-rb"><i style="--w:${v==null?0:(v*100).toFixed(1)}%"></i></span><b>${v==null?'—':(v*100).toFixed(1)+'%'}</b></div>`).join('')}
+      <p class="atv-expl" style="margin:12px 0 0">El artículo encontró que la política explicaba 93.6% de la variación en fondos de pensiones, con datos trimestrales. Aquí son ${dias.length} días, así que sirve como referencia, no como conclusión. Que la política explique mucho de lo que se mueve no quita que picking y timing decidan si le ganamos al MEXTRAC09.</p>`;
+
+    /* —— por sector —— */
+    const frSec=x=>x.s==='Efectivo'?'Es el cash drag: tiene su propia pestaña.':fraseSec(x,E.RB);
+    tabla('pkSec',[{k:'s',l:'Sector',f:v=>`<b>${esc(v)}</b>`},{k:'act',l:'Peso activo promedio',f:fpp,c:cl},{k:'a',l:'Timing',f:v=>cdPb(v),c:cl},{k:'se',l:'Stock picking',f:v=>cdPb(v),c:cl},{k:'i',l:'Interacción',f:v=>cdPb(v),c:cl},
+      {k:'t',l:'Total',f:v=>cdPb(v),c:cl},{k:'x',l:'Qué pasó',f:v=>`<span class="atv-frase" style="text-align:left">${esc(v)}</span>`}],
+      sec.map(x=>({...x,act:x.wp-x.wb,x:frSec(x)})),'+t');
+
+    /* —— por emisora: dentro de su sector —— */
+    const m={}; dias.forEach(d=>d.em.forEach(e=>{ const q=m[e.sym]||(m[e.sym]={sym:e.sym,se:0,f:1,fs:1,act:0,n:0}); q.se+=(e.se||0)*en(d); q.f*=1+(e.r||0); q.fs*=1+(e.rbs||0);
+      q.act+=(e.wps?e.wp/e.wps:0)-(e.wbs?e.wb/e.wbs:0); q.n++; }));
+    const em=Object.values(m).map(q=>({...q,rel:q.f-q.fs,act:q.act/q.n})), bien=em.filter(x=>x.se>=5e-6), mal=em.filter(x=>x.se<=-5e-6);
+    const sumaB=bien.reduce((a,x)=>a+x.se,0), sumaM=mal.reduce((a,x)=>a+x.se,0), top=[...bien].sort((a,b)=>b.se-a.se).slice(0,5), peor=[...mal].sort((a,b)=>a.se-b.se).slice(0,5), mxP=Math.max(...[...top,...peor].map(x=>Math.abs(x.se)),1e-9);
+    const fila=(x,i)=>`<div class="pk-e" style="--i:${i}"><span class="pk-en">${pkLogo(x.sym)}</span><span class="pk-rb"><i class="${x.se>=0?'p':'n'}" style="--w:${(Math.abs(x.se)/mxP*100).toFixed(1)}%"></i></span><b class="${cl(x.se)}">${cdPb(x.se)}</b>
+      <small>${x.act>=0?'Más':'Menos'} peso que el índice dentro de su sector (${Math.abs(x.act*100).toFixed(1)} pp); rindió ${Math.abs(x.rel*100).toFixed(1)} pp ${x.rel>=0?'más':'menos'} que su sector.</small></div>`;
+    $('#pkTop').innerHTML=`<div class="card-h"><h3>Los mejores aciertos</h3><span class="hint">${bien.length} emisoras sumaron ${cdPb(sumaB)}</span></div>${top.map(fila).join('')||'<p class="neu">Ninguna todavía.</p>'}`;
+    $('#pkPeor').innerHTML=`<div class="card-h"><h3>Los que más costaron</h3><span class="hint">${mal.length} emisoras restaron ${cdPb(sumaM)}</span></div>${peor.map(fila).join('')||'<p class="neu">Ninguna todavía.</p>'}`;
+
+    /* —— el timing de lo que hicimos —— */
+    const g={}; (S0.ops||[]).filter(o=>!o.asig&&o.fecha>D.d0&&/COMPRA|VENTA/.test(o.tipo)).forEach(o=>{ const k=o.fecha+'|'+o.sym+'|'+o.tipo;
+      const q=g[k]||(g[k]={fecha:o.fecha,sym:o.sym,tipo:o.tipo,tit:0,imp:0,razon:String(o.razon||'').split(' · ')[0]}); q.tit+=o.qty; q.imp+=o.qty*o.px; });
+    const opsR=Object.values(g).map(q=>{ const des=dias.filter(d=>d.fecha>q.fecha), cierre=(Ctx.D.ohlc[q.sym]||[]).find(x=>x.f===q.fecha)?.c, pp=q.imp/q.tit, c=q.tipo==='COMPRA';
+      const rE=des.reduce((a,d)=>a*(1+(d.em.find(e=>e.sym===q.sym)?.r||0)),1)-1, rB=des.reduce((a,d)=>a*(1+d.rb),1)-1, rel=rE-rB, val=(c?1:-1)*q.tit*(cierre||pp)*rel;
+      return {...q,pp,ej:cierre?(c?cierre/pp-1:pp/cierre-1):null,rE,rB,rel,val,lect:!des.length?'Todavía sin días para medir.':Math.abs(rel)<.001?'Sin diferencia.':(c?rel>0:rel<0)?(c?'Le ha ganado desde que la compramos.':'Se ha quedado atrás desde que la vendimos.'):(c?'Se ha quedado atrás desde que la compramos.':'Le ha ganado desde que la vendimos.')}; });
+    const vTot=opsR.reduce((a,x)=>a+x.val,0);
+    tabla('pkOps',[{k:'fecha',l:'Fecha',f:v=>fdate(v)},{k:'tipo',l:'Operación',f:v=>v==='COMPRA'?'Compra':'Venta'},{k:'sym',l:'Emisora',f:v=>`<b>${esc(v)}</b>`},{k:'tit',l:'Títulos',f:ints},{k:'pp',l:'Precio promedio',f:v=>num(v,2)},
+      {k:'ej',l:'Ejecución contra cierre',f:v=>v==null?'—':fps(v),c:cl,t:'Positivo: conseguimos mejor precio que el cierre de ese día.'},{k:'rE',l:'Desde entonces',f:v=>fps(v)},{k:'rB',l:'MEXTRAC09',f:v=>fps(v)},{k:'rel',l:'Diferencia',f:fpp},
+      {k:'val',l:'≈ Efecto en pesos',f:cdMx,c:cl,t:'Títulos × cierre del día × diferencia contra el MEXTRAC09. En una venta, el signo se invierte.'},{k:'razon',l:'Motivo',f:v=>`<span class="atv-frase" style="text-align:left;min-width:170px">${esc(v)}</span>`},{k:'lect',l:'Lectura',f:v=>`<span class="atv-frase" style="text-align:left;min-width:190px">${esc(v)}</span>`}],opsR,'+fecha');
+    const obli=opsR.filter(x=>x.tipo==='VENTA'&&/sobregiro/i.test(x.razon)).length;
+    $('#pkOpsN').innerHTML=`Compara cada operación contra haber dejado ese dinero en el MEXTRAC09, desde el cierre de ese día hasta el último cierre. En conjunto, <b class="${cl(vTot)}">≈ ${cdMx(vTot)}</b> frente al MEXTRAC09. ${obli?`Las ${obli} ventas por la corrección del sobregiro no fueron una decisión de timing: las obligó la caja negativa.`:''} Dentro de la atribución, este efecto ya está repartido entre timing y stock picking; no se suma aparte. La ejecución contra el cierre es el renglón «Operaciones».`;
+
+    /* —— la otra lectura: Treynor-Mazuy —— */
+    const rf=(S0.cfg.cetes28||0)/252, xs=dias.map(d=>d.rb-rf), ys=dias.map(d=>d.rp-rf), tm=mco(xs.map(x=>[1,x,x*x]),ys);
+    const up=dias.filter(d=>d.rb>0), dn=dias.filter(d=>d.rb<0), cap=g_=>{ const a=g_.reduce((v,d)=>v*(1+d.rp),1)-1, b=g_.reduce((v,d)=>v*(1+d.rb),1)-1; return b?a/b:null; }, cU=cap(up), cD=cap(dn), hit=dias.filter(d=>d.alfa>0).length;
+    const cf=(i,fm)=>{ if(!tm) return '—'; const v=tm.b[i], tv=v/tm.se[i]; return `<b class="${i===1?'':cl(v)}">${fm(v)}</b><small>t = ${tv.toFixed(2).replace('-','−')}${Math.abs(tv)<2?' · no se distingue de cero':''}</small>`; };
+    $('#pkTM').innerHTML=`<div class="card-h"><h3>¿Habilidad o suerte?</h3><span class="hint">Treynor-Mazuy · ${dias.length} días</span></div>
+      <p class="atv-expl">Otra forma de medirlo, sin ver las posiciones: solo con el rendimiento diario de la cartera contra el MEXTRAC09 y Cetes 28, con la fórmula r − rf = α + β (R − rf) + γ (R − rf)².</p>
+      <div class="pk-k"><div><span>α · stock picking</span>${cf(0,v=>cdPb(v,1)+' al día')}</div><div><span>β · exposición al mercado</span>${cf(1,v=>v.toFixed(2))}</div><div><span>γ · market timing</span>${cf(2,v=>(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(1))}</div></div>
+      <div class="pk-k"><div><span>Captura en días de alza</span><b>${cU==null?'—':(cU*100).toFixed(0)+'%'}</b><small>${up.length} días</small></div><div><span>Captura en días de baja</span><b>${cD==null?'—':(cD*100).toFixed(0)+'%'}</b><small>${dn.length} días</small></div><div><span>Días que le ganamos</span><b>${hit} de ${dias.length}</b><small>${(hit/dias.length*100).toFixed(0)}%</small></div></div>
+      <p class="atv-expl" style="margin:12px 0 0"><b>Cómo se lee:</b> γ positiva significa que tuvimos más exposición justo cuando el mercado se movió a favor. Con ${dias.length} días, un t menor a 2 no permite decir que sea habilidad, ni para bien ni para mal. La captura dice qué parte del movimiento del MEXTRAC09 tomamos: cerca de 100% es moverse igual; lo ideal es más en las alzas y menos en las bajas.</p>
+      <p class="atv-expl" style="margin:10px 0 0"><b>Si α y el stock picking de arriba no coinciden:</b> no se contradicen, porque miden cosas distintas. La atribución ve cada posición y suma exacto el alfa; la regresión solo ve rendimientos diarios y reparte el rezago entre α, β y γ. La medición oficial del fondo es la de arriba; esta es una segunda opinión.</p>`;
+
+    /* —— día por día —— */
+    tabla('pkDia',[{k:'f',l:'Fecha',f:v=>fdate(v)},{k:'t',l:'Timing',f:v=>cdPb(v,1),c:cl},{k:'s',l:'Stock picking',f:v=>cdPb(v,1),c:cl},{k:'i',l:'Interacción',f:v=>cdPb(v,1),c:cl},{k:'m',l:'MEXTRAC09 contra canasta',f:v=>cdPb(v,1),c:cl},{k:'o',l:'Operaciones + comisiones',f:v=>cdPb(v,1),c:cl},{k:'a',l:'Alfa del día',f:v=>cdPb(v,1),c:cl}],
+      dias.map(d=>({f:d.fecha,t:tim(d),s:pic(d),i:int(d),m:d.pz.MEXTRAC?.ap||0,o:(d.pz.OPERACIONES?.ap||0)+(d.pz.COMISIONES?.ap||0),a:d.alfa})),'f');
+  }
+
   function render(p){
     if(!D){ ['atv-ctl','atvTSem','atvTAb','atvTRank','atvTRend'].forEach(falta); if(!cargando) cargar().then(()=>{ if(D) UI.render(); }); return; }
     if(!D.fechas.length){ falta('atv-ctl'); return; }
     try{
-      if(p==='atrdia') rDia(); if(p==='atremi') rEmi(); if(p==='atrsem') rSem(); if(p==='atrops') rOps(); if(p==='atrrank') rRank(); if(p==='atrcash') rCash();
+      if(p==='atrdia') rDia(); if(p==='atremi') rEmi(); if(p==='atrsem') rSem(); if(p==='atrops') rOps(); if(p==='atrrank') rRank(); if(p==='atrcash') rCash(); if(p==='atrpick') rPick();
       const f=$('#atv-fuente'); if(f && !f.ausente) f.textContent='vigilante v6.4 · '+(enPages()?'GitHub Pages · ':'')+fuente+' · leído '+new Date(leido).toLocaleTimeString('es-MX');
     }catch(e){ console.error('Atribución:',e); }
   }
@@ -6388,7 +6731,7 @@ const UI=(()=>{
     if(view==='portafolio'){ if(p==='dash')rDash(); if(p==='dia')rDia(); if(p==='pos')rPos(); if(p==='comp')rComp(); }
     if(view==='operaciones'){ if(p==='log')rOps(); if(p==='open'||p==='closed')rTrades(); if(p==='adj')rAdj(); }
     if(view==='modelo'){ if(p==='pesos')rModel(); if(p==='rebal')rRebal(); if(p==='pub')rPub(); }
-    if(view==='mercado'){ if(p==='px')rPx(); if(p==='feed')rFeed(); if(p==='nube')rNube(); }
+    if(view==='mercado'){ if(p==='px')rPx(); if(p==='fedw')FedW.render(); if(p==='feed')rFeed(); if(p==='nube')rNube(); }
     if(view==='noticias') rNoti();
     if(view==='simulador') rSim();
     if(view==='analisis'){ if(p==='rend')rRend(); if(p==='comp3')rCmp(); if(p==='hist5')rHist5(); if(p==='riesgo')rRisk(); if(p==='prosp')rProsp(); if(p==='atr')rAtr(); if(p==='bmk')rBmk(); }
