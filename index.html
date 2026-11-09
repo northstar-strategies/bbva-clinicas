@@ -1489,6 +1489,53 @@ td{padding:11px 12px} th,thead th{padding:11px 12px}
   .pk-k{grid-template-columns:1fr 1fr}
 }
 @media (prefers-reduced-motion:reduce){.pk-izq>b,.pk-b,.pk-eje i,.pk-rb i,.pk-e{animation:none}}
+/* ══ Elecciones de EUA 2026 ══ */
+.el-hero{margin-bottom:14px;padding:24px 26px;border-radius:var(--r-lg);background:var(--s1);box-shadow:var(--sh-1);animation:cdEntra .5s var(--crit) both}
+.el-hero small{display:block;margin-bottom:6px;font-size:.75rem;color:var(--txt-3)}
+.el-hero h2{margin:0 0 8px;font-family:var(--display);font-size:1.75rem;line-height:1.15;font-weight:600;letter-spacing:-.025em;color:var(--txt)}
+.el-hero p{margin:0;max-width:92ch;font-size:.9rem;line-height:1.55;color:var(--txt-2)}
+.el-hero p b{color:var(--txt);font-weight:600}
+.el-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(142px,1fr));gap:10px;margin-top:18px}
+.el-k{padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.035)}
+.el-k.on{box-shadow:inset 0 0 0 1px rgba(255,179,64,.5)}
+.el-k span{display:block;font-size:.72rem;color:var(--txt-3)}
+.el-k b{display:block;margin:3px 0 2px;font-family:var(--display);font-size:1.3rem;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.el-k em{font-style:normal;font-size:.6875rem;color:var(--txt-3);font-variant-numeric:tabular-nums}
+.el-k.on em{color:#FFB340}
+.el-crono{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:14px;margin-bottom:14px}
+.el-paso{padding:14px 16px;border-radius:var(--r-lg);background:var(--s1);box-shadow:var(--sh-1)}
+.el-paso b{display:block;margin-bottom:4px;font-size:.8125rem;font-weight:600;color:#D4EDFC}
+.el-paso p{margin:0;font-size:.8125rem;line-height:1.45;color:var(--txt-2)}
+.el-canales{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}
+.el-canales h4{margin:0 0 5px;font-size:.875rem;font-weight:600;color:var(--txt)}
+.el-canales p{margin:0;font-size:.8125rem;line-height:1.5;color:var(--txt-2)}
+.el-filtro{display:flex;margin:18px 0 12px;overflow-x:auto}
+.el-filtro .seg button{white-space:nowrap}
+.el-reg{margin-bottom:14px}
+.el-reg>p{margin:0 0 14px;max-width:92ch;font-size:.875rem;line-height:1.5;color:var(--txt-2)}
+.el-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:22px;align-items:start}
+.el-cols .tbl-wrap{max-height:none}
+.el-t td,.el-t th{white-space:nowrap}
+.el-t td:not(:first-child),.el-t th:not(:first-child){text-align:right;font-variant-numeric:tabular-nums}
+.el-t td small{display:block;font-size:.6875rem;color:var(--txt-3)}
+.el-t td a{color:inherit;text-decoration:underline;text-decoration-color:var(--txt-4);text-underline-offset:2px}
+.el-z{color:var(--txt-3)}
+.el-z.on{color:#FFB340;font-weight:600}
+.el-nota{margin:10px 0 0;font-size:.72rem;line-height:1.5;color:var(--txt-3)}
+.el-n{display:block;padding:10px 0;border-top:1px solid var(--line);text-decoration:none;color:inherit}
+.el-n:first-of-type{padding-top:0;border-top:0}
+.el-n span{display:block;margin-bottom:2px;font-size:.72rem;color:var(--txt-3)}
+.el-n span b{color:#D4EDFC;font-weight:600}
+.el-n p{margin:0;font-size:.8125rem;line-height:1.45;color:var(--txt-2)}
+.el-n:hover p{color:var(--txt)}
+.el-n:focus-visible{outline:2px solid #4A9DF0;outline-offset:2px;border-radius:4px}
+.el-ns{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0 0 12px}
+.el-ns div{padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.035);font-size:.8125rem;line-height:1.6;color:var(--txt-2);font-variant-numeric:tabular-nums}
+.el-ns b{display:block;color:var(--txt);font-weight:600}
+.el-lim{margin:0;padding-left:18px;font-size:.8125rem;line-height:1.55;color:var(--txt-2)}
+.el-lim li+li{margin-top:5px}
+.el-liga{display:inline-block;margin:0 0 12px;font-size:.8125rem;color:#D4EDFC}
+@media (prefers-reduced-motion:reduce){.el-hero{animation:none}}
 </style>
 </head>
 <body>
@@ -1984,6 +2031,7 @@ c 810 FEMSAUBD a 202.18</pre>
           <div class="search"><svg class="i"><use href="#i-search"/></svg><input id="qNoti" placeholder="Buscar en las noticias..."></div>
           <div class="seg" id="segNotiSym"></div>
         </div>
+        <a class="el-liga" href="#" onclick="UI.go('mercado');UI.goPane('mercado','elec');window.scrollTo({top:0});return false">Elecciones de EUA: cómo reaccionó cada mercado, con sus fuentes →</a>
         <div id="notiBody"></div>
       </section>
 
@@ -1992,6 +2040,7 @@ c 810 FEMSAUBD a 202.18</pre>
         <div class="tabs" data-tabs="mercado">
           <button class="tab on" data-p="px">Precios</button>
           <button class="tab" data-p="fedw">Fed Watch</button>
+          <button class="tab" data-p="elec">Elecciones EUA</button>
           <button class="tab" data-p="feed">Fuente de datos</button>
           <button class="tab" data-p="nube">Archivos en la nube</button>
           <span class="tab-ink"></span>
@@ -2017,6 +2066,14 @@ c 810 FEMSAUBD a 202.18</pre>
           </div>
           <div class="fw-tablas" id="fwTablas"></div>
           <div class="card" id="fwComo"></div>
+        </div>
+        <div class="pane" id="p-elec">
+          <div id="elHero"></div>
+          <div class="el-crono" id="elCrono"></div>
+          <div class="card" id="elCanal"></div>
+          <div class="el-filtro"><div class="seg" id="segElec"></div></div>
+          <div id="elRegs"></div>
+          <div class="grid g2"><div class="card" id="elNS"></div><div class="card" id="elLim"></div></div>
         </div>
         <div class="pane" id="p-feed">
           <div class="card" style="margin-bottom:14px">
@@ -5519,6 +5576,145 @@ const FedW=(()=>{
   }
   return {render,curva,conProb,proyeccion,historia};
 })();
+/* ══ Elecciones de EUA del 3-nov-2026: reacción de los mercados. Evento cerrado: cifras fijas de LSEG (elec_lseg.py) y notas de prensa resumidas con su liga. */
+const Elecc=(()=>{
+  const {corte:CORTE,mov:MOV}={"corte":"2026-11-05 01:17","mov":[{"reg":"Mundo","nom":"MSCI All-World","ric":".MIWD00000PUS","tipo":"pct","d3":-0.09,"n3":1111.59,"z3":-0.16,"g3":false,"d4":1.38,"n4":1126.89,"z4":2.51,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"EUA","nom":"S&P 500","ric":".SPX","tipo":"pct","d3":0.36,"n3":7568.92,"z3":0.57,"g3":false,"d4":1.58,"n4":7688.62,"z4":2.48,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"EUA","nom":"Dow Jones","ric":".DJI","tipo":"pct","d3":-0.38,"n3":51786.72,"z3":-0.61,"g3":false,"d4":3.03,"n4":53356.12,"z4":4.84,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"EUA","nom":"Nasdaq Composite","ric":".IXIC","tipo":"pct","d3":0.83,"n3":25372.009,"z3":0.82,"g3":false,"d4":1.44,"n4":25736.513,"z4":1.41,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"EUA","nom":"Russell 2000","ric":".RUT","tipo":"pct","d3":0.23,"n3":2812.4472,"z3":0.28,"g3":false,"d4":1.58,"n4":2856.9497,"z4":1.9,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"EUA","nom":"TSX (Canadá)","ric":".GSPTSE","tipo":"pct","d3":-0.75,"n3":35532.28,"z3":-0.98,"g3":false,"d4":2.28,"n4":36341.4,"z4":2.97,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"EUA","nom":"VIX (volatilidad)","ric":".VIX","tipo":"pct","d3":-1.51,"n3":20.83,"z3":-0.24,"g3":false,"d4":-20.26,"n4":16.61,"z4":-3.18,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"EUA","nom":"Índice dólar","ric":".DXY","tipo":"pct","d3":0.12,"n3":101.867,"z3":0.41,"g3":false,"d4":-0.3,"n4":101.566,"z4":-1.01,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"EUA","nom":"Treasury 2 años","ric":"US2YT=RR","tipo":"pb","d3":3.62,"n3":4.633,"z3":0.66,"g3":false,"d4":-5.3,"n4":4.57995,"z4":-0.97,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"EUA","nom":"Treasury 10 años","ric":"US10YT=RR","tipo":"pb","d3":5.26,"n3":4.9641,"z3":1.0,"g3":false,"d4":-7.72,"n4":4.8869,"z4":-1.46,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"México","nom":"S&P/BMV IPC","ric":".MXX","tipo":"pct","d3":0.58,"n3":70184.33,"z3":0.69,"g3":true,"d4":0.91,"n4":70819.8,"z4":1.08,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"México","nom":"USD/MXN","ric":"MXN=","tipo":"pct","d3":1.38,"n3":18.8334,"z3":2.28,"g3":false,"d4":-1.12,"n4":18.62195,"z4":-1.8,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"México","nom":"Mbono 10 años","ric":"MX10YT=RR","tipo":"pb","d3":-3.9,"n3":9.2285,"z3":-0.9,"g3":true,"d4":-11.1,"n4":9.1175,"z4":-2.54,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"América Latina","nom":"Bovespa (Brasil)","ric":".BVSP","tipo":"pct","d3":-1.42,"n3":165528.92,"z3":-0.61,"g3":true,"d4":1.23,"n4":167563.47,"z4":0.53,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"América Latina","nom":"COLCAP (Colombia)","ric":".COLCAP","tipo":"pct","d3":1.47,"n3":2527.66,"z3":1.41,"g3":true,"d4":-0.84,"n4":2506.42,"z4":-0.8,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"América Latina","nom":"USD/BRL","ric":"BRL=","tipo":"pct","d3":0.97,"n3":5.49,"z3":0.69,"g3":false,"d4":-0.56,"n4":5.4592,"z4":-0.4,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"América Latina","nom":"USD/CLP","ric":"CLP=","tipo":"pct","d3":0.35,"n3":981.13,"z3":0.51,"g3":false,"d4":-1.49,"n4":966.5,"z4":-2.19,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"América Latina","nom":"USD/COP","ric":"COP=","tipo":"pct","d3":0.55,"n3":3245.75,"z3":0.56,"g3":false,"d4":-0.7,"n4":3223.0,"z4":-0.71,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"América Latina","nom":"USD/PEN","ric":"PEN=","tipo":"pct","d3":-0.11,"n3":3.4613,"z3":-0.33,"g3":false,"d4":-0.5,"n4":3.44415,"z4":-1.45,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"América Latina","nom":"USD/ARS","ric":"ARS=","tipo":"pct","d3":0.36,"n3":1550.75,"z3":1.48,"g3":false,"d4":-0.21,"n4":1547.5,"z4":-0.9,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Europa","nom":"STOXX 600","ric":".STOXX","tipo":"pct","d3":-0.58,"n3":645.66,"z3":-0.98,"g3":false,"d4":1.82,"n4":657.4,"z4":3.04,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Europa","nom":"DAX (Alemania)","ric":".GDAXI","tipo":"pct","d3":-0.45,"n3":25864.62,"z3":-0.58,"g3":false,"d4":2.22,"n4":26437.67,"z4":2.87,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Europa","nom":"CAC 40 (Francia)","ric":".FCHI","tipo":"pct","d3":-0.34,"n3":8020.31,"z3":-0.46,"g3":false,"d4":1.96,"n4":8177.89,"z4":2.67,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Europa","nom":"FTSE 100 (R. Unido)","ric":".FTSE","tipo":"pct","d3":-1.14,"n3":10638.43,"z3":-1.95,"g3":false,"d4":1.79,"n4":10829.21,"z4":2.98,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Europa","nom":"IBEX 35 (España)","ric":".IBEX","tipo":"pct","d3":-0.79,"n3":18807.2,"z3":-0.91,"g3":false,"d4":3.0,"n4":19370.9,"z4":3.42,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Europa","nom":"FTSE MIB (Italia)","ric":".FTMIB","tipo":"pct","d3":-0.01,"n3":49941.83,"z3":-0.01,"g3":false,"d4":2.18,"n4":51031.02,"z4":2.33,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Europa","nom":"SMI (Suiza)","ric":".SSMI","tipo":"pct","d3":-0.4,"n3":14743.09,"z3":-0.56,"g3":false,"d4":1.9,"n4":15022.85,"z4":2.67,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Europa","nom":"EUR/USD","ric":"EUR=","tipo":"pct","d3":0.06,"n3":1.1194,"z3":0.21,"g3":false,"d4":0.31,"n4":1.12285,"z4":1.03,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Europa","nom":"GBP/USD","ric":"GBP=","tipo":"pct","d3":0.06,"n3":1.34145,"z3":0.2,"g3":false,"d4":0.42,"n4":1.34715,"z4":1.45,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Europa","nom":"Bund 10 años","ric":"DE10YT=RR","tipo":"pb","d3":1.79,"n3":3.3085,"z3":0.48,"g3":false,"d4":-2.34,"n4":3.2851,"z4":-0.63,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Europa","nom":"Gilt 10 años","ric":"GB10YT=RR","tipo":"pb","d3":7.13,"n3":5.26345,"z3":1.36,"g3":false,"d4":-13.2,"n4":5.13145,"z4":-2.52,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Medio Oriente y África","nom":"Dubái","ric":".DFMGI","tipo":"pct","d3":0.05,"n3":5810.86,"z3":0.09,"g3":false,"d4":3.96,"n4":6040.74,"z4":6.6,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Medio Oriente y África","nom":"Abu Dabi","ric":".FTFADGI","tipo":"pct","d3":-0.29,"n3":9462.91,"z3":-0.47,"g3":false,"d4":-0.02,"n4":9461.41,"z4":-0.03,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Medio Oriente y África","nom":"Arabia Saudita","ric":".TASI","tipo":"pct","d3":-0.07,"n3":9876.13,"z3":-0.07,"g3":false,"d4":1.65,"n4":10038.89,"z4":1.71,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Medio Oriente y África","nom":"Qatar","ric":".QSI","tipo":"pct","d3":0.24,"n3":9614.07,"z3":0.22,"g3":false,"d4":2.81,"n4":9884.17,"z4":2.53,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Medio Oriente y África","nom":"Egipto","ric":".EGX30","tipo":"pct","d3":1.76,"n3":49255.66,"z3":1.38,"g3":false,"d4":2.83,"n4":50650.18,"z4":2.19,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Medio Oriente y África","nom":"BIST 100 (Turquía)","ric":".XU100","tipo":"pct","d3":0.56,"n3":11023.55,"z3":0.33,"g3":false,"d4":4.12,"n4":11478.13,"z4":2.4,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Medio Oriente y África","nom":"TA-35 (Israel)","ric":".TA35","tipo":"pct","d3":0.29,"n3":4048.94,"z3":0.32,"g3":false,"d4":-1.96,"n4":3969.53,"z4":-2.19,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Medio Oriente y África","nom":"USD/ZAR","ric":"ZAR=","tipo":"pct","d3":0.06,"n3":16.6156,"z3":0.1,"g3":false,"d4":-1.17,"n4":16.4219,"z4":-2.12,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Medio Oriente y África","nom":"USD/TRY","ric":"TRY=","tipo":"pct","d3":-0.01,"n3":49.9708,"z3":-0.07,"g3":false,"d4":0.1,"n4":50.0192,"z4":1.26,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Medio Oriente y África","nom":"USD/ILS","ric":"ILS=","tipo":"pct","d3":0.82,"n3":3.17165,"z3":1.35,"g3":false,"d4":-0.43,"n4":3.1579,"z4":-0.7,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Asia","nom":"Nikkei 225 (Japón)","ric":".N225","tipo":"pct","d3":null,"n3":null,"z3":null,"g3":false,"d4":-1.42,"n4":62188.63,"z4":-0.91,"g4":true,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Asia","nom":"TOPIX (Japón)","ric":".TOPX","tipo":"pct","d3":null,"n3":null,"z3":null,"g3":false,"d4":-0.89,"n4":3895.38,"z4":-0.86,"g4":true,"d5":1.16,"n5":3940.39,"z5":1.11,"g5":false,"prov":true,"hora":"06:30:02"},{"reg":"Asia","nom":"Kospi (Corea)","ric":".KS11","tipo":"pct","d3":-3.59,"n3":5648.79,"z3":-1.27,"g3":false,"d4":0.62,"n4":5683.8,"z4":0.22,"g4":false,"d5":-5.28,"n5":5383.8,"z5":-1.88,"g5":false,"prov":true,"hora":"06:32:40"},{"reg":"Asia","nom":"Taiex (Taiwán)","ric":".TWII","tipo":"pct","d3":-3.59,"n3":43307.54,"z3":-2.92,"g3":false,"d4":-0.83,"n4":42948.91,"z4":-0.63,"g4":false,"d5":-3.2,"n5":41574.72,"z5":-2.52,"g5":false,"prov":true,"hora":"05:33:15"},{"reg":"Asia","nom":"Hang Seng (Hong Kong)","ric":".HSI","tipo":"pct","d3":0.57,"n3":23525.97,"z3":0.59,"g3":false,"d4":1.67,"n4":23919.5,"z4":1.73,"g4":false,"d5":3.78,"n5":24823.0,"z5":3.84,"g5":false,"prov":true,"hora":"07:02:10"},{"reg":"Asia","nom":"Shanghái (China)","ric":".SSEC","tipo":"pct","d3":-0.82,"n3":3608.0976,"z3":-1.0,"g3":false,"d4":2.16,"n4":3686.1725,"z4":2.62,"g4":false,"d5":0.1,"n5":3689.9109,"z5":0.12,"g5":false,"prov":true,"hora":"07:00:00"},{"reg":"Asia","nom":"S&P/ASX 200 (Australia)","ric":".AXJO","tipo":"pct","d3":0.34,"n3":8886.8,"z3":0.6,"g3":false,"d4":-0.59,"n4":8834.5,"z4":-1.02,"g4":false,"d5":2.61,"n5":9065.1,"z5":4.52,"g5":false},{"reg":"Asia","nom":"Nifty 50 (India)","ric":".NSEI","tipo":"pct","d3":1.58,"n3":23810.85,"z3":2.16,"g3":false,"d4":0.63,"n4":23960.6,"z4":0.83,"g4":false,"d5":1.92,"n5":24421.2,"z5":2.51,"g5":false,"prov":true,"hora":"07:02:09"},{"reg":"Asia","nom":"USD/JPY","ric":"JPY=","tipo":"pct","d3":0.46,"n3":158.675,"z3":1.0,"g3":false,"d4":-0.14,"n4":158.445,"z4":-0.31,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Asia","nom":"USD/CNY","ric":"CNY=","tipo":"pct","d3":0.34,"n3":6.6706,"z3":5.61,"g3":false,"d4":0.04,"n4":6.67355,"z4":0.58,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Asia","nom":"USD/KRW","ric":"KRW=","tipo":"pct","d3":-0.1,"n3":1344.83,"z3":-0.17,"g3":false,"d4":-0.27,"n4":1341.15,"z4":-0.46,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Asia","nom":"USD/INR","ric":"INR=","tipo":"pct","d3":-0.17,"n3":94.745,"z3":-0.69,"g3":false,"d4":-0.19,"n4":94.565,"z4":-0.78,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Asia","nom":"Bono Japón 10 años","ric":"JP10YT=RR","tipo":"pb","d3":null,"n3":null,"z3":null,"g3":false,"d4":3.9,"n4":2.807,"z4":1.07,"g4":true,"d5":-5.2,"n5":2.755,"z5":-1.42,"g5":false},{"reg":"Materias primas","nom":"Brent","ric":"LCOc1","tipo":"pct","d3":-1.12,"n3":103.6,"z3":-0.43,"g3":false,"d4":-8.67,"n4":94.62,"z4":-3.34,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Materias primas","nom":"WTI","ric":"CLc1","tipo":"pct","d3":-0.38,"n3":96.09,"z3":-0.14,"g3":false,"d4":-8.29,"n4":88.12,"z4":-3.17,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Materias primas","nom":"Oro","ric":"XAU=","tipo":"pct","d3":-0.49,"n3":3928.5,"z3":-0.33,"g3":false,"d4":3.35,"n4":4060.015,"z4":2.27,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Materias primas","nom":"Plata","ric":"XAG=","tipo":"pct","d3":-1.68,"n3":49.78165,"z3":-0.67,"g3":false,"d4":4.91,"n4":52.22345,"z4":1.96,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Materias primas","nom":"Cobre COMEX","ric":"HGc1","tipo":"pct","d3":-2.52,"n3":6.3785,"z3":-1.94,"g3":false,"d4":0.38,"n4":6.403,"z4":0.29,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false},{"reg":"Materias primas","nom":"Bitcoin","ric":"BTC=","tipo":"pct","d3":1.45,"n3":77840.355,"z3":0.8,"g3":false,"d4":3.0,"n4":80178.975,"z4":1.66,"g4":false,"d5":null,"n5":null,"z5":null,"g5":false}]};
+  const ORDEN=['México','EUA','América Latina','Europa','Medio Oriente y África','Asia','Materias primas'];
+  // Mercados sin serie en LSEG: la cifra viene de la nota que se liga
+  const PRENSA=[
+    {reg:'América Latina',nom:'IPSA (Chile)',d4:2.52,n4:10627.08,nota:'sin confirmar como cierre',s:'Reuters vía GBM',u:'https://gbm.com/media/noticia/monedas-y-bolsas-en-a-latina-suben-tras-solida-victoria-de-democratas-en-elecciones-de-medio-termino-eeuu'},
+    {reg:'América Latina',nom:'Bolsa de Lima (Perú)',d4:1.68,n4:1495,nota:'cerca del cierre',s:'Reuters vía GBM',u:'https://gbm.com/media/noticia/monedas-y-bolsas-en-a-latina-suben-tras-solida-victoria-de-democratas-en-elecciones-de-medio-termino-eeuu'},
+    {reg:'América Latina',nom:'Merval (Argentina)',d4:-2.44,n4:88238,nota:'',s:'El Destape',u:'https://www.eldestapeweb.com/economia/bonos-argentinos-cotizan-default-caputo-salio-frenar-efecto-trump-2026114213828'}];
+  const NOT=[
+    ['México','4-nov','Reuters vía GBM','El peso se recuperó tras el triunfo demócrata, a la espera de Banxico. El IPC tocó su máximo desde febrero y el Mbono a 10 años bajó 11 pb.','https://gbm.com/media/noticia/peso-mexicano-se-recupera-tras-triunfo-democrata-en-eeuu-aguarda-decision-banxico'],
+    ['México','4-nov','El Economista vía Yahoo','Con datos de Banxico, el peso tuvo su mejor cierre desde el 8 de abril, aunque sigue cerca de 9.9% más débil que el 4 de septiembre.','https://es-us.noticias.yahoo.com/peso-recuper%C3%B3-terreno-frente-d%C3%B3lar-024405606.html'],
+    ['México','4-nov','EFE en Informador','La bolsa mexicana subió 0.91%, con Volaris, Peñoles, Walmex y Gruma entre las alzas.','https://www.informador.mx/economia/bolsa-mexicana-repunta-0.91--y-se-ubica-en-70-mil-819.8-puntos-tras-elecciones-en-eu-20261104-0187.html'],
+    ['México','4-nov','El Economista vía Yahoo','Detalle de emisoras: Telesites +6.90% por una propuesta de fusión; Vista −9.59% y Acosta Verde −20%.','https://es-us.noticias.yahoo.com/j%C3%BAbilo-burs%C3%A1til-triunfo-dem%C3%B3crata-043446168.html'],
+    ['México','4-nov','La Jornada en Zócalo','Banamex ve continuidad del T-MEC con mayores costos de cumplimiento y ventaja para empresas integradas a cadenas regionales.','https://www.zocalo.com.mx/resultados-electorales-en-eu-favorecen-continuidad-del-t-mec-banamex/'],
+    ['México','4-nov','Milenio','Carlos Serrano (BBVA México) anticipa aranceles menos agresivos, más comercio y mejores remesas, sin fecha ni medida concreta.','https://www.milenio.com/negocios/elecciones-en-eu-favoreceran-comercio-con-mexico-y-el-envio-de-remesas'],
+    ['México','4-nov','La Política Online','Ebrard dice que la relación arancelaria cambia poco porque esas facultades son del presidente.','https://www.lapoliticaonline.com/mexico/politica-mx/tras-la-ola-democrata-ebrard-mantiene-cautela-descarta-giro-en-aranceles-de-trump/'],
+    ['México','4-nov','Vanguardia','Sheinbaum: es pronto para ver cambios y el T-MEC se negocia con el gobierno, no con el Congreso.','https://vanguardia.com.mx/noticias/mexico/sheinbaum-descarta-cambios-en-negociacion-del-t-mec-tras-elecciones-en-estados-unidos-OL24586778'],
+    ['México','4-nov','Proceso','El peso ganó tras la victoria demócrata. Cita a Banco Base sobre la mayor caída del dólar desde agosto; con el índice dólar al cierre, LSEG no lo confirma.','https://www.proceso.com.mx/economia/2026/11/4/peso-gana-tras-victoria-de-los-democratas-en-las-elecciones-intermedias-de-estados-unidos-383124.html'],
+    ['México','4-nov','Publimetro','Lee el castigo electoral a Trump como el motor del peso.','https://www.publimetro.com.mx/noticias/2026/11/05/urnas-castigan-a-trump-dolar-cae-18-pesos-con-56-centavos-peso-gana/'],
+    ['México','4-nov','EFE en ABC Color','Antes de la decisión de Banxico, el consenso era mantener 6.50%: 25 de 37 en la encuesta de Citi, sin cambios hasta 2027.','https://www.abc.com.py/internacionales/2026/11/04/el-banco-de-mexico-prepara-su-reunion-con-la-expectativa-de-mantener-la-tasa-en-65/'],
+    ['EUA','4-nov','CNBC','Liga el alza a la rápida aceptación de Trump del resultado, que disipó el temor a una disputa larga.','https://www.cnbc.com/2026/11/04/stock-market-rally-trump-midterms.html'],
+    ['EUA','4-nov','CBS News','El Dow tuvo su mayor alza de 2026; Trump Media cayó casi 25% y Tesla 3.3%. El veto limita las leyes grandes.','https://www.cbsnews.com/news/stock-market-soar-democrats-take-control-of-congress/'],
+    ['EUA','4-nov','AP vía WTOP','Los cierres de los principales índices de EUA.','https://wtop.com/national/2026/11/how-major-us-stock-indexes-fared-wednesday-11-4-2026'],
+    ['EUA','4-nov','Reuters vía Investing.com','Analistas: se aleja el riesgo de pagos de $5,000, y Texas y Georgia concentran cerca de un tercio del gasto en centros de datos.','https://www.investing.com/news/economy-news/analysts-react-to-us-midterm-election-results-4997173'],
+    ['EUA','4-nov','Investing.com','RBC cita una encuesta de salida: 76% en contra de un centro de datos nuevo en su comunidad. BofA mantiene el estancamiento como caso base.','https://www.investing.com/news/stock-market-news/what-the-democratic-sweep-in-the-midterms-means-for-markets-4999067'],
+    ['EUA','4-nov','Dow Jones vía MarketScreener','Treasuries a la baja; Vontobel advierte que el déficit frena la baja de los plazos largos.','https://www.marketscreener.com/news/treasury-yields-decline-after-democrats-take-congress-eurozone-yields-edge-up-update-ce785fdfd98ff620'],
+    ['EUA','4-nov','Reuters vía Yahoo Finance','El dólar cede, mientras la probabilidad de un alza de la Fed en diciembre pasa de 77.4% a 80.7%.','https://finance.yahoo.com/markets/currencies/articles/dollar-edges-lower-us-election-051209079.html'],
+    ['EUA','3-nov','CNBC','Antes del voto, J.P. Morgan esperaba −0.5% para el S&P 500 con barrida demócrata.','https://www.cnbc.com/2026/11/03/midterm-election-stock-market.html'],
+    ['EUA','2-nov','CNBC','Con presidente republicano y Congreso demócrata, el S&P promedió −0.5% el día de reacción y +10.9% a un año, pero son solo tres elecciones.','https://www.cnbc.com/2026/11/02/stock-market-after-midterm-elections-sp-500-history.html'],
+    ['América Latina','4-nov','Reuters vía GBM','Monedas y bolsas de la región subieron; la baja del petróleo limitó a exportadores como México y Colombia.','https://gbm.com/media/noticia/monedas-y-bolsas-en-a-latina-suben-tras-solida-victoria-de-democratas-en-elecciones-de-medio-termino-eeuu'],
+    ['América Latina','4-nov','Campo Grande News','Brasil: el dólar bajó a R$5.45 y el Copom mantuvo la Selic en 13.75%.','https://www.campograndenews.com.br/economia/virada-democrata-na-politica-dos-eua-faz-dolar-cair-a-r-5-45'],
+    ['América Latina','3-nov','Diário do Comércio','El Ibovespa llevaba seis caídas por dudas fiscales y sobre el equipo económico tras la reelección de Lula.','https://diariodocomercio.com.br/financas/ibovespa-6a-queda-seguida/'],
+    ['América Latina','4-nov','Ámbito','Argentina: Puente llama al resultado un factor secundario frente a lo local.','https://www.ambito.com/finanzas/los-bonos-argentinos-rebotan-el-reves-electoral-donald-trump-eeuu-n6341351'],
+    ['América Latina','4-nov','El Destape','Merval a la baja y bonos bajo presión. Es un medio con línea editorial marcada.','https://www.eldestapeweb.com/economia/bonos-argentinos-cotizan-default-caputo-salio-frenar-efecto-trump-2026114213828'],
+    ['América Latina','4-nov','Río Times','Colombia: el COLCAP cayó y se culpa al petróleo.','https://riotimesonline.com/colombia-markets-colcap-peso-wednesday-november-4-2026'],
+    ['Europa','4-nov','Reuters vía MarketScreener','Los bancos de la zona euro subieron 4.6%, su mayor alza desde abril. Morningstar lo liga a un menor riesgo de sanciones de EUA.','https://www.marketscreener.com/news/european-shares-jump-over-1-after-democrats-sweep-us-congress-novo-nordisk-surges-ce785fdfdf8eff24'],
+    ['Europa','4-nov','Euronews','ING: un Washington dividido podría empujar a Trump a usar más el comercio. Defensa europea cayó en la mañana.','https://www.euronews.com/2026/11/04/us-midterms-what-trumps-defeat-means-for-europe-and-global-markets'],
+    ['Europa','4-nov','dpa-AFX vía Ariva','Alemania: autos al alza por la esperanza de aranceles más suaves, sin esperar cambios radicales.','https://www.ariva.de/news/roundup-aktien-frankfurt-schluss-dax-naehert-sich-nach-12195046'],
+    ['Europa','4-nov','AWP vía cash.ch','Suiza: el SMI rebasó los 15,000 puntos, con rotación desde la IA y menor riesgo de inflación.','https://www.cash.ch/news/aktien-schweiz-schluss-smi-knackt-15000-punkte-982523'],
+    ['Europa','4-nov','MoneyVox','Francia: los bancos impulsan al CAC 40, con BNP +4.7% y Kering +6.36%.','https://www.moneyvox.fr/bourse/actualites/111121/les-banques-profitent-du-bond-du-cac-40-le-journal-de-la-bourse-du-mercredi-4-novembre-2026'],
+    ['Europa','4-nov','Ara','El gas TTF cayó más de 8%, por debajo de €85/MWh; Santander, CaixaBank y BBVA subieron más de 4%.','https://en.ara.cat/economy/stock-markets-celebrate-with-gains-the-defeat-of-trump-and-energy-becomes-cheaper_1_5900378.html'],
+    ['Europa','4-nov','Reuters vía Boursorama','Reino Unido: el FTSE 100 subió con bancos y mineras, con posicionamiento ante el Banco de Inglaterra.','https://www.boursorama.com/bourse/actualites/le-ftse-100-progresse-de-1-grace-a-la-bonne-tenue-des-banques-et-des-societes-minieres-99448f53ff37ad6f638c624c30eca2b7'],
+    ['Europa','5-nov','Xinhua','Europa celebra, pero espera poco alivio en comercio y seguridad.','https://english.news.cn/20261105/9a3281dd51904d4385c4334ee7b0c930/c.html'],
+    ['Medio Oriente y África','4-nov','Reuters vía Business Recorder','Dubái encabezó las alzas del Golfo, con Emirates NBD +6.1%, mientras se sopesa la elección y el pulso con Irán.','https://www.brecorder.com/news/40447401/dubai-leads-gulf-gains-as-investors-assess-us-midterm-fallout-and-iran-standoff'],
+    ['Medio Oriente y África','4-nov','Reuters vía Investing.com','Algunos gobiernos del Golfo creen que Trump tiene más razones para buscar la paz; otros advierten de una escalada.','https://www.investing.com/news/stock-market-news/from-iran-to-trade-how-the-us-midterms-impact-the-rest-of-the-world-4999068'],
+    ['Medio Oriente y África','4-nov','Al Jazeera','Reacciones políticas de los gobiernos, de Berlín a Teherán.','https://www.aljazeera.com/news/2026/11/4/seismic-shift-world-reacts-to-us-midterm-election-results'],
+    ['Medio Oriente y África','4-nov','Ynet','Israel: la caída mezcla el voto, su propia elección y la seguridad.','https://www.ynetnews.com/business/article/r10ydkk6ze'],
+    ['Medio Oriente y África','4-nov','Politikam','Turquía: los bancos subieron 5.15% y el BIST 100 cerró en 11,478.','https://www.politikam.com/borsa-istanbul-bist-100-4-kasim-2026-kapanis-11478-puan'],
+    ['Medio Oriente y África','5-nov','Moneyweb','Sudáfrica: el rand subió más de 1%, con gasolina más barata y más margen para el banco central. La bolsa cerró el 4-nov por elecciones locales.','https://www.moneyweb.co.za/mineweb/energy/brent-crude-plunges-10-after-trump-midterm-rebuke/'],
+    ['Asia','5-nov','Seoul Economic Daily','Corea: la ola azul golpeó a chips y equipo eléctrico, pero más de 400 acciones subieron.','https://en.sedaily.com/finance/2026/11/05/kospi-slides-4-percent-as-blue-wave-hits-chip-power'],
+    ['Asia','4-nov','Yonhap vía Korea JoongAng Daily','El 4-nov el Kospi cerró arriba tras tocar −4.02%, con extranjeros vendiendo 2.5 billones de wones.','https://www.koreajoongangdaily.com/business/kospi-closes-higher-on-early-us-midterm-election-outcome/12955854'],
+    ['Asia','4-nov','Investing.com','La venta de chips activó un freno en Seúl; China destacó. Qualcomm y Arm también decepcionaron.','https://investing.com/news/stock-market-news/asia-stocks-mixed-as-chip-rout-triggers-kospi-trading-halt-china-outperforms-5002134'],
+    ['Asia','5-nov','Capital Brief','Australia: mejor día desde abril de 2025, con una distorsión: NextDC +50.8% por una compra de acciones ajena a la elección.','https://www.capitalbrief.com/briefing/australian-shares-to-surge-as-wall-st-rallies-oil-sinks-on-democratic-sweep-33f4e939-1136-449a-b9f5-250fcd3fa271/'],
+    ['Asia','5-nov','The Week','India: crudo más barato; aerolíneas y distribuidoras arriba, ONGC abajo.','https://www.theweek.in/news/biz-tech/2026/11/05/sensex-nifty-surge-near-2-per-cent-on-blue-victory-crude-sensitive-sectors-lead-gains.html'],
+    ['Asia','4-nov','Caixin','Comentario: la relación EUA-China cambia de tácticas, no de rumbo. Tiene muro de pago; solo se leyó el resumen.','https://www.caixinglobal.com/2026-11-04/commentary-midterm-results-offer-little-relief-for-us-china-ties-102501024.html'],
+    ['Asia','5-nov','AFP vía Yahoo','Capital Economics señala a Taiwán como el posible factor de cambio total en la relación con China.','https://www.yahoo.com/news/politics/articles/us-midterms-mean-ties-china-015421693.html'],
+    ['Asia','4-nov','Baker McKenzie','Deshacer aranceles exige superar un veto; espera presión del Congreso sobre chips avanzados e inversión saliente.','https://sanctionsnews.bakermckenzie.com/2026-us-midterm-election-results-how-will-democratic-control-of-both-chambers-impact-trade-issues/'],
+    ['Materias primas','4-nov','CNBC','Lipow lee más disposición a un acuerdo con Irán; CIBC ve una venta excesiva y Rapidan cree que aún favorece una escalada.','https://cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html'],
+    ['Materias primas','4-nov','Oilprice','Vance culpó a la guerra de la derrota y Trump al precio de la gasolina.','https://oilprice.com/Latest-Energy-News/World-News/Oil-Crashes-9-as-Trump-and-Vance-Blame-Iran-War-for-Midterm-Rout.html'],
+    ['Materias primas','4-nov','Gulf News','Antes del resultado ya había señales de diplomacia: Pezeshkian dijo que se autorizó negociar y Qatar media.','https://gulfnews.com/business/energy/oil-slides-again-how-iran-peace-hopes-outweigh-supply-fears-affect-oil-markets-1.500735012'],
+    ['Materias primas','5-nov','Angel One','Un alto funcionario iraní dijo a Reuters que el acuerdo sigue lejos.','https://www.angelone.in/news/commodities/crude-oil-prices-stabilise-after-sharp-8-fall-as-us-election-raises-iran-peace-hopes-november-5-2026'],
+    ['Materias primas','5-nov','investingLive','El oro subió por petróleo, dólar y rendimientos más bajos, no por tensión geopolítica.','https://investinglive.com/news/investinglive-asia-pacific-market-news-gold-rocketed-higher-still/'],
+    ['Materias primas','5-nov','Reuters vía Mining.com.au','Cobre casi sin cambio: LME +0.2% a $14,058, con escasez en China y aranceles pesando tanto como la elección.','https://mining.com.au/copper-price-claws-back-earlier-losses-after-us-midterms/'],
+    ['Materias primas','4-nov','Kitco (opinión)','Bitcoin arriba de $80,000: un rebote de alivio, según una columna de opinión.','http://www.kitco.com/opinion/2026-11-04/gold-back-above-4000-and-bitcoin-above-80000-post-midterm-pump-showed-right']
+  ].map(([reg,f,s,t,u])=>({reg,f,s,t,u}));
+  const fila=n=>MOV.find(r=>r.nom===n);
+  const fp=(v,t)=>v==null?'—':(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(t==='pb'?1:2)+(t==='pb'?' pb':'%');
+  const fz=z=>z==null?'—':(z>0?'+':z<0?'−':'')+Math.abs(z).toFixed(2);
+  const usu=z=>z!=null&&Math.abs(z)>=2;
+  const niv=(v,t)=>v==null?'':t==='pb'?v.toFixed(2)+'%':v.toLocaleString('es-MX',v<10?{minimumFractionDigits:4,maximumFractionDigits:4}:{minimumFractionDigits:2,maximumFractionDigits:2});
+  const color=(r,v)=>v==null||r.tipo==='pb'||/^(USD|EUR|GBP)\/|VIX/.test(r.nom)?'':v>0?'pos':v<0?'neg':'';   // en tasas y divisas, subir no es bueno ni malo por sí solo
+  const d=(n,k)=>fp(fila(n)['d'+k],fila(n).tipo);
+  const LECT={
+    'México':()=>`El peso solo revirtió lo que perdió antes del voto: USD/MXN ${d('USD/MXN','3')} el 3-nov y ${d('USD/MXN','4')} el 4-nov. El IPC devolvió más de la mitad de su alza intradía y la señal más inusual fue el Mbono a 10 años (${d('Mbono 10 años','4')}).`,
+    'EUA':()=>`Subieron las bolsas con rotación: el Dow (${d('Dow Jones','4')}) tuvo su mayor alza de 2026, pero los semiconductores cayeron 3.1%. El índice dólar (${d('Índice dólar','4')}) y el Treasury a 10 años (${d('Treasury 10 años','4')}) no salieron de su rango normal.`,
+    'América Latina':()=>`Las monedas subieron juntas, lo que apunta al dólar como factor común. Las bolsas se dividieron por el petróleo y por temas locales: en Brasil pesan las dudas fiscales y en Argentina el riesgo país.`,
+    'Europa':()=>`Le ganó al S&P 500 con bancos, autos y lujo. Cayeron defensa, chips y petroleras. El IBEX (${d('IBEX 35 (España)','4')}) y el Gilt (${d('Gilt 10 años','4')}) fueron de los movimientos más inusuales; el Gilt también traía el Banco de Inglaterra del 5-nov.`,
+    'Medio Oriente y África':()=>`El Golfo, salvo Abu Dabi, y Turquía subieron aun con el crudo a la baja: Dubái ${d('Dubái','4')} y BIST 100 ${d('BIST 100 (Turquía)','4')}. Es nuestra lectura que pesó más el fin del riesgo de guerra, y Reuters también cita fundamentos locales. Israel cayó (${d('TA-35 (Israel)','4')}), con su propia crisis política de por medio.`,
+    'Asia':()=>`Operó durante el conteo el 4-nov; su primera sesión completa con el resultado fue el 5-nov. Cayeron los chips (Kospi ${d('Kospi (Corea)','5')}, Taiex ${d('Taiex (Taiwán)','5')}) y subieron Hong Kong (${d('Hang Seng (Hong Kong)','5')}) y Sídney (${d('S&P/ASX 200 (Australia)','5')}). La venta de chips ya venía de antes del voto.`,
+    'Materias primas':()=>`El Brent cayó ${d('Brent','4').replace('−','')} a $${fila('Brent').n4.toFixed(2)}, su menor nivel desde el 31 de agosto. El «19.6% en tres días» que circuló mezcla un cambio de contrato: con un solo contrato son −16.58%, y 52% de esa baja ocurrió antes de los resultados. El oro subió ${d('Oro','4').replace('+','')} y el cobre casi no se movió.`};
+  const KPI=[['MSCI All-World','4'],['Dow Jones','4'],['STOXX 600','4'],['S&P/BMV IPC','4'],['Kospi (Corea)','5'],['Brent','4'],['Índice dólar','4'],['USD/MXN','4']];
+  const kpi=([n,k])=>{ const r=fila(n), z=r['z'+k];
+    return `<div class="el-k${usu(z)?' on':''}"><span>${esc(n)} · ${k}-nov</span><b class="${color(r,r['d'+k])}">${fp(r['d'+k],r.tipo)}</b><em>z ${fz(z)} · ${usu(z)?'inusual':'normal'}</em></div>`; };
+  function tabla(reg){
+    const asia=reg==='Asia', R=[...MOV.filter(r=>r.reg===reg),...PRENSA.filter(r=>r.reg===reg)];
+    const cel=(r,k)=>{ const v=r['d'+k];
+      if(v==null) return (k==='3'||k==='4')&&!r.s?'<td class="el-z">cerrado</td>':'<td class="el-z">—</td>';
+      return `<td class="${color(r,v)}">${fp(v,r.tipo)}${r['g'+k]?' †':''}${k==='5'&&r.prov?'<small>sin cierre diario</small>':''}</td>`; };
+    return `<div class="tbl-wrap"><table class="el-t" aria-label="Movimientos de ${esc(reg)}"><thead><tr><th>Mercado</th><th>3-nov</th><th>4-nov</th>${asia?'<th>5-nov</th>':''}<th>z ${asia?'5':'4'}-nov</th></tr></thead><tbody>${R.map(r=>{ const z=asia?r.z5:r.z4, n=asia&&r.n5!=null?r.n5:r.n4;
+      return `<tr><td><b>${esc(r.nom)}</b><small>${niv(n,r.tipo)}${r.s?` · <a href="${esc(r.u)}" target="_blank" rel="noopener noreferrer">${esc(r.s)}</a>${r.nota?' · '+esc(r.nota):''}`:''}</small></td>${r.s?'<td class="el-z">—</td>':cel(r,'3')}${cel(r,'4')}${asia?cel(r,'5'):''}<td class="el-z${usu(z)?' on':''}">${fz(z)}</td></tr>`; }).join('')}</tbody></table></div>`; }
+  const noticia=n=>`<a class="el-n" href="${esc(n.u)}" target="_blank" rel="noopener noreferrer"><span><b>${esc(n.s)}</b> · ${esc(n.f)} ↗</span><p>${esc(n.t)}</p></a>`;
+  const bloque=reg=>{ const N=NOT.filter(n=>n.reg===reg);
+    return `<section class="card el-reg"><div class="card-h"><h3>${esc(reg)}</h3><span class="hint">${N.length} notas</span></div><p>${LECT[reg]()}</p>
+      <div class="el-cols"><div>${tabla(reg)}</div><div>${N.map(noticia).join('')}</div></div></section>`; };
+  let filtro='Todos', hecho='';
+  function pintaFiltro(){
+    UI.seg('segElec',['Todos',...ORDEN],filtro,k=>{ filtro=k; pintaFiltro(); });
+    document.getElementById('elRegs').innerHTML=(filtro==='Todos'?ORDEN:[filtro]).map(bloque).join('');
+  }
+  function northStar(){
+    const A=AtrV.datos(), el=document.getElementById('elNS'); if(!A||!A.dias) return false;
+    const dia=f=>{ const x=A.dias[f]; return x?`<div><b>${f.slice(8)*1}-nov</b>Cartera ${fp(x.rp*100)}<br>MEXTRAC09 ${fp(x.rb*100)}<br>Alfa ${fp(x.alfa*1e4,'pb')}</div>`:''; };
+    el.innerHTML=`<div class="card-h"><h3>Esos días en North Star</h3></div><div class="el-ns">${dia('2026-11-03')}${dia('2026-11-04')}</div>
+      <p class="fw-sub">Coinciden en fecha con el voto, pero no prueban que la elección los causara. El detalle por emisora está en la línea del tiempo.</p>
+      <button class="btn" data-el-dia="2026-11-04">Ver el 4-nov en la línea del tiempo</button>`;
+    el.querySelector('[data-el-dia]').onclick=ev=>Historia.abrir(ev.currentTarget.dataset.elDia);
+    return true; }
+  function render(){
+    const firma=''+!!(AtrV.datos()&&AtrV.datos().dias); if(firma===hecho) return; hecho=firma;
+    const fechaCorte=new Date(CORTE.replace(' ','T')).toLocaleString('es-MX',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}).replace(/\./g,'');
+    document.getElementById('elHero').innerHTML=`<small>Elecciones intermedias de EUA · 3-nov-2026 · corte: ${esc(fechaCorte)} (CDMX)</small>
+      <h2>El voto movió crudo y chips más que al dólar</h2>
+      <p>Según AP, los demócratas ganaron ambas cámaras: 54 escaños del Senado, con Alaska y Misisipi sin llamar. Es una proyección, no un resultado certificado. El 4-nov subieron las bolsas de casi todo el mundo y el Brent cayó con fuerza. <b>Ninguna fuente separa cuánto se debe a la elección</b> y cuánto a Irán, a resultados corporativos o al apoyo estatal en China.</p>
+      <div class="el-kpis">${KPI.map(kpi).join('')}</div>
+      <p class="el-nota">z = movimiento del día entre la desviación estándar de los cambios de las 60 sesiones previas. Marcamos como inusual |z| ≥ 2. Cifras de LSEG; z es cálculo propio.</p>`;
+    document.getElementById('elCrono').innerHTML=[
+      ['3-nov, al cierre','Todos los cierres de este día son anteriores al resultado. El peso ya se había depreciado.'],
+      ['3-nov, 20:31 CDMX','Primer titular de Reuters con triunfos demócratas. A las 02:31 del 4-nov ya daba el Congreso por ganado.'],
+      ['4-nov','Primera sesión de EUA, Europa y América Latina con el resultado. Asia operó durante el conteo.'],
+      ['5-nov','Primera sesión completa de Asia con el resultado. También decidían Banxico y el Banco de Inglaterra.']
+    ].map(([a,b])=>`<div class="el-paso"><b>${a}</b><p>${b}</p></div>`).join('');
+    document.getElementById('elCanal').innerHTML=`<div class="card-h"><h3>Por dónde pudo pasar el efecto</h3><span class="hint">lecturas de las fuentes, no mediciones</span></div><div class="el-canales">
+      <div><h4>Irán y el crudo</h4><p>El canal más grande y el más frágil: el mercado apuesta a una salida anticipada de la guerra, pero el Congreso nuevo llega hasta el 3-ene y un funcionario iraní dice que el acuerdo sigue lejos.</p></div>
+      <div><h4>Centros de datos e IA</h4><p>La tesis es estatal: la gobernadora electa de Texas pide una moratoria. Cayeron chips y proveedores de energía, mientras Microsoft, Amazon y Apple subieron.</p></div>
+      <div><h4>Gasto y tasas</h4><p>Sin barrido republicano se aleja el riesgo de más gasto. La Fed casi no cambió: sigue descontando un alza en diciembre, y ese ajuste coincidió con un dato de empleo fuerte.</p></div>
+      <div><h4>Comercio y T-MEC</h4><p>Trump conserva aranceles y comercio sin pasar por el Congreso. Para México no se ve un cambio inmediato: la negociación sigue con el Ejecutivo.</p></div></div>`;
+    document.getElementById('elLim').innerHTML=`<div class="card-h"><h3>Lo que esta lectura no resuelve</h3></div><ul class="el-lim">
+      <li>El corte no incluye las decisiones de Banxico ni del Banco de Inglaterra del 5-nov, ni la sesión de ese día en EUA, Europa y América Latina.</li>
+      ${fila('Nikkei 225 (Japón)').d5==null?'<li>El Nikkei no tiene dato del 5-nov en esta conexión.</li>':''}${MOV.some(r=>r.prov)?'<li>«Sin cierre diario» es la última cotización de LSEG en el corte; esa sesión pudo seguir abierta.</li>':''}
+      <li>† Acumula más de una sesión, porque ese mercado no operó el día anterior.</li>
+      <li>La ventana de 60 sesiones incluye la guerra con Irán y las ventas en IA, así que z puede subestimar lo inusual.</li>
+      <li>De FT, WSJ, MarketWatch, Barron's y Bloomberg no se pudieron leer notas. Los resúmenes son nuestros: abre la liga para ver el original. Merval, IPSA y Perú vienen de prensa.</li></ul>
+      <p class="el-nota">Información de contexto; no es una recomendación de inversión.</p>`;
+    northStar(); pintaFiltro();
+  }
+  return {render};
+})();
+
 const Charts=(()=>{
   const reg={};
   const grad=(ctx,rgb,a=.28)=>{const g=ctx.createLinearGradient(0,0,0,280);
@@ -6731,7 +6927,7 @@ const UI=(()=>{
     if(view==='portafolio'){ if(p==='dash')rDash(); if(p==='dia')rDia(); if(p==='pos')rPos(); if(p==='comp')rComp(); }
     if(view==='operaciones'){ if(p==='log')rOps(); if(p==='open'||p==='closed')rTrades(); if(p==='adj')rAdj(); }
     if(view==='modelo'){ if(p==='pesos')rModel(); if(p==='rebal')rRebal(); if(p==='pub')rPub(); }
-    if(view==='mercado'){ if(p==='px')rPx(); if(p==='fedw')FedW.render(); if(p==='feed')rFeed(); if(p==='nube')rNube(); }
+    if(view==='mercado'){ if(p==='px')rPx(); if(p==='fedw')FedW.render(); if(p==='elec')Elecc.render(); if(p==='feed')rFeed(); if(p==='nube')rNube(); }
     if(view==='noticias') rNoti();
     if(view==='simulador') rSim();
     if(view==='analisis'){ if(p==='rend')rRend(); if(p==='comp3')rCmp(); if(p==='hist5')rHist5(); if(p==='riesgo')rRisk(); if(p==='prosp')rProsp(); if(p==='atr')rAtr(); if(p==='bmk')rBmk(); }
@@ -8183,10 +8379,11 @@ WALMEX,46.05,45.49,2026-09-14T18:51:21+00:00</pre>
     const S=Store.get(); let L=S.noticias||[];
     seg('segNotiTono',['TODAS','POSITIVA','NEUTRAL','NEGATIVA'],noti.tono,k=>{noti.tono=k;rNoti();});
     const enCartera=Portfolio.positions().map(p=>p.sym);
-    seg('segNotiSym',['TODAS','EN CARTERA','MERCADO'],noti.sym,k=>{noti.sym=k;rNoti();});
+    seg('segNotiSym',['TODAS','EN CARTERA','MERCADO','NVIDIA'],noti.sym,k=>{noti.sym=k;rNoti();});
     if(noti.tono!=='TODAS') L=L.filter(n=>n.tono===noti.tono.toLowerCase());
     if(noti.sym==='EN CARTERA') L=L.filter(n=>enCartera.includes(n.sym));
     if(noti.sym==='MERCADO') L=L.filter(n=>!META[n.sym]);
+    if(noti.sym==='NVIDIA') L=L.filter(n=>n.sym==='NVIDIA'||/nvidia|jensen huang/i.test(n.titulo+' '+(n.resumen||'')));   // 9-nov
     noti.q=$('#qNoti')?.value||'';
     if(noti.q) L=L.filter(n=>(n.titulo+n.resumen+n.sym).toLowerCase().includes(noti.q.toLowerCase()));
     if(!L.length){
