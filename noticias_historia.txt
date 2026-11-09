@@ -1,77 +1,131 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
-fecha: 2026-11-09 05:35
-emisora: CHILE
-titulo: Valor de envíos de cobre Chile cae 5,4% en octubre; país registra superávit comercial: Banco Central
+fecha: 2026-11-09 16:28
+emisora: PETROLEO
+titulo: MERCADOS MUNDIALES-Las acciones se disparan ante la caída del petróleo; Nvidia cae en medio de una investigación interna
 fuente: Reuters
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261109:nAQN2MSRQI:1
-resumen:
-  SANTIAGO, 9 nov (Reuters) - El valor de las exportaciones de cobre de Chile cayó un 5,4% en octubre, mientras que el país sudamericano logró anotar un superávit comercial de 2.552 millones de dólares en el décimo mes del año, informó el lunes el Banco Central. El valor de las exportaciones de cobre -mayor envío del país- sumó 5.409 millones de dólares. Chile es el mayor productor global del metal rojo.
+tono: negativa
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q2UB:1
 
 ---
-fecha: 2026-11-09 05:32
-emisora: FED
-titulo: MORNING BID AMERICAS-I spy AI
-fuente: Reuters
-tono: neutral
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0M2:1
-
----
-fecha: 2026-11-09 05:01
-emisora: NVIDIA
-titulo: El sector tecnológico seguirá marcando el rumbo del mercado bursátil estadounidense a pesar de la caída provocada por la IA
-fuente: Reuters
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0XS:1
-resumen:
-  El sector tecnológico sigue siendo el más importante del S&P 500, con una ponderación superior al 35 % El sector ha subido más del 200 % en este mercado alcista El PER del sector tecnológico cae por debajo de la valoración del mercado en general Por Lewis Krauskopf NUEVA YORK, 9 nov (Reuters) - A pesar del fuerte retroceso de los valores relacionados con la inteligencia artificial, el mercado bursátil estadounidense está preparado para apoyarse en el rendimiento de las acciones tecnológicas, y los inversores están…
-
----
-fecha: 2026-11-09 04:35
+fecha: 2026-11-09 16:27
 emisora: MERCADO
-titulo: MERCADOS GLOBALES-Las bolsas suben levemente, pero los problemas de Nvidia ponen a prueba el ánimo
+titulo: GLOBAL MARKETS-Stocks jump as oil tumbles, Nvidia falls amid internal probe
+fuente: Reuters
+tono: negativa
+relevancia: 12
+id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q171:3
+resumen:
+  Updates with US closing levels Major US stock indexes gain more than 2% each Oil drops as Trump downplays risk of new Iran strikes Nvidia shares fall sharply amid internal investigation By Caroline Valetkevitch and Dhara Ranasinghe NEW YORK/LONDON, Nov 9 (Reuters) - Major stock indexes rallied on Monday as Brent crude oil fell more than 5% after US President Donald Trump said he is unlikely to order fresh attacks on Iran, while shares of Nvidia NVDA.O dropped.
+
+---
+fecha: 2026-11-09 16:19
+emisora: NVIDIA
+titulo: ACTUALIZA 1-Trump afirma que el director general de Nvidia le dijo que no sabía que la mujer vinculada a él era una espía
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q2TO:1
+
+---
+fecha: 2026-11-09 15:26
+emisora: FED
+titulo: BOLSA DE EEUU-Wall Street se dispara al aliviar la caída del petróleo las preocupaciones sobre la inflación; Nvidia se desploma
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q2ND:1
+
+---
+fecha: 2026-11-09 15:16
+emisora: MERCADO
+titulo: Peso mexicano avanza tras datos locales de inflación, bolsa anota récord máximo
 fuente: Reuters
 tono: positiva
+relevancia: 14
+id: lseg:urn:newsml:reuters.com:20261109:nL2N46N02T:1
+resumen:
+  CIUDAD DE MÉXICO, 9 nov (Reuters) - - El peso mexicano avanzó el lunes favorecido por señales de menor tensión en Medio Oriente que mejoraron el apetito por activos de riesgo, mientras que la bolsa subió por quinta jornada consecutiva y anotó un nuevo máximo histórico intradía.
+
+---
+fecha: 2026-11-09 15:11
+emisora: NVIDIA
+titulo: Wall Street sube con fuerza ya que descenso del crudo alivia temores sobre inflación; Nvidia se hunde
+fuente: Reuters
+tono: positiva
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261109:nL2N46Q0ZK:1
+
+---
+fecha: 2026-11-09 13:57
+emisora: MERCADO
+titulo: MERCADOS EMERGENTES-Las acciones de Latinoamérica suben y los mercados de divisas registran resultados dispares mientras los inversores analizan los datos de México y Brasil
+fuente: Reuters
+tono: positiva
+relevancia: 19
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q2HT:1
+resumen:
+  La inflación general de México se acelera más de lo previsto en octubre El petróleo cae tras las declaraciones de Trump, que apunta a una actitud moderada respecto a Irán a pesar de los nuevos ataques a buques Se esperan los datos de inflación al consumo de Colombia Actualización con la evolución de la sesión bursátil de la tarde Por Sudeshna Ghoshal, Ragini Mathur y Avinash P 9 nov (Reuters) - La mayoría de las acciones latinoamericanas subieron el lunes, mientras que las divisas registraron resultados mixtos, ya…
+
+---
+fecha: 2026-11-09 13:24
+emisora: NVIDIA
+titulo: BOLSA DE EEUU-Wall Street se recupera al aliviar la caída del petróleo las preocupaciones sobre la inflación; Nvidia se desploma
+fuente: Reuters
+tono: negativa
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q2GK:1
+
+---
+fecha: 2026-11-09 12:33
+emisora: NVIDIA
+titulo: MERCADOS MUNDIALES-Las acciones repuntan a pesar de la caída de Nvidia y del descenso del precio del petróleo
+fuente: Reuters
+tono: positiva
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q2D3:1
+
+---
+fecha: 2026-11-09 12:32
+emisora: MERCADO
+titulo: GLOBAL MARKETS-Stocks rally even as Nvidia falls, oil drops
+fuente: Reuters
+tono: negativa
 relevancia: 12
-id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0LK:1
+id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0X2:2
 resumen:
-  Por Dhara Ranasinghe y Jiaxing Li LONDRES, 9 nov (Reuters) - Las bolsas mundiales repuntaban ligeramente el lunes desde mínimos de seis meses, pero el ánimo seguía siendo frágil, mientras la caída de las acciones de Nvidia acentuaba la inquietud en torno a la inteligencia artificial tras el desplome mundial de los títulos tecnológicos la semana pasada.
+  Updates to early afternoon in New York US stocks up more than 2% Oil dips as Trump downplays risk of new Iran strikes Nvidia shares fall sharply after investigation news By Caroline Valetkevitch and Dhara Ranasinghe NEW YORK/LONDON, Nov 9 (Reuters) - Major stock indexes were gaining sharply on Monday even as Nvidia's NVDA.O shares fell, while oil prices extended recent losses after US President Donald Trump said he is unlikely to order fresh attacks on Iran.
 
 ---
-fecha: 2026-11-09 03:34
+fecha: 2026-11-09 11:22
 emisora: NVIDIA
-titulo: CITAS-Reacciones ante la investigación de Nvidia sobre su director ejecutivo, Jensen Huang
+titulo: BOLSA DE EEUU-Wall Street se recupera con fuerza al aliviar la caída del petróleo los temores sobre la inflación; Nvidia cae
 fuente: Reuters
 tono: negativa
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0Q4:1
-resumen:
-  Se añaden comentarios de Citi, Sequoia y Musk 9 nov (Reuters) - La junta de « NVDA.O » de Nvidia está investigando (link) si el director ejecutivo, Jensen Huang, fue objeto de una operación de inteligencia extranjera, tras una noticia publicada en los medios en la que se alegaba que mantenía una estrecha relación con una empresaria china que pasaba información a Pekín.
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q272:1
 
 ---
-fecha: 2026-11-09 01:59
-emisora: NVIDIA
-titulo: ACTUALIZA 4-Las acciones de Nvidia caen mientras el gigante de los chips investiga a su director general por acusaciones de espionaje
+fecha: 2026-11-09 09:11
+emisora: MERCADO
+titulo: MERCADOS A.LATINA-Monedas operan mixtas en medio de debilidad global del dólar; bolsas suben animadas por Wall St
 fuente: Reuters
-tono: negativa
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q02D:5
+tono: neutral
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261109:nL2N46Q0HE:1
 resumen:
-  La hija de Huang cancela su visita a Seúl para asistir al evento de IA de Nvidia Elon Musk y Bill Ackman se pronuncian sobre la situación de Huang Un analista advierte de que una investigación prolongada sobre Huang podría retrasar las inversiones de Nvidia Los posibles retrasos podrían afectar a los precios de los chips de memoria, según un analista Se añaden comentarios del Ministerio de Asuntos Exteriores chino y la cotización de las acciones en Fráncfort en los párrafos 6 y 11 Por Heekyong Yang, Kyu-seok Shim…
+  Por Froilan Romero SANTIAGO, 9 nov (Reuters) - Las principales monedas de América Latina exhibían un desempeño dispar el lunes, en medio de un retroceso global del dólar, en el inicio de una semana en que la atención de los inversores estará centrada en los datos sobre precios de Estados Unidos, que podrían marcar las perspectivas de la Reserva Federal en materia de tasas de interés. * En tanto, el grueso de las bolsas de valores de la región anotaban ganancias, siguiendo el comportamiento de Wall Street. * El…
 
 ---
-fecha: 2026-11-09 01:15
-emisora: NVIDIA
-titulo: China, al ser preguntada sobre la investigación sobre Nvidia, afirma que la «narrativa del espionaje» carece de fundamento
+fecha: 2026-11-09 06:53
+emisora: BANXICO
+titulo: ACTUALIZA 1-Inflación de México acelera en octubre más de lo previsto, pero se mantiene dentro de la meta
 fuente: Reuters
-tono: negativa
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0GC:1
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261109:nL2N46Q0GI:1
 
 ---
 fecha: 2026-11-09 00:12
@@ -85,17 +139,6 @@ resumen:
   In front of clients and business partners, Grupo ISA unveiled its national growth and expansion plan, highlighting its award of the tender from Grupo Aeroportuario del Sureste (ASUR) for the commercialization of advertising spaces in the nine airports it operates in southeastern Mexico, as well as the tender for the Mexico–Toluca Interurban Train, El Insurgente, and road bridges in Tijuana.
 
 ---
-fecha: 2026-11-08 23:43
-emisora: MERCADO
-titulo: EMERGING MARKETS-Taiwan shares rally 6% as stabilisation fund, chipmakers spark recovery
-fuente: Reuters
-tono: neutral
-relevancia: 11
-id: lseg:urn:newsml:reuters.com:20261109:nL2N46Q049:6
-resumen:
-  EM Asia stock benchmark rises over 2% Taiwan equities jump 6.6%; TSMC boosts benchmark South Korean won strengthens to 1,356.20 a dollar . By Nichiket Sunil Nov 9 (Reuters) - Taiwan stocks rose more than 6% on Monday, underpinned by chipmakers, after the government activated its stock stabilization fund following a steep selloff last week that wiped trillions of dollars from global markets.
-
----
 fecha: 2026-11-08 22:55
 emisora: NVIDIA
 titulo: MERCADOS MUNDIALES-Las bolsas asiáticas repuntan al disiparse los temores sobre la IA y Oriente Medio; el dólar se mantiene firme ante las expectativas sobre la Fed
@@ -105,28 +148,6 @@ relevancia: 10
 id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q05Y:1
 resumen:
   Calma tensa tras el repunte de Wall Street del viernes El petróleo cae mientras Trump resta importancia al riesgo de nuevos ataques contra Irán La atención se centra en los resultados de las empresas tecnológicas y los datos del IPC de EEUU El dólar se mantiene firme tras el informe de empleo de EEUU Se actualizan los precios y los comentarios de los analistas a lo largo del texto; los resultados de Nvidia en el párrafo 10 y los datos de inflación de China en el párrafo 12.
-
----
-fecha: 2026-11-08 20:01
-emisora: NVIDIA
-titulo: CORREGIDO-Corea del Sur afirma que los problemas de Nvidia no afectarán al suministro de GPU previsto en los contratos
-fuente: Reuters
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q01P:2
-resumen:
-  Se corrige el cargo que figura en el párrafo 1: «viceministro de Ciencia y TIC», en lugar de «Industria» SEÚL, 9 nov (Reuters) - El viceministro de Ciencia y TIC de Corea del Sur, Ryu Jemyung, afirmó el lunes que los problemas que afectan actualmente a Nvidia (link) no afectarán al suministro contratado por Corea del Sur de unidades de procesamiento gráfico (GPU) de dicha empresa.
-
----
-fecha: 2026-11-08 17:46
-emisora: NVIDIA
-titulo: ACTUALIZA 1-Trump califica a Huang, de Nvidia, de «honrado» y afirma que no ha hablado con él sobre las acusaciones
-fuente: Reuters
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261108:nL5N46P0BG:1
-resumen:
-  Incluye los comentarios de Trump y detalles de contexto CHICAGO, 8 nov (Reuters) - El presidente de EEUU, Donald Trump, calificó el domingo a Jensen Huang, director ejecutivo de Nvidia NVDA.O, como una persona honorable y elogió sus contribuciones a Estados Unidos, pero afirmó que no había hablado con él sobre las acusaciones de una relación con una empresaria china que habría pasado información a Pekín. «No he hablado con él sobre eso.
 
 ---
 fecha: 2026-11-08 15:12
@@ -158,6 +179,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261108:nNRA2mowyx:0
+resumen:
+  Tijuana (Mexico), Nov 8 (EFE).- The Democrats' victory in the United States midterm elections, which restored their control of both the House of Representatives and the Senate, has opened a new political landscape for President Donald Trump and raised hopes among migrant organizations along the Mexico-U.S. border for a potential halt to his hardline immigration policies.
 
 ---
 fecha: 2026-11-08 12:12
@@ -167,6 +190,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261108:nNRA2mohy8:0
+resumen:
+  Tijuana (Mexico), November 8 (EFE) - The victory of the Democrats in the midterm elections in the United States, which allowed them to regain control of the House of Representatives and the Senate, has opened a new political landscape for President Donald Trump and raised hopes among migrant organizations along the Mexico-U.S. border for a potential halt to his hardline immigration policies.
 
 ---
 fecha: 2026-11-08 11:12
@@ -374,6 +399,15 @@ resumen:
   MEXICO CITY, Nov 6 (Reuters) - Mexico's annual inflation rate likely edged higher in October, a Reuters poll showed on Friday, although it is expected to stay within the target range, reinforcing the central bank's signal of an extended pause after this week's surprise rate cut. The median estimate of 11 analysts forecast annual headline inflation at 3.64% in October, up from 3.45% in September.
 
 ---
+fecha: 2026-11-06 11:33
+emisora: COBRE
+titulo: METALS-Copper pares losses on AI rebound but set for worst week since March
+fuente: Reuters
+tono: negativa
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261106:nL2N46N0D8:4
+
+---
 fecha: 2026-11-06 10:59
 emisora: BANXICO
 titulo: SONDEO-Inflación interanual de México habría acelerado en octubre, aunque seguiría dentro de la meta
@@ -432,22 +466,15 @@ relevancia: 8
 id: lseg:urn:newsml:reuters.com:20261106:nL5N46N1RO:1
 
 ---
-fecha: 2026-11-06 05:12
-emisora: NVIDIA
-titulo: BUZZ-Las acciones de las empresas de chips relacionadas con la IA intentan recuperarse tras la caída de este jueves
+fecha: 2026-11-06 05:23
+emisora: COBRE
+titulo: METALES BÁSICOS-El cobre cae y se encamina a su peor semana desde marzo por desplome de la IA
 fuente: Reuters
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261106:nL5N46N161:1
-
----
-fecha: 2026-11-05 23:48
-emisora: NVIDIA
-titulo: ENFOQUE-El auge de la IA convierte el encapsulado de chips en el próximo campo de batalla del sector de los semiconductores
-fuente: Reuters
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261106:nL5N46N0F5:1
+tono: negativa
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261106:nL6N46N0S9:1
+resumen:
+  6 nov (Reuters) - El cobre caía por cuarta sesión consecutiva el viernes y se encaminaba a su mayor descenso semanal desde marzo, lastrado por el desplome de las acciones tecnológicas, aunque las preocupaciones sobre la oferta limitaban las bajas. * El contrato de referencia del cobre a tres meses CMCU3 en la Bolsa de Metales de Londres (LME) bajaba un 0,8%, a 13.738 dólares por tonelada métrica, a las 1030 GMT.
 
 ---
 fecha: 2026-11-05 15:53
