@@ -145,6 +145,54 @@ resumen:
   turistas provenientes de Estados Unidos, principal mercado emisor.
 
 ---
+fecha: 2026-11-09 05:39
+emisora: PETROLEO
+titulo: UPDATE 2-COP31 summit leaders urge world to move faster on climate
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL2N46Q04J:8
+resumen:
+  "We must move faster," COP31 negotiations lead Australia says COP31 goal: electrify
+  more than a third of world economy by 2035 US shuns climate cooperation for second year
+  in a row Adds quote from Turkey President Erdogan in paragraph 10, replaces quote in
+  final paragraph By Simon Jessop and Tuvan Gumrukcu ANTALYA, Turkey, Nov 9 (Reuters) -
+  Leaders of the COP31 climate summit urged the world to accelerate the fight against
+  global warming amid rising temperatures and worsening climate-driven disasters, as the…
+
+---
+fecha: 2026-11-09 05:38
+emisora: FED
+titulo: I spy AI November 09, 2026 at 06:36 am EST
+fuente: MARFRA
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261109:nNRA2mx5ti:0
+
+---
+fecha: 2026-11-09 05:38
+emisora: FED
+titulo: US Dollar: Fed support persists as data watched – BBH
+fuente: FORSTR
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261109:nNRA2mx5hs:0
+
+---
+fecha: 2026-11-09 05:37
+emisora: PETROLEO
+titulo: Watching Crude Oil; Reports Circulating That Qatar Will Deliver Proposal To Trump Administration To Reopen Straight Of Hormuz And End Shipping Atta...
+fuente: BENZIN
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261109:nNRA2mx4t2:0
+resumen:
+  Watching Crude Oil; Reports Circulating That Qatar Will Deliver Proposal To Trump
+  Administration To Reopen Straight Of Hormuz And End Shipping Attacks In Exchange For
+  Releasing $8B In Frozen Funds © 2024 Benzinga | All Rights Reserved Provided by
+  SyndiGate Media Inc. (Syndigate.info
+
+---
 fecha: 2026-11-09 05:35
 emisora: CHILE
 titulo: Valor de envíos de cobre Chile cae 5,4% en octubre; país registra superávit comercial: Banco Central
@@ -152,6 +200,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nAQN2MSRQI:1
+resumen:
+  SANTIAGO, 9 nov (Reuters) - El valor de las exportaciones de cobre de Chile cayó un
+  5,4% en octubre, mientras que el país sudamericano logró anotar un superávit comercial
+  de 2.552 millones de dólares en el décimo mes del año, informó el lunes el Banco
+  Central. El valor de las exportaciones de cobre -mayor envío del país- sumó 5.409
+  millones de dólares. Chile es el mayor productor global del metal rojo.
 
 ---
 fecha: 2026-11-09 05:34
@@ -170,6 +224,13 @@ fuente: Reuters
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nRTV9WQtzV:16
+resumen:
+  Click the following link to watch video:
+  https://share.newscasts.refinitiv.com/link?entryId=1_r445mvrk&referenceId=tag:reuters.com,2026:newsml_RW688409112026RP1_K15&pageId=NewscastsSource:
+  'Reuters - General news videos' Description: Nvidia said on Sunday (November 8) its
+  board was probing whether CEO Jensen Huang had been the target of a foreign
+  intelligence effort, after a media report alleged he had a close relationship with a
+  Chinese businesswoman who passed information to Beijing.
 
 ---
 fecha: 2026-11-09 05:33
@@ -188,6 +249,13 @@ fuente: INDASI
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261109:nNRA2mx1up:0
+resumen:
+  Dhaka Dhaka, Nov. 9 -- As Bangladesh grapples with escalating violence and a
+  deteriorating law-and-order situation, at least eight buses have been set ablaze and
+  more than 50 crude bomb explosions rocked different locations across Dhaka over the
+  past few days, according to a local media report. It noted that a series of crude bomb
+  explosions triggered panic at Dhaka University on Sunday evening, with multiple other
+  locations across the capital also witnessing similar blasts.
 
 ---
 fecha: 2026-11-09 05:32
@@ -197,6 +265,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0M2:1
+resumen:
+  The opinions expressed here are those of the author, a columnist for Reuters. By Mike
+  Dolan Nov 9 (Reuters) - A nervy tech sector starts the week with a nearly 4% slide in
+  AI chip giant Nvidia on a bizarre tale of an extramarital affair and spying
+  allegations. Nvidia boss Jensen Huang admitted to employees that he'd had an affair
+  with a woman who news reports claimed was spying for China.
 
 ---
 fecha: 2026-11-09 05:32
@@ -215,6 +289,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0O8:1
+resumen:
+  Brent crude currently around $96 per barrel The 100-DMA is $94.49, 200-DMA is $93.85
+  The mid-point of Jul-Oct surge is $93.89 Drop toward $88 may follow clean break of
+  200-DMA Key lows traded at $85.41 on Aug 26 and $78.11 Aug 5 Cheaper oil will boost the
+  euro which traders have sold (Jeremy Boulton is a Reuters market analyst. The views
+  expressed are his own) (( jeremy.boulton@thomsonreuters.com ))
 
 ---
 fecha: 2026-11-09 05:31
@@ -224,6 +304,13 @@ fuente: GLORDP
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261109:nNRA2mx1dg:0
+resumen:
+  ARGENTINIAN STOCK REPORT Ahead of this morning's market opening, Ternium Argentina SA
+  closed lower the previous trading day. Ternium Argentina SA (BUE:TXAR), Argentina's
+  largest Iron/Steel company by market cap, sank 4.4% during its previous trading session
+  to close at $702.0. Bullish Turning Point Williams % R The stock is oversold according
+  to the Williams % R indicator of -82.8, suggesting the price is close to its 14-day
+  low.
 
 ---
 fecha: 2026-11-09 05:31
@@ -233,6 +320,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nS0N43T022:1
+resumen:
+  Nov 9 (Reuters) - Brazil central bank poll: BRAZIL ECONOMISTS SEE ANNUAL IPCA INFLATION
+  INDEX REACHING 5.22% IN 2026 VERSUS 5.22% IN PREVIOUS ESTIMATE - CENBANK POLL BRAZIL
+  ECONOMISTS SEE ANNUAL IPCA INFLATION INDEX REACHING 4.90% IN 2027 VERSUS 4.76% IN
+  PREVIOUS ESTIMATE - CENBANK POLL BRAZIL ECONOMISTS SEE YEAR-END 2026 INTEREST RATE
+  SELIC AT 13.75% VERSUS 13.50% IN PREVIOUS ESTIMATE - CENBANK POLL BRAZIL ECONOMISTS SEE
+  YEAR-END 2027 INTEREST RATE SELIC AT 12.50% VERSUS 12.50% IN PREVIOUS ESTIMATE -
+  CENBANK POLL…
 
 ---
 fecha: 2026-11-09 05:31
@@ -242,6 +337,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nAQN2MSRQI:2
+resumen:
+  SANTIAGO, 9 nov (Reuters) - El valor de las exportaciones de cobre de Chile cayó un
+  5,4% en octubre, mientras que el país sudamericano logró anotar un superávit comercial
+  de 2.552 millones de dólares en el décimo mes del año, informó el lunes el Banco
+  Central. El valor de las exportaciones de cobre -mayor envío del país- sumó 5.409
+  millones de dólares. Chile es el mayor productor global del metal rojo.
 
 ---
 fecha: 2026-11-09 05:31
@@ -251,6 +352,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nAQN2MSRQJ:2
+resumen:
+  SANTIAGO, Nov 9 (Reuters) - Chile, the world's largest copper producer, exported $5.41
+  billion of the metal in October, down 5.4% from the same month a year earlier, the
+  central bank said on Monday. The country posted a trade surplus of $2.55 billion in the
+  month, the bank added. (Reporting by Natalia Ramos and Aida Pelaez-Fernandez; Editing
+  by Toby Chopra) (( Aida.Pelaez-Fernandez@thomsonreuters.com ;))
 
 ---
 fecha: 2026-11-09 05:31
@@ -260,6 +367,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nAQN2MSRQJ:1
+resumen:
+  SANTIAGO, Nov 9 (Reuters) - Chile, the world's largest copper producer, exported $5.41
+  billion of the metal in October, down 5.4% from the same month a year earlier, the
+  central bank said on Monday. The country posted a trade surplus of $2.55 billion in the
+  month, the bank added. (Reporting by Natalia Ramos and Aida Pelaez-Fernandez; Editing
+  by Toby Chopra) (( Aida.Pelaez-Fernandez@thomsonreuters.com ;))
 
 ---
 fecha: 2026-11-09 05:26
@@ -269,6 +382,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nS0N43T022:15
+resumen:
+  Nov 9 (Reuters) - Brazil central bank poll: BRAZIL ECONOMISTS SEE ANNUAL IPCA INFLATION
+  INDEX REACHING 5.22% IN 2026 VERSUS 5.22% IN PREVIOUS ESTIMATE - CENBANK POLL BRAZIL
+  ECONOMISTS SEE ANNUAL IPCA INFLATION INDEX REACHING 4.90% IN 2027 VERSUS 4.76% IN
+  PREVIOUS ESTIMATE - CENBANK POLL BRAZIL ECONOMISTS SEE YEAR-END 2026 INTEREST RATE
+  SELIC AT 13.75% VERSUS 13.50% IN PREVIOUS ESTIMATE - CENBANK POLL BRAZIL ECONOMISTS SEE
+  YEAR-END 2027 INTEREST RATE SELIC AT 12.50% VERSUS 12.50% IN PREVIOUS ESTIMATE -
+  CENBANK POLL…
 
 ---
 fecha: 2026-11-09 05:26
@@ -278,6 +399,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nS0N43T022:13
+resumen:
+  Nov 9 (Reuters) - Brazil central bank poll: BRAZIL ECONOMISTS SEE ANNUAL IPCA INFLATION
+  INDEX REACHING 5.22% IN 2026 VERSUS 5.22% IN PREVIOUS ESTIMATE - CENBANK POLL BRAZIL
+  ECONOMISTS SEE ANNUAL IPCA INFLATION INDEX REACHING 4.90% IN 2027 VERSUS 4.76% IN
+  PREVIOUS ESTIMATE - CENBANK POLL BRAZIL ECONOMISTS SEE YEAR-END 2026 INTEREST RATE
+  SELIC AT 13.75% VERSUS 13.50% IN PREVIOUS ESTIMATE - CENBANK POLL BRAZIL ECONOMISTS SEE
+  YEAR-END 2027 INTEREST RATE SELIC AT 12.50% VERSUS 12.50% IN PREVIOUS ESTIMATE -
+  CENBANK POLL…
 
 ---
 fecha: 2026-11-09 05:25
@@ -287,6 +416,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nS0N43T022:11
+resumen:
+  Nov 9 (Reuters) - Brazil central bank poll: BRAZIL ECONOMISTS SEE ANNUAL IPCA INFLATION
+  INDEX REACHING 5.22% IN 2026 VERSUS 5.22% IN PREVIOUS ESTIMATE - CENBANK POLL BRAZIL
+  ECONOMISTS SEE ANNUAL IPCA INFLATION INDEX REACHING 4.90% IN 2027 VERSUS 4.76% IN
+  PREVIOUS ESTIMATE - CENBANK POLL BRAZIL ECONOMISTS SEE YEAR-END 2026 INTEREST RATE
+  SELIC AT 13.75% VERSUS 13.50% IN PREVIOUS ESTIMATE - CENBANK POLL BRAZIL ECONOMISTS SEE
+  YEAR-END 2027 INTEREST RATE SELIC AT 12.50% VERSUS 12.50% IN PREVIOUS ESTIMATE -
+  CENBANK POLL…
 
 ---
 fecha: 2026-11-09 05:25
@@ -296,6 +433,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nS0N43T022:9
+resumen:
+  Nov 9 (Reuters) - Brazil central bank poll: BRAZIL ECONOMISTS SEE ANNUAL IPCA INFLATION
+  INDEX REACHING 5.22% IN 2026 VERSUS 5.22% IN PREVIOUS ESTIMATE - CENBANK POLL BRAZIL
+  ECONOMISTS SEE ANNUAL IPCA INFLATION INDEX REACHING 4.90% IN 2027 VERSUS 4.76% IN
+  PREVIOUS ESTIMATE - CENBANK POLL BRAZIL ECONOMISTS SEE YEAR-END 2026 INTEREST RATE
+  SELIC AT 13.75% VERSUS 13.50% IN PREVIOUS ESTIMATE - CENBANK POLL BRAZIL ECONOMISTS SEE
+  YEAR-END 2027 INTEREST RATE SELIC AT 12.50% VERSUS 12.50% IN PREVIOUS ESTIMATE -
+  CENBANK POLL…
 
 ---
 fecha: 2026-11-09 05:24
@@ -305,6 +450,14 @@ fuente: IFR
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nIfp7WslDt:1
+resumen:
+  By Duncan Balsbaugh November 9 (IFR) 2s/10s range 34.5bp to 32.7bp last 33.3bp 5s/30s
+  range 61.9bp to 60.1bp last 61.1bp 2s range 4.547% to 4.502% last 4.515% 5s range
+  4.673% to 4.631% last 4.641% 10s range 4.886% to 4.843% last 4.849% 30s range 5.284% to
+  5.247% last 5.251% TYZ26 volume 323k at 06:25ET (a bit above average volume) Dec crude:
+  $87.93 Block Trades none Overnight Headlines WSJ: For Big Bank Stocks, Capitol Hill’s
+  Bark Is Worse Than Its Bite - Democrats’ election victory will put Wall Street critics
+  in…
 
 ---
 fecha: 2026-11-09 05:22
@@ -328,6 +481,13 @@ fuente: NEWBTS
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261109:nNRA2mwx4b:0
+resumen:
+  NEWS BITES - PRIVATE COMPANIES (US) + THE FEDERAL RESERVE BANK OF CLEVELAND [1 Press
+  Release] + CLEVELAND FED'S HAMMACK TIES DOLLAR STRENGTH TO RULE OF LAW, MARKET
+  LIQUIDITY, AND CENTRAL BANK INDEPENDENCE Federal Reserve Bank of Cleveland President
+  and CEO Beth Hammack spoke on a panel at the SNB and Its Watchers Conference in Zurich,
+  noting that monetary policy will likely need to move to a restrictive stance to bring
+  inflation back to 2 percent in a timely manner.
 
 ---
 fecha: 2026-11-09 05:17
@@ -337,6 +497,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0NQ:1
+resumen:
+  Dollar lower on easing AI, Mideast worries Market Briefs EUR/USD 0.43%, USD/JPY -0.32%,
+  GBP/USD 0.52%, EUR/GBP -0.07% DXY -0.45%, DAX 0.82%, FTSE 0.64%, Brent -1.65%, Gold
+  0.81% Euro zone investor morale dips in November, Sentix survey shows EZ Nov Sentix
+  Index 2.4, 2.1 f'cast, 2.7 prev Euro zone ministers to discuss ECB appointments, but
+  await leaders' guidance German exports rise more than expected in September DE Sept
+  Imports MM SA 4.2%, 0.5% f'cast, 0.9% prev, 0.6% r'vsd; Exports MM SA 2.0%, 0.5%
+  f'cast, -0.8%…
 
 ---
 fecha: 2026-11-09 05:12
@@ -362,6 +530,13 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261109:nNRA2mws9e:0
+resumen:
+  Monterrey, NL.- The justification for tariffs on Mexico , partly due to the deficit
+  faced by the United States, which President Donald Trump frequently reiterates, is a
+  misguided measure, experts in foreign trade agreed. Pedro Casas Alatriste, executive
+  vice president and general director of AmCham Mexico , explained that the integration
+  between the two countries is so extensive that Mexico should not be compared to other
+  nations regarding the U.S. deficit.
 
 ---
 fecha: 2026-11-09 05:01
@@ -371,6 +546,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0XS:1
+resumen:
+  El sector tecnológico sigue siendo el más importante del S&P 500, con una ponderación
+  superior al 35 % El sector ha subido más del 200 % en este mercado alcista El PER del
+  sector tecnológico cae por debajo de la valoración del mercado en general Por Lewis
+  Krauskopf NUEVA YORK, 9 nov (Reuters) - A pesar del fuerte retroceso de los valores
+  relacionados con la inteligencia artificial, el mercado bursátil estadounidense está
+  preparado para apoyarse en el rendimiento de las acciones tecnológicas, y los
+  inversores están…
 
 ---
 fecha: 2026-11-09 05:01
@@ -380,6 +563,8 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0X9:1
+resumen:
+  Se repite la noticia del viernes sin cambios en el texto.
 
 ---
 fecha: 2026-11-09 05:00
@@ -389,6 +574,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nL6N46N1DY:1
+resumen:
+  Las moscas estériles son la única herramienta probada para detener al parásito, peero
+  aún hay escasez de suministro EEUU registró dos nuevos casos de gusano barrenador en
+  octubre Se prevé que la planta de Texas que cría moscas estériles comience su
+  producción en la primavera de 2027 Por Cassandra Garrison, Leah Douglas y Adriana
+  Barrera CIUDAD DE MÉXICO/WASHINGTON, 9 nov (Reuters) - Durante décadas, miles de
+  millones de moscas estériles criadas en fábricas fueron dispersadas mediante aviones
+  para mantener a raya…
 
 ---
 fecha: 2026-11-09 05:00
@@ -398,6 +591,13 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nL6N442164:7
+resumen:
+  Sterile flies are the only proven tool to stop the parasite. But there are still supply
+  shortages US recorded two new cases of screwworm in October Texas sterile-fly plant due
+  to start production in spring 2027 By Cassandra Garrison, Leah Douglas and Adriana
+  Barrera MEXICO CITY/WASHINGTON, Nov 9 (Reuters) - For decades, planes dropped billions
+  of factory-bred sterile flies to keep the flesh-eating New World screwworm out of North
+  America’s cattle.
 
 ---
 fecha: 2026-11-09 05:00
@@ -407,6 +607,8 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261109:nL6N46P085:1
+resumen:
+  Repeats from Friday with no changes to text.
 
 ---
 fecha: 2026-11-09 04:39
@@ -418,6 +620,21 @@ impacto: bajo
 id: lseg:urn:link:webnews:20261109:nNRA2mwbc0:0
 
 ---
+fecha: 2026-11-09 04:35
+emisora: NVIDIA
+titulo: MERCADOS GLOBALES-Las bolsas suben levemente, pero los problemas de Nvidia ponen a prueba el ánimo
+fuente: Reuters
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0LK:1
+resumen:
+  Por Dhara Ranasinghe y Jiaxing Li LONDRES, 9 nov (Reuters) - Las bolsas mundiales
+  repuntaban ligeramente el lunes desde mínimos de seis meses, pero el ánimo seguía
+  siendo frágil, mientras la caída de las acciones de Nvidia acentuaba la inquietud en
+  torno a la inteligencia artificial tras el desplome mundial de los títulos tecnológicos
+  la semana pasada.
+
+---
 fecha: 2026-11-09 04:21
 emisora: ARGENTINA
 titulo: Pope arrives in Argentina and tells president that people, not the economy, should come first
@@ -425,6 +642,11 @@ fuente: BALSUN
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261109:nNRA2mw1qm:0
+resumen:
+  BUENOS AIRES, Argentina - Pope Leo XIV delivered a diplomatic but subtly strong
+  critique of Argentine President Javier Milei's austerity measures and libertarian
+  agenda as he arrived Sunday in Argentina, insisting that political leaders must put
+  people, not the economy, first.
 
 ---
 fecha: 2026-11-09 04:17
@@ -434,6 +656,10 @@ fuente: ETOELI
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261109:nNRA2mvzhu:0
+resumen:
+  Nov 07, 2026 On Jan. 1, President Donald Trump has threatened to double tariffs on
+  automotive parts and vehicles from Canada. This would raise the current 25% tariff to
+  50% if the two countries cannot work out a deal.
 
 ---
 fecha: 2026-11-09 04:11
@@ -443,6 +669,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261109:nNRA2mvw1g:0
+resumen:
+  After Banco de México announced a 25 basis point cut to the reference rate last week,
+  bringing it down to 6.25%, financial analysts consulted are seeing risks for the peso,
+  as it could continue to lose ground against the dollar. Paulina Anciola, an analyst at
+  Banamex, noted that with the cut from our central bank, they now project that the
+  dollar will settle at 18.70 pesos by December, with upward risks.
 
 ---
 fecha: 2026-11-09 04:11
@@ -454,6 +686,51 @@ impacto: bajo
 id: lseg:urn:link:webnews:20261109:nNRA2mvvqj:0
 
 ---
+fecha: 2026-11-09 03:38
+emisora: NVIDIA
+titulo: GLOBAL MARKETS -Stocks edge up but Nvidia woes pose a fresh test, oil falls
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL2N46Q08A:2
+resumen:
+  Nervous calm after Friday's Wall Street rally Oil dips as Trump downplays risk of new
+  Iran strikes Nvidia shares fall sharply in pre-market trade Changes dateline to London,
+  updates throughout By Dhara Ranasinghe and Jiaxing Li LONDON, Nov 9 (Reuters) - World
+  stock markets nudged up from six-month lows on Monday, but the mood was fragile as a
+  fall in Nvidia shares added to the unease hanging over AI following last week's global
+  rout in tech shares.
+
+---
+fecha: 2026-11-09 03:34
+emisora: NVIDIA
+titulo: CITAS-Reacciones ante la investigación de Nvidia sobre su director ejecutivo, Jensen Huang
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0Q4:1
+resumen:
+  Se añaden comentarios de Citi, Sequoia y Musk 9 nov (Reuters) - La junta de « NVDA.O »
+  de Nvidia está investigando (link) si el director ejecutivo, Jensen Huang, fue objeto
+  de una operación de inteligencia extranjera, tras una noticia publicada en los medios
+  en la que se alegaba que mantenía una estrecha relación con una empresaria china que
+  pasaba información a Pekín.
+
+---
+fecha: 2026-11-09 03:34
+emisora: NVIDIA
+titulo: QUOTES-Reactions to Nvidia's probe into CEO Jensen Huang
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL2N46Q03Z:8
+resumen:
+  Adds Citi, Sequoia and Musk comments Nov 9 (Reuters) - Nvidia's NVDA.O board is probing
+  whether CEO Jensen Huang was the target of a foreign intelligence effort, following a
+  media report alleging that he had a close relationship with a Chinese businesswoman who
+  passed information to Beijing.
+
+---
 fecha: 2026-11-09 03:22
 emisora: ARGENTINA
 titulo: Pope arrives in Argentina, tells Milei that people, not economy, should come first
@@ -461,6 +738,36 @@ fuente: NAHLEB
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261109:nNRA2mv72w:0
+resumen:
+  Pope Leo XIV delivered a diplomatic but subtly strong critique of Argentine President
+  Javier Milei's austerity measures and libertarian agenda as he arrived Sunday in
+  Argentina, insisting that political leaders must put people, not the economy, first.
+
+---
+fecha: 2026-11-09 03:13
+emisora: NVIDIA
+titulo: BUZZ-Las acciones de Nvidia caen mientras el consejo de administración investiga al director general por acusaciones de espionaje
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0P2:1
+resumen:
+  9 nov - ** Las acciones de Nvidia NVDA.O caen un 4,2 % en la preapertura ** La empresa
+  afirma que su consejo de administración está investigando si el director ejecutivo,
+  Jensen Huang, fue objeto de una operación de inteligencia extranjera (link), tras un
+  reportaje en los medios en el que se alegaba que mantenía una estrecha relación con una
+  empresaria china que pasaba información a Pekín ** Nvidia afirma que no hay motivos
+  para creer que la seguridad nacional de EEUU o los secretos de la empresa se hayan
+  visto…
+
+---
+fecha: 2026-11-09 03:00
+emisora: NVIDIA
+titulo: NVIDIA SHARES DOWN 4.2% PREMARKET AFTER CO PROBES CEO OVER SPY CLAIMS
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL3N46Q0MD:1
 
 ---
 fecha: 2026-11-09 02:57
@@ -484,6 +791,26 @@ fuente: STOCKP
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261109:nNRA2muulz:0
+resumen:
+  Nov 09, 2026 Grupo Supervielle (SUPV) traded down -1.05 % during a 24 hours period
+  ending at 09:09 AM Central Europe on Monday 9th. One Grupo Supervielle stock can
+  currently be bought for about USD 5.63 on popular exchanges. Current supply of Grupo
+  Supervielle stocks is 75.2 mn.
+
+---
+fecha: 2026-11-09 02:33
+emisora: NVIDIA
+titulo: BRIEF-NVIDIA Announces New Planned Investments In Korean Startups At MSIT-NVIDIA AI Startup Partnership Forum
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nFWN46N4EB:1
+resumen:
+  Nov 9 (Reuters) - NVIDIA Corporation NVDA.O: NVIDIA ANNOUNCES NEW PLANNED INVESTMENTS
+  IN KOREAN STARTUPS AT MSIT-NVIDIA AI STARTUP PARTNERSHIP FORUM NVIDIA - ANNOUNCES
+  INVESTMENT IN POINT2 AND PLANS INVESTMENTS IN MOTIF TECHNOLOGIES, RLWRLD, UPSTAGE
+  Source text: [ID:] Further company coverage: NVDA.O ((
+  Reuters.Briefs@thomsonreuters.com ;))
 
 ---
 fecha: 2026-11-09 02:22
@@ -649,6 +976,12 @@ fuente: CNBSTR
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261109:nNRA2muaca:0
+resumen:
+  GERMAN END-OF-DAY STOCK REPORT www.buysellsignals.com MEXICO, D.F, Friday, Nov 06, 2026
+  - Wal Mart de Mexico SAB de CV's (FRA:4GNB €2.52) stock price extended its gains on
+  Friday, rising an additional 5.0c (2.0%) to close at €2.52. The shares have jumped
+  16.0c (6.8%) over the past two trading days; compared with the DAX Index which fell
+  685.2 points (2.6%) in the two days for a relative price increase of 9.4%.
 
 ---
 fecha: 2026-11-09 02:22
@@ -658,6 +991,13 @@ fuente: CNBSTR
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261109:nNRA2muaoj:0
+resumen:
+  GERMAN END-OF-DAY STOCK REPORT www.buysellsignals.com MEXICO, D.F, Friday, Nov 06, 2026
+  - Grupo Carso SAB de CV's (FRA:4GF €7.75) stock price increased 5.0c (0.6%) from its
+  previous trading session to close at €7.75. Compared with the DAX Index which fell
+  535.9 points (2%) in the day, the relative price increase was 2.7%. There were 16
+  shares worth €124 ($139) traded today; the volume was 0.1 times the average daily
+  trading volume of 258 shares.
 
 ---
 fecha: 2026-11-09 02:21
@@ -698,6 +1038,13 @@ fuente: CNBSTR
 tono: positiva
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261109:nNRA2mu5al:0
+resumen:
+  GERMAN END-OF-DAY STOCK REPORT www.buysellsignals.com MEXICO, D.F, Friday, Nov 06, 2026
+  - Kimberly-Clark de Mexico SAB de CV's (FRA:4FX €1.84) stock price gained 5.0c (2.8%)
+  from its previous trading session to close at €1.84. Compared with the DAX Index which
+  fell 535.9 points (2%) in the day, the relative price increase was 4.8%. There were
+  2,200 shares worth €4,048 ($4,548) traded today; the volume was close to average
+  trading.
 
 ---
 fecha: 2026-11-09 02:18
@@ -707,6 +1054,122 @@ fuente: UNIWIR
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261109:nNRA2mu692:0
+resumen:
+  November 9, 2026 (University Wire via COMTEX News Network) -- On Jan. 1, President
+  Donald Trump has threatened to double tariffs on automotive parts and vehicles from
+  Canada. This would raise the current 25% tariff to 50% if the two countries cannot work
+  out a deal.The ongoing trade war between Canada and the United States has only been
+  escalating over the last few weeks and months.
+
+---
+fecha: 2026-11-09 02:05
+emisora: NVIDIA
+titulo: NVIDIA - ANNOUNCES INVESTMENT IN POINT2 AND PLANS INVESTMENTS IN MOTIF TECHNOLOGIES, RLWRLD, UPSTAGE
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nFWN46N4EB:2
+resumen:
+  Nov 9 (Reuters) - NVIDIA Corporation NVDA.O: NVIDIA ANNOUNCES NEW PLANNED INVESTMENTS
+  IN KOREAN STARTUPS AT MSIT-NVIDIA AI STARTUP PARTNERSHIP FORUM NVIDIA - ANNOUNCES
+  INVESTMENT IN POINT2 AND PLANS INVESTMENTS IN MOTIF TECHNOLOGIES, RLWRLD, UPSTAGE
+  Source text: [ID:] Further company coverage: NVDA.O ((
+  Reuters.Briefs@thomsonreuters.com ;))
+
+---
+fecha: 2026-11-09 01:59
+emisora: NVIDIA
+titulo: ACTUALIZA 4-Las acciones de Nvidia caen mientras el gigante de los chips investiga a su director general por acusaciones de espionaje
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q02D:5
+resumen:
+  La hija de Huang cancela su visita a Seúl para asistir al evento de IA de Nvidia Elon
+  Musk y Bill Ackman se pronuncian sobre la situación de Huang Un analista advierte de
+  que una investigación prolongada sobre Huang podría retrasar las inversiones de Nvidia
+  Los posibles retrasos podrían afectar a los precios de los chips de memoria, según un
+  analista Se añaden comentarios del Ministerio de Asuntos Exteriores chino y la
+  cotización de las acciones en Fráncfort en los párrafos 6 y 11 Por Heekyong Yang,
+  Kyu-seok Shim…
+
+---
+fecha: 2026-11-09 01:58
+emisora: NVIDIA
+titulo: UPDATE 4-Nvidia's shares slide as chip giant probes CEO over spy claims
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL2N46Q01E:11
+resumen:
+  Huang's daughter cancels Seoul visit for Nvidia AI event Elon Musk, Bill Ackman weigh
+  in on Huang's situation Analyst warns prolonged Huang probe could delay Nvidia
+  investments Potential delays could affect memory chip prices, analyst says Adds Chinese
+  Foreign Ministry comment, trading in Frankfurt shares in paragraphs 6 and 11 By
+  Heekyong Yang, Kyu-seok Shim and Tom Westbrook SEOUL/SYDNEY, Nov 9 (Reuters) - Nvidia
+  NVDA.O shares fell sharply on Monday after an internal investigation into whether CEO
+  Jensen Huang…
+
+---
+fecha: 2026-11-09 01:55
+emisora: NVIDIA
+titulo: MERCADOS EN DIRECTO-Antes de la apertura: los futuros europeos se muestran débiles; Nvidia frena el repunte del sector tecnológico
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0IB:1
+resumen:
+  Añade entrada de blog Los futuros del EuroSTOXX50 bajan un 0,2 % Las bolsas asiáticas
+  repuntan El Brent baja un 2 % 9 nov - Bienvenidos a la página de cobertura en tiempo
+  real de los mercados, ofrecida por los periodistas de Reuters.
+
+---
+fecha: 2026-11-09 01:54
+emisora: NVIDIA
+titulo: LIVE MARKETS-Before the bell: Europe futures soft, Nvidia dents tech bounce
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0I9:1
+resumen:
+  Adds blog post EuroSTOXX50 futures down 0.2% Asian shares bounce Brent down 2% Welcome
+  to the home for real-time coverage of markets brought to you by Reuters reporters.
+
+---
+fecha: 2026-11-09 01:45
+emisora: NVIDIA
+titulo: RESUMEN DE PRENSA-Wall Street Journal - 9 de noviembre
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0I3:1
+resumen:
+  9 nov (Reuters) - A continuación se presentan las noticias más destacadas del Wall
+  Street Journal.
+
+---
+fecha: 2026-11-09 01:44
+emisora: NVIDIA
+titulo: PRESS DIGEST -Wall Street Journal - November 9
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0GD:1
+resumen:
+  Nov 9 (Reuters) - The following are the top stories in the Wall Street Journal.
+
+---
+fecha: 2026-11-09 01:26
+emisora: NVIDIA
+titulo: BREAKINGVIEWS-Nvidia crisis may hurt China more than it helps
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q05Y:8
+resumen:
+  The author is a Reuters Breakingviews columnist. The opinions expressed are her own. By
+  Robyn Mak HONG KONG, Nov 9 (Reuters Breakingviews) - Of all the crazes spawned by the
+  AI boom, the one that people will come to regret the most may be "Jensanity".
 
 ---
 fecha: 2026-11-09 01:24
@@ -724,6 +1187,37 @@ resumen:
   THIS INFORMATION IS CONSIDERED TO BE IN THE PUBLIC DOMAIN.
 
 ---
+fecha: 2026-11-09 01:16
+emisora: NVIDIA
+titulo: Las acciones de Nvidia caen mientras investiga si su CEO fue objetivo de inteligencia extranjera
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0DX:1
+resumen:
+  Por Heekyong Yang, Kyu-seok Shim y Tom Westbrook SEÚL/SÍDNEY, 9 nov (Reuters) - Las
+  acciones de Nvidia NVDA.O caían el lunes en las plataformas electrónicas, después de
+  que una investigación interna sobre si su director ejecutivo, Jensen Huang, había sido
+  objetivo de una operación de inteligencia extranjera cuestionara su futuro en el
+  fabricante de chips para IA.
+
+---
+fecha: 2026-11-09 01:15
+emisora: NVIDIA
+titulo: China, al ser preguntada sobre la investigación sobre Nvidia, afirma que la «narrativa del espionaje» carece de fundamento
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0GC:1
+resumen:
+  PEKÍN, 9 nov (Reuters) - El Ministerio de Asuntos Exteriores de China, al ser
+  preguntado el lunes sobre la investigación de Nvidia NVDA.O para determinar si su
+  director ejecutivo, Jensen Huang, había sido objeto de una operación de inteligencia
+  extranjera, afirmó que la «denominada narrativa del espionaje chino» carece de
+  fundamento. El portavoz del Ministerio, Guo Jiakun, hizo estas declaraciones en una
+  rueda de prensa diaria celebrada en Pekín.
+
+---
 fecha: 2026-11-09 01:12
 emisora: PERU
 titulo: Peru aims to surpass Chile in absolute GDP by 2027
@@ -731,6 +1225,13 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261109:nNRA2mtdov:0
+resumen:
+  Peru could surpass Chile and become the fourth-largest economy in South America by
+  2027, according to projections from the International Monetary Fund (IMF). This
+  information is based on the IMF's World Economic Outlook report, as cited by the
+  Chilean newspaper La Tercera. According to the international organization, Peru's Gross
+  Domestic Product (GDP) is expected to reach $413.597 billion by 2027, slightly above
+  the $413.443 billion projected for Chile.
 
 ---
 fecha: 2026-11-09 01:07
@@ -1671,285 +2172,3 @@ fuente: PUBT
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:reuters.com:20261104:nNDLbP52Wl:1
-
----
-fecha: 2026-11-04 17:49
-emisora: MERCADO
-titulo: Fitch México SA de CV - Ratifica Calificación de Axtel en ‘A(mex)’
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261104:nNDL88hwTB:1
-resumen:
-   Sign In | Register RATING ACTION COMMENTARY Fitch Ratifica Calificación de Axtel en
-  'A(mex)'; Perspectiva Se Revisa a Negativa desde Estable Mexico Wed 04 Nov, 2026 - 2:03
-  PM ET Fitch Ratings - Monterrey - 04 Nov 2026: Fitch Ratings afirmó las calificaciones
-  internacionales de riesgo emisor (IDR; issuer default rating) de largo plazo en moneda
-  extranjera y local de Axtel, S.A.B. de C.V. (Axtel) en 'BB'.
-
----
-fecha: 2026-11-04 17:49
-emisora: MERCADO
-titulo: Fitch México SA de CV - Asigna Calificación de ‘AAA(mex)vra’ a un Crédito del Estado
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261104:nNDL9fLy6H:1
-resumen:
-   Sign In | Register RATING ACTION COMMENTARY Fitch Asigna Calificación de
-  'AAA(mex)vra' a un Crédito del Estado de Campeche Mexico Wed 04 Nov, 2026 - 2:58 PM ET
-  Fitch Ratings - Monterrey - 04 Nov 2026: Fitch Ratings asignó la calificación de
-  'AAA(mex)vra' al crédito BBVA 26 contratado por un monto de hasta MXN1,000 millones por
-  el estado de Campeche con BBVA México, S.A., Institución de Banca Múltiple, Grupo
-  Financiero BBVA México (BBVA México).
-
----
-fecha: 2026-11-04 17:47
-emisora: PETROLEO
-titulo: Discount on Western Canada Select narrows
-fuente: BOEREP
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261104:nNRA2l5ntr:0
-
----
-fecha: 2026-11-04 17:47
-emisora: PETROLEO
-titulo: US Cash Products -Chicago gasoline drops as trading rolls over into new cycle
-fuente: Reuters
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nL2N46L1JZ:1
-
----
-fecha: 2026-11-04 17:46
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de BACOMER 130-25
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261104:nNDL8W32fw:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-11-04 17:45
-emisora: COLOMBIA
-titulo: Equipo técnico de Banco Central de Colombia ve mayor inflación y menor crecimiento económico este y el próximo año
-fuente: Reuters
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nS0N443002:1
-resumen:
-  BOGOTÁ, 4 nov (Reuters) - El equipo técnico del Banco Central de Colombia revisó al
-  alza su estimación de inflación para 2026 a un 7,1%, desde un 6,9% previo, reveló el
-  miércoles el organismo en su informe trimestral. Para 2027, el equipo técnico, cuyas
-  consideraciones toma en cuenta la junta directiva del banco en sus decisiones de
-  política monetaria, modificó su pronóstico de inflación a un 4,8%, desde un 4,3%.
-
----
-fecha: 2026-11-04 17:40
-emisora: FED
-titulo: White House sets hearing on Fed's Cook for December 14, NYT says
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nL6N46L1JF:1
-resumen:
-  Nov 4 (Reuters) - The White House has scheduled for December 14 a planned hearing into
-  allegations of mortgage fraud by Federal Reserve Governor Lisa Cook, the New York Times
-  reported on Wednesday, citing an unnamed White House official, in a new phase of
-  President Donald Trump's effort to fire her.
-
----
-fecha: 2026-11-04 17:39
-emisora: COLOMBIA
-titulo: EQUIPO TÉCNICO DEL BANCO CENTRAL DE COLOMBIA REVISA PRONÓSTICO DE CRECIMIENTO ECONÓMICO PARA 2027 A 1,7% DESDE PREVIO DE 1,9%
-fuente: Reuters
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nS0N443002:7
-resumen:
-  BOGOTÁ, 4 nov (Reuters) - El equipo técnico del Banco Central de Colombia revisó al
-  alza su estimación de inflación para 2026 a un 7,1%, desde un 6,9% previo, reveló el
-  miércoles el organismo en su informe trimestral. Para 2027, el equipo técnico, cuyas
-  consideraciones toma en cuenta la junta directiva del banco en sus decisiones de
-  política monetaria, modificó su pronóstico de inflación a un 4,8%, desde un 4,3%.
-
----
-fecha: 2026-11-04 17:39
-emisora: COLOMBIA
-titulo: COLOMBIA CENTRAL BANK TECHNICAL TEAM SEES 2027 GDP GROWTH AT 1.7%, FROM PREVIOUS 1.9%
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nS0N443003:7
-resumen:
-  BOGOTA, Nov 4 (Reuters) - The technical team of Colombia's central bank on Wednesday
-  cut its 2026 economic growth estimates to 2% from the previous 2.5%, and raised its
-  inflation estimate for the year to 7.1% from the prior 6.9% estimate. For 2027, the
-  bank lowered its GDP growth estimate to 1.7% from the previous projection of 1.9%, and
-  raised its inflation estimate to 4.8% from the earlier outlook of 4.3%.
-
----
-fecha: 2026-11-04 17:38
-emisora: BOLSAA
-titulo: BMV - Información Adicional de Avisos de Derechos del SIC
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261104:nNDL3zp9V9:1
-resumen:
-  Información Adicional de Avisos de Derechos del SIC Ciudad de México, 04/11/2026
-  EMISORA CDEI - CALVERT US LARGE-CAP DIVERSITY, EQUITY AND INCLUSION INDEX ETF ASUNTO
-  Cancelación de aviso de derechos INFORMACIÓN ADICIONAL DE AVISOS DE DERECHOS DEL SIC
-  FOLIO DE REFERENCIA DE EVENTO CORPORATIVO: 282902 MOTIVO DE LA CANCELACION:
-  Cancellation due to a processing error.
-
----
-fecha: 2026-11-04 17:37
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de BACOMER 58-26
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261104:nNDL335V8T:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-11-04 17:37
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de BACOMER 62-26
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261104:nNDL9pW17T:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-11-04 17:37
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de BACOMER 85-26
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261104:nNDL6C7tSw:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. Aviso a Tenedores FECHA: 04/11/2026 BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-11-04 17:37
-emisora: BRASIL
-titulo: UPDATE 2-Brazil's central bank ends run of rate cuts after Lula election win
-fuente: Reuters
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261104:nL6N46L1FT:6
-resumen:
-  Recasts with comment from economists, context and more details from policy statement
-  Central bank keeps benchmark rate on hold Committee votes unanimously for no change
-  Policymakers note inflation and slowdown risks Statement stresses need for caution on
-  next decisions By Marcela Ayres BRASILIA, Nov 4 (Reuters) - Brazil's central bank ended
-  a run of interest rate cuts and kept borrowing costs on hold on Wednesday as it
-  grappled with a worsening inflation outlook following President Luiz Inacio Lula da
-  Silva's…
-
----
-fecha: 2026-11-04 17:35
-emisora: GMEXICOB
-titulo: Moody's de Mexico SA de CV - Moody’s Local México afirma las calificaciones de OMA
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261104:nNDL9V1QXT:1
-
----
-fecha: 2026-11-04 17:31
-emisora: FED
-titulo: RPT-ROI-La derrota aplastante de Trump en las elecciones de mitad de mandato pone de relieve el carácter políticamente letal de la inflación: McGeever
-fuente: Reuters
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261104:nL5N46L3NY:1
-resumen:
-  Se reproduce la columna del miércoles para otros suscriptores sin ningún cambio. Las
-  opiniones aquí expresadas son las del autor, columnista de Reuters. Por Jamie McGeever
-  ORLANDO, Florida, 4 nov (Reuters) - La aplastante derrota sufrida por el Partido
-  Republicano del presidente de EEUU, Donald Trump, en las elecciones de mitad de mandato
-  (link) nos recuerda lo políticamente tóxica que es la inflación.
-
----
-fecha: 2026-11-04 17:30
-emisora: CHILE
-titulo: @ABCPolitics: ABC News’ Sophie Flay reports on what to expect as Democrats win big in the midterm elections and Congress returns to a divided government. https://t.co/FwY1Lz3MBQ https://t.co/Ku5oY5rPga
-fuente: X
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:social:20261104:nTWT3nmnqX:1
-resumen:
-  ABC News’ Sophie Flay reports on what to expect as Democrats win big in the midterm
-  elections and Congress returns to a divided government.
-
----
-fecha: 2026-11-04 17:30
-emisora: FED
-titulo: RPT-ROI-Trump's midterm trouncing underscores inflation's political poison: McGeever
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261104:nL2N46L0TL:1
-resumen:
-  Repeats Wednesday's column to additional subscribers without any changes. The opinions
-  expressed here are those of the author, a columnist for Reuters. By Jamie McGeever
-  ORLANDO, Florida, Nov 4 (Reuters) - The crushing defeat suffered by US President Donald
-  Trump's Republican Party in the midterm elections is a reminder of just how politically
-  toxic inflation is.
-
----
-fecha: 2026-11-04 17:24
-emisora: GFNORTEO
-titulo: Banorte propondrá un dividendo extraordinario a raíz de un aumento de capital.
-fuente: NOTFIN
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261104:nNRA2l5hj0:0
-resumen:
-  Grupo Financiero Banorte, el segundo mayor prestamista del país, confirmó que propondrá
-  un pago extraordinario de dividendos a sus accionistas para fin de año, como ha estado
-  evaluando desde el último trimestre. En una reunión programada para el 1 de diciembre,
-  se votará sobre el monto del pago, que aún no se ha definido, pero que elevará el total
-  de pagos del año al 70%.
-
----
-fecha: 2026-11-04 17:15
-emisora: EUA
-titulo: Meet Xavier Becerra, who becomes California's first Latino governor in over a century, defeats Trump-backed Steve Hilton; know about his political ...
-fuente: ECOCOM
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261104:nNRA2l5egc:0
-
----
-fecha: 2026-11-04 17:14
-emisora: BRASIL
-titulo: The Central Bank of Brazil keeps interest rates at 13.75%
-fuente: NOTENG
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261104:nNRA2l5d1y:0
-resumen:
-  São Paulo, November 4 (EFE) - The Central Bank of Brazil decided on Wednesday to halt
-  its policy of interest rate cuts, maintaining the official rate at 13.75% per annum due
-  to increased inflationary pressures and geopolitical tensions. This marks the first
-  time the central bank has opted to keep interest rates unchanged after five consecutive
-  cuts, which began last March when the rate was at 15% per annum. EFE

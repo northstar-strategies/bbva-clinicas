@@ -8,15 +8,28 @@ fuente: Reuters
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:reuters.com:20261109:nAQN2MSRQI:1
+resumen:
+  SANTIAGO, 9 nov (Reuters) - El valor de las exportaciones de cobre de Chile cayó un 5,4% en octubre, mientras que el país sudamericano logró anotar un superávit comercial de 2.552 millones de dólares en el décimo mes del año, informó el lunes el Banco Central. El valor de las exportaciones de cobre -mayor envío del país- sumó 5.409 millones de dólares. Chile es el mayor productor global del metal rojo.
 
 ---
-fecha: 2026-11-09 05:12
-emisora: PETROLEO
-titulo: METALES BÁSICOS-El cobre repunta por un mayor apetito por el riesgo y escasez de oferta en China
+fecha: 2026-11-09 05:32
+emisora: FED
+titulo: MORNING BID AMERICAS-I spy AI
 fuente: Reuters
 tono: neutral
 relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0N4:1
+id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0M2:1
+
+---
+fecha: 2026-11-09 05:01
+emisora: NVIDIA
+titulo: El sector tecnológico seguirá marcando el rumbo del mercado bursátil estadounidense a pesar de la caída provocada por la IA
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0XS:1
+resumen:
+  El sector tecnológico sigue siendo el más importante del S&P 500, con una ponderación superior al 35 % El sector ha subido más del 200 % en este mercado alcista El PER del sector tecnológico cae por debajo de la valoración del mercado en general Por Lewis Krauskopf NUEVA YORK, 9 nov (Reuters) - A pesar del fuerte retroceso de los valores relacionados con la inteligencia artificial, el mercado bursátil estadounidense está preparado para apoyarse en el rendimiento de las acciones tecnológicas, y los inversores están…
 
 ---
 fecha: 2026-11-09 04:35
@@ -37,15 +50,8 @@ fuente: Reuters
 tono: negativa
 relevancia: 8
 id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0Q4:1
-
----
-fecha: 2026-11-09 02:33
-emisora: NVIDIA
-titulo: BRIEF-NVIDIA Announces New Planned Investments In Korean Startups At MSIT-NVIDIA AI Startup Partnership Forum
-fuente: Reuters
-tono: neutral
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261109:nFWN46N4EB:1
+resumen:
+  Se añaden comentarios de Citi, Sequoia y Musk 9 nov (Reuters) - La junta de « NVDA.O » de Nvidia está investigando (link) si el director ejecutivo, Jensen Huang, fue objeto de una operación de inteligencia extranjera, tras una noticia publicada en los medios en la que se alegaba que mantenía una estrecha relación con una empresaria china que pasaba información a Pekín.
 
 ---
 fecha: 2026-11-09 01:59
@@ -55,15 +61,8 @@ fuente: Reuters
 tono: negativa
 relevancia: 8
 id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q02D:5
-
----
-fecha: 2026-11-09 01:21
-emisora: FED
-titulo: METALES PRECIOSOS-El oro repunta ante menor presión inflacionista y expectativas sobre la Fed
-fuente: Reuters
-tono: positiva
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0EM:1
+resumen:
+  La hija de Huang cancela su visita a Seúl para asistir al evento de IA de Nvidia Elon Musk y Bill Ackman se pronuncian sobre la situación de Huang Un analista advierte de que una investigación prolongada sobre Huang podría retrasar las inversiones de Nvidia Los posibles retrasos podrían afectar a los precios de los chips de memoria, según un analista Se añaden comentarios del Ministerio de Asuntos Exteriores chino y la cotización de las acciones en Fráncfort en los párrafos 6 y 11 Por Heekyong Yang, Kyu-seok Shim…
 
 ---
 fecha: 2026-11-09 01:15
@@ -86,13 +85,26 @@ resumen:
   In front of clients and business partners, Grupo ISA unveiled its national growth and expansion plan, highlighting its award of the tender from Grupo Aeroportuario del Sureste (ASUR) for the commercialization of advertising spaces in the nine airports it operates in southeastern Mexico, as well as the tender for the Mexico–Toluca Interurban Train, El Insurgente, and road bridges in Tijuana.
 
 ---
-fecha: 2026-11-08 23:00
-emisora: NVIDIA
-titulo: NVIDIA, REBELLIONS AND SK TELECOM ANNOUNCE COLLABORATION TO ADVANCE SOVEREIGN AI INFRASTRUCTURE WITH NVIDIA NVLINK FUSION
+fecha: 2026-11-08 23:43
+emisora: MERCADO
+titulo: EMERGING MARKETS-Taiwan shares rally 6% as stabilisation fund, chipmakers spark recovery
 fuente: Reuters
 tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261109:nTUA4CXKDN:1
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261109:nL2N46Q049:6
+resumen:
+  EM Asia stock benchmark rises over 2% Taiwan equities jump 6.6%; TSMC boosts benchmark South Korean won strengthens to 1,356.20 a dollar . By Nichiket Sunil Nov 9 (Reuters) - Taiwan stocks rose more than 6% on Monday, underpinned by chipmakers, after the government activated its stock stabilization fund following a steep selloff last week that wiped trillions of dollars from global markets.
+
+---
+fecha: 2026-11-08 22:55
+emisora: NVIDIA
+titulo: MERCADOS MUNDIALES-Las bolsas asiáticas repuntan al disiparse los temores sobre la IA y Oriente Medio; el dólar se mantiene firme ante las expectativas sobre la Fed
+fuente: Reuters
+tono: positiva
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q05Y:1
+resumen:
+  Calma tensa tras el repunte de Wall Street del viernes El petróleo cae mientras Trump resta importancia al riesgo de nuevos ataques contra Irán La atención se centra en los resultados de las empresas tecnológicas y los datos del IPC de EEUU El dólar se mantiene firme tras el informe de empleo de EEUU Se actualizan los precios y los comentarios de los analistas a lo largo del texto; los resultados de Nvidia en el párrafo 10 y los datos de inflación de China en el párrafo 12.
 
 ---
 fecha: 2026-11-08 20:01
@@ -102,6 +114,8 @@ fuente: Reuters
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q01P:2
+resumen:
+  Se corrige el cargo que figura en el párrafo 1: «viceministro de Ciencia y TIC», en lugar de «Industria» SEÚL, 9 nov (Reuters) - El viceministro de Ciencia y TIC de Corea del Sur, Ryu Jemyung, afirmó el lunes que los problemas que afectan actualmente a Nvidia (link) no afectarán al suministro contratado por Corea del Sur de unidades de procesamiento gráfico (GPU) de dicha empresa.
 
 ---
 fecha: 2026-11-08 17:46
@@ -111,6 +125,8 @@ fuente: Reuters
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:reuters.com:20261108:nL5N46P0BG:1
+resumen:
+  Incluye los comentarios de Trump y detalles de contexto CHICAGO, 8 nov (Reuters) - El presidente de EEUU, Donald Trump, calificó el domingo a Jensen Huang, director ejecutivo de Nvidia NVDA.O, como una persona honorable y elogió sus contribuciones a Estados Unidos, pero afirmó que no había hablado con él sobre las acusaciones de una relación con una empresaria china que habría pasado información a Pekín. «No he hablado con él sobre eso.
 
 ---
 fecha: 2026-11-08 15:12
@@ -120,6 +136,19 @@ fuente: NOTENG
 tono: neutral
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261108:nNRA2mpgzq:0
+resumen:
+  For decades, it was assumed that when the United States grows, Mexico grows alongside it. That rule is beginning to falter. While U.S. demand continues to support Mexican exports, it no longer translates into a comparable boost for the overall economy.
+
+---
+fecha: 2026-11-08 14:15
+emisora: NVIDIA
+titulo: Nvidia inicia una investigación tras conocerse que el director ejecutivo Huang fue objeto de una operación de inteligencia extranjera
+fuente: Reuters
+tono: negativa
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261108:nL5N46P08F:1
+resumen:
+  8 nov (Reuters) - Nvidia NVDA.O anunció el domingo que va a iniciar una investigación independiente a raíz de una noticia según la cual el fundador y director ejecutivo, Jensen Huang, ha sido objeto de una operación de inteligencia extranjera. El consejo de administración de la empresa no tiene motivos para creer que se haya visto comprometida la seguridad nacional ni que se hayan filtrado secretos de Nvidia, según ha declarado la propia empresa.
 
 ---
 fecha: 2026-11-08 13:12
@@ -165,6 +194,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261108:nNRA2miibj:0
+resumen:
+  The Bank of Mexico (Banxico) announced the temporary suspension of the Interbank Electronic Payment System (SPEI) for scheduled maintenance. Through the banks that utilize the system, Banxico issued a statement detailing the suspension period for conducting transfers. When and at what time will it occur?
 
 ---
 fecha: 2026-11-07 17:11
@@ -174,6 +205,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261107:nNRA2mhxlh:0
+resumen:
+  Before receiving the Filmoteca Medal from the National Autonomous University of Mexico, one of the most significant honors awarded in Mexican cinema, the versatile French actress Julie Delpy warned of the "end of France" and the "death" of her country's culture if far-right candidate Marine Le Pen wins the upcoming presidential elections in 2027. "It will be the end of France if she wins.
 
 ---
 fecha: 2026-11-07 16:12
@@ -183,6 +216,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:newsroom:20261107:nNRA2mhob0:0
+resumen:
+  Washington - The Democratic Party of the United States will seek to reverse the tariffs imposed by President Donald Trump and keep Mexico and Canada within the United States-Mexico-Canada Agreement (USMCA), following their recovery of control of Congress in the legislative elections on November 3. Richard Neal, a lawmaker expected to chair the House Ways and Means Committee, indicated that one of his priorities will be to modify the trade policy of the Republican president.
 
 ---
 fecha: 2026-11-07 15:13
@@ -201,6 +236,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 7
 id: lseg:urn:newsml:newsroom:20261107:nNRA2mgtgc:0
+resumen:
+  San Juan, November 7 (EFE) - Puerto Rican Governor Jenniffer González and the Executive Director of the Puerto Rico Tourism Company (CTPR), Willianette Robles, announced on Saturday that Aeroméxico will launch a new direct route between Puerto Rico and Mexico City on Monday, November 9. "We have worked to restore this important air connection with Mexico City, and today we are taking a significant step to make it a reality.
 
 ---
 fecha: 2026-11-07 12:13
@@ -210,6 +247,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 7
 id: lseg:urn:newsml:newsroom:20261107:nNRA2mggyx:0
+resumen:
+  San Juan, November 7 (EFE) - Puerto Rican Governor Jenniffer González and the Executive Director of the Puerto Rico Tourism Company (CTPR), Willianette Robles, announced on Saturday that Aeroméxico will launch a new direct route between Puerto Rico and Mexico City on Monday, November 9. "We have worked to restore this important air connection with Mexico City, and today we are taking a significant step to make it a reality.
 
 ---
 fecha: 2026-11-07 11:11
@@ -282,6 +321,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:newsroom:20261107:nNRA2m70ef:0
+resumen:
+  UNITED STATES.- Democratic Congressman Richard Neal has pledged to advocate for the elimination of what he deems unjustified tariffs imposed by President Donald Trump, emphasizing that his priority will be to keep Mexico and Canada within the United States-Mexico-Canada Agreement (USMCA). Neal's stance gains importance following the Democratic Party regaining control of both the House of Representatives and the Senate in the legislative elections held on November 3, 2026.
 
 ---
 fecha: 2026-11-06 17:12
@@ -291,24 +332,6 @@ fuente: NOTENG
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:newsroom:20261106:nNRA2m6jx7:0
-
----
-fecha: 2026-11-06 15:12
-emisora: BANXICO
-titulo: Banxico Cuts Rate to 6.25%, Redefining Corporate Credit
-fuente: NOTENG
-tono: negativa
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261106:nNRA2m5jwe:0
-
----
-fecha: 2026-11-06 15:03
-emisora: ARGENTINA
-titulo: ACTUALIZA 1-Mercados de Argentina profundizan negatividad, bancos cerrados por feriado sectorial
-fuente: Reuters
-tono: neutral
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261106:nL2N46N0RM:1
 
 ---
 fecha: 2026-11-06 14:12
@@ -331,13 +354,13 @@ resumen:
   Analysts cut Argentina's 2026 growth forecast, bump up inflation outlook Argentina markets shut for public holiday Mexican peso recovers after surprise rate cut triggered losses Strong US jobs data revives bets on a Fed rate hike next month Updates with late afternoon trading By Sudeshna Ghoshal, Ragini Mathur and Avinash P Nov 6 (Reuters) - Most Latin American stocks and currencies edged higher on Friday, and were poised to wrap up the week on a strong note as investors weighed the US midterm election results, a…
 
 ---
-fecha: 2026-11-06 13:02
-emisora: ARGENTINA
-titulo: Producción industrial de Argentina baja 1,8% interanual en septiembre: INDEC
+fecha: 2026-11-06 13:16
+emisora: NVIDIA
+titulo: ACTUALIZA 3-Microsoft está dando por concluido el acuerdo con Oracle para alquilar capacidad de IA en la nube, según informa Bloomberg News
 fuente: Reuters
-tono: negativa
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261106:nS0N44F024:1
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261106:nL5N46N2BS:3
 
 ---
 fecha: 2026-11-06 12:26
@@ -362,6 +385,15 @@ resumen:
   CIUDAD DE MÉXICO, 6 nov (Reuters) - La inflación interanual de México habría repuntado en octubre, aunque permanecería dentro del objetivo oficial, reforzando la señal del banco central de que mantendría la tasa de referencia sin cambios durante un periodo prolongado tras su inesperado recorte de esta semana.
 
 ---
+fecha: 2026-11-06 09:40
+emisora: NVIDIA
+titulo: TSMC se plantea fabricar chips de memoria avanzados, según informa The Information
+fuente: Reuters
+tono: positiva
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261106:nL5N46N21L:1
+
+---
 fecha: 2026-11-06 09:19
 emisora: MERCADO
 titulo: MERCADOS A.LATINA-Monedas cotizan dispares en medio de alza dólar tras sólido dato empleo en EEUU
@@ -373,6 +405,15 @@ resumen:
   Por Manuel Farías SANTIAGO, 6 nov (Reuters) - Las monedas de América Latina operaban mixtas el viernes, en medio de un alza del dólar, luego de que un informe de empleo en Estados Unidos más sólido de lo esperado mantenía las apuestas de los inversores por un alza de tasas de interés de la Reserva Federal en diciembre. * El empleo aumentó en 165.000 puestos de trabajo el mes pasado, tras un incremento revisado al alza de 60.000 en septiembre, informó la Oficina de Estadísticas Laborales del Departamento de Trabajo.
 
 ---
+fecha: 2026-11-06 08:51
+emisora: NVIDIA
+titulo: El Gobierno de Trump pospone una reunión con Zuckerberg, de Meta, y Huang, de Nvidia
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261106:nL6N46N10R:1
+
+---
 fecha: 2026-11-06 08:41
 emisora: BANXICO
 titulo: Banxico and the Fed put the Mexican peso in jeopardy with historically low differential
@@ -382,31 +423,60 @@ relevancia: 8
 id: lseg:urn:newsml:newsroom:20261106:nNRA2m0mx3:0
 
 ---
-fecha: 2026-11-06 05:35
-emisora: CHILE
-titulo: ACTUALIZA 1-Precios al consumidor en Chile suben 0,5% en octubre, se aceleran 4,5% en un año
+fecha: 2026-11-06 08:14
+emisora: NVIDIA
+titulo: La Administración Trump cancela la reunión de un grupo de expertos en el que participan Zuckerberg, de Meta, y Huang, de Nvidia
 fuente: Reuters
-tono: positiva
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261106:nL2N46N0DX:3
-
----
-fecha: 2026-11-05 22:13
-emisora: BANXICO
-titulo: Dollar price continues to waver as the Mexican peso strengthens following US elections
-fuente: NOTENG
 tono: neutral
 relevancia: 8
-id: lseg:urn:newsml:newsroom:20261106:nNRA2lqxls:0
+id: lseg:urn:newsml:reuters.com:20261106:nL5N46N1RO:1
 
 ---
-fecha: 2026-11-05 22:11
-emisora: EUA
-titulo: DON'T DREAM; IN 2027, WE WILL SEE "NARCO-ELECTIONS" IN MEXICO!
-fuente: NOTENG
+fecha: 2026-11-06 05:12
+emisora: NVIDIA
+titulo: BUZZ-Las acciones de las empresas de chips relacionadas con la IA intentan recuperarse tras la caída de este jueves
+fuente: Reuters
 tono: neutral
-relevancia: 7
-id: lseg:urn:newsml:newsroom:20261106:nNRA2lqvqy:0
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261106:nL5N46N161:1
+
+---
+fecha: 2026-11-05 23:48
+emisora: NVIDIA
+titulo: ENFOQUE-El auge de la IA convierte el encapsulado de chips en el próximo campo de batalla del sector de los semiconductores
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261106:nL5N46N0F5:1
+
+---
+fecha: 2026-11-05 15:53
+emisora: MERCADO
+titulo: GLOBAL MARKETS-Deep chip selloff drags global stocks lower on AI spending concerns
+fuente: Reuters
+tono: negativa
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261105:nL2N46M1HS:2
+resumen:
+  Updates prices throughout with US market close Chip stocks index posts biggest one-day drop since April 2025 Brent crude rebounds but remains below $100 Dollar edges higher, 10-year US Treasury yields at 4.835% By Chibuike Oguh NEW YORK, Nov 5 (Reuters) - Global stocks fell sharply on Thursday, weighed down by a deep selloff in semiconductor shares after weak earnings from Qualcomm and concerns that a Democrat-controlled US Congress could slow investment in artificial intelligence infrastructure.
+
+---
+fecha: 2026-11-05 15:53
+emisora: NVIDIA
+titulo: MERCADOS MUNDIALES-La fuerte caída del sector de los chips arrastra a la baja a las bolsas mundiales ante las preocupaciones sobre el gasto en inteligencia artificial
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261105:nL5N46M3A2:1
+
+---
+fecha: 2026-11-05 15:17
+emisora: NVIDIA
+titulo: Índice Nasdaq registra mayor caída diaria en 19 meses ante los temores sobre la regulación de la IA
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261105:nL2N46M1F6:1
 
 ---
 fecha: 2026-11-05 14:18
@@ -438,6 +508,8 @@ fuente: NOTENG
 tono: negativa
 relevancia: 9
 id: lseg:urn:newsml:newsroom:20261105:nNRA2ll0tw:0
+resumen:
+  Mexico City, November 5 (EFE) - Mexican President Claudia Sheinbaum stated on Thursday that immigration raids and racism against Latinos in the United States likely influenced the shift in voting patterns among this community toward the Democratic Party in the midterm elections held this past Tuesday. "Yes, it's very likely.
 
 ---
 fecha: 2026-11-05 11:13
@@ -447,6 +519,19 @@ fuente: NOTENG
 tono: positiva
 relevancia: 9
 id: lseg:urn:newsml:newsroom:20261105:nNRA2lkb3c:0
+resumen:
+  Mexico City.- President Claudia Sheinbaum stated that it is "very likely" that raids against migrants in the United States influenced Latino voting in the midterm elections, where Donald Trump's Republican Party did not fare well in the Senate or House of Representatives. From the National Palace, Sheinbaum said it would be "logical" to think that raids by the Immigration and Customs Enforcement (ICE) and racism may have impacted Latino voters in favor of the Democratic Party.
+
+---
+fecha: 2026-11-05 11:02
+emisora: NVIDIA
+titulo: BUZZ-Los valores del sector de los semiconductores de EEUU se desploman tras la victoria arrolladora de los demócratas y los resultados empresariales, lo que provoca una liquidación de posiciones
+fuente: Reuters
+tono: negativa
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261105:nL5N46M2LN:1
+resumen:
+  Actualizaciones 5 nov - ** Las acciones del sector de los semiconductores de EEUU amplían las caídas registradas el miércoles, y el índice general de chips .SOXcayó un 9 % ** En un momento dado, se desplomó más de un 11 % y se encaminaba a registrar su peor jornada desde marzo de 2020 y a perder más de un billón de dólares en valor ** Qualcomm QCOM.O cayó un 11,2 % después de que las ventas de chips del cuarto trimestre (link) no alcanzaran las previsiones, mientras que ARM ARM.O bajó un 11 % a pesar de superar…
 
 ---
 fecha: 2026-11-05 09:59
@@ -460,22 +545,13 @@ resumen:
   Mexican peso firms ahead of Banxico decision; rates seen steady Oil rebound supports dollar after sharp overnight selloff Brazil's central bank pauses easing cycle amid inflation concerns Colombia lifts inflation forecast, cuts 2026 growth outlook By Sudeshna Ghoshal and Ragini Mathur Nov 5 (Reuters) - Most Latin American stocks and currencies edged lower on Thursday as investors weighed central bank signals across the region, a rebound in oil prices and the implications of heavy Republican losses in this week's…
 
 ---
-fecha: 2026-11-04 17:45
-emisora: COLOMBIA
-titulo: Equipo técnico de Banco Central de Colombia ve mayor inflación y menor crecimiento económico este y el próximo año
+fecha: 2026-11-04 19:19
+emisora: NVIDIA
+titulo: CORREGIDO-ANÁLISIS-La derrota aplastante de Trump en las elecciones de mitad de mandato pone de manifiesto el poder de quienes se oponen a los centros de datos
 fuente: Reuters
-tono: positiva
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261104:nS0N443002:1
-
----
-fecha: 2026-11-04 17:37
-emisora: BRASIL
-titulo: UPDATE 2-Brazil's central bank ends run of rate cuts after Lula election win
-fuente: Reuters
-tono: negativa
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261104:nL6N46L1FT:6
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261104:nL5N46L2VQ:2
 
 ---
 fecha: 2026-11-04 17:13
@@ -496,33 +572,6 @@ relevancia: 13
 id: lseg:urn:newsml:newsroom:20261104:nNRA2l5d8x:0
 resumen:
   Only surpassed by Mexico worldwide: the agricultural treasure of the Peruvian countryside that is setting historic records and already generating over US$ 1.34 billion abroad Peruvian avocado exports reached US$1,342.8 million between January and August 2026, according to figures from the Ministry of Agrarian Development and Irrigation (Midagri) .
-
----
-fecha: 2026-11-04 17:12
-emisora: MERCADO
-titulo: Chinese brands drive record car sales in Mexico
-fuente: NOTENG
-tono: positiva
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261104:nNRA2l5cxj:0
-
----
-fecha: 2026-11-04 16:55
-emisora: PETROLEO
-titulo: ACTUALIZA 2-Proyecto Colombiano Sirius, de Ecopetrol y Petrobras, entraría en operación en 2031
-fuente: Reuters
-tono: neutral
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261104:nL2N46L1KF:2
-
----
-fecha: 2026-11-04 16:01
-emisora: FED
-titulo: DÍA DE NEGOCIACIÓN-El petróleo cae mientras las acciones se disparan tras las elecciones de mitad de mandato en EEUU
-fuente: Reuters
-tono: neutral
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261104:nL5N46L3FT:1
 
 ---
 fecha: 2026-11-04 15:38
