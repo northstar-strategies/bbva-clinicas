@@ -1,9 +1,5 @@
 fecha,emisora,tipo,titulo,fuente
 2026-10-26,BRASIL FEMSAUBD KOFUBL AMXB,Evento,Elecciones presidenciales en Brasil,LSEG: BRL= y .BVSP del 23 y 26-oct; notas del 27-oct
-2026-11-04,GFNORTEO,Llamada con analistas,Q3 2026 Grupo Financiero Banorte SAB de CV Earnings Call,LSEG
-2026-11-05,GAPB,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 20.8 paid on Nov 06, 2026 going ex on Nov 05, 2026",LSEG
-2026-11-06,GAPB,Fecha ex de dividendo,"Interim Cash Dividend of gross BRL 0.372696 paid on Nov 23, 2026 going ex on Nov 06, 2026",LSEG
-2026-11-09,GAPB,Fecha ex de dividendo,"Interim Cash Dividend of gross USD 0.699064 paid on Nov 16, 2026 going ex on Nov 09, 2026",LSEG
 2026-11-10,AMXB,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 0.27 paid on Nov 11, 2026 going ex on Nov 10, 2026",LSEG
 2026-11-17,WALMEX,Fecha ex de dividendo,"Interim Cash Dividend of gross MXN 0.58 paid on Nov 18, 2026 going ex on Nov 17, 2026",LSEG
 2026-11-27,OMAB,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 6.280255 paid on Nov 30, 2026 going ex on Nov 27, 2026",LSEG

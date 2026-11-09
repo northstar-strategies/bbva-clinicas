@@ -1,6 +1,465 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
+fecha: 2026-11-09 05:35
+emisora: CHILE
+titulo: Valor de envíos de cobre Chile cae 5,4% en octubre; país registra superávit comercial: Banco Central
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261109:nAQN2MSRQI:1
+
+---
+fecha: 2026-11-09 05:12
+emisora: PETROLEO
+titulo: METALES BÁSICOS-El cobre repunta por un mayor apetito por el riesgo y escasez de oferta en China
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0N4:1
+
+---
+fecha: 2026-11-09 04:35
+emisora: MERCADO
+titulo: MERCADOS GLOBALES-Las bolsas suben levemente, pero los problemas de Nvidia ponen a prueba el ánimo
+fuente: Reuters
+tono: positiva
+relevancia: 12
+id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0LK:1
+resumen:
+  Por Dhara Ranasinghe y Jiaxing Li LONDRES, 9 nov (Reuters) - Las bolsas mundiales repuntaban ligeramente el lunes desde mínimos de seis meses, pero el ánimo seguía siendo frágil, mientras la caída de las acciones de Nvidia acentuaba la inquietud en torno a la inteligencia artificial tras el desplome mundial de los títulos tecnológicos la semana pasada.
+
+---
+fecha: 2026-11-09 03:34
+emisora: NVIDIA
+titulo: CITAS-Reacciones ante la investigación de Nvidia sobre su director ejecutivo, Jensen Huang
+fuente: Reuters
+tono: negativa
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0Q4:1
+
+---
+fecha: 2026-11-09 02:33
+emisora: NVIDIA
+titulo: BRIEF-NVIDIA Announces New Planned Investments In Korean Startups At MSIT-NVIDIA AI Startup Partnership Forum
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261109:nFWN46N4EB:1
+
+---
+fecha: 2026-11-09 01:59
+emisora: NVIDIA
+titulo: ACTUALIZA 4-Las acciones de Nvidia caen mientras el gigante de los chips investiga a su director general por acusaciones de espionaje
+fuente: Reuters
+tono: negativa
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q02D:5
+
+---
+fecha: 2026-11-09 01:21
+emisora: FED
+titulo: METALES PRECIOSOS-El oro repunta ante menor presión inflacionista y expectativas sobre la Fed
+fuente: Reuters
+tono: positiva
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q0EM:1
+
+---
+fecha: 2026-11-09 01:15
+emisora: NVIDIA
+titulo: China, al ser preguntada sobre la investigación sobre Nvidia, afirma que la «narrativa del espionaje» carece de fundamento
+fuente: Reuters
+tono: negativa
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q0GC:1
+
+---
+fecha: 2026-11-09 00:12
+emisora: ASURB
+titulo: Grupo ISA Wins ASUR Tender for Advertising Spaces at Nine Airports in Southeastern Mexico; Unveils Growth Plan
+fuente: NOTENG
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:newsroom:20261109:nNRA2mssb2:0
+resumen:
+  In front of clients and business partners, Grupo ISA unveiled its national growth and expansion plan, highlighting its award of the tender from Grupo Aeroportuario del Sureste (ASUR) for the commercialization of advertising spaces in the nine airports it operates in southeastern Mexico, as well as the tender for the Mexico–Toluca Interurban Train, El Insurgente, and road bridges in Tijuana.
+
+---
+fecha: 2026-11-08 23:00
+emisora: NVIDIA
+titulo: NVIDIA, REBELLIONS AND SK TELECOM ANNOUNCE COLLABORATION TO ADVANCE SOVEREIGN AI INFRASTRUCTURE WITH NVIDIA NVLINK FUSION
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261109:nTUA4CXKDN:1
+
+---
+fecha: 2026-11-08 20:01
+emisora: NVIDIA
+titulo: CORREGIDO-Corea del Sur afirma que los problemas de Nvidia no afectarán al suministro de GPU previsto en los contratos
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q01P:2
+
+---
+fecha: 2026-11-08 17:46
+emisora: NVIDIA
+titulo: ACTUALIZA 1-Trump califica a Huang, de Nvidia, de «honrado» y afirma que no ha hablado con él sobre las acusaciones
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261108:nL5N46P0BG:1
+
+---
+fecha: 2026-11-08 15:12
+emisora: MERCADO
+titulo: Why Does Mexico No Longer Grow When the United States Grows? A Key Explained by an Investment Bank
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261108:nNRA2mpgzq:0
+
+---
+fecha: 2026-11-08 13:12
+emisora: EUA
+titulo: The Mexican border anticipates a shift in immigration policy with the new Congress in the U.S.
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261108:nNRA2mowyx:0
+
+---
+fecha: 2026-11-08 12:12
+emisora: EUA
+titulo: The Mexican border anticipates a shift in immigration policy with the new Congress in the U.S.
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261108:nNRA2mohy8:0
+
+---
+fecha: 2026-11-08 11:12
+emisora: EUA
+titulo: The U.S. approves military sale to Mexico for 1.075 billion pesos: It will include 11 Black Hawk helicopters
+fuente: NOTENG
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261108:nNRA2mo77p:0
+
+---
+fecha: 2026-11-08 08:42
+emisora: MERCADO
+titulo: Grupo Aeroportuario del Pacifico SAB de CV (BMV:GAP), Under Raul Revuelta Musalem, Plummets 6.8% YTD Sunday November 08, 2026
+fuente: NEWBTS
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261108:nNRA2mngcv:0
+
+---
+fecha: 2026-11-07 19:12
+emisora: BANXICO
+titulo: Banxico will suspend SPEI service for maintenance; when and at what time will it be?
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261108:nNRA2miibj:0
+
+---
+fecha: 2026-11-07 17:11
+emisora: EUA
+titulo: "It will be the end of France if she wins": From Mexico, Julie Delpy fears for culture if Le Pen wins
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261107:nNRA2mhxlh:0
+
+---
+fecha: 2026-11-07 16:12
+emisora: EUA
+titulo: Democrats seek to block Trump's tariffs and sustain the USMCA with Mexico and Canada
+fuente: NOTENG
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261107:nNRA2mhob0:0
+
+---
+fecha: 2026-11-07 15:13
+emisora: EUA
+titulo: Julie Delpy warns in Mexico of the "death" of France and its culture if Le Pen succeeds
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261107:nNRA2mhf1c:0
+
+---
+fecha: 2026-11-07 13:11
+emisora: EUA
+titulo: Aeroméxico launches a direct flight route between Puerto Rico and Mexico
+fuente: NOTENG
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:newsroom:20261107:nNRA2mgtgc:0
+
+---
+fecha: 2026-11-07 12:13
+emisora: EUA
+titulo: Aeroméxico launches a direct flight route between Puerto Rico and Mexico
+fuente: NOTENG
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:newsroom:20261107:nNRA2mggyx:0
+
+---
+fecha: 2026-11-07 11:11
+emisora: EUA
+titulo: Democrats Protect Trade with Mexico; Will Advocate for USMCA
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261107:nNRA2mg1ro:0
+
+---
+fecha: 2026-11-07 10:42
+emisora: MERCADO
+titulo: Grupo Aeroportuario del Pacifico SAB de CV (BMV:GAP), Under Raul Revuelta Musalem, Increases 0.8% MTD Saturday November 07, 2026
+fuente: NEWBTS
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261107:nNRA2mfvzi:0
+
+---
+fecha: 2026-11-07 10:12
+emisora: BANXICO
+titulo: Dollar remains above 18 Mexican pesos during the first weekend of November
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261107:nNRA2mfoki:0
+
+---
+fecha: 2026-11-07 10:12
+emisora: EUA
+titulo: New caravan of Honduran migrants arrives in Mexico; seeking to reach the U.S. after Democratic victory
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261107:nNRA2mfnbz:0
+
+---
+fecha: 2026-11-07 05:12
+emisora: BANXICO
+titulo: Sheinbaum Dismisses Concerns that Rate Cuts Will Cause Problems
+fuente: NOTENG
+tono: negativa
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261107:nNRA2md1gx:0
+
+---
+fecha: 2026-11-07 02:42
+emisora: EUA
+titulo: Fr8Tech puts AI agents to work negotiating freight between the U.S. and Mexico
+fuente: DAIADW
+tono: neutral
+relevancia: 6
+id: lseg:urn:link:webnews:20261107:nNRA2mbt1p:0
+
+---
+fecha: 2026-11-06 19:12
+emisora: BANXICO
+titulo: The Mexican peso breaks eight weeks of losses against the dollar and rises by nearly 1%
+fuente: NOTENG
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261107:nNRA2m7hh5:0
+
+---
+fecha: 2026-11-06 18:12
+emisora: EUA
+titulo: Richard Neal, the Democratic congressman who promises to reverse Trump tariffs and uphold the USMCA with Mexico and Canada
+fuente: NOTENG
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261107:nNRA2m70ef:0
+
+---
+fecha: 2026-11-06 17:12
+emisora: EUA
+titulo: Democratic congressman seeks to maintain USMCA and reverse Trump-era tariffs; wants both Mexico and Canada to remain in the agreement
+fuente: NOTENG
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261106:nNRA2m6jx7:0
+
+---
+fecha: 2026-11-06 15:12
+emisora: BANXICO
+titulo: Banxico Cuts Rate to 6.25%, Redefining Corporate Credit
+fuente: NOTENG
+tono: negativa
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261106:nNRA2m5jwe:0
+
+---
+fecha: 2026-11-06 15:03
+emisora: ARGENTINA
+titulo: ACTUALIZA 1-Mercados de Argentina profundizan negatividad, bancos cerrados por feriado sectorial
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261106:nL2N46N0RM:1
+
+---
+fecha: 2026-11-06 14:12
+emisora: EUA
+titulo: 9 Mexican Presidents Most Loved by the People, Despite Less Than Stellar Results
+fuente: NOTENG
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261106:nNRA2m4zhm:0
+
+---
+fecha: 2026-11-06 14:02
+emisora: MERCADO
+titulo: EMERGING MARKETS-Latam stocks, currencies gain; Mexico peso rebounds after Banxico cut
+fuente: Reuters
+tono: neutral
+relevancia: 16
+id: lseg:urn:newsml:reuters.com:20261106:nL2N46N0XN:4
+resumen:
+  Analysts cut Argentina's 2026 growth forecast, bump up inflation outlook Argentina markets shut for public holiday Mexican peso recovers after surprise rate cut triggered losses Strong US jobs data revives bets on a Fed rate hike next month Updates with late afternoon trading By Sudeshna Ghoshal, Ragini Mathur and Avinash P Nov 6 (Reuters) - Most Latin American stocks and currencies edged higher on Friday, and were poised to wrap up the week on a strong note as investors weighed the US midterm election results, a…
+
+---
+fecha: 2026-11-06 13:02
+emisora: ARGENTINA
+titulo: Producción industrial de Argentina baja 1,8% interanual en septiembre: INDEC
+fuente: Reuters
+tono: negativa
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261106:nS0N44F024:1
+
+---
+fecha: 2026-11-06 12:26
+emisora: BANXICO
+titulo: POLL-Mexico inflation seen ticking up in October, but staying in target range
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261106:nL6N46N15M:5
+resumen:
+  MEXICO CITY, Nov 6 (Reuters) - Mexico's annual inflation rate likely edged higher in October, a Reuters poll showed on Friday, although it is expected to stay within the target range, reinforcing the central bank's signal of an extended pause after this week's surprise rate cut. The median estimate of 11 analysts forecast annual headline inflation at 3.64% in October, up from 3.45% in September.
+
+---
+fecha: 2026-11-06 10:59
+emisora: BANXICO
+titulo: SONDEO-Inflación interanual de México habría acelerado en octubre, aunque seguiría dentro de la meta
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261106:nL2N46N0M7:1
+resumen:
+  CIUDAD DE MÉXICO, 6 nov (Reuters) - La inflación interanual de México habría repuntado en octubre, aunque permanecería dentro del objetivo oficial, reforzando la señal del banco central de que mantendría la tasa de referencia sin cambios durante un periodo prolongado tras su inesperado recorte de esta semana.
+
+---
+fecha: 2026-11-06 09:19
+emisora: MERCADO
+titulo: MERCADOS A.LATINA-Monedas cotizan dispares en medio de alza dólar tras sólido dato empleo en EEUU
+fuente: Reuters
+tono: positiva
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261106:nL2N46N0PF:1
+resumen:
+  Por Manuel Farías SANTIAGO, 6 nov (Reuters) - Las monedas de América Latina operaban mixtas el viernes, en medio de un alza del dólar, luego de que un informe de empleo en Estados Unidos más sólido de lo esperado mantenía las apuestas de los inversores por un alza de tasas de interés de la Reserva Federal en diciembre. * El empleo aumentó en 165.000 puestos de trabajo el mes pasado, tras un incremento revisado al alza de 60.000 en septiembre, informó la Oficina de Estadísticas Laborales del Departamento de Trabajo.
+
+---
+fecha: 2026-11-06 08:41
+emisora: BANXICO
+titulo: Banxico and the Fed put the Mexican peso in jeopardy with historically low differential
+fuente: CENAFT
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261106:nNRA2m0mx3:0
+
+---
+fecha: 2026-11-06 05:35
+emisora: CHILE
+titulo: ACTUALIZA 1-Precios al consumidor en Chile suben 0,5% en octubre, se aceleran 4,5% en un año
+fuente: Reuters
+tono: positiva
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261106:nL2N46N0DX:3
+
+---
+fecha: 2026-11-05 22:13
+emisora: BANXICO
+titulo: Dollar price continues to waver as the Mexican peso strengthens following US elections
+fuente: NOTENG
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261106:nNRA2lqxls:0
+
+---
+fecha: 2026-11-05 22:11
+emisora: EUA
+titulo: DON'T DREAM; IN 2027, WE WILL SEE "NARCO-ELECTIONS" IN MEXICO!
+fuente: NOTENG
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:newsroom:20261106:nNRA2lqvqy:0
+
+---
+fecha: 2026-11-05 14:18
+emisora: MERCADO
+titulo: MERCADOS A.LATINA-Peso mexicano cae tras decisión Banxico; bolsas retroceden en línea con Wall Street
+fuente: Reuters
+tono: negativa
+relevancia: 19
+id: lseg:urn:newsml:reuters.com:20261105:nL2N46M1BC:1
+resumen:
+  Actualiza con cotizaciones por la tarde Por Manuel Farías SANTIAGO, 5 nov (Reuters) - Las monedas de América Latina operaron mixtas el jueves, con el peso mexicano ampliando sus pérdidas tras la decisión del Banco de México de recortar la tasa de interés referencial; mientras las bolsas de la región eran golpeadas por el fuerte descenso de Wall Street. * Los principales índices bursátiles en Estados Unidos se desplomaban en la sesión, luego del contundente triunfo del Partido Demócrata en las elecciones de medio…
+
+---
+fecha: 2026-11-05 14:13
+emisora: EUA
+titulo: Mexico links immigration raids in the U.S. to the loss of Latino votes for Republicans
+fuente: NOTENG
+tono: negativa
+relevancia: 9
+id: lseg:urn:newsml:newsroom:20261105:nNRA2lm97h:0
+resumen:
+  The President of Mexico, Claudia Sheinbaum, stated on Thursday that immigration raids and racism against Latinos in the United States likely influenced the shift in voting among this community towards the Democratic Party in the midterm elections held last Tuesday. "Yes, it is very likely.
+
+---
+fecha: 2026-11-05 12:13
+emisora: EUA
+titulo: Mexico links immigration raids in the U.S. to loss of Latino votes for Republicans
+fuente: NOTENG
+tono: negativa
+relevancia: 9
+id: lseg:urn:newsml:newsroom:20261105:nNRA2ll0tw:0
+
+---
+fecha: 2026-11-05 11:13
+emisora: EUA
+titulo: Sheinbaum attributes Latino vote against Republicans to immigration raids and racism in the U.S.
+fuente: NOTENG
+tono: positiva
+relevancia: 9
+id: lseg:urn:newsml:newsroom:20261105:nNRA2lkb3c:0
+
+---
+fecha: 2026-11-05 09:59
+emisora: MERCADO
+titulo: EMERGING MARKETS-Latin American markets dip as investors parse policy signals, oil rebound
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261105:nL3N46M18N:5
+resumen:
+  Mexican peso firms ahead of Banxico decision; rates seen steady Oil rebound supports dollar after sharp overnight selloff Brazil's central bank pauses easing cycle amid inflation concerns Colombia lifts inflation forecast, cuts 2026 growth outlook By Sudeshna Ghoshal and Ragini Mathur Nov 5 (Reuters) - Most Latin American stocks and currencies edged lower on Thursday as investors weighed central bank signals across the region, a rebound in oil prices and the implications of heavy Republican losses in this week's…
+
+---
 fecha: 2026-11-04 17:45
 emisora: COLOMBIA
 titulo: Equipo técnico de Banco Central de Colombia ve mayor inflación y menor crecimiento económico este y el próximo año
@@ -17,15 +476,6 @@ fuente: Reuters
 tono: negativa
 relevancia: 8
 id: lseg:urn:newsml:reuters.com:20261104:nL6N46L1FT:6
-
----
-fecha: 2026-11-04 17:24
-emisora: GFNORTEO
-titulo: Banorte propondrá un dividendo extraordinario a raíz de un aumento de capital.
-fuente: NOTFIN
-tono: neutral
-relevancia: 5
-id: lseg:urn:newsml:newsroom:20261104:nNRA2l5hj0:0
 
 ---
 fecha: 2026-11-04 17:13
@@ -64,24 +514,6 @@ fuente: Reuters
 tono: neutral
 relevancia: 7
 id: lseg:urn:newsml:reuters.com:20261104:nL2N46L1KF:2
-
----
-fecha: 2026-11-04 16:13
-emisora: MERCADO
-titulo: The Bank of Mexico prepares for a meeting with the expectation of keeping the rate at 6.5%
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261104:nNRA2l4qvq:0
-
----
-fecha: 2026-11-04 16:13
-emisora: BANXICO
-titulo: Dollar price in Mexico today, Wednesday, November 4, 2026: USD to MXN exchange rate, value, Banxico quotation
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261104:nNRA2l4rlg:0
 
 ---
 fecha: 2026-11-04 16:01
