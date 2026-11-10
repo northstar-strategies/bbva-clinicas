@@ -1,6 +1,108 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
+fecha: 2026-11-10 15:17
+emisora: MERCADO
+titulo: Peso mexicano retrocede tras datos de inflación EEUU, bolsa se mantiene cerca de su récord máximo
+fuente: Reuters
+tono: positiva
+relevancia: 14
+id: lseg:urn:newsml:reuters.com:20261110:nL2N46R02L:1
+resumen:
+  CIUDAD DE MÉXICO, 10 nov (Reuters) - El peso mexicano se depreció el martes arrastrado por un avance global del dólar tras la divulgación de datos de inflación estadounidenses mayores a lo esperado, mientras que la bolsa se mantuvo oscilando en torno a su máximo histórico de 72,227 puntos.
+
+---
+fecha: 2026-11-10 14:50
+emisora: NVIDIA
+titulo: ACTUALIZA 6-Nvidia se encamina hacia una caída de 470 000 millones de dólares en dos días a medida que se agravan las repercusiones del escándalo del director ejecutivo
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261110:nL5N46R10T:7
+
+---
+fecha: 2026-11-10 14:13
+emisora: NVIDIA
+titulo: ACTUALIZA 1-La empresa de inteligencia artificial en la nube Nscale, respaldada por Nvidia, se plantea retrasar su salida a bolsa por valor de 35.000 millones de dólares, según informa The Telegraph.
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261110:nL5N46R2FS:1
+
+---
+fecha: 2026-11-10 14:01
+emisora: MERCADO
+titulo: EMERGING MARKETS-Latam FX hits seven-month low as hot US inflation lifts dollar
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261110:nL2N46R0Y8:4
+resumen:
+  Colombia October inflation edges up to 6.3% Colombia third-quarter economic growth seen cooling - poll Brazilian real briefly touches lowest level in 15 months Traders pricing in two 25-basis-point Fed rate hikes by March Updates with afternoon trading By Ragini Mathur, Sudeshna Ghoshal and Avinash P Nov 10 (Reuters) - An index tracking Latin American currencies fell to a seven-month low on Tuesday after a hotter-than-expected US inflation report reinforced expectations that the Federal Reserve will raise interest…
+
+---
+fecha: 2026-11-10 13:36
+emisora: NVIDIA
+titulo: ACTUALIZA 8-EXCLUSIVA-Anthropic aspira a una valoración de 1,4 billones de dólares en su salida a bolsa, lo que pondrá a prueba el entusiasmo de Wall Street por la IA
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261110:nL5N46R134:8
+resumen:
+  Actualizaciones con la reacción del mercado, el calendario de la salida a bolsa, reformulación del tercer párrafo, nueva cita en el párrafo 10 y detalles adicionales Anthropic también recaudará 26 000 millones de dólares mediante una operación de colocación privada Entre los inversores principales se encuentran Google, Nvidia y AMD La oferta de acciones recaudará un total de hasta 90 400 millones de dólares Los ingresos anuales se disparan hasta los 81 000 millones de dólares a 31 de octubre Por Echo Wang, Manya…
+
+---
+fecha: 2026-11-10 10:36
+emisora: MERCADO
+titulo: Trump admin pouring $480 million loan into Gulf Of Mexico oil and gas project- Fox Business
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261110:nFWN46R26B:1
+resumen:
+  Nov 10 (Reuters) - The US Energy Department is touting a $480 million loan meant to help boost oil and natural gas production in the Gulf of Mexico, Fox Business reported on Tuesday. "The U.S.
+
+---
+fecha: 2026-11-10 10:32
+emisora: NVIDIA
+titulo: BUZZ-PREVIEW: CoreWeave's AI financing in focus ahead of results
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261110:nL6N46R13F:1
+
+---
+fecha: 2026-11-10 09:07
+emisora: MERCADO
+titulo: MERCADOS A.LATINA-Retroceden tras IPC de EEUU que refuerza expectativas de alza de tasas de la Fed
+fuente: Reuters
+tono: positiva
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261110:nL2N46R0GY:1
+resumen:
+  Por Froilan Romero SANTIAGO, 10 nov (Reuters) - Las principales monedas y bolsas de valores de América Latina caían el martes, tras un dato de la inflación estadounidense que estuvo por encima de lo esperado y reforzó las expectativas de un alza de tasas de la Reserva Federal en diciembre. * El Índice de Precios al Consumidor de Estados Unidos subió un 0,4% el mes pasado, tras un avance del 0,6% en septiembre, informó la Oficina de Estadísticas Laborales (BLS) del Departamento de Trabajo.
+
+---
+fecha: 2026-11-10 05:23
+emisora: BRASIL
+titulo: Banco Central de Brasil dice que perturbaciones de la oferta están detrás de repunte de la inflación
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261110:nL6N46R0R9:1
+
+---
+fecha: 2026-11-09 21:41
+emisora: BANXICO
+titulo: BMV closes at all-time high following Volaris' 'takeoff'; Wall Street in the green due to AI
+fuente: CENAFT
+tono: neutral
+relevancia: 12
+id: lseg:urn:newsml:newsroom:20261110:nNRA2n95ho:0
+resumen:
+  The Mexican Stock Exchange (BMV) and Wall Street indices closed in the green this Monday, driven by reduced risk aversion amid hopes for peace in the Middle East. The Price and Quotations Index (IPC) reached a new historic high on Monday, recording a gain of 0.65% to settle at 71,855.64 points, according to data from the exchange itself.
+
+---
 fecha: 2026-11-09 16:28
 emisora: PETROLEO
 titulo: MERCADOS MUNDIALES-Las acciones se disparan ante la caída del petróleo; Nvidia cae en medio de una investigación interna
@@ -19,15 +121,6 @@ relevancia: 12
 id: lseg:urn:newsml:reuters.com:20261109:nL6N46Q171:3
 resumen:
   Updates with US closing levels Major US stock indexes gain more than 2% each Oil drops as Trump downplays risk of new Iran strikes Nvidia shares fall sharply amid internal investigation By Caroline Valetkevitch and Dhara Ranasinghe NEW YORK/LONDON, Nov 9 (Reuters) - Major stock indexes rallied on Monday as Brent crude oil fell more than 5% after US President Donald Trump said he is unlikely to order fresh attacks on Iran, while shares of Nvidia NVDA.O dropped.
-
----
-fecha: 2026-11-09 16:19
-emisora: NVIDIA
-titulo: ACTUALIZA 1-Trump afirma que el director general de Nvidia le dijo que no sabía que la mujer vinculada a él era una espía
-fuente: Reuters
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q2TO:1
 
 ---
 fecha: 2026-11-09 15:26
