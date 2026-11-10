@@ -1,5 +1,4 @@
 fecha,serie,nombre,valor,moneda,mueve
-2026-04-24,USD,Dólar en pesos,17.377,USD,
 2026-04-27,USD,Dólar en pesos,17.3763,USD,
 2026-04-28,USD,Dólar en pesos,17.376,USD,
 2026-04-29,USD,Dólar en pesos,17.525,USD,
@@ -141,7 +140,6 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-05,USD,Dólar en pesos,18.742,USD,
 2026-11-06,USD,Dólar en pesos,18.607,USD,
 2026-11-09,USD,Dólar en pesos,18.5276,USD,
-2026-04-24,BRL,Real brasileño en pesos,3.489498,BRL,
 2026-04-27,BRL,Real brasileño en pesos,3.487186,BRL,
 2026-04-28,BRL,Real brasileño en pesos,3.493436,BRL,
 2026-04-29,BRL,Real brasileño en pesos,3.507806,BRL,
@@ -283,7 +281,6 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-05,BRL,Real brasileño en pesos,3.404789,BRL,
 2026-11-06,BRL,Real brasileño en pesos,3.379404,BRL,
 2026-11-09,BRL,Real brasileño en pesos,3.363884,BRL,
-2026-04-24,COP,"Peso colombiano en pesos (×1,000)",4.88942,COP,
 2026-04-27,COP,"Peso colombiano en pesos (×1,000)",4.790819,COP,
 2026-04-28,COP,"Peso colombiano en pesos (×1,000)",4.824656,COP,
 2026-04-29,COP,"Peso colombiano en pesos (×1,000)",4.839289,COP,
@@ -425,7 +422,6 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-05,COP,"Peso colombiano en pesos (×1,000)",5.78832,COP,
 2026-11-06,COP,"Peso colombiano en pesos (×1,000)",5.742015,COP,
 2026-11-09,COP,"Peso colombiano en pesos (×1,000)",5.658146,COP,
-2026-04-24,ARS,"Peso argentino en pesos (×1,000)",12.4299,ARS,
 2026-04-27,ARS,"Peso argentino en pesos (×1,000)",12.271398,ARS,
 2026-04-28,ARS,"Peso argentino en pesos (×1,000)",12.371663,ARS,
 2026-04-29,ARS,"Peso argentino en pesos (×1,000)",12.607914,ARS,
@@ -567,7 +563,6 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-05,ARS,"Peso argentino en pesos (×1,000)",12.134671,ARS,
 2026-11-06,ARS,"Peso argentino en pesos (×1,000)",12.043366,ARS,
 2026-11-09,ARS,"Peso argentino en pesos (×1,000)",11.990034,ARS,
-2026-04-24,PEN,Sol peruano en pesos,4.986227,PEN,
 2026-04-27,PEN,Sol peruano en pesos,4.957151,PEN,
 2026-04-28,PEN,Sol peruano en pesos,4.948313,PEN,
 2026-04-29,PEN,Sol peruano en pesos,4.974454,PEN,
@@ -709,7 +704,6 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-05,PEN,Sol peruano en pesos,5.445881,PEN,
 2026-11-06,PEN,Sol peruano en pesos,5.408068,PEN,
 2026-11-09,PEN,Sol peruano en pesos,5.439854,PEN,
-2026-04-24,CLP,"Peso chileno en pesos (×1,000)",19.430188,CLP,
 2026-04-27,CLP,"Peso chileno en pesos (×1,000)",19.432013,CLP,
 2026-04-28,CLP,"Peso chileno en pesos (×1,000)",19.556116,CLP,
 2026-04-29,CLP,"Peso chileno en pesos (×1,000)",19.348179,CLP,
@@ -993,7 +987,6 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-05,EUR,Euro en pesos,21.0248,EUR,
 2026-11-06,EUR,Euro en pesos,20.7338,EUR,
 2026-11-09,EUR,Euro en pesos,20.7935,EUR,
-2026-04-24,BRENT,Petróleo Brent (dólares),105.88,,ALPEKA ORBIA VOLARA
 2026-04-27,BRENT,Petróleo Brent (dólares),108.3,,ALPEKA ORBIA VOLARA
 2026-04-28,BRENT,Petróleo Brent (dólares),111.22,,ALPEKA ORBIA VOLARA
 2026-04-29,BRENT,Petróleo Brent (dólares),121.68,,ALPEKA ORBIA VOLARA
@@ -1134,8 +1127,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-04,BRENT,Petróleo Brent (dólares),94.62,,ALPEKA ORBIA VOLARA
 2026-11-05,BRENT,Petróleo Brent (dólares),99.32,,ALPEKA ORBIA VOLARA
 2026-11-06,BRENT,Petróleo Brent (dólares),97.97,,ALPEKA ORBIA VOLARA
-2026-04-23,COBRE,Cobre (dólares por libra),6.027,,GMEXICOB
-2026-04-24,COBRE,Cobre (dólares por libra),5.98,,GMEXICOB
+2026-11-09,BRENT,Petróleo Brent (dólares),92.2,,ALPEKA ORBIA VOLARA
 2026-04-27,COBRE,Cobre (dólares por libra),6.019,,GMEXICOB
 2026-04-29,COBRE,Cobre (dólares por libra),5.8715,,GMEXICOB
 2026-04-30,COBRE,Cobre (dólares por libra),5.978,,GMEXICOB
@@ -1267,6 +1259,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-04,COBRE,Cobre (dólares por libra),6.3885,,GMEXICOB
 2026-11-05,COBRE,Cobre (dólares por libra),6.2415,,GMEXICOB
 2026-11-06,COBRE,Cobre (dólares por libra),6.244,,GMEXICOB
+2026-11-09,COBRE,Cobre (dólares por libra),6.333,,GMEXICOB
 2026-04-24,PLATA,Plata (dólares por onza),75.6738,,PEOLES
 2026-04-27,PLATA,Plata (dólares por onza),75.495,,PEOLES
 2026-04-28,PLATA,Plata (dólares por onza),73.08,,PEOLES
@@ -1408,7 +1401,8 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-04,PLATA,Plata (dólares por onza),52.2136,,PEOLES
 2026-11-05,PLATA,Plata (dólares por onza),51.7522,,PEOLES
 2026-11-06,PLATA,Plata (dólares por onza),51.873,,PEOLES
-2026-11-09,PLATA,Plata (dólares por onza),53.2587,,PEOLES
+2026-11-09,PLATA,Plata (dólares por onza),53.4099,,PEOLES
+2026-11-10,PLATA,Plata (dólares por onza),51.4926,,PEOLES
 2026-04-24,ORO,Oro (dólares por onza),4708.686,,PEOLES
 2026-04-27,ORO,Oro (dólares por onza),4681.8501,,PEOLES
 2026-04-28,ORO,Oro (dólares por onza),4594.51,,PEOLES
@@ -1551,8 +1545,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-05,ORO,Oro (dólares por onza),4087.34,,PEOLES
 2026-11-06,ORO,Oro (dólares por onza),4065.63,,PEOLES
 2026-11-09,ORO,Oro (dólares por onza),4139.04,,PEOLES
-2026-04-23,UST10,Bono de EUA a 10 años (rendimiento %),4.323,,GFNORTEO BBAJIOO GFINBURO
-2026-04-24,UST10,Bono de EUA a 10 años (rendimiento %),4.31,,GFNORTEO BBAJIOO GFINBURO
+2026-11-10,ORO,Oro (dólares por onza),4030.97,,PEOLES
 2026-04-27,UST10,Bono de EUA a 10 años (rendimiento %),4.336,,GFNORTEO BBAJIOO GFINBURO
 2026-04-28,UST10,Bono de EUA a 10 años (rendimiento %),4.354,,GFNORTEO BBAJIOO GFINBURO
 2026-04-29,UST10,Bono de EUA a 10 años (rendimiento %),4.416,,GFNORTEO BBAJIOO GFINBURO
@@ -1688,8 +1681,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-04,UST10,Bono de EUA a 10 años (rendimiento %),4.892,,GFNORTEO BBAJIOO GFINBURO
 2026-11-05,UST10,Bono de EUA a 10 años (rendimiento %),4.837,,GFNORTEO BBAJIOO GFINBURO
 2026-11-06,UST10,Bono de EUA a 10 años (rendimiento %),4.859,,GFNORTEO BBAJIOO GFINBURO
-2026-04-23,MBONO10,Bono M a 10 años (rendimiento %),8.923,,GFNORTEO BBAJIOO GFINBURO
-2026-04-24,MBONO10,Bono M a 10 años (rendimiento %),9.067,,GFNORTEO BBAJIOO GFINBURO
+2026-11-09,UST10,Bono de EUA a 10 años (rendimiento %),4.862,,GFNORTEO BBAJIOO GFINBURO
 2026-04-27,MBONO10,Bono M a 10 años (rendimiento %),9.054,,GFNORTEO BBAJIOO GFINBURO
 2026-04-28,MBONO10,Bono M a 10 años (rendimiento %),9.079,,GFNORTEO BBAJIOO GFINBURO
 2026-04-29,MBONO10,Bono M a 10 años (rendimiento %),9.232,,GFNORTEO BBAJIOO GFINBURO
@@ -1827,7 +1819,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-04,MBONO10,Bono M a 10 años (rendimiento %),9.139,,GFNORTEO BBAJIOO GFINBURO
 2026-11-05,MBONO10,Bono M a 10 años (rendimiento %),9.111,,GFNORTEO BBAJIOO GFINBURO
 2026-11-06,MBONO10,Bono M a 10 años (rendimiento %),9.121,,GFNORTEO BBAJIOO GFINBURO
-2026-04-24,BOVESPA,Bovespa (Brasil),190745.02,,
+2026-11-09,MBONO10,Bono M a 10 años (rendimiento %),9.085,,GFNORTEO BBAJIOO GFINBURO
 2026-04-27,BOVESPA,Bovespa (Brasil),189578.79,,
 2026-04-28,BOVESPA,Bovespa (Brasil),188618.69,,
 2026-04-29,BOVESPA,Bovespa (Brasil),184750.42,,
@@ -1964,7 +1956,6 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-05,BOVESPA,Bovespa (Brasil),166191.45,,
 2026-11-06,BOVESPA,Bovespa (Brasil),168498.45,,
 2026-11-09,BOVESPA,Bovespa (Brasil),172236.05,,
-2026-04-24,SP500,S&P 500 (EUA),7165.08,,
 2026-04-27,SP500,S&P 500 (EUA),7173.91,,
 2026-04-28,SP500,S&P 500 (EUA),7138.8,,
 2026-04-29,SP500,S&P 500 (EUA),7135.95,,
@@ -2102,7 +2093,6 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-05,SP500,S&P 500 (EUA),7353.73,,
 2026-11-06,SP500,S&P 500 (EUA),7376.86,,
 2026-11-09,SP500,S&P 500 (EUA),7549.94,,
-2026-04-24,IPC,S&P/BMV IPC,69230.56,,
 2026-04-27,IPC,S&P/BMV IPC,67992.36,,
 2026-04-28,IPC,S&P/BMV IPC,67269.29,,
 2026-04-29,IPC,S&P/BMV IPC,67097.06,,
