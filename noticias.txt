@@ -145,6 +145,71 @@ resumen:
   turistas provenientes de Estados Unidos, principal mercado emisor.
 
 ---
+fecha: 2026-11-10 15:27
+emisora: PETROLEO
+titulo: LIVE MARKETS-US equities close lower with inflation boosting bets on rate hikes
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261110:nL6N46R1D5:1
+resumen:
+  Main US indexes decline; Nasdaq off most, down ~0.7% Tech is weakest S&P 500 sector;
+  financials leads gainers Dollar rallies ~0.6%; US crude settles down; bitcoin down
+  ~1.5%; gold off ~2.6% US 10-year Treasury yield jumps to ~4.99% Welcome to the home for
+  real-time coverage of markets brought to you by Reuters reporters.
+
+---
+fecha: 2026-11-10 15:26
+emisora: FED
+titulo: Fed's Bowman warns CPI signals persistent US inflation pressures
+fuente: FORSTR
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261110:nNRA2nojjz:0
+
+---
+fecha: 2026-11-10 15:25
+emisora: FED
+titulo: Fed's Bowman sees inflation as top priority, expects easing
+fuente: YAHNEX
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261110:nNRA2nojj4:0
+
+---
+fecha: 2026-11-10 15:24
+emisora: FED
+titulo: Fed officials open door to a half-percentage-point rate hike as inflation worsens
+fuente: MSNCAN
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261110:nNRA2noht7:0
+
+---
+fecha: 2026-11-10 15:24
+emisora: FED
+titulo: FED'S BOWMAN: HAVE SHIFTED FOCUS TO SMALLER BANK RULES AND SUPERVISORY APPROACHES
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261110:nSPN46R0GY:21
+resumen:
+  Nov 10 (Reuters) - Federal Reserve Vice Chair of Supervision Michele Bowman on Tuesday
+  said she expects inflation to cool next year as long as price pressures from the AI
+  buildout and from the Middle East conflict recede. "I think first we would have to see
+  those risks being abated before I would be confident in my expectations for next year,"
+  Bowman said at the Council on Foreign Relations.
+
+---
+fecha: 2026-11-10 15:22
+emisora: COBRE
+titulo: AMERICAN BARRICK GOLD: EXPECT TO RETURN FCF IN EXCESS OF TARGET NET CASH POSITION OF $1 BLN (+/- $2 BLN) TO STOCKHOLDERS THROUGH SPECIAL DIVIDENDS
+fuente: Reuters
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261110:nFWN46R26W:9
+
+---
 fecha: 2026-11-10 15:20
 emisora: FED
 titulo: FED'S BOWMAN: FED CUT RATES GRADUALLY LAST YEAR AND THEN PAUSED BEFORE RESUMING, IN SAME WAY THAT WE MAY WORK TO ADDRESS INFLATION IN COMING MONTHS
@@ -152,6 +217,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nSPN46R0GY:17
+resumen:
+  Nov 10 (Reuters) - Federal Reserve Vice Chair of Supervision Michele Bowman on Tuesday
+  said she expects inflation to cool next year as long as price pressures from the AI
+  buildout and from the Middle East conflict recede. "I think first we would have to see
+  those risks being abated before I would be confident in my expectations for next year,"
+  Bowman said at the Council on Foreign Relations.
 
 ---
 fecha: 2026-11-10 15:20
@@ -188,6 +259,12 @@ fuente: Reuters
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nSPN46R0GY:1
+resumen:
+  Nov 10 (Reuters) - Federal Reserve Vice Chair of Supervision Michele Bowman on Tuesday
+  said she expects inflation to cool next year as long as price pressures from the AI
+  buildout and from the Middle East conflict recede. "I think first we would have to see
+  those risks being abated before I would be confident in my expectations for next year,"
+  Bowman said at the Council on Foreign Relations.
 
 ---
 fecha: 2026-11-10 15:19
@@ -206,6 +283,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nSPN46R0GY:15
+resumen:
+  Nov 10 (Reuters) - Federal Reserve Vice Chair of Supervision Michele Bowman on Tuesday
+  said she expects inflation to cool next year as long as price pressures from the AI
+  buildout and from the Middle East conflict recede. "I think first we would have to see
+  those risks being abated before I would be confident in my expectations for next year,"
+  Bowman said at the Council on Foreign Relations.
 
 ---
 fecha: 2026-11-10 15:18
@@ -224,6 +307,11 @@ fuente: Reuters
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL2N46R02L:1
+resumen:
+  CIUDAD DE MÉXICO, 10 nov (Reuters) - El peso mexicano se depreció el martes arrastrado
+  por un avance global del dólar tras la divulgación de datos de inflación
+  estadounidenses mayores a lo esperado, mientras que la bolsa se mantuvo oscilando en
+  torno a su máximo histórico de 72,227 puntos.
 
 ---
 fecha: 2026-11-10 15:17
@@ -267,6 +355,13 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nodsw:0
+resumen:
+  Banco de México reported that the country's international reserves increased by 150
+  million dollars during the week ending on November 6, reaching a total of 257,905
+  million dollars. This increase represented the largest weekly gain in the last 10
+  weeks. International reserves are assets managed by the central bank that help address
+  potential external financial shocks and contribute to strengthening the country's
+  economic stability.
 
 ---
 fecha: 2026-11-10 15:12
@@ -276,6 +371,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nod82:0
+resumen:
+  Mexico ranked as the sixth country with the highest foreign direct investment (FDI),
+  receiving $34.967 billion during the first half of the year; however, it dropped from
+  fifth place compared to the first semester of 2026. During the same period, the profits
+  for foreign companies that already had investments in the country reached a historic
+  high of $43.650 billion.
 
 ---
 fecha: 2026-11-10 15:12
@@ -285,6 +386,11 @@ fuente: NOTENG
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261110:nNRA2noe6z:0
+resumen:
+  At a press conference following a lunch with business leaders organized by Lide Rio at
+  the Fairmont hotel in Copacabana , in the South Zone of the capital, early Tuesday
+  afternoon (November 10), Douglas Ruas (PL-RJ) discussed the issue regarding a potential
+  second round in the Rio de Janeiro elections.
 
 ---
 fecha: 2026-11-10 15:11
@@ -294,6 +400,11 @@ fuente: NOTENG
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2noch9:0
+resumen:
+  Inflation in Colombia continues to be relentless, affecting the cost of living in the
+  country. According to a report recently released by DANE, as of October 2026, the
+  Consumer Price Index (CPI) recorded an annual variation of 6.30% compared to the same
+  period in 2025, when it was 5.51%.
 
 ---
 fecha: 2026-11-10 15:09
@@ -323,6 +434,11 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL6N46R1BT:1
+resumen:
+  Nov 10 (Reuters) - The discount on Western Canada Select crude oil to North American
+  benchmark West Texas Intermediate futures CLc1 widened on Tuesday. WCS for December
+  delivery in Hardisty, Alberta, settled at $25.75 a barrel below the US benchmark WTI,
+  compared with $25 on Monday, according to brokerage CalRock.
 
 ---
 fecha: 2026-11-10 15:05
@@ -377,6 +493,14 @@ fuente: Reuters
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL5N46R2HP:1
+resumen:
+  Los datos del IPC de EEUU refuerzan las expectativas de una subida de tasas de la Fed
+  en diciembre El dólar se fortalece y el oro cae tras conocerse los datos Las acciones
+  de Nvidia vuelven a caer, lo que lastra a Wall Street Actualizaciones a última hora de
+  la tarde Por Caroline Valetkevitch y Shashwat Chauhan 10 nov (Reuters) - Los
+  rendimientos de los bonos del Tesoro de EEUU se dispararon y las acciones de Wall
+  Street cayeron el martes después de que una cifra de inflación estadounidense superior
+  a lo previsto…
 
 ---
 fecha: 2026-11-10 15:01
@@ -386,6 +510,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL2N46R0SA:1
+resumen:
+  Actualiza valores al cierre Por Froilan Romero SANTIAGO, 10 nov (Reuters) - Las
+  principales monedas y bolsas de valores de América Latina cayeron el martes, tras un
+  dato de la inflación estadounidense que estuvo por encima de lo esperado y reforzó las
+  expectativas de un alza de tasas de la Reserva Federal en diciembre. * El Índice de
+  Precios al Consumidor de Estados Unidos subió un 0,4% el mes pasado, tras un avance del
+  0,6% en septiembre, informó la Oficina de Estadísticas Laborales (BLS) del Departamento
+  de…
 
 ---
 fecha: 2026-11-10 15:01
@@ -395,6 +527,13 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL6N46R1AV:3
+resumen:
+  US CPI data cements December Fed rate hike bets Dollar strengthens and gold falls after
+  data Nvidia stock tumbles again, weighs on Wall Street Updates to late afternoon By
+  Caroline Valetkevitch and Shashwat Chauhan Nov 10 (Reuters) - US Treasury yields jumped
+  and Wall Street stocks fell on Tuesday after a hotter-than-anticipated US inflation
+  reading boosted chances for a Federal Reserve interest-rate hike of half a percentage
+  point next month.
 
 ---
 fecha: 2026-11-10 14:57
@@ -413,6 +552,12 @@ fuente: BNEINT
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2no6r4:0
+resumen:
+  Nov 10, 2026 Andina Peru's agricultural exports will pass $15bn this year, Minister of
+  Foreign Trade and Tourism Rogers Valencia said, state news agencyreported on November
+  9. He also said the country should turn itself into a logistics hub serving South
+  America. The forecast would keep Peru near the record it set in 2025, when farm
+  shipments reached $15bn, a 17.3% rise on 2024.
 
 ---
 fecha: 2026-11-10 14:54
@@ -422,6 +567,12 @@ fuente: BNEINT
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2no752:0
+resumen:
+  Nov 10, 2026 El Economista Peru is set to replace Chile as South America's
+  fourth-largest economy in 2027, based on International Monetary Fund (IMF)
+  projections,reported on November 8. La Tercera Faster growth in Peru drives the change.
+  The IMF expects Peru to expand more quickly than its southern neighbour every year
+  through 2031, while the two economies are now separated by only a few billion dollars.
 
 ---
 fecha: 2026-11-10 14:54
@@ -431,6 +582,13 @@ fuente: BNEINT
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2no56f:0
+resumen:
+  Nov 10, 2026 EFE. Chile's annual inflation rate reached 4.5% in October, with fuel
+  costs the main driver, according to the National Statistics Institute (INE), as
+  reported by Consumer prices rose 0.5% on the month. Of the 13 divisions inChile's
+  truckers split over nationwide stoppage as San Antonio port dispute ends with 8% rate
+  rise the index basket, six made a positive contribution, five a negative one and two
+  had none, INE said.
 
 ---
 fecha: 2026-11-10 14:53
@@ -597,6 +755,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL5N46R10T:7
+resumen:
+  Alice Huang facilitó envíos de chips de Nvidia por valor de al menos 7.500 millones de
+  dólares a empresas chinas - The Information Microsoft recupera brevemente el segundo
+  puesto entre las empresas más valiosas Añadir detalles de la rueda de prensa de Donald
+  Trump del lunes en los párrafos 5 y 6, detalles del informe del NYT en los párrafos 7 y
+  8, y del informe del FT en los párrafos 19 y 20 10 nov (Reuters) - Las acciones de
+  Nvidia NVDA.O ampliaron sus pérdidas el martes, lo que sitúa al gigante de los chips
+  en…
 
 ---
 fecha: 2026-11-10 14:49
@@ -606,6 +772,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL6N46R0QX:11
+resumen:
+  Alice Huang facilitated at least $7.5 billion of Nvidia chip shipments to Chinese firms
+  - The Information Microsoft briefly retakes the second-most valuable company spot Add
+  details from Donald Trump's briefing on Monday in paragraphs 5,6, details from NYT
+  report in paragraphs 7,8 and the FT report in paragraphs 19,20 Nov 10 (Reuters) -
+  Nvidia NVDA.O shares extended losses on Tuesday, putting the chip giant on track to
+  shed more than $470 billion in market value over two sessions as concerns mounted over
+  the…
 
 ---
 fecha: 2026-11-10 14:43
@@ -615,6 +789,11 @@ fuente: Reuters
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL5N46R2GX:1
+resumen:
+  Por Noel Randewich y Chuck Mikolajczak NUEVA YORK, 10 nov (Reuters) - Las acciones
+  tecnológicas volvieron a cerrar en rojo este martes, ya que los pasos de Anthropic
+  hacia una gran salida a bolsa no lograron calmar la inquietud generalizada sobre la
+  salud del sector de la inteligencia artificial.
 
 ---
 fecha: 2026-11-10 14:42
@@ -624,6 +803,10 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL6N46R1B2:5
+resumen:
+  By Noel Randewich and Chuck Mikolajczak NEW YORK, Nov 10 (Reuters) - Technology shares
+  were in the red again on Tuesday, with Anthropic's steps toward a big IPO failing to
+  calm general anxiety about the health of the AI sector.
 
 ---
 fecha: 2026-11-10 14:40
@@ -633,6 +816,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL5N46R2GI:1
+resumen:
+  Añade detalles sobre las posibles obligaciones del consejero delegado en virtud del
+  código de conducta de la empresa y actualiza la cotización de las acciones Varios
+  consejeros forman parte del consejo de administración desde la década de los noventa La
+  empresa se compromete a llevar a cabo una investigación exhaustiva Se insta al consejo
+  de administración a recabar asesoramiento jurídico independiente Por Ross Kerber 10 nov
+  (Reuters) - Las revelaciones de que el director ejecutivo de Nvidia NVDA.O, Jensen
+  Huang,…
 
 ---
 fecha: 2026-11-10 14:39
@@ -642,6 +833,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL2N46R0VS:6
+resumen:
+  Adds details on CEO's potential obligations under company code of conduct, updates
+  share price Several directors have been on the board since the 1990s Company vows to
+  conduct a thorough investigation Board is urged to enlist independent legal advice By
+  Ross Kerber Nov 10 (Reuters) - Revelations that Nvidia NVDA.O Chief Executive Jensen
+  Huang had an affair with a businesswoman suspected of being a Chinese spy have forced
+  the chipmaker's board to confront more than ordinary executive misconduct, raising
+  existential…
 
 ---
 fecha: 2026-11-10 14:36
@@ -723,6 +922,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nnpdx:0
+resumen:
+  The average price of roasted chicken in Colombia was $43,703 in October, reflecting an
+  annual increase of 6.78%, according to measurements from the Roasted Chicken Index
+  (IPA). This figure was reported following the National Administrative Department of
+  Statistics (Dane) announcement that the national annual inflation rate stood at 6.30%
+  in the tenth month of the year.
 
 ---
 fecha: 2026-11-10 14:13
@@ -732,6 +937,12 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nnnso:0
+resumen:
+  Colombians are expected to face the most expensive Christmas of the last three years
+  this December. Analysts project that annual inflation will close 2026 between 6.7% and
+  6.9%, the highest level since 2023 when the indicator surpassed 9%, according to data
+  from the National Administrative Department of Statistics (DANE). This increase in
+  costs does not stem from a single cause.
 
 ---
 fecha: 2026-11-10 14:13
@@ -741,6 +952,11 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL5N46R2FS:1
+resumen:
+  Añade detalles y contexto a partir del párrafo 3 10 nov (Reuters) - Nscale, un
+  proveedor británico de servicios en la nube respaldado por el gigante de los chips
+  Nvidia NVDA.O, está barajando la posibilidad de retrasar su salida a bolsa, valorada en
+  35 000 millones de dólares, según informó el martes el diario The Telegraph .
 
 ---
 fecha: 2026-11-10 14:13
@@ -750,6 +966,13 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL6N46R19U:3
+resumen:
+  Adds details and background from paragraph 3 onwards Nov 10 (Reuters) - Nscale, a
+  British cloud provider backed by chip giant Nvidia NVDA.O, is considering delaying a
+  $35 billion stock market listing, the Telegraph reported on Tuesday. Executives at the
+  data-centre developer are assessing whether to pause efforts to go public until next
+  year, the report added. Nscale did not immediately respond to a Reuters request for
+  comment outside regular business hours.
 
 ---
 fecha: 2026-11-10 14:12
@@ -759,6 +982,11 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nnnx2:0
+resumen:
+  During an event hosted by the presidency of COP31 on Tuesday (10) in Antalya, André
+  Corrêa do Lago, the president of COP30, led the proceedings. He reintroduced the
+  roadmap for transitioning away from fossil fuels while the host nation, Turkey,
+  celebrated the discovery of new oil wells in the country.
 
 ---
 fecha: 2026-11-10 14:12
@@ -768,6 +996,11 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nnmn5:0
+resumen:
+  At the close of trading, the euro was quoted at 1,098.27 Chilean pesos , representing
+  an increase of 1.17% compared to the previous closing price of 1,085.57 Chilean pesos.
+  Source: Dow Jones. Over the past week, the euro has registered a gain of 1.2%, while
+  its year-on-year variation stands at an increase of 6.11% .
 
 ---
 fecha: 2026-11-10 14:09
@@ -799,6 +1032,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL5N46R2EV:1
+resumen:
+  Los legisladores quieren reuniones informativas con Huang y las agencias de
+  inteligencia Schumer y Jeffries afirman que esta cuestión obliga al Congreso a aprobar
+  rápidamente nuevas restricciones a las exportaciones de chips estadounidenses a China
+  Schumer afirma que Trump debe explicar su defensa de Huang Se añaden más detalles y
+  antecedentes; no hay comentarios inmediatos de la Casa Blanca ni de Nvidia en los
+  párrafos 3 a 12 Por David Shepardson y Courtney Rozen WASHINGTON, 10 nov (Reuters) - El
+  líder demócrata…
 
 ---
 fecha: 2026-11-10 14:03
@@ -808,6 +1049,13 @@ fuente: THEGRD
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nNRA2nk9gj:13
+resumen:
+  The people of the Falkland Islands face "devastating consequences" if Argentina is
+  successful in blocking development of its offshore oilfield, the attorney general for
+  England and Wales has told an international tribunal. Ellie Reeves, representing the
+  British government at a hearing of the international tribunal for the law of the sea
+  (Itlos), said billions of pounds vital to the future of the British overseas territory
+  would be lost.
 
 ---
 fecha: 2026-11-10 14:03
@@ -817,6 +1065,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL2N46R104:5
+resumen:
+  Lawmakers want briefings with Huang, intelligence agencies Schumer, Jeffries say issue
+  means Congress must quickly pass new restrictions on US chips exports to China Schumer
+  says Trump must explain defense of Huang Adds more details, background, no immediate
+  White House and Nvidia comments in paragraphs 3-12 By David Shepardson and Courtney
+  Rozen WASHINGTON, Nov 10 (Reuters) - Senate Democratic Leader Chuck Schumer on Tuesday
+  said Congress must have a full accounting of President Donald Trump's defense of
+  Nvidia…
 
 ---
 fecha: 2026-11-10 14:01
@@ -826,6 +1082,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL2N46R0Y8:4
+resumen:
+  Colombia October inflation edges up to 6.3% Colombia third-quarter economic growth seen
+  cooling - poll Brazilian real briefly touches lowest level in 15 months Traders pricing
+  in two 25-basis-point Fed rate hikes by March Updates with afternoon trading By Ragini
+  Mathur, Sudeshna Ghoshal and Avinash P Nov 10 (Reuters) - An index tracking Latin
+  American currencies fell to a seven-month low on Tuesday after a hotter-than-expected
+  US inflation report reinforced expectations that the Federal Reserve will raise
+  interest…
 
 ---
 fecha: 2026-11-10 14:00
@@ -835,6 +1099,11 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL6N46R1AS:1
+resumen:
+  Por Marcela Ayres BRASILIA, 10 nov (Reuters) - El presidente del Banco Central de
+  Brasil, Gabriel Galípolo, dijo el martes que el organismo utilizaría una política
+  monetaria restrictiva para mantener la inflación bajo control, aunque ello provocara
+  tensiones en otros sectores de la economía.
 
 ---
 fecha: 2026-11-10 13:52
@@ -1010,6 +1279,11 @@ fuente: GLORDP
 tono: negativa
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nncby:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Kimberly-Clark de
+  Mexico, S.A.B de C.V. ADR (OTC:KCDMY $10.60) decreased 9.0c (0.8%) from its previous
+  trading session to close at $10.60. Compared with the BNY Mellon Composite ADR Index
+  which rose 6.1 points (2.4%) in the day, the relative price change was -3.2%.
 
 ---
 fecha: 2026-11-10 13:47
@@ -1019,6 +1293,21 @@ fuente: GLORDP
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nnc0l:0
+
+---
+fecha: 2026-11-10 13:47
+emisora: OMAB
+titulo: Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB) extends rally with a 12% gain in 8 days; closes at $109.74 up 7.0c; +$11.49 [...
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261110:nNRA2nncbe:0
+resumen:
+  Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB) extends rally
+  with a 12% gain in 8 days; closes at $109.74 up 7.0c; +$11.49 [+11.7%] GLOBAL ROUND UP
+  ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario del Centro
+  Norte S.A.B. de C.V. ADR (NASDAQ:OMAB $109.74) extended its gains on Monday, rising an
+  additional 7.0c (0.1%) to close at $109.74.
 
 ---
 fecha: 2026-11-10 13:36
@@ -1169,6 +1458,15 @@ resumen:
   record on Friday, November 27th will be given a dividend of $5.3688 per share by the
   transportation company on Thursday, December 10th. The ex-dividend date of this
   dividend is Friday, November 27th.
+
+---
+fecha: 2026-11-10 11:58
+emisora: VESTA
+titulo: Vesta Real Estate Corporation SAB de CV - REPORTE OPERACIONES CON VALORES
+fuente: PUBT
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261110:nNDLc3dR1X:1
 
 ---
 fecha: 2026-11-10 11:57
@@ -1703,75 +2001,3 @@ fuente: PUBT
 tono: negativa
 impacto: alto
 id: lseg:urn:newsml:reuters.com:20261109:nNDL7ZxsWD:1
-
----
-fecha: 2026-11-09 16:19
-emisora: ARGENTINA
-titulo: Pope Leo defends trade unions as 'indispensable' in Argentina
-fuente: BUETIM
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261109:nNRA2n5yml:0
-
----
-fecha: 2026-11-09 16:19
-emisora: NVIDIA
-titulo: ACTUALIZA 1-Trump afirma que el director general de Nvidia le dijo que no sabía que la mujer vinculada a él era una espía
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q2TO:1
-
----
-fecha: 2026-11-09 16:18
-emisora: NVIDIA
-titulo: UPDATE 1-Trump says Nvidia CEO told him he did not know the woman linked to him was a spy
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261109:nL2N46Q16E:1
-
----
-fecha: 2026-11-09 16:16
-emisora: BRASIL
-titulo: DAILY NEWSLETTER: FORBES 2000 STOCKS IN BRAZIL End of Day (EOD)
-fuente: GLORDP
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261109:nNRA2n5yav:0
-
----
-fecha: 2026-11-09 16:16
-emisora: BRASIL
-titulo: Brazil Sector Daily- Health care sector: Top Movers and Top Value End of Day (EOD)
-fuente: GLORDP
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261109:nNRA2n5yay:0
-
----
-fecha: 2026-11-09 16:16
-emisora: BRASIL
-titulo: Brazil Sector Daily- Apparel sector: Top Movers and Top Value End of Day (EOD)
-fuente: GLORDP
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261109:nNRA2n5xwz:0
-
----
-fecha: 2026-11-09 16:16
-emisora: BRASIL
-titulo: Brazil Sector Daily- Food sector: Top Movers and Top Value End of Day (EOD)
-fuente: GLORDP
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261109:nNRA2n5wvr:0
-
----
-fecha: 2026-11-09 16:16
-emisora: BRASIL
-titulo: Brazil Sector Daily- Iron/Steel sector: Top Movers and Top Value End of Day (EOD)
-fuente: GLORDP
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261109:nNRA2n5xwv:0
