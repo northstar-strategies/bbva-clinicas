@@ -845,7 +845,6 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-05,CLP,"Peso chileno en pesos (×1,000)",19.169675,CLP,
 2026-11-06,CLP,"Peso chileno en pesos (×1,000)",19.069629,CLP,
 2026-11-09,CLP,"Peso chileno en pesos (×1,000)",19.160668,CLP,
-2026-04-24,EUR,Euro en pesos,20.3658,EUR,
 2026-04-27,EUR,Euro en pesos,20.3641,EUR,
 2026-04-28,EUR,Euro en pesos,20.349,EUR,
 2026-04-29,EUR,Euro en pesos,20.4639,EUR,
@@ -1260,7 +1259,6 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-05,COBRE,Cobre (dólares por libra),6.2415,,GMEXICOB
 2026-11-06,COBRE,Cobre (dólares por libra),6.244,,GMEXICOB
 2026-11-09,COBRE,Cobre (dólares por libra),6.333,,GMEXICOB
-2026-04-24,PLATA,Plata (dólares por onza),75.6738,,PEOLES
 2026-04-27,PLATA,Plata (dólares por onza),75.495,,PEOLES
 2026-04-28,PLATA,Plata (dólares por onza),73.08,,PEOLES
 2026-04-29,PLATA,Plata (dólares por onza),71.482,,PEOLES
@@ -1403,7 +1401,6 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-06,PLATA,Plata (dólares por onza),51.873,,PEOLES
 2026-11-09,PLATA,Plata (dólares por onza),53.4099,,PEOLES
 2026-11-10,PLATA,Plata (dólares por onza),51.4926,,PEOLES
-2026-04-24,ORO,Oro (dólares por onza),4708.686,,PEOLES
 2026-04-27,ORO,Oro (dólares por onza),4681.8501,,PEOLES
 2026-04-28,ORO,Oro (dólares por onza),4594.51,,PEOLES
 2026-04-29,ORO,Oro (dólares por onza),4541.75,,PEOLES
