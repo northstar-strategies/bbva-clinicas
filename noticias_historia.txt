@@ -1,6 +1,60 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
+fecha: 2026-11-10 17:07
+emisora: FED
+titulo: RESUMEN 5-Los responsables de la Fed dejan la puerta abierta a una ronda más rápida de subidas de tipos ante el empeoramiento de la inflación
+fuente: Reuters
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:reuters.com:20261110:nL5N46R1S9:6
+
+---
+fecha: 2026-11-10 16:56
+emisora: MERCADO
+titulo: GLOBAL MARKETS-US yields climb, stocks fall as inflation data boosts chances for larger Fed rate hike
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261110:nL6N46R1EX:3
+
+---
+fecha: 2026-11-10 16:32
+emisora: BRASIL
+titulo: Brazil government to present bill this week to secure fiscal savings in 2027, G1 reports
+fuente: Reuters
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:reuters.com:20261110:nS0N46N03T:1
+
+---
+fecha: 2026-11-10 16:13
+emisora: MERCADO
+titulo: Mexico's Plan: A Shield Against China's Unfair Steel Practices, According to Alacero
+fuente: NOTENG
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261110:nNRA2noz2f:0
+
+---
+fecha: 2026-11-10 16:01
+emisora: COBRE
+titulo: BRIEF-American Barrick Gold Corp - S-1
+fuente: Reuters
+tono: neutral
+relevancia: 4
+id: lseg:urn:newsml:reuters.com:20261110:nFWN46R26W:1
+
+---
+fecha: 2026-11-10 15:49
+emisora: NVIDIA
+titulo: ACTUALIZA 2-Los legisladores estadounidenses impulsan normas sobre chips para China tras las acusaciones contra el director ejecutivo de Nvidia
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261110:nL5N46R2EV:2
+
+---
 fecha: 2026-11-10 15:17
 emisora: MERCADO
 titulo: Peso mexicano retrocede tras datos de inflación EEUU, bolsa se mantiene cerca de su récord máximo
@@ -19,15 +73,6 @@ fuente: Reuters
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:reuters.com:20261110:nL5N46R10T:7
-
----
-fecha: 2026-11-10 14:13
-emisora: NVIDIA
-titulo: ACTUALIZA 1-La empresa de inteligencia artificial en la nube Nscale, respaldada por Nvidia, se plantea retrasar su salida a bolsa por valor de 35.000 millones de dólares, según informa The Telegraph.
-fuente: Reuters
-tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261110:nL5N46R2FS:1
 
 ---
 fecha: 2026-11-10 14:01

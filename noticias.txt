@@ -145,6 +145,402 @@ resumen:
   turistas provenientes de Estados Unidos, principal mercado emisor.
 
 ---
+fecha: 2026-11-10 17:07
+emisora: FED
+titulo: RESUMEN 5-Los responsables de la Fed dejan la puerta abierta a una ronda más rápida de subidas de tipos ante el empeoramiento de la inflación
+fuente: Reuters
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261110:nL5N46R1S9:6
+resumen:
+  Se actualizan los datos sobre los mercados en el párrafo 7 y se añaden los comentarios
+  de Bowman en los tres últimos párrafos El IPC subyacente sube un 0,3 % en octubre por
+  tercer mes consecutivo El rendimiento de los bonos del Tesoro a dos años registra su
+  mayor subida desde principios de abril de 2025 Logan afirma que es posible un ritmo más
+  rápido de subidas de tipos; Waller señala la posibilidad de un movimiento de 50 puntos
+  básicos Los mercados apuestan por subidas de 25 puntos básicos en diciembre y enero si…
+
+---
+fecha: 2026-11-10 17:06
+emisora: FED
+titulo: WRAPUP 5-Fed officials open door to a quicker round of rate hikes as inflation worsens
+fuente: Reuters
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261110:nL6N46R105:10
+resumen:
+  Updates markets in paragraph 7, adds Bowman comments in final three paragraphs Core CPI
+  rises 0.3% in October for third straight month Yield on 2-year Treasury note posts
+  biggest rise since early April 2025 Logan says more rapid rate-hike pace is possible;
+  Waller flags chance of 50-basis-point move Markets bet on 25-basis-point hikes in
+  December and January if Fed does not raise by 50 basis points next month By Howard
+  Schneider and Ann Saphir WASHINGTON, Nov 10 (Reuters) - The odds that the Federal
+  Reserve may…
+
+---
+fecha: 2026-11-10 17:05
+emisora: BOLSAA
+titulo: BMV - Composición de Cartera TRACS
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261110:nNDL4X1HxM:1
+
+---
+fecha: 2026-11-10 17:05
+emisora: PETROLEO
+titulo: @OilandEnergy: API: US crude inventories rose 9.0M barrels in the week to Nov 6, versus a 5.3M draw the week before. Distillates built 1.5M, SPR fell 2.7M to 279.5M, and output hit a record 14.003M bpd. Brent $91.96. #Oil #API #Crude #SPR #Brent
+
+https://t.co/OwMMNROsfq
+fuente: X
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:social:20261110:nTWTH1Cqj:1
+resumen:
+  API: US crude inventories rose 9.0M barrels in the week to Nov 6, versus a 5.3M draw
+  the week before. Distillates built 1.5M, SPR fell 2.7M to 279.5M, and output hit a
+  record 14.003M bpd. Brent $91.96.
+
+---
+fecha: 2026-11-10 17:04
+emisora: PETROLEO
+titulo: OPEC Chief Says Electricity Alone Can't Power Future As All Energy Sources Remain Essential
+fuente: MENCOM
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261110:nNRA2nphpa:0
+
+---
+fecha: 2026-11-10 16:58
+emisora: FED
+titulo: Bond yields surge most in 19 months as traders brace for Fed rate hikes
+fuente: YAHNEX
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261110:nNRA2npe9s:0
+
+---
+fecha: 2026-11-10 16:54
+emisora: PETROLEO
+titulo: "Upgrading of Highly Paraffinic Crude Oil By Conversion of Hydrocarbon Compounds Having Substantially Saturated Chains to Lower-Molecular-Weight Hy...
+fuente: CHECHE
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261110:nNRA2npedd:0
+resumen:
+  "Upgrading of Highly Paraffinic Crude Oil By Conversion of Hydrocarbon Compounds Having
+  Substantially Saturated Chains to Lower-Molecular-Weight Hydrocarbons" in Patent
+  Application Approval Process (USPTO 20260327500) 2026 NOV 10-- By a News Reporter-Staff
+  News Editor at Chemicals& Chemistry Business Daily Business Daily Daily-- A patent
+  application by the inventors Adhikari, Birendra; Jhawar, Anil K.; Trygstad, W Marcus,
+  filed on April 22, 2026, was made available online on October 22, 2026, according to
+  news…
+
+---
+fecha: 2026-11-10 16:43
+emisora: BOLSAA
+titulo: BMV - Cambio de clave para: SMX-90 a: SAM1990 a partir de 23/11/2026
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261110:nNDL4sfMw:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. SOLICITUD DE CAMBIO DE CLAVE FECHA: 10/11/2026 BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-10 16:43
+emisora: BOLSAA
+titulo: BMV - Aviso de Tenedores de LAB 00926
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261110:nNDL1k3Xb4:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-10 16:43
+emisora: BOLSAA
+titulo: BMV - Convocatoria de Asamblea Extraordinaria
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261110:nNDLQNm0P:1
+
+---
+fecha: 2026-11-10 16:43
+emisora: BOLSAA
+titulo: BMV - Aviso de Tenedores de LAB 01525
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261110:nNDL2DkDMs:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-10 16:43
+emisora: MERCADO
+titulo: Southern Copper Corporation (NYSE:SCCO) loses $4.9 billion (3.3%) in MCap, steepest heavyweight fall in Non ferrous metals sector; -$5.82 [-3.3%]
+fuente: NEWBTS
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261110:nNRA2np904:0
+resumen:
+  NYSE END-OF-DAY STOCK REPORT www.buysellsignals.com PHOENIX, Tuesday, Nov 10, 2026 -
+  Southern Copper Corporation's (NYSE:SCCO $170.14) stock price slid $5.82 (3.3%) from
+  its previous trading session to close at $170.14. Compared with the S&P 500 Index which
+  fell 34.6 points (0.5%) in the day, the relative price change was -2.8%. It posted the
+  steepest fall in MCap of $4.9 billion with the most influence on the Non ferrous metals
+  sector.
+
+---
+fecha: 2026-11-10 16:36
+emisora: MERCADO
+titulo: Past Week: Fresnillo PLC (L:FRES) in top 4% performers of FTSE 100 Index in past week; +GBX227 [9.9%]
+fuente: NEWBTS
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261110:nNRA2np7gp:0
+resumen:
+  BRITISH END-OF-WEEK STOCK REPORT www.buysellsignals.com Fresnillo PLC (L:FRES
+  GBX2,513.0), the United Kingdom's 7th largest Mining company by market cap, has
+  accelerated higher by GBX227 (or 9.9%) in the past week to close at GBX2,513.0. This
+  makes it the fourth highest performer in the FTSE 100 Index which was up 1.1% in the
+  past week; a relative price increase of 8.9%.
+
+---
+fecha: 2026-11-10 16:32
+emisora: BRASIL
+titulo: Brazil government to present bill this week to secure fiscal savings in 2027, G1 reports
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261110:nS0N46N03T:1
+resumen:
+  SAO PAULO, Nov 10 (Reuters) - The Brazilian government is set to present a bill this
+  week with measures that aim to achieve a fiscal adjustment equivalent to 0.5% of gross
+  domestic product in 2027, news outlet G1 reported on Tuesday. Among the measures are
+  the exclusion of extraordinary revenues from the basis for calculation of the
+  constitutional spending floors for health and education, it added, citing sources close
+  to President Luiz Inacio Lula da Silva.
+
+---
+fecha: 2026-11-10 16:29
+emisora: MERCADO
+titulo: HR Ratings de México SA de CV - Comunicado Bancomext SPO Emisiones
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261110:nNDL2jQpMc:1
+
+---
+fecha: 2026-11-10 16:21
+emisora: MERCADO
+titulo: BRAZILIAN IRON/STEEL SECTOR BOTTOM 2 DAILY: TOP MOMENTUM DOWN IN THE PAST WEEK End-of-day: Tuesday November 10, 2026 16:00 (EST: 14:00, GMT: 19:00)
+fuente: GLORDP
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261110:nNRA2np018:0
+resumen:
+  BRAZILIAN MARKET REPORT Momentum down is defined by a price fall fuelled by a volume
+  index above 1.1 In descending order of % price fall + BOTTOM STOCK RANKED 1 USINAS
+  SIDERURGICA DO MINAS GERAIS PREFERENCE SHARES (USIM5: -20 CENTAVOS [-3.9%]).
+
+---
+fecha: 2026-11-10 16:21
+emisora: BRASIL
+titulo: Brazil Sector Daily- Electric sector: Top Movers and Top Value End of Day (EOD)
+fuente: GLORDP
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261110:nNRA2np0tc:0
+resumen:
+  The Electric sector has fallen 5.3 points (or 0.6%) to close at 844. Compared with the
+  Bovespa Index which fell 899.1 points (or 0.5%) on the day, this represented a relative
+  price change of -0.1%. Amongst the 46 stocks in the Electric sector today, there were
+  14 (30.4%) falls and 4 (8.7%) rises.
+
+---
+fecha: 2026-11-10 16:21
+emisora: BRASIL
+titulo: DAILY NEWSLETTER: FORBES 2000 STOCKS IN BRAZIL End of Day (EOD)
+fuente: GLORDP
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261110:nNRA2np2fx:0
+resumen:
+  The Forbes 2000 list of companies 2026 includes 12 companies listed on the Brazil. Of
+  these 12, 8 (61.5%) falls and 4 (30.8%) rises. 1 (7.7%) was untraded.
+
+---
+fecha: 2026-11-10 16:21
+emisora: BRASIL
+titulo: Brazil Sector Daily- Health care sector: Top Movers and Top Value End of Day (EOD)
+fuente: GLORDP
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261110:nNRA2np17b:0
+resumen:
+  The Health care sector closed unchanged at -84,374. Amongst the 16 stocks in the Health
+  care sector today, there were 6 (37.5%) falls and 3 (18.8%) rises. 6 stocks (37.5%)
+  were untraded and one stock (6.2%) was unchanged.
+
+---
+fecha: 2026-11-10 16:21
+emisora: BRASIL
+titulo: Brazil Sector Daily- Textiles sector: Top Movers and Top Value End of Day (EOD)
+fuente: GLORDP
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261110:nNRA2np0ta:0
+resumen:
+  The Textiles sector hit a 52-week low of 1,784.4 during the day. In the last one month
+  the sector has hit a new 52-week low four times. The sector has fallen 27.4 points (or
+  1.5%) to close at 1,802.
+
+---
+fecha: 2026-11-10 16:21
+emisora: CHILE
+titulo: New Science Findings from University of los Andes Described (Partisan politics and stock returns under strong presidential regimes: Religion and po...
+fuente: POLGOV
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261110:nNRA2np01t:0
+resumen:
+  New Science Findings from University of los Andes Described (Partisan politics and
+  stock returns under strong presidential regimes: Religion and politics) 2026 NOV 10--
+  By a News Reporter-Staff News Editor at Politics, Law& Government Daily-- Research
+  findings on Science are discussed in a new report. Using firm-level data, we show that
+  the widely documented Democratic Party premium in the United States does not extend to
+  this setting.".
+
+---
+fecha: 2026-11-10 16:14
+emisora: MERCADO
+titulo: Verum Calificadora de Valores SAPI de CV - PCR Verum Ratifica Calificación de la Emisión ‘BCONJCB 24X’
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261110:nNDL10kKtT:1
+
+---
+fecha: 2026-11-10 16:13
+emisora: PERU
+titulo: Peru raised US$4.5 billion from the global market for 12 and 30 years at interest rates of up to 6.45% annually
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261110:nNRA2noy2p:0
+resumen:
+  Peru raised US$4.5 billion today from the global financial market by issuing two bonds
+  maturing in 12 and 30 years , funds which will be used for infrastructure projects
+  aimed at adapting to climate change and managing disaster risk, as well as financing
+  "programs and projects aimed at reducing social gaps, strengthening the protection of
+  the most vulnerable populations, and fostering a more inclusive and sustainable
+  economic growth," as announced.
+
+---
+fecha: 2026-11-10 16:12
+emisora: PERU
+titulo: A coin toss was held to decide the new mayor of a town in Peru
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261110:nNRA2noxlg:0
+resumen:
+  Candidate Rubén Quispe Capajaña, from the Somos Perú party, has been declared the
+  elected mayor of the Conima district following a coin toss. The decision was made by
+  the Special Electoral Jury (JEE) of Huancané due to an unprecedented tie of 671 votes
+  against his opponent in the municipal elections.
+
+---
+fecha: 2026-11-10 16:08
+emisora: GMEXICOB
+titulo: Southern Copper Corporation's (NYSE:SCCO $170.14) slid 3.31%: Risk Factors and Bearish Indicators Analysis
+fuente: GLORDP
+tono: negativa
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261110:nNRA2nowdc:0
+resumen:
+  NYSE END-OF-DAY STOCK REPORT PHOENIX, Tuesday, Nov 10, 2026 - Southern Copper
+  Corporation's (NYSE:SCCO $170.14) stock price slid $5.82 (3.3%) from its previous
+  trading session to close at $170.14. Compared with the S&P 500 Index which fell 34.6
+  points (0.5%) in the day, the relative price change was -2.8%. In the NYSE- and
+  TXSE-listed stocks market, the stock's relative price strength percentile is slipping
+  at 21 for 6 months, 10 for 3 months, and 9 for 1 month.
+
+---
+fecha: 2026-11-10 16:01
+emisora: COBRE
+titulo: BRIEF-American Barrick Gold Corp - S-1
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261110:nFWN46R26W:1
+resumen:
+  Nov 10 (Reuters) - Barrick Mining Corporation ABX.TO: AMERICAN BARRICK GOLD CORP - S-1
+  AMERICAN BARRICK GOLD CORP - ANNOUNCES INITIAL PUBLIC OFFERING OF COMMON STOCK - SEC
+  FILING AMERICAN BARRICK GOLD CORP - INTENDS TO LIST COMMON STOCK ON NYSE UNDER SYMBOL
+  ABGC - SEC FILING AMERICAN BARRICK GOLD CORP - BARRICK MINING CORPORATION TO
+  BENEFICIALLY OWN MAJORITY OF COMMON STOCK AFTER OFFERING - SEC FILING AMERICAN BARRICK
+  GOLD CORP: GOLDMAN SACHS & CO.
+
+---
+fecha: 2026-11-10 15:51
+emisora: WALMEX
+titulo: Benchmarking Wal-Mart De Mexico S.A.B. de C.V. (OTCQX:WMMVY) vs Christian Dior S.E.: Revenue Growth and Profit Expansion *Updated*
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261110:nNRA2norbp:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS This comparative analysis covers the
+  financial performance of Wal-Mart De Mexico S.A.B. de C.V. and Christian Dior S.E.
+  across six key categories: Profitability, Liquidity, Solvency, Efficiency, Valuation,
+  and Growth. Christian Dior S.E. exhibits superior liquidity with a current ratio of
+  1.59, ensuring robust short-term financial health.
+
+---
+fecha: 2026-11-10 15:49
+emisora: NVIDIA
+titulo: ACTUALIZA 2-Los legisladores estadounidenses impulsan normas sobre chips para China tras las acusaciones contra el director ejecutivo de Nvidia
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261110:nL5N46R2EV:2
+resumen:
+  Los legisladores quieren reuniones informativas con Huang y las agencias de
+  inteligencia Schumer y Moolenaar afirman que esta cuestión obliga al Congreso a aprobar
+  rápidamente nuevas restricciones a las exportaciones de chips estadounidenses a China
+  Schumer afirma que Trump debe explicar su defensa de Huang Se añade información sobre
+  la legislación en los párrafos 1-3, sobre Moolenaar en el párrafo 4 y sobre Guthrie en
+  el párrafo 9 Por David Shepardson y Courtney Rozen WASHINGTON, 10 nov (Reuters) - Los…
+
+---
+fecha: 2026-11-10 15:48
+emisora: NVIDIA
+titulo: UPDATE 2-US lawmakers push China chip rules after Nvidia CEO allegations
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261110:nL2N46R104:7
+resumen:
+  Lawmakers want briefings with Huang, intelligence agencies Schumer, Moolenaar say issue
+  means Congress must quickly pass new restrictions on US chips exports to China Schumer
+  says Trump must explain defense of Huang Adds legislation in paragraphs 1-3, Moolenaar
+  in paragraph 4, Guthrie in paragraph 9 By David Shepardson and Courtney Rozen
+  WASHINGTON, Nov 10 (Reuters) - US lawmakers on Tuesday renewed calls for tighter
+  restrictions on China's access to advanced AI chips, after allegations about Nvidia CEO
+  Jensen…
+
+---
 fecha: 2026-11-10 15:27
 emisora: PETROLEO
 titulo: LIVE MARKETS-US equities close lower with inflation boosting bets on rate hikes
@@ -1293,6 +1689,11 @@ fuente: GLORDP
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nnc0l:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Corporacion
+  Inmobiliaria Vesta, S.A.B. de C.V. ADR (NYSE:VTMX $38.33) lifted 71.0c (1.9%) from its
+  previous trading session to close at $38.33. Compared with the BNY Mellon Composite ADR
+  Index which rose 6.1 points (2.4%) in the day, the relative price change was -0.5%.
 
 ---
 fecha: 2026-11-10 13:47
@@ -1317,6 +1718,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL5N46R134:8
+resumen:
+  Actualizaciones con la reacción del mercado, el calendario de la salida a bolsa,
+  reformulación del tercer párrafo, nueva cita en el párrafo 10 y detalles adicionales
+  Anthropic también recaudará 26 000 millones de dólares mediante una operación de
+  colocación privada Entre los inversores principales se encuentran Google, Nvidia y AMD
+  La oferta de acciones recaudará un total de hasta 90 400 millones de dólares Los
+  ingresos anuales se disparan hasta los 81 000 millones de dólares a 31 de octubre Por
+  Echo Wang, Manya…
 
 ---
 fecha: 2026-11-10 13:34
@@ -1326,6 +1735,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL2N46R0EX:19
+resumen:
+  Updates with market reaction, IPO timing, recasts third paragraph, new quote in
+  paragraph 10, additional details Anthropic will also raise $26 billion via private
+  placement deal Cornerstone investors include Google, Nvidia and AMD Share offering will
+  raise a total of up to $90.4 billion Run-rate revenue soars to $81 billion as of
+  October 31 By Echo Wang, Manya Saini and Arasu Kannagi Basil Nov 10 (Reuters) -
+  Anthropic's blockbuster IPO will value the Claude chatbot creator at up to $1.4
+  trillion, slightly short of…
 
 ---
 fecha: 2026-11-10 13:25
@@ -1335,6 +1752,13 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL5N46R2D2:1
+resumen:
+  10 nov (Reuters) - El proveedor británico de servicios en la nube Nscale está barajando
+  la posibilidad de aplazar su salida a bolsa, valorada en 35 000 millones de dólares,
+  según informó el martes The Telegraph. Los directivos de esta empresa dedicada al
+  desarrollo de centros de datos están valorando si suspender los preparativos para salir
+  a bolsa hasta el año que viene, añade el informe. Reuters no ha podido verificar de
+  inmediato esta información.
 
 ---
 fecha: 2026-11-10 13:24
@@ -1344,6 +1768,11 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL6N46R19J:1
+resumen:
+  Nov 10 (Reuters) - British cloud services provider Nscale is considering delaying a $35
+  billion stock market listing, The Telegraph reported on Tuesday. Executives at the
+  data-centre developer are assessing whether to pause efforts to go public until next
+  year, the report added. Reuters could not immediately verify the report.
 
 ---
 fecha: 2026-11-10 13:13
@@ -1353,6 +1782,10 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nmy34:0
+resumen:
+  Rubén Quispe Capajaña won the mayorship of Conima through a public draw. The two
+  candidates received 671 votes in the municipal elections. A one-sol coin decided who
+  would be the next mayor of the district of Conima in the Puno region of Peru .
 
 ---
 fecha: 2026-11-10 13:10
@@ -1362,6 +1795,11 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nTUA7PNXRV:1
+resumen:
+  Nov 10 (Reuters) - NVIDIA Corporation NVDA.O: STATEMENT FROM THE INDEPENDENT MEMBERS OF
+  THE NVIDIA BOARD NVIDIA CORPORATION - BOARD RETAINS JOON H. KIM AND WACHTELL FOR
+  INDEPENDENT INVESTIGATION Source text: (Full Story) Further company coverage: NVDA.O ((
+  Reuters.Briefs@thomsonreuters.com ;))
 
 ---
 fecha: 2026-11-10 13:08
@@ -1371,6 +1809,11 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nTUA7PNXRV:2
+resumen:
+  Nov 10 (Reuters) - NVIDIA Corporation NVDA.O: STATEMENT FROM THE INDEPENDENT MEMBERS OF
+  THE NVIDIA BOARD NVIDIA CORPORATION - BOARD RETAINS JOON H. KIM AND WACHTELL FOR
+  INDEPENDENT INVESTIGATION Source text: (Full Story) Further company coverage: NVDA.O ((
+  Reuters.Briefs@thomsonreuters.com ;))
 
 ---
 fecha: 2026-11-10 13:05
@@ -1389,6 +1832,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL5N46R2CD:1
+resumen:
+  10 nov (Reuters) - El líder demócrata del Senado, Chuck Schumer, afirmó el martes que
+  el Congreso debe obtener una explicación exhaustiva sobre la defensa que ha hecho el
+  presidente Donald Trump del director ejecutivo de Nvidia NVDA.O, Jensen Huang, y pidió
+  a los legisladores que aprueben rápidamente nuevas restricciones a las exportaciones de
+  chips estadounidenses a China.
 
 ---
 fecha: 2026-11-10 12:59
@@ -1398,6 +1847,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL2N46R0YH:1
+resumen:
+  Nov 10 (Reuters) - Senate Democratic Leader Chuck Schumer on Tuesday said Congress must
+  have a full accounting of President Donald Trump's defense of Nvidia NVDA.O CEO Jensen
+  Huang and called on lawmakers to quickly approve new restrictions on US chip exports to
+  China. Schumer cited reports Trump was briefed on Huang’s affair with a suspected
+  Chinese spy a year ago and did nothing. "What a dereliction of duty.
 
 ---
 fecha: 2026-11-10 12:46
@@ -1407,6 +1862,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL2N46R0YH:4
+resumen:
+  Nov 10 (Reuters) - Senate Democratic Leader Chuck Schumer on Tuesday said Congress must
+  have a full accounting of President Donald Trump's defense of Nvidia NVDA.O CEO Jensen
+  Huang and called on lawmakers to quickly approve new restrictions on US chip exports to
+  China. Schumer cited reports Trump was briefed on Huang’s affair with a suspected
+  Chinese spy a year ago and did nothing. "What a dereliction of duty.
 
 ---
 fecha: 2026-11-10 12:44
@@ -1416,6 +1877,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nL2N46R0YH:3
+resumen:
+  Nov 10 (Reuters) - Senate Democratic Leader Chuck Schumer on Tuesday said Congress must
+  have a full accounting of President Donald Trump's defense of Nvidia NVDA.O CEO Jensen
+  Huang and called on lawmakers to quickly approve new restrictions on US chip exports to
+  China. Schumer cited reports Trump was briefed on Huang’s affair with a suspected
+  Chinese spy a year ago and did nothing. "What a dereliction of duty.
 
 ---
 fecha: 2026-11-10 12:31
@@ -1434,6 +1901,10 @@ fuente: FT
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nFtn8LHcgL:1
+resumen:
+  Battle to reclaim the Republican Party The Republican primary was always likely to
+  start the day after the midterm election. In fact, it began even before the polls
+  closed. Florid...(Full Story) © The Financial Times Limited 2026
 
 ---
 fecha: 2026-11-10 12:13
@@ -1443,6 +1914,11 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nm4i3:0
+resumen:
+  Mexico City, November 10 (EFE) - The heads of the Ministries of Foreign Affairs,
+  Economy, Science, and Environment will be part of the official delegation accompanying
+  Mexican President Claudia Sheinbaum to the Asia-Pacific Economic Cooperation (APEC)
+  leaders' summit in China, the president announced on Tuesday.
 
 ---
 fecha: 2026-11-10 12:09
@@ -1476,6 +1952,11 @@ fuente: LATTIM
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nlz5l:0
+resumen:
+  Nov 10, 2026 Aerial view taken in Lima on January 6, 2019. Photo by Franck FIFE / AFP)
+  (Photo credit should read FRANCK FIFE/AFP via Getty Images The Briefing The IMF
+  projects Peru's nominal GDP at about $413.6 billion in 2027, roughly $154 million more
+  than Chile's, which would make Peru South America's fourth-largest economy.
 
 ---
 fecha: 2026-11-10 11:24
@@ -1499,6 +1980,10 @@ fuente: Reuters
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nS8N45G0C0:1
+resumen:
+  SANTIAGO, Nov 10 (Reuters) - Chile's copper commission Cochilco said on Tuesday that
+  production at Escondida, the world's largest copper mine, fell 21% year-on-year in
+  September.
 
 ---
 fecha: 2026-11-10 11:13
@@ -1508,6 +1993,11 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nlk17:0
+resumen:
+  The heads of the Ministries of Foreign Affairs, Economy, Science, and Environment will
+  be part of the official delegation accompanying Mexican President Claudia Sheinbaum to
+  the Asia-Pacific Economic Cooperation (APEC) leaders' summit in China, the president
+  announced on Tuesday.
 
 ---
 fecha: 2026-11-10 11:00
@@ -1517,6 +2007,12 @@ fuente: Reuters
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nS0N44901K:1
+resumen:
+  SANTIAGO, 10 nov (Reuters) - La producción de las mayores minas de cobre en Chile cayó
+  en septiembre en medio de débiles desempeños de la gigante estatal chilena Codelco, así
+  como de la privada Escondida, informó el martes la gubernamental Comisión Chilena del
+  Cobre (Cochilco). La producción total de Codelco cayó un 14,1% interanual hasta 99.300
+  toneladas.
 
 ---
 fecha: 2026-11-10 10:56
@@ -1526,6 +2022,10 @@ fuente: Reuters
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nS8N45G0C0:5
+resumen:
+  SANTIAGO, Nov 10 (Reuters) - Chile's copper commission Cochilco said on Tuesday that
+  production at Escondida, the world's largest copper mine, fell 21% year-on-year in
+  September.
 
 ---
 fecha: 2026-11-10 10:55
@@ -1535,6 +2035,10 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nS8N45G0C0:3
+resumen:
+  SANTIAGO, Nov 10 (Reuters) - Chile's copper commission Cochilco said on Tuesday that
+  production at Escondida, the world's largest copper mine, fell 21% year-on-year in
+  September.
 
 ---
 fecha: 2026-11-10 10:53
@@ -1544,6 +2048,12 @@ fuente: Reuters
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nS0N44901K:5
+resumen:
+  SANTIAGO, 10 nov (Reuters) - La producción de las mayores minas de cobre en Chile cayó
+  en septiembre en medio de débiles desempeños de la gigante estatal chilena Codelco, así
+  como de la privada Escondida, informó el martes la gubernamental Comisión Chilena del
+  Cobre (Cochilco). La producción total de Codelco cayó un 14,1% interanual hasta 99.300
+  toneladas.
 
 ---
 fecha: 2026-11-10 10:53
@@ -1553,6 +2063,12 @@ fuente: Reuters
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261110:nS0N44901K:3
+resumen:
+  SANTIAGO, 10 nov (Reuters) - La producción de las mayores minas de cobre en Chile cayó
+  en septiembre en medio de débiles desempeños de la gigante estatal chilena Codelco, así
+  como de la privada Escondida, informó el martes la gubernamental Comisión Chilena del
+  Cobre (Cochilco). La producción total de Codelco cayó un 14,1% interanual hasta 99.300
+  toneladas.
 
 ---
 fecha: 2026-11-10 09:33
@@ -1562,6 +2078,12 @@ fuente: HAWBAY
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nk9s3:0
+resumen:
+  A group of 1000- plus Central American migrants has arrived in Mexico, hoping to
+  eventually reach the US after President Donald Trump's Republican Party suffered a
+  crushing midterm election defeat. Recent similar caravans were broken up by Mexican
+  authorities before even leaving the state of Chiapas, a southern state bordering
+  Guatemala.
 
 ---
 fecha: 2026-11-10 08:40
@@ -1662,342 +2184,3 @@ fuente: GLORDP
 tono: neutral
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261110:nNRA2nj5y6:0
-
----
-fecha: 2026-11-10 08:08
-emisora: KIMBERA
-titulo: 08:08:16 INICIA SUBASTA DE VALUACION : KIMBER B
-fuente: BMV
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:reuters.com:20261110:nBMVkSX3ra:1
-
----
-fecha: 2026-11-10 05:57
-emisora: AC
-titulo: Tuesday's Preview: Can Arca Continental SAB de CV (BMV:AC), rebound after being down?
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2ngokf:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Arca Continental SAB de CV
-  closed lower the previous trading day. Arca Continental SAB de CV (BMV:AC), Mexico's
-  largest Beverages company by market cap, dropped 1.2% during its previous trading
-  session to close at $231.94.
-
----
-fecha: 2026-11-10 05:57
-emisora: ASURB
-titulo: ICYMI: Traders look to see if Grupo Aeroportuario del Sureste SAB de CV's (BMV:ASUR), recent rise will continue
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2ngox4:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Grupo Aeroportuario del
-  Sureste SAB de CV closed higher the previous trading day. Grupo Aeroportuario del
-  Sureste SAB de CV (BMV:ASUR), Mexico's 2nd largest Engineering & construction company
-  by market cap, increased 0.4% during its previous trading session to close at $494.91.
-
----
-fecha: 2026-11-10 05:57
-emisora: GFNORTEO
-titulo: Tuesday's Preview: Can Grupo Financiero Banorte, S.A.B De C.V. (BMV:GFNORTE), rebound after being down?
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2ngpku:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Grupo Financiero Banorte,
-  S.A.B De C.V. has shown some weakness in recent days. Grupo Financiero Banorte, S.A.B
-  De C.V. (BMV:GFNORTE), Mexico's 3rd largest Bank by market cap, decreased 0.1% during
-  its previous trading session to close at $208.86.
-
----
-fecha: 2026-11-10 05:57
-emisora: MEGACPO
-titulo: Will Megacable Holdings' (BMV:MEGA), Recent rise Hold Strong for Traders?
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2ngox6:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Megacable Holdings closed
-  higher the previous trading day. Megacable Holdings (BMV:MEGA), Mexico's largest Media
-  company by market cap, lifted 1.1% during its previous trading session to close at
-  $59.38. Bearish Turning Point Williams % R The stock is overbought according to the
-  Williams % R indicator of -11.9, suggesting the price is close to its 14-day high.
-
----
-fecha: 2026-11-10 05:57
-emisora: OMAB
-titulo: Grupo Aeroportuario Del Centro Norte, S.A.B. De C.V. (BMV:OMA), stock sees decline in recent days
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2ngpb1:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Grupo Aeroportuario Del
-  Centro Norte, S.A.B. De C.V. has shown some weakness in recent days. Grupo
-  Aeroportuario Del Centro Norte, S.A.B.
-
----
-fecha: 2026-11-10 05:57
-emisora: PINFRA
-titulo: ICYMI: Promotora Y Operadora De Infraestructura, S.A.B. De C.V. (BMV:PINFRA), down previous trading day
-fuente: GLORDP
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261110:nNRA2ngpkw:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Promotora Y Operadora De
-  Infraestructura, S.A.B. De C.V. closed lower the previous trading day. Promotora Y
-  Operadora De Infraestructura, S.A.B.
-
----
-fecha: 2026-11-10 05:57
-emisora: KIMBERA
-titulo: ICYMI: Tuesday's Preview: Can Kimberly - Clark De Mexico S.A.B. De C.V. (BMV:KIMBERA), rebound after being down?
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2ngpkv:0
-
----
-fecha: 2026-11-10 05:57
-emisora: VESTA
-titulo: Will Corp Inmobiliaria Vesta SAB de CV's (BMV:VESTA), Recent Rally Hold Strong for Traders?
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2ngokh:0
-
----
-fecha: 2026-11-10 05:30
-emisora: COBRE
-titulo: Importaciones de concentrado de cobre de China caen un 11% en octubre
-fuente: Reuters
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261110:nL6N46R0RH:1
-
----
-fecha: 2026-11-10 04:12
-emisora: EUA
-titulo: Blue wave, gray forecast
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261110:nNRA2nf4hw:0
-
----
-fecha: 2026-11-10 00:34
-emisora: COBRE
-titulo: BRIEF-Mitsui Kinzoku Co Ltd - Notice Concerning Construction Of A New Copper Foil Plant In Malaysia (Acquisition Of Fixed Assets)
-fuente: Reuters
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261110:nFWN46Q2M2:1
-
----
-fecha: 2026-11-10 00:12
-emisora: KOFUBL
-titulo: FEMSA and KOF Receive Support from Fitch
-fuente: NOTENG
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2nb09o:0
-resumen:
-  The economic conglomerate Fomento Económico (FEMSA) and the bottler Coca-Cola FEMSA
-  (KOF) received ratification of their long-term local credit rating from Fitch Ratings,
-  due to their business position and financial stability.
-
----
-fecha: 2026-11-09 22:43
-emisora: GFNORTEO
-titulo: Grupo Financiero Banorte, S.A.B. De C.V. ADR (OTCQX:GBOOY) dips 3% in past 3 months
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2n9s55:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Financiero
-  Banorte, S.A.B. De C.V. (OTCQX:GBOOY) last traded at $56.36 for a year to date return
-  of 28.1%.
-
----
-fecha: 2026-11-09 22:43
-emisora: KOFUBL
-titulo: Coca-Cola FEMSA S.A.B de CV ADR (NYSE:KOF) climbs 8% in past 3 months
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2n9s1x:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Coca-Cola FEMSA
-  S.A.B de CV (NYSE:KOF) last traded at $117.70 for a year to date return of 27%.
-  Coca-Cola FEMSA S.A.B de CV, has climbed $8.34 (or 7.6%) in the past 3 months to close
-  at $117.70 today. Compared with the BNY Mellon Composite ADR Index which fell 11.4
-  points (or 4.1%) in the past 3 months, this represented a relative price change of nil.
-
----
-fecha: 2026-11-09 22:43
-emisora: OMAB
-titulo: Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB) dips 0.6% in past 3 months
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2n9rrq:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
-  del Centro Norte S.A.B. de C.V. (NASDAQ:OMAB) last traded at $109.74 for a year to date
-  return of 3.8%. Grupo Aeroportuario del Centro Norte S.A.B. de C.V., has dipped 64.0c
-  (or 0.6%) in the past 3 months to close at $109.74 today.
-
----
-fecha: 2026-11-09 22:43
-emisora: PINFRA
-titulo: Promotora Y Operadora de Infraestructura SA ADR (OTC:PUODY) strengthens 1% in past 3 months
-fuente: GLORDP
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261110:nNRA2n9scq:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Promotora Y
-  Operadora de Infraestructura SA (OTC:PUODY) last traded at $321.96 for a year to date
-  return of 9.3%. Promotora Y Operadora de Infraestructura SA, has strengthened $4.69 (or
-  1.5%) in the past 3 months to close at $321.96 today. Compared with the BNY Mellon
-  Composite ADR Index which fell 11.4 points (or 4.1%) in the past 3 months, this
-  represented a relative price change of nil.
-
----
-fecha: 2026-11-09 22:42
-emisora: KIMBERA
-titulo: Kimberly-Clark de Mexico, S.A.B de C.V. ADR (OTC:KCDMY) tumbles 10% in past 3 months
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2n9s8c:0
-
----
-fecha: 2026-11-09 21:32
-emisora: GFNORTEO
-titulo: Past Week: Grupo Financiero Banorte, S.A.B. De C.V. ADR (OTCQX:GBOOY:$56.36) falls for a second consecutive week, a two-week fall of 2.4%; -$1.40 [...
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2n935k:0
-resumen:
-  Past Week: Grupo Financiero Banorte, S.A.B. De C.V. ADR (OTCQX:GBOOY:$56.36) falls for
-  a second consecutive week, a two-week fall of 2.4%; -$1.40 [-2.4%] GLOBAL ROUND UP ADRS
-  AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Financiero Banorte, S.A.B.
-
----
-fecha: 2026-11-09 18:26
-emisora: AC
-titulo: Past Week: Arca Continental SAB de CV (BMV:AC) trades higher, up 4.4%; +MX$9.74 [4.4%]
-fuente: CNBSTR
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2n76zp:0
-resumen:
-  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Arca Continental SAB de CV
-  (BMV:AC MX$231.94), Mexico's largest Beverages company by market cap, has traded higher
-  by MX$9.74 (or 4.4%) in the past week to close at MX$231.94. Compared with the Prices &
-  Quotations Index which rose 2,076.4 points (or 3.0%) in the week, this represented a
-  relative price increase of 1.4%.
-
----
-fecha: 2026-11-09 18:26
-emisora: GFNORTEO
-titulo: Grupo Financiero Banorte SAB de CV (FRA:4FN) inches higher, resistance at 12-day EMA; +25c [+2.6%]
-fuente: CNBSTR
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2n7724:0
-resumen:
-  GERMAN END-OF-DAY STOCK REPORT www.buysellsignals.com MONTERREY, Friday, Nov 06, 2026 -
-  Grupo Financiero Banorte SAB de CV's (FRA:4FN €9.90) stock price climbed 2.6% but fell
-  short of the 12-day Exponential Moving Average [EMA] of €9.91. Compared with the DAX
-  Index which fell 535.9 points (2%) in the day, the relative price increase was 4.6%.
-  The stock last traded at €9.90.
-
----
-fecha: 2026-11-09 18:26
-emisora: MEGACPO
-titulo: Past Week: Megacable Holdings (BMV:MEGA) strengthens 7% on extraordinary volume; +MX$3.63 [6.5%]
-fuente: CNBSTR
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261110:nNRA2n77os:0
-resumen:
-  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Megacable Holdings (BMV:MEGA
-  MX$59.38), Mexico's largest Media company by market cap, has strengthened MX$3.63 (or
-  6.5%) in the past week to close at MX$59.38. Compared with the Prices & Quotations
-  Index which rose 2,076.4 points (or 3.0%) in the week, this represented a relative
-  price increase of 3.5%. The stock rose for a second week on Monday bringing its a
-  two-week rise to MX$5.92 or 11.1%.
-
----
-fecha: 2026-11-09 16:34
-emisora: PETROLEO
-titulo: UPDATE 1-Democratic US senators push for energy permitting bill ahead of key Senate vote
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261109:nL2N46Q10V:1
-
----
-fecha: 2026-11-09 16:30
-emisora: PETROLEO
-titulo: What future course of Hormuz shuttle trade means for crude and products
-fuente: LLOLIS
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261109:nNRA2n61r0:0
-
----
-fecha: 2026-11-09 16:29
-emisora: GMEXICOB
-titulo: Moody's de Mexico SA de CV - Moody’s Local México afirma las calificaciones de Lamosa
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261109:nNDL6TT90W:1
-
----
-fecha: 2026-11-09 16:28
-emisora: PETROLEO
-titulo: US Equity Indexes Recover Post-Election Losses as Growth Sectors Rally Hard While Crude Oil Sinks
-fuente: MARFRA
-tono: negativa
-impacto: alto
-id: lseg:urn:link:webnews:20261109:nNRA2n61bx:0
-
----
-fecha: 2026-11-09 16:28
-emisora: PETROLEO
-titulo: MERCADOS MUNDIALES-Las acciones se disparan ante la caída del petróleo; Nvidia cae en medio de una investigación interna
-fuente: Reuters
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261109:nL5N46Q2UB:1
-
----
-fecha: 2026-11-09 16:27
-emisora: PETROLEO
-titulo: "Biggest oil deal in world history": JD Vance claims US control of Venezuelan reserves, energy dominance
-fuente: WEBCOM
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261109:nNRA2n6202:0
-
----
-fecha: 2026-11-09 16:26
-emisora: GMEXICOB
-titulo: Moody's de Mexico SA de CV - Moody’s Local México retira la calificación de BANOB 22X
-fuente: PUBT
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261109:nNDL7ZxsWD:1
