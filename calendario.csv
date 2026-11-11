@@ -1,9 +1,10 @@
 fecha,emisora,tipo,titulo,fuente
 2026-10-26,BRASIL FEMSAUBD KOFUBL AMXB,Evento,Elecciones presidenciales en Brasil,LSEG: BRL= y .BVSP del 23 y 26-oct; notas del 27-oct
-2026-11-10,AMXB,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 0.27 paid on Nov 11, 2026 going ex on Nov 10, 2026",LSEG
 2026-11-17,WALMEX,Fecha ex de dividendo,"Interim Cash Dividend of gross MXN 0.58 paid on Nov 18, 2026 going ex on Nov 17, 2026",LSEG
 2026-11-27,OMAB,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 6.280255 paid on Nov 30, 2026 going ex on Nov 27, 2026",LSEG
 2026-12-07,KOFUBL,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 1.935 paid on Dec 08, 2026 going ex on Dec 07, 2026",LSEG
 2026-12-08,WALMEX,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 0.58 paid on Dec 09, 2026 going ex on Dec 08, 2026",LSEG
 2027-01-07,KOFUBL,Reporte trimestral,Q4 2026 Coca-Cola Femsa SAB de CV Earnings Release,LSEG
 2027-01-13,FEMSAUBD,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 0.198 paid on Jan 14, 2027 going ex on Jan 13, 2027",LSEG
+2027-01-25,GFNORTEO,Reporte trimestral,Q4 2026 Grupo Financiero Banorte SAB de CV Earnings Release,LSEG
+2027-01-25,GMEXICOB,Reporte trimestral,Q4 2026 Grupo Mexico SAB de CV Earnings Release,LSEG

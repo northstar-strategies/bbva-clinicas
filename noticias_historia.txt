@@ -1,13 +1,176 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
-fecha: 2026-11-10 17:07
-emisora: FED
-titulo: RESUMEN 5-Los responsables de la Fed dejan la puerta abierta a una ronda más rápida de subidas de tipos ante el empeoramiento de la inflación
+fecha: 2026-11-11 17:41
+emisora: MERCADO
+titulo: CFE Fibra E Seeks US$867 Million to Expand Mexico's Power Grid
+fuente: MEXSPA
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261111:nNRA2oase3:0
+
+---
+fecha: 2026-11-11 17:38
+emisora: NVIDIA
+titulo: VISTA INSTANTÁNEA-Nvidia se dispone a destituir a su director ejecutivo, Jensen Huang, según informa el WSJ
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261111:nL5N46S2DS:1
+
+---
+fecha: 2026-11-11 17:13
+emisora: BANXICO
+titulo: Dollar Price in Mexico Today, Wednesday, November 11, 2026: Closing Exchange Rate USD to MXN and Banxico Quotation
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261111:nNRA2oajsm:0
+
+---
+fecha: 2026-11-11 17:09
+emisora: MERCADO
+titulo: GLOBAL MARKETS-Stocks rise on tech gains; Nvidia falls after hours
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261111:nL6N46S19N:3
+resumen:
+  Nasdaq, S&P 500, Dow higher US Treasury market closed for US Veterans Day holiday Oil jumps and dollar strengthens Updates with closing US market levels By Caroline Valetkevitch and Danilo Masoni NEW YORK/MILAN, Nov 11 (Reuters) - Major stock indexes rose on Wednesday, led by gains in technology shares after an upbeat report from CoreWeave lifted optimism about the AI trade, and the dollar strengthened.
+
+---
+fecha: 2026-11-11 16:32
+emisora: NVIDIA
+titulo: Nvidia se dispone a destituir a su director ejecutivo, Jensen Huang, según informa el WSJ
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261111:nL5N46S2A4:1
+
+---
+fecha: 2026-11-11 16:02
+emisora: EUA
+titulo: UPDATE 1-Mexico says crackdown on Asian steel shipments is paying off as US tariff talks advance
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261111:nL2N46S0V7:4
+resumen:
+  Adds more detail from conference, report By Kylie Madry MEXICO CITY, Nov 11 (Reuters) - Mexico is working to block steel from China and other countries from being rerouted through Mexico into the US under North America's trade pact, a Mexican official said on Wednesday, as Mexico presses Washington for relief from steel, aluminum and auto tariffs.
+
+---
+fecha: 2026-11-11 16:01
+emisora: NVIDIA
+titulo: DÍA DE NEGOCIACIÓN-El optimismo sobre la IA disipa los temores de una subida de tasas
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261111:nL5N46S274:1
+
+---
+fecha: 2026-11-11 15:26
+emisora: NVIDIA
+titulo: BOLSA DE EEUU-Las bolsas cierran al alza, ya que los resultados de CoreWeave disipan las preocupaciones sobre el gasto en IA
 fuente: Reuters
 tono: positiva
-relevancia: 6
-id: lseg:urn:newsml:reuters.com:20261110:nL5N46R1S9:6
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261111:nL5N46S261:1
+
+---
+fecha: 2026-11-11 15:07
+emisora: MERCADO
+titulo: Peso mexicano se estabiliza en torno a 18.60/dlr, bolsa toca nuevo récord máximo
+fuente: Reuters
+tono: positiva
+relevancia: 14
+id: lseg:urn:newsml:reuters.com:20261111:nL2N46S00A:1
+resumen:
+  CIUDAD DE MÉXICO, 11 nov (Reuters) - El peso mexicano se estabilizó el miércoles en torno a 18.60 unidades, en medio de un avance global del dólar, mientras los inversionistas continúan digiriendo datos de inflación en Estados Unidos mayores a lo esperado y comentarios restrictivos de funcionarios de la Reserva Federal. * La moneda local MXN= cotizaba en 18.6015 por dólar en la recta final de los negocios, prácticamente sin cambios frente a su precio de referencia del martes, a medida que los mercados mantienen…
+
+---
+fecha: 2026-11-11 14:30
+emisora: PETROLEO
+titulo: Hokchi Energy to drill two exploratory wells in shallow Gulf of Mexico waters
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261111:nL6N46S166:2
+
+---
+fecha: 2026-11-11 14:19
+emisora: ARGENTINA
+titulo: Tesoro argentino coloca equivalente a 5.741 mln dlr en licitación de títulos
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261111:nL2N46S0SS:1
+
+---
+fecha: 2026-11-11 14:00
+emisora: EUA
+titulo: México afirma que las medidas restrictivas contra las importaciones de acero asiático están dando sus frutos a medida que avanzan las negociaciones sobre aranceles con EEUU
+fuente: Reuters
+tono: positiva
+relevancia: 12
+id: lseg:urn:newsml:reuters.com:20261111:nL5N46S227:1
+resumen:
+  Por Kylie Madry CIUDAD DE MÉXICO, 11 nov (Reuters) - México está trabajando para garantizar que ningún acero procedente de China u otros países se desvíe a través de su territorio hacia Estados Unidos al amparo del acuerdo comercial de América del Norte, según declaró el miércoles un alto funcionario mexicano de Comercio, en un momento en que México presiona a Washington para que le exima de los aranceles sobre el acero, el aluminio y los automóviles.
+
+---
+fecha: 2026-11-11 13:46
+emisora: NVIDIA
+titulo: US STOCKS-Stocks climb as CoreWeave results ease AI spending concerns
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261111:nL6N46S14H:5
+
+---
+fecha: 2026-11-11 13:24
+emisora: EUA
+titulo: Migrants trek north through Mexico, buoyed by US election result
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261111:nL6N46S12O:5
+resumen:
+  Migrants leave from Tapachula near Guatemala Many stranded there after entry to US blocked 'We believe Democrats will help us,' one says By Damian Sanchez and Lizbeth Diaz TAPACHULA, Mexico, Nov 11 (Reuters) - More than a thousand migrants were walking northward on Wednesday in a caravan through southern Mexico, spurred by last week's Democratic victory in US midterm elections, which raised hopes that US immigration policies could become more welcoming.
+
+---
+fecha: 2026-11-11 09:12
+emisora: MERCADO
+titulo: MERCADOS A.LATINA-Monedas operan mixtas en medio de nueva alza del dólar a nivel global
+fuente: Reuters
+tono: positiva
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261111:nL2N46S0FO:1
+
+---
+fecha: 2026-11-11 08:41
+emisora: MEGACPO
+titulo: From Grupo México to Megacable: Seven Companies on the BMV Set Their Sights on Acquisitions
+fuente: CENAFT
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:newsroom:20261111:nNRA2o42mn:0
+
+---
+fecha: 2026-11-11 05:07
+emisora: COBRE
+titulo: METALES BÁSICOS-El cobre repunta a medida que disminuyen las preocupaciones sobre la IA
+fuente: Reuters
+tono: positiva
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261111:nL6N46S0P5:1
+
+---
+fecha: 2026-11-11 01:11
+emisora: MERCADO
+titulo: EMERGING MARKETS-Asian FX slips as dollar firms on rate-hike bets, AI stocks extend recovery
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261111:nL3N46S0G4:6
 
 ---
 fecha: 2026-11-10 16:56
@@ -17,33 +180,6 @@ fuente: Reuters
 tono: neutral
 relevancia: 9
 id: lseg:urn:newsml:reuters.com:20261110:nL6N46R1EX:3
-
----
-fecha: 2026-11-10 16:32
-emisora: BRASIL
-titulo: Brazil government to present bill this week to secure fiscal savings in 2027, G1 reports
-fuente: Reuters
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:reuters.com:20261110:nS0N46N03T:1
-
----
-fecha: 2026-11-10 16:13
-emisora: MERCADO
-titulo: Mexico's Plan: A Shield Against China's Unfair Steel Practices, According to Alacero
-fuente: NOTENG
-tono: positiva
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261110:nNRA2noz2f:0
-
----
-fecha: 2026-11-10 16:01
-emisora: COBRE
-titulo: BRIEF-American Barrick Gold Corp - S-1
-fuente: Reuters
-tono: neutral
-relevancia: 4
-id: lseg:urn:newsml:reuters.com:20261110:nFWN46R26W:1
 
 ---
 fecha: 2026-11-10 15:49
