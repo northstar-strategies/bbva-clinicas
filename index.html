@@ -8,6 +8,9 @@
 <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/northstar-strategies/bbva-clinicas@main/logo%20star.svg">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.2.3/dist/lightweight-charts.standalone.production.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
 <style>
 :root{
   --n900:#060F26; --n850:#081531; --n800:#0A1834; --n700:#0D1E3F; --n600:#102450; --n500:#133062;
@@ -1536,6 +1539,187 @@ td{padding:11px 12px} th,thead th{padding:11px 12px}
 .el-lim li+li{margin-top:5px}
 .el-liga{display:inline-block;margin:0 0 12px;font-size:.8125rem;color:#D4EDFC}
 @media (prefers-reduced-motion:reduce){.el-hero{animation:none}}
+
+/* ═══════════ v7.0 · PULIDO ═══════════ */
+body{font-variant-numeric:tabular-nums}
+/* Tarjetas físicas (KPI del Resumen y de Dividendos): se inclinan hacia el cursor hasta 4°, la sombra se mueve con la luz, un brillo
+   sigue al puntero y al salir regresan con resorte. Solo con ratón; en pantallas táctiles, una presión leve. */
+#p-dash .kpi,#dvKpis .kpi{--tx:0;--ty:0;--lx:50%;--ly:0%}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  #p-dash .kpi,#dvKpis .kpi,#p-dash .kpi:hover,#dvKpis .kpi:hover{transform:perspective(900px) rotateX(calc(var(--ty)*-4deg)) rotateY(calc(var(--tx)*4deg))}
+  /* la animación de entrada se queda con «both» y su último cuadro taparía la inclinación: con «backwards» suelta el transform al terminar */
+  #p-dash .kpi,#dvKpis .kpi{animation-fill-mode:backwards;transition:transform .55s cubic-bezier(.34,1.56,.64,1),box-shadow .35s var(--crit),border-color .2s var(--crit)}
+  #p-dash .kpi.toca,#dvKpis .kpi.toca{transition:transform .09s linear,box-shadow .2s var(--crit);
+    box-shadow:calc(var(--tx)*-10px) calc(var(--ty)*-10px + 16px) 34px -14px rgba(0,0,0,.62),var(--hair)}
+  #p-dash .kpi::after,#dvKpis .kpi::after{content:"";display:block;position:absolute;inset:0;width:auto;height:auto;border-radius:inherit;pointer-events:none;animation:none;
+    opacity:0;transition:opacity .3s var(--crit);background:radial-gradient(260px circle at var(--lx) var(--ly),rgba(212,237,252,.13),transparent 62%)}
+  #p-dash .kpi.toca::after,#dvKpis .kpi.toca::after{opacity:1}
+}
+@media (hover:none){ #p-dash .kpi:active,#dvKpis .kpi:active{transform:scale(.98);transition:transform .12s var(--crit)} }
+
+/* ═══════════ v7.0 · HISTORIA ═══════════ */
+.hs-portada{position:relative;overflow:hidden;padding:36px 28px 30px;margin-bottom:16px;border-radius:var(--r-lg);
+  background:radial-gradient(120% 150% at 88% 0%,rgba(20,100,165,.5),rgba(7,33,70,.25) 55%,transparent),var(--s1);box-shadow:var(--hair)}
+.hs-estrella{position:absolute;right:7%;top:-6px;width:150px;height:150px;fill:var(--ice);opacity:.18;will-change:transform}
+.hs-sobre{margin:0 0 8px;font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ice-2)}
+.hs-titulo{margin:0;max-width:17ch;font-family:var(--display);font-size:clamp(1.75rem,4.4vw,3rem);line-height:1.04;font-weight:600;letter-spacing:-.035em}
+.hs-sub{margin:14px 0 0;font-size:.875rem;color:var(--txt-2);font-variant-numeric:tabular-nums}
+.hs-cols{display:grid;grid-template-columns:minmax(300px,38%) minmax(0,1fr);gap:20px;align-items:start}
+.hs-graf{height:300px;position:relative} .hs-graf>div{height:100%}
+.hs-lee.tv-ley{position:static;margin-top:10px;pointer-events:auto;gap:6px 14px;color:var(--txt-2);font-variant-numeric:tabular-nums}
+.hs-der{position:relative;display:flex;flex-direction:column;gap:12px;padding-left:26px}
+.hs-linea{position:absolute;left:8px;top:8px;bottom:8px;width:2px;border-radius:2px;background:linear-gradient(var(--ice),var(--blue));opacity:.5;transform-origin:50% 0}
+.hs-c{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:8px;width:100%;text-align:left;font:inherit;color:inherit;cursor:pointer;border:0;
+  padding:14px 16px;border-radius:14px;background:var(--s1);box-shadow:var(--hair);transition:background .18s var(--crit),box-shadow .18s var(--crit)}
+.hs-c:hover,.hs-c.act{background:var(--s2);box-shadow:inset 0 0 0 1px rgba(212,237,252,.24)}
+.hs-c:focus-visible{outline:2px solid #4A9DF0;outline-offset:2px}
+.hs-nodo{position:absolute;left:-23px;top:19px;width:10px;height:10px;border-radius:50%;background:var(--txt-3);box-shadow:0 0 0 3px var(--bg)}
+.hs-c.up .hs-nodo{background:var(--pos)} .hs-c.dn .hs-nodo{background:var(--neg)} .hs-c.cero .hs-nodo{background:var(--ice)}
+.hs-f b{font-size:.9375rem;font-weight:600} .hs-f b::first-letter{text-transform:uppercase}
+.hs-f i{font-style:normal;font-size:.75rem;color:var(--txt-3);margin-left:8px}
+.hs-nums{display:flex;flex-wrap:wrap;gap:6px 24px}
+.hs-nums>span{display:flex;flex-direction:column;gap:1px}
+.hs-nums u,.hs-em u{text-decoration:none;font-size:.6875rem;color:var(--txt-3)}
+.hs-nums b{font-size:1.125rem;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.hs-em{font-size:.8125rem;color:var(--txt-2)} .hs-em u{margin-right:8px} .hs-em b{font-variant-numeric:tabular-nums}
+.hs-no{font-size:.8125rem;line-height:1.45;color:var(--txt-2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hs-c.grande{padding:20px;background:linear-gradient(160deg,rgba(20,100,165,.32),rgba(20,100,165,.05) 60%),var(--s1)}
+.hs-c.grande .hs-f b{font-size:1.125rem} .hs-c.grande .hs-nums b{font-size:1.5rem}
+.hs-sep{display:flex;align-items:center;gap:10px;font-size:.6875rem;color:var(--txt-4)} .hs-sep::before,.hs-sep::after{content:"";flex:1;height:1px;background:var(--line)}
+#v-historia.sin-gsap .hs-izq{position:sticky;top:112px}
+@media (max-width:768px){
+  .hs-portada{padding:24px 18px 22px} .hs-estrella{width:96px;height:96px;right:2%}
+  .hs-cols{display:block}
+  /* sin pin: la gráfica chica se queda pegada arriba */
+  .hs-izq,#v-historia.sin-gsap .hs-izq{position:sticky;top:56px;z-index:6;margin:0 -16px 12px}
+  .hs-izq .card{padding:8px 12px 10px;border:0;border-radius:0;background:rgba(5,13,32,.94);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+  .hs-izq .card-h{display:none} .hs-graf{height:120px} .hs-lee.tv-ley{margin-top:4px;font-size:.6875rem}
+  .hs-der{padding-left:22px} .hs-nodo{left:-19px}
+}
+
+/* ═══════════ v7.0 · GRÁFICA (Mercado) ═══════════
+   Densa, con cifras tabulares y en escala de grises; el color solo dice si sube o baja. Paleta North Star. */
+.gf{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:16px;align-items:start}
+.gf-main{padding:14px 16px 12px}
+.gf-main:fullscreen{background:var(--bg);padding:18px 22px;display:flex;flex-direction:column} .gf-main:fullscreen .gf-chart{flex:1;height:auto}
+.gf-bar,.gf-pie{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.gf-bar{margin-bottom:10px} .gf-bar .search{flex:1 1 150px;min-width:150px} #grafComp[hidden]{display:none} .gf-bar .btn svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2}
+.gf-chart{height:460px;position:relative} .gf-chart>div{height:100%}
+.gf-pie{margin-top:8px}
+.gf-atr{font-size:.6875rem;color:var(--txt-4);text-decoration:none} .gf-atr:hover{color:var(--txt-2);text-decoration:underline}
+.gf-lado{display:flex;flex-direction:column;gap:16px;min-width:0}
+.gf-it{display:grid;grid-template-columns:22px minmax(78px,1fr) auto 50px 58px;align-items:center;gap:6px;width:100%;padding:7px 12px;border:0;background:none;
+  font:inherit;font-size:.75rem;color:var(--txt-2);text-align:right;font-variant-numeric:tabular-nums;cursor:pointer;border-top:1px solid var(--line)}
+.gf-it:hover{background:rgba(255,255,255,.04)} .gf-it.on{background:rgba(20,100,165,.3);color:var(--txt)}
+.gf-it b{text-align:left;font-weight:600;color:var(--txt);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gf-it .lg,.gf-ft .lg{flex:none;position:relative;width:22px;height:22px;border-radius:6px;display:grid;place-items:center;overflow:hidden;background:hsl(var(--h) 45% 32%)}
+.gf-it .lg b,.gf-ft .lg b{font-size:7.5px;color:#EAF3FF} .gf-it .lg img,.gf-ft .lg img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:2px;background:#fff}
+.gf-ft{display:flex;align-items:center;gap:10px} .gf-ft .lg{width:34px;height:34px;border-radius:9px} .gf-ft .lg b{font-size:10px}
+.gf-ft>div{min-width:0} .gf-ft>div b{display:block;font-size:.9375rem;font-weight:600} .gf-ft>div span{display:block;font-size:.75rem;color:var(--txt-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gf-px{margin-top:12px;font-family:var(--display);font-size:2rem;font-weight:600;letter-spacing:-.03em;line-height:1.1;font-variant-numeric:tabular-nums}
+.gf-ch{font-size:.875rem;font-weight:600;font-variant-numeric:tabular-nums}
+.gf-est{display:flex;align-items:center;gap:7px;margin-top:10px;font-size:.75rem;color:var(--txt-3)}
+.gf-est i{width:7px;height:7px;border-radius:50%;background:var(--txt-4)} .gf-est i.ab{background:var(--pos)}
+.gf-f p{margin:10px 0 0;font-size:.8125rem;line-height:1.5;color:var(--txt-2)} .gf-f .btn{margin-top:10px}
+@media (max-width:1100px){ .gf{grid-template-columns:1fr} }
+@media (max-width:768px){
+  .gf-main{padding:12px 12px 10px} .gf-chart{height:360px}
+  .gf-bar .search{flex:1 0 100%;max-width:none}
+  .gf-pie .seg{flex:1 1 100%} .gf-pie .spacer{display:none}
+  .gf-it{padding:9px 14px;grid-template-columns:22px minmax(0,1fr) auto 54px 60px}
+}
+
+/* ═══════════ v7.0 · DIVIDENDOS ═══════════ */
+.esq{min-height:86px;border-radius:var(--r);background:linear-gradient(100deg,rgba(255,255,255,.04) 30%,rgba(255,255,255,.09) 50%,rgba(255,255,255,.04) 70%);
+  background-size:300% 100%;animation:esqLuz 1.4s linear infinite}
+@keyframes esqLuz{from{background-position:100% 0}to{background-position:0 0}}
+.dv-regla{margin:0 0 14px;padding:10px 14px;border-radius:var(--r-sm);background:rgba(20,100,165,.16);box-shadow:var(--hair);font-size:.8125rem;color:var(--txt-2)}
+.dv-ley{display:inline-flex;align-items:center;gap:6px;font-size:.6875rem;color:var(--txt-3)}
+.dv-ley i{width:10px;height:10px;border-radius:3px;margin-left:8px;background:rgba(255,255,255,.16)} .dv-ley i.h{background:var(--blue);margin-left:0}
+.dv-mes+.dv-mes{margin-top:18px}
+.dv-mes h4{margin:0 0 8px;font-size:.8125rem;font-weight:600;text-transform:capitalize;color:var(--txt-2)}
+.dv-cab,.dv-sem{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.dv-cab span{font-size:.6875rem;color:var(--txt-3);padding:0 6px 4px}
+.dv-sem+.dv-sem{margin-top:6px}
+.dv-dia{min-height:74px;padding:6px;border-radius:10px;background:rgba(255,255,255,.03);box-shadow:var(--hair);display:flex;flex-direction:column;gap:4px;min-width:0}
+.dv-dia.fuera{opacity:.35} .dv-dia.fer{background:repeating-linear-gradient(135deg,rgba(255,255,255,.03) 0 6px,transparent 6px 12px)}
+.dv-dia.hoy{box-shadow:inset 0 0 0 1.5px var(--ice)}
+.dv-n{font-size:.6875rem;color:var(--txt-3);font-variant-numeric:tabular-nums} .dv-n i{display:none;font-style:normal}
+.dv-dia.hoy .dv-n{color:var(--ice);font-weight:600}
+.dv-chip{display:flex;align-items:center;gap:5px;width:100%;min-width:0;padding:3px 6px 3px 3px;border:0;border-radius:8px;cursor:pointer;font:inherit;
+  font-size:.6875rem;color:var(--txt);background:rgba(255,255,255,.08);transition:transform .18s var(--crit),background .18s var(--crit)}
+.dv-chip.h{background:rgba(20,100,165,.55)} .dv-chip.pago{background:transparent;box-shadow:inset 0 0 0 1px rgba(255,255,255,.16)}
+.dv-chip.h.pago{box-shadow:inset 0 0 0 1px var(--blue)}
+.dv-chip.on{box-shadow:inset 0 0 0 1.5px var(--ice)}
+.dv-chip:active{transform:scale(.97)}
+.dv-chip .lg{flex:none;position:relative;width:18px;height:18px;border-radius:5px;display:grid;place-items:center;overflow:hidden;background:hsl(var(--h) 45% 32%)}
+.dv-chip .lg b{font-size:7px;color:#EAF3FF} .dv-chip .lg img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:2px;background:#fff}
+.dv-chip>b{font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis} .dv-chip em{margin-left:auto;font-style:normal;font-size:.625rem;color:var(--txt-3)}
+.dv-det{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}
+.dv-det p{flex-basis:100%;margin:2px 0 4px;font-size:.875rem;line-height:1.5;color:var(--txt)}
+.dv-det dl{flex-basis:100%;display:grid;grid-template-columns:1fr auto;gap:6px 12px;margin:0;font-size:.8125rem}
+.dv-det dt{color:var(--txt-3)} .dv-det dd{margin:0;text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.dv-cj{display:grid;grid-template-columns:minmax(0,1fr) auto 58px;gap:10px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--line);font-size:.8125rem}
+.dv-cj span{color:var(--txt-2);min-width:0} .dv-cj b,.dv-cj em{font-style:normal;text-align:right;font-variant-numeric:tabular-nums} .dv-cj em{color:var(--txt-3)}
+.dv-cj.mal em{color:var(--neg);font-weight:600}
+.dv-h{display:grid;grid-template-columns:150px minmax(0,1fr) minmax(170px,auto);gap:14px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.dv-h:last-child{border-bottom:0}
+.dv-bar{display:flex;align-items:flex-end;gap:3px;height:34px;min-width:0;overflow:hidden}
+.dv-bar i{flex:1 1 0;max-width:10px;min-width:2px;border-radius:2px 2px 0 0;background:var(--blue)} .dv-bar i.fut{background:var(--ice);opacity:.7}
+.dv-ht{font-size:.8125rem;color:var(--txt-2);text-align:right;font-variant-numeric:tabular-nums} .dv-ht b{color:var(--txt)} .dv-ht em{display:block;font-style:normal;font-size:.6875rem;color:var(--txt-3)}
+@media (max-width:768px){
+  /* Calendario como lista por semana: solo los días con dividendo */
+  .dv-cab{display:none} .dv-sem{display:block} .dv-sem+.dv-sem{margin-top:0}
+  .dv-dia{min-height:0;flex-direction:row;flex-wrap:wrap;align-items:center;margin-bottom:6px} .dv-dia.vac,.dv-dia.fuera{display:none}
+  .dv-n{flex-basis:100%} .dv-n i{display:inline}
+  .dv-chip{width:auto;flex:1 1 44%}
+  .dv-h{grid-template-columns:1fr;gap:6px} .dv-ht{text-align:left}
+}
+
+/* ═══════════ v7.0 · CELULAR (hasta 768 px) ═══════════
+   La página hace el scroll vertical; las tablas, solo el horizontal. El escritorio queda igual. */
+.mac .nc,.mac .mv-c,.mac tr.mac-g{display:none}
+.noti-chips{display:contents} #notiCtl .spacer{order:2} #notiCtl .search{order:3} #segNotiTono{order:1} #segNotiSym{order:4}
+@media (max-width:768px){
+  .tbl-wrap,#mdlTable{max-height:none!important;overflow-y:visible;overflow-x:auto}
+  #title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .topbar>div:nth-child(2){min-width:0}
+  .seg{max-width:100%;overflow-x:auto;scrollbar-width:none} .seg::-webkit-scrollbar{display:none} .seg button{flex:none}
+  .tv-ley{right:8px} .tv-ley .it{white-space:normal;min-width:0}
+  /* Tablas de más de 4 columnas: emisora a la izquierda y dos cifras a la derecha; el resto se abre con un toque */
+  table.tm,table.tm tbody{display:block;width:100%}
+  table.tm thead{display:none}
+  table.tm tr{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;column-gap:14px;padding:11px 16px;
+    border-bottom:1px solid var(--line);cursor:pointer}
+  table.tm td{display:none;padding:0;border:0;text-align:right}
+  table.tm td:first-child{display:block;grid-area:1/1;min-width:0;text-align:left;white-space:normal;overflow:hidden}
+  table.tm td.m1{display:block;grid-area:1/2}
+  table.tm td.m2{display:block;grid-area:1/3;min-width:62px}
+  table.tm tr.ab{row-gap:7px;background:rgba(255,255,255,.035)}
+  table.tm tr.ab td:not(:first-child):not(.m1):not(.m2){display:flex;justify-content:space-between;align-items:center;gap:14px;
+    grid-column:1/-1;font-size:.75rem;white-space:normal}
+  table.tm tr.ab td:not(:first-child):not(.m1):not(.m2)::before{content:attr(data-l);font-family:var(--sans);color:var(--txt-3);text-align:left}
+  /* Macro: grupos, nombre corto y «mueve a» en chips de dos líneas como máximo */
+  .mac .nl,.mac .mv-t{display:none} .mac .nc{display:inline}
+  .mac tr.mac-g{display:table-row}
+  .mac tr.mac-g td{padding:12px 6px 4px;border-bottom:0;font-size:.6875rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--txt-3)}
+  .mac .mv-c{display:flex;flex-wrap:wrap;gap:3px 4px;max-height:2.7em;overflow:hidden;margin-top:3px}
+  .mac .mv-c i{font-style:normal;font-size:.625rem;line-height:1.25;padding:1px 6px;border-radius:20px;background:rgba(255,255,255,.07);color:var(--txt-2)}
+  /* Noticias: buscador y filtros pegados bajo la barra superior; filtros en una fila con scroll horizontal */
+  #notiCtl{position:sticky;top:56px;z-index:40;margin:0 -16px 10px;padding:8px 16px;gap:8px;background:rgba(5,13,32,.92);
+    backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+  #notiCtl .search{order:-1;flex:1 0 100%;max-width:none;min-width:0}
+  #notiCtl .spacer{display:none}
+  .noti-chips{display:flex;gap:8px;flex:1 0 100%;min-width:0;overflow-x:auto;scrollbar-width:none} .noti-chips::-webkit-scrollbar{display:none}
+  .noti-chips .seg{flex:none;max-width:none;overflow:visible}
+  #v-noticias .expl{margin-bottom:8px} #v-noticias .el-liga{margin-bottom:8px;font-size:.75rem}
+  body[data-vista="noticias"] .alertas{flex-wrap:nowrap;gap:10px;padding:8px 10px;margin-bottom:10px}
+  body[data-vista="noticias"] .alertas .al-txt{flex-basis:auto}
+  body[data-vista="noticias"] .alertas .al-txt>span,body[data-vista="noticias"] .alertas .al-txt small{display:none}
+  body[data-vista="noticias"] .alertas .al-txt b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  body[data-vista="noticias"] .alertas .btn{order:0;width:auto;flex:none}
+  body[data-vista="noticias"] .alertas .al-ico{width:26px;height:26px}
+}
 </style>
 </head>
 <body>
@@ -1583,7 +1767,9 @@ td{padding:11px 12px} th,thead th{padding:11px 12px}
     <nav class="nav" id="nav">
       <div class="nav-group">Gestión</div>
       <button class="nav-item on" data-v="portafolio"><svg class="i ic"><use href="#i-dash"/></svg>Portafolio</button>
+      <button class="nav-item" data-v="historia"><svg class="i ic"><use href="#i-cal"/></svg>Historia</button>
       <button class="nav-item" data-v="operaciones"><svg class="i ic"><use href="#i-swap"/></svg>Operaciones<span class="badge" id="bdgOps">0</span></button>
+      <button class="nav-item" data-v="dividendos"><svg class="i ic"><use href="#i-cash"/></svg>Dividendos</button>
       <button class="nav-item" data-v="modelo"><svg class="i ic"><use href="#i-target"/></svg>Modelo de cartera</button>
       <button class="nav-item" data-v="simulador"><svg class="i ic"><use href="#i-scale"/></svg>Simulador de órdenes</button>
       <button class="nav-item" data-v="noticias"><svg class="i ic"><use href="#i-news"/></svg>Noticias<span class="badge" id="bdgNoti">0</span></button>
@@ -1663,8 +1849,8 @@ td{padding:11px 12px} th,thead th{padding:11px 12px}
             <div class="card"><div class="card-h"><h3>Composición</h3><div class="spacer"></div><div class="seg" id="segDonut"></div></div>
               <div class="chart-box" style="height:250px"><canvas id="chDonut"></canvas></div><p class="chart-nota" id="donutNota"></p><hr class="sep"><div id="compBreak"></div></div>
           </div>
-          <div class="card" style="margin-bottom:14px"><div class="card-h"><h3>La historia del portafolio, día por día</h3><span class="hint">desde el día 0 · clic en un día</span><div class="spacer"></div>
-              <span class="hist-flechas"><button type="button" class="btn sm" data-hrail="ant" aria-label="Días anteriores">‹</button><button type="button" class="btn sm" data-hrail="sig" aria-label="Días siguientes">›</button></span></div>
+          <div class="card" style="margin-bottom:14px"><div class="card-h"><h3>La historia del portafolio, día por día</h3><span class="hint">últimos 5 cierres · clic en un día</span><div class="spacer"></div>
+              <a class="el-liga" style="margin:0" href="#/historia">Ver la historia completa →</a></div>
             <div class="hist-rail" id="histRail"></div><p class="chart-nota" id="histNota"></p></div>
           <div class="grid g3" style="margin-bottom:14px">
             <div class="card"><div class="card-h"><h3>Exposición por moneda</h3><span class="hint">sum of parts · cartera contra MEXTRAC09</span></div>
@@ -1859,6 +2045,39 @@ c 810 FEMSAUBD a 202.18</pre>
         </div>
       </section>
 
+      <!-- ══════════ HISTORIA (v7.0) ══════════ -->
+      <section class="view" id="v-historia">
+        <header class="hs-portada">
+          <svg class="hs-estrella" viewBox="0 0 120 120" aria-hidden="true"><path d="M60 4 68 52 116 60 68 68 60 116 52 68 4 60 52 52Z"/><circle cx="60" cy="60" r="5"/></svg>
+          <p class="hs-sobre" id="hsSobre">Día 0</p>
+          <h2 class="hs-titulo" id="hsTitulo">La historia del portafolio, día por día</h2>
+          <p class="hs-sub" id="hsSub"></p>
+        </header>
+        <div class="pill-row"><div class="seg" id="segHs"></div></div>
+        <div class="hs-cols" id="hsCols">
+          <aside class="hs-izq" id="hsIzq"><div class="card"><div class="card-h"><h3><svg class="i"><use href="#i-chart"/></svg>Acumulado: cartera contra MEXTRAC09</h3></div>
+            <div class="hs-graf"><div id="chHs"></div></div><div class="hs-lee tv-ley" id="hsLee"></div></div></aside>
+          <div class="hs-der" id="hsDer"></div>
+        </div>
+      </section>
+
+      <!-- ══════════ DIVIDENDOS (v7.0) ══════════ -->
+      <section class="view" id="v-dividendos">
+        <div class="grid g4 stg dv-kpis" style="margin-bottom:14px" id="dvKpis"></div>
+        <p class="dv-regla">Para cobrarlo hay que tener los títulos al cierre del día hábil anterior a la fecha ex.</p>
+        <div class="grid g23" style="margin-bottom:14px">
+          <div class="card"><div class="card-h"><h3><svg class="i"><use href="#i-cal"/></svg>Calendario</h3><span class="hint">fecha ex y fecha de pago</span><div class="spacer"></div>
+              <span class="dv-ley"><i class="h"></i>en cartera<i class="u"></i>resto del universo</span></div>
+            <div id="dvCal"></div></div>
+          <div class="card"><div class="card-h"><h3>Detalle</h3><span class="hint">toque un dividendo del calendario o de la tabla</span></div><div id="dvDet"></div>
+            <hr class="sep"><div class="card-h" style="margin-bottom:8px"><h3>Caja proyectada</h3></div><div id="dvCaja"></div></div>
+        </div>
+        <div class="card pad0" style="margin-bottom:14px">
+          <div class="card-h" style="padding:18px 19px 0"><h3>Dividendos de la gestión</h3><span class="hint" id="dvHint"></span><div class="spacer"></div><div class="seg" id="segDv"></div></div>
+          <div class="tbl-wrap"><table id="tDv"></table></div></div>
+        <div class="card"><div class="card-h"><h3>Historial por emisora</h3><span class="hint">cinco años · por acción</span></div><div id="dvHist"></div></div>
+      </section>
+
       <!-- ══════════ MODELO ══════════ -->
       <section class="view" id="v-modelo">
         <div class="tabs" data-tabs="modelo">
@@ -2025,11 +2244,10 @@ c 810 FEMSAUBD a 202.18</pre>
       </section>
       <!-- ══════════ NOTICIAS ══════════ -->
       <section class="view" id="v-noticias">
-        <div class="pill-row">
-          <div class="seg" id="segNotiTono"></div>
+        <div class="pill-row" id="notiCtl">
+          <div class="noti-chips"><div class="seg" id="segNotiTono"></div><div class="seg" id="segNotiSym"></div></div>
           <div class="spacer"></div>
           <div class="search"><svg class="i"><use href="#i-search"/></svg><input id="qNoti" placeholder="Buscar en las noticias..."></div>
-          <div class="seg" id="segNotiSym"></div>
         </div>
         <a class="el-liga" href="#" onclick="UI.go('mercado');UI.goPane('mercado','elec');window.scrollTo({top:0});return false">Elecciones de EUA: cómo reaccionó cada mercado, con sus fuentes →</a>
         <div id="notiBody"></div>
@@ -2039,6 +2257,7 @@ c 810 FEMSAUBD a 202.18</pre>
       <section class="view" id="v-mercado">
         <div class="tabs" data-tabs="mercado">
           <button class="tab on" data-p="px">Precios</button>
+          <button class="tab" data-p="graf">Gráfica</button>
           <button class="tab" data-p="fedw">Fed Watch</button>
           <button class="tab" data-p="elec">Elecciones EUA</button>
           <button class="tab" data-p="feed">Fuente de datos</button>
@@ -2052,6 +2271,27 @@ c 810 FEMSAUBD a 202.18</pre>
               <div class="search"><svg class="i"><use href="#i-search"/></svg><input id="qPx" placeholder="Buscar emisora o sector..."></div>
               <div class="seg" id="segPxUni"></div></div>
             <div class="tbl-wrap" style="max-height:680px"><table id="tPx"></table></div>
+          </div>
+        </div>
+        <div class="pane" id="p-graf">
+          <div class="gf">
+            <div class="card gf-main" id="grafCaja">
+              <div class="gf-bar">
+                <div class="search"><svg class="i"><use href="#i-search"/></svg><input id="grafQ" list="grafOpc" placeholder="Buscar emisora: símbolo o nombre" autocomplete="off" aria-label="Buscar emisora"></div><datalist id="grafOpc"></datalist>
+                <div class="seg" id="segGrafTipo"></div>
+                <button type="button" class="btn sm" id="grafComp" aria-pressed="false">Comparar con MEXTRAC09</button>
+                <div class="spacer"></div>
+                <button type="button" class="btn sm" id="grafFull" title="Pantalla completa" aria-label="Pantalla completa"><svg class="i" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+              </div>
+              <div class="gf-chart"><div id="chGraf"></div></div>
+              <div class="gf-pie"><div class="seg" id="segGrafRango"></div><div class="spacer"></div>
+                <a class="gf-atr" href="https://www.tradingview.com/" target="_blank" rel="noopener">Gráficas: TradingView Lightweight Charts</a></div>
+              <p class="chart-nota" id="grafNota"></p>
+            </div>
+            <aside class="gf-lado">
+              <div class="card pad0"><div class="card-h" style="padding:16px 18px 0;margin-bottom:6px"><h3>Lista</h3><span class="hint">un clic carga la gráfica</span></div><div id="grafLista"></div></div>
+              <div class="card" id="grafFicha"></div>
+            </aside>
           </div>
         </div>
         <div class="pane" id="p-fedw">
@@ -2883,6 +3123,8 @@ const esc   = s => String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','
 // Disponible fuera del módulo UI, que es donde vive su gemela interna.
 const icono = n => `<svg class="i"><use href="#i-${n}"/></svg>`;
 
+// v7.0: el mismo esqueleto de carga en todas las secciones
+const CARGA='<div class="esq" role="status" aria-label="Cargando"></div>';
 function toast(msg, kind='inf'){
   const el=document.createElement('div'); el.className='toast '+kind;
   el.innerHTML=`<span>${kind==='ok'?'✓':kind==='err'?'✕':'ℹ'}</span><span>${esc(msg)}</span>`;
@@ -5133,18 +5375,21 @@ const Sobregiro={
    por moneda de cada emisora (sotp.csv) y calendario (calendario.csv). Ruta relativa en GitHub Pages; si no, raw.githubusercontent. */
 const Ctx=(()=>{
   const RAW='https://raw.githubusercontent.com/northstar-strategies/bbva-clinicas/main/';
-  const D={ohlc:{}, macro:{}, sotp:{}, cal:[], hist:[], fw:[], listo:false};
+  const D={ohlc:{}, macro:{}, sotp:{}, cal:[], hist:[], fw:[], div:[], divH:[], listo:false};
   const filas=t=>{ const R=IO.parseCSV(String(t||'').trim()); if(R.length<2) return []; const H=R[0].map(h=>String(h).trim());
     return R.slice(1).filter(r=>r.length>1).map(r=>Object.fromEntries(H.map((h,i)=>[h,r[i]??'']))); };
   async function texto(f){
     if(/^https?:$/.test(location.protocol)){ try{ const r=await fetch(f+'?_ts='+Date.now(),{cache:'no-store'}); if(r.ok) return r.text(); }catch(e){} }
     const r=await fetch(RAW+f+'?_ts='+Date.now(),{cache:'no-store'}); return r.ok?r.text():''; }
   async function cargar(){
-    const [o,m,s,c,h,fw]=await Promise.all(['ohlc.csv','macro.csv','sotp.csv','calendario.csv','noticias_historia.txt','fedwatch.csv'].map(f=>texto(f).catch(()=>'')));
+    const [o,m,s,c,h,fw,dv,dvh]=await Promise.all(['ohlc.csv','macro.csv','sotp.csv','calendario.csv','noticias_historia.txt','fedwatch.csv','dividendos.csv','dividendos_historicos.csv'].map(f=>texto(f).catch(()=>'')));
     const nv=v=>v===''||v==null?null:+v;
     D.fw=filas(fw).map(r=>({fecha:r.fecha,banco:r.banco,n:+r.n,reunion:r.reunion,objetivo:nv(r.objetivo),pb:nv(r.pb),p_mayor:nv(r.p_mayor),p_menor:nv(r.p_menor),tasa_mayor:nv(r.tasa_mayor),tasa_menor:nv(r.tasa_menor)}));
+    // v7.0: dividendos de la gestión y de cinco años (vista Dividendos)
+    const dz=t=>filas(t).map(r=>({sym:r.simbolo,ex:r.fecha_ex,dps:nv(r.dividendo),pago:r.fecha_pago,fuente:r.fuente||''})).filter(r=>r.sym&&r.ex);
+    D.div=dz(dv); D.divH=dz(dvh);
     D.hist=h?Remote.parseNoticias(h):[];                 // v6.9: la línea del tiempo; noticias.txt solo trae 7 días
-    D.ohlc={}; filas(o).forEach(r=>(D.ohlc[r.emisora]||(D.ohlc[r.emisora]=[])).push({f:r.fecha,o:+r.apertura||null,h:+r.maximo||null,l:+r.minimo||null,c:+r.cierre}));
+    D.ohlc={}; filas(o).forEach(r=>(D.ohlc[r.emisora]||(D.ohlc[r.emisora]=[])).push({f:r.fecha,o:+r.apertura||null,h:+r.maximo||null,l:+r.minimo||null,c:+r.cierre,v:r.volumen===''||r.volumen==null?null:+r.volumen}));
     D.macro={}; filas(m).forEach(r=>{ const x=D.macro[r.serie]||(D.macro[r.serie]={nombre:r.nombre,moneda:r.moneda,mueve:String(r.mueve||'').split(/\s+/).filter(Boolean),s:[]});
       x.s.push({f:r.fecha,v:+r.valor}); });
     D.sotp={}; filas(s).forEach(r=>{ (D.sotp[r.emisora]||(D.sotp[r.emisora]={m:{},fuente:r.fuente})).m[r.moneda]=+r.peso; });
@@ -5197,7 +5442,7 @@ const Velas={
   dibujar(s){
     const el=document.getElementById('fichaVelas'), lst=document.getElementById('fichaPorQue'); if(!el) return;
     const v=(Ctx.D.ohlc[s]||[]).slice(-130), mx=Ctx.D.ohlc.MEXTRAC||[];
-    if(v.length<5){ el.innerHTML=`<div class="insuf">${Ctx.D.listo?'No hay velas de esta emisora en ohlc.csv.':'Cargando velas…'}</div>`; return; }
+    if(v.length<5){ el.innerHTML=Ctx.D.listo?'<div class="insuf">No hay velas de esta emisora en ohlc.csv.</div>':CARGA; return; }
     const R=TV.crear('fichaVelas'); if(!R) return;
     const t=f=>TV.deFecha(f), ohlc=v.every(x=>x.o&&x.h&&x.l);
     const ser=ohlc ? TV.serie(R,'v','velas',{upColor:COL.pos,downColor:COL.neg,borderVisible:false,wickUpColor:COL.pos,wickDownColor:COL.neg,priceFormat:TV.FMT.mx})
@@ -5314,10 +5559,10 @@ const Historia=(()=>{
   let firma='';
   function rail(){
     const el=document.getElementById('histRail'); if(!el) return;
-    const L=lista(); if(!L.length){ el.innerHTML='<div class="insuf">Cargando la atribución…</div>'; firma=''; return; }
+    const L=lista(); if(!L.length){ el.innerHTML=CARGA; firma=''; return; }
     const f0=[L.length,L.at(-1),Ctx.D.listo,(Ctx.D.hist||[]).length,(Store.get().ops||[]).length].join('|'); if(f0===firma) return; firma=f0;
     const D=A(), mx=Math.max(...D.fechas.map(f=>Math.abs(D.dias[f].alfa||0)),1e-6);
-    el.innerHTML=L.map((f,i)=>tarjeta(f,i,L.length,mx)).join('');
+    el.innerHTML=L.slice(-5).map(f=>tarjeta(f,L.indexOf(f),L.length,mx)).join('');     // v7.0: la historia completa vive en su vista
     el.scrollLeft=el.scrollWidth;
     const nota=document.getElementById('histNota');
     if(nota) nota.innerHTML='Cada punto es un cierre. El palo es el alfa del día contra el MEXTRAC09: arriba y verde si le ganamos, abajo y rojo si no; la línea roja marca los días con la caja en sobregiro. <b>Emisora</b> es la que más movió el alfa (atribución del tracker). <b>Macro</b> y <b>Mercado</b> son lo que más se salió de lo normal ese día y, como las <b>noticias</b>, son contexto, no causa demostrada. Clic para ver el día completo.';
@@ -5431,7 +5676,7 @@ const Historia=(()=>{
       if(ev.shiftKey&&document.activeElement===a){ ev.preventDefault(); z.focus(); } else if(!ev.shiftKey&&document.activeElement===z){ ev.preventDefault(); a.focus(); }
       else if(!panel.contains(document.activeElement)){ ev.preventDefault(); a.focus(); } }
   }
-  function ir(p){ const L=lista(), i=L.indexOf(actual)+p; if(i<0||i>=L.length) return; actual=L[i]; pintar(p); panel.querySelector('.hp-cuerpo').scrollTop=0; }
+  function ir(p){ const L=lista(), i=L.indexOf(actual)+p; if(i<0||i>=L.length) return; actual=L[i]; pintar(p); panel.querySelector('.hp-cuerpo').scrollTop=0; Ruta.cambio(cerrar,actual); }
   function montar(){
     if(fondo) return;
     fondo=document.createElement('div'); fondo.className='hp-fondo'; fondo.hidden=true;
@@ -5443,6 +5688,7 @@ const Historia=(()=>{
   }
   function abrir(f,o){
     if(!lista().includes(f)) return; montar();
+    if(actual) Ruta.cambio(cerrar,f); else Ruta.abrir('dia',f,cerrar);          // v7.0: cambiar de día no llena el historial
     if(!actual) previo=document.activeElement;
     actual=f; pintar(); fondo.hidden=false;
     const r=panel.getBoundingClientRect();
@@ -5454,6 +5700,7 @@ const Historia=(()=>{
     if(!actual) return; actual=null; document.removeEventListener('keydown',teclas,true);
     fondo.classList.remove('on'); marcar('');
     setTimeout(()=>{ if(!actual) fondo.hidden=true; },240);
+    Ruta.cerre(cerrar);
     if(previo&&previo.focus) try{ previo.focus({preventScroll:true}); }catch(e){}
   }
   // Eventos de la línea: clic abre el día; pasar el cursor mueve la cruz de la gráfica a esa vela; las flechas desplazan.
@@ -5501,9 +5748,9 @@ const FedW=(()=>{
       <p class="fw-txt">${frase(b,r)}</p></article>`; }
   function tabla(b,c){
     return `<div class="card pad0"><div class="card-h" style="padding:18px 19px 0"><h3>${NOM[b]}: reunión por reunión</h3><span class="hint">${c.length} ${c.length===1?'reunión':'reuniones'} en LSEG</span></div>
-      <div class="tbl-wrap"><table class="fw-t"><thead><tr><th>Reunión</th><th>Tasa esperada</th><th>Acumulado</th><th>En esa reunión</th><th>Probabilidad en esa reunión</th></tr></thead><tbody>${c.map(r=>`<tr>
-        <td><b>${fF(r.reunion,true)}</b><small>${cuando(r.reunion)}</small></td><td>${r.esp.toFixed(3)}%</td><td>${pb(r.pb)}</td><td>${pb(r.P.inc)}</td>
-        <td class="fw-pc">${barra(r.P)}<small>${r.P.baja>=.005?`Baja ${pc(r.P.baja)} · `:''}Sin cambio ${pc(r.P.igual)}${r.P.alza>=.005?` · Alza ${pc(r.P.alza)}`:''}${r.P.lseg?'':' · regla'}</small></td></tr>`).join('')}</tbody></table></div></div>`; }
+      <div class="tbl-wrap"><table class="fw-t tm"><thead><tr><th>Reunión</th><th>Tasa esperada</th><th>Acumulado</th><th>En esa reunión</th><th>Probabilidad en esa reunión</th></tr></thead><tbody>${c.map(r=>`<tr data-fk="fw|${b}|${r.reunion}">
+        <td><b>${fF(r.reunion,true)}</b><small>${cuando(r.reunion)}</small></td><td class="m1" data-l="Tasa esperada">${r.esp.toFixed(3)}%</td><td class="m2" data-l="Acumulado">${pb(r.pb)}</td><td data-l="En esa reunión">${pb(r.P.inc)}</td>
+        <td class="fw-pc" data-l="Probabilidad">${barra(r.P)}<small>${r.P.baja>=.005?`Baja ${pc(r.P.baja)} · `:''}Sin cambio ${pc(r.P.igual)}${r.P.alza>=.005?` · Alza ${pc(r.P.alza)}`:''}${r.P.lseg?'':' · regla'}</small></td></tr>`).join('')}</tbody></table></div></div>`; }
   // Tasa objetivo de cada banco por fecha (renglones de la reunión siguiente), para el diferencial histórico
   const objetivos=b=>new Map(filasDe(b).filter(r=>r.n===1).map(r=>[r.fecha,r.objetivo]));
   function historia(){
@@ -5519,7 +5766,7 @@ const FedW=(()=>{
   let firma='';
   function render(){
     const fw=Ctx.D.fw||[], el=document.getElementById('fwCabezas'); if(!el) return;
-    if(!fw.length){ el.innerHTML=`<div class="insuf">${Ctx.D.listo?'Todavía no se publica <code>fedwatch.csv</code>: lo baja el vigilante con <code>--descargar</code>.':'Cargando el Fed Watch…'}</div>`; return; }
+    if(!fw.length){ el.innerHTML=Ctx.D.listo?'<div class="insuf">Todavía no se publica <code>fedwatch.csv</code>: lo baja el vigilante con <code>--descargar</code>.</div>':CARGA; return; }
     const f0=[fw.length,fw.at(-1).fecha,Ctx.D.listo].join('|'); if(f0===firma && TV.reg.chFwDif && document.body.contains(TV.reg.chFwDif.el)) return; firma=f0;
     const cf=conProb(curva('FED')), cb=conProb(curva('BANXICO')); if(!cf.length||!cb.length) return;
     el.innerHTML=cabeza('FED',cf)+cabeza('BANXICO',cb);
@@ -5713,6 +5960,358 @@ const Elecc=(()=>{
     northStar(); pintaFiltro();
   }
   return {render};
+})();
+
+/* v7.0 · Historia del portafolio en su propia vista, animada con GSAP. Usa los datos del módulo Historia (no recalcula nada): una
+   tarjeta por cierre, la gráfica del acumulado fija a la izquierda con un marcador que avanza con el scroll y el pop up del día al
+   dar clic. Sin GSAP o con «reducir movimiento» se ve todo desde el inicio, sin animación. Al salir de la vista se matan sus
+   ScrollTriggers (una vista con display:none mide 0) y al volver se crean de nuevo. */
+const HistV=(()=>{
+  const MOTION={rapido:.18, base:.32, lento:.6, ease:'power3.out'};          // un solo lugar para reajustar toda la secuencia
+  const EUA={'2026-11-03':'Elecciones de EUA','2026-11-04':'Elecciones de EUA: la reacción'};
+  const st={filtro:'TODOS'};
+  let firma='', mm=null, animado=false, acum={}, activoF='';
+  const pb=(v,d=1)=>`${v>=0?'+':'−'}${Math.abs(v*1e4).toFixed(d)} pb`;
+  const larga=f=>new Date(f+'T12:00:00').toLocaleDateString('es-MX',{weekday:'long',day:'numeric',month:'long'});
+  const corta=f=>{ const d=new Date(f+'T12:00:00'); return ['dom','lun','mar','mié','jue','vie','sáb'][d.getDay()]+' '+d.getDate()+'-'+TV.MES[d.getMonth()]; };
+  const A=()=>AtrV.datos();
+  // Entre dos cierres seguidos: fin de semana y, si lo hubo, el feriado
+  function pausa(a,b){
+    const fer=new Set(Store.get().cfg.feriados||FERIADOS_BMV), out=[]; let fin=false;
+    for(let d=new Date(a+'T12:00:00'); ;){ d.setDate(d.getDate()+1); const f=Habil.iso(d); if(f>=b) break;
+      if(d.getDay()===0||d.getDay()===6) fin=true; else if(fer.has(f)) out.push('feriado del '+corta(f)); }
+    return [fin?'fin de semana':'',...out].filter(Boolean).join(' y ');
+  }
+  function tarjeta(f,i){
+    const q=Historia.info(f), d=q.d, t=q.em[0], n=q.notas[0];
+    const chips=[...q.hitos.map(h=>({t:h.t,k:h.k})), ...(EUA[f]?[{t:EUA[f],k:'warn'}]:[])].map(h=>`<i class="${h.k}">${esc(h.t)}${/estimado/i.test(h.t)?' ▲':''}</i>`).join('');
+    const grande=!d || EUA[f] || q.hitos.some(h=>/sobregiro/i.test(h.t));
+    return `<button type="button" class="hs-c ${grande?'grande':''} ${d?(d.alfa>=0?'up':'dn'):'cero'}" data-hs="${f}" aria-label="Ver el día ${larga(f)}">
+      <span class="hs-nodo"></span>
+      <span class="hs-f"><b>${larga(f)}</b><i>${d?'día '+i:'día 0 · aquí empieza la medición'}</i></span>
+      ${d?`<span class="hs-nums"><span><u>Portafolio</u><b class="${cls(d.rp)}">${pctS(d.rp*100)}</b></span><span><u>MEXTRAC09${d.est?' ▲':''}</u><b class="${cls(d.rb)}">${pctS(d.rb*100)}</b></span>
+          <span><u>Alfa</u><b class="hs-alfa ${cls(d.alfa)}" data-n="${d.alfa}">${pb(d.alfa)}</b></span></span>
+        ${t?`<span class="hs-em"><u>La que más lo movió</u>${esc(t.sym)} <b class="${cls(t.ap)}">${pb(t.ap)}</b></span>`:''}`
+        :`<span class="hs-nums"><span><u>Valor de referencia</u><b>${money(A().dias[Historia.lista()[1]]?.v0)}</b></span></span><span class="hs-em">Lo anterior a este cierre no cuenta como rendimiento ni como alfa.</span>`}
+      ${chips?`<span class="hd-chips">${chips}</span>`:''}
+      ${n?`<span class="hs-no">${esc(n.titulo)}</span>`:''}
+    </button>`;
+  }
+  const pasa=f=>{ const q=Historia.info(f), d=q.d; if(st.filtro==='TODOS') return true; if(!d) return false;
+    return st.filtro==='ALFA POSITIVO'?d.alfa>0:st.filtro==='ALFA NEGATIVO'?d.alfa<0:st.filtro==='CON OPERACIONES'?q.ops.length>0:q.hitos.some(h=>h.m==='Dividendo'); };
+  function pintar(L){
+    const D=A(), ult=D.dias[L.at(-1)]; let rp=1, rb=1; acum={[L[0]]:{p:0,b:0}};
+    L.slice(1).forEach(f=>{ const d=D.dias[f]; rp*=1+d.rp; rb*=1+d.rb; acum[f]={p:(rp-1)*100,b:(rb-1)*100}; });
+    document.getElementById('hsSobre').textContent='Día 0 · cierre del '+larga(L[0]);
+    document.getElementById('hsSub').innerHTML=`${L.length-1} cierres hasta el ${corta(L.at(-1))} · cartera <b class="${cls(rp-1)}">${pctS((rp-1)*100)}</b> · MEXTRAC09 <b class="${cls(rb-1)}">${pctS((rb-1)*100)}</b> · alfa <b class="${cls(rp-rb)}">${pb(rp-rb,2)}</b>`;
+    UI.seg('segHs',['TODOS','ALFA POSITIVO','ALFA NEGATIVO','CON OPERACIONES','CON DIVIDENDOS'],st.filtro,k=>{ st.filtro=k; firma=''; UI.render(); });
+    const V=L.filter(pasa);
+    document.getElementById('hsDer').innerHTML='<i class="hs-linea"></i>'+(V.length?V.map((f,j)=>{ const i=L.indexOf(f), ps=j&&i&&L[i-1]===V[j-1]?pausa(L[i-1],f):'';
+      return (ps?`<div class="hs-sep"><span>${ps}</span></div>`:'')+tarjeta(f,i); }).join(''):'<div class="insuf">Ningún día cumple el filtro.</div>');
+    // gráfica del acumulado (lightweight-charts, el mismo motor del tablero)
+    const R=TV.crear('chHs',{marca:''}); if(!R) return;
+    const sp=TV.serie(R,'p','area',{lineColor:COL.port,lineWidth:2,topColor:'rgba(212,237,252,.16)',bottomColor:'rgba(212,237,252,0)',priceFormat:TV.FMT.pct,priceLineVisible:false});
+    const sb=TV.serie(R,'b','linea',{color:COL.bmk,lineWidth:2,priceFormat:TV.FMT.pct,priceLineVisible:false});
+    sp.setData(L.map(f=>({time:TV.deFecha(f),value:acum[f].p}))); sb.setData(L.map(f=>({time:TV.deFecha(f),value:acum[f].b})));
+    R.chart.applyOptions({handleScroll:false,handleScale:false,layout:{attributionLogo:false}}); R.chart.timeScale().fitContent();   // la atribución va en el pie de la página
+    activo(V.includes(activoF)?activoF:V.at(-1)||L.at(-1));
+  }
+  // Día que se está leyendo: mueve el marcador de la gráfica y el texto de abajo
+  function activo(f){
+    if(!f||!acum[f]) return; activoF=f;
+    document.querySelectorAll('#hsDer .hs-c.act').forEach(c=>c.classList.remove('act'));
+    document.querySelector(`#hsDer .hs-c[data-hs="${f}"]`)?.classList.add('act');
+    const R=TV.reg.chHs, a=acum[f];
+    if(R&&R.series.p){ try{ R.chart.setCrosshairPosition(a.p,TV.deFecha(f),R.series.p); }catch(e){} }
+    document.getElementById('hsLee').innerHTML=`<b>${corta(f)}</b>`+TV.it(COL.port,'Cartera',pctS(a.p),cls(a.p))+TV.it(COL.bmk,'MEXTRAC09',pctS(a.b),cls(a.b),'guion')+
+      `<span class="it">Alfa acumulado<b class="v ${cls(a.p-a.b)}">${pb((a.p-a.b)/100,1)}</b></span>`;
+  }
+  function parar(){ if(mm){ mm.revert(); mm=null; } }
+  function animar(){
+    const sec=document.getElementById('v-historia'); sec.classList.toggle('sin-gsap',!(window.gsap&&window.ScrollTrigger));
+    if(!(window.gsap&&window.ScrollTrigger)) return;
+    gsap.registerPlugin(...[ScrollTrigger,window.SplitText].filter(Boolean));
+    parar(); mm=gsap.matchMedia();
+    mm.add({mov:'(prefers-reduced-motion: no-preference)', ancho:'(min-width: 769px)', siempre:'all'},ctx=>{
+      const {mov,ancho}=ctx.conditions, cards=gsap.utils.toArray('#hsDer .hs-c');
+      const bajo=()=>(document.querySelector('.topbar')?.offsetHeight||60)+(ancho?(document.getElementById('cinta')?.offsetHeight||0):0)+14;
+      // onEnter y onEnterBack también disparan cuando un salto de scroll se brinca la tarjeta completa: el marcador no se queda atrás
+      cards.forEach(c=>ScrollTrigger.create({trigger:c,start:'top 58%',end:'bottom 58%',onEnter:()=>activo(c.dataset.hs),onEnterBack:()=>activo(c.dataset.hs)}));
+      if(ancho) ScrollTrigger.create({trigger:'#hsCols',start:()=>'top '+bajo()+'px',end:()=>'bottom '+(bajo()+document.getElementById('hsIzq').offsetHeight)+'px',pin:'#hsIzq',pinSpacing:false,invalidateOnRefresh:true});
+      if(!mov) return;                               // reducir movimiento: todo visible, sin animación
+      const tl=gsap.timeline({defaults:{duration:MOTION.base,ease:MOTION.ease}});      // línea de tiempo maestra de la sección
+      if(window.SplitText){ const sp=SplitText.create('#hsTitulo',{type:'words,chars'}); tl.from(sp.chars,{opacity:0,y:16,stagger:.016,duration:MOTION.lento},0); }
+      tl.from('.hs-estrella',{opacity:0,scale:.6,rotation:-30,duration:MOTION.lento},0).from('#hsSobre,#hsSub',{opacity:0,y:10,stagger:.08},.2);
+      gsap.to('.hs-estrella',{y:70,ease:'none',scrollTrigger:{trigger:'.hs-portada',start:'top top',end:'bottom top',scrub:true}});   // parallax lento
+      gsap.fromTo('.hs-linea',{scaleY:0},{scaleY:1,ease:'none',scrollTrigger:{trigger:'#hsDer',start:'top 75%',end:'bottom 58%',scrub:.3}});
+      const contar=c=>{ const el=c.querySelector('[data-n]'); if(!el) return; const o={x:0}, v=+el.dataset.n;
+        gsap.to(o,{x:v,duration:MOTION.lento,ease:MOTION.ease,onUpdate:()=>{ el.textContent=pb(o.x); }}); };
+      gsap.set(cards,{opacity:0,y:22});
+      ScrollTrigger.batch(cards,{start:'top 90%',once:true,onEnter:b=>{ gsap.to(b,{opacity:1,y:0,stagger:.05,duration:MOTION.base,ease:MOTION.ease,overwrite:true}); b.forEach(contar); }});
+    });
+    ScrollTrigger.refresh();
+  }
+  let enlazado=false;
+  function render(){
+    const L=Historia.lista();
+    if(!L.length){ document.getElementById('hsDer').innerHTML=CARGA.repeat(2); firma=''; return; }
+    const f0=[L.length,L.at(-1),Ctx.D.listo,(Ctx.D.hist||[]).length,(Store.get().ops||[]).length,st.filtro].join('|');
+    if(f0!==firma){ firma=f0; parar(); pintar(L); animado=false; }
+    if(!animado){ animado=true; animar(); }
+    if(!enlazado){ enlazado=true;
+      document.getElementById('hsDer').addEventListener('click',ev=>{ const c=ev.target.closest('.hs-c[data-hs]'); if(c) Historia.abrir(c.dataset.hs,{x:ev.clientX,y:ev.clientY}); });
+      addEventListener('load',()=>{ if(UI.view==='historia'){ animado=false; render(); } });   // GSAP llega con defer
+    }
+  }
+  return {render, salir:()=>{ parar(); animado=false; }, MOTION};
+})();
+
+/* v7.0 · Mercado → Gráfica. Velas, línea o área con volumen, rangos, marcadores de nuestras compras y ventas (C, V) y de las fechas
+   ex (D), una lista para cambiar de serie y la ficha corta. Todo sobre lightweight-charts 4.2.3, la librería abierta de TradingView
+   que el tablero ya usaba; por su licencia lleva la liga de atribución. Datos: ohlc.csv (velas y volumen), macro.csv (IPC y dólar,
+   solo cierre) e intradia.csv (1D). El tablero no calcula nada aquí: solo dibuja lo publicado. */
+const Graf=(()=>{
+  const st={sym:'MEXTRAC', tipo:'Velas', comp:false, rango:'6M'};
+  const DIAS={'5D':7,'1M':31,'3M':92,'6M':183,'1A':366};
+  const NOM={MEXTRAC:'MEXTRAC09',IPC:'S&P/BMV IPC',USD:'USD/MXN'};
+  const DESC={MEXTRAC:'ETF de BBVA que replica el S&P/BMV IPC CompMX Rentable ESG Tilted TR. Es el benchmark del fondo.',
+    IPC:'Índice de la Bolsa Mexicana de Valores. Solo comparativo: el benchmark es el MEXTRAC09.',USD:'Pesos por dólar, cierre de LSEG.'};
+  const marca=s=>{ const u=logoUrl(s); return `<span class="lg" style="--h:${logoHue(s)}"><b>${META[s]?logoMark(s):s.slice(0,3)}</b>${META[s]&&u?`<img src="${u}" alt="" loading="lazy" onerror="this.remove()">`:''}</span>`; };
+  const macro=s=>s==='IPC'||s==='USD';
+  const datos=s=>macro(s) ? (Ctx.D.macro[s]?.s||[]).map(x=>({f:x.f,c:x.v})) : (Ctx.D.ohlc[s]||[]);
+  const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+  const desde=(ult,r)=>{ if(r==='Todo') return ''; if(r==='YTD') return ult.slice(0,4)+'-01-01'; const d=new Date(ult+'T12:00:00'); d.setDate(d.getDate()-DIAS[r]); return iso(d); };
+  // Barras de 5 minutos de la última sesión que trae intradia.csv para esa serie
+  function intradia(s){ const I=Remote.intra(); if(!I||!I.px[s]) return [];
+    const p=I.t.map((t,i)=>({t,v:I.px[s][i]})).filter(x=>x.v>0); if(!p.length) return [];
+    const dia=x=>new Date(x-6*3600e3).toISOString().slice(0,10), u=dia(p.at(-1).t); return p.filter(x=>dia(x.t)===u); }
+  // Solo los rangos que tienen datos: uno más largo que la historia publicada no se ofrece
+  function rangos(V,s){ const r=[]; if(!V.length) return r; const a=V[0].f, u=V.at(-1).f;
+    if(intradia(s).length>5) r.push('1D');
+    ['5D','1M','3M','6M','YTD','1A'].forEach(k=>{ const d=desde(u,k); if(k==='5D'?V.length>=5:a<=Habil.sumar(d,5)) r.push(k); });
+    r.push('Todo'); return r; }
+  const ultimo=s=>{ if(macro(s)){ const v=datos(s); return {px:v.at(-1)?.c, pv:v.at(-2)?.c}; } return {px:Market.price(s), pv:Market.prevPrice(s)}; };
+  const fPx=(s,v)=>v==null||!isFinite(v)?'—':s==='IPC'?num(v,2).replace(/\B(?=(\d{3})+(?!\d))/g,','):s==='USD'?num(v,4):money(v);
+  const fVol=v=>v==null?'—':v>=1e6?(v/1e6).toFixed(2)+' M':v>=1e3?(v/1e3).toFixed(1)+' K':String(v);
+
+  function lista(){
+    const syms=['MEXTRAC','IPC','USD',...Portfolio.positions().map(p=>p.sym).filter(s=>s!=='MEXTRAC')];
+    document.getElementById('grafLista').innerHTML=syms.map(s=>{ const {px,pv}=ultimo(s), d=px!=null&&pv?px-pv:null, r=d!=null?d/pv*100:null;
+      return `<button type="button" class="gf-it ${s===st.sym?'on':''}" data-gf="${s}">${marca(s)}<b>${NOM[s]||s}</b><span>${fPx(s,px)}</span><span class="${cls(d)}">${d==null?'—':(d>0?'+':d<0?'−':'')+num(Math.abs(d),s==='USD'?4:2)}</span><span class="${cls(r)}">${r==null?'—':pctS(r)}</span></button>`; }).join('');
+    const dl=document.getElementById('grafOpc'); if(!dl.childElementCount) dl.innerHTML=['MEXTRAC','IPC','USD',...ALL.map(u=>u.s).filter(s=>s!=='MEXTRAC')].map(s=>`<option value="${NOM[s]||s}">${esc(META[s]?.n||DESC[s]||'')}</option>`).join('');
+  }
+  function ficha(){
+    const s=st.sym, {px,pv}=ultimo(s), d=px!=null&&pv?px-pv:null, S=Store.get(), fer=new Set(S.cfg.feriados||FERIADOS_BMV);
+    const ab=Calc.enSesion(Date.now()) && !fer.has(Habil.hoy()), t=macro(s)?null:(S.pxStamp?Date.parse(S.pxStamp):NaN);
+    const hora=macro(s)?'cierre del '+fdate(datos(s).at(-1)?.f):isFinite(t)?new Date(t).toLocaleString('es-MX',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}):'sin hora';
+    document.getElementById('grafFicha').innerHTML=`<div class="gf-f"><div class="gf-ft">${marca(s)}<div><b>${NOM[s]||s}</b><span>${esc(macro(s)||s==='MEXTRAC'?(s==='USD'?'Divisa':s==='IPC'?'Índice · BMV':'ETF · BMV'):(META[s]?.n||'')+' · BMV')}</span></div></div>
+      <div class="gf-px">${fPx(s,px)}</div>
+      <div class="gf-ch ${cls(d)}">${d==null?'—':(d>0?'+':d<0?'−':'')+num(Math.abs(d),s==='USD'?4:2)+' ('+pctS(d/pv*100)+')'}</div>
+      <div class="gf-est"><i class="${ab?'ab':''}"></i>${ab?'Mercado abierto':'Mercado cerrado'} · dato: ${esc(hora)}</div>
+      ${DESC[s]?`<p>${DESC[s]}</p>`:`<p>${esc(META[s]?.sec||'')}${META[s]?.sub?' · '+esc(META[s].sub):''}</p><button type="button" class="btn sm" data-ficha="${s}">Ver la ficha completa</button>`}</div>`;
+  }
+  let firma='';
+  function dibujar(){
+    const s=st.sym, V=datos(s), R0=rangos(V,s), el=document.getElementById('chGraf');
+    if(R0.length && !R0.includes(st.rango)) st.rango=R0.includes('6M')?'6M':'Todo';
+    UI.seg('segGrafRango',R0,st.rango,k=>{ st.rango=k; firma=''; render(); });
+    const sinOhlc=macro(s)||!V.some(x=>x.o&&x.h&&x.l), tipos=sinOhlc?['Línea','Área']:['Velas','Línea','Área'];
+    const tipo=tipos.includes(st.tipo)?st.tipo:'Línea';
+    UI.seg('segGrafTipo',tipos,tipo,k=>{ st.tipo=k; firma=''; render(); });
+    const bc=document.getElementById('grafComp'); bc.classList.toggle('pri',st.comp); bc.setAttribute('aria-pressed',st.comp); bc.hidden=s==='MEXTRAC';
+    if(V.length<2){ TV.quitar('chGraf'); el.innerHTML=Ctx.D.listo?'<div class="insuf">No hay datos publicados de esta serie.</div>':CARGA; return; }
+    TV.quitar('chGraf'); const R=TV.crear('chGraf',{marca:''}); if(!R) return;
+    R.chart.applyOptions({layout:{attributionLogo:false}});      // la atribución que pide la licencia va en la liga del pie
+    const t=f=>TV.deFecha(f), fmt=s==='USD'?{type:'price',precision:4,minMove:.0001}:{type:'price',precision:2,minMove:.01};
+    const nota=document.getElementById('grafNota');
+    if(st.rango==='1D'){                                           // la sesión en barras de 5 minutos, en línea
+      const I=intradia(s), ser=TV.serie(R,'p','area',{lineColor:COL.port,lineWidth:2,topColor:'rgba(212,237,252,.14)',bottomColor:'rgba(212,237,252,0)',priceFormat:fmt,priceLineStyle:1});
+      ser.setData(TV.limpio(I.map(x=>({time:TV.seg(x.t),value:x.v}))));
+      const a=I[0].v, u=I.at(-1).v;
+      R.leyenda=prm=>{ const v=prm&&prm.seriesData.get(ser)?.value; const x=v??u; R.ley.innerHTML=`<span class="f">${NOM[s]||s} · ${prm?TV.cruz(prm.time):'sesión del '+fdate(new Date(I.at(-1).t-6*3600e3).toISOString().slice(0,10))}</span>`+TV.it(COL.port,'Precio',fPx(s,x))+TV.it(x>=a?COL.pos:COL.neg,'Contra la primera lectura',pctS((x/a-1)*100),cls(x-a)); };
+      R.leyenda(null); R.chart.timeScale().fitContent(); nota.textContent='1D: lecturas de 5 minutos de intradia.csv. Sin volumen ni marcadores.'; return; }
+    const d0=desde(V.at(-1).f,st.rango), enR=V.filter(x=>x.f>=d0), cierre=Object.fromEntries(V.map((x,i)=>[x.f,{...x,prev:i?V[i-1].c:null}]));
+    let ser;
+    if(st.comp && s!=='MEXTRAC'){                                   // las dos en % desde el inicio del rango
+      const M=datos('MEXTRAC').filter(x=>x.f>=d0), b0=enR[0].c, m0=M[0]?.c;
+      ser=TV.serie(R,'p','linea',{color:COL.port,lineWidth:2,priceFormat:TV.FMT.pct,priceLineStyle:1});
+      ser.setData(enR.map(x=>({time:t(x.f),value:(x.c/b0-1)*100})));
+      const sm=TV.serie(R,'m','linea',{color:COL.bmk,lineWidth:2,lineStyle:2,priceFormat:TV.FMT.pct,priceLineVisible:false});
+      if(m0) sm.setData(M.map(x=>({time:t(x.f),value:(x.c/m0-1)*100})));
+      const porT=new Map(enR.map(x=>[t(x.f),x])), mT=new Map(M.map(x=>[t(x.f),x]));
+      R.leyenda=prm=>{ const x=(prm&&porT.get(prm.time))||enR.at(-1), m=mT.get(t(x.f)), a=(x.c/b0-1)*100, b=m&&m0?(m.c/m0-1)*100:null;
+        R.ley.innerHTML=`<span class="f">${fdate(x.f)} · desde el ${fdate(enR[0].f)}</span>`+TV.it(COL.port,NOM[s]||s,pctS(a),cls(a))+(b!=null?TV.it(COL.bmk,'MEXTRAC09',pctS(b),cls(b),'guion')+TV.it(a-b>=0?COL.pos:COL.neg,'Diferencia',(a-b>=0?'+':'−')+Math.abs(a-b).toFixed(2)+' pp',cls(a-b)):''); };
+    }else{
+      const velas=tipo==='Velas';
+      ser=velas ? TV.serie(R,'p','velas',{upColor:COL.pos,downColor:COL.neg,borderVisible:false,wickUpColor:COL.pos,wickDownColor:COL.neg,priceFormat:fmt,priceLineStyle:1})
+        : tipo==='Área' ? TV.serie(R,'p','area',{lineColor:COL.port,lineWidth:2,topColor:'rgba(212,237,252,.14)',bottomColor:'rgba(212,237,252,0)',priceFormat:fmt,priceLineStyle:1})
+        : TV.serie(R,'p','linea',{color:COL.port,lineWidth:2,priceFormat:fmt,priceLineStyle:1});
+      ser.setData(V.map(x=>velas?{time:t(x.f),open:x.o??x.c,high:x.h??x.c,low:x.l??x.c,close:x.c}:{time:t(x.f),value:x.c}));
+      if(V.some(x=>x.v!=null)){                                     // volumen en histograma, abajo, en su propia escala
+        const sv=TV.serie(R,'v','barras',{priceScaleId:'vol',priceFormat:{type:'volume'},priceLineVisible:false,lastValueVisible:false});
+        R.chart.priceScale('vol').applyOptions({scaleMargins:{top:.82,bottom:0},visible:false});
+        R.chart.priceScale('right').applyOptions({scaleMargins:{top:.16,bottom:.24}});
+        sv.setData(V.filter(x=>x.v!=null).map(x=>({time:t(x.f),value:x.v,color:(x.c>=(cierre[x.f].prev??x.c)?'rgba(48,209,88,.38)':'rgba(255,90,95,.38)')})));
+      }
+      R.leyenda=prm=>{ const x=cierre[(prm&&new Date(prm.time*1000).toISOString().slice(0,10))]||cierre[V.at(-1).f], d=x.prev?x.c-x.prev:null;
+        R.ley.innerHTML=`<span class="f">${NOM[s]||s} · ${fdate(x.f)}</span>`+(x.o&&x.h&&x.l?TV.it(COL.port,'A',fPx(s,x.o))+TV.it(COL.port,'Máx',fPx(s,x.h))+TV.it(COL.port,'Mín',fPx(s,x.l)):'')+TV.it(COL.port,'C',fPx(s,x.c))+
+          (d!=null?TV.it(d>=0?COL.pos:COL.neg,'Cambio',(d>0?'+':d<0?'−':'')+num(Math.abs(d),s==='USD'?4:2)+' ('+pctS(d/x.prev*100)+')',cls(d)):'')+(x.v!=null?TV.it('rgba(255,255,255,.4)','Vol',fVol(x.v),'','barra'):''); };
+    }
+    // Marcadores: C y V en los días con operaciones nuestras; D en las fechas ex de dividendo
+    const enDatos=new Set(V.map(x=>x.f)), mk=[], visto=new Set();
+    (Store.get().ops||[]).filter(o=>o.sym===s && !o.asig && enDatos.has(o.fecha)).forEach(o=>{ const k=o.fecha+o.tipo; if(visto.has(k)) return; visto.add(k);
+      mk.push(o.tipo==='COMPRA'?{time:t(o.fecha),position:'belowBar',color:COL.pos,shape:'arrowUp',text:'C'}:{time:t(o.fecha),position:'aboveBar',color:COL.neg,shape:'arrowDown',text:'V'}); });
+    [...Ctx.D.divH,...Ctx.D.div].filter(x=>x.sym===s && enDatos.has(x.ex)).forEach(x=>{ if(visto.has(x.ex+'D')) return; visto.add(x.ex+'D'); mk.push({time:t(x.ex),position:'aboveBar',color:COL.port,shape:'circle',text:'D'}); });
+    ser.setMarkers(mk.filter(m=>!(st.comp&&s!=='MEXTRAC') || m.time>=t(enR[0].f)).sort((a,b)=>a.time-b.time));
+    R.leyenda(null);
+    if(st.rango==='Todo'||st.comp) R.chart.timeScale().fitContent(); else R.chart.timeScale().setVisibleRange({from:t(enR[0].f),to:t(V.at(-1).f)});
+    const sinMov=V.filter(x=>x.f>=d0 && x.v!=null && x.v<1000).length;
+    nota.textContent=(macro(s)?'De esta serie LSEG publica solo el cierre: va en línea, sin volumen. ':'')+(s==='MEXTRAC'&&sinMov?`En este rango el MEXTRAC09 tuvo ${sinMov} ${sinMov===1?'sesión':'sesiones'} con menos de 1,000 títulos operados: esos días su precio casi no se mueve. `:'')+
+      'C y V: nuestras compras y ventas. D: fecha ex de dividendo. Rueda del ratón para acercar; arrastre para desplazarse.';
+  }
+  let enlazado=false;
+  function render(){
+    if(!enlazado){ enlazado=true;
+      document.getElementById('p-graf').addEventListener('click',ev=>{ const b=ev.target.closest('[data-gf]'); if(b){ st.sym=b.dataset.gf; firma=''; render(); return; }
+        if(ev.target.closest('#grafComp')){ st.comp=!st.comp; firma=''; render(); return; }
+        if(ev.target.closest('#grafFull')){ const c=document.getElementById('grafCaja'); if(document.fullscreenElement) document.exitFullscreen(); else c.requestFullscreen?.().catch(()=>{}); } });
+      const nz=x=>String(x).normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/gi,'').toUpperCase();
+      const q=document.getElementById('grafQ'), busca=()=>{ const v=nz(q.value); if(!v) return;
+        const s=Object.keys(NOM).find(k=>nz(NOM[k])===v||k===v) || (META[v]?v:'') || ALL.find(u=>u.s.startsWith(v)||nz(u.n).includes(v))?.s;
+        if(s){ st.sym=s; q.value=''; q.blur(); firma=''; render(); } };
+      q.addEventListener('change',busca); q.addEventListener('keydown',ev=>{ if(ev.key==='Enter') busca(); });
+    }
+    lista(); ficha();
+    const V=datos(st.sym), f0=[st.sym,st.tipo,st.comp,st.rango,V.length,V.at(-1)?.f,V.at(-1)?.c,Ctx.D.listo,(Store.get().ops||[]).length,!!Remote.intra()].join('|');
+    if(f0===firma && TV.reg.chGraf && document.body.contains(TV.reg.chGraf.el)) return; firma=f0;
+    dibujar();
+  }
+  return {render, abrir:s=>{ st.sym=(s==='MEXTRAC'||META[s])?s:'MEXTRAC'; firma=''; UI.go('mercado'); UI.goPane('mercado','graf'); window.scrollTo(0,0); }};
+})();
+
+/* v7.0 · Dividendos en su propia vista. Lo cobrado sale de la bitácora del tracker (renglones DIVIDENDO de operaciones.csv, que la
+   réplica cuadra con la hoja Dividendos); lo que viene, de dividendos.csv × títulos de hoy, marcado «estimado». El texto se arma en
+   español con los campos: el de LSEG no se traduce. Desde el 10-nov el tracker cuenta el dividendo en la caja en la fecha de pago y
+   operaciones.csv trae el renglón DIVIDENDO en esa fecha; antes iba en la fecha ex, y la vista acepta los dos. */
+const Divs=(()=>{
+  const st={ver:'EN CARTERA', sel:''};
+  const DIA=['dom','lun','mar','mié','jue','vie','sáb'], MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'],
+    MESL=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  const fd=f=>{ if(!f) return 'sin fecha'; const d=new Date(f+'T12:00:00'); return `${DIA[d.getDay()]} ${d.getDate()}-${MES[d.getMonth()]}`; };
+  const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+  const dpsF=v=>'$'+(Math.abs(v*100-Math.round(v*100))<1e-6?v.toFixed(2):v.toFixed(4));
+  const marca=s=>{ const u=logoUrl(s); return `<span class="lg" style="--h:${logoHue(s)}"><b>${logoMark(s)}</b>${u?`<img src="${u}" alt="" loading="lazy" onerror="this.remove()">`:''}</span>`; };
+  const EST={cobrado:['Cobrado','p'], porcobrar:['Por cobrar','b'], estimado:['Estimado','w'], na:['No aplica: fecha ex antes del día 0',''],
+    sinpos:['Sin posición en la fecha ex',''], universo:['Fuera de la cartera','']};
+  const clase=(sym,ex)=>{ const t=(Ctx.D.cal.find(e=>e.fecha===ex && e.claves.includes(sym) && /dividendo/i.test(e.tipo))||{}).titulo||'';
+    return /special|extraord/i.test(t)?'extraordinario':/stock|scrip/i.test(t)?'en acciones':/final/i.test(t)?'final':/interim/i.test(t)?'parcial':''; };
+  const tipoTxt=c=>c==='extraordinario'?'Extraordinario':c==='en acciones'?'En acciones':c?'Ordinario · '+c:'En efectivo';
+  const frase=r=>(r.dps!=null ? `Dividendo ${r.clase?r.clase+' ':''}de ${dpsF(r.dps)} por acción.` : `Dividendo en otra moneda (${esc(r.fuente.split('·')[1]?.split(':')[0]?.trim()||'monto por capturar')}): falta capturar el monto en pesos.`)
+    +` Fecha ex: ${fd(r.ex)}. Pago: ${fd(r.pago)}.`;
+  // Un renglón por dividendo de dividendos.csv, con su estado para nosotros
+  function filas(){
+    const S=Store.get(), hoy=Habil.hoy(), d0=S.cfg.refDate, corte=(typeof AtrV!=='undefined' && AtrV.datos()?.fechas?.at(-1))||hoy;
+    const cob=new Map(); (S.divs||[]).filter(d=>d.tipo==='DIVIDENDO').forEach(d=>{ cob.set(d.sym+'|'+d.fecha,d); if(d.liq) cob.set(d.sym+'|'+d.liq,d); });
+    const pos=Object.fromEntries(Portfolio.positions().map(p=>[p.sym,p.qty]));
+    return Ctx.D.div.map(r=>{ const c=cob.get(r.sym+'|'+r.pago)||cob.get(r.sym+'|'+r.ex), q=pos[r.sym]||0, px=Market.price(r.sym), pago=r.pago||r.ex;
+      let estado, tit=null, monto=null;
+      if(r.ex<=d0) estado='na';
+      else if(c){ tit=c.shares; monto=c.total; estado=(c.liq||c.fecha)<=hoy?'cobrado':'porcobrar'; }
+      // el tracker aún no lo registra: ya pasó la fecha ex y falta el pago (por cobrar) o todavía no llega la fecha ex (estimado)
+      else if(pago>corte && q>0){ tit=q; monto=r.dps!=null?R2(q*r.dps):null; estado=r.ex<=hoy?'porcobrar':'estimado'; }
+      else estado=pago>corte?'universo':'sinpos';
+      return {...r, id:r.sym+'|'+r.ex+'|'+r.dps, clase:clase(r.sym,r.ex), estado, tit, monto, est:!c&&monto!=null, yld:r.dps!=null&&px>0?r.dps/px*100:null,
+        mio:q>0||!!c, estadoTxt:EST[estado][0]}; });
+  }
+  const texto=e=>{ const r=Ctx.D.div.find(x=>x.ex===e.fecha && e.claves.includes(x.sym)); return r?frase({...r,clase:clase(r.sym,r.ex)}):e.titulo; };
+
+  function kpis(R){
+    const hoy=Habil.hoy(), V=Portfolio.value()||0, fin=Store.get().cfg.finGestion||'9999';
+    const sig=R.filter(r=>r.mio && r.ex>=hoy && (r.estado==='estimado'||r.estado==='porcobrar')).sort((a,b)=>a.ex.localeCompare(b.ex))[0];
+    const dias=sig?Math.round((Date.parse(sig.ex+'T12:00:00')-Date.parse(hoy+'T12:00:00'))/864e5):null;
+    const suma=f=>R.filter(f).reduce((a,r)=>a+(r.monto||0),0);
+    const cobrado=suma(r=>r.estado==='cobrado'), falta=suma(r=>r.estado==='porcobrar'||(r.estado==='estimado'&&r.ex<=fin));
+    const pv=x=>V?pct(x/V*100):'—', C=caja(R), peor=C.filas.reduce((a,f)=>Math.max(a,f.pct),C.pct0);
+    const k=(l,v,d,c='')=>`<div class="kpi fis ${c}"><div class="lbl">${l}</div><div class="val sm">${v}</div><div class="delta">${d}</div></div>`;
+    document.getElementById('dvKpis').innerHTML=
+      k('Siguiente fecha ex', sig?`${esc(sig.sym)} · ${dias===0?'hoy':dias===1?'mañana':'en '+dias+' días'}`:'—',
+        sig?`${fd(sig.ex)} · nos toca ${sig.monto!=null?money(sig.monto):'monto por capturar'}${sig.est?' (estimado)':''}`:'Sin fechas ex próximas en cartera','hl')+
+      k('Cobrado desde el día 0', money(cobrado), `${pv(cobrado)} del portafolio · hoja Dividendos del tracker`)+
+      k('Por cobrar hasta el fin de la gestión', money(falta), `${pv(falta)} del portafolio · títulos de hoy × dividendo`)+
+      k('Caja con lo por cobrar', pct(peor), peor>POLICY.cashMax?`<span class="neg">Pasa el límite de ${POLICY.cashMax}%</span>`:`Dentro del límite de ${POLICY.cashMax}% · hoy ${pct(C.pct0)}`);
+  }
+  // Caja proyectada: la caja del tracker más los dividendos que aún no registra, en orden de pago
+  function caja(R){
+    const sp=Portfolio.strategySplit(), V=Portfolio.value()||0, fin=Store.get().cfg.finGestion||'9999'; let c=sp.cash||0;
+    const filas=R.filter(r=>r.est && r.ex<=fin).sort((a,b)=>(a.pago||a.ex).localeCompare(b.pago||b.ex))
+      .map(r=>{ c+=r.monto; return {r, caja:c, pct:V?c/V*100:0}; });
+    return {c0:sp.cash||0, pct0:sp.cashPct||0, filas};
+  }
+  function pintaCaja(R){
+    const C=caja(R), el=document.getElementById('dvCaja');
+    el.innerHTML=`<div class="dv-cj"><span>Hoy</span><b>${money(C.c0)}</b><em>${pct(C.pct0)}</em></div>`+
+      C.filas.map(f=>`<div class="dv-cj ${f.pct>POLICY.cashMax?'mal':''}"><span>${fd(f.r.pago||f.r.ex)} · ${esc(f.r.sym)} +${money(f.r.monto)}</span><b>${money(f.caja)}</b><em>${pct(f.pct)}</em></div>`).join('')+
+      `<p class="sub-note">${C.filas.some(f=>f.pct>POLICY.cashMax)?`<span class="neg">Algún dividendo lleva la caja arriba de ${POLICY.cashMax}%: conviene tener lista la orden para invertirlo.</span> `:''}El dividendo entra a la caja el día de pago; así lo cuenta el tracker.</p>`;
+  }
+  function calendario(R){
+    const S=Store.get(), hoy=Habil.hoy(), fin=S.cfg.finGestion||hoy, fer=new Set(S.cfg.feriados||FERIADOS_BMV);
+    const porDia={}; R.forEach(r=>{ (porDia[r.ex]||(porDia[r.ex]=[])).push({r,t:'ex'}); if(r.pago) (porDia[r.pago]||(porDia[r.pago]=[])).push({r,t:'pago'}); });
+    const m0=(hoy<fin?hoy:fin).slice(0,7), meses=[]; let d=new Date(m0+'-01T12:00:00');
+    while(iso(d).slice(0,7)<=fin.slice(0,7)){ meses.push(iso(d).slice(0,7)); d.setMonth(d.getMonth()+1); }
+    const chip=({r,t})=>`<button type="button" class="dv-chip ${r.mio?'h':'u'} ${t} ${st.sel===r.id?'on':''}" data-dv="${esc(r.id)}" title="${esc(r.sym)} · ${t==='ex'?'fecha ex':'pago'} · ${esc(EST[r.estado][0])}">${marca(r.sym)}<b>${esc(r.sym)}</b><em>${t==='ex'?'ex':'pago'}</em></button>`;
+    document.getElementById('dvCal').innerHTML=meses.map(m=>{
+      const a=new Date(m+'-01T12:00:00'), z=new Date(a.getFullYear(),a.getMonth()+1,0,12), sem=[];
+      let x=new Date(a); x.setDate(x.getDate()-((x.getDay()+6)%7));                    // lunes de la primera semana
+      for(;x<=z;x.setDate(x.getDate()+7)){ const dias=[];
+        for(let i=0;i<5;i++){ const y=new Date(x); y.setDate(y.getDate()+i); const f=iso(y), ev=porDia[f]||[];
+          dias.push(`<div class="dv-dia ${f.slice(0,7)!==m?'fuera':''} ${f===hoy?'hoy':''} ${fer.has(f)?'fer':''} ${ev.length?'':'vac'}"><span class="dv-n"><i>${DIA[y.getDay()]}</i> ${y.getDate()}${f===hoy?' · hoy':''}${fer.has(f)?' · feriado':''}</span>${f.slice(0,7)===m?ev.map(chip).join(''):''}</div>`); }
+        sem.push(`<div class="dv-sem">${dias.join('')}</div>`); }
+      return `<div class="dv-mes"><h4>${MESL[a.getMonth()]} ${a.getFullYear()}</h4><div class="dv-cab"><span>lun</span><span>mar</span><span>mié</span><span>jue</span><span>vie</span></div>${sem.join('')}</div>`; }).join('');
+  }
+  function detalle(R){
+    const r=R.find(x=>x.id===st.sel), el=document.getElementById('dvDet');
+    if(!r){ el.innerHTML='<div class="insuf">Sin dividendos en el periodo.</div>'; return; }
+    const [t,c]=EST[r.estado];
+    el.innerHTML=`<div class="dv-det"><span class="sym clicable" data-ficha="${esc(r.sym)}" title="Ver ficha de ${esc(r.sym)}">${marca(r.sym)}${esc(r.sym)}</span><span class="chip ${c}">${esc(t)}</span>
+      <p>${frase(r)}</p>
+      <dl><dt>Tipo</dt><dd>${tipoTxt(r.clase)}</dd><dt>Títulos al cierre anterior a la fecha ex</dt><dd>${r.tit!=null?ints(r.tit)+(r.est?' (los de hoy)':''):'—'}</dd>
+        <dt>Monto bruto</dt><dd>${r.monto!=null?money(r.monto)+(r.est?' (estimado)':''):'—'}</dd>
+        <dt>Rendimiento (dividendo ÷ precio)</dt><dd>${r.yld!=null?pct(r.yld):'—'}</dd></dl></div>`;
+  }
+  function historial(R){
+    const hoy=Habil.hoy(), hace1=(d=>{ d.setFullYear(d.getFullYear()-1); return iso(d); })(new Date(hoy+'T12:00:00'));
+    const syms=[...new Set(R.filter(r=>r.mio).map(r=>r.sym))].sort();
+    document.getElementById('dvHist').innerHTML=syms.map(s=>{ const h=Ctx.D.divH.filter(x=>x.sym===s && x.dps!=null).sort((a,b)=>a.ex.localeCompare(b.ex));
+      if(!h.length) return ''; const mx=Math.max(...h.map(x=>x.dps)), u12=h.filter(x=>x.ex>hace1 && x.ex<=hoy).reduce((a,x)=>a+x.dps,0), px=Market.price(s);
+      return `<div class="dv-h"><span class="sym clicable" data-ficha="${s}">${marca(s)}${s}</span><span class="dv-bar">${h.map(x=>`<i class="${x.ex>hoy?'fut':''}" style="height:${Math.max(6,x.dps/mx*100).toFixed(0)}%" title="${fd(x.ex)} ${x.ex.slice(0,4)} · ${dpsF(x.dps)}"></i>`).join('')}</span>
+        <span class="dv-ht"><b>${dpsF(u12)}</b> en 12 meses${px>0?` · ${pct(u12/px*100)} del precio`:''}<em>${h.length} pagos · último ${fd(h.at(-1).ex)} ${h.at(-1).ex.slice(0,4)}</em></span></div>`; }).join('')
+      ||(Ctx.D.listo?'<div class="insuf">Sin historial en dividendos_historicos.csv.</div>':CARGA);
+  }
+  let enlazado=false;
+  function render(){
+    if(!Ctx.D.listo){ document.getElementById('dvKpis').innerHTML=CARGA.repeat(4); return; }
+    const R=filas(), hoy=Habil.hoy();
+    if(!R.some(r=>r.id===st.sel)) st.sel=(R.filter(r=>r.mio && r.ex>=hoy).sort((a,b)=>a.ex.localeCompare(b.ex))[0]||R.filter(r=>r.mio).at(-1)||R[0]||{}).id||'';
+    kpis(R); calendario(R); detalle(R); pintaCaja(R); historial(R);
+    UI.seg('segDv',['EN CARTERA','TODO EL UNIVERSO'],st.ver,k=>{ st.ver=k; render(); });
+    const T=R.filter(r=>st.ver!=='EN CARTERA' || r.mio);
+    document.getElementById('dvHint').textContent=`${T.length} dividendos · día 0 = ${fdate(Store.get().cfg.refDate)}`;
+    UI.table('tDv',[
+      {k:'sym',l:'Emisora',f:v=>`<span class="sym clicable" data-ficha="${v}" title="Ver ficha de ${v}">${marca(v)}${v}</span>`},
+      {k:'clase',l:'Tipo',f:v=>tipoTxt(v)},
+      {k:'dps',l:'Por acción',f:v=>v!=null?dpsF(v):'por capturar'},
+      {k:'ex',l:'Fecha ex',f:v=>fd(v)},
+      {k:'pago',l:'Fecha de pago',f:v=>fd(v)},
+      {k:'tit',l:'Títulos',f:v=>v!=null?ints(v):'—',t:'Títulos al cierre anterior a la fecha ex'},
+      {k:'monto',l:'Monto bruto',f:(v,r)=>v!=null?money(v)+(r.est?' <span class="neu">est.</span>':''):'—'},
+      {k:'yld',l:'Rendimiento',f:v=>v!=null?pct(v):'—',t:'Dividendo ÷ precio de hoy'},
+      {k:'estadoTxt',l:'Estado',f:(v,r)=>`<span class="chip ${EST[r.estado][1]}" data-dv="${esc(r.id)}">${esc(r.estado==='na'?'No aplica':v)}</span>`,t:'No aplica: la fecha ex fue antes del día 0'}
+    ],T,{sort:'ex',dir:1,movil:['monto','estadoTxt'],empty:'Sin dividendos en dividendos.csv'});
+    if(!enlazado){ enlazado=true;
+      document.getElementById('v-dividendos').addEventListener('click',ev=>{ const b=ev.target.closest('[data-dv]'); if(!b) return;
+        st.sel=b.dataset.dv; render(); if(b.closest('#tDv') && innerWidth>768) document.getElementById('dvDet').scrollIntoView({block:'nearest',behavior:'smooth'}); }); }
+  }
+  return {render,texto,filas};
 })();
 
 const Charts=(()=>{
@@ -6812,7 +7411,7 @@ const UI=(()=>{
     simulador:['Gestión','Simulador de órdenes · cuánto falta para el peso objetivo'],
     noticias:['Seguimiento','Noticias del portafolio'],
     mercado:['Datos','Mercado'],analisis:['Análisis','Análisis'],control:['Control','Control'],
-    atribucion:['Análisis','Atribución y reporte']};
+    atribucion:['Análisis','Atribución y reporte'],dividendos:['Gestión','Dividendos'],historia:['Gestión','Historia del portafolio']};
   const ic=n=>`<svg class="i"><use href="#i-${n}"/></svg>`;
 
   let ledS='ok';
@@ -6838,17 +7437,21 @@ const UI=(()=>{
   function pauseBtn(p){const b=$('#btnPause'); if(b) b.innerHTML=`${ic(p?'play':'pause')}<span>${p?'Reanudar':'Pausar'}</span>`;}
   function feedProgress(sym){const e=$('#feedLog'); if(e&&e.firstChild&&e.dataset.prog) e.querySelector('.prog').textContent=sym;}
 
-  function go(v){ view=v;
+  function go(v){ const otra=v!==view; if(otra) Ruta.guardaScroll();      // v7.0: el scroll de la vista que se deja queda en su entrada
+    if(otra && view==='historia') HistV.salir();                           // al salir se matan sus ScrollTriggers
+    view=v; document.body.dataset.vista=v;
     $$('.nav-item').forEach(b=>b.classList.toggle('on',b.dataset.v===v));
     $$('.view').forEach(s=>s.classList.toggle('on',s.id==='v-'+v));
     const[c,t]=TITLES[v]||['','']; $('#crumb').textContent=c; $('#title').textContent=t;
     $('#sidebar').classList.remove('open');
+    Ruta.vista(otra);
     requestAnimationFrame(()=>{ink(v); render();});
   }
   function goPane(v,p){ pane[v]=p;
     const sec=$('#v-'+v);
     sec.querySelectorAll('.tab').forEach(b=>b.classList.toggle('on',b.dataset.p===p));
     sec.querySelectorAll('.pane').forEach(s=>s.classList.toggle('on',s.id==='p-'+p));
+    Ruta.vista(false);
     requestAnimationFrame(()=>{ink(v); render();});
   }
   function ink(v){ const sec=$('#v-'+v); if(!sec) return;
@@ -6856,7 +7459,10 @@ const UI=(()=>{
     k.style.left=on.offsetLeft+'px'; k.style.width=on.offsetWidth+'px'; }
 
   /* —— tabla genérica: orden, filtro, destello de cambio —— */
-  const lastVals={};
+  const lastVals={}, filasAb=new Set();
+  document.addEventListener('click',ev=>{ const tr=ev.target.closest?.('table.tm tbody tr[data-fk]');
+    if(!tr || ev.target.closest('[data-ficha],a,button,input,select') || !matchMedia('(max-width:768px)').matches) return;
+    const k=tr.dataset.fk; filasAb.has(k)?filasAb.delete(k):filasAb.add(k); tr.classList.toggle('ab'); });
   function table(id,cols,rows,opts={}){
     const el=document.getElementById(id); if(!el) return;
     const st=sortState[id]||(sortState[id]={k:opts.sort||cols[0].k,dir:opts.dir||-1});
@@ -6865,14 +7471,16 @@ const UI=(()=>{
       return String(x??'').localeCompare(String(y??''))*st.dir;});
     if(!sorted.length){ el.innerHTML=`<tbody><tr><td colspan="${cols.length}"><div class="empty">${ic('empty')}${opts.empty||'Sin registros'}</div></td></tr></tbody>`; return; }
     const head=cols.map(c=>`<th data-k="${c.k}" class="${st.k===c.k?'srt':''}" ${c.t?`title="${esc(c.t)}"`:''}>${c.l}<span class="ar">${st.k===c.k?(st.dir>0?'▲':'▼'):'◆'}</span></th>`).join('');
+    const mv=opts.movil;      // v7.0: en el celular, [k1,k2] quedan a la derecha de la emisora y el resto se abre con un toque
     const body=sorted.map(r=>{
       const key=id+'|'+(r.id||r.sym||'');
-      return `<tr>${cols.map(c=>{
+      return `<tr${mv?` data-fk="${esc(key)}"${filasAb.has(key)?' class="ab"':''}`:''}>${cols.map(c=>{
         const raw=r[c.k], v=c.f?c.f(raw,r):(raw??'—'), k=c.cl?c.cl(raw,r):'';
         let fl='';
         if(c.flash&&typeof raw==='number'){ const kk=key+'|'+c.k, prev=lastVals[kk];
           if(prev!==undefined&&Math.abs(prev-raw)>1e-9) fl=raw>prev?' up':' dn'; lastVals[kk]=raw; }
-        return `<td class="${k}${fl}">${v}</td>`;}).join('')}</tr>`;}).join('');
+        return `<td class="${k}${fl}${mv?(c.k===mv[0]?' m1':c.k===mv[1]?' m2':''):''}"${mv?` data-l="${esc(c.l)}"`:''}>${v}</td>`;}).join('')}</tr>`;}).join('');
+    el.classList.toggle('tm',!!mv);
     const firma=id+'|'+sorted.length+'|'+(opts.sort||'')+'|'+st.k+st.dir;
     const nuevo=el.dataset.firma!==firma;
     el.innerHTML=`<thead><tr>${head}</tr></thead><tbody class="${nuevo?'cascada':''}">${body}</tbody>`;
@@ -6889,6 +7497,15 @@ const UI=(()=>{
   const kpiPrevio={};
   const soloNumero=s=>{ const m=String(s).replace(/<[^>]*>/g,'').replace(/\u2212/g,'-').replace(/[^\d.,+-]/g,'').replace(/,/g,'');
     const n=parseFloat(m); return isFinite(n)?n:null; };
+  /* v7.0 · El KPI cuenta de su valor anterior al nuevo, una sola vez por cambio. Solo si el texto es una cifra simple del mismo signo
+     («$10,773,389.51», «+3.99%»); con «reducir movimiento» o sin GSAP, el valor nuevo aparece directo. */
+  function contarKpi(el,v,p,n){
+    const m=String(v).match(/^([^\d<]*)(\d[\d,]*)(\.\d+)?([^\d<]*)$/);
+    if(!m || !window.gsap || p*n<0 || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const dec=m[3]?m[3].length-1:0, o={x:Math.abs(p)}, f=x=>m[1]+x.toLocaleString('en-US',{minimumFractionDigits:dec,maximumFractionDigits:dec})+m[4];
+    if(el._cuenta) el._cuenta.kill();
+    el._cuenta=gsap.to(o,{x:Math.abs(n),duration:HistV.MOTION.lento,ease:HistV.MOTION.ease,onUpdate:()=>{ el.textContent=f(o.x); },onComplete:()=>{ el.innerHTML=v; }});
+  }
   function kpi(id,v,d){
     const a=$('#'+id);
     if(a && !a.ausente){
@@ -6898,6 +7515,7 @@ const UI=(()=>{
         a.classList.remove('sube','baja');
         void a.offsetWidth;                       // reinicia la animación
         a.classList.add(n>p?'sube':'baja');
+        contarKpi(a,v,p,n);                       // v7.0
       }
       if(n!==null) kpiPrevio[id]=n;
     }
@@ -6927,12 +7545,14 @@ const UI=(()=>{
     if(view==='portafolio'){ if(p==='dash')rDash(); if(p==='dia')rDia(); if(p==='pos')rPos(); if(p==='comp')rComp(); }
     if(view==='operaciones'){ if(p==='log')rOps(); if(p==='open'||p==='closed')rTrades(); if(p==='adj')rAdj(); }
     if(view==='modelo'){ if(p==='pesos')rModel(); if(p==='rebal')rRebal(); if(p==='pub')rPub(); }
-    if(view==='mercado'){ if(p==='px')rPx(); if(p==='fedw')FedW.render(); if(p==='elec')Elecc.render(); if(p==='feed')rFeed(); if(p==='nube')rNube(); }
+    if(view==='mercado'){ if(p==='px')rPx(); if(p==='graf')Graf.render(); if(p==='fedw')FedW.render(); if(p==='elec')Elecc.render(); if(p==='feed')rFeed(); if(p==='nube')rNube(); }
     if(view==='noticias') rNoti();
     if(view==='simulador') rSim();
     if(view==='analisis'){ if(p==='rend')rRend(); if(p==='comp3')rCmp(); if(p==='hist5')rHist5(); if(p==='riesgo')rRisk(); if(p==='prosp')rProsp(); if(p==='atr')rAtr(); if(p==='bmk')rBmk(); }
     if(view==='control'){ if(p==='efec')rCash(); if(p==='cump')rCump(); if(p==='cfg')rCfg(); }
     if(view==='atribucion') AtrV.render(p);
+    if(view==='dividendos') Divs.render();
+    if(view==='historia') HistV.render();
     montarExplicador();
     cintaPendiente();
     try{ Alertas.pendiente(); }catch(e){}
@@ -6945,6 +7565,8 @@ const UI=(()=>{
      muertos hasta el siguiente ciclo completo. */
   function delegarFicha(){
     document.addEventListener('click',ev=>{
+      // v7.0: la ficha abre Mercado → Gráfica con su símbolo (primero se cierra, para que su entrada salga del historial)
+      const g=ev.target.closest?.('[data-graf]'); if(g){ ev.preventDefault(); g.closest('.ovl')?.querySelector('.ficha-cerrar')?.click(); Graf.abrir(g.dataset.graf); return; }
       const t=ev.target.closest?.('[data-ficha]'); if(!t) return;
       ev.preventDefault(); ev.stopPropagation(); ficha(t.dataset.ficha);
     });
@@ -7395,7 +8017,7 @@ const UI=(()=>{
       <div class="ficha-b ficha-pane" data-pane="ficha">
         ${reco}
         ${sec('Posición en el fondo',comp())}
-        ${sec('Velas diarias · últimos seis meses',`<div style="height:300px;position:relative"><div id="fichaVelas" style="height:100%"></div></div><div id="fichaPorQue"></div>`)}
+        ${sec('Velas diarias · últimos seis meses',`<div style="height:300px;position:relative"><div id="fichaVelas" style="height:100%"></div></div><p style="margin:8px 0 0"><button type="button" class="btn sm" data-graf="${s}">Abrir en Gráfica, con volumen y rangos →</button></p><div id="fichaPorQue"></div>`)}
         ${vacio?`<div class="ficha-vacia">Todavía no hay ficha cargada para esta emisora.<br>
           Se arma sola en cuanto aparezca el bloque <b>=== ${s} ===</b> en el archivo de fichas.</div>`:''}
         ${sec('Perfil de la compañía',f.descripcion?`<p>${esc(f.descripcion)}</p>`:'')}
@@ -7417,16 +8039,17 @@ const UI=(()=>{
     /* Escritorio: se materializa con transiciones de clase, que al interrumpirse
        regresan desde donde van. Celular: hoja inferior que se arrastra con el dedo. */
     const panel=ovl.querySelector('.ficha');
-    const hoja=(typeof Fluido!=='undefined' && Fluido.esCelular()) ? Fluido.hoja(ovl,panel,ovl.querySelector('.ficha-h'),{alCerrar:()=>ovl.remove()}) : null;
+    const hoja=(typeof Fluido!=='undefined' && Fluido.esCelular()) ? Fluido.hoja(ovl,panel,ovl.querySelector('.ficha-h'),{alCerrar:()=>{ ovl.remove(); fin(); }}) : null;
     let cerrada=false;
+    // v7.0: fin() también corre cuando la hoja se cierra deslizando, para quitar su entrada del historial
+    const fin=()=>{ if(cerrada) return; cerrada=true; document.removeEventListener('keydown',esc2); document.body.classList.remove('con-hoja'); Ruta.cerre(cerrar); };
     const cerrar=()=>{
-      if(cerrada) return; cerrada=true;
-      document.removeEventListener('keydown',esc2);
-      document.body.classList.remove('con-hoja');
+      if(cerrada) return; fin();
       if(hoja){ hoja.cerrar(0); return; }
       ovl.classList.remove('visible');
       setTimeout(()=>ovl.remove(),360);
     };
+    Ruta.abrir('emisora',s,cerrar);
     const esc2=ev=>{ if(ev.key==='Escape') cerrar(); };
     ovl.onclick=ev=>{ if(ev.target===ovl) cerrar(); };
     ovl.querySelector('.ficha-cerrar').onclick=cerrar;
@@ -7635,6 +8258,29 @@ const UI=(()=>{
   const hace = t => { const m=Math.round((Date.now()-t)/60000);
     return m<1?'hace un momento':m<60?`hace ${m} min`:m<1440?`hace ${Math.round(m/60)} h`:`hace ${Math.round(m/1440)} días`; };
   const fechaHora = t => new Date(t).toLocaleString('es-MX',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
+  /* v7.0 · Estado de la publicación. La regla de 75 min solo aplica al modo continuo con la BMV abierta. La rutina es
+     una corrida al día después del cierre: se juzga contra el cierre de la BMV (15:00 CDMX) del último día hábil, con
+     la fecha más reciente entre el latido y parametros.json, para que un latido viejo no tape una publicación nueva. */
+  const DIA3=['dom','lun','mar','mié','jue','vie','sáb'], MES3=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  const fCdmx=(t,hora=true)=>{ const d=new Date(t-6*3600e3), p=n=>String(n).padStart(2,'0');
+    return `${DIA3[d.getUTCDay()]} ${d.getUTCDate()}-${MES3[d.getUTCMonth()]}`+(hora?`, ${p(d.getUTCHours())}:${p(d.getUTCMinutes())}`:''); };
+  function estadoPublicacion(L,tParam,ahora){
+    const tL=L&&L.ultima_revision?Date.parse(L.ultima_revision):NaN;
+    const t=Math.max(isFinite(tL)?tL:0, isFinite(tParam)?tParam:0); if(!t) return null;
+    const fer=new Set(Store.get().cfg.feriados||FERIADOS_BMV), dia=x=>new Date(x-6*3600e3).toISOString().slice(0,10);
+    const habil=x=>{ const w=new Date(x-6*3600e3).getUTCDay(); return w>=1 && w<=5 && !fer.has(dia(x)); };
+    const ult=`Última publicación: ${fCdmx(t)}`;
+    if(L && L.modo!=='cierre' && tL>=t && dia(tL)===dia(ahora) && habil(ahora) && Calc.enSesion(ahora)){   // modo continuo, vivo hoy
+      if((ahora-tL)/60000>75) return {cls:'neg', txt:`Sin señal ${hace(tL)}: la computadora que publica pudo apagarse o perder la sesión de Workspace. ${ult}.`};
+      if(L.estado==='error') return {cls:'warn', txt:`Reintentando: ${esc(L.detalle||'')} · revisado ${hace(tL)}.`};
+      return {cls:'pos', txt:`Activo · ${esc(L.detalle||'')} · revisado ${hace(tL)}.`};
+    }
+    let c=Date.parse(dia(ahora)+'T21:00:00Z');                       // 15:00 CDMX
+    while(c>ahora || !habil(c)) c-=864e5;                            // último día hábil que ya cerró
+    if(t>=c) return {cls:'pos', txt:`Al día · ${ult}.`};
+    if(dia(c)===dia(ahora) && new Date(ahora-6*3600e3).getUTCHours()<20) return {cls:'warn', txt:`Falta el cierre de hoy · ${ult}.`};
+    return {cls:'neg', txt:`Sin publicar el cierre del ${fCdmx(c,false)} · ${ult}.`};
+  }
   function renderFuentes(){
     const S=Store.get(), f=FUENTE_PX[S.pxSource]||FUENTE_PX.seed;
     const vivo=['cotiz','acciones'].includes(S.pxSource), simulado=S.pxSource==='sim';
@@ -7644,14 +8290,8 @@ const UI=(()=>{
     const lineaDato = isFinite(tDato) ? `Precio al ${fechaHora(tDato)} · ${hace(tDato)}` : 'Sin cotización publicada todavía';
     const lineaLeido = isFinite(tLeido) ? `Este tablero lo leyó ${hace(tLeido)}` : '';
     // Latido del vigilante: prueba de vida de la computadora que publica.
-    const L=Remote.estadoVigilante?.();
-    let vig='', vigCls='';
-    if(L && L.ultima_revision){
-      const t=Date.parse(L.ultima_revision), min=(Date.now()-t)/60000;
-      if(min>75){ vig=`Sin señal ${hace(t)}: la computadora que publica pudo apagarse o perder la sesión de Workspace.`; vigCls='neg'; }
-      else if(L.estado==='error'){ vig=`Reintentando: ${esc(L.detalle||'')} · revisado ${hace(t)}.`; vigCls='warn'; }
-      else { vig=`Activo · ${esc(L.detalle||'')} · revisado ${hace(t)}.`; vigCls='pos'; }
-    }
+    const eP=estadoPublicacion(Remote.estadoVigilante?.(), Date.parse(S.paramRemotos), Date.now());
+    const vig=eP?eP.txt:'', vigCls=eP?eP.cls:'';
     // Precio viejo en horario de bolsa: se avisa aunque el vigilante diga que está bien.
     const rezagado = vivo && isFinite(tDato) && Calc.enSesion(Date.now()) && (Date.now()-tDato)>30*60000;
     $('#fuentes').innerHTML=`
@@ -7665,8 +8305,9 @@ const UI=(()=>{
           <em>Réplica del S&amp;P/BMV IPC CompMX Dividend ESG Tilted TR. El valor se calcula con la canasta oficial.</em></p></div></div>
         <div class="fuente"><span class="ico">${ic('cog')}</span><div>
           <h4>Publicación</h4><p><b>Vigilante Refinitiv → GitHub</b>
-          <em>Una computadora con LSEG Workspace publica: cotizaciones cada 5 minutos, bitácora intradía, y al cierre el histórico diario y las betas.</em>
+          <em>Una computadora con LSEG Workspace publica una vez al día, después del cierre (desde las 17:30): cierres, noticias, atribución y riesgo.</em>
           ${vig?`<em class="${vigCls}">${vig}</em>`:''}
+          <em><button type="button" class="btn sm" data-copia-ia title="Liga fija a contexto.md: el estado del fondo en texto plano, para pegarla en Claude, ChatGPT o Gemini">Copiar liga para IA</button></em>
           <em>Este tablero revisa en GitHub si hay una publicación nueva cada 2 minutos (cada 5 cuando no hay movimiento) y la muestra sin recargar la página.</em></p></div></div>
         <div class="fuente"><span class="ico">${ic('shield')}</span><div>
           <h4>Marco normativo</h4><p><b>Políticas de inversión FIB AD26</b>
@@ -7692,7 +8333,8 @@ const UI=(()=>{
       </div></div>
       <div class="creditos">
         North Star Strategies · Sistema de Seguimiento de Operaciones v2.0 — Fondo de Inversión ITESM-BBVA.<br>
-        Datos de mercado: LSEG. Marcas y logotipos propiedad de sus respectivos titulares, usados únicamente para identificar a las emisoras del universo de inversión.
+        Datos de mercado: LSEG. Marcas y logotipos propiedad de sus respectivos titulares, usados únicamente para identificar a las emisoras del universo de inversión.<br>
+        <a class="gf-atr" href="https://www.tradingview.com/" target="_blank" rel="noopener">Gráficas: TradingView Lightweight Charts</a>
       </div>`;
   }
 
@@ -7700,7 +8342,7 @@ const UI=(()=>{
   function rCtx(){
     const D=Ctx.D, MON=['MXN','USD','BRL','COP','ARS','PEN','CLP','EUR','Otras','Sin dato'];
     const pdf=$('#btnPdf'); if(!pdf.ausente && !/^https?:$/.test(location.protocol)) pdf.href=Ctx.RAW+'reporte_semanal.pdf';
-    if(!D.listo){ ['#monedaTabla','#macroTabla','#calLista'].forEach(k=>{ const e=$(k); if(!e.ausente) e.innerHTML='<div class="insuf">Cargando…</div>'; }); return; }
+    if(!D.listo){ ['#monedaTabla','#macroTabla','#calLista'].forEach(k=>{ const e=$(k); if(!e.ausente) e.innerHTML=CARGA; }); return; }
     const lt=Portfolio.lookThroughWeights(), bw=Bmk.weights(), held=new Set(Portfolio.positions().map(p=>p.sym));
     const expo=w=>{ const e=Object.fromEntries(MON.map(m=>[m,0]));
       Object.entries(w).forEach(([s,x])=>{ if(s==='__cash' || s==='MEXTRAC' || !(x>0)) return; const m=D.sotp[s]?.m||{}; let cub=0;
@@ -7718,17 +8360,26 @@ const UI=(()=>{
       (falta.length?`<span class="wrn">Falta capturar el EBITDA por moneda de ${falta.join(', ')} (hoja SOTP del tracker).</span> `:'')+
       'Fuente: captura del último reporte o, si no hay, ingresos por región de LSEG.';
     const ref=Store.get().cfg.refDate, porMon=m=>[...held].filter(s=>(D.sotp[s]?.m||{})[m]>=0.1);
-    const filas=Object.entries(D.macro).map(([k,x])=>{ const s=x.s, u=s.at(-1), a=s.at(-2), r0=[...s].reverse().find(z=>z.f<=ref);
+    // v7.0 · celular: grupos, nombre corto (el completo queda en title y aria-label) y «mueve a» en chips; el escritorio se ve igual
+    const CORTO={USD:'USD/MXN',EUR:'EUR/MXN',BRL:'BRL/MXN',COP:'COP/MXN ×1,000',ARS:'ARS/MXN ×1,000',PEN:'PEN/MXN',CLP:'CLP/MXN ×1,000',BRENT:'Brent',COBRE:'Cobre',
+      PLATA:'Plata',ORO:'Oro',UST10:'Treasury 10a',MBONO10:'Bono M 10a',BOVESPA:'Bovespa',SP500:'S&P 500',IPC:'IPC'};
+    const grupo=(k,x)=>x.moneda?'Monedas':/^(UST10|MBONO10)$/.test(k)?'Tasas':/^(BOVESPA|SP500|IPC)$/.test(k)?'Bolsas':'Materias primas';
+    let gAnt='';
+    const filas=Object.entries(D.macro).sort((a,b)=>['Monedas','Materias primas','Tasas','Bolsas'].indexOf(grupo(...a))-['Monedas','Materias primas','Tasas','Bolsas'].indexOf(grupo(...b)))
+     .map(([k,x])=>{ const s=x.s, u=s.at(-1), a=s.at(-2), r0=[...s].reverse().find(z=>z.f<=ref);
       const yld=/^(UST10|MBONO10)$/.test(k), ch=(v0)=>v0?(yld?`${u.v-v0.v>=0?'+':'−'}${Math.abs((u.v-v0.v)*100).toFixed(0)} pb`:pctS((u.v/v0.v-1)*100)):'—';
       const mueve=[...new Set([...(x.moneda?porMon(x.moneda):[]),...x.mueve.filter(e=>held.has(e))])];
-      return `<tr><td>${esc(x.nombre)}${mueve.length?`<div class="mv">mueve a ${mueve.join(', ')}</div>`:''}</td><td class="n">${u.v>=1000?ints(Math.round(u.v)):num(u.v,u.v<10?4:2)}</td>
+      const g=grupo(k,x), cab=g!==gAnt?`<tr class="mac-g"><td colspan="4">${g}</td></tr>`:''; gAnt=g;
+      return `${cab}<tr><td title="${esc(x.nombre)}" aria-label="${esc(x.nombre)}"><span class="nl">${esc(x.nombre)}</span><span class="nc">${esc(CORTO[k]||x.nombre)}</span>${mueve.length?`<div class="mv"><span class="mv-t">mueve a ${mueve.join(', ')}</span><span class="mv-c">${mueve.map(e=>`<i>${e}</i>`).join('')}</span></div>`:''}</td><td class="n">${u.v>=1000?ints(Math.round(u.v)):num(u.v,u.v<10?4:2)}</td>
         <td class="n ${cls(yld?u.v-(a?.v??u.v):u.v/(a?.v||u.v)-1)}">${ch(a)}</td><td class="n ${cls(yld?u.v-(r0?.v??u.v):u.v/(r0?.v||u.v)-1)}">${ch(r0)}</td></tr>`; });
     $('#macroTabla').innerHTML=filas.length?`<table class="mac"><colgroup><col><col style="width:62px"><col style="width:56px"><col style="width:64px"></colgroup><tr><th></th><th style="text-align:right">Último</th><th style="text-align:right">Día</th><th style="text-align:right">Desde el día 0</th></tr>${filas.join('')}</table>`
       :'<div class="insuf">Sin datos macro (macro.csv del vigilante).</div>';
     const ult=Object.values(D.macro)[0]?.s.at(-1)?.f; $('#macroHint').textContent=ult?`cierre del ${fdate(ult)} · divisas en pesos`:'';
-    const hoy=Habil.hoy(), ev=D.cal.filter(e=>e.fecha>=hoy).slice(0,10);
-    $('#calLista').innerHTML=ev.length?ev.map(e=>`<div class="cal-it"><span class="f">${fdate(e.fecha).slice(0,5)}</span><span><b>${esc(e.claves.join(' · '))}</b> · ${esc(e.tipo)}
-      <div class="t">${esc(e.titulo)}</div></span></div>`).join(''):'<div class="insuf">Sin eventos próximos en calendario.csv.</div>';
+    // v7.0: los 3 siguientes; el dividendo va en español desde sus campos y el calendario completo vive en la vista Dividendos
+    const hoy=Habil.hoy(), ev=D.cal.filter(e=>e.fecha>=hoy).slice(0,3);
+    $('#calLista').innerHTML=(ev.length?ev.map(e=>`<div class="cal-it"><span class="f">${fdate(e.fecha).slice(0,5)}</span><span><b>${esc(e.claves.join(' · '))}</b> · ${esc(e.tipo)}
+      <div class="t">${esc(/dividendo/i.test(e.tipo)?Divs.texto(e):e.titulo)}</div></span></div>`).join(''):'<div class="insuf">Sin eventos próximos en calendario.csv.</div>')
+      +'<a class="el-liga" style="margin:10px 0 0" href="#/dividendos">Ver calendario de dividendos →</a>';
   }
   /* v6.6 · Nota corta del incidente de caja (compra del 16-oct no capturada). Aparece mientras rendimientos.csv traiga
      algún cierre con caja negativa; la liga abre la bitácora con las ventas de corrección. */
@@ -7862,7 +8513,7 @@ const UI=(()=>{
       {k:'bw',l:'% en el índice',f:v=>pct(v)},
       {k:'dev',l:'Sobre o subponderación',f:v=>v===null?'<span style="color:var(--txt-3)">réplica</span>':
         `${pctS(v)} <span class="bar" style="width:42px"><i class="${Math.abs(v)>POLICY.activeDevMax?'bad':v>=0?'over':''}" style="width:${Math.min(100,Math.abs(v)/POLICY.activeDevMax*100)}%"></i></span>`,cl:v=>cls(v)}
-    ],rows,{sort:'mv',empty:Store.get().ops.length?'Sin posiciones. Registre operaciones de compra o ejecute un rebalanceo.':'Aún sin asignación de BBVA: todo el capital está en efectivo. La cartera objetivo está en Modelo de cartera; las posiciones aparecen en cuanto se captura la asignación en el tracker.'});
+    ],rows,{sort:'mv',movil:['px','dayChgPct'],empty:Store.get().ops.length?'Sin posiciones. Registre operaciones de compra o ejecute un rebalanceo.':'Aún sin asignación de BBVA: todo el capital está en efectivo. La cartera objetivo está en Modelo de cartera; las posiciones aparecen en cuanto se captura la asignación en el tracker.'});
     Charts.pnl(); Charts.weights();
   }
   function rComp(){
@@ -8082,7 +8733,7 @@ const UI=(()=>{
       {k:'acum',l:'Acumulado',f:v=>pctS(v),cl:v=>cls(v),t:'Desde el cierre base: el día de la asignación o, ya fijado, el del portafolio de referencia'},
       {k:'bw',l:'Peso en el índice',f:v=>v>0?pct(v):'—'},
       {k:'held',l:'En cartera',f:v=>v>0?ints(v):'—'}
-    ],rows,{sort:'bw',empty:'Sin emisoras'});
+    ],rows,{sort:'bw',movil:['px','chgPct'],empty:'Sin emisoras'});
   }
   function rFeed(){
     const c=Store.get().cfg, p=Feed.current();
@@ -8823,7 +9474,7 @@ WALMEX,46.05,45.49,2026-09-14T18:51:21+00:00</pre>
   function setAsOf(d){ Store.get().cfg.asOfDate=d; const i=$('#asOf'); if(i) i.value=d;
     ['#t-fecha','#a-fecha','#d-fecha'].forEach(s=>{const e=$(s); if(e) e.value=d;}); }
 
-  return {go,goPane,render,led,ledRefrescar:()=>led(ledS),pauseBtn,feedProgress,table,seg,ink,applyLogo,setAsOf,rNube,rRebal,rModel,rCmp,rNoti,rHist5,ficha,setHistSeries,montarExplicador,delegarFicha,cintaControles,pintarCinta,delegarCalc,explicacion,
+  return {go,goPane,render,led,ledRefrescar:()=>led(ledS),estadoPublicacion,pauseBtn,feedProgress,table,seg,ink,applyLogo,setAsOf,rNube,rRebal,rModel,rCmp,rNoti,rHist5,ficha,setHistSeries,montarExplicador,delegarFicha,cintaControles,pintarCinta,delegarCalc,explicacion,
           F, get view(){return view}, get pane(){return pane}, get rebalList(){return rebalList}};
 })();
 
@@ -9185,7 +9836,7 @@ const Fluido=(()=>{
     // z-index propio): colgado del body quedaba encima del menú y bloqueaba los toques.
     const velo=document.createElement('div'); velo.className='cajon-velo'; panel.parentNode.insertBefore(velo,panel);
     velo.addEventListener('click',()=>panel.classList.remove('open'));
-    const sync=()=>velo.classList.toggle('on',panel.classList.contains('open') && esCelular());
+    const sync=()=>{ const ab=panel.classList.contains('open') && esCelular(); velo.classList.toggle('on',ab); Ruta.menu(ab); };   // v7.0: atrás cierra el menú
     new MutationObserver(sync).observe(panel,{attributes:true,attributeFilter:['class']}); sync();
     let arr=null, anim=null, x=0;
     const ancho=()=>panel.offsetWidth||250;
@@ -9234,6 +9885,80 @@ const Fluido=(()=>{
   return {resorte,proyectar,liga,hoja,cajon,iniciar,esCelular};
 })();
 
+/* ═══════════ 18b. RUTA · botón atrás como en una página web (v7.0) ═══════════
+   Regla: atrás cierra lo último que se abrió. Vistas y pestañas empujan «#/vista/pestaña»; las capas (lector, pop up del día,
+   ficha y menú del celular) empujan «#nota=…», «#dia=…», «#emisora=…» o «#menu». Cerrar una capa con X, Esc, clic fuera o
+   deslizando llama a history.back(), para que la pila no se desfase. Dentro de popstate nunca se empuja. */
+const Ruta=(()=>{
+  const pila=[];                                   // capas abiertas, en orden: {t,id,cerrar}
+  let enPop=false, espera=false, cola=[], mismoTick=false, listo=false;
+  const est=()=>({v:UI.view, p:UI.pane[UI.view]||'', capas:pila.map(c=>({t:c.t,id:c.id})), y:0});
+  const hVista=()=>'#/'+UI.view+(UI.pane[UI.view]?'/'+UI.pane[UI.view]:'');
+  const url=()=>{ const c=pila.at(-1); return c ? '#'+c.t+(c.id?'='+encodeURIComponent(c.id):'') : hVista(); };
+  const pon=modo=>{ try{ history[modo+'State'](est(),'',url()); }catch(e){} };
+  // Un history.back() propio tarda un instante: lo que quiera empujar mientras tanto espera a su popstate.
+  const luego=f=>{ if(espera) cola.push(f); else f(); };
+  const guardaScroll=()=>{ if(!listo||enPop||espera) return; try{ history.replaceState({...(history.state||est()),y:scrollY},''); }catch(e){} };
+  const restaura=y=>{ const f=()=>scrollTo(0,y); requestAnimationFrame(()=>requestAnimationFrame(f)); setTimeout(f,120); };
+  const cierraMenu=()=>document.getElementById('sidebar').classList.remove('open');
+  const ABRE={nota:id=>Lector.abrir(id), dia:id=>Historia.abrir(id), emisora:id=>{ if(META[id]) UI.ficha(id); },
+    menu:()=>{ abrir('menu','',cierraMenu); document.getElementById('sidebar').classList.add('open'); }};
+
+  function vista(arriba){                          // la llaman UI.go y UI.goPane después de cambiar
+    if(!listo||enPop) return;
+    luego(()=>{ const h=history.state||{}, e=est();
+      if(h.v===e.v && (h.p||'')===e.p && (h.capas||[]).length===e.capas.length) return;
+      const menu=pila.length && pila.at(-1).t==='menu';
+      if(menu) pila.pop();                         // la entrada del menú se convierte en la vista que se eligió
+      pon(menu||mismoTick?'replace':'push');       // go + goPane seguidos dejan una sola entrada
+      mismoTick=true; setTimeout(()=>{ mismoTick=false; },0);
+      if(arriba) scrollTo(0,0);
+    });
+  }
+  function abrir(t,id,cerrar){
+    if(!listo || pila.some(c=>c.cerrar===cerrar)) return;
+    if(enPop){ pila.push({t,id,cerrar}); return; }               // adelante hacia una capa: su entrada ya existe
+    luego(()=>{ guardaScroll(); pila.push({t,id,cerrar}); pon('push'); });
+  }
+  function cambio(cerrar,id){ const c=pila.at(-1); if(!c||c.cerrar!==cerrar) return; c.id=id; if(!enPop) luego(()=>pon('replace')); }
+  function cerre(cerrar){                          // la capa ya se cerró sola: se quita su entrada (y las de encima)
+    const i=pila.findIndex(c=>c.cerrar===cerrar); if(i<0) return;
+    const q=pila.splice(i); if(enPop) return;
+    q.slice(1).forEach(c=>{ try{ c.cerrar(); }catch(e){} });
+    espera=true; history.go(-q.length);
+    setTimeout(suelta,600);                        // red de seguridad: si ese popstate no llega, la cola no se queda atorada
+  }
+  function suelta(){ if(!espera) return; espera=false; const q=cola; cola=[]; q.forEach(f=>f()); }
+  function desdeHash(){
+    const h=location.hash, m=h.match(/^#(nota|dia|emisora)=(.+)$/), r=h.match(/^#\/([a-z]+)(?:\/([\w-]+))?$/);
+    const ir=(v,p)=>{ enPop=true; try{ if(UI.view!==v) UI.go(v); if(p && document.getElementById('p-'+p)) UI.goPane(v,p); } finally{ enPop=false; } };
+    if(r && document.getElementById('v-'+r[1])){ ir(r[1],r[2]); pon('replace'); return; }
+    if(m){ const id=decodeURIComponent(m[2]);
+      ir({nota:'noticias',dia:'portafolio',emisora:UI.view}[m[1]]);
+      try{ history.replaceState(est(),'',hVista()); }catch(e){}      // primero la vista base y luego la capa: atrás deja en el tablero
+      let v=0; (function intenta(){ if(pila.length) return; ABRE[m[1]](id); if(!pila.length && ++v<40) setTimeout(intenta,500); })();
+      return; }
+    pon('replace');
+  }
+  function iniciar(){
+    try{ history.scrollRestoration='manual'; }catch(e){}
+    listo=true; desdeHash();
+    addEventListener('popstate',ev=>{
+      if(espera) return suelta();                                                    // el back de una capa que se cerró sola
+      const S=ev.state; if(!S) return desdeHash();                                   // liga o hash escrito a mano: la entrada ya existe
+      enPop=true;
+      try{
+        const n=(S.capas||[]).length;
+        while(pila.length>n){ const c=pila.pop(); try{ c.cerrar(); }catch(e){} }
+        if(S.v && document.getElementById('v-'+S.v) && (S.v!==UI.view || (S.p||'')!==(UI.pane[S.v]||''))){ UI.go(S.v); if(S.p) UI.goPane(S.v,S.p); }
+        if(n>pila.length){ const c=S.capas[n-1]; if(ABRE[c.t]) ABRE[c.t](c.id); }
+        else if(!n) restaura(S.y||0);
+      } finally{ enPop=false; }
+    });
+  }
+  return {iniciar,vista,abrir,cambio,cerre,guardaScroll,menu:ab=>ab?abrir('menu','',cierraMenu):cerre(cierraMenu),get pila(){ return pila.map(c=>c.t); }};
+})();
+
 /* ═══════════ 19. EVENTOS ═══════════ */
 function bindEvents(){
   $$('.nav-item').forEach(b=>b.onclick=()=>UI.go(b.dataset.v));
@@ -9242,6 +9967,18 @@ function bindEvents(){
   $('#btnGuia').onclick=()=>Guia.iniciar();
   $('#btnPause').onclick=()=>Market.toggle();
   $('#btnTick').onclick=()=>Market.tick(true);
+  // v7.0 · Tarjetas físicas: la inclinación y el brillo siguen al cursor; el CSS pone el tope de 4° y el regreso con resorte
+  if(matchMedia('(hover:hover) and (pointer:fine)').matches && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    let act=null; const suelta=()=>{ if(!act) return; act.classList.remove('toca'); act.style.setProperty('--tx',0); act.style.setProperty('--ty',0); act=null; };
+    document.addEventListener('pointermove',ev=>{ const k=ev.target.closest?.('#p-dash .kpi,#dvKpis .kpi'); if(k!==act) suelta(); if(!k) return; act=k;
+      const r=k.getBoundingClientRect(), x=(ev.clientX-r.left)/r.width, y=(ev.clientY-r.top)/r.height;
+      k.classList.add('toca'); k.style.setProperty('--tx',(x*2-1).toFixed(3)); k.style.setProperty('--ty',(y*2-1).toFixed(3));
+      k.style.setProperty('--lx',(x*100).toFixed(1)+'%'); k.style.setProperty('--ly',(y*100).toFixed(1)+'%'); },{passive:true});
+    document.documentElement.addEventListener('mouseleave',suelta);
+  }
+  // v7.0: liga fija a contexto.md (el estado del fondo en texto plano) para pegarla en cualquier IA
+  $('#fuentes').addEventListener('click',ev=>{ if(!ev.target.closest('[data-copia-ia]')) return; const u=Ctx.RAW+'contexto.md';
+    (navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(()=>toast('Liga copiada: péguela en su IA','ok'),()=>prompt('Copie la liga:',u)); });
   window.addEventListener('resize',()=>UI.ink(UI.view));
 
   const opts=ALL.map(u=>`<option value="${u.s}">${u.s} — ${u.n}</option>`).join('');
@@ -9917,6 +10654,7 @@ const Lector=(()=>{
   function abrir(id){
     const n=buscar(id); if(!n) return false;
     montar();
+    const ya=!!actual;
     if(!actual) previo=document.activeElement;
     actual=n; marcar(n.id);
     document.querySelectorAll('.noti[data-nid]').forEach(c=>{ if(c.dataset.nid===n.id) c.classList.add('leida'); });
@@ -9924,7 +10662,7 @@ const Lector=(()=>{
     fondo.hidden=panel.hidden=false;
     requestAnimationFrame(()=>{ fondo.classList.add('on'); panel.classList.add('on'); panel.querySelector('[data-lec="cerrar"]')?.focus({preventScroll:true}); });
     document.addEventListener('keydown',teclas,true);
-    try{ history.replaceState(null,'','#nota='+encodeURIComponent(n.id)); }catch(e){}
+    if(ya) Ruta.cambio(cerrar,n.id); else Ruta.abrir('nota',n.id,cerrar);      // v7.0: anterior y siguiente no llenan el historial
     if(T===null) cargar().then(()=>{ if(actual&&actual.id===n.id) pintar(); });
     return true;
   }
@@ -9933,7 +10671,7 @@ const Lector=(()=>{
     actual=null; document.removeEventListener('keydown',teclas,true);
     fondo.classList.remove('on'); panel.classList.remove('on');
     setTimeout(()=>{ if(!actual){ fondo.hidden=panel.hidden=true; } },210);
-    try{ history.replaceState(null,'',location.pathname+location.search); }catch(e){}
+    Ruta.cerre(cerrar);
     if(previo&&previo.focus) try{ previo.focus({preventScroll:true}); }catch(e){}
   }
   function accion(k){
@@ -9956,12 +10694,7 @@ const Lector=(()=>{
       if(!c || ev.target.closest('[data-ficha],a,button')) return; abrir(c.dataset.nid); });
     document.addEventListener('keydown',ev=>{ if(actual) return; const c=ev.target.closest?.('.noti[data-nid]');
       if(c && (ev.key==='Enter'||ev.key===' ') && ev.target===c){ ev.preventDefault(); abrir(c.dataset.nid); } });
-    const desdeHash=()=>{ const m=location.hash.match(/^#nota=(.+)$/); if(!m) return;
-      const id=decodeURIComponent(m[1]); let v=0;
-      (function intentar(){ if(abrir(id)){ if(UI.view!=='noticias') UI.go('noticias'); return; } if(++v<40) setTimeout(intentar,500); })(); };
-    addEventListener('hashchange',desdeHash);
-    desdeHash();
-  }
+  }      // v7.0: las ligas #nota=<id> las abre Ruta (un solo manejo del hash)
   return {iniciar, cargar, abrir, cerrar, indicador, leida, lista:a=>{ lst=a||[]; }, firma:()=>gen+':'+(T?Object.keys(T).length:0), get error(){ return error; }};
 })();
 
@@ -10032,9 +10765,11 @@ function seedFromModel(S){
   try{ Lector.iniciar(); }catch(e){ console.warn('Lector de noticias',e); }
   Historia.iniciar();
   Portfolio.snapshot();
+  document.body.dataset.vista=UI.view;
+  try{ Ruta.iniciar(); }catch(e){ console.warn('Ruta',e); }      // v7.0: botón atrás y ligas con hash
   try{ UI.render(); }
   catch(e){ console.error('Fallo en el primer dibujado:',e); }
-  UI.ink('portafolio');
+  UI.ink(UI.view);
   UI.led('ok');
   // Segunda pasada cuando ya cargaron tipografías y lienzos, para que las
   // gráficas midan bien su contenedor en el primer render.
