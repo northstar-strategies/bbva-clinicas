@@ -1,6 +1,6 @@
 ---
 fecha_corte: 2026-11-11
-hora_publicacion: 2026-11-11 17:57 CDMX
+hora_publicacion: 2026-11-11 18:56 CDMX
 fuente_precios: último hecho en CUERVO; Price Close en el resto
 version: v7.0
 dias_habiles_desde_dia0: 17
@@ -18,14 +18,14 @@ tablero: https://northstar-strategies.github.io/bbva-clinicas/
 
 ## Resumen
 
-- Valor del portafolio: $10,905,121.25
-- Caja: $45,862.56 (0.42% del portafolio)
+- Valor del portafolio: $10,904,775.45
+- Caja: $14,597.98 (0.13% del portafolio)
 
 | | Día (mié 11-nov) | Semana (desde vie 6-nov) | Desde el día 0 | Desde el día 0 con la penalización de 30 pb |
 |---|---:|---:|---:|---:|
-| Cartera | +0.34% | +1.93% | +5.26% | +4.96% |
+| Cartera | +0.33% | +1.93% | +5.25% | +4.95% |
 | MEXTRAC09 | +0.46% | +1.83% | +8.60% | +8.60% |
-| Alfa | -12.72 pb | +9.75 pb | -334.62 pb | -364.62 pb |
+| Alfa | -13.04 pb | +9.42 pb | -334.95 pb | -364.95 pb |
 
 ## Cumplimiento
 
@@ -33,7 +33,7 @@ tablero: https://northstar-strategies.github.io/bbva-clinicas/
 |---|---:|---|---|
 | Beta ex ante | 0.91 | 0.70 a 1.30 | OK |
 | Tracking error ex ante, anual | 5.93% | máximo 10% | OK |
-| Caja | 0.42% | 0% a 5% | OK |
+| Caja | 0.13% | 0% a 5% | OK |
 | Desviación máxima por emisora (FEMSAUBD) | 7.81 pp | ±10 pp | OK |
 
 Tracking error realizado desde el día 0, anual: 7.81% (informativo).
@@ -51,23 +51,23 @@ Tracking error realizado desde el día 0, anual: 7.81% (informativo).
 
 | Emisora | Títulos | Precio | Valor | Peso | Peso en el benchmark | Peso activo | Rendimiento del día | Rendimiento desde el día 0 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| MEXTRAC09 | 38,326 | $73.85 | $2,830,375.10 | 25.95% | es el benchmark | +0.00 pp | +0.46% | +8.60% |
+| MEXTRAC09 | 38,326 | $73.85 | $2,830,375.10 | 25.96% | es el benchmark | +0.00 pp | +0.46% | +8.60% |
 | FEMSAUBD | 6,921 | $246.29 | $1,704,573.09 | 15.63% | 10.56% | +7.81 pp | -0.26% | +5.39% |
 | GMEXICOB | 5,301 | $222.88 | $1,181,486.88 | 10.83% | 8.36% | +4.64 pp | +0.19% | -8.81% |
 | KOFUBL | 3,638 | $225.01 | $818,586.38 | 7.51% | 8.08% | +1.52 pp | +0.80% | +2.54% |
+| GAPB | 1,435 | $445.50 | $639,292.50 | 5.86% | 10.83% | -2.16 pp | -0.79% | +23.82% |
 | BOLSAA | 16,440 | $38.27 | $629,158.80 | 5.77% | 0.00% | +5.77 pp | +0.34% | +2.44% |
-| GAPB | 1,372 | $445.50 | $611,226.00 | 5.60% | 10.83% | -2.41 pp | -0.79% | +23.82% |
 | AMXB | 22,894 | $24.05 | $550,600.70 | 5.05% | 10.56% | -2.77 pp | +1.25% | +14.88% |
 | GFNORTEO | 2,430 | $212.96 | $517,492.80 | 4.75% | 9.19% | -2.06 pp | +1.50% | +3.87% |
 | PINFRA | 1,233 | $306.44 | $377,840.52 | 3.46% | 0.60% | +3.02 pp | +0.64% | +3.45% |
-| AC | 1,469 | $237.69 | $349,166.61 | 3.20% | 7.65% | -2.46 pp | +0.69% | +14.32% |
+| AC | 1,481 | $237.69 | $352,018.89 | 3.23% | 7.65% | -2.43 pp | +0.69% | +14.32% |
 | WALMEX | 6,439 | $53.78 | $346,289.42 | 3.18% | 7.51% | -2.38 pp | -1.45% | +9.26% |
 | BBAJIOO | 5,399 | $55.93 | $301,966.07 | 2.77% | 1.66% | +1.54 pp | +0.94% | -3.32% |
 | MEGACPO | 3,980 | $59.80 | $238,004.00 | 2.18% | 0.62% | +1.73 pp | +0.64% | +5.28% |
 | ASURB | 427 | $506.05 | $216,083.35 | 1.98% | 6.03% | -2.49 pp | +1.61% | +14.26% |
 | PEOLES | 181 | $786.07 | $142,278.67 | 1.30% | 0.00% | +1.30 pp | -0.55% | -12.61% |
 | OMAB | 170 | $259.59 | $44,130.30 | 0.40% | 4.02% | -2.57 pp | +1.47% | +22.52% |
-| Efectivo | | | $45,862.56 | 0.42% | 0.00% | | | |
+| Efectivo | | | $14,597.98 | 0.13% | 0.00% | | | |
 
 Peso = posición directa al cierre. Peso activo = peso con el MEXTRAC09 abierto en sus emisoras menos el peso en el benchmark. El rendimiento desde el día 0 es el del precio de la emisora, aunque se haya comprado después.
 
@@ -78,12 +78,12 @@ Peso = posición directa al cierre. Peso activo = peso con el MEXTRAC09 abierto 
 
 | Pieza | Hoy (mié 11-nov) | Desde el día 0 |
 |---|---:|---:|
-| Emisoras | -7.51 pb | -333.20 pb |
+| Emisoras | -7.51 pb | -333.19 pb |
 | Efectivo | -0.17 pb | -4.22 pb |
 | MEXTRAC09 contra su canasta (o estimado) | -5.04 pb | +3.32 pb |
-| Operaciones (ejecución contra cierre) | +0.00 pb | +0.76 pb |
-| Comisión e IVA | +0.00 pb | -1.28 pb |
-| Total = alfa | -12.72 pb | -334.62 pb |
+| Operaciones (ejecución contra cierre) | -0.22 pb | +0.53 pb |
+| Comisión e IVA | -0.10 pb | -1.38 pb |
+| Total = alfa | -13.04 pb | -334.95 pb |
 
 Por sector (Brinson-Fachler). Asignación: por pesar distinto que el benchmark. Selección: por escoger mejores o peores acciones. Interacción: por cargar más justo donde se escogió mejor o peor. Los días se enlazan con Cariño.
 
@@ -101,6 +101,10 @@ Por sector (Brinson-Fachler). Asignación: por pesar distinto que el benchmark. 
 
 | Fecha | Tipo | Emisora | Títulos | Precio | Comisión + IVA | Motivo |
 |---|---|---|---:|---:|---:|---|
+| mié 11-nov | Compra | AC | 12 | $238.73 | $9.96 | Reinversión del dividendo |
+| mié 11-nov | Compra | GAPB | 18 | $449.07 | $28.13 | Reinversión del dividendo |
+| mié 11-nov | Compra | GAPB | 14 | $449.07 | $21.88 | Reinversión del dividendo |
+| mié 11-nov | Compra | GAPB | 31 | $449.07 | $48.44 | Reinversión del dividendo |
 | vie 6-nov | Dividendo | GAPB | 1,372 | $20.80 | $0.00 | Dividendo en efectivo |
 | mié 11-nov | Dividendo | AMXB | 22,894 | $0.27 | $0.00 | Dividendo en efectivo |
 
