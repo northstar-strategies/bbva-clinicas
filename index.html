@@ -1592,7 +1592,14 @@ body{font-variant-numeric:tabular-nums}
 .bh-ver{margin:0;font-size:.9375rem;line-height:1.6;color:var(--txt-2)} .bh-ver b{color:var(--txt);font-variant-numeric:tabular-nums}
 .bh-txt{display:block;min-width:200px;font-size:.8125rem;line-height:1.45;color:var(--txt-2);white-space:normal;text-align:left}
 .bh-nota{padding:4px 19px 16px}
-@media (max-width:768px){ .bh-graf{height:240px} .bh-dif{height:110px} .bh-txt{min-width:0} }
+.bh-niv{height:180px;position:relative} .bh-tm{height:300px;position:relative} .bh-tmi{height:110px;position:relative;margin-top:6px} .bh-tm>div,.bh-tmi>div{height:100%}
+.bh-pies{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:12px 19px 4px} .bh-pies figure{margin:0}
+.bh-pies figcaption{text-align:center;font-size:.8125rem;font-weight:600;margin-bottom:8px} .bh-pies figcaption em{display:block;font-style:normal;font-weight:400;color:var(--txt-3);font-size:.75rem;margin-top:2px}
+.bh-pie{height:230px;position:relative}
+.bh-sw{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:8px;vertical-align:middle}
+#bhTmSym{max-width:150px}
+@media (max-width:768px){ .bh-graf{height:240px} .bh-dif{height:110px} .bh-txt{min-width:0} .bh-pies{grid-template-columns:1fr} .bh-pie{height:200px}
+  .bh-niv{height:160px} .bh-tm{height:220px} .bh-tmi{height:90px} }
 @media (max-width:768px){
   .hs-portada{padding:24px 18px 22px} .hs-estrella{width:96px;height:96px;right:2%}
   .hs-cols{display:block}
@@ -2092,16 +2099,30 @@ c 810 FEMSAUBD a 202.18</pre>
           <h2 class="hs-titulo">¿Y si no hubiéramos operado?</h2>
           <p class="hs-sub" id="bhSub"></p>
         </header>
-        <div class="grid g4" style="margin-bottom:14px" id="bhKpis"></div>
+        <div class="grid g5" style="margin-bottom:14px" id="bhKpis"></div>
         <div class="card" style="margin-bottom:14px"><div class="card-h"><h3>Por qué</h3></div><p class="bh-ver" id="bhVer"></p></div>
         <div class="card" style="margin-bottom:14px">
           <div class="card-h"><h3><svg class="i"><use href="#i-chart"/></svg>Rendimiento acumulado</h3><span class="hint" id="bhPer"></span></div>
           <div class="bh-graf"><div id="chBh"></div></div><div class="hs-lee tv-ley" id="bhLee"></div>
+          <hr class="sep"><div class="card-h"><h3>Niveles de inversión</h3><span class="hint">% del valor al cierre</span><div class="spacer"></div><div class="seg" id="segBhNiv"></div></div>
+          <div class="bh-niv"><canvas id="cvBhNiv"></canvas></div>
           <hr class="sep"><div class="card-h"><h3>Nosotros menos la cartera original</h3><span class="hint">pb · arriba de 0 vamos ganando por operar</span></div>
           <div class="bh-dif"><div id="chBhDif"></div></div></div>
-        <div class="card pad0">
+        <div class="card pad0" style="margin-bottom:14px">
+          <div class="card-h" style="padding:18px 19px 0"><h3>Composición de las carteras</h3><span class="hint" id="bhCompHint"></span></div>
+          <div class="bh-pies"><figure><figcaption>Cartera original sin operar<em id="bhPieOTxt"></em></figcaption><div class="bh-pie"><canvas id="cvBhPieO"></canvas></div></figure>
+            <figure><figcaption>Nuestra cartera<em id="bhPieNTxt"></em></figcaption><div class="bh-pie"><canvas id="cvBhPieN"></canvas></div></figure></div>
+          <div class="tbl-wrap"><table id="tBhComp"></table></div></div>
+        <div class="card pad0" style="margin-bottom:14px">
           <div class="card-h" style="padding:18px 19px 0"><h3>Emisora por emisora</h3><span class="hint" id="bhHint"></span></div>
           <div class="tbl-wrap"><table id="tBh"></table></div><p class="sub-note bh-nota" id="bhNota"></p></div>
+        <div class="card">
+          <div class="card-h"><h3><svg class="i"><use href="#i-pulse"/></svg>Timing de la cartera heredada</h3><span class="hint">RSI de 14 días y MACD (12, 26, 9) · cierres del tracker</span><div class="spacer"></div><select id="bhTmSym" aria-label="Emisora"></select></div>
+          <p class="bh-ver" id="bhTmTxt"></p>
+          <div class="bh-tm"><div id="chTmPx"></div></div><div class="bh-tmi"><div id="chTmRsi"></div></div><div class="bh-tmi"><div id="chTmMacd"></div></div>
+          <div class="hs-lee tv-ley" id="bhTmLee"></div>
+          <div class="tbl-wrap" style="margin-top:12px"><table id="tBhTm"></table></div>
+          <p class="sub-note" id="bhTmNota"></p></div>
       </section>
 
       <!-- ══════════ MODELO ══════════ -->
@@ -6345,10 +6366,40 @@ const Divs=(()=>{
    los cierres del tracker (precios_tracker.csv), no paga comisiones y cobra los dividendos de sus títulos con fecha ex después del
    día 0, en la fecha de pago (la regla del tracker); su caja no rinde (r_caja = 0). La diferencia se reparte por emisora:
    P&L nuestro ÷ valor al día 0 − P&L de la original ÷ su valor al día 0, más las comisiones; suma exacto la diferencia y se cuadra
-   contra el valor del tracker. Réplica de control en Python: python replica_buy_hold.py datos (debe decir «Cuadra.»). */
+   contra el valor del tracker. Réplica de control en Python: python replica_buy_hold.py datos (debe decir «Cuadra.»).
+   v7.2 · En esta sección el MEXTRAC09 se dibuja con su NAV (MEXTRAC_NAV de precios_tracker.csv) para quitar el premio o descuento
+   del ETF, que movía la línea un día tarde (21/22-oct); el alfa oficial sigue con el precio. El S&P/BMV IPC va como comparativo.
+   Niveles de inversión (pasiva = MEXTRAC09, activa = acciones, efectivo) y composición de las dos carteras al último cierre.
+   Timing de la cartera heredada: RSI de 14 días (Wilder) y MACD (12, 26, 9) sobre los cierres del tracker; entrada = el RSI sale
+   de sobreventa (cruza 30 hacia arriba) o el MACD cruza su señal hacia arriba con el RSI abajo de 50; salida = el RSI sale de
+   sobrecompra (cruza 70 hacia abajo) o el MACD cruza su señal hacia abajo con el RSI arriba de 50. */
 const BH=(()=>{
-  let firma='';
+  let firma='', ult=null;
+  const st={niv:'NUESTRO', tm:''}, reg={};
   const pb=(v,d=2)=>(v>0?'+':v<0?'−':'')+Math.abs(v*1e4).toFixed(d)+' pb';
+  const colS=s=>s==='MEXTRAC'?'#8A94A6':s==='Efectivo'?C.ice:`hsl(${logoHue(s)},55%,55%)`;   // pasiva en gris, como el manual
+  const IPCC='#B9A7F2';                                                       // el IPC, un color que no usa ninguna otra serie
+  function cj(id,cfg){ const el=document.getElementById(id); if(!el) return;
+    if(reg[id] && reg[id].canvas===el){ reg[id].data=cfg.data; reg[id].options=cfg.options; reg[id].update('none'); return; }
+    if(reg[id]) try{ reg[id].destroy(); }catch(e){}
+    reg[id]=new Chart(el.getContext('2d'),cfg); }
+  // Indicadores técnicos sobre un arreglo de cierres; null mientras no hay historia suficiente
+  function ema(v,n){ const o=Array(v.length).fill(null), i0=v.findIndex(x=>x!=null); if(i0<0||v.length-i0<n) return o;
+    let e=v.slice(i0,i0+n).reduce((a,x)=>a+x,0)/n; o[i0+n-1]=e; const k=2/(n+1);
+    for(let i=i0+n;i<v.length;i++){ e=v[i]*k+e*(1-k); o[i]=e; } return o; }
+  function rsi(c,n=14){ const o=Array(c.length).fill(null); let g=0,l=0;
+    for(let i=1;i<c.length;i++){ const d=c[i]-c[i-1], u=Math.max(d,0), w=Math.max(-d,0);
+      if(i<=n){ g+=u/n; l+=w/n; } else { g=(g*(n-1)+u)/n; l=(l*(n-1)+w)/n; }
+      if(i>=n) o[i]=l===0?100:100-100/(1+g/l); } return o; }
+  function tecnico(fs,c){
+    const r=rsi(c), e12=ema(c,12), e26=ema(c,26), m=c.map((_,i)=>e12[i]!=null&&e26[i]!=null?e12[i]-e26[i]:null), sg=ema(m,9), sen=[];
+    for(let i=1;i<c.length;i++){ if(r[i-1]==null||sg[i-1]==null) continue;
+      const sube=m[i-1]<=sg[i-1]&&m[i]>sg[i], baja=m[i-1]>=sg[i-1]&&m[i]<sg[i];
+      if(r[i-1]<30&&r[i]>=30) sen.push({i,f:fs[i],t:'E',por:'el RSI salió de sobreventa'});
+      else if(sube&&r[i]<50) sen.push({i,f:fs[i],t:'E',por:'el MACD cruzó arriba de su señal'});
+      else if(r[i-1]>70&&r[i]<=70) sen.push({i,f:fs[i],t:'S',por:'el RSI salió de sobrecompra'});
+      else if(baja&&r[i]>50) sen.push({i,f:fs[i],t:'S',por:'el MACD cruzó abajo de su señal'}); }
+    return {r,m,sg,h:m.map((x,i)=>x!=null&&sg[i]!=null?x-sg[i]:null),sen}; }
   const corta=f=>{ const d=new Date(f+'T12:00:00'); return ['dom','lun','mar','mié','jue','vie','sáb'][d.getDay()]+' '+d.getDate()+'-'+TV.MES[d.getMonth()]; };
   const marca=s=>{ const u=logoUrl(s); return `<span class="lg" style="--h:${logoHue(s)}"><b>${logoMark(s)}</b>${u?`<img src="${u}" alt="" loading="lazy" onerror="this.remove()">`:''}</span>`; };
   // shortcut: no aplica splits ni dividendos en acciones (no ha habido ninguno); si llegan, hay que ajustar los títulos de la asignación
@@ -6362,9 +6413,21 @@ const BH=(()=>{
       else if(o.fecha<=T){ dq[o.sym]=(dq[o.sym]||0)+n; (tr[o.sym]||(tr[o.sym]=[])).push([n,o.px]); com+=(o.comm||0)+(o.iva||0); } });
     const divB=f=>Ctx.D.div.filter(r=>qb[r.sym] && r.dps!=null && r.ex>d0 && (r.pago||r.ex)<=f);
     const vb=f=>Object.entries(qb).reduce((a,[s,q])=>a+q*p(f,s),0)+ASIGNACION_BBVA.efectivo+divB(f).reduce((a,r)=>a+qb[r.sym]*r.dps,0);
-    const Va0=A.dias[F[0]].v0, Vb0=vb(d0);
-    let ra=1, rm=1; const serie=[{f:d0,a:0,b:0,m:0}];
-    F.forEach(f=>{ const d=A.dias[f]; ra*=1+d.rp; rm*=1+d.rb; serie.push({f,a:ra-1,b:vb(f)/Vb0-1,m:rm-1}); });
+    const Va0=A.dias[F[0]].v0, Vb0=vb(d0), nav=f=>parseFloat(A.px[f]?.MEXTRAC_NAV), ipc=f=>p(f,'IPC')/p(d0,'IPC')-1;
+    // NAV igual al del día anterior al final = todavía no se publica (el manual: el dato del fondo llega un día hábil tarde)
+    let nf=F.length-1; while(nf>0 && nav(F[nf])===nav(F[nf-1])) nf--;
+    const fNav=F[nf];
+    let ra=1, rm=1; const serie=[{f:d0,a:0,b:0,m:0,n:0,i:0}];
+    F.forEach(f=>{ const d=A.dias[f]; ra*=1+d.rp; rm*=1+d.rb;
+      serie.push({f,a:ra-1,b:vb(f)/Vb0-1,m:rm-1,n:f<=fNav?nav(f)/nav(d0)-1:null,i:ipc(f)}); });
+    // Niveles de inversión al cierre de cada día: títulos de la Bitácora × cierre; la caja es el resto del valor del tracker
+    const opsF=S.ops.filter(o=>o.fecha<=T).sort((x,y)=>x.fecha.localeCompare(y.fecha)), qq={}; let k=0;
+    const caB=f=>ASIGNACION_BBVA.efectivo+divB(f).reduce((a,r)=>a+qb[r.sym]*r.dps,0);
+    const niv=[d0,...F].map(f=>{
+      while(k<opsF.length && opsF[k].fecha<=f){ const o=opsF[k++]; qq[o.sym]=(qq[o.sym]||0)+(o.tipo==='VENTA'?-o.qty:o.qty); }
+      const V=f===d0?Va0:A.dias[f].v1, acc=Object.entries(qq).reduce((a,[s,q])=>a+q*p(f,s),0), mx=(qq.MEXTRAC||0)*p(f,'MEXTRAC');
+      const W=vb(f), mb=(qb.MEXTRAC||0)*p(f,'MEXTRAC'), cb=caB(f);
+      return {f, n:{pas:mx/V, act:(acc-mx)/V, caja:(V-acc)/V}, o:{pas:mb/W, act:(W-mb-cb)/W, caja:cb/W}}; });
     const divA={}, dB={};
     (S.divs||[]).filter(d=>d.tipo==='DIVIDENDO' && d.fecha>d0 && d.fecha<=T).forEach(d=>divA[d.sym]=(divA[d.sym]||0)+d.total);
     divB(T).forEach(r=>dB[r.sym]=(dB[r.sym]||0)+qb[r.sym]*r.dps);
@@ -6375,9 +6438,13 @@ const BH=(()=>{
       const a=qT*(pT-p0)+op+(divA[s]||0), b=(qb[s]||0)*(pT-p0)+(dB[s]||0); pnlA+=a;
       const tot=a/Va0-b/Vb0;
       return {sym:s, qb:qb[s]||0, q0:q0[s]||0, qT, r:pT/p0-1, mas:qT/Va0>(qb[s]||0)/Vb0, opr:op/Va0, pos:tot-op/Va0, tot}; });
-    const u=serie.at(-1), suma=filas.reduce((x,f)=>x+f.tot,0)-com/Va0;
-    return {d0, T, serie, filas, com, Va0, Vb0, VaT:A.dias[T].v1, VbT:vb(T), RA:u.a, RB:u.b, RM:u.m, suma, divT:divB(T),
-      cuadra:Math.abs(pnlA-com-(A.dias[T].v1-Va0))<0.05 && Math.abs(suma-(u.a-u.b))<1e-9};
+    const u=serie.at(-1), suma=filas.reduce((x,f)=>x+f.tot,0)-com/Va0, VaT=A.dias[T].v1, VbT=vb(T);
+    const comp=(q,V,caja)=>[...Object.entries(q).filter(([,n])=>n).map(([s,n])=>({s,w:n*p(T,s)/V})),{s:'Efectivo',w:caja/V}];
+    const qT=Object.fromEntries(filas.map(f=>[f.sym,f.qT]));
+    return {d0, T, serie, filas, com, Va0, Vb0, VaT, VbT, RA:u.a, RB:u.b, RM:u.m, suma, divT:divB(T), niv, fNav,
+      RN:serie.find(x=>x.f===fNav).n, RI:u.i, qb,
+      compO:comp(qb,VbT,caB(T)), compN:comp(qT,VaT,VaT-filas.reduce((a,f)=>a+f.qT*p(T,f.sym),0)),
+      cuadra:Math.abs(pnlA-com-(VaT-Va0))<0.05 && Math.abs(suma-(u.a-u.b))<1e-9};
   }
   function porque(f){
     const sube=f.r>=0, n=ints;
@@ -6391,13 +6458,13 @@ const BH=(()=>{
   function grafica(c){
     const porT=new Map(c.serie.map(x=>[TV.deFecha(x.f),x]));
     const lee=x=>{ document.getElementById('bhLee').innerHTML=`<b>${corta(x.f)}</b>`+TV.it(COL.port,'Nuestro portafolio',pctS(x.a*100),cls(x.a))+
-      TV.it(COL.mdl,'Cartera original',pctS(x.b*100),cls(x.b))+TV.it(COL.bmk,'MEXTRAC09',pctS(x.m*100),cls(x.m),'guion')+
-      `<span class="it">Diferencia<b class="v ${cls(x.a-x.b)}">${pb(x.a-x.b)}</b></span>`; };
+      TV.it(COL.mdl,'Cartera original',pctS(x.b*100),cls(x.b))+TV.it(COL.bmk,'MEXTRAC09 (NAV)',x.n==null?'sin NAV':pctS(x.n*100),cls(x.n),'guion')+
+      TV.it(IPCC,'S&P/BMV IPC',pctS(x.i*100),cls(x.i),'guion')+`<span class="it">Diferencia<b class="v ${cls(x.a-x.b)}">${pb(x.a-x.b)}</b></span>`; };
     const R=TV.crear('chBh',{marca:''});
     if(R){ const ln=(k,col,w,st=0)=>TV.serie(R,k,'linea',{color:col,lineWidth:w,lineStyle:st,priceFormat:TV.FMT.pct,priceLineVisible:false});
-      const sa=ln('a',COL.port,2.5), sb=ln('b',COL.mdl,2), sm=ln('m',COL.bmk,2,2);
-      sa.setData(c.serie.map(x=>({time:TV.deFecha(x.f),value:x.a*100}))); sb.setData(c.serie.map(x=>({time:TV.deFecha(x.f),value:x.b*100})));
-      sm.setData(c.serie.map(x=>({time:TV.deFecha(x.f),value:x.m*100})));
+      const si=ln('i',IPCC,1.5,1), sm=ln('m',COL.bmk,2,2), sb=ln('b',COL.mdl,2), sa=ln('a',COL.port,2.5);
+      const d=k=>c.serie.filter(x=>x[k]!=null).map(x=>({time:TV.deFecha(x.f),value:x[k]*100}));
+      sa.setData(d('a')); sb.setData(d('b')); sm.setData(d('n')); si.setData(d('i'));
       // el manual de presentaciones pide el origen en 0 con la línea del cero resaltada y la cuadrícula punteada
       if(!R.cero) R.cero=sa.createPriceLine({price:0,color:'rgba(255,255,255,.5)',lineWidth:1,lineStyle:0,axisLabelVisible:false});
       R.chart.applyOptions({layout:{attributionLogo:false},grid:{horzLines:{style:1}}});
@@ -6415,9 +6482,9 @@ const BH=(()=>{
   }
   function render(){
     const c=calc();
-    if(!c){ firma=''; document.getElementById('bhKpis').innerHTML=CARGA.repeat(4); return; }
+    if(!c){ firma=''; document.getElementById('bhKpis').innerHTML=CARGA.repeat(5); return; }
     const S=Store.get(), f0=[c.T,S.ops.length,(S.divs||[]).length,Ctx.D.div.length].join('|');
-    if(f0===firma) return; firma=f0;                 // todo sale de cierres: no se redibuja con cada cotización
+    if(f0===firma) return; firma=f0; ult=c;          // todo sale de cierres: no se redibuja con cada cotización
     const g=c.RA-c.RB, per=`del ${fdate(c.d0)} al ${fdate(c.T)}`;
     document.getElementById('bhSub').innerHTML=`La asignación de BBVA del 12-oct, sin una sola operación, contra lo que hicimos. Rendimiento efectivo ${per}, medido desde el cierre del día 0 como todo el tablero.`;
     document.getElementById('bhPer').textContent=per+' · solo días hábiles';
@@ -6425,7 +6492,8 @@ const BH=(()=>{
     document.getElementById('bhKpis').innerHTML=
       k('Nuestro portafolio',`<span class="${cls(c.RA)}">${pctS(c.RA*100)}</span>`,`${money(c.VaT)} · el tracker`)+
       k('Cartera original sin operar',`<span class="${cls(c.RB)}">${pctS(c.RB*100)}</span>`,`${money(c.VbT)} · asignación del 12-oct`)+
-      k('MEXTRAC09',`<span class="${cls(c.RM)}">${pctS(c.RM*100)}</span>`,'benchmark')+
+      k('MEXTRAC09 · NAV',`<span class="${cls(c.RN)}">${pctS(c.RN*100)}</span>`,`NAV al ${corta(c.fNav)} · precio ${pctS(c.RM*100)} (alfa oficial)`)+
+      k('S&amp;P/BMV IPC',`<span class="${cls(c.RI)}">${pctS(c.RI*100)}</span>`,'comparativo informativo')+
       k('Operar contra no operar',`<span class="${cls(g)}">${pb(g)}</span>`,g>=0?'Lo que hicimos va arriba':'La cartera original va arriba','hl');
     const o=[...c.filas].sort((x,y)=>y.tot-x.tot), mas=o[0], menos=o.at(-1);
     const max=c.serie.reduce((m,x)=>x.b-x.a>m.b-m.a?x:m,c.serie[0]);
@@ -6438,8 +6506,9 @@ const BH=(()=>{
       (mas.tot>0?`Lo que más sumó fue <b>${mas.sym}</b> (${pb(mas.tot)}): ${porque(mas)} `:'')+
       (menos.tot<0?`Lo que más restó fue <b>${menos.sym}</b> (${pb(menos.tot)}): ${porque(menos)} `:'')+
       `Las comisiones e IVA después del día 0 restaron ${mag(c.com/c.Va0)}.<br><br>`+
-      `Contra el MEXTRAC09 (${pctS(c.RM*100)}), la original queda ${pb(c.RB-c.RM)} y nosotros ${pb(c.RA-c.RM)}`+
-      ((c.RB-c.RM)*(c.RA-c.RM)>0 && ref>2*Math.abs(g)?': lo que nos separa del benchmark venía sobre todo en la cartera que recibimos, no en lo que operamos.':'.');
+      `Contra el MEXTRAC09 con su precio (${pctS(c.RM*100)}, el que usa el alfa oficial), la original queda ${pb(c.RB-c.RM)} y nosotros ${pb(c.RA-c.RM)}`+
+      ((c.RB-c.RM)*(c.RA-c.RM)>0 && ref>2*Math.abs(g)?': lo que nos separa del benchmark venía sobre todo en la cartera que recibimos, no en lo que operamos.':'.')+
+      ` El S&amp;P/BMV IPC, solo como referencia, va ${pctS(c.RI*100)}.`;
     UI.table('tBh',[
       {k:'sym',l:'Emisora',f:v=>`<span class="sym clicable" data-ficha="${v}" title="Ver ficha de ${v}">${marca(v)}${v}</span>`},
       {k:'qb',l:'Asignación',f:v=>ints(v),t:'Títulos de la asignación de BBVA del 12-oct'},
@@ -6456,7 +6525,112 @@ const BH=(()=>{
       (c.cuadra?'Cuadra con el valor del tracker. ':'<span class="neg">No cuadra con el valor del tracker: revise operaciones capturadas en este navegador.</span> ')+
       `La cartera original son los títulos de la asignación y $${ints(ASIGNACION_BBVA.efectivo)} de caja (valor al día 0: ${money(c.Vb0)}; el nuestro: ${money(c.Va0)}), valuados con los cierres del tracker; `+
       `cobra ${c.divT.length?c.divT.map(r=>`${r.sym} ${money(c.filas.find(f=>f.sym===r.sym).qb*r.dps)}`).join(', '):'ningún dividendo'} (fecha ex después del día 0, en la fecha de pago) y no paga comisiones.`;
-    grafica(c);
+    grafica(c); niveles(c); pasteles(c); timing(c);
+  }
+  // Niveles de inversión (manual de presentaciones: la gráfica de abajo, pasiva contra activa)
+  function niveles(c){
+    UI.seg('segBhNiv',['NUESTRO','ORIGINAL'],st.niv,v=>{ st.niv=v; niveles(ult); });
+    const k=st.niv==='ORIGINAL'?'o':'n';
+    const ds=(l,key,col)=>({label:l,data:c.niv.map(x=>x[k][key]*100),backgroundColor:col,borderWidth:0,stack:'s',barPercentage:.9,categoryPercentage:.92});
+    cj('cvBhNiv',{type:'bar',data:{labels:c.niv.map(x=>fdate(x.f).slice(0,5)),
+      datasets:[ds('Pasiva · MEXTRAC09','pas','#8A94A6'),ds('Activa · acciones','act','#3F8FE6'),ds('Efectivo','caja',C.ice)]},
+      options:{responsive:true,maintainAspectRatio:false,animation:false,
+        plugins:{legend:{position:'bottom',labels:{boxWidth:8,padding:10,font:{size:10.5}}},
+          tooltip:{mode:'index',intersect:false,callbacks:{label:t=>` ${t.dataset.label}: ${t.raw.toFixed(2)}%`}}},
+        scales:{x:{stacked:true,grid:{display:false},ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:10}},
+          // con sobregiro la caja baja de 0 y lo invertido pasa de 100: margen de 2 pp para que se vea, marcas fijas cada 25%
+          y:{stacked:true,min:c.niv.some(x=>x[k].caja<0)?-2:0,max:c.niv.some(x=>x[k].caja<0)?102:100,grid:{color:C.grid},
+            afterBuildTicks:ax=>{ ax.ticks=[0,25,50,75,100].map(v=>({value:v})); },ticks:{callback:v=>v+'%'}}}}});
+  }
+  // Composición al último cierre: un pastel por cartera, del menor al mayor peso (manual), y la tabla para comparar
+  function pasteles(c){
+    const pie=(id,comp)=>{ const o=comp.filter(x=>x.w>0).sort((a,b)=>a.w-b.w);
+      cj(id,{type:'doughnut',data:{labels:o.map(x=>x.s),datasets:[{data:o.map(x=>x.w*100),backgroundColor:o.map(x=>colS(x.s)),borderColor:'#0A1834',borderWidth:2,hoverOffset:6}]},
+        options:{responsive:true,maintainAspectRatio:false,animation:false,cutout:'58%',
+          plugins:{legend:{display:false},tooltip:{callbacks:{label:t=>` ${t.label}: ${t.raw.toFixed(2)}%`}}}}}); };
+    pie('cvBhPieO',c.compO); pie('cvBhPieN',c.compN);
+    const gen=comp=>{ const w=s=>comp.find(x=>x.s===s)?.w||0, pas=w('MEXTRAC'), caja=w('Efectivo');
+      return `Pasiva ${pct(pas*100)} · activa ${pct((1-pas-caja)*100)} · efectivo ${pct(caja*100)}`; };
+    document.getElementById('bhPieOTxt').textContent=gen(c.compO); document.getElementById('bhPieNTxt').textContent=gen(c.compN);
+    document.getElementById('bhCompHint').textContent=`al ${fdate(c.T)} · % del valor de cada cartera · pasiva en gris`;
+    const ss=[...new Set([...c.compO,...c.compN].map(x=>x.s))];
+    UI.table('tBhComp',[
+      {k:'sym',l:'Emisora',f:v=>`<span class="bh-sw" style="background:${colS(v)}"></span>${esc(v)}`},
+      {k:'o',l:'Original',f:v=>pct(v*100)},{k:'n',l:'Nuestra',f:v=>pct(v*100)},
+      {k:'d',l:'Diferencia',f:v=>`<span class="${cls(v)}">${(v>0?'+':v<0?'−':'')+Math.abs(v*100).toFixed(2)} pp</span>`,t:'Nuestra menos la original'}
+    ],ss.map(s=>{ const o=c.compO.find(x=>x.s===s)?.w||0, n=c.compN.find(x=>x.s===s)?.w||0; return {id:s,sym:s,o,n,d:n-o}; }),
+      {sort:'n',dir:-1,movil:['n','d']});
+  }
+  // Timing de la cartera heredada: RSI y MACD de cada emisora de la asignación, señales y lo que hicimos
+  let tmEnlazado=false;
+  function timing(c){
+    const A=AtrV.datos(), S=Store.get(), syms=Object.keys(c.qb).sort((a,b)=>c.qb[b]*parseFloat(A.px[c.T][b])-c.qb[a]*parseFloat(A.px[c.T][a]));
+    if(!syms.includes(st.tm)) st.tm=syms[0];
+    const T={}; syms.forEach(s=>{ const fs=[], cs=[]; A.pxF.forEach(f=>{ const v=parseFloat(A.px[f][s]); if(isFinite(v)){ fs.push(f); cs.push(v); } });
+      const t=tecnico(fs,cs), opsS={};
+      S.ops.filter(o=>o.sym===s && o.fecha>c.d0).forEach(o=>{ const q=opsS[o.fecha+o.tipo]||(opsS[o.fecha+o.tipo]={f:o.fecha,t:o.tipo,n:0}); q.n+=o.qty; });
+      T[s]={fs,cs,t,ops:Object.values(opsS).sort((a,b)=>a.f.localeCompare(b.f))}; });
+    const zona=r=>r>70?'Sobrecompra':r<30?'Sobreventa':'Neutral';
+    const enF=(x,f)=>{ const i=x.fs.indexOf(f); return i<0?null:i; };
+    const leeOp=(x,o)=>{ const i=enF(x,o.f), r=i==null?null:x.t.r[i], prev=x.t.sen.filter(z=>z.f<=o.f).at(-1);
+      const ok=prev&&((o.t==='COMPRA')===(prev.t==='E'));
+      return `${o.t==='COMPRA'?'compramos':'vendimos'} ${ints(o.n)} el ${corta(o.f)} con RSI ${r==null?'—':r.toFixed(0)}`+
+        (prev?` (señal vigente: ${prev.t==='E'?'entrada':'salida'} del ${corta(prev.f)}, ${ok?'a favor':'en contra'})`:''); };
+    document.getElementById('bhTmSym').innerHTML=syms.map(s=>`<option value="${s}" ${s===st.tm?'selected':''}>${s}</option>`).join('');
+    UI.table('tBhTm',[
+      {k:'sym',l:'Emisora',f:v=>`<button type="button" class="sym clicable" data-tm="${v}" title="Ver el timing de ${v}">${marca(v)}${v}</button>`},
+      {k:'px',l:'Cierre',f:v=>money(v)},
+      {k:'rsi',l:'RSI 14',f:v=>`<span class="${v>70?'neg':v<30?'pos':''}">${v.toFixed(1)}</span>`,t:'Arriba de 70 sobrecompra; abajo de 30 sobreventa'},
+      {k:'zona',l:'Zona'},
+      {k:'mac',l:'MACD',f:v=>`<span class="${v==='Alcista'?'pos':'neg'}">${v}</span>`,t:'MACD contra su señal de 9 días'},
+      {k:'ultF',l:'Última señal',f:(v,r)=>r.ult?`<span class="${r.ult.t==='E'?'pos':'neg'}">${r.ult.t==='E'?'Entrada':'Salida'}</span> ${corta(r.ult.f)}`:'—'},
+      {k:'opsTxt',l:'Lo que hicimos desde el día 0',f:v=>`<span class="bh-txt">${v}</span>`}
+    ],syms.map(s=>{ const x=T[s], n=x.cs.length-1, r=x.t.r[n], u=x.t.sen.at(-1);
+      return {id:s,sym:s,px:x.cs[n],rsi:r,zona:zona(r),mac:x.t.m[n]>x.t.sg[n]?'Alcista':'Bajista',ult:u,ultF:u?.f||'',
+        opsTxt:x.ops.length?x.ops.map(o=>leeOp(x,o)).join('; '):'No la operamos.'}; }),{sort:'rsi',dir:-1,movil:['rsi','ultF']});
+    const x=T[st.tm], n=x.cs.length-1, u=x.t.sen.at(-1);
+    document.getElementById('bhTmTxt').innerHTML=`<b>${st.tm}</b> cerró en ${money(x.cs[n])} con RSI de <b>${x.t.r[n].toFixed(1)}</b> (${zona(x.t.r[n]).toLowerCase()}) y MACD `+
+      `${x.t.m[n]>x.t.sg[n]?'arriba':'abajo'} de su señal. `+(u?`Última señal: <b class="${u.t==='E'?'pos':'neg'}">${u.t==='E'?'entrada':'salida'}</b> el ${corta(u.f)}, porque ${u.por}. `:'Sin señales en la historia. ')+
+      (x.ops.length?`Desde el día 0 ${x.ops.map(o=>leeOp(x,o)).join('; ')}.`:'No la operamos desde el día 0.');
+    document.getElementById('bhTmNota').innerHTML='Entrada: el RSI sale de sobreventa (cruza 30 hacia arriba) o el MACD cruza su señal hacia arriba con el RSI abajo de 50. '+
+      'Salida: el RSI sale de sobrecompra (cruza 70 hacia abajo) o el MACD cruza su señal hacia abajo con el RSI arriba de 50. '+
+      `En la gráfica: ▲ E entrada, ▼ S salida; ● C y V nuestras compras y ventas desde el día 0. `+
+      `Calculado con ${x.cs.length} cierres del tracker; la gráfica muestra los últimos seis meses. Es una herramienta de timing, no una regla del mandato.`;
+    grafTm(st.tm,x,c);
+    if(!tmEnlazado){ tmEnlazado=true;
+      document.getElementById('bhTmSym').addEventListener('change',ev=>{ st.tm=ev.target.value; timing(ult); });
+      document.getElementById('tBhTm').addEventListener('click',ev=>{ const b=ev.target.closest('[data-tm]'); if(!b) return;
+        st.tm=b.dataset.tm; timing(ult); document.getElementById('bhTmSym').closest('.card').scrollIntoView({block:'start',behavior:'smooth'}); }); }
+  }
+  function grafTm(s,x,c){
+    const n0=Math.max(0,x.fs.length-130), I=[...Array(x.fs.length-n0).keys()].map(j=>j+n0), t=i=>TV.deFecha(x.fs[i]);
+    const P=TV.crear('chTmPx',{marca:''}), Ri=TV.crear('chTmRsi',{marca:''}), Mi=TV.crear('chTmMacd',{marca:''}); if(!P||!Ri||!Mi) return;
+    const sp=TV.serie(P,'c','linea',{color:COL.port,lineWidth:2,priceLineVisible:false,priceFormat:{type:'price',precision:2,minMove:.01}});
+    sp.setData(I.map(i=>({time:t(i),value:x.cs[i]})));
+    const mk=[...x.t.sen.filter(z=>z.i>=n0).map(z=>({time:t(z.i),position:z.t==='E'?'belowBar':'aboveBar',color:z.t==='E'?COL.pos:COL.neg,
+        shape:z.t==='E'?'arrowUp':'arrowDown',text:z.t})),
+      ...x.ops.filter(o=>x.fs.indexOf(o.f)>=n0).map(o=>({time:TV.deFecha(o.f),position:o.t==='COMPRA'?'belowBar':'aboveBar',color:o.t==='COMPRA'?COL.bmk:COL.mdl,
+        shape:'circle',text:(o.t==='COMPRA'?'C ':'V ')+ints(o.n)}))].sort((a,b)=>a.time-b.time);
+    sp.setMarkers(mk);
+    const sr=TV.serie(Ri,'r','linea',{color:'#B9A7F2',lineWidth:1.5,priceLineVisible:false,priceFormat:{type:'price',precision:0,minMove:1},
+      autoscaleInfoProvider:()=>({priceRange:{minValue:0,maxValue:100}})});
+    sr.setData(I.map(i=>({time:t(i),value:x.t.r[i]})));
+    if(!Ri.bandas) Ri.bandas=[70,50,30].map(v=>sr.createPriceLine({price:v,color:v===50?'rgba(255,255,255,.18)':v===70?'rgba(255,90,95,.6)':'rgba(48,209,88,.6)',lineWidth:1,lineStyle:2,axisLabelVisible:true}));
+    const sh=TV.serie(Mi,'h','barras',{priceLineVisible:false,lastValueVisible:false,priceFormat:{type:'price',precision:2,minMove:.01}});
+    sh.setData(I.map(i=>({time:t(i),value:x.t.h[i],color:x.t.h[i]>=0?'rgba(48,209,88,.55)':'rgba(255,90,95,.55)'})));
+    const sm=TV.serie(Mi,'m','linea',{color:COL.port,lineWidth:1.5,priceLineVisible:false,lastValueVisible:false});
+    const sg=TV.serie(Mi,'s','linea',{color:COL.mdl,lineWidth:1.5,priceLineVisible:false,lastValueVisible:false});
+    sm.setData(I.map(i=>({time:t(i),value:x.t.m[i]}))); sg.setData(I.map(i=>({time:t(i),value:x.t.sg[i]})));
+    [P,Ri,Mi].forEach(G=>{ G.chart.applyOptions({layout:{attributionLogo:false},grid:{horzLines:{style:1}}}); G.chart.timeScale().fitContent(); });
+    if(!P.sinc){ P.sinc=true; let ya=false;                                   // las tres gráficas se mueven juntas
+      [P,Ri,Mi].forEach(G=>G.chart.timeScale().subscribeVisibleLogicalRangeChange(rg=>{ if(!rg||ya) return; ya=true;
+        [P,Ri,Mi].forEach(H=>{ if(H!==G) H.chart.timeScale().setVisibleLogicalRange(rg); }); ya=false; })); }
+    const idx=new Map(I.map(i=>[t(i),i]));
+    const lee=i=>{ const z=x.t.sen.find(q=>q.i===i);
+      document.getElementById('bhTmLee').innerHTML=`<b>${corta(x.fs[i])}</b>`+TV.it(COL.port,s,money(x.cs[i]))+TV.it('#B9A7F2','RSI',x.t.r[i]==null?'—':x.t.r[i].toFixed(1))+
+        TV.it(COL.port,'MACD',x.t.m[i]==null?'—':x.t.m[i].toFixed(2))+TV.it(COL.mdl,'Señal',x.t.sg[i]==null?'—':x.t.sg[i].toFixed(2))+
+        (z?`<span class="it"><b class="v ${z.t==='E'?'pos':'neg'}">${z.t==='E'?'Entrada':'Salida'}: ${z.por}</b></span>`:''); };
+    P.leyenda=pt=>lee((pt&&idx.get(pt.time))??I.at(-1)); lee(I.at(-1));
   }
   return {render, calc};
 })();
@@ -6928,7 +7102,7 @@ const AtrV=(()=>{
           D.uh=pt.filter(r=>r.fecha>=D.d0 && String(r.fuente_cierre||'').startsWith('UltimoHecho'))
                  .map(r=>({f:r.fecha, s:String(r.fuente_cierre).split(':')[1]||''}));
           D.conFuente=pt.length>0 && 'fuente_cierre' in pt[0];
-          D.px=Object.fromEntries(pt.filter(r=>r.fecha>=D.d0).map(r=>[r.fecha,r])); }catch(e){ D.uh=[]; D.conFuente=false; } }   // v7.1: cierres para Buy and hold
+          D.px=Object.fromEntries(pt.map(r=>[r.fecha,r])); D.pxF=pt.map(r=>r.fecha); }catch(e){ D.uh=[]; D.conFuente=false; } }   // v7.1: cierres para Buy and hold y su timing
       catch(e){ err=e.message||String(e); }
       finally{ cargando=null; }
     })();
