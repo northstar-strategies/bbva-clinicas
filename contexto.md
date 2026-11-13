@@ -1,13 +1,13 @@
 ---
-fecha_corte: 2026-11-11
-hora_publicacion: 2026-11-11 18:56 CDMX
-fuente_precios: último hecho en CUERVO; Price Close en el resto
+fecha_corte: 2026-11-12
+hora_publicacion: 2026-11-13 11:51 CDMX
+fuente_precios: Price Close
 version: v7.0
-dias_habiles_desde_dia0: 17
+dias_habiles_desde_dia0: 18
 tablero: https://northstar-strategies.github.io/bbva-clinicas/
 ---
 
-# North Star Strategies · estado del fondo al mié 11-nov-2026
+# North Star Strategies · estado del fondo al jue 12-nov-2026
 
 ## Cómo leer este archivo
 
@@ -18,86 +18,85 @@ tablero: https://northstar-strategies.github.io/bbva-clinicas/
 
 ## Resumen
 
-- Valor del portafolio: $10,904,775.45
+- Valor del portafolio: $10,870,656.31
 - Caja: $14,597.98 (0.13% del portafolio)
 
-| | Día (mié 11-nov) | Semana (desde vie 6-nov) | Desde el día 0 | Desde el día 0 con la penalización de 30 pb |
+| | Día (jue 12-nov) | Semana (desde vie 6-nov) | Desde el día 0 | Desde el día 0 con la penalización de 30 pb |
 |---|---:|---:|---:|---:|
-| Cartera | +0.33% | +1.93% | +5.25% | +4.95% |
-| MEXTRAC09 | +0.46% | +1.83% | +8.60% | +8.60% |
-| Alfa | -13.04 pb | +9.42 pb | -334.95 pb | -364.95 pb |
+| Cartera | -0.31% | +1.61% | +4.92% | +4.62% |
+| MEXTRAC09 | -0.38% | +1.45% | +8.19% | +8.19% |
+| Alfa | +6.63 pb | +16.14 pb | -326.71 pb | -356.71 pb |
 
 ## Cumplimiento
 
 | Regla | Valor | Límite | Estado |
 |---|---:|---|---|
 | Beta ex ante | 0.91 | 0.70 a 1.30 | OK |
-| Tracking error ex ante, anual | 5.93% | máximo 10% | OK |
+| Tracking error ex ante, anual | 5.92% | máximo 10% | OK |
 | Caja | 0.13% | 0% a 5% | OK |
-| Desviación máxima por emisora (FEMSAUBD) | 7.81 pp | ±10 pp | OK |
+| Desviación máxima por emisora (FEMSAUBD) | 7.78 pp | ±10 pp | OK |
 
-Tracking error realizado desde el día 0, anual: 7.81% (informativo).
+Tracking error realizado desde el día 0, anual: 7.64% (informativo).
 
 ## Alertas
 
-- Stop-loss de BBAJIOO: Vigilar (-2.41 σ de TE, -0.65 σ propias).
-- Stop-loss de GMEXICOB: Vigilar (-2.35 σ de TE, -1.02 σ propias).
-- Stop-loss de PEOLES: Vigilar (-2.62 σ de TE, -1.41 σ propias).
+- Stop-loss de GMEXICOB: Vigilar (-2.22 σ de TE, -0.98 σ propias).
+- Stop-loss de BBAJIOO: Vigilar (-2.12 σ de TE, -0.49 σ propias).
+- Stop-loss de PEOLES: Vigilar (-2.73 σ de TE, -1.58 σ propias).
 - Precio de último hecho, no Price Close, el mié 21-oct: MEXTRAC.
-- Precio de último hecho, no Price Close, el mié 11-nov: CUERVO.
 - Caja negativa (sobregiro) en 4 cierres, del mié 21-oct al lun 26-oct. Ya está corregida.
 
 ## Posiciones
 
 | Emisora | Títulos | Precio | Valor | Peso | Peso en el benchmark | Peso activo | Rendimiento del día | Rendimiento desde el día 0 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| MEXTRAC09 | 38,326 | $73.85 | $2,830,375.10 | 25.96% | es el benchmark | +0.00 pp | +0.46% | +8.60% |
-| FEMSAUBD | 6,921 | $246.29 | $1,704,573.09 | 15.63% | 10.56% | +7.81 pp | -0.26% | +5.39% |
-| GMEXICOB | 5,301 | $222.88 | $1,181,486.88 | 10.83% | 8.36% | +4.64 pp | +0.19% | -8.81% |
-| KOFUBL | 3,638 | $225.01 | $818,586.38 | 7.51% | 8.08% | +1.52 pp | +0.80% | +2.54% |
-| GAPB | 1,435 | $445.50 | $639,292.50 | 5.86% | 10.83% | -2.16 pp | -0.79% | +23.82% |
-| BOLSAA | 16,440 | $38.27 | $629,158.80 | 5.77% | 0.00% | +5.77 pp | +0.34% | +2.44% |
-| AMXB | 22,894 | $24.05 | $550,600.70 | 5.05% | 10.56% | -2.77 pp | +1.25% | +14.88% |
-| GFNORTEO | 2,430 | $212.96 | $517,492.80 | 4.75% | 9.19% | -2.06 pp | +1.50% | +3.87% |
-| PINFRA | 1,233 | $306.44 | $377,840.52 | 3.46% | 0.60% | +3.02 pp | +0.64% | +3.45% |
-| AC | 1,481 | $237.69 | $352,018.89 | 3.23% | 7.65% | -2.43 pp | +0.69% | +14.32% |
-| WALMEX | 6,439 | $53.78 | $346,289.42 | 3.18% | 7.51% | -2.38 pp | -1.45% | +9.26% |
-| BBAJIOO | 5,399 | $55.93 | $301,966.07 | 2.77% | 1.66% | +1.54 pp | +0.94% | -3.32% |
-| MEGACPO | 3,980 | $59.80 | $238,004.00 | 2.18% | 0.62% | +1.73 pp | +0.64% | +5.28% |
-| ASURB | 427 | $506.05 | $216,083.35 | 1.98% | 6.03% | -2.49 pp | +1.61% | +14.26% |
-| PEOLES | 181 | $786.07 | $142,278.67 | 1.30% | 0.00% | +1.30 pp | -0.55% | -12.61% |
-| OMAB | 170 | $259.59 | $44,130.30 | 0.40% | 4.02% | -2.57 pp | +1.47% | +22.52% |
+| MEXTRAC09 | 38,326 | $73.57 | $2,819,643.82 | 25.94% | es el benchmark | +0.00 pp | -0.38% | +8.19% |
+| FEMSAUBD | 6,921 | $243.83 | $1,687,547.43 | 15.52% | 10.56% | +7.78 pp | -1.00% | +4.33% |
+| GMEXICOB | 5,301 | $223.02 | $1,182,229.02 | 10.88% | 8.30% | +4.59 pp | +0.06% | -8.75% |
+| KOFUBL | 3,638 | $219.91 | $800,032.58 | 7.36% | 8.10% | +1.51 pp | -2.27% | +0.22% |
+| BOLSAA | 16,440 | $38.71 | $636,392.40 | 5.85% | 0.00% | +5.90 pp | +1.15% | +3.61% |
+| GAPB | 1,435 | $441.88 | $634,097.80 | 5.83% | 10.72% | -2.14 pp | -0.81% | +22.86% |
+| AMXB | 22,894 | $23.76 | $543,961.44 | 5.00% | 10.45% | -2.75 pp | -1.21% | +13.51% |
+| GFNORTEO | 2,430 | $212.63 | $516,690.90 | 4.75% | 9.09% | -2.04 pp | -0.15% | +3.71% |
+| PINFRA | 1,233 | $310.13 | $382,390.29 | 3.52% | 0.62% | +3.08 pp | +1.20% | +4.70% |
+| AC | 1,481 | $243.07 | $359,986.67 | 3.31% | 7.86% | -2.51 pp | +2.26% | +16.89% |
+| WALMEX | 6,439 | $54.30 | $349,637.70 | 3.22% | 7.76% | -2.47 pp | +0.97% | +10.32% |
+| BBAJIOO | 5,399 | $56.36 | $304,287.64 | 2.80% | 1.67% | +1.55 pp | +0.77% | -2.58% |
+| MEGACPO | 3,980 | $60.32 | $240,073.60 | 2.21% | 0.62% | +1.73 pp | +0.87% | +6.20% |
+| ASURB | 427 | $507.40 | $216,659.80 | 1.99% | 6.01% | -2.48 pp | +0.27% | +14.57% |
+| PEOLES | 181 | $769.04 | $139,196.24 | 1.28% | 0.00% | +1.24 pp | -2.17% | -14.50% |
+| OMAB | 170 | $254.30 | $43,231.00 | 0.40% | 3.94% | -2.52 pp | -2.04% | +20.03% |
 | Efectivo | | | $14,597.98 | 0.13% | 0.00% | | | |
 
 Peso = posición directa al cierre. Peso activo = peso con el MEXTRAC09 abierto en sus emisoras menos el peso en el benchmark. El rendimiento desde el día 0 es el del precio de la emisora, aunque se haya comprado después.
 
 ## Quién hizo el alfa
 
-- Hoy sumaron: WALMEX +4.63 pb, GAPB +3.06 pb, TLEVISACPO +2.29 pb. Restaron: FEMSAUBD -5.67 pb, ASURB -2.82 pb, OMAB -2.55 pb.
-- Desde el día 0 sumaron: KIMBERA +18.29 pb, GFNORTEO +10.19 pb, TLEVISACPO +7.73 pb. Restaron: GMEXICOB -91.44 pb, BOLSAA -36.00 pb, GAPB -34.11 pb.
+- Hoy sumaron: BOLSAA +8.82 pb, PINFRA +4.78 pb, OMAB +4.27 pb. Restaron: AC -6.43 pb, FEMSAUBD -4.84 pb, WALMEX -3.21 pb.
+- Desde el día 0 sumaron: KIMBERA +16.62 pb, GFNORTEO +9.66 pb, TLEVISACPO +8.42 pb. Restaron: GMEXICOB -88.93 pb, PEOLES -35.66 pb, FEMSAUBD -33.46 pb.
 
-| Pieza | Hoy (mié 11-nov) | Desde el día 0 |
+| Pieza | Hoy (jue 12-nov) | Desde el día 0 |
 |---|---:|---:|
-| Emisoras | -7.51 pb | -333.19 pb |
-| Efectivo | -0.17 pb | -4.22 pb |
-| MEXTRAC09 contra su canasta (o estimado) | -5.04 pb | +3.32 pb |
-| Operaciones (ejecución contra cierre) | -0.22 pb | +0.53 pb |
-| Comisión e IVA | -0.10 pb | -1.38 pb |
-| Total = alfa | -13.04 pb | -334.95 pb |
+| Emisoras | +0.51 pb | -331.50 pb |
+| Efectivo | +0.05 pb | -4.16 pb |
+| MEXTRAC09 contra su canasta (o estimado) | +6.07 pb | +9.80 pb |
+| Operaciones (ejecución contra cierre) | +0.00 pb | +0.53 pb |
+| Comisión e IVA | +0.00 pb | -1.38 pb |
+| Total = alfa | +6.63 pb | -326.71 pb |
 
 Por sector (Brinson-Fachler). Asignación: por pesar distinto que el benchmark. Selección: por escoger mejores o peores acciones. Interacción: por cargar más justo donde se escogió mejor o peor. Los días se enlazan con Cariño.
 
 | Sector | Asignación hoy | Selección hoy | Interacción hoy | Asignación desde el día 0 | Selección desde el día 0 | Interacción desde el día 0 |
 |---|---:|---:|---:|---:|---:|---:|
-| Consumo básico | +0.10 pb | -2.77 pb | +0.02 pb | +1.19 pb | -55.77 pb | -1.46 pb |
-| Financieras | +2.64 pb | -5.27 pb | -1.12 pb | -11.86 pb | -32.07 pb | -6.34 pb |
-| Industriales | +0.40 pb | -3.73 pb | +0.82 pb | -48.08 pb | -57.80 pb | +12.44 pb |
-| Materiales | -2.39 pb | +1.03 pb | +0.52 pb | -88.28 pb | -21.26 pb | -10.76 pb |
-| Servicios de comunicación | -0.67 pb | +1.24 pb | -0.16 pb | -5.76 pb | -8.59 pb | +0.92 pb |
-| Inmobiliario | +1.82 pb | +0.00 pb | +0.00 pb | +0.29 pb | +0.00 pb | +0.00 pb |
-| Efectivo | -0.17 pb | +0.00 pb | +0.00 pb | -4.22 pb | +0.00 pb | +0.00 pb |
+| Consumo básico | -0.11 pb | -22.90 pb | +0.15 pb | +1.08 pb | -80.06 pb | -1.30 pb |
+| Financieras | +0.71 pb | +8.13 pb | +1.68 pb | -11.06 pb | -23.26 pb | -4.52 pb |
+| Industriales | +1.19 pb | +8.29 pb | -1.74 pb | -46.64 pb | -48.73 pb | +10.53 pb |
+| Materiales | +1.11 pb | -0.17 pb | -0.09 pb | -86.79 pb | -21.37 pb | -10.81 pb |
+| Servicios de comunicación | +1.10 pb | +4.58 pb | -0.57 pb | -4.56 pb | -3.66 pb | +0.31 pb |
+| Inmobiliario | -0.87 pb | +0.00 pb | +0.00 pb | -0.64 pb | +0.00 pb | +0.00 pb |
+| Efectivo | +0.05 pb | +0.00 pb | +0.00 pb | -4.16 pb | +0.00 pb | +0.00 pb |
 
-## Operaciones de los últimos 5 días hábiles (desde el jue 5-nov)
+## Operaciones de los últimos 5 días hábiles (desde el vie 6-nov)
 
 | Fecha | Tipo | Emisora | Títulos | Precio | Comisión + IVA | Motivo |
 |---|---|---|---:|---:|---:|---|
@@ -111,28 +110,29 @@ Por sector (Brinson-Fachler). Asignación: por pesar distinto que el benchmark. 
 ## Próximos eventos y dividendos (14 días)
 
 - mar 17-nov · WALMEX · Dividendo de $0.5800 por acción. Fecha ex: mar 17-nov. Pago: mié 18-nov. Nos toca $3,734.62 por 6,439 títulos (estimado).
+- mar 24-nov · OMAB · Dividendo de $6.2803 por acción. Fecha ex: mar 24-nov. Pago: mié 25-nov. Nos toca $1,067.64 por 170 títulos (estimado).
 
 Para cobrar un dividendo hay que tener los títulos al cierre del día hábil anterior a la fecha ex. Solo se listan emisoras en cartera.
 
-## Macro del mié 11-nov: lo que más se movió
+## Macro del jue 12-nov: lo que más se movió
 
 | Serie | Valor | Cambio del día | Cambio en σ de 60 días | Mueve a |
 |---|---:|---:|---:|---|
-| S&P 500 (EUA) | 7,619.3800 | +1.31% | +1.4 σ |  |
-| Euro en pesos | 20.6100 | -0.83% | -1.3 σ |  |
-| Bono M a 10 años (rendimiento %) | 9.2060 | +5 pb | +1.0 σ | GFNORTEO, BBAJIOO, GFINBURO |
-| Oro (dólares por onza) | 3,987.2900 | -1.08% | -0.7 σ | PEOLES |
-| Cobre (dólares por libra) | 6.2625 | +0.76% | +0.5 σ | GMEXICOB |
+| Bono de EUA a 10 años (rendimiento %) | 5.1030 | +12 pb | +2.2 σ | GFNORTEO, BBAJIOO, GFINBURO |
+| Oro (dólares por onza) | 3,876.3500 | -2.78% | -1.9 σ | PEOLES |
+| Peso chileno en pesos (×1,000) | 18.6889 | -1.25% | -1.8 σ |  |
+| Bono M a 10 años (rendimiento %) | 9.2780 | +7 pb | +1.5 σ | GFNORTEO, BBAJIOO, GFINBURO |
+| Plata (dólares por onza) | 50.0063 | -3.25% | -1.3 σ | PEOLES |
 
 Las divisas van en pesos por unidad. La macro es contexto de la sesión, no causa demostrada.
 
 ## Titulares de la sesión
 
-- mié 11-nov 15:07 · Reuters · MERCADO: Peso mexicano se estabiliza en torno a 18.60/dlr, bolsa toca nuevo récord máximo
-- mié 11-nov 08:41 · CENAFT · MEGACPO: From Grupo México to Megacable: Seven Companies on the BMV Set Their Sights on Acquisitions
-- mié 11-nov 14:00 · Reuters · EUA: México afirma que las medidas restrictivas contra las importaciones de acero asiático están dando sus frutos a medida que avanzan las negociaciones sobre aranceles con EEUU
-- mié 11-nov 13:24 · Reuters · EUA: Migrants trek north through Mexico, buoyed by US election result
-- mié 11-nov 09:12 · Reuters · MERCADO: MERCADOS A.LATINA-Monedas operan mixtas en medio de nueva alza del dólar a nivel global
+- jue 12-nov 15:24 · Reuters · MERCADO: MERCADOS A.LATINA-Monedas retroceden en medio de fortaleza del dólar, expectativas de alza tasas Fed
+- jue 12-nov 14:11 · Reuters · MERCADO: MERCADOS EMERGENTES-Los activos de Latinoamérica retroceden ante la volatilidad del petróleo y la fortaleza del dólar
+- mié 11-nov 17:09 · Reuters · MERCADO: GLOBAL MARKETS-Stocks rise on tech gains; Nvidia falls after hours
+- mié 11-nov 16:02 · Reuters · EUA: UPDATE 1-Mexico says crackdown on Asian steel shipments is paying off as US tariff talks advance
+- jue 12-nov 11:05 · Reuters · BANXICO: EXCLUSIVA-Recorte tasa "confunde y refleja mensaje equivocado", dice subgobernador Heath de banco central México
 
 ## Supuestos
 

@@ -1,13 +1,200 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
-fecha: 2026-11-11 17:41
-emisora: MERCADO
-titulo: CFE Fibra E Seeks US$867 Million to Expand Mexico's Power Grid
-fuente: MEXSPA
+fecha: 2026-11-13 11:31
+emisora: NVIDIA
+titulo: ACTUALIZA 2-Según informa el FT, Nvidia se puso en contacto con Haas, director ejecutivo de Arm, para que sustituyera a Huang
+fuente: Reuters
 tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261111:nNRA2oase3:0
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261113:nL5N46U260:2
+
+---
+fecha: 2026-11-13 10:50
+emisora: NVIDIA
+titulo: BOLSA DE EEUU-Wall Street cae debido a que la incertidumbre en torno a Nvidia lastra al sector tecnológico
+fuente: Reuters
+tono: negativa
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261113:nL5N46U240:1
+
+---
+fecha: 2026-11-13 10:02
+emisora: NVIDIA
+titulo: Wall Street revierte ganancias iniciales, repercusiones de Nvidia sacuden a acciones tecnológicas
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261113:nL6N46U0YN:1
+
+---
+fecha: 2026-11-13 09:58
+emisora: MERCADO
+titulo: MERCADOS EMERGENTES-Los mercados de divisas de Latinoamérica registran resultados dispares mientras los inversores evalúan la evolución de la situación regional y las perspectivas de las tasas de interés en EEUU
+fuente: Reuters
+tono: neutral
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261113:nL5N46U1Z2:1
+resumen:
+  El peso chileno toca su mínimo en 19 meses El índice de divisas latinoamericanas de MSCI se encamina hacia su tercera semana consecutiva de pérdidas Bessent, del Tesoro de EEUU, se muestra optimista sobre los acuerdos comerciales con Canadá y México Las ventas minoristas de Brasil registran un aumento inesperado en septiembre Por Ragini Mathur y Sudeshna Ghoshal 13 nov (Reuters) - Las divisas latinoamericanas registraron una evolución mixta el viernes, con el peso chileno cayendo a su mínimo en 19 meses, mientras…
+
+---
+fecha: 2026-11-13 09:20
+emisora: MERCADO
+titulo: Bolsa mexicana cae por segunda jornada tras alcanzar récord máximo
+fuente: Reuters
+tono: neutral
+relevancia: 14
+id: lseg:urn:newsml:reuters.com:20261113:nL2N46U0RL:1
+resumen:
+  CIUDAD DE MÉXICO, 13 nov (Reuters) - La bolsa mexicana descendía el viernes por segunda jornada consecutiva luego de haber alcanzado máximos históricos durante la semana, mientras los inversionistas evaluaban datos de precios al productor en Estados Unidos. El índice accionario líder S&P/BMV IPC .MXX bajaba un 0.54% a 71,426.12 puntos, arrastrada principalmente por firmas del sector minero. El miércoles tocó un récord máximo cercano a 73,000 unidades.
+
+---
+fecha: 2026-11-13 08:19
+emisora: EUA
+titulo: ACTUALIZA 1-Secretario Tesoro EEUU se muestra optimista ante acuerdos comerciales con Canadá y México
+fuente: Reuters
+tono: neutral
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261113:nL2N46U0SZ:1
+resumen:
+  Agrega citas y contexto WASHINGTON, 13 nov (Reuters) - El secretario del Tesoro, Scott Bessent, dijo el viernes que confía en que Estados Unidos logrará acuerdos comerciales con México y Canadá, un día después de que el presidente Donald Trump amenazara con duplicar los gravámenes a México a raíz de una caravana de migrantes. "Soy optimista de que podremos alcanzar acuerdos comerciales con Canadá y México", dijo Bessent en una entrevista con la CNBC.
+
+---
+fecha: 2026-11-13 07:41
+emisora: EUA
+titulo: Secretario Tesoro EEUU, Bessent, se muestra optimista ante acuerdos comerciales con Canadá y México
+fuente: Reuters
+tono: neutral
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261113:nL6N46U0UI:1
+resumen:
+  WASHINGTON, 13 nov (Reuters) - El secretario del Tesoro, Scott Bessent, dijo el viernes a CNBC que creía que Estados Unidos alcanzaría acuerdos comerciales con México y Canadá. Bessent no hizo mención alguna a la advertencia que el presidente Donald Trump lanzó el jueves a México, en la que amenazaba con duplicar los aranceles al país vecino si no impedía que más de 1.000 migrantes se dirigieran hacia el norte, en dirección a Estados Unidos.
+
+---
+fecha: 2026-11-13 07:36
+emisora: COBRE
+titulo: METALES-El cobre cae y se encamina hacia su quinta caída semanal consecutiva tras la debacle de la IA
+fuente: Reuters
+tono: negativa
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261113:nL5N46U1K3:1
+
+---
+fecha: 2026-11-13 05:08
+emisora: COBRE
+titulo: METALES BÁSICOS-El cobre cae y se dirige a su quinta caída semanal consecutiva tras debacle de la IA
+fuente: Reuters
+tono: negativa
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261113:nL6N46U0P5:1
+
+---
+fecha: 2026-11-13 00:45
+emisora: MERCADO
+titulo: GLOBAL MARKETS-Stocks struggle on Nvidia whiplash, dollar climbs with US yields
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261113:nL2N46U09K:2
+resumen:
+  Updates to Asia afternoon Stocks reverse gains as uncertainty clouds Nvidia and broader AI outlook China's access to Nvidia chips in doubt Copper prices fall on concerns over weaker AI demand US yields rise as investors weigh prospect of 50-basis-point Fed hike Dollar climbs, yen in intervention territory By Rae Wee SINGAPORE, Nov 13 (Reuters) - Global stocks gave up early gains to trade lower on Friday after a turbulent week dominated by revelations of extramarital affairs involving Nvidia CEO Jensen Huang that…
+
+---
+fecha: 2026-11-12 20:30
+emisora: COBRE
+titulo: METALES-El cobre repunta tras la caída, pero se encamina hacia una pérdida semanal en medio de la debacle del sector de la IA
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261113:nL5N46U07O:1
+
+---
+fecha: 2026-11-12 18:14
+emisora: EUA
+titulo: Nvidia CEO Resigns After Alleged Chinese Spy Affair; Trump Threatens Mexico Tariffs Over Migrant Caravan
+fuente: EPOTIM
+tono: neutral
+relevancia: 12
+id: lseg:urn:link:webnews:20261113:nNRA2ovys9:0
+
+---
+fecha: 2026-11-12 15:24
+emisora: MERCADO
+titulo: MERCADOS A.LATINA-Monedas retroceden en medio de fortaleza del dólar, expectativas de alza tasas Fed
+fuente: Reuters
+tono: positiva
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261112:nL2N46T0YI:1
+resumen:
+  Actualiza valores al cierre Por Froilan Romero SANTIAGO, 12 nov (Reuters) - La mayoría de las principales monedas de América Latina cayeron el jueves, en medio de la fortaleza global del dólar y expectativas de un nuevo endurecimiento monetario por parte de la Reserva Federal, que aumentaron tras los últimos datos de inflación en la primera economía del mundo. * El dólar se apreció frente a las principales divisas, alcanzando su nivel más alto en unos 19 meses, a medida que los inversionistas impulsaron al alza…
+
+---
+fecha: 2026-11-12 15:04
+emisora: ARGENTINA
+titulo: ACTUALIZA 2-Bolsa argentina profundiza caída, mercados retoman dinámica luego de diferentes feriados
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261112:nL2N46T0ZK:2
+
+---
+fecha: 2026-11-12 14:11
+emisora: MERCADO
+titulo: MERCADOS EMERGENTES-Los activos de Latinoamérica retroceden ante la volatilidad del petróleo y la fortaleza del dólar
+fuente: Reuters
+tono: neutral
+relevancia: 12
+id: lseg:urn:newsml:reuters.com:20261112:nL5N46T2RM:1
+resumen:
+  Las acciones del Banco do Brasil alcanzan su mínimo en más de tres años Trump amenaza con duplicar los aranceles a México La inflación en Brasil se mantiene por encima del objetivo a pesar de que los datos de octubre fueron más moderados de lo esperado El real alcanza su nivel más bajo desde junio de 2025 frente al dólar Actualización con los niveles de cotización de la tarde Por Sudeshna Ghoshal, Ragini Mathur y Avinash P 12 nov (Reuters) - La mayoría de las acciones y divisas latinoamericanas retrocedieron el…
+
+---
+fecha: 2026-11-12 11:49
+emisora: BANXICO
+titulo: EXCLUSIVE-Bank of Mexico rate cuts sends wrong message, says deputy governor Heath
+fuente: Reuters
+tono: negativa
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261112:nL2N46T152:6
+
+---
+fecha: 2026-11-12 11:16
+emisora: COBRE
+titulo: METALES-El cobre toca mínimos de cuatro meses; la atención se centra en la demanda, la IA y las tasas de interés estadounidenses
+fuente: Reuters
+tono: negativa
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261112:nL5N46T2H7:1
+
+---
+fecha: 2026-11-12 11:05
+emisora: BANXICO
+titulo: EXCLUSIVA-Recorte tasa "confunde y refleja mensaje equivocado", dice subgobernador Heath de banco central México
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261112:nS0N417072:1
+resumen:
+  Por Ana Isabel Martinez CIUDAD DE MÉXICO, 12 nov (Reuters) - El subgobernador del banco central de México Jonathan Heath criticó el reciente recorte de la tasa clave al considerar que va en contra de un panorama inflacionario que calificó como muy sesgado al alza, una depreciación significativa del peso y una "mayor certeza" de que la Reserva Federal de Estados Unidos (Fed) seguirá aumentando sus tipos de interés, llevando al diferencial de tasas a un nivel que consideró "peligroso e irresponsable".
+
+---
+fecha: 2026-11-12 10:13
+emisora: BANXICO
+titulo: Mexican peso depreciates against the dollar as market awaits comments from the Fed
+fuente: NOTENG
+tono: positiva
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261112:nNRA2opuwb:0
+
+---
+fecha: 2026-11-12 09:50
+emisora: COBRE
+titulo: METALES-El cobre toca mínimos de cuatro meses; la atención se centra en la demanda, la IA y las tasas de interés estadounidenses
+fuente: Reuters
+tono: negativa
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261112:nL5N46T25L:1
 
 ---
 fecha: 2026-11-11 17:38
@@ -17,15 +204,6 @@ fuente: Reuters
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:reuters.com:20261111:nL5N46S2DS:1
-
----
-fecha: 2026-11-11 17:13
-emisora: BANXICO
-titulo: Dollar Price in Mexico Today, Wednesday, November 11, 2026: Closing Exchange Rate USD to MXN and Banxico Quotation
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261111:nNRA2oajsm:0
 
 ---
 fecha: 2026-11-11 17:09
@@ -57,15 +235,6 @@ relevancia: 11
 id: lseg:urn:newsml:reuters.com:20261111:nL2N46S0V7:4
 resumen:
   Adds more detail from conference, report By Kylie Madry MEXICO CITY, Nov 11 (Reuters) - Mexico is working to block steel from China and other countries from being rerouted through Mexico into the US under North America's trade pact, a Mexican official said on Wednesday, as Mexico presses Washington for relief from steel, aluminum and auto tariffs.
-
----
-fecha: 2026-11-11 16:01
-emisora: NVIDIA
-titulo: DÍA DE NEGOCIACIÓN-El optimismo sobre la IA disipa los temores de una subida de tasas
-fuente: Reuters
-tono: neutral
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261111:nL5N46S274:1
 
 ---
 fecha: 2026-11-11 15:26
