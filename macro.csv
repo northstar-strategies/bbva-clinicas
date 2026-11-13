@@ -1,5 +1,4 @@
 fecha,serie,nombre,valor,moneda,mueve
-2026-04-27,USD,Dólar en pesos,17.3763,USD,
 2026-04-28,USD,Dólar en pesos,17.376,USD,
 2026-04-29,USD,Dólar en pesos,17.525,USD,
 2026-04-30,USD,Dólar en pesos,17.4625,USD,
@@ -142,7 +141,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,USD,Dólar en pesos,18.5276,USD,
 2026-11-10,USD,Dólar en pesos,18.617,USD,
 2026-11-11,USD,Dólar en pesos,18.586,USD,
-2026-04-27,BRL,Real brasileño en pesos,3.487186,BRL,
+2026-11-12,USD,Dólar en pesos,18.591,USD,
 2026-04-28,BRL,Real brasileño en pesos,3.493436,BRL,
 2026-04-29,BRL,Real brasileño en pesos,3.507806,BRL,
 2026-04-30,BRL,Real brasileño en pesos,3.525001,BRL,
@@ -285,7 +284,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,BRL,Real brasileño en pesos,3.363884,BRL,
 2026-11-10,BRL,Real brasileño en pesos,3.334468,BRL,
 2026-11-11,BRL,Real brasileño en pesos,3.329273,BRL,
-2026-04-27,COP,"Peso colombiano en pesos (×1,000)",4.790819,COP,
+2026-11-12,BRL,Real brasileño en pesos,3.295809,BRL,
 2026-04-28,COP,"Peso colombiano en pesos (×1,000)",4.824656,COP,
 2026-04-29,COP,"Peso colombiano en pesos (×1,000)",4.839289,COP,
 2026-04-30,COP,"Peso colombiano en pesos (×1,000)",4.771827,COP,
@@ -428,7 +427,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,COP,"Peso colombiano en pesos (×1,000)",5.658146,COP,
 2026-11-10,COP,"Peso colombiano en pesos (×1,000)",5.654366,COP,
 2026-11-11,COP,"Peso colombiano en pesos (×1,000)",5.666032,COP,
-2026-04-27,ARS,"Peso argentino en pesos (×1,000)",12.271398,ARS,
+2026-11-12,COP,"Peso colombiano en pesos (×1,000)",5.631981,COP,
 2026-04-28,ARS,"Peso argentino en pesos (×1,000)",12.371663,ARS,
 2026-04-29,ARS,"Peso argentino en pesos (×1,000)",12.607914,ARS,
 2026-04-30,ARS,"Peso argentino en pesos (×1,000)",12.553918,ARS,
@@ -571,7 +570,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,ARS,"Peso argentino en pesos (×1,000)",11.990034,ARS,
 2026-11-10,ARS,"Peso argentino en pesos (×1,000)",12.047889,ARS,
 2026-11-11,ARS,"Peso argentino en pesos (×1,000)",12.037565,ARS,
-2026-04-27,PEN,Sol peruano en pesos,4.957151,PEN,
+2026-11-12,ARS,"Peso argentino en pesos (×1,000)",12.03301,ARS,
 2026-04-28,PEN,Sol peruano en pesos,4.948313,PEN,
 2026-04-29,PEN,Sol peruano en pesos,4.974454,PEN,
 2026-04-30,PEN,Sol peruano en pesos,4.978475,PEN,
@@ -714,7 +713,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,PEN,Sol peruano en pesos,5.439854,PEN,
 2026-11-10,PEN,Sol peruano en pesos,5.46514,PEN,
 2026-11-11,PEN,Sol peruano en pesos,5.45636,PEN,
-2026-04-27,CLP,"Peso chileno en pesos (×1,000)",19.432013,CLP,
+2026-11-12,PEN,Sol peruano en pesos,5.460714,PEN,
 2026-04-28,CLP,"Peso chileno en pesos (×1,000)",19.556116,CLP,
 2026-04-29,CLP,"Peso chileno en pesos (×1,000)",19.348179,CLP,
 2026-04-30,CLP,"Peso chileno en pesos (×1,000)",19.456174,CLP,
@@ -857,7 +856,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,CLP,"Peso chileno en pesos (×1,000)",19.160668,CLP,
 2026-11-10,CLP,"Peso chileno en pesos (×1,000)",18.9226,CLP,
 2026-11-11,CLP,"Peso chileno en pesos (×1,000)",18.925138,CLP,
-2026-04-27,EUR,Euro en pesos,20.3641,EUR,
+2026-11-12,CLP,"Peso chileno en pesos (×1,000)",18.68893,CLP,
 2026-04-28,EUR,Euro en pesos,20.349,EUR,
 2026-04-29,EUR,Euro en pesos,20.4639,EUR,
 2026-04-30,EUR,Euro en pesos,20.4835,EUR,
@@ -1000,7 +999,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,EUR,Euro en pesos,20.7935,EUR,
 2026-11-10,EUR,Euro en pesos,20.7822,EUR,
 2026-11-11,EUR,Euro en pesos,20.61,EUR,
-2026-04-27,BRENT,Petróleo Brent (dólares),108.3,,ALPEKA ORBIA VOLARA
+2026-11-12,EUR,Euro en pesos,20.5483,EUR,
 2026-04-28,BRENT,Petróleo Brent (dólares),111.22,,ALPEKA ORBIA VOLARA
 2026-04-29,BRENT,Petróleo Brent (dólares),121.68,,ALPEKA ORBIA VOLARA
 2026-04-30,BRENT,Petróleo Brent (dólares),114.09,,ALPEKA ORBIA VOLARA
@@ -1143,6 +1142,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,BRENT,Petróleo Brent (dólares),92.2,,ALPEKA ORBIA VOLARA
 2026-11-10,BRENT,Petróleo Brent (dólares),92.02,,ALPEKA ORBIA VOLARA
 2026-11-11,BRENT,Petróleo Brent (dólares),92.46,,ALPEKA ORBIA VOLARA
+2026-11-12,BRENT,Petróleo Brent (dólares),95.95,,ALPEKA ORBIA VOLARA
 2026-04-27,COBRE,Cobre (dólares por libra),6.019,,GMEXICOB
 2026-04-29,COBRE,Cobre (dólares por libra),5.8715,,GMEXICOB
 2026-04-30,COBRE,Cobre (dólares por libra),5.978,,GMEXICOB
@@ -1277,7 +1277,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,COBRE,Cobre (dólares por libra),6.333,,GMEXICOB
 2026-11-10,COBRE,Cobre (dólares por libra),6.2155,,GMEXICOB
 2026-11-11,COBRE,Cobre (dólares por libra),6.2625,,GMEXICOB
-2026-04-27,PLATA,Plata (dólares por onza),75.495,,PEOLES
+2026-11-12,COBRE,Cobre (dólares por libra),6.185,,GMEXICOB
 2026-04-28,PLATA,Plata (dólares por onza),73.08,,PEOLES
 2026-04-29,PLATA,Plata (dólares por onza),71.482,,PEOLES
 2026-04-30,PLATA,Plata (dólares por onza),73.735,,PEOLES
@@ -1420,7 +1420,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,PLATA,Plata (dólares por onza),53.4099,,PEOLES
 2026-11-10,PLATA,Plata (dólares por onza),51.5052,,PEOLES
 2026-11-11,PLATA,Plata (dólares por onza),51.6879,,PEOLES
-2026-04-27,ORO,Oro (dólares por onza),4681.8501,,PEOLES
+2026-11-12,PLATA,Plata (dólares por onza),50.0063,,PEOLES
 2026-04-28,ORO,Oro (dólares por onza),4594.51,,PEOLES
 2026-04-29,ORO,Oro (dólares por onza),4541.75,,PEOLES
 2026-04-30,ORO,Oro (dólares por onza),4621.59,,PEOLES
@@ -1563,6 +1563,144 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,ORO,Oro (dólares por onza),4139.04,,PEOLES
 2026-11-10,ORO,Oro (dólares por onza),4030.93,,PEOLES
 2026-11-11,ORO,Oro (dólares por onza),3987.29,,PEOLES
+2026-11-12,ORO,Oro (dólares por onza),3876.35,,PEOLES
+2026-04-28,UST10,Bono de EUA a 10 años (rendimiento %),4.354,,GFNORTEO BBAJIOO GFINBURO
+2026-04-29,UST10,Bono de EUA a 10 años (rendimiento %),4.416,,GFNORTEO BBAJIOO GFINBURO
+2026-04-30,UST10,Bono de EUA a 10 años (rendimiento %),4.39,,GFNORTEO BBAJIOO GFINBURO
+2026-05-01,UST10,Bono de EUA a 10 años (rendimiento %),4.378,,GFNORTEO BBAJIOO GFINBURO
+2026-05-04,UST10,Bono de EUA a 10 años (rendimiento %),4.446,,GFNORTEO BBAJIOO GFINBURO
+2026-05-05,UST10,Bono de EUA a 10 años (rendimiento %),4.416,,GFNORTEO BBAJIOO GFINBURO
+2026-05-06,UST10,Bono de EUA a 10 años (rendimiento %),4.354,,GFNORTEO BBAJIOO GFINBURO
+2026-05-07,UST10,Bono de EUA a 10 años (rendimiento %),4.394,,GFNORTEO BBAJIOO GFINBURO
+2026-05-08,UST10,Bono de EUA a 10 años (rendimiento %),4.364,,GFNORTEO BBAJIOO GFINBURO
+2026-05-11,UST10,Bono de EUA a 10 años (rendimiento %),4.412,,GFNORTEO BBAJIOO GFINBURO
+2026-05-12,UST10,Bono de EUA a 10 años (rendimiento %),4.463,,GFNORTEO BBAJIOO GFINBURO
+2026-05-13,UST10,Bono de EUA a 10 años (rendimiento %),4.479,,GFNORTEO BBAJIOO GFINBURO
+2026-05-14,UST10,Bono de EUA a 10 años (rendimiento %),4.459,,GFNORTEO BBAJIOO GFINBURO
+2026-05-15,UST10,Bono de EUA a 10 años (rendimiento %),4.595,,GFNORTEO BBAJIOO GFINBURO
+2026-05-18,UST10,Bono de EUA a 10 años (rendimiento %),4.623,,GFNORTEO BBAJIOO GFINBURO
+2026-05-19,UST10,Bono de EUA a 10 años (rendimiento %),4.669,,GFNORTEO BBAJIOO GFINBURO
+2026-05-20,UST10,Bono de EUA a 10 años (rendimiento %),4.57,,GFNORTEO BBAJIOO GFINBURO
+2026-05-21,UST10,Bono de EUA a 10 años (rendimiento %),4.584,,GFNORTEO BBAJIOO GFINBURO
+2026-05-22,UST10,Bono de EUA a 10 años (rendimiento %),4.572,,GFNORTEO BBAJIOO GFINBURO
+2026-05-26,UST10,Bono de EUA a 10 años (rendimiento %),4.491,,GFNORTEO BBAJIOO GFINBURO
+2026-05-27,UST10,Bono de EUA a 10 años (rendimiento %),4.481,,GFNORTEO BBAJIOO GFINBURO
+2026-05-28,UST10,Bono de EUA a 10 años (rendimiento %),4.455,,GFNORTEO BBAJIOO GFINBURO
+2026-05-29,UST10,Bono de EUA a 10 años (rendimiento %),4.453,,GFNORTEO BBAJIOO GFINBURO
+2026-06-01,UST10,Bono de EUA a 10 años (rendimiento %),4.477,,GFNORTEO BBAJIOO GFINBURO
+2026-06-02,UST10,Bono de EUA a 10 años (rendimiento %),4.455,,GFNORTEO BBAJIOO GFINBURO
+2026-06-03,UST10,Bono de EUA a 10 años (rendimiento %),4.491,,GFNORTEO BBAJIOO GFINBURO
+2026-06-04,UST10,Bono de EUA a 10 años (rendimiento %),4.477,,GFNORTEO BBAJIOO GFINBURO
+2026-06-05,UST10,Bono de EUA a 10 años (rendimiento %),4.536,,GFNORTEO BBAJIOO GFINBURO
+2026-06-08,UST10,Bono de EUA a 10 años (rendimiento %),4.55,,GFNORTEO BBAJIOO GFINBURO
+2026-06-09,UST10,Bono de EUA a 10 años (rendimiento %),4.528,,GFNORTEO BBAJIOO GFINBURO
+2026-06-10,UST10,Bono de EUA a 10 años (rendimiento %),4.54,,GFNORTEO BBAJIOO GFINBURO
+2026-06-11,UST10,Bono de EUA a 10 años (rendimiento %),4.465,,GFNORTEO BBAJIOO GFINBURO
+2026-06-12,UST10,Bono de EUA a 10 años (rendimiento %),4.485,,GFNORTEO BBAJIOO GFINBURO
+2026-06-15,UST10,Bono de EUA a 10 años (rendimiento %),4.469,,GFNORTEO BBAJIOO GFINBURO
+2026-06-16,UST10,Bono de EUA a 10 años (rendimiento %),4.428,,GFNORTEO BBAJIOO GFINBURO
+2026-06-17,UST10,Bono de EUA a 10 años (rendimiento %),4.463,,GFNORTEO BBAJIOO GFINBURO
+2026-06-18,UST10,Bono de EUA a 10 años (rendimiento %),4.451,,GFNORTEO BBAJIOO GFINBURO
+2026-06-22,UST10,Bono de EUA a 10 años (rendimiento %),4.507,,GFNORTEO BBAJIOO GFINBURO
+2026-06-23,UST10,Bono de EUA a 10 años (rendimiento %),4.493,,GFNORTEO BBAJIOO GFINBURO
+2026-06-24,UST10,Bono de EUA a 10 años (rendimiento %),4.4,,GFNORTEO BBAJIOO GFINBURO
+2026-06-25,UST10,Bono de EUA a 10 años (rendimiento %),4.392,,GFNORTEO BBAJIOO GFINBURO
+2026-06-26,UST10,Bono de EUA a 10 años (rendimiento %),4.372,,GFNORTEO BBAJIOO GFINBURO
+2026-06-29,UST10,Bono de EUA a 10 años (rendimiento %),4.374,,GFNORTEO BBAJIOO GFINBURO
+2026-06-30,UST10,Bono de EUA a 10 años (rendimiento %),4.422,,GFNORTEO BBAJIOO GFINBURO
+2026-07-01,UST10,Bono de EUA a 10 años (rendimiento %),4.475,,GFNORTEO BBAJIOO GFINBURO
+2026-07-02,UST10,Bono de EUA a 10 años (rendimiento %),4.479,,GFNORTEO BBAJIOO GFINBURO
+2026-07-06,UST10,Bono de EUA a 10 años (rendimiento %),4.479,,GFNORTEO BBAJIOO GFINBURO
+2026-07-07,UST10,Bono de EUA a 10 años (rendimiento %),4.529,,GFNORTEO BBAJIOO GFINBURO
+2026-07-08,UST10,Bono de EUA a 10 años (rendimiento %),4.567,,GFNORTEO BBAJIOO GFINBURO
+2026-07-09,UST10,Bono de EUA a 10 años (rendimiento %),4.539,,GFNORTEO BBAJIOO GFINBURO
+2026-07-10,UST10,Bono de EUA a 10 años (rendimiento %),4.569,,GFNORTEO BBAJIOO GFINBURO
+2026-07-13,UST10,Bono de EUA a 10 años (rendimiento %),4.61,,GFNORTEO BBAJIOO GFINBURO
+2026-07-14,UST10,Bono de EUA a 10 años (rendimiento %),4.585,,GFNORTEO BBAJIOO GFINBURO
+2026-07-15,UST10,Bono de EUA a 10 años (rendimiento %),4.545,,GFNORTEO BBAJIOO GFINBURO
+2026-07-16,UST10,Bono de EUA a 10 años (rendimiento %),4.569,,GFNORTEO BBAJIOO GFINBURO
+2026-07-17,UST10,Bono de EUA a 10 años (rendimiento %),4.541,,GFNORTEO BBAJIOO GFINBURO
+2026-07-20,UST10,Bono de EUA a 10 años (rendimiento %),4.598,,GFNORTEO BBAJIOO GFINBURO
+2026-07-21,UST10,Bono de EUA a 10 años (rendimiento %),4.628,,GFNORTEO BBAJIOO GFINBURO
+2026-07-22,UST10,Bono de EUA a 10 años (rendimiento %),4.657,,GFNORTEO BBAJIOO GFINBURO
+2026-07-23,UST10,Bono de EUA a 10 años (rendimiento %),4.703,,GFNORTEO BBAJIOO GFINBURO
+2026-07-24,UST10,Bono de EUA a 10 años (rendimiento %),4.679,,GFNORTEO BBAJIOO GFINBURO
+2026-07-27,UST10,Bono de EUA a 10 años (rendimiento %),4.641,,GFNORTEO BBAJIOO GFINBURO
+2026-07-28,UST10,Bono de EUA a 10 años (rendimiento %),4.604,,GFNORTEO BBAJIOO GFINBURO
+2026-07-29,UST10,Bono de EUA a 10 años (rendimiento %),4.622,,GFNORTEO BBAJIOO GFINBURO
+2026-07-30,UST10,Bono de EUA a 10 años (rendimiento %),4.663,,GFNORTEO BBAJIOO GFINBURO
+2026-07-31,UST10,Bono de EUA a 10 años (rendimiento %),4.745,,GFNORTEO BBAJIOO GFINBURO
+2026-08-03,UST10,Bono de EUA a 10 años (rendimiento %),4.684,,GFNORTEO BBAJIOO GFINBURO
+2026-08-04,UST10,Bono de EUA a 10 años (rendimiento %),4.627,,GFNORTEO BBAJIOO GFINBURO
+2026-08-05,UST10,Bono de EUA a 10 años (rendimiento %),4.617,,GFNORTEO BBAJIOO GFINBURO
+2026-08-06,UST10,Bono de EUA a 10 años (rendimiento %),4.67,,GFNORTEO BBAJIOO GFINBURO
+2026-08-07,UST10,Bono de EUA a 10 años (rendimiento %),4.658,,GFNORTEO BBAJIOO GFINBURO
+2026-08-10,UST10,Bono de EUA a 10 años (rendimiento %),4.698,,GFNORTEO BBAJIOO GFINBURO
+2026-08-11,UST10,Bono de EUA a 10 años (rendimiento %),4.684,,GFNORTEO BBAJIOO GFINBURO
+2026-08-12,UST10,Bono de EUA a 10 años (rendimiento %),4.682,,GFNORTEO BBAJIOO GFINBURO
+2026-08-13,UST10,Bono de EUA a 10 años (rendimiento %),4.641,,GFNORTEO BBAJIOO GFINBURO
+2026-08-14,UST10,Bono de EUA a 10 años (rendimiento %),4.696,,GFNORTEO BBAJIOO GFINBURO
+2026-08-17,UST10,Bono de EUA a 10 años (rendimiento %),4.724,,GFNORTEO BBAJIOO GFINBURO
+2026-08-18,UST10,Bono de EUA a 10 años (rendimiento %),4.706,,GFNORTEO BBAJIOO GFINBURO
+2026-08-19,UST10,Bono de EUA a 10 años (rendimiento %),4.653,,GFNORTEO BBAJIOO GFINBURO
+2026-08-20,UST10,Bono de EUA a 10 años (rendimiento %),4.698,,GFNORTEO BBAJIOO GFINBURO
+2026-08-21,UST10,Bono de EUA a 10 años (rendimiento %),4.738,,GFNORTEO BBAJIOO GFINBURO
+2026-08-24,UST10,Bono de EUA a 10 años (rendimiento %),4.704,,GFNORTEO BBAJIOO GFINBURO
+2026-08-25,UST10,Bono de EUA a 10 años (rendimiento %),4.639,,GFNORTEO BBAJIOO GFINBURO
+2026-08-26,UST10,Bono de EUA a 10 años (rendimiento %),4.664,,GFNORTEO BBAJIOO GFINBURO
+2026-08-27,UST10,Bono de EUA a 10 años (rendimiento %),4.672,,GFNORTEO BBAJIOO GFINBURO
+2026-08-28,UST10,Bono de EUA a 10 años (rendimiento %),4.722,,GFNORTEO BBAJIOO GFINBURO
+2026-08-31,UST10,Bono de EUA a 10 años (rendimiento %),4.758,,GFNORTEO BBAJIOO GFINBURO
+2026-09-01,UST10,Bono de EUA a 10 años (rendimiento %),4.796,,GFNORTEO BBAJIOO GFINBURO
+2026-09-02,UST10,Bono de EUA a 10 años (rendimiento %),4.794,,GFNORTEO BBAJIOO GFINBURO
+2026-09-03,UST10,Bono de EUA a 10 años (rendimiento %),4.762,,GFNORTEO BBAJIOO GFINBURO
+2026-09-04,UST10,Bono de EUA a 10 años (rendimiento %),4.784,,GFNORTEO BBAJIOO GFINBURO
+2026-09-08,UST10,Bono de EUA a 10 años (rendimiento %),4.804,,GFNORTEO BBAJIOO GFINBURO
+2026-09-09,UST10,Bono de EUA a 10 años (rendimiento %),4.837,,GFNORTEO BBAJIOO GFINBURO
+2026-09-10,UST10,Bono de EUA a 10 años (rendimiento %),4.944,,GFNORTEO BBAJIOO GFINBURO
+2026-09-11,UST10,Bono de EUA a 10 años (rendimiento %),4.975,,GFNORTEO BBAJIOO GFINBURO
+2026-09-14,UST10,Bono de EUA a 10 años (rendimiento %),4.961,,GFNORTEO BBAJIOO GFINBURO
+2026-09-15,UST10,Bono de EUA a 10 años (rendimiento %),4.996,,GFNORTEO BBAJIOO GFINBURO
+2026-09-16,UST10,Bono de EUA a 10 años (rendimiento %),5.004,,GFNORTEO BBAJIOO GFINBURO
+2026-09-17,UST10,Bono de EUA a 10 años (rendimiento %),4.947,,GFNORTEO BBAJIOO GFINBURO
+2026-09-18,UST10,Bono de EUA a 10 años (rendimiento %),4.996,,GFNORTEO BBAJIOO GFINBURO
+2026-09-21,UST10,Bono de EUA a 10 años (rendimiento %),4.963,,GFNORTEO BBAJIOO GFINBURO
+2026-09-22,UST10,Bono de EUA a 10 años (rendimiento %),4.967,,GFNORTEO BBAJIOO GFINBURO
+2026-09-23,UST10,Bono de EUA a 10 años (rendimiento %),5.114,,GFNORTEO BBAJIOO GFINBURO
+2026-09-24,UST10,Bono de EUA a 10 años (rendimiento %),5.162,,GFNORTEO BBAJIOO GFINBURO
+2026-09-25,UST10,Bono de EUA a 10 años (rendimiento %),5.181,,GFNORTEO BBAJIOO GFINBURO
+2026-09-28,UST10,Bono de EUA a 10 años (rendimiento %),5.242,,GFNORTEO BBAJIOO GFINBURO
+2026-09-29,UST10,Bono de EUA a 10 años (rendimiento %),5.255,,GFNORTEO BBAJIOO GFINBURO
+2026-09-30,UST10,Bono de EUA a 10 años (rendimiento %),5.293,,GFNORTEO BBAJIOO GFINBURO
+2026-10-01,UST10,Bono de EUA a 10 años (rendimiento %),5.234,,GFNORTEO BBAJIOO GFINBURO
+2026-10-02,UST10,Bono de EUA a 10 años (rendimiento %),5.277,,GFNORTEO BBAJIOO GFINBURO
+2026-10-05,UST10,Bono de EUA a 10 años (rendimiento %),5.311,,GFNORTEO BBAJIOO GFINBURO
+2026-10-06,UST10,Bono de EUA a 10 años (rendimiento %),5.271,,GFNORTEO BBAJIOO GFINBURO
+2026-10-07,UST10,Bono de EUA a 10 años (rendimiento %),5.277,,GFNORTEO BBAJIOO GFINBURO
+2026-10-08,UST10,Bono de EUA a 10 años (rendimiento %),5.233,,GFNORTEO BBAJIOO GFINBURO
+2026-10-09,UST10,Bono de EUA a 10 años (rendimiento %),5.244,,GFNORTEO BBAJIOO GFINBURO
+2026-10-13,UST10,Bono de EUA a 10 años (rendimiento %),5.217,,GFNORTEO BBAJIOO GFINBURO
+2026-10-14,UST10,Bono de EUA a 10 años (rendimiento %),5.19,,GFNORTEO BBAJIOO GFINBURO
+2026-10-15,UST10,Bono de EUA a 10 años (rendimiento %),5.087,,GFNORTEO BBAJIOO GFINBURO
+2026-10-16,UST10,Bono de EUA a 10 años (rendimiento %),5.098,,GFNORTEO BBAJIOO GFINBURO
+2026-10-19,UST10,Bono de EUA a 10 años (rendimiento %),5.136,,GFNORTEO BBAJIOO GFINBURO
+2026-10-20,UST10,Bono de EUA a 10 años (rendimiento %),5.117,,GFNORTEO BBAJIOO GFINBURO
+2026-10-21,UST10,Bono de EUA a 10 años (rendimiento %),5.146,,GFNORTEO BBAJIOO GFINBURO
+2026-10-22,UST10,Bono de EUA a 10 años (rendimiento %),4.953,,GFNORTEO BBAJIOO GFINBURO
+2026-10-23,UST10,Bono de EUA a 10 años (rendimiento %),4.988,,GFNORTEO BBAJIOO GFINBURO
+2026-10-26,UST10,Bono de EUA a 10 años (rendimiento %),4.986,,GFNORTEO BBAJIOO GFINBURO
+2026-10-27,UST10,Bono de EUA a 10 años (rendimiento %),4.993,,GFNORTEO BBAJIOO GFINBURO
+2026-10-28,UST10,Bono de EUA a 10 años (rendimiento %),5.045,,GFNORTEO BBAJIOO GFINBURO
+2026-10-29,UST10,Bono de EUA a 10 años (rendimiento %),4.989,,GFNORTEO BBAJIOO GFINBURO
+2026-10-30,UST10,Bono de EUA a 10 años (rendimiento %),4.929,,GFNORTEO BBAJIOO GFINBURO
+2026-11-02,UST10,Bono de EUA a 10 años (rendimiento %),4.894,,GFNORTEO BBAJIOO GFINBURO
+2026-11-03,UST10,Bono de EUA a 10 años (rendimiento %),4.95,,GFNORTEO BBAJIOO GFINBURO
+2026-11-04,UST10,Bono de EUA a 10 años (rendimiento %),4.892,,GFNORTEO BBAJIOO GFINBURO
+2026-11-05,UST10,Bono de EUA a 10 años (rendimiento %),4.837,,GFNORTEO BBAJIOO GFINBURO
+2026-11-06,UST10,Bono de EUA a 10 años (rendimiento %),4.859,,GFNORTEO BBAJIOO GFINBURO
+2026-11-09,UST10,Bono de EUA a 10 años (rendimiento %),4.862,,GFNORTEO BBAJIOO GFINBURO
+2026-11-10,UST10,Bono de EUA a 10 años (rendimiento %),4.983,,GFNORTEO BBAJIOO GFINBURO
+2026-11-12,UST10,Bono de EUA a 10 años (rendimiento %),5.103,,GFNORTEO BBAJIOO GFINBURO
 2026-04-27,MBONO10,Bono M a 10 años (rendimiento %),9.054,,GFNORTEO BBAJIOO GFINBURO
 2026-04-28,MBONO10,Bono M a 10 años (rendimiento %),9.079,,GFNORTEO BBAJIOO GFINBURO
 2026-04-29,MBONO10,Bono M a 10 años (rendimiento %),9.232,,GFNORTEO BBAJIOO GFINBURO
@@ -1703,7 +1841,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,MBONO10,Bono M a 10 años (rendimiento %),9.085,,GFNORTEO BBAJIOO GFINBURO
 2026-11-10,MBONO10,Bono M a 10 años (rendimiento %),9.157,,GFNORTEO BBAJIOO GFINBURO
 2026-11-11,MBONO10,Bono M a 10 años (rendimiento %),9.206,,GFNORTEO BBAJIOO GFINBURO
-2026-04-27,BOVESPA,Bovespa (Brasil),189578.79,,
+2026-11-12,MBONO10,Bono M a 10 años (rendimiento %),9.278,,GFNORTEO BBAJIOO GFINBURO
 2026-04-28,BOVESPA,Bovespa (Brasil),188618.69,,
 2026-04-29,BOVESPA,Bovespa (Brasil),184750.42,,
 2026-04-30,BOVESPA,Bovespa (Brasil),187317.64,,
@@ -1841,7 +1979,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,BOVESPA,Bovespa (Brasil),172236.05,,
 2026-11-10,BOVESPA,Bovespa (Brasil),171336.99,,
 2026-11-11,BOVESPA,Bovespa (Brasil),172060.43,,
-2026-04-27,SP500,S&P 500 (EUA),7173.91,,
+2026-11-12,BOVESPA,Bovespa (Brasil),171324.31,,
 2026-04-28,SP500,S&P 500 (EUA),7138.8,,
 2026-04-29,SP500,S&P 500 (EUA),7135.95,,
 2026-04-30,SP500,S&P 500 (EUA),7209.01,,
@@ -1980,7 +2118,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,SP500,S&P 500 (EUA),7549.94,,
 2026-11-10,SP500,S&P 500 (EUA),7520.93,,
 2026-11-11,SP500,S&P 500 (EUA),7619.38,,
-2026-04-27,IPC,S&P/BMV IPC,67992.36,,
+2026-11-12,SP500,S&P 500 (EUA),7592.4,,
 2026-04-28,IPC,S&P/BMV IPC,67269.29,,
 2026-04-29,IPC,S&P/BMV IPC,67097.06,,
 2026-04-30,IPC,S&P/BMV IPC,67858.09,,
@@ -2120,3 +2258,4 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-09,IPC,S&P/BMV IPC,71855.64,,
 2026-11-10,IPC,S&P/BMV IPC,71893.88,,
 2026-11-11,IPC,S&P/BMV IPC,72006.05,,
+2026-11-12,IPC,S&P/BMV IPC,71811.2,,
