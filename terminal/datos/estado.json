@@ -1,0 +1,32 @@
+{
+ "version": 1,
+ "generado": "2026-11-14T02:41:55+00:00",
+ "modo": "completo",
+ "mercado": {
+  "estado": "cerrado",
+  "texto": "Sesión terminada",
+  "hora_cdmx": "2026-11-13 20:40",
+  "fecha": "2026-11-13",
+  "horario": "8:30–15:00 CDMX"
+ },
+ "fuentes": [
+  "Estados financieros reportados",
+  "Google Noticias",
+  "Mercado · diferido"
+ ],
+ "cobertura": {
+  "cotizaciones": "38/38",
+  "velas": "58/58",
+  "fundamentales": "37/37",
+  "estados": "37/37",
+  "noticias": "37/37"
+ },
+ "errores": [],
+ "avisos": [],
+ "n_avisos": 0,
+ "duracion_s": 70.7,
+ "escritos": 106,
+ "ultimo_completo": "2026-11-14T02:41:55+00:00",
+ "ultimo_rapido": "2026-11-14T02:41:55+00:00",
+ "origen": "GitHub Actions · corrida 43547595973"
+}
