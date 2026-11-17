@@ -851,7 +851,6 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-13,CLP,"Peso chileno en pesos (×1,000)",18.638147,CLP,
 2026-11-16,CLP,"Peso chileno en pesos (×1,000)",18.530704,CLP,
 2026-11-17,CLP,"Peso chileno en pesos (×1,000)",18.554873,CLP,
-2026-05-01,EUR,Euro en pesos,20.4479,EUR,
 2026-05-04,EUR,Euro en pesos,20.4623,EUR,
 2026-05-05,EUR,Euro en pesos,20.3102,EUR,
 2026-05-06,EUR,Euro en pesos,20.2647,EUR,
@@ -1135,6 +1134,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-12,BRENT,Petróleo Brent (dólares),95.95,,ALPEKA ORBIA VOLARA
 2026-11-13,BRENT,Petróleo Brent (dólares),96.29,,ALPEKA ORBIA VOLARA
 2026-11-16,BRENT,Petróleo Brent (dólares),91.75,,ALPEKA ORBIA VOLARA
+2026-05-01,COBRE,Cobre (dólares por libra),5.914,,GMEXICOB
 2026-05-04,COBRE,Cobre (dólares por libra),5.8095,,GMEXICOB
 2026-05-05,COBRE,Cobre (dólares por libra),5.9335,,GMEXICOB
 2026-05-06,COBRE,Cobre (dólares por libra),6.124,,GMEXICOB
@@ -1552,6 +1552,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-13,ORO,Oro (dólares por onza),3880.3,,PEOLES
 2026-11-16,ORO,Oro (dólares por onza),3856.25,,PEOLES
 2026-11-17,ORO,Oro (dólares por onza),3849.08,,PEOLES
+2026-05-01,UST10,Bono de EUA a 10 años (rendimiento %),4.378,,GFNORTEO BBAJIOO GFINBURO
 2026-05-04,UST10,Bono de EUA a 10 años (rendimiento %),4.446,,GFNORTEO BBAJIOO GFINBURO
 2026-05-05,UST10,Bono de EUA a 10 años (rendimiento %),4.416,,GFNORTEO BBAJIOO GFINBURO
 2026-05-06,UST10,Bono de EUA a 10 años (rendimiento %),4.354,,GFNORTEO BBAJIOO GFINBURO
@@ -1963,7 +1964,6 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-13,BOVESPA,Bovespa (Brasil),172457.76,,
 2026-11-16,BOVESPA,Bovespa (Brasil),169295.41,,
 2026-11-17,BOVESPA,Bovespa (Brasil),169816.64,,
-2026-05-01,SP500,S&P 500 (EUA),7230.12,,
 2026-05-04,SP500,S&P 500 (EUA),7200.75,,
 2026-05-05,SP500,S&P 500 (EUA),7259.22,,
 2026-05-06,SP500,S&P 500 (EUA),7365.12,,
@@ -2101,6 +2101,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-12,SP500,S&P 500 (EUA),7592.4,,
 2026-11-13,SP500,S&P 500 (EUA),7561.67,,
 2026-11-16,SP500,S&P 500 (EUA),7416.59,,
+2026-11-17,SP500,S&P 500 (EUA),7340.53,,
 2026-05-04,IPC,S&P/BMV IPC,67283.6,,
 2026-05-05,IPC,S&P/BMV IPC,68590.57,,
 2026-05-06,IPC,S&P/BMV IPC,69855.23,,
