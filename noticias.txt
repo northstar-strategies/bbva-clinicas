@@ -231,6 +231,21 @@ resumen:
   turistas provenientes de Estados Unidos, principal mercado emisor.
 
 ---
+fecha: 2026-11-17 16:40
+emisora: PETROLEO
+titulo: Study Data from Federal University of Agriculture Provide New Insights into Cancer (Temporal Dynamics, Ecotoxicological Hazard Characterization, an...
+fuente: DISPRE
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261117:nNRA2r48uu:0
+resumen:
+  Study Data from Federal University of Agriculture Provide New Insights into Cancer
+  (Temporal Dynamics, Ecotoxicological Hazard Characterization, and Human Cancer Risk
+  Assessment of Polycyclic Aromatic Hydrocarbons In Crude Oil-contaminated ...) 2026 NOV
+  17-- By a News Reporter-Staff News Editor at Disease Prevention Daily-- Researchers
+  detail new data in Cancer.
+
+---
 fecha: 2026-11-17 16:34
 emisora: VESTA
 titulo: Vesta Real Estate Corporation SAB de CV - [2018] Eventos Relevantes - Emisoras - VESTA
@@ -283,6 +298,11 @@ fuente: Reuters
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261117:nL5N46Y2PZ:2
+resumen:
+  By Marcelo Teixeira NEW YORK, Nov 17 (Reuters) - China has managed in recent years,
+  including in the current crop, to increase sugar production at higher rates than local
+  consumption growth, continuously reducing the need for imported sugar, according to a
+  report released on Tuesday.
 
 ---
 fecha: 2026-11-17 16:28
@@ -301,6 +321,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261117:nL5N46Y2NP:3
+resumen:
+  Se reformula la primera frase con el comentario del presidente del consejo de
+  administración; se añaden comentarios de analistas e inversores, datos financieros,
+  antecedentes de la empresa y se actualiza la cotización de las acciones La previsión de
+  ingresos para el cuarto trimestre es de 130 000 millones de dólares, con un margen de
+  error del 3 %, por encima de la estimación de los analistas de 125 250 millones de
+  dólares Las previsiones no contemplan ventas de chips para centros de datos a China,
+  según Nvidia…
 
 ---
 fecha: 2026-11-17 16:28
@@ -319,6 +347,13 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261117:nL6N46Y1BU:7
+resumen:
+  Recasts first sentence with board chairman's comment, adds analyst and investor
+  comments, financial details, company background, updates shares Fourth-quarter revenue
+  forecast is $130 billion, plus or minus 3%, above $125.25 billion analyst estimate
+  Outlook assumes no data-center chip sales to China, Nvidia says Third-quarter revenue
+  more than doubles to $115.84 billion, topping $109.11 billion analyst estimate By
+  Anhata Rooprai, Harshita Mary Varghese and Max A.
 
 ---
 fecha: 2026-11-17 16:27
@@ -382,12 +417,14 @@ id: lseg:urn:link:webnews:20261117:nNRA2r43dl:0
 fecha: 2026-11-17 16:22
 emisora: PETROLEO
 titulo: @OilandEnergy: API: US crude inventories rose 5.3M barrels in the week to Nov 13, after a 9M build the week before. Gasoline built 5.1M, the SPR fell 3.1M to 276.4M, and Brent sits near $93. Stocks ex-SPR are still down 49M+ over 31 weeks. #Oil #API #Crude #SPR
-
-https://t.co/ZS9WpaeDGJ
 fuente: X
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:social:20261117:nTWT5sxXGm:1
+resumen:
+  API: US crude inventories rose 5.3M barrels in the week to Nov 13, after a 9M build the
+  week before. Gasoline built 5.1M, the SPR fell 3.1M to 276.4M, and Brent sits near $93.
+  Stocks ex-SPR are still down 49M+ over 31 weeks.
 
 ---
 fecha: 2026-11-17 16:22
@@ -397,6 +434,11 @@ fuente: Reuters
 tono: positiva
 impacto: alto
 id: lseg:urn:newsml:reuters.com:20261117:nL5N46Y2SA:1
+resumen:
+  Actualizaciones con comentarios añadidos NUEVA YORK, 17 nov (Reuters) - Las acciones de
+  Nvidia NVDA.O subieron después de que la empresa superara las previsiones de Wall
+  Street (link) en cuanto a beneficios y ventas del tercer trimestrey anunciara que los
+  ingresos del cuarto trimestre superarían la estimación consensuada de los analistas.
 
 ---
 fecha: 2026-11-17 16:21
@@ -406,6 +448,9 @@ fuente: GLORDP
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261117:nNRA2r43hs:0
+resumen:
+  The Forbes 2000 list of companies 2026 includes 12 companies listed on the Brazil. Of
+  these 12, 6 (46.1%) falls and 6 (46.1%) rises. 1 (7.7%) was untraded.
 
 ---
 fecha: 2026-11-17 16:21
@@ -415,6 +460,11 @@ fuente: GLORDP
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261117:nNRA2r43s5:0
+resumen:
+  The Industrial sector extended its slide Tuesday, shedding an additional 210.6 points
+  (or 0.8%) to close at 26,385. The sector has dropped 1,066.8 points (or 3.9%) over the
+  past two trading days. Compared with the Bovespa Index which fell 2,641.1 points (or
+  1.5%) in the two days, this represented a relative price change of -2.4%.
 
 ---
 fecha: 2026-11-17 16:21
@@ -424,6 +474,10 @@ fuente: GLORDP
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261117:nNRA2r43s4:0
+resumen:
+  The Apparel sector hit a 52-week low of 27,086.4 during the day, but closed higher at
+  27,421. In the last one month the sector has hit a new 52-week low four times. The
+  sector has increased 68.3 points (or 0.2%) to close at 27,421.
 
 ---
 fecha: 2026-11-17 16:21
@@ -433,6 +487,11 @@ fuente: GLORDP
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261117:nNRA2r43s1:0
+resumen:
+  The Oil & gas sector has increased 0.9 points (or 0.01%) to close at 13,442. Compared
+  with the Bovespa Index which rose 521.2 points (or 0.3%) on the day, this represented a
+  relative price change of -0.3%. Amongst the 12 stocks in the Oil & gas sector today,
+  there were 4 (33.3%) rises and 3 (25.0%) falls.
 
 ---
 fecha: 2026-11-17 16:21
@@ -451,6 +510,12 @@ fuente: Reuters
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:reuters.com:20261117:nL6N46Y1DR:5
+resumen:
+  Updates with added comment NEW YORK, Nov 17 (Reuters) - Nvidia NVDA.O shares rose after
+  the company beat Wall Street estimates for third-quarter earnings and sales and guided
+  to fourth-quarter revenue above the analyst consensus estimate. Nvidia later began a
+  conference call with analysts and investors by saying it wouldn't take questions on
+  longtime CEO Jensen Huang's resignation and doesn't plan to reinstate him.
 
 ---
 fecha: 2026-11-17 16:21
@@ -460,6 +525,14 @@ fuente: Reuters
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261117:nTUA1RS9S:1
+resumen:
+  Nov 17 (Reuters) - NVIDIA Corporation NVDA.O: NVIDIA EXPANDS COMMITMENTS WITH SUPPLY
+  CHAIN PARTNERS TO SUPPORT AI INFRASTRUCTURE BUILDOUT NVIDIA CORPORATION - SIGNS
+  AGREEMENTS WITH KINSUS AND SAMSUNG ELECTRO-MECHANICS FOR SUBSTRATE CAPACITY EXPANSION
+  NVIDIA CORPORATION - VERA RUBIN NVL72 AND VERA CPUS BEGIN Q3 VOLUME SHIPMENTS USING
+  TSMC TECHNOLOGIES NVIDIA CORPORATION - KINSUS PRODUCTION TO BEGIN IN H2 2027, CAPACITY
+  TARGETED FOR Q3 2028 NVIDIA CORPORATION - FOXCONN DEEPENS COLLABORATION WITH NVIDIA FOR
+  NEXT-GEN…
 
 ---
 fecha: 2026-11-17 16:20
@@ -469,6 +542,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261117:nTUA1RS9S:6
+resumen:
+  Nov 17 (Reuters) - NVIDIA Corporation NVDA.O: NVIDIA EXPANDS COMMITMENTS WITH SUPPLY
+  CHAIN PARTNERS TO SUPPORT AI INFRASTRUCTURE BUILDOUT NVIDIA CORPORATION - SIGNS
+  AGREEMENTS WITH KINSUS AND SAMSUNG ELECTRO-MECHANICS FOR SUBSTRATE CAPACITY EXPANSION
+  NVIDIA CORPORATION - VERA RUBIN NVL72 AND VERA CPUS BEGIN Q3 VOLUME SHIPMENTS USING
+  TSMC TECHNOLOGIES NVIDIA CORPORATION - KINSUS PRODUCTION TO BEGIN IN H2 2027, CAPACITY
+  TARGETED FOR Q3 2028 NVIDIA CORPORATION - FOXCONN DEEPENS COLLABORATION WITH NVIDIA FOR
+  NEXT-GEN…
 
 ---
 fecha: 2026-11-17 16:20
@@ -478,6 +559,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261117:nL5N46Y2M5:2
+resumen:
+  Se añade el informe del WSJ a los párrafos 1 y 2, así como a los resultados
+  trimestrales, en el párrafo 10 Huang afirma que sería un honor para él volver si el
+  consejo lo considera lo mejor El consejo de administración de Nvidia no estaba
+  barajando la posibilidad de readmitir a Huang, según informaron tres personas a Reuters
+  el lunes El consejo de administración crea un comité de supervisión de la seguridad
+  nacional y el cumplimiento de la normativa de exportación La SEC investiga a Nvidia,
+  según informa el Wall…
 
 ---
 fecha: 2026-11-17 16:19
@@ -496,6 +585,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261117:nL6N46Y12J:9
+resumen:
+  Adds WSJ report to paragraphs 1,2, quarterly results, paragraph 10 Huang says he would
+  be honored to return if board deems it best Nvidia board was not considering
+  reinstating Huang, three people told Reuters on Monday Board forms national security
+  and export compliance oversight committee SEC investigating Nvidia, Wall Street Journal
+  reports By Sayantani Ghosh, Jaspreet Singh and Alexandra Alper WASHINGTON/SAN
+  FRANCISCO, Nov 17 (Reuters) - Jensen Huang said on Tuesday he "would be honored" to
+  return as Nvidia's…
 
 ---
 fecha: 2026-11-17 16:18
@@ -514,6 +611,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261117:nTUA1RS9S:5
+resumen:
+  Nov 17 (Reuters) - NVIDIA Corporation NVDA.O: NVIDIA EXPANDS COMMITMENTS WITH SUPPLY
+  CHAIN PARTNERS TO SUPPORT AI INFRASTRUCTURE BUILDOUT NVIDIA CORPORATION - SIGNS
+  AGREEMENTS WITH KINSUS AND SAMSUNG ELECTRO-MECHANICS FOR SUBSTRATE CAPACITY EXPANSION
+  NVIDIA CORPORATION - VERA RUBIN NVL72 AND VERA CPUS BEGIN Q3 VOLUME SHIPMENTS USING
+  TSMC TECHNOLOGIES NVIDIA CORPORATION - KINSUS PRODUCTION TO BEGIN IN H2 2027, CAPACITY
+  TARGETED FOR Q3 2028 NVIDIA CORPORATION - FOXCONN DEEPENS COLLABORATION WITH NVIDIA FOR
+  NEXT-GEN…
 
 ---
 fecha: 2026-11-17 16:18
@@ -523,6 +628,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261117:nTUA1RS9S:4
+resumen:
+  Nov 17 (Reuters) - NVIDIA Corporation NVDA.O: NVIDIA EXPANDS COMMITMENTS WITH SUPPLY
+  CHAIN PARTNERS TO SUPPORT AI INFRASTRUCTURE BUILDOUT NVIDIA CORPORATION - SIGNS
+  AGREEMENTS WITH KINSUS AND SAMSUNG ELECTRO-MECHANICS FOR SUBSTRATE CAPACITY EXPANSION
+  NVIDIA CORPORATION - VERA RUBIN NVL72 AND VERA CPUS BEGIN Q3 VOLUME SHIPMENTS USING
+  TSMC TECHNOLOGIES NVIDIA CORPORATION - KINSUS PRODUCTION TO BEGIN IN H2 2027, CAPACITY
+  TARGETED FOR Q3 2028 NVIDIA CORPORATION - FOXCONN DEEPENS COLLABORATION WITH NVIDIA FOR
+  NEXT-GEN…
 
 ---
 fecha: 2026-11-17 16:18
@@ -541,6 +654,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261117:nTUA1RS9S:3
+resumen:
+  Nov 17 (Reuters) - NVIDIA Corporation NVDA.O: NVIDIA EXPANDS COMMITMENTS WITH SUPPLY
+  CHAIN PARTNERS TO SUPPORT AI INFRASTRUCTURE BUILDOUT NVIDIA CORPORATION - SIGNS
+  AGREEMENTS WITH KINSUS AND SAMSUNG ELECTRO-MECHANICS FOR SUBSTRATE CAPACITY EXPANSION
+  NVIDIA CORPORATION - VERA RUBIN NVL72 AND VERA CPUS BEGIN Q3 VOLUME SHIPMENTS USING
+  TSMC TECHNOLOGIES NVIDIA CORPORATION - KINSUS PRODUCTION TO BEGIN IN H2 2027, CAPACITY
+  TARGETED FOR Q3 2028 NVIDIA CORPORATION - FOXCONN DEEPENS COLLABORATION WITH NVIDIA FOR
+  NEXT-GEN…
 
 ---
 fecha: 2026-11-17 16:18
@@ -550,6 +671,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261117:nTUA1RS9S:2
+resumen:
+  Nov 17 (Reuters) - NVIDIA Corporation NVDA.O: NVIDIA EXPANDS COMMITMENTS WITH SUPPLY
+  CHAIN PARTNERS TO SUPPORT AI INFRASTRUCTURE BUILDOUT NVIDIA CORPORATION - SIGNS
+  AGREEMENTS WITH KINSUS AND SAMSUNG ELECTRO-MECHANICS FOR SUBSTRATE CAPACITY EXPANSION
+  NVIDIA CORPORATION - VERA RUBIN NVL72 AND VERA CPUS BEGIN Q3 VOLUME SHIPMENTS USING
+  TSMC TECHNOLOGIES NVIDIA CORPORATION - KINSUS PRODUCTION TO BEGIN IN H2 2027, CAPACITY
+  TARGETED FOR Q3 2028 NVIDIA CORPORATION - FOXCONN DEEPENS COLLABORATION WITH NVIDIA FOR
+  NEXT-GEN…
 
 ---
 fecha: 2026-11-17 16:18
@@ -577,6 +706,11 @@ fuente: NOTENG
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261117:nNRA2r40in:0
+resumen:
+  New York, November 17 (EFE) - Texas intermediate oil (WTI) rose by 0.34% on Tuesday,
+  reaching $86.01 per barrel, amid ongoing hostilities in the Middle East and the Strait
+  of Hormuz. At the close of the session, WTI futures contracts for December, the
+  benchmarks in the United States, gained 28 cents compared to the previous close.
 
 ---
 fecha: 2026-11-17 16:12
@@ -586,6 +720,11 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261117:nNRA2r3z37:0
+resumen:
+  The dollar has seen a rebound in recent days, recovering $95, driven by the
+  strengthening of the U.S. currency, which reached levels not seen in 19 months.
+  However, investors are beginning to perceive some stability in its exchange rate
+  following last week's upward trend. 09:22 a.m.09:22 a.m.
 
 ---
 fecha: 2026-11-17 16:12
@@ -595,6 +734,12 @@ fuente: NOTENG
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261117:nNRA2r3ze8:0
+resumen:
+  The Mexican peso appreciated against the dollar in Tuesday's session. The local
+  currency gained ground during a volatile day, marked by comments from several key
+  officials of the Federal Reserve (Fed) and speculation about their future monetary
+  policy decisions. The exchange rate ended the day at 18.4298 units per dollar,
+  according to the official closing by the Bank of Mexico (Banxico).
 
 ---
 fecha: 2026-11-17 16:12
@@ -1796,12 +1941,3 @@ fuente: GLORDP
 tono: positiva
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261117:nNRA2qvdur:0
-
----
-fecha: 2026-11-17 05:58
-emisora: KIMBERA
-titulo: Will Kimberly - Clark De Mexico S.A.B. De C.V. (BMV:KIMBERA), bounce back this Tuesday?
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261117:nNRA2qvcfm:0

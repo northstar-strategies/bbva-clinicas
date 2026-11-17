@@ -273,6 +273,8 @@ fuente: NOTENG
 tono: positiva
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261115:nNRA2q24vr:0
+resumen:
+  The US dollar has strengthened and is on track to record its best week in two months. However, this strengthening has put pressure on emerging currencies such as the Mexican peso, which has failed to recover from several consecutive weeks of losses.
 
 ---
 fecha: 2026-11-15 11:12
@@ -282,6 +284,8 @@ fuente: NOTENG
 tono: positiva
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261115:nNRA2q1r28:0
+resumen:
+  The week is coming to a close, and it's time to look at the exchange rate of the dollar as of November 15 , which reflects the position of the national currency against the American currency. The Mexican peso ended the week with a 0.28% appreciation against the dollar. This Sunday, the interbank exchange rate stands at 18.53 pesos per unit , a figure that corresponds to the last closing price on Friday, as the markets remain closed over the weekend.
 
 ---
 fecha: 2026-11-15 09:29
@@ -291,6 +295,8 @@ fuente: Reuters
 tono: positiva
 relevancia: 7
 id: lseg:urn:newsml:reuters.com:20261115:nL2N46W053:1
+resumen:
+  Agrega detalles y contexto LIMA, 15 nov (Reuters) - La economía peruana creció un 2,43% en septiembre en comparación con el mismo mes del año anterior, según datos publicados el domingo por la oficina de estadística INEI, desacelerándose frente al mes anterior cuando la economía creció 3,23%. La desaceleración se produce en momentos que algunos sectores clave de producción del país andino han sido castigados por los efectos del fenómeno climático de El Niño.
 
 ---
 fecha: 2026-11-15 06:12
@@ -300,6 +306,8 @@ fuente: NOTENG
 tono: positiva
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261115:nNRA2pz7qj:0
+resumen:
+  The Mexican peso closed the week with a gain against the dollar, with the exchange rate quoted at 18.53 pesos per unit, according to information shared by the online platform Investing.com . During this period, the exchange rate reached a high of 18.7268 units and a low of 18.4314 pesos.
 
 ---
 fecha: 2026-11-14 13:12
@@ -309,6 +317,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261114:nNRA2psfht:0
+resumen:
+  The Mexican peso closed this week with modest gains against the dollar, following the release of several economic indicators in the United States that eased inflationary pressures. What was the dollar's closing value yesterday and how is it performing today? According to the closing data published by the Bank of Mexico (Banxico), the dollar closed on Friday, November 13, at 18.5336 Mexican pesos.
 
 ---
 fecha: 2026-11-14 11:12
@@ -318,6 +328,8 @@ fuente: NOTENG
 tono: positiva
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261114:nNRA2prm5a:0
+resumen:
+  During the weekend of Buen Fin 2026, the Mexican peso began the day on Saturday, November 14, 2026 , gaining ground against the dollar. The greenback experienced price fluctuations due to the cut by Banxico, starting the day at 18.53 pesos per dollar , representing an appreciation of 0.28% for the Mexican currency against the U.S. dollar, according to financial platforms such as Investing.com and Bloomberg .
 
 ---
 fecha: 2026-11-14 10:12
