@@ -1,6 +1,61 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
+fecha: 2026-11-17 15:25
+emisora: NVIDIA
+titulo: Nvidia le gana al consenso en su primer reporte sin Jensen Huang: ingresos de 115.8 mmd y guía de 130 mmd
+fuente: North Star · Nvidia 8-K, CBS, Reuters
+tono: positiva
+relevancia: 16
+id: equipo:20261117-nvidia-3t
+resumen:
+  Nvidia reportó el 3T de su año fiscal 2027 después del cierre. Ingresos de 115.8 mmd (+103% anual) contra ~109 esperados; centros de datos 107.6 mmd; UPA ajustada de 2.68 contra 2.47. Guía del 4T de 130 mmd ±3%, aunque ese trimestre trae una semana extra, y el margen bruto baja a 71–72%; no supone ventas de cómputo a China. Es el primer reporte con Colette Kress como directora interina tras la renuncia de Huang la semana pasada. La acción llegaba ~28% abajo en un mes (de ~214 a ~155 USD) y tras el cierre subió entre 2% y 5%, poco contra el ±9% que descontaban las opciones. Qué significa para nosotros: la cartera no tiene tecnología, así que el efecto llega por el apetito de riesgo y el dólar. Un buen reporte calma el miedo a la burbuja de IA y suele ayudar al peso y a emergentes; el riesgo sigue siendo la Fed.
+
+---
+fecha: 2026-11-17 09:34
+emisora: AMXB
+titulo: North Star reinvierte el dividendo de América Móvil: compra de 255 AMXB a $23.79
+fuente: North Star · Bitácora
+tono: neutral
+relevancia: 12
+id: equipo:20261117-amxb-compra
+resumen:
+  El dividendo de AMXB fue de $0.27 por acción (fecha ex 10-nov, pago 11-nov). Con 22,894 títulos cobramos $6,181.38. Esperamos a ver el efectivo abonado en el contrato antes de instruir la compra, para no incurrir en ninguna irregularidad con el mandato. Ejecución en BIV a las 09:34:04 (vendedor JPM): 255 títulos por $6,066.45, más $21.11 de comisión e IVA. La caja vuelve a quedar casi sin dividendos pendientes de reinvertir.
+
+---
+fecha: 2026-11-17 08:30
+emisora: ANTHROPIC
+titulo: Anthropic fija su IPO en Nasdaq (ANT): rango de 70–78 USD, precio el 18-nov y cotiza el 19-nov
+fuente: North Star · S-1/A (SEC), Reuters, Bloomberg
+tono: neutral
+relevancia: 15
+id: equipo:20261117-anthropic-ipo
+resumen:
+  La oferta es de 825 millones de acciones (hasta ~64 mmd) más una colocación privada de 26 mmd al mismo precio en la que entran Nvidia (~10 mmd), Google, Microsoft, AMD, Broadcom, Micron y TSMC. A 78 USD vale ~1.02 billones de USD. Bloomberg reporta demanda de ~6 veces. Según cómo se cuente, rebasaría a SpaceX (75 mmd) como la IPO más grande. El S-1 muestra ingresos de 17 mmd en el 3T-2026, primera utilidad operativa en el 2T y compromisos de cómputo por ~900 mmd hasta 2045. Qué significa: confirma la demanda por IA, pero los fondos que deban comprar ANT pueden vender otras megacaps, y un debut flojo reavivaría el miedo a la burbuja. Para México pesa por la liquidez y el apetito de riesgo globales, no por flujos directos.
+
+---
+fecha: 2026-11-17 08:00
+emisora: CHINA
+titulo: Líderes en Shenzhen: APEC el 18 y 19-nov, Trump–Xi y trilateral con Putin el jueves; Sheinbaum en China
+fuente: North Star · Cancillería de China, Kremlin, Reuters, gob.mx
+tono: neutral
+relevancia: 14
+id: equipo:20261117-apec-shenzhen
+resumen:
+  La cumbre de líderes de APEC es el 18 y 19 de noviembre en Shenzhen, con Xi como anfitrión. Trump llega de la cumbre de la ASEAN en Manila; el jueves 19 tiene bilateral con Xi y la primera trilateral con Putin (armas nucleares, Irán y quizá Ucrania). Sheinbaum está en Shenzhen del 16 al 20-nov, en su primer viaje a China como presidenta: bilateral con Xi y encuentro con empresarios; México será sede de APEC en 2028. En la mesa: la tregua arancelaria EUA–China (vence el 10-ene-2027), compras agrícolas y tierras raras. Se espera poco; lo grande podría quedar para el G20 de diciembre. Para nosotros: el cobre es la primera exportación de México a China (GMEXICOB), y el T-MEC sigue en revisión anual tras el 1-jul. Un acuerdo EUA–China ayuda al cobre y a emergentes; una sorpresa arancelaria pegaría al peso.
+
+---
+fecha: 2026-11-17 10:00
+emisora: MERCADO
+titulo: La BMV reabre tras el feriado: IPC arriba y peso en 18.48 aunque Wall Street cae
+fuente: North Star · El Financiero, Banco Base
+tono: neutral
+relevancia: 13
+id: equipo:20261117-bmv-reapertura
+resumen:
+  Tras el feriado del lunes 16 (Revolución), el IPC abrió +0.23% en 71,366 y el peso en 18.48 por dólar, mientras Wall Street caía (Dow −1.5%, S&P −1.15% y VIX ~26 a mediodía). El dólar está en su nivel más alto desde abril de 2025 porque el mercado ya descuenta un alza de la Fed en diciembre; en México, Banxico bajó a 6.25% el 5-nov y anticipa una pausa larga (siguiente decisión el 17-dic). El 16-nov el Nasdaq cayó ~2.5% antes del reporte de Nvidia. Para la cartera, lo que mueve hoy es el dólar y la Fed más que la tecnología.
+
+---
 fecha: 2026-11-13 11:31
 emisora: NVIDIA
 titulo: ACTUALIZA 2-Según informa el FT, Nvidia se puso en contacto con Haas, director ejecutivo de Arm, para que sustituyera a Huang

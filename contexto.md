@@ -1,6 +1,7 @@
 ---
 fecha_corte: 2026-11-12
 hora_publicacion: 2026-11-13 11:51 CDMX
+actualizacion_manual: 2026-11-17 16:00 CDMX (operación, eventos y noticias del 17-nov; las cifras siguen al cierre del 12-nov)
 fuente_precios: Price Close
 version: v7.0
 dias_habiles_desde_dia0: 18
@@ -15,6 +16,41 @@ tablero: https://northstar-strategies.github.io/bbva-clinicas/
 - El día 0 es el cierre del vie 16-oct-2026. Nada anterior cuenta como rendimiento ni como alfa.
 - Las cifras salen del tracker de Excel, replicado en Python y cuadrado a diferencia 0. Alfa = rendimiento de la cartera menos el del MEXTRAC09, en puntos base (pb).
 - Si `fecha_corte` tiene más de un día hábil de antigüedad, el dato está viejo: dilo antes de usarlo.
+
+## Actualización del mar 17-nov-2026 (manual, 16:00 CDMX)
+
+> Las cifras de rendimiento, alfa, cumplimiento y posiciones de abajo siguen al cierre del jue 12-nov: el vigilante no ha corrido los cierres del 13 y 17-nov (el lun 16-nov la BMV no operó por el feriado). Lo de esta sección ya está capturado en el tracker.
+
+### Operación del día
+
+| Fecha | Tipo | Emisora | Títulos | Precio | Importe | Comisión + IVA | Motivo |
+|---|---|---|---:|---:|---:|---:|---|
+| mar 17-nov 09:34 | Compra | AMXB | 255 | $23.79 | $6,066.45 | $21.11 | Reinversión del dividendo |
+
+- El dividendo de AMXB fue de $0.27 por acción (fecha ex 10-nov, pago 11-nov): con 22,894 títulos cobramos $6,181.38. Esperamos a ver el efectivo abonado en el contrato antes de instruir la compra, para no incurrir en ninguna irregularidad con el mandato.
+- Ejecución en BIV a las 09:34:04 (vendedor JPM). Liquida el mié 18-nov.
+- Después de la compra: AMXB 23,149 títulos; caja ≈ $8,510.42 (≈0.08% del portafolio, dentro del 0% a 5%).
+
+### Lo que mueve al mercado esta semana
+
+- **Nvidia reportó hoy después del cierre y le ganó al consenso.** Ingresos de 115.8 mmd (+103% anual) contra ~109 esperados; centros de datos 107.6 mmd; UPA ajustada 2.68 contra 2.47. Guía del 4T de 130 mmd ±3% (trimestre con una semana extra), margen bruto de 71–72% y sin ventas de cómputo a China. Es el primer reporte con Colette Kress como interina tras la renuncia de Jensen Huang la semana pasada (las fuentes dicen 12 o 13-nov). La acción llegaba ~28% abajo en un mes y tras el cierre subió entre 2% y 5%. La cartera no tiene tecnología: el efecto llega por el apetito de riesgo y el dólar.
+- **IPO de Anthropic (ANT, Nasdaq).** Rango de 70 a 78 USD; precio el mié 18-nov y cotiza el jue 19-nov. Hasta ~64 mmd en la oferta más 26 mmd de colocación privada (Nvidia ~10 mmd); ~1.02 billones de USD de valuación a 78. Demanda de ~6 veces según Bloomberg. Un debut flojo reavivaría el miedo a la burbuja de IA; los fondos indexados podrían vender otras megacaps para comprarla.
+- **Cumbre de APEC en Shenzhen (18 y 19-nov).** El jue 19 hay bilateral Trump–Xi y la primera trilateral con Putin (por la diferencia de horario cae la noche del 18 o la madrugada del 19 en México). Sheinbaum está en China del 16 al 20-nov, en su primer viaje como presidenta; México será sede de APEC en 2028. Se espera poco: la tregua EUA–China vence el 10-ene-2027 y lo grande podría quedar para el G20 de diciembre. Canal para la cartera: el cobre (GMEXICOB) y el riesgo para el T-MEC, que ya va en revisiones anuales.
+- **Fed y dólar mandan más que la IA.** El mercado descuenta un alza de la Fed en diciembre (entre 25 y 50 pb según la fuente); el dólar está en su nivel más alto desde abril de 2025 y el Treasury a 10 años arriba de 5%. Banxico bajó a 6.25% el 5-nov y anticipa una pausa larga (siguiente decisión el 17-dic). Riesgo: que se estreche el diferencial de tasas y se desarme el carry del peso.
+- **México hoy.** El IPC abrió +0.23% en 71,366 y el peso en 18.48 por dólar mientras Wall Street caía (Dow −1.5%, S&P −1.15%, VIX ~26 a mediodía). El 16-nov el Nasdaq cayó ~2.5% antes del reporte de Nvidia. Falta el cierre oficial del IPC del 17-nov.
+
+### Calendario de la semana
+
+- mar 17-nov · WALMEX · fecha ex del dividendo de $0.58 (pago mié 18-nov).
+- mar 17-nov · NVIDIA · reporte del 3T del año fiscal 2027 (después del cierre).
+- mié 18-nov · ANTHROPIC · fija el precio de la IPO.
+- mié 18 y jue 19-nov · CHINA EUA · cumbre de líderes de APEC en Shenzhen.
+- jue 19-nov · ANTHROPIC · primer día de cotización (ANT).
+- jue 19-nov · CHINA EUA · bilateral Trump–Xi y trilateral con Putin.
+- mar 24-nov · OMAB · fecha ex del dividendo de $6.2803 (pago mié 25-nov).
+- vie 27-nov · fin de la gestión (por confirmar con BBVA).
+
+Fuentes: Nvidia (8-K del 17-nov), S-1/A de Anthropic (SEC, 10-nov), Reuters, Bloomberg, AP, CBS, cancillería de China, Kremlin, gob.mx, El Financiero, Banco Base. Reporte completo en `reports/NVDA Anthropic y cumbre de líderes.md` (carpeta local).
 
 ## Resumen
 
