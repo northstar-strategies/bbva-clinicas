@@ -1,10 +1,10 @@
 fecha,emisora,tipo,titulo,fuente
 2026-10-26,BRASIL FEMSAUBD KOFUBL AMXB,Evento,Elecciones presidenciales en Brasil,LSEG: BRL= y .BVSP del 23 y 26-oct; notas del 27-oct
-2026-11-17,WALMEX,Fecha ex de dividendo,"Interim Cash Dividend of gross MXN 0.58 paid on Nov 18, 2026 going ex on Nov 17, 2026",LSEG
 2026-11-17,NVIDIA EUA,Evento,Nvidia reporta el 3T del año fiscal 2027 (después del cierre),"Nvidia 8-K del 17-nov; CBS, Reuters; notas en research_notes/NVDA Anthropic y cumbre de líderes"
+2026-11-17,WALMEX,Fecha ex de dividendo,"Interim Cash Dividend of gross MXN 0.58 paid on Nov 18, 2026 going ex on Nov 17, 2026",LSEG
 2026-11-18,CHINA EUA GMEXICOB,Evento,Cumbre de líderes de APEC en Shenzhen (18 y 19-nov); Sheinbaum en China del 16 al 20-nov,"Cancillería de China (13-nov), Reuters, AP, gob.mx"
-2026-11-19,CHINA EUA,Evento,Bilateral Trump–Xi y primera trilateral Trump–Xi–Putin,"Kremlin, Casa Blanca, Reuters"
 2026-11-19,ANTHROPIC EUA NVIDIA,Evento,IPO de Anthropic en Nasdaq (ANT): precio el 18-nov y cotiza el 19-nov,"S-1/A del 10-nov (SEC EDGAR), Reuters, Bloomberg"
+2026-11-19,CHINA EUA,Evento,Bilateral Trump–Xi y primera trilateral Trump–Xi–Putin,"Kremlin, Casa Blanca, Reuters"
 2026-11-24,OMAB,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 6.280255 paid on Nov 25, 2026 going ex on Nov 24, 2026",LSEG
 2026-12-07,KOFUBL,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 1.935 paid on Dec 08, 2026 going ex on Dec 07, 2026",LSEG
 2026-12-08,WALMEX,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 0.58 paid on Dec 09, 2026 going ex on Dec 08, 2026",LSEG

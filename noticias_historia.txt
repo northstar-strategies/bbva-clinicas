@@ -1,6 +1,42 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
+fecha: 2026-11-17 16:22
+emisora: NVIDIA
+titulo: VISTA INSTANTÁNEA-Los resultados de Nvidia superan las previsiones; la empresa no responderá a preguntas sobre la dimisión
+fuente: Reuters
+tono: positiva
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261117:nL5N46Y2SA:1
+
+---
+fecha: 2026-11-17 16:12
+emisora: FED
+titulo: Mexican Peso Appreciates Against the Dollar Amid Moderation of Rate Hike Bets by the Fed
+fuente: NOTENG
+tono: positiva
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261117:nNRA2r3ze8:0
+
+---
+fecha: 2026-11-17 16:07
+emisora: MERCADO
+titulo: GLOBAL MARKETS-Stocks fall but Nvidia rebound lifts sentiment
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261117:nL6N46Y1AB:2
+
+---
+fecha: 2026-11-17 16:01
+emisora: COBRE
+titulo: DÍA DE NEGOCIACIÓN-Continúa la corrección en el sector de la IA, pero Nvidia supera las expectativas
+fuente: Reuters
+tono: positiva
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261117:nL5N46Y2QA:1
+
+---
 fecha: 2026-11-17 15:25
 emisora: NVIDIA
 titulo: Nvidia le gana al consenso en su primer reporte sin Jensen Huang: ingresos de 115.8 mmd y guía de 130 mmd
@@ -10,6 +46,48 @@ relevancia: 16
 id: equipo:20261117-nvidia-3t
 resumen:
   Nvidia reportó el 3T de su año fiscal 2027 después del cierre. Ingresos de 115.8 mmd (+103% anual) contra ~109 esperados; centros de datos 107.6 mmd; UPA ajustada de 2.68 contra 2.47. Guía del 4T de 130 mmd ±3%, aunque ese trimestre trae una semana extra, y el margen bruto baja a 71–72%; no supone ventas de cómputo a China. Es el primer reporte con Colette Kress como directora interina tras la renuncia de Huang la semana pasada. La acción llegaba ~28% abajo en un mes (de ~214 a ~155 USD) y tras el cierre subió entre 2% y 5%, poco contra el ±9% que descontaban las opciones. Qué significa para nosotros: la cartera no tiene tecnología, así que el efecto llega por el apetito de riesgo y el dólar. Un buen reporte calma el miedo a la burbuja de IA y suele ayudar al peso y a emergentes; el riesgo sigue siendo la Fed.
+
+---
+fecha: 2026-11-17 15:14
+emisora: MERCADO
+titulo: Peso mexicano avanza atento a señales Fed, bolsa cae por tercera jornada
+fuente: Reuters
+tono: neutral
+relevancia: 14
+id: lseg:urn:newsml:reuters.com:20261117:nL2N46Y00V:1
+resumen:
+  CIUDAD DE MÉXICO, 17 nov (Reuters) - El peso mexicano se apreció el martes por tercera sesión consecutiva, en un mercado atento a los comentarios de distintos funcionarios de la Reserva Federal (Fed) de Estados Unidos, en busca de pistas sobre el rumbo de las tasas de interés en su próxima reunión de diciembre.
+
+---
+fecha: 2026-11-17 15:02
+emisora: FED
+titulo: Retorno bonos Tesoro EEUU cae ante descenso de acciones previo a publicación resultados Nvidia
+fuente: Reuters
+tono: negativa
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261117:nL2N46Y15W:1
+resumen:
+  Actualiza por la tarde Por Caroline Valetkevitch NUEVA YORK, 17 nov (Reuters) - Los rendimientos de los bonos del Tesoro estadounidense bajaron el martes, ya que la caída de la bolsa impulsó los precios de la deuda pública, y luego de que datos de ventas al por menor respaldaron una visión optimista sobre la salud del consumidor. * Las acciones estadounidenses cayeron más de un 1% antes de la publicación de los resultados trimestrales de Nvidia NVDA.O, mientras que los precios de los bonos subieron debido a una…
+
+---
+fecha: 2026-11-17 14:21
+emisora: MERCADO
+titulo: MERCADOS A.LATINA-Mayoría de monedas sube tras las bajas previas; atentas a la Fed
+fuente: Reuters
+tono: neutral
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261117:nL2N46Y13F:1
+
+---
+fecha: 2026-11-17 10:00
+emisora: MERCADO
+titulo: La BMV reabre tras el feriado: IPC arriba y peso en 18.48 aunque Wall Street cae
+fuente: North Star · El Financiero, Banco Base
+tono: neutral
+relevancia: 13
+id: equipo:20261117-bmv-reapertura
+resumen:
+  Tras el feriado del lunes 16 (Revolución), el IPC abrió +0.23% en 71,366 y el peso en 18.48 por dólar, mientras Wall Street caía (Dow −1.5%, S&P −1.15% y VIX ~26 a mediodía). El dólar está en su nivel más alto desde abril de 2025 porque el mercado ya descuenta un alza de la Fed en diciembre; en México, Banxico bajó a 6.25% el 5-nov y anticipa una pausa larga (siguiente decisión el 17-dic). El 16-nov el Nasdaq cayó ~2.5% antes del reporte de Nvidia. Para la cartera, lo que mueve hoy es el dólar y la Fed más que la tecnología.
 
 ---
 fecha: 2026-11-17 09:34
@@ -34,6 +112,15 @@ resumen:
   La oferta es de 825 millones de acciones (hasta ~64 mmd) más una colocación privada de 26 mmd al mismo precio en la que entran Nvidia (~10 mmd), Google, Microsoft, AMD, Broadcom, Micron y TSMC. A 78 USD vale ~1.02 billones de USD. Bloomberg reporta demanda de ~6 veces. Según cómo se cuente, rebasaría a SpaceX (75 mmd) como la IPO más grande. El S-1 muestra ingresos de 17 mmd en el 3T-2026, primera utilidad operativa en el 2T y compromisos de cómputo por ~900 mmd hasta 2045. Qué significa: confirma la demanda por IA, pero los fondos que deban comprar ANT pueden vender otras megacaps, y un debut flojo reavivaría el miedo a la burbuja. Para México pesa por la liquidez y el apetito de riesgo globales, no por flujos directos.
 
 ---
+fecha: 2026-11-17 08:06
+emisora: CHILE
+titulo: Chile and Mexico, caught in US-China rivalry, pitch industrial upgrades at Apec
+fuente: SOUCHI
+tono: positiva
+relevancia: 11
+id: lseg:urn:link:webnews:20261117:nNRA2qxjgy:0
+
+---
 fecha: 2026-11-17 08:00
 emisora: CHINA
 titulo: Líderes en Shenzhen: APEC el 18 y 19-nov, Trump–Xi y trilateral con Putin el jueves; Sheinbaum en China
@@ -45,15 +132,228 @@ resumen:
   La cumbre de líderes de APEC es el 18 y 19 de noviembre en Shenzhen, con Xi como anfitrión. Trump llega de la cumbre de la ASEAN en Manila; el jueves 19 tiene bilateral con Xi y la primera trilateral con Putin (armas nucleares, Irán y quizá Ucrania). Sheinbaum está en Shenzhen del 16 al 20-nov, en su primer viaje a China como presidenta: bilateral con Xi y encuentro con empresarios; México será sede de APEC en 2028. En la mesa: la tregua arancelaria EUA–China (vence el 10-ene-2027), compras agrícolas y tierras raras. Se espera poco; lo grande podría quedar para el G20 de diciembre. Para nosotros: el cobre es la primera exportación de México a China (GMEXICOB), y el T-MEC sigue en revisión anual tras el 1-jul. Un acuerdo EUA–China ayuda al cobre y a emergentes; una sorpresa arancelaria pegaría al peso.
 
 ---
-fecha: 2026-11-17 10:00
-emisora: MERCADO
-titulo: La BMV reabre tras el feriado: IPC arriba y peso en 18.48 aunque Wall Street cae
-fuente: North Star · El Financiero, Banco Base
+fecha: 2026-11-17 06:46
+emisora: COBRE
+titulo: China llama a Chile a cooperar en inteligencia artificial, exploración polar y de profundidades marinas
+fuente: Reuters
 tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261117:nL6N46Y0U7:1
+
+---
+fecha: 2026-11-17 04:37
+emisora: MERCADO
+titulo: EMERGING MARKETS-Stocks drop as US chip curbs and Nvidia jitters rattle investors
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261117:nL6N46Y0G0:3
+
+---
+fecha: 2026-11-16 23:59
+emisora: MERCADO
+titulo: GLOBAL MARKETS-Shares slide on tech weakness ahead of Nvidia earnings
+fuente: Reuters
+tono: negativa
 relevancia: 13
-id: equipo:20261117-bmv-reapertura
+id: lseg:urn:newsml:reuters.com:20261117:nL2N46Y05W:3
 resumen:
-  Tras el feriado del lunes 16 (Revolución), el IPC abrió +0.23% en 71,366 y el peso en 18.48 por dólar, mientras Wall Street caía (Dow −1.5%, S&P −1.15% y VIX ~26 a mediodía). El dólar está en su nivel más alto desde abril de 2025 porque el mercado ya descuenta un alza de la Fed en diciembre; en México, Banxico bajó a 6.25% el 5-nov y anticipa una pausa larga (siguiente decisión el 17-dic). El 16-nov el Nasdaq cayó ~2.5% antes del reporte de Nvidia. Para la cartera, lo que mueve hoy es el dólar y la Fed más que la tecnología.
+  Asia stocks stumble as US steps up efforts to curb China's access to advanced AI chips Nvidia due to report results after the bell following Jensen Huang's departure Dollar climbs on hawkish Fed expectations, sends peers to fresh lows Updates to Asia afternoon By Rae Wee SINGAPORE, Nov 17 (Reuters) - Asian shares followed Wall Street lower on Tuesday, weighed down by weakness in technology companies after the US stepped up efforts to curb China's access to advanced AI chips, escalating the race for technological…
+
+---
+fecha: 2026-11-16 15:03
+emisora: ARGENTINA
+titulo: ACTUALIZA 1-Mercado cambiario argentino baja por dolarización de carteras
+fuente: Reuters
+tono: negativa
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261116:nL2N46X0RV:1
+
+---
+fecha: 2026-11-16 14:31
+emisora: EUA
+titulo: Sánchez on Trump's latest Mexico tariff threat
+fuente: FORNZN
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:newsroom:20261116:nNRA2qixae:0
+resumen:
+  Source: United States House of Representatives – Congresswoman Linda Sanchez (38th District of CA) WASHINGTON – Ways and Means Trade Subcommittee Ranking Member Linda T. Sánchez (D-Calif.) released the following statement after President Trump's latest threat to double tariffs on Mexico: "Voters rejected President Trump's tariff chaos, but he has clearly learned nothing from the election.
+
+---
+fecha: 2026-11-16 14:29
+emisora: MERCADO
+titulo: MERCADOS A.LATINA-Monedas caen con las expectativas puestas en la Fed y real brasileño se hunde
+fuente: Reuters
+tono: negativa
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261116:nL2N46X0VL:1
+resumen:
+  Actualiza tras el cierre de los mercados Por Manuel Farías SANTIAGO, 16 nov (Reuters) - Las principales monedas de América Latina cayeron en lunes, por la fortaleza del dólar en los mercados internacionales ante las expectativas de un endurecimiento monetario en Estados Unidos, mientras las bolsas descendieron en línea con las pérdidas de Wall Street. * Los futuros de los fondos federales descuentan una probabilidad del 93,4% de un alza de 25 puntos básicos en la reunión de dos días de la Fed que concluirá el 9 de…
+
+---
+fecha: 2026-11-16 13:13
+emisora: EUA
+titulo: Trump insists on imposing tariffs on Mexico if it does not stop the migrant caravan
+fuente: NOTENG
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261116:nNRA2qhtu9:0
+
+---
+fecha: 2026-11-16 12:13
+emisora: EUA
+titulo: Trump threatens Mexico again with "strong tariffs" if it does not stop migrant caravan; those who cross illegally will face consequences
+fuente: NOTENG
+tono: positiva
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261116:nNRA2qh4gg:0
+
+---
+fecha: 2026-11-16 11:37
+emisora: ARGENTINA
+titulo: Argentina anota superávit fiscal primario equivalente a unos 1.256,5 mln dlr en octubre
+fuente: Reuters
+tono: positiva
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261116:nL2N46X0NX:1
+
+---
+fecha: 2026-11-16 08:42
+emisora: BANXICO
+titulo: Onion prices soar by 82% in Mexico, raising the cost of the food basket
+fuente: CENAFT
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261116:nNRA2qeaid:0
+
+---
+fecha: 2026-11-16 08:13
+emisora: ARGENTINA
+titulo: Binance offers up to 1,000 USDC in crypto-backed credit for users in Argentina and Mexico
+fuente: CRYBRI
+tono: neutral
+relevancia: 9
+id: lseg:urn:link:webnews:20261116:nNRA2qdwyj:0
+
+---
+fecha: 2026-11-16 06:34
+emisora: ARGENTINA
+titulo: MERCADOS ARGENTINOS-¿Qué dicen los analistas? Semana del 16 al 20 de noviembre
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261116:nL2N46X0DE:1
+
+---
+fecha: 2026-11-16 05:12
+emisora: BANXICO
+titulo: Dollar price in Mexico today, Monday, November 16, 2026: exchange rate USD to MXN, its value, and Banxico's quotation
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261116:nNRA2qavbm:0
+
+---
+fecha: 2026-11-16 03:57
+emisora: MERCADO
+titulo: EMERGING MARKETS-Stocks and currencies drop as AI concerns, strong dollar sap sentiment
+fuente: Reuters
+tono: positiva
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261116:nL3N46X0ME:1
+resumen:
+  Consumption remains weak in China Investors eye shifts in global AI sentiment Poland's stock rally pauses By Niket Nishant and Tharuniyaa Lakshmi Nov 16 (Reuters) - An MSCI index of emerging market stocks fell on Monday as Asian bourses slid following weak economic data in China and renewed concerns about AI, while Europe offered little refuge. China's economy showed fresh signs of sluggishness in October as factory production slowed and consumption remained weak.
+
+---
+fecha: 2026-11-15 12:12
+emisora: BANXICO
+titulo: Dollar Accumulates Three Weeks of Gains: What to Expect from the Mexican Peso from November 16 to 20
+fuente: NOTENG
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261115:nNRA2q24vr:0
+
+---
+fecha: 2026-11-15 11:12
+emisora: BANXICO
+titulo: Dollar Exchange Rate Today, November 15, 2026; Mexican Peso Gains 0.28% for the Week and Rises
+fuente: NOTENG
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261115:nNRA2q1r28:0
+
+---
+fecha: 2026-11-15 09:29
+emisora: PERU
+titulo: ACTUALIZA 1-Economía peruana se desacelera y crece 2,43% interanual en septiembre: oficina de estadística
+fuente: Reuters
+tono: positiva
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261115:nL2N46W053:1
+
+---
+fecha: 2026-11-15 06:12
+emisora: BANXICO
+titulo: DOLLAR PRICE TODAY: Here's how it exchanges against the Mexican peso on November 15, 2026 | EXCHANGE RATE
+fuente: NOTENG
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261115:nNRA2pz7qj:0
+
+---
+fecha: 2026-11-14 13:12
+emisora: BANXICO
+titulo: Dollar TODAY, November 14: How did the Mexican peso close this week and what to expect from the national currency?
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261114:nNRA2psfht:0
+
+---
+fecha: 2026-11-14 11:12
+emisora: BANXICO
+titulo: Banxico's rate cut shakes the dollar's price against the peso in Mexico on November 14
+fuente: NOTENG
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261114:nNRA2prm5a:0
+
+---
+fecha: 2026-11-14 10:12
+emisora: BANXICO
+titulo: Dollar TODAY in Mexico: What are the buying and selling rates this Saturday, November 14, 2026?
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261114:nNRA2pr441:0
+
+---
+fecha: 2026-11-14 06:12
+emisora: BANXICO
+titulo: DOLLAR PRICE TODAY: This is how it trades against the Mexican peso on Saturday, November 14, 2026 | EXCHANGE RATE
+fuente: NOTENG
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261114:nNRA2polws:0
+
+---
+fecha: 2026-11-14 01:12
+emisora: BANXICO
+titulo: The Mexican peso records two weeks of recovery against the dollar after appreciating 0.51%
+fuente: NOTENG
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261114:nNRA2plauz:0
+
+---
+fecha: 2026-11-13 21:12
+emisora: BANXICO
+titulo: Dollar TODAY November 13: How did the Mexican peso close this week?
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261114:nNRA2piuod:0
 
 ---
 fecha: 2026-11-13 11:31
@@ -163,6 +463,8 @@ fuente: Reuters
 tono: neutral
 relevancia: 9
 id: lseg:urn:newsml:reuters.com:20261113:nL5N46U07O:1
+resumen:
+  13 nov (Reuters) - Los precios del cobre subieron ligeramente el viernes tras una fuerte caída en la sesión anterior, pero seguían encaminados hacia un descenso semanal, ya que las preocupaciones en torno a Nvidia y la inversión en inteligencia artificial superaron el apoyo que suponía la escasez de oferta en China, el principal consumidor.
 
 ---
 fecha: 2026-11-12 18:14
