@@ -1,6 +1,115 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
+fecha: 2026-11-18 08:59
+emisora: EUA
+titulo: UPDATE 2-Sheinbaum says Mexico-US trade talks 'very far along' after meeting Trump at APEC
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z100:4
+
+---
+fecha: 2026-11-18 08:37
+emisora: MERCADO
+titulo: Bolsa mexicana perfila cuarta jornada de pérdidas tras alcanzar récord máximo
+fuente: Reuters
+tono: neutral
+relevancia: 14
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z01Y:1
+resumen:
+  CIUDAD DE MÉXICO, 18 nov (Reuters) - La bolsa mexicana caía el miércoles por cuarta jornada consecutiva extendiendo un ajuste que inició la semana pasada después de haber alcanzado un máximo histórico cercano a 73,000 puntos. El índice líder S&P/BMV IPC .MXX, que agrupa a las acciones más negociadas del mercado local, bajaba un 0.92% a 69,743.66 unidades, poco después de la apertura, arrastrado principalmente por firmas del sector minero.
+
+---
+fecha: 2026-11-18 08:30
+emisora: PEOLES
+titulo: Mexicana Industrias Peñoles firma acuerdo de energía renovable a 20 años con Atlas Renewable Energy
+fuente: Reuters
+tono: negativa
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z02L:1
+resumen:
+  CIUDAD DE MÉXICO, 18 nov (Reuters) - Industrias Peñoles firmó un contrato de suministro de energía renovable a 20 años con Atlas Renewable Energy, que respaldará parte de la demanda eléctrica de las operaciones de la minera mexicana en el norte del país. El proyecto, previsto para iniciar operaciones en el primer semestre de 2029 en el estado Coahuila, combinará 269 MWp de capacidad solar con un sistema de baterías y suministrará cerca de 550 GWh anuales, según un comunicado.
+
+---
+fecha: 2026-11-18 08:25
+emisora: EUA
+titulo: ACTUALIZA 2-Sheinbaum dice hay avances en conversaciones comerciales tras reunión con Trump en China
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z118:2
+resumen:
+  Añade comentarios de Sheinbaum en mensaje a medios 18 nov (Reuters) - La presidenta mexicana, Claudia Sheinbaum, dijo el miércoles que durante una reunión en China con su homólogo estadounidense, Donald Trump, hablaron principalmente de acuerdos comerciales y afirmó que las conversaciones van muy avanzadas, sin ofrecer más detalles.
+
+---
+fecha: 2026-11-18 07:51
+emisora: BANXICO
+titulo: BUZZ-Mexican peso tumbles alongside commodities
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z12Y:1
+
+---
+fecha: 2026-11-18 06:53
+emisora: NVIDIA
+titulo: MERCADOS MUNDIALES-Las acciones caen mientras los inversores analizan los resultados de Nvidia; la salida a bolsa de Anthropic pondrá a prueba el auge de la IA
+fuente: Reuters
+tono: negativa
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z157:1
+
+---
+fecha: 2026-11-18 06:52
+emisora: MERCADO
+titulo: GLOBAL MARKETS -Stocks slip as investors mull Nvidia earnings; Anthropic IPO to test AI boom
+fuente: Reuters
+tono: neutral
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z0S1:3
+resumen:
+  Updates to reflect prices in early afternoon European trading hours MSCI gauge of global shares loses 0.1% European stocks steady after Tuesday losses Wall Street set for gains Nvidia sales forecast tops expectations Anthropic set to price IPO on Wednesday Oil falls on US inventories Dollar steady as rate hike expectations harden By Tom Wilson LONDON, Nov 18 (Reuters) - World stocks struggled on Wednesday, as investors digested Nvidia's better-than-expected sales forecast and braced for Anthropic's market debut,…
+
+---
+fecha: 2026-11-18 06:47
+emisora: EUA
+titulo: Presidenta mexicana Sheinbaum dice que mantuvo "una muy buena" reunión con Trump
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z104:1
+
+---
+fecha: 2026-11-18 05:09
+emisora: EUA
+titulo: Trump se reunirá con presidenta de México y primer ministro de Canadá, dice funcionario Casa Blanca
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0DX:1
+
+---
+fecha: 2026-11-18 04:47
+emisora: MERCADO
+titulo: EMERGING MARKETS-EM stocks edge up after Nvidia results; South African assets fall post inflation
+fuente: Reuters
+tono: neutral
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z0J9:1
+resumen:
+  Nvidia sees revenue above analysts' estimate South Africa inflation jumps Hungary eyes possible December rate cut, forint slides Poland rate hike remains possible, policymaker says By Tharuniyaa Lakshmi Nov 18 (Reuters) - An MSCI index of emerging market stocks rose on Wednesday as Nvidia's strong quarterly earnings fired up the global AI trade, while traders assessed South Africa's inflation data.
+
+---
+fecha: 2026-11-18 01:55
+emisora: COBRE
+titulo: METALES BÁSICOS-El cobre cae a su mínimo en más de seis meses pendiente del dólar y la IA
+fuente: Reuters
+tono: negativa
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z0HR:1
+
+---
 fecha: 2026-11-17 16:22
 emisora: NVIDIA
 titulo: VISTA INSTANTÁNEA-Los resultados de Nvidia superan las previsiones; la empresa no responderá a preguntas sobre la dimisión
@@ -8,33 +117,6 @@ fuente: Reuters
 tono: positiva
 relevancia: 10
 id: lseg:urn:newsml:reuters.com:20261117:nL5N46Y2SA:1
-
----
-fecha: 2026-11-17 16:12
-emisora: FED
-titulo: Mexican Peso Appreciates Against the Dollar Amid Moderation of Rate Hike Bets by the Fed
-fuente: NOTENG
-tono: positiva
-relevancia: 8
-id: lseg:urn:newsml:newsroom:20261117:nNRA2r3ze8:0
-
----
-fecha: 2026-11-17 16:07
-emisora: MERCADO
-titulo: GLOBAL MARKETS-Stocks fall but Nvidia rebound lifts sentiment
-fuente: Reuters
-tono: neutral
-relevancia: 11
-id: lseg:urn:newsml:reuters.com:20261117:nL6N46Y1AB:2
-
----
-fecha: 2026-11-17 16:01
-emisora: COBRE
-titulo: DÍA DE NEGOCIACIÓN-Continúa la corrección en el sector de la IA, pero Nvidia supera las expectativas
-fuente: Reuters
-tono: positiva
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261117:nL5N46Y2QA:1
 
 ---
 fecha: 2026-11-17 15:25
@@ -339,6 +421,8 @@ fuente: NOTENG
 tono: neutral
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261114:nNRA2pr441:0
+resumen:
+  If you're wondering about the dollar's exchange rate, you should know that as of the start of operations today, November 14, the interbank exchange rate stands at 18.53 pesos per unit, reflecting a decrease of 0.35 percent, according to data from Bloomberg. Yesterday, the Mexican peso gained ground after it was revealed that the Producer Price Index (PPI) in the United States rose less than expected in October, alleviating some concerns about inflationary pressures.
 
 ---
 fecha: 2026-11-14 06:12
