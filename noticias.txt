@@ -231,17 +231,27 @@ resumen:
   turistas provenientes de Estados Unidos, principal mercado emisor.
 
 ---
+fecha: 2026-11-18 09:55
+emisora: KIMBERA
+titulo: 09:55:43 INICIA SUBASTA DE VALUACION : KIMBER B
+fuente: BMV
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261118:nBMVdDl33a:1
+resumen:
+  BOLSA MEXICANA DE VALORES, INFORMA AL PÚBLICO INVERSIONISTA QUE A PARTIR DE LAS
+  09:55:43 INICIA SUBASTA DE VALUACION : KIMBER B TERMINA 10:55:43
+
+---
 fecha: 2026-11-18 09:53
 emisora: FED
 titulo: @PiQMarkets: 🇺🇸 United States Atlanta Fed GDPNow  (Q4) $USD
-
-Actual: 3.2% 
-Forecast: 3.4%
-Previous: 3.4%
 fuente: X
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:social:20261118:nTWT5NDs0b:1
+resumen:
+  🇺🇸 United States Atlanta Fed GDPNow (Q4) Actual: 3.2% Forecast: 3.4% Previous: 3.4%
 
 ---
 fecha: 2026-11-18 09:53
@@ -262,6 +272,23 @@ impacto: alto
 id: lseg:urn:newsml:reuters.com:20261118:nFWN46Z0TD:1
 
 ---
+fecha: 2026-11-18 09:53
+emisora: BOLSAA
+titulo: BMV - Avisos de Derechos Emisoras del SIC
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nNDLc0qVZg:1
+resumen:
+  BOLSA MEXICANA DE VALORES, S.A.B DE C.V, INFORMA: FOLIO DE REFERENCIA DEL EVENTO
+  CORPORATIVO 294278 FOLIO DE REFERENCIA INDEVAL 958913C003 TIPO DE MENSAJE Replace
+  COMPLETO / INCOMPLETO COMPLETE CONFIRMADO / NO CONFIRMADO CONFIRMED CLAVE DE COTIZACIÓN
+  HDV RAZÓN SOCIAL ISHARES CORE HIGH DIVIDEND ETF SERIE * ISIN US46429B6636 MERCADO
+  PRINCIPAL NEW YORK STOCK EXCHANGE TIPO DE EVENTO CASH DIVIDEND MANDATORIO / OPCIONAL /
+  VOLUNTARIO Mandatory FECHA EXDATE 18/11/2026 FECHA REGISTRO 18/11/2026 OPCIÓN 1 TIPO
+  Cash DEFAULT…
+
+---
 fecha: 2026-11-18 09:52
 emisora: MERCADO
 titulo: BBB Foods Inc. Class A among top gainers of Thornburg Investment Management holdings; soars 28% in 48 days
@@ -269,6 +296,12 @@ fuente: GLORDP
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261118:nNRA2rjj4f:0
+resumen:
+  NYSE INTRA-DAY STOCK REPORT www.buysellsignals.com BBB Foods Inc. Class A's (NYSE:TBBB)
+  stock is the top gainer of Thornburg Investment Management holdings (assuming there has
+  been no significant change in the holdings since September 30, 2026). Market
+  Capitalization has soared by $4.8 billion from $3.4 billion to $8.2 billion in the past
+  48 days since September 30.
 
 ---
 fecha: 2026-11-18 09:52
@@ -385,6 +418,11 @@ fuente: GLORDP
 tono: negativa
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261118:nNRA2rji34:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
+  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
+  investors look at several key metrics and scores to assess each company. Below we
+  include some of the analysis used to mitigate such risks.
 
 ---
 fecha: 2026-11-18 09:51
@@ -394,6 +432,14 @@ fuente: Reuters
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z1KW:1
+resumen:
+  Actualizaciones 18 nov - ** Las acciones de Neocloud retroceden tras la caída de Nvidia
+  NVDA.O, revirtiendo el repunte registrado antes de la apertura tras la publicación de
+  resultados,lo que lastra la confianza en la infraestructura de IA y el gasto en centros
+  de datos ** Las acciones de Nvidia caen un 2,2 % en la sesión matinal, tras haber
+  subido hasta un 2,7 % antes de la apertura del mercado ** Las acciones de Nebius
+  NBIS.VI, NBIS.O, que cotizan en EEUU , caen un 8,3 %, mientras que IREN IREN.O y
+  CoreWeave…
 
 ---
 fecha: 2026-11-18 09:49
@@ -416,6 +462,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z16Y:1
+resumen:
+  Updates to include oil prices By Liz Hampton and Arathy Somasekhar DENVER, Nov 18
+  (Reuters) - US crude stocks, gasoline and distillate inventories rose last week, the
+  Energy Information Administration said on Wednesday. Crude inventories rose by 3.4
+  million barrels to 417.8 million barrels in the week ended November 13, the EIA said,
+  compared with analysts' expectations in a Reuters poll for a 58,000-barrel rise.
 
 ---
 fecha: 2026-11-18 09:48
@@ -425,6 +477,11 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0O7:2
+resumen:
+  Adds further comments, context By Marcela Ayres BRASILIA, Nov 18 (Reuters) - Brazil's
+  Finance Minister Dario Durigan signaled on Wednesday that the government would move
+  ahead with additional fiscal measures in the near term, arguing that improving public
+  finances is essential to create room for lower interest rates.
 
 ---
 fecha: 2026-11-18 09:48
@@ -434,6 +491,13 @@ fuente: Reuters
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:reuters.com:20261118:nS0N43300U:37
+resumen:
+  BRASILIA, Nov 18 (Reuters) - Brazil's Finance Minister Dario Durigan signaled on
+  Wednesday that the government would move ahead with additional fiscal measures in the
+  near term. Speaking at an event hosted by Bradesco BBI after a meeting with President
+  Luiz Inacio Lula da Silva earlier in the day, Durigan said the fiscal package currently
+  in the Senate is only a "first step" and should not be viewed as the government's
+  fiscal roadmap for the coming years.
 
 ---
 fecha: 2026-11-18 09:48
@@ -443,6 +507,10 @@ fuente: GLORDP
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261118:nNRA2rjhl3:0
+resumen:
+  NASDAQ STOCK REPORT Diamondback Energy, Inc. (NASDAQ: FANG) Company Overview:
+  Diamondback Energy, Inc. operates within the energy sector and focuses on oil and
+  natural gas production activities.
 
 ---
 fecha: 2026-11-18 09:47
@@ -470,6 +538,12 @@ fuente: CNBSTR
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261118:nNRA2rjea1:0
+resumen:
+  PORTUGUESE END-OF-DAY STOCK REPORT The European Commission projects EU real GDP growth
+  of 1.4% in 2026 and 2027, rising to 1.5% in 2028, while the euro area is seen expanding
+  1.2% in 2026-27 and 1.3% in 2028. Economy Commissioner Valdis Dombrovskis said
+  Portugal's growth would stay above the EU average, underpinned by resilient domestic
+  demand and EU funds, notably the Recovery and Resilience Plan in 2026.
 
 ---
 fecha: 2026-11-18 09:43
@@ -479,6 +553,13 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z17D:1
+resumen:
+  Por Utkarsh Hathi y Ragini Mathur 18 nov (Reuters) - El Nasdaq, que tiene una gran
+  presencia de empresas tecnológicas, cotizaba casi estable el miércoles en una jornada
+  volátil, mientras los inversores esperaban el precio de la salida a bolsa de Anthropic,
+  que se considera que será el próximo catalizador del sector de la inteligencia
+  artificial, después de que las optimistas previsiones de ingresos de Nvidia disiparon
+  en parte las preocupaciones de los inversores.
 
 ---
 fecha: 2026-11-18 09:42
@@ -504,6 +585,12 @@ fuente: GLORDP
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261118:nNRA2rje5x:0
+resumen:
+  NYSE INTRA-DAY STOCK REPORT www.buysellsignals.com Southern Copper Corporation
+  (NYSE:SCCO $143.19) has plunged $12.23 (7.9%) to trade at $143.19 at 09:46 am, New York
+  time Wednesday. Compared with the S&P 500 Index which is up 24.0 points (0.3%) to
+  7,364.52, the relative price change is -8.2%. There were 101,390 shares worth $14.5
+  million traded so far today.
 
 ---
 fecha: 2026-11-18 09:42
@@ -513,6 +600,11 @@ fuente: GLORDP
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261118:nNRA2rjdjj:0
+resumen:
+  NYSE INTRA-DAY STOCK REPORT www.buysellsignals.com BBB Foods Inc. Class A (NYSE:TBBB
+  $67.62) has lost 14.0c (0.2%) to trade at $67.62 at 09:46 am, New York time Wednesday.
+  Compared with the S&P 500 Index which is up 24.0 points (0.3%) to 7,364.52, the
+  relative price change is -0.5%.
 
 ---
 fecha: 2026-11-18 09:42
@@ -522,6 +614,12 @@ fuente: GLORDP
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261118:nNRA2rjdq5:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Tenaris S.A.
+  (NYSE:TS $58.32), ADR price extended its slide on Wednesday, shedding an additional
+  88.0c (1.5%) to trade at $58.32 at 10:16 am, Wednesday. The ADRs have sunk $2.95 (4.8%)
+  over the past three trading days; compared with the BNY Mellon Composite ADR Index
+  which fell 13.8 points (5.2%) in the three days for a relative price increase of 0.4%.
 
 ---
 fecha: 2026-11-18 09:40
@@ -531,6 +629,11 @@ fuente: GLORDP
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261118:nNRA2rjcr0:0
+resumen:
+  NYSE STOCK REPORT Southern Copper Corporation's growth in EPS (earnings per share) has
+  been 21.7% annualized over 5 years. Over the same time period its stock price has gone
+  up 225.1% or 31.1% annualized. In comparison, Freeport- McMoRan Inc.'s growth in EPS
+  (earnings per share) has been 30.1% annualized over 5 years.
 
 ---
 fecha: 2026-11-18 09:40
@@ -540,6 +643,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z1JI:1
+resumen:
+  Los índices estadounidenses registran resultados mixtos: el Nasdaq sube, el S&P 500
+  baja y el Dow cae alrededor de un 1 % El sector energético es el más débil del S&P 500;
+  el de consumo discrecional lidera las subidas El índice STOXX 600 cae un 0,7 %
+  aproximadamente El dólar sube; el bitcoin baja un >l 1 %; el crudo estadounidense cae
+  un ~2 %; el oro baja un >l 2 % El rendimiento de los bonos del Tesoro estadounidense a
+  10 años cae hasta el ~5,07 % 18 nov - Bienvenidos a la página de cobertura en tiempo
+  real de…
 
 ---
 fecha: 2026-11-18 09:39
@@ -549,6 +660,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z16N:1
+resumen:
+  US indexes mixed: Nasdaq gains, S&P 500 slips, Dow off ~1% Energy is the weakest S&P
+  500 sector; consumer discretionary leads gainers STOXX 600 index off ~0.7% Dollar
+  rises; bitcoin down >1%; US crude off ~2%; gold off >2% US 10-year Treasury yield falls
+  to ~5.07% Welcome to the home for real-time coverage of markets brought to you by
+  Reuters reporters.
 
 ---
 fecha: 2026-11-18 09:34
@@ -558,6 +675,14 @@ fuente: POLTRA
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261118:nNRA2rjb4d:0
+resumen:
+  ANNA NORDSTROM, HEAD OF THE MARKETS GROUP, FEDERAL RESERVE BANK OF NEW YORK, PREPARED
+  REMARKS AT THE 2026 FX MARKET STRUCTURE CONFERENCE, NEW YORK CITY, AS RELEASED BY THE
+  NEW YORK FEDERAL RESERVE ANNA NORDSTROM, HEAD OF THE MARKETS GROUP, FEDERAL RESERVE
+  BANK OF NEW YORK, PREPARED REMARKS AT THE 2026 FX MARKET STRUCTURE CONFERENCE, NEW YORK
+  CITY, AS RELEASED BY THE NEW YORK FEDERAL RESERVE NOVEMBER 16, 2026 SPEAKERS: ANNA
+  NORDSTROM, HEAD OF THE MARKETS GROUP, FEDERAL RESERVE BANK OF NEW YORK [*] NORDSTROM:
+  Good…
 
 ---
 fecha: 2026-11-18 09:33
@@ -583,6 +708,13 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nS0N43300U:35
+resumen:
+  BRASILIA, Nov 18 (Reuters) - Brazil's Finance Minister Dario Durigan signaled on
+  Wednesday that the government would move ahead with additional fiscal measures in the
+  near term. Speaking at an event hosted by Bradesco BBI after a meeting with President
+  Luiz Inacio Lula da Silva earlier in the day, Durigan said the fiscal package currently
+  in the Senate is only a "first step" and should not be viewed as the government's
+  fiscal roadmap for the coming years.
 
 ---
 fecha: 2026-11-18 09:32
@@ -636,6 +768,14 @@ fuente: Reuters
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL3N46Z170:3
+resumen:
+  Indexes: Dow falls 0.75%, S&P 500 flat, Nasdaq up 0.5% TJX jumps after forecasting
+  upbeat annual sales Investors await Anthropic IPO pricing Waller says Fed needs to get
+  more aggressive in inflation response Updates after market opens By Utkarsh Hathi and
+  Ragini Mathur Nov 18 (Reuters) - The tech-heavy Nasdaq rose on Wednesday in choppy
+  trading as investors awaited Anthropic's IPO pricing for the next catalyst in the AI
+  trade after Nvidia's upbeat revenue forecast eased some investor concerns about the
+  chip…
 
 ---
 fecha: 2026-11-18 09:31
@@ -660,6 +800,11 @@ fuente: PUBT
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nNDL2sryxN:1
+resumen:
+  New Orleans Branch Announces Appointment to Board of Directors For immediate release:
+  November 18, 2026 Press Release The Federal Reserve Bank of Atlanta announces the
+  appointment of Douglas S. Downing to the New Orleans Branch board of directors. He was
+  appointed by the Board of Governors to fill an unexpired term ending December 31, 2027.
 
 ---
 fecha: 2026-11-18 09:28
@@ -669,6 +814,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z16A:1
+resumen:
+  EUR/USD dropped to a fresh 19-month low on Wednesday as US dollar bulls kept control,
+  driven by hawkish Federal Reserve rhetoric. That rhetoric may be misplaced though, and
+  may be a case of shouting into the wind. US interest rates rallied after last week's
+  October CPI and PPI reports suggested inflation will stay above the Fed's target,
+  prompting FOMC officials to say price growth is a serious problem.
 
 ---
 fecha: 2026-11-18 09:26
@@ -687,6 +838,13 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nS0N43300U:33
+resumen:
+  BRASILIA, Nov 18 (Reuters) - Brazil's Finance Minister Dario Durigan signaled on
+  Wednesday that the government would move ahead with additional fiscal measures in the
+  near term. Speaking at an event hosted by Bradesco BBI after a meeting with President
+  Luiz Inacio Lula da Silva earlier in the day, Durigan said the fiscal package currently
+  in the Senate is only a "first step" and should not be viewed as the government's
+  fiscal roadmap for the coming years.
 
 ---
 fecha: 2026-11-18 09:24
@@ -705,6 +863,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0C3:4
+resumen:
+  Updates prices at 1500 GMT By Eric Onstad LONDON, Nov 18 (Reuters) - Copper prices
+  slumped to their weakest in seven months on Wednesday as speculators rushed to sell,
+  spurred by worries over rising inflation and a buoyant dollar. A slide through key
+  support levels triggered more selling from computer-driven funds that use algorithms
+  and technical signals for trading.
 
 ---
 fecha: 2026-11-18 09:13
@@ -714,6 +878,11 @@ fuente: NOTENG
 tono: neutral
 impacto: alto
 id: lseg:urn:newsml:newsroom:20261118:nNRA2riyd1:0
+resumen:
+  The president of Mexico, Claudia Sheinbaum, emphasized on Wednesday a "very good
+  meeting" with U.S. President Donald Trump, despite the recent tariff threats issued by
+  the White House chief concerning the caravans of Central American migrants crossing
+  Mexico with the intention of entering U.S. territory.
 
 ---
 fecha: 2026-11-18 09:12
@@ -738,6 +907,13 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261118:nNRA2riyj6:0
+resumen:
+  The country recorded a current account deficit of US$ 2.227 billion during the third
+  quarter of the year, representing 2.4% of Gross Domestic Product (GDP), according to a
+  report from the Central Bank on Wednesday. As a result, the accumulated surplus over
+  the year now accounts for 0.7% of GDP. This outcome reflected the negative balance in
+  income and the services trade balance, partially offset by a favorable performance in
+  goods.
 
 ---
 fecha: 2026-11-18 09:12
@@ -747,6 +923,13 @@ fuente: NOTENG
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:newsroom:20261118:nNRA2riyay:0
+resumen:
+  President Claudia Sheinbaum held a meeting with her American counterpart, Donald Trump,
+  during the Asia-Pacific Economic Cooperation (APEC) Forum in China. The president
+  shared a photo of her face-to-face with the President of the United States, alongside
+  members of her cabinet: Marcelo Ebrard, Secretary of Economy, and Roberto Velasco,
+  Secretary of Foreign Relations. "We had a very good meeting with President Donald Trump
+  and his team.
 
 ---
 fecha: 2026-11-18 09:08
@@ -781,6 +964,13 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z100:4
+resumen:
+  Adds quotes from press conference Sheinbaum says Mexico-US trade talks are very far
+  along after Trump meeting Sheinbaum says she will meet Trump again at G20 in Miami in
+  December Trump threatened steeper duties over migrant caravans; Mexico says group
+  remains in Chiapas Nov 18 (Reuters) - Mexican President Claudia Sheinbaum said on
+  Wednesday she had a "very good meeting" with her US counterpart Donald Trump as the two
+  countries pursue negotiations aimed at easing trade tensions.
 
 ---
 fecha: 2026-11-18 08:58
@@ -831,6 +1021,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nAQN2MUB7L:1
+resumen:
+  El valor de las importaciones de Colombia subió un 32,73% en septiembre a $7.679
+  millones de dólares, frente a $5.785 millones de dólares en igual mes del año pasado,
+  informó el 18 de noviembre de 2026 el Departamento Nacional de Estadísticas (DANE). El
+  país registró un déficit comercial de $2.268 millones de dólares(FOB), comparado con un
+  déficit de $1.135 millones de dólares en el mismo mes del año previo.
 
 ---
 fecha: 2026-11-18 08:50
@@ -840,6 +1036,12 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nAQN2MUB7M:1
+resumen:
+  Colombia's imports rose 32.73% to $7.679 billion in September from $5.785 billion in
+  the same month a year earlier, the government's DANE statistics agency said on 18
+  November 2026. The country registered a trade deficit of $2.268 billion (FOB), compared
+  with a deficit of $1.135 billion during the same month the year before. The following
+  is a breakdown of recent monthly imports.
 
 ---
 fecha: 2026-11-18 08:47
@@ -849,6 +1051,11 @@ fuente: GLORDP
 tono: negativa
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261118:nNRA2rihxb:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
+  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
+  investors look at several key metrics and scores to assess each company. Below we
+  include some of the analysis used to mitigate such risks.
 
 ---
 fecha: 2026-11-18 08:47
@@ -858,6 +1065,8 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0N7:1
+resumen:
+  .
 
 ---
 fecha: 2026-11-18 08:47
@@ -867,6 +1076,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z1EY:1
+resumen:
+  Se añaden comentarios de la embajada china, Airbnb y un diputado La propuesta fue
+  debatida por el Tesoro y la Casa Blanca El plan tendría como objetivo desalentar la
+  dependencia de la IA china sin imponer nuevas restricciones a las empresas
+  estadounidenses Aumentan los llamamientos a adoptar una postura más firme frente a
+  China Por Alexandra Alper WASHINGTON, 18 nov (Reuters) - La Administración Trump está
+  barajando la posibilidad de exigir a las empresas estadounidenses que revelen
+  públicamente su uso de modelos…
 
 ---
 fecha: 2026-11-18 08:46
@@ -960,6 +1177,11 @@ fuente: GLORDP
 tono: negativa
 impacto: medio
 id: lseg:urn:newsml:newsroom:20261118:nNRA2rigyh:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
+  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
+  investors look at several key metrics and scores to assess each company. Below we
+  include some of the analysis used to mitigate such risks.
 
 ---
 fecha: 2026-11-18 08:46
@@ -969,6 +1191,14 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0LJ:5
+resumen:
+  Adds Chinese Embassy, Airbnb and lawmaker comment Proposal was discussed by Treasury
+  and White House Plan would aim to discourage reliance on Chinese AI without imposing
+  new restrictions on US firms Calls for a tougher stance on China mount By Alexandra
+  Alper WASHINGTON, Nov 18 (Reuters) - The Trump administration is considering requiring
+  US companies to publicly disclose their use of Chinese AI models, a bid to discourage
+  reliance on the technology without imposing new restrictions that could anger industry
+  or…
 
 ---
 fecha: 2026-11-18 08:45
@@ -1003,6 +1233,10 @@ fuente: Reuters
 tono: negativa
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z1E6:1
+resumen:
+  18 nov (Reuters) - Los analistas bursátiles de Wall Street revisaron el miércoles sus
+  calificaciones y sus previsiones de cotización para varias empresas que cotizan en
+  bolsa en EEUU, entre ellas Calumet, Disney y Nvidia.
 
 ---
 fecha: 2026-11-18 08:40
@@ -1012,6 +1246,10 @@ fuente: Reuters
 tono: neutral
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL3N46Z0MM:4
+resumen:
+  Nov 18 (Reuters) - Wall Street securities analysts revised their ratings and price
+  targets on several US-listed companies, including Calumet, Disney and Nvidia, on
+  Wednesday.
 
 ---
 fecha: 2026-11-18 08:40
@@ -1070,6 +1308,11 @@ fuente: Reuters
 tono: positiva
 impacto: bajo
 id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z14E:3
+resumen:
+  Nov 18 (Reuters) - The S&P 500 and tech-heavy Nasdaq opened higher on Wednesday after
+  Nvidia's NVDA.O upbeat revenue forecast calmed investor concerns about the chip
+  bellwether's future and improved sentiment for AI-linked stocks. The Dow Jones
+  Industrial Average .DJI fell 132.1 points, or 0.26%, at the open to 50627.36.
 
 ---
 fecha: 2026-11-18 08:30
@@ -1861,21 +2104,3 @@ resumen:
   GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Grupo Financiero Banorte, S.A.B. De C.V.'s
   growth in EPS (earnings per share) has been 8.9% annualized over 3 years. Over the same
   time period its ADR price has gone up 59.2% or 27.1% annualized.
-
----
-fecha: 2026-11-17 16:46
-emisora: MEGACPO
-titulo: Megacable Holdings SAB de CV - [2018] Eventos Relevantes - Emisoras - MEGA
-fuente: PUBT
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:reuters.com:20261117:nNDL51mM10:1
-
----
-fecha: 2026-11-17 16:43
-emisora: MEGACPO
-titulo: Megacable Holdings SAB de CV - Movimientos inusitados Megacable Holdings
-fuente: PUBT
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:reuters.com:20261117:nNDL3rvqGk:1

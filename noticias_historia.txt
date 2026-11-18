@@ -432,6 +432,8 @@ fuente: NOTENG
 tono: positiva
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261114:nNRA2polws:0
+resumen:
+  In the first minutes of this Saturday, November 14, 2026 , the US dollar loses ground against the Mexican peso , trading at $18.53 pesos per unit , marking a decrease of 0.09 cents compared to Friday, November 13, when it was at $18.62 pesos. According to an analysis by Gabriela Siller Pagaza, Director of Economic Analysis at Grupo Financiero BASE, the peso closes the week with an appreciation of 0.51 percent or 9.6 cents .
 
 ---
 fecha: 2026-11-14 01:12
@@ -441,6 +443,8 @@ fuente: NOTENG
 tono: positiva
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261114:nNRA2plauz:0
+resumen:
+  Mexico City, November 13 (EFE) - The Mexican peso has seen two weeks of recovery against the dollar, gaining 0.51% over the past five days, although analysts warned that this advance does not yet indicate a sustained appreciation. The peso closed on Friday at 18.53 units per dollar, reflecting a weekly appreciation of 0.51%, marking two consecutive weeks of recovery, according to closing data from the Bank of Mexico (Banxico).
 
 ---
 fecha: 2026-11-13 21:12
