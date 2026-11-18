@@ -1134,7 +1134,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-12,BRENT,Petróleo Brent (dólares),95.95,,ALPEKA ORBIA VOLARA
 2026-11-13,BRENT,Petróleo Brent (dólares),96.29,,ALPEKA ORBIA VOLARA
 2026-11-16,BRENT,Petróleo Brent (dólares),91.75,,ALPEKA ORBIA VOLARA
-2026-05-01,COBRE,Cobre (dólares por libra),5.914,,GMEXICOB
+2026-11-17,BRENT,Petróleo Brent (dólares),93.49,,ALPEKA ORBIA VOLARA
 2026-05-04,COBRE,Cobre (dólares por libra),5.8095,,GMEXICOB
 2026-05-05,COBRE,Cobre (dólares por libra),5.9335,,GMEXICOB
 2026-05-06,COBRE,Cobre (dólares por libra),6.124,,GMEXICOB
@@ -1268,6 +1268,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-12,COBRE,Cobre (dólares por libra),6.185,,GMEXICOB
 2026-11-13,COBRE,Cobre (dólares por libra),6.0595,,GMEXICOB
 2026-11-16,COBRE,Cobre (dólares por libra),5.9955,,GMEXICOB
+2026-11-17,COBRE,Cobre (dólares por libra),5.9765,,GMEXICOB
 2026-05-04,PLATA,Plata (dólares por onza),72.715,,PEOLES
 2026-05-05,PLATA,Plata (dólares por onza),72.82,,PEOLES
 2026-05-06,PLATA,Plata (dólares por onza),77.33,,PEOLES
@@ -1409,7 +1410,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-12,PLATA,Plata (dólares por onza),50.0063,,PEOLES
 2026-11-13,PLATA,Plata (dólares por onza),48.7264,,PEOLES
 2026-11-16,PLATA,Plata (dólares por onza),47.0149,,PEOLES
-2026-11-17,PLATA,Plata (dólares por onza),47.2547,,PEOLES
+2026-11-17,PLATA,Plata (dólares por onza),47.3975,,PEOLES
 2026-05-04,ORO,Oro (dólares por onza),4520.3999,,PEOLES
 2026-05-05,ORO,Oro (dólares por onza),4556.04,,PEOLES
 2026-05-06,ORO,Oro (dólares por onza),4689.05,,PEOLES
@@ -1551,8 +1552,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-12,ORO,Oro (dólares por onza),3876.35,,PEOLES
 2026-11-13,ORO,Oro (dólares por onza),3880.3,,PEOLES
 2026-11-16,ORO,Oro (dólares por onza),3856.25,,PEOLES
-2026-11-17,ORO,Oro (dólares por onza),3849.08,,PEOLES
-2026-05-01,UST10,Bono de EUA a 10 años (rendimiento %),4.378,,GFNORTEO BBAJIOO GFINBURO
+2026-11-17,ORO,Oro (dólares por onza),3849.77,,PEOLES
 2026-05-04,UST10,Bono de EUA a 10 años (rendimiento %),4.446,,GFNORTEO BBAJIOO GFINBURO
 2026-05-05,UST10,Bono de EUA a 10 años (rendimiento %),4.416,,GFNORTEO BBAJIOO GFINBURO
 2026-05-06,UST10,Bono de EUA a 10 años (rendimiento %),4.354,,GFNORTEO BBAJIOO GFINBURO
@@ -1688,6 +1688,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-12,UST10,Bono de EUA a 10 años (rendimiento %),5.103,,GFNORTEO BBAJIOO GFINBURO
 2026-11-13,UST10,Bono de EUA a 10 años (rendimiento %),5.153,,GFNORTEO BBAJIOO GFINBURO
 2026-11-16,UST10,Bono de EUA a 10 años (rendimiento %),5.121,,GFNORTEO BBAJIOO GFINBURO
+2026-11-17,UST10,Bono de EUA a 10 años (rendimiento %),5.103,,GFNORTEO BBAJIOO GFINBURO
 2026-05-04,MBONO10,Bono M a 10 años (rendimiento %),9.231,,GFNORTEO BBAJIOO GFINBURO
 2026-05-05,MBONO10,Bono M a 10 años (rendimiento %),9.219,,GFNORTEO BBAJIOO GFINBURO
 2026-05-06,MBONO10,Bono M a 10 años (rendimiento %),9.059,,GFNORTEO BBAJIOO GFINBURO
@@ -1826,6 +1827,7 @@ fecha,serie,nombre,valor,moneda,mueve
 2026-11-11,MBONO10,Bono M a 10 años (rendimiento %),9.206,,GFNORTEO BBAJIOO GFINBURO
 2026-11-12,MBONO10,Bono M a 10 años (rendimiento %),9.278,,GFNORTEO BBAJIOO GFINBURO
 2026-11-13,MBONO10,Bono M a 10 años (rendimiento %),9.308,,GFNORTEO BBAJIOO GFINBURO
+2026-11-17,MBONO10,Bono M a 10 años (rendimiento %),9.3,,GFNORTEO BBAJIOO GFINBURO
 2026-05-04,BOVESPA,Bovespa (Brasil),185600.12,,
 2026-05-05,BOVESPA,Bovespa (Brasil),186753.82,,
 2026-05-06,BOVESPA,Bovespa (Brasil),187690.86,,
