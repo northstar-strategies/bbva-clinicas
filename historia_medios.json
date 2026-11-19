@@ -1,0 +1,1318 @@
+[
+ {
+  "fecha": "2026-10-16",
+  "tipo": "youtube",
+  "id_o_url": "7vTAFlO27ZA",
+  "titulo": "Market Close: Stocks Lower, Nasdaq Posts Worst Week Since June, Oil Surges • 10/16/26",
+  "fuente": "CNBC Television",
+  "url_fuente": "https://www.youtube.com/watch?v=7vTAFlO27ZA",
+  "hora": "14:29",
+  "emisoras": [
+   "FEMSAUBD",
+   "KOFUBL",
+   "GFNORTEO"
+  ],
+  "movimiento": {
+   "FEMSAUBD": 5.35,
+   "KOFUBL": 3.62,
+   "GFNORTEO": 2.9
+  },
+  "por_que": "CNBC reportó que Wall Street cerró a la baja con el Nasdaq en su peor semana desde junio y el petróleo al alza, mientras la bolsa mexicana subió a contracorriente (MEXTRAC09 +1.90%, con FEMSAUBD y KOFUBL al frente del portafolio): contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-16",
+  "tipo": "imagen",
+  "id_o_url": "https://elceo.com/wp-content/uploads/2026/10/BMV_y_Wall_Street_16_de_octubre_2026-1.jpg",
+  "titulo": "BMV y Wall Street hoy: así cierran las bolsas este 16 de octubre de 2026",
+  "fuente": "El CEO",
+  "url_fuente": "https://elceo.com/mercados/bmv-ipc-wall-street-hoy-16-de-octubre-de-2026-cierre/",
+  "hora": "16:59",
+  "emisoras": [
+   "FEMSAUBD",
+   "KOFUBL",
+   "GFNORTEO",
+   "BOLSAA"
+  ],
+  "movimiento": {
+   "FEMSAUBD": 5.35,
+   "KOFUBL": 3.62,
+   "GFNORTEO": 2.9,
+   "BOLSAA": 2.81
+  },
+  "por_que": "El CEO reportó que el IPC subió 1.87% a 68,929.72 puntos (mejor nivel desde el 27-may y +4.36% en la semana) aunque Wall Street cayó por semiconductores y aversión al riesgo; FEMSAUBD fue la emisora del portafolio que más subió: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-16",
+  "tipo": "imagen",
+  "id_o_url": "https://www.bloomberglinea.com/resizer/v2/FNASJB2GYRFXPPULORJKHCWFQQ.jpg?auth=fa6bccc6bf6dbb5a37240828ef939bd2ed6f9c10f61f094479f6d279fc8cff0a&width=1200&height=630&quality=80&smart=true",
+  "titulo": "Ebrard niega estancamiento en negociaciones de México con EE.UU. sobre aranceles",
+  "fuente": "Bloomberg Línea",
+  "url_fuente": "https://www.bloomberglinea.com/latinoamerica/mexico/ebrard-niega-estancamiento-en-negociaciones-de-mexico-con-eeuu-sobre-aranceles/",
+  "hora": "17:33",
+  "emisoras": [],
+  "movimiento": {},
+  "por_que": "Tras el reporte del WSJ de que el secretario de Comercio de EU frena la rebaja de aranceles a acero, aluminio y autos, Ebrard dijo que no ve estancadas las negociaciones, un tema de aranceles que rodeó a la sesión en que MEXTRAC09 subió 1.90%: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-19",
+  "tipo": "youtube",
+  "id_o_url": "HQZc9LWeEmI",
+  "titulo": "Trump asegura que México y EU están cerca de un acuerdo para reducir el déficit comercial",
+  "fuente": "El Universal",
+  "url_fuente": "https://www.youtube.com/watch?v=HQZc9LWeEmI",
+  "hora": "08:28",
+  "emisoras": [
+   "WALMEX",
+   "AC"
+  ],
+  "movimiento": {
+   "WALMEX": 1.77,
+   "AC": 1.36
+  },
+  "por_que": "El Universal resumió que Trump dijo que EU y México están cerca de un acuerdo para reducir el déficit comercial mientras Ebrard busca bajar aranceles a acero, aluminio y autos; ese día WALMEX (+1.77%) y AC (+1.36%) fueron de lo mejor del portafolio: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-19",
+  "tipo": "youtube",
+  "id_o_url": "IvvYFXEqNcM",
+  "titulo": "Big tech risks outspending its AI returns",
+  "fuente": "Reuters",
+  "url_fuente": "https://www.youtube.com/watch?v=IvvYFXEqNcM",
+  "hora": "08:45",
+  "emisoras": [
+   "WALMEX",
+   "AC"
+  ],
+  "movimiento": {
+   "WALMEX": 1.77,
+   "AC": 1.36
+  },
+  "por_que": "Reuters recogió la duda de los inversionistas sobre si las grandes tecnológicas gastan más en IA de lo que recuperarán, tema global de la semana de resultados, mientras en México MEXTRAC09 avanzó solo 0.37% sin un catalizador local único: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-19",
+  "tipo": "imagen",
+  "id_o_url": "https://elceo.com/wp-content/uploads/2026/10/BMV_y_Wall_Street_19_de_octubre_2026.jpg",
+  "titulo": "BMV y Wall Street hoy: así cierran las bolsas este 19 de octubre de 2026",
+  "fuente": "El CEO",
+  "url_fuente": "https://elceo.com/mercados/bmv-ipc-wall-street-hoy-19-de-octubre-de-2026-cierre/",
+  "hora": "16:11",
+  "emisoras": [
+   "WALMEX",
+   "AC",
+   "BOLSAA",
+   "MEGACPO"
+  ],
+  "movimiento": {
+   "WALMEX": 1.77,
+   "AC": 1.36,
+   "BOLSAA": -2.09,
+   "MEGACPO": -2.18
+  },
+  "por_que": "El CEO reportó que el IPC subió 0.12% a 69,010.67 (tercera alza seguida y mejor nivel desde el 27-may), a la espera de la inflación mexicana y de los reportes trimestrales de la semana, con BOLSAA y MEGACPO como los rezagos del portafolio: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-20",
+  "tipo": "youtube",
+  "id_o_url": "I2Hom94Scr4",
+  "titulo": "Qué esperar de los reportes en México, Kapital, Plata, Elon Musk y los niños",
+  "fuente": "Bloomberg Línea",
+  "url_fuente": "https://www.youtube.com/watch?v=I2Hom94Scr4",
+  "hora": "08:24",
+  "emisoras": [
+   "GAPB",
+   "ASURB",
+   "AMXB",
+   "GMEXICOB"
+  ],
+  "movimiento": {
+   "GAPB": 7.46,
+   "ASURB": 3.65,
+   "AMXB": -0.05,
+   "GMEXICOB": -1.31
+  },
+  "por_que": "El programa matutino de Bloomberg Línea abordó qué esperar de los reportes del tercer trimestre de las empresas mexicanas, semana en que reportaron GAP, Grupo México y América Móvil; GAPB subió 7.46%, GMEXICOB bajó 1.31% y AMXB quedó casi sin cambio: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-20",
+  "tipo": "youtube",
+  "id_o_url": "X0CVeTXW0h0",
+  "titulo": "Market Close: Stocks Mostly Higher, Netflix Beats Estimates, Housing Slump 10-20-2026",
+  "fuente": "CNBC Television",
+  "url_fuente": "https://www.youtube.com/watch?v=X0CVeTXW0h0",
+  "hora": "14:24",
+  "emisoras": [],
+  "movimiento": {},
+  "por_que": "CNBC reportó que Wall Street cerró mayormente al alza con Netflix superando estimaciones y el Dow en +1.02% (Expansión), mientras MEXTRAC09 subió 0.89% en México: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-20",
+  "tipo": "imagen",
+  "id_o_url": "https://cdn-3.expansion.mx/dims4/default/6ac02f9/2147483647/strip/true/crop/1800x945+0+255/resize/1200x630!/format/jpg/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F74%2Fae%2F9c9f90a44360b7e5bc8a54481138%2Fbmv-y-equidad-de-genero.jpeg",
+  "titulo": "GAP se dispara 8% y lidera en la BMV; Wall Street busca ganancias fuera de la IA",
+  "fuente": "Expansión",
+  "url_fuente": "https://expansion.mx/mercados/2026/10/20/acciones-bmv-tipo-cambio-hoy-20-octubre-2026",
+  "hora": "17:40",
+  "emisoras": [
+   "GAPB",
+   "ASURB",
+   "OMAB",
+   "AC"
+  ],
+  "movimiento": {
+   "GAPB": 7.46,
+   "ASURB": 3.65,
+   "OMAB": 3.02,
+   "AC": 2.05
+  },
+  "por_que": "Expansión informó que GAP se disparó cerca de 8% tras su reporte del 3T26, seguida por ASUR (+3.7%) y OMA (+3%), en una rotación fuera de las acciones ligadas a IA con el IPC en +0.36%: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-21",
+  "tipo": "youtube",
+  "id_o_url": "l-Ua9M0ks9s",
+  "titulo": "Market Close: S&P 500 Up For 3rd Day, SpaceX Drives AI Trade, AT&T Slips 10-21-2026",
+  "fuente": "CNBC Television",
+  "url_fuente": "https://www.youtube.com/watch?v=l-Ua9M0ks9s",
+  "hora": "14:33",
+  "emisoras": [
+   "AMXB",
+   "OMAB",
+   "GAPB"
+  ],
+  "movimiento": {
+   "AMXB": 7.78,
+   "OMAB": 5.19,
+   "GAPB": 3.1
+  },
+  "por_que": "CNBC reportó que el S&P 500 subió por tercer día con SpaceX impulsando el comercio de IA y AT&T a la baja, un entorno global favorable para el apetito por riesgo en la sesión en que AMXB (+7.78%) y OMAB (+5.19%) lideraron al portafolio: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-21",
+  "tipo": "imagen",
+  "id_o_url": "https://cdn-3.expansion.mx/dims4/default/54c3333/2147483647/strip/true/crop/1672x878+0+32/resize/1200x630!/format/jpg/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Feb%2Fe6%2F080c6aed48febcb9cef43dd088c3%2Ffile-0000000043bc81f9ba3bd35ee45fd7e2.png",
+  "titulo": "América Móvil impulsa a la BMV sobre los 70,000 puntos; el peso cae a 18.68 por dólar",
+  "fuente": "Expansión",
+  "url_fuente": "https://expansion.mx/mercados/2026/10/21/america-movil-sube-bmv-peso-mexicano-18-68-dolar",
+  "hora": "17:33",
+  "emisoras": [
+   "AMXB",
+   "OMAB",
+   "GAPB",
+   "ASURB"
+  ],
+  "movimiento": {
+   "AMXB": 7.78,
+   "OMAB": 5.19,
+   "GAPB": 3.1,
+   "ASURB": 3.07
+  },
+  "por_que": "Expansión informó que América Móvil subió 7.88% tras presentar su reporte del 3T26 y llevó al IPC (+1.43%) por encima de 70,000 puntos por primera vez desde finales de mayo, con el peso cayendo a 18.68 por dólar: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-22",
+  "tipo": "youtube",
+  "id_o_url": "TvscBt4mWqs",
+  "titulo": "Inflación se volvió a acelerar y en la primera quincena de octubre se ubicó en 3.62%",
+  "fuente": "El Economista",
+  "url_fuente": "https://www.youtube.com/watch?v=TvscBt4mWqs",
+  "hora": "10:59",
+  "emisoras": [
+   "AMXB",
+   "WALMEX",
+   "AC"
+  ],
+  "movimiento": {
+   "AMXB": 2.95,
+   "WALMEX": 2.03,
+   "AC": 2.8
+  },
+  "por_que": "El Economista reportó que la inflación de la primera quincena de octubre se aceleró a 3.62% anual, por encima de lo esperado, dato que redujo las apuestas de un recorte de Banxico en una sesión en que el IPC bajó 0.51%: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-22",
+  "tipo": "youtube",
+  "id_o_url": "-Y98QpuvlcM",
+  "titulo": "Market Close: Worst Day For Nasdaq In 5 Months, Oil Prices Rise, P&G Bucks Trend 10-22-2026",
+  "fuente": "CNBC Television",
+  "url_fuente": "https://www.youtube.com/watch?v=-Y98QpuvlcM",
+  "hora": "14:30",
+  "emisoras": [
+   "GMEXICOB",
+   "PEOLES"
+  ],
+  "movimiento": {
+   "GMEXICOB": -4.34,
+   "PEOLES": -3.5
+  },
+  "por_que": "CNBC reportó el peor día del Nasdaq en cinco meses con el petróleo al alza, jornada de aversión al riesgo en que las mineras GMEXICOB (-4.34%) y PEOLES (-3.50%) fueron las que más cayeron del portafolio: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-22",
+  "tipo": "imagen",
+  "id_o_url": "https://cdn-3.expansion.mx/dims4/default/452be05/2147483647/strip/true/crop/1200x630+0+85/resize/1200x630!/format/jpg/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1b%2Fba%2Fbcf8c93f48938bf25807cf935994%2Fmeta-nvidia-amazon-caida-wall-street-bolsa-mexicana-22-octubre-2026.jpg",
+  "titulo": "Meta se desploma 6.7% en apertura de Wall Street; el peso cotiza en 18.70 por dólar",
+  "fuente": "Expansión",
+  "url_fuente": "https://expansion.mx/mercados/2026/10/22/acciones-meta-desploma-6-7-peso-cotiza-18-70-por-dolar",
+  "hora": "10:12",
+  "emisoras": [
+   "GMEXICOB",
+   "PEOLES",
+   "AMXB"
+  ],
+  "movimiento": {
+   "GMEXICOB": -4.34,
+   "PEOLES": -3.5,
+   "AMXB": 2.95
+  },
+  "por_que": "Expansión informó que Meta caía 6.7% en la apertura tras anunciar acciones sin voto para financiar su gasto en IA, que el índice de semiconductores perdía 5.67% y que el IPC cedía los 70,000 puntos (cerró -0.51%) con tensiones en Medio Oriente: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-23",
+  "tipo": "youtube",
+  "id_o_url": "pxZvtJwdUEM",
+  "titulo": "Trump anuncia que está \"muy cerca\" de acuerdo con México para reducir aranceles",
+  "fuente": "El Universal",
+  "url_fuente": "https://www.youtube.com/watch?v=pxZvtJwdUEM",
+  "hora": "12:19",
+  "emisoras": [
+   "GFNORTEO",
+   "BOLSAA",
+   "WALMEX"
+  ],
+  "movimiento": {
+   "GFNORTEO": 2.67,
+   "BOLSAA": 4.32,
+   "WALMEX": 0.85
+  },
+  "por_que": "El Universal reportó que Trump dijo estar «muy cerca» de un acuerdo con México para reducir aranceles, en línea con Sheinbaum, en una sesión casi plana del IPC (-0.01%) donde BOLSAA subió 4.32% y GFNORTEO 2.67%: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-23",
+  "tipo": "youtube",
+  "id_o_url": "-fgpW0NClmg",
+  "titulo": "SpaceX Shakes Up Telecom Stocks | Closing Bell",
+  "fuente": "Bloomberg Television",
+  "url_fuente": "https://www.youtube.com/watch?v=-fgpW0NClmg",
+  "hora": "14:21",
+  "emisoras": [
+   "AMXB",
+   "MEGACPO"
+  ],
+  "movimiento": {
+   "AMXB": -1.84,
+   "MEGACPO": -1.54
+  },
+  "por_que": "Bloomberg Television destacó que SpaceX sacudió a las acciones de telecomunicaciones en EUA (CNBC también tituló «Telecoms Tank»), el mismo día en que AMXB bajó 1.84% y MEGACPO 1.54%, coincidencia temporal sin vínculo verificado: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-23",
+  "tipo": "imagen",
+  "id_o_url": "https://cdn-3.expansion.mx/dims4/default/36398f9/2147483647/strip/true/crop/1672x878+0+32/resize/1200x630!/format/jpg/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc4%2F76%2F6ba0aca6451d982ab26c8e5589ee%2Fpeso-mexicano-dolar-hoy-petroleo-bolsas-23-octubre-2026.png",
+  "titulo": "El peso toma un respiro, pero se encamina a siete semanas de pérdidas",
+  "fuente": "Expansión",
+  "url_fuente": "https://expansion.mx/mercados/2026/10/23/dolar-hoy-23-octubre-2026-peso-mexicano-bolsa-mexicana",
+  "hora": "09:27",
+  "emisoras": [
+   "PEOLES",
+   "GMEXICOB"
+  ],
+  "movimiento": {
+   "PEOLES": -4.15,
+   "GMEXICOB": -1.37
+  },
+  "por_que": "Expansión informó que el petróleo subía cerca de 3% por tensiones en Medio Oriente y que las bolsas de México y EU operaban a la baja mientras el peso iba por su séptima semana de pérdidas; PEOLES cayó 4.15% y GMEXICOB 1.37% al cierre: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-26",
+  "tipo": "youtube",
+  "id_o_url": "5tOqnZ7rEWk",
+  "titulo": "What Lula’s Win Means for Brazil’s Markets, Currency",
+  "fuente": "Bloomberg Television",
+  "url_fuente": "https://www.youtube.com/watch?v=5tOqnZ7rEWk",
+  "hora": "07:39",
+  "emisoras": [
+   "FEMSAUBD",
+   "KOFUBL",
+   "AMXB"
+  ],
+  "movimiento": {
+   "FEMSAUBD": -3.19,
+   "KOFUBL": -2.5,
+   "AMXB": -1.83
+  },
+  "por_que": "Bloomberg Television analizó qué significa el triunfo de Lula en Brasil para sus mercados y su moneda, el día en que FEMSAUBD cayó 3.19% y KOFUBL 2.50%, emisoras con fuerte exposición a Brasil: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-26",
+  "tipo": "youtube",
+  "id_o_url": "lleI62WOYrM",
+  "titulo": "Lula gana en Brasil, mercados caen y Bolsonaro desconoce su triunfo",
+  "fuente": "El Economista",
+  "url_fuente": "https://www.youtube.com/watch?v=lleI62WOYrM",
+  "hora": "13:43",
+  "emisoras": [
+   "FEMSAUBD",
+   "KOFUBL",
+   "AMXB"
+  ],
+  "movimiento": {
+   "FEMSAUBD": -3.19,
+   "KOFUBL": -2.5,
+   "AMXB": -1.83
+  },
+  "por_que": "El Economista reportó que Lula ganó la elección en Brasil, los mercados cayeron y Bolsonaro desconoció el resultado, en una sesión en que MEXTRAC09 bajó 0.40% y AMXB 1.83%: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-26",
+  "tipo": "imagen",
+  "id_o_url": "https://cdn-3.expansion.mx/dims4/default/4a1648d/2147483647/strip/true/crop/1200x630+0+86/resize/1200x630!/format/jpg/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Faa%2F93%2Fe9f3e19647719ce6927ea1a11dc9%2Fbrasil-femsa-acciones-bmv-peso-mexicano.jpg",
+  "titulo": "Brasil golpea a Coca-Cola FEMSA y arrastra a la BMV; el peso avanza",
+  "fuente": "Expansión",
+  "url_fuente": "https://expansion.mx/mercados/2026/10/26/brasil-golpea-a-coca-cola-femsa-y-arrastra-a-la-bmv-el-peso-avanza",
+  "hora": "18:37",
+  "emisoras": [
+   "KOFUBL",
+   "FEMSAUBD"
+  ],
+  "movimiento": {
+   "KOFUBL": -2.5,
+   "FEMSAUBD": -3.19
+  },
+  "por_que": "Expansión informó que el Ibovespa se hundió cerca de 13% y el real perdió cerca de 8% tras la reelección de Lula, golpeando a Coca-Cola FEMSA (Brasil aporta cerca de 34% de sus ventas) y arrastrando al IPC (-0.58%): contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-27",
+  "tipo": "youtube",
+  "id_o_url": "6s_d5sW_h14",
+  "titulo": "Peso mexicano cae frente al dólar tras dos días con ganancias; mercado mira hacia anuncio de la Fed",
+  "fuente": "El Economista",
+  "url_fuente": "https://www.youtube.com/watch?v=6s_d5sW_h14",
+  "hora": "10:26",
+  "emisoras": [
+   "GMEXICOB",
+   "MEGACPO"
+  ],
+  "movimiento": {
+   "GMEXICOB": 2.46,
+   "MEGACPO": 3.21
+  },
+  "por_que": "El Economista reportó que el peso cayó tras dos días de ganancias con el mercado atento a la decisión de la Fed, en una sesión de alivio del petróleo en que el IPC subió 0.35% y GMEXICOB (+2.46%) y MEGACPO (+3.21%) lideraron al portafolio: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-27",
+  "tipo": "youtube",
+  "id_o_url": "z8hW5y1fhHA",
+  "titulo": "Resultados Financieros Walmex - Tercer trimestre 2026 - Español",
+  "fuente": "Walmart de México y Centroamérica",
+  "url_fuente": "https://www.youtube.com/watch?v=z8hW5y1fhHA",
+  "hora": "15:30",
+  "emisoras": [
+   "WALMEX"
+  ],
+  "movimiento": {
+   "WALMEX": -2.86
+  },
+  "por_que": "Webcast oficial de resultados del 3T26 de Walmex (fuente primaria, canal de la empresa, no un medio), publicado el mismo día en que WALMEX cayó 2.86% y que cedió otro 2.95% en la apertura del 28-oct: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-27",
+  "tipo": "imagen",
+  "id_o_url": "https://cdn-3.expansion.mx/dims4/default/297fd15/2147483647/strip/true/crop/1920x1008+0+136/resize/1200x630!/format/jpg/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F2a%2Fef%2F08423ab449c7b7c6d26838254dca%2Freporte-trimestral-walmart-2026.jpg",
+  "titulo": "Walmart mantiene precios bajos para atraer clientes, pero sus ganancias pagan la cuenta",
+  "fuente": "Expansión",
+  "url_fuente": "https://expansion.mx/empresas/2026/10/27/walmart-reporte-trimestral-ganancias-2026",
+  "hora": "16:19",
+  "emisoras": [
+   "WALMEX"
+  ],
+  "movimiento": {
+   "WALMEX": -2.86
+  },
+  "por_que": "Expansión informó que Walmart de México dejó de perder tráfico por primera vez en nueve trimestres pero su utilidad neta cayó 6.1% (margen EBITDA de 10.5% a 10.2%) en resultados publicados la tarde del 27-oct; WALMEX ya había bajado 2.86% en la sesión: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-28",
+  "tipo": "youtube",
+  "id_o_url": "0JEkVViEo-E",
+  "titulo": "Federal Reserve Chairman Kevin Warsh speaks after Fed holds interest rates steady — 10/28/2026",
+  "fuente": "CNBC Television",
+  "url_fuente": "https://www.youtube.com/watch?v=0JEkVViEo-E",
+  "hora": "13:50",
+  "emisoras": [
+   "PEOLES",
+   "MEGACPO"
+  ],
+  "movimiento": {
+   "PEOLES": -2.32,
+   "MEGACPO": -2.9
+  },
+  "por_que": "CNBC transmitió la conferencia del presidente de la Fed, Kevin Warsh, tras mantener la tasa en 3.75%-4%, mientras Wall Street subió y el IPC cayó 0.76% con MEGACPO (-2.90%) y PEOLES (-2.32%) entre los mayores descensos del portafolio: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-28",
+  "tipo": "youtube",
+  "id_o_url": "YGWQg1LAvhY",
+  "titulo": "Instant Reaction: Fed Stands Pat, Says More Data Will Help Next Decision | Balance of Power",
+  "fuente": "Bloomberg Podcasts",
+  "url_fuente": "https://www.youtube.com/watch?v=YGWQg1LAvhY",
+  "hora": "15:26",
+  "emisoras": [],
+  "movimiento": {},
+  "por_que": "Bloomberg ofreció la reacción inmediata a la decisión de la Fed de dejar la tasa sin cambios, el evento global del día en que MEXTRAC09 bajó 0.60% y el IPC 0.76%: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-28",
+  "tipo": "imagen",
+  "id_o_url": "https://cdn-3.expansion.mx/dims4/default/af8c655/2147483647/strip/true/crop/2121x1114+0+150/resize/1200x630!/format/jpg/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fd9%2F36%2F17388b6d45f68ec117a35c936263%2Fbmv-cae-mas-de-1-por-ciento-hoy-28-de-octubre-de-2026.jpg",
+  "titulo": "BMV cae más de 1% tras reportes trimestrales; Wall Street espera a la Fed",
+  "fuente": "Expansión",
+  "url_fuente": "https://expansion.mx/mercados/2026/10/28/bmv-cae-mas-de-1-tras-reportes-trimestra-wall-street",
+  "hora": "10:49",
+  "emisoras": [
+   "WALMEX",
+   "KOFUBL"
+  ],
+  "movimiento": {
+   "WALMEX": -0.92,
+   "KOFUBL": 2.01
+  },
+  "por_que": "Expansión informó que el IPC caía más de 1% por reportes trimestrales (GCC, Genomma, Bimbo) y que Walmex llegó a caer 2.95% en la mañana tras una utilidad inferior a lo esperado, aunque cerró con -0.92%: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-10-29",
+  "tipo": "youtube",
+  "id_o_url": "_m_e3ExzHHk",
+  "titulo": "Peso mexicano se deprecia frente al dólar tras datos de inflación y PIB de Estados Unidos",
+  "fuente": "El Economista",
+  "url_fuente": "https://www.youtube.com/watch?v=_m_e3ExzHHk",
+  "hora": "10:56",
+  "emisoras": [
+   "MEXTRAC",
+   "AMXB",
+   "FEMSAUBD"
+  ],
+  "movimiento": {
+   "MEXTRAC": 1.3,
+   "AMXB": 2.02,
+   "FEMSAUBD": 1.55
+  },
+  "por_que": "El peso se debilitó a su nivel más bajo en más de un año tras datos de inflación y PIB de EE.UU. que reforzaron las apuestas de un alza de tasas de la Fed, aun cuando el MEXTRAC09 subió 1.30% y AMXB 2.02%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-10-29",
+  "tipo": "youtube",
+  "id_o_url": "V6Iv3HmDOz0",
+  "titulo": "Se frena el repunte tecnológico tras resultados decepcionantes de Alphabet y Samsung",
+  "fuente": "Bloomberg en Español",
+  "url_fuente": "https://www.youtube.com/watch?v=V6Iv3HmDOz0",
+  "hora": "16:18",
+  "emisoras": [
+   "MEXTRAC",
+   "FEMSAUBD",
+   "GMEXICOB"
+  ],
+  "movimiento": {
+   "MEXTRAC": 1.3,
+   "FEMSAUBD": 1.55,
+   "GMEXICOB": -0.69
+  },
+  "por_que": "Alphabet cayó tras reportar una utilidad menor a la del año previo y frenó el repunte tecnológico en Wall Street, mientras en México el IPC subió 0.87% y el MEXTRAC09 1.30%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-10-29",
+  "tipo": "imagen",
+  "id_o_url": "https://elceo.com/wp-content/uploads/2026/10/BMV_y_Wall_Street_29_de_octubre_2026-1.jpg",
+  "titulo": "BMV y Wall Street hoy: así cierran las bolsas este 29 de octubre de 2026",
+  "fuente": "El CEO",
+  "url_fuente": "https://elceo.com/mercados/bmv-ipc-wall-street-hoy-29-de-octubre-de-2026-cierre/",
+  "hora": "16:14",
+  "emisoras": [
+   "OMAB",
+   "GAPB",
+   "ASURB",
+   "BBAJIOO"
+  ],
+  "movimiento": {
+   "OMAB": 5.75,
+   "GAPB": 3.45,
+   "ASURB": 3.05,
+   "BBAJIOO": -2.77
+  },
+  "por_que": "OMA reportó ingresos 23.8% mayores y fue la mejor del IPC (+5.34%), con GAPB y ASURB también al alza, mientras BBAJIOO cayó 2.77% en la sesión; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-10-30",
+  "tipo": "youtube",
+  "id_o_url": "Bjsh5xuN3kk",
+  "titulo": "Lula gana en Brasil y sacude a los inversores y al mercado de bonos",
+  "fuente": "Bloomberg en Español",
+  "url_fuente": "https://www.youtube.com/watch?v=Bjsh5xuN3kk",
+  "hora": "10:00",
+  "emisoras": [
+   "FEMSAUBD",
+   "KOFUBL",
+   "AMXB"
+  ],
+  "movimiento": {
+   "FEMSAUBD": 1.01,
+   "KOFUBL": -0.09,
+   "AMXB": 1.41
+  },
+  "por_que": "Tras el triunfo de Lula, el real y los bonos de Brasil sufrieron pérdidas mensuales y la exposición brasileña de FEMSAUBD, KOFUBL y AMXB quedó en la mira, aunque en la sesión FEMSAUBD subió 1.01%, AMXB 1.41% y KOFUBL cayó 0.09%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-10-30",
+  "tipo": "youtube",
+  "id_o_url": "ir9MljQkhK0",
+  "titulo": "PIB de México creció 0.9% en 3T, estimación oportuna del Inegi; arrastre estadístico apunta a 1.8%",
+  "fuente": "El Economista",
+  "url_fuente": "https://www.youtube.com/watch?v=ir9MljQkhK0",
+  "hora": "10:30",
+  "emisoras": [
+   "WALMEX",
+   "MEXTRAC",
+   "FEMSAUBD"
+  ],
+  "movimiento": {
+   "WALMEX": 3.32,
+   "MEXTRAC": 0.36,
+   "FEMSAUBD": 1.01
+  },
+  "por_que": "La estimación oportuna del INEGI mostró un PIB del 3T mejor a lo esperado, lo que enfría la presión por recortes de Banxico, y ese día WALMEX subió 3.32% y el MEXTRAC09 0.36%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-10-30",
+  "tipo": "imagen",
+  "id_o_url": "https://elceo.com/wp-content/uploads/2026/10/BMV_y_Wall_Street_30_de_octubre_2026-1.jpg",
+  "titulo": "BMV y Wall Street hoy: así cierran las bolsas este 30 de octubre de 2026",
+  "fuente": "El CEO",
+  "url_fuente": "https://elceo.com/mercados/bmv-ipc-wall-street-hoy-30-de-octubre-de-2026-cierre/",
+  "hora": "16:02",
+  "emisoras": [
+   "GMEXICOB",
+   "PEOLES",
+   "MEGACPO",
+   "MEXTRAC"
+  ],
+  "movimiento": {
+   "GMEXICOB": -4.01,
+   "PEOLES": -3.43,
+   "MEGACPO": 3.99,
+   "MEXTRAC": 0.36
+  },
+  "por_que": "El oro cayó 3.63% y la plata 6.2% en una sesión de aversión al riesgo por el desplome de acciones de IA, y Grupo México (-4.01%) y Peñoles lideraron las pérdidas del IPC, que aun así cerró su mejor mes desde noviembre de 2023; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-03",
+  "tipo": "youtube",
+  "id_o_url": "D8P-kPZYdPo",
+  "titulo": "Elecciones de medio término de 2026: los estadounidenses votan sobre el segundo mandato de Trump",
+  "fuente": "Bloomberg en Español",
+  "url_fuente": "https://www.youtube.com/watch?v=D8P-kPZYdPo",
+  "hora": "12:47",
+  "emisoras": [
+   "MEXTRAC",
+   "GAPB",
+   "MEGACPO",
+   "PEOLES"
+  ],
+  "movimiento": {
+   "MEXTRAC": 1.22,
+   "GAPB": 3.35,
+   "MEGACPO": 3.66,
+   "PEOLES": -3.64
+  },
+  "por_que": "Los inversionistas operaron con cautela por las elecciones intermedias de EE.UU. (jornada del 3 de noviembre), y aun así el MEXTRAC09 subió 1.22%, con MEGACPO +3.66% y GAPB +3.35%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-03",
+  "tipo": "youtube",
+  "id_o_url": "t7Mbuk0aIB0",
+  "titulo": "Peso mexicano pierde 1.5% frente al dólar en mercado cauteloso por elecciones en EU",
+  "fuente": "El Economista",
+  "url_fuente": "https://www.youtube.com/watch?v=t7Mbuk0aIB0",
+  "hora": "18:55",
+  "emisoras": [
+   "MEXTRAC",
+   "ASURB",
+   "OMAB"
+  ],
+  "movimiento": {
+   "MEXTRAC": 1.22,
+   "ASURB": 2.98,
+   "OMAB": 2.77
+  },
+  "por_que": "El peso perdió cerca de 1.5% frente al dólar en un mercado cauteloso por las elecciones en EE.UU., mientras la BMV volvió a superar los 70,000 puntos y el MEXTRAC09 subió 1.22%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-03",
+  "tipo": "imagen",
+  "id_o_url": "https://elceo.com/wp-content/uploads/2026/11/BMV-03-nov-1.jpg",
+  "titulo": "BMV y Wall Street hoy: así cierran las bolsas este 3 de noviembre de 2026",
+  "fuente": "El CEO",
+  "url_fuente": "https://elceo.com/mercados/bmv-ipc-wall-street-hoy-3-de-noviembre-de-2026-cierre/",
+  "hora": "16:12",
+  "emisoras": [
+   "PEOLES",
+   "GAPB",
+   "ASURB",
+   "GFNORTEO"
+  ],
+  "movimiento": {
+   "PEOLES": -3.64,
+   "GAPB": 3.35,
+   "ASURB": 2.98,
+   "GFNORTEO": 0.99
+  },
+  "por_que": "Volaris subió 8.38% y Peñoles fue la peor del IPC (-3.65%) en un día en que el IPC superó los 70,000 puntos, GAPB y ASURB subieron más de 3% y Banorte reportó un alza de 20% en su utilidad trimestral; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-04",
+  "tipo": "youtube",
+  "id_o_url": "i2wEcBq3M9U",
+  "titulo": "Midterms 2026: Democrats Win Control of Congress in Election Landslide",
+  "fuente": "Bloomberg Television",
+  "url_fuente": "https://www.youtube.com/watch?v=i2wEcBq3M9U",
+  "hora": "01:17",
+  "emisoras": [
+   "MEXTRAC",
+   "WALMEX",
+   "PEOLES"
+  ],
+  "movimiento": {
+   "MEXTRAC": 0.73,
+   "WALMEX": 4.32,
+   "PEOLES": 5.53
+  },
+  "por_que": "Los demócratas ganaron el control del Congreso y la BMV cerró en su mejor nivel en más de ocho meses (IPC +0.87%), con el MEXTRAC09 +0.73%, WALMEX +4.32% y PEOLES +5.53%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-04",
+  "tipo": "youtube",
+  "id_o_url": "678KH_e8ZOY",
+  "titulo": "Peso mexicano avanza frente al dólar tras contundente victoria de los demócratas en EU",
+  "fuente": "El Economista",
+  "url_fuente": "https://www.youtube.com/watch?v=678KH_e8ZOY",
+  "hora": "10:01",
+  "emisoras": [
+   "WALMEX",
+   "MEXTRAC",
+   "GFNORTEO"
+  ],
+  "movimiento": {
+   "WALMEX": 4.32,
+   "MEXTRAC": 0.73,
+   "GFNORTEO": -2.35
+  },
+  "por_que": "El peso avanzó frente al dólar tras la victoria demócrata, recuperando parte de la caída del día previo, y WALMEX subió 4.32% mientras GFNORTEO bajó 2.35%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-04",
+  "tipo": "imagen",
+  "id_o_url": "https://cdn-3.expansion.mx/dims4/default/64d6b88/2147483647/strip/true/crop/1200x630+0+85/resize/1200x630!/format/jpg/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fcd%2F29%2F8a138eac4af4b08e9605e74de356%2Fbmv-peso-mexicano-elecciones-estados-unidos-donald-trump.jpg",
+  "titulo": "La BMV y el peso mexicano celebran el resultado electoral en Estados Unidos",
+  "fuente": "Expansión",
+  "url_fuente": "https://expansion.mx/mercados/2026/11/04/peso-mexicano-bmv-celebran-elecciones-estados-unidos",
+  "hora": "09:25",
+  "emisoras": [
+   "MEXTRAC",
+   "WALMEX",
+   "PEOLES",
+   "AC"
+  ],
+  "movimiento": {
+   "MEXTRAC": 0.73,
+   "WALMEX": 4.32,
+   "PEOLES": 5.53,
+   "AC": 1.31
+  },
+  "por_que": "La BMV repuntó con fuerza después de que los demócratas ganaran ambas cámaras, en lo que se leyó como un castigo político a Trump, con el MEXTRAC09 +0.73%, PEOLES +5.53% y AC +1.31%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-05",
+  "tipo": "youtube",
+  "id_o_url": "50V2BcYo3ew",
+  "titulo": "Nvidia Plunges 9% as AI Selloff Wipes Out $2.3 Trillion | Closing Bell",
+  "fuente": "Bloomberg Television",
+  "url_fuente": "https://www.youtube.com/watch?v=50V2BcYo3ew",
+  "hora": "15:32",
+  "emisoras": [
+   "MEXTRAC",
+   "BOLSAA",
+   "GFNORTEO",
+   "GMEXICOB"
+  ],
+  "movimiento": {
+   "MEXTRAC": 0.7,
+   "BOLSAA": 2.74,
+   "GFNORTEO": 2.38,
+   "GMEXICOB": -2.75
+  },
+  "por_que": "Wall Street vivió una venta masiva de acciones de IA y centros de datos (Nvidia -9% según Bloomberg) pero la BMV subió 0.36% con refugio en consumo y financieras, con BOLSAA +2.74%, GFNORTEO +2.38% y GMEXICOB -2.75%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-05",
+  "tipo": "youtube",
+  "id_o_url": "xF5LV9vLjok",
+  "titulo": "Banxico sorprende al mercado y baja la tasa a 6.25% pese al repunte de la inflación",
+  "fuente": "El Economista",
+  "url_fuente": "https://www.youtube.com/watch?v=xF5LV9vLjok",
+  "hora": "18:30",
+  "emisoras": [
+   "GFNORTEO",
+   "BBAJIOO",
+   "GAPB"
+  ],
+  "movimiento": {
+   "GFNORTEO": 2.38,
+   "BBAJIOO": 0.54,
+   "GAPB": -2.44
+  },
+  "por_que": "Banxico recortó 25 pb a 6.25% por votación dividida de 3 a 2, sorprendiendo al mercado que esperaba una pausa, y el peso cayó tras el anuncio, mientras GFNORTEO subió 2.38%, BBAJIOO 0.54% y GAPB bajó 2.44%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-05",
+  "tipo": "imagen",
+  "id_o_url": "https://cdn-3.expansion.mx/dims4/default/c2dca0d/2147483647/strip/true/crop/2418x1269+0+45/resize/1200x630!/format/jpg/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F0e%2Fe2%2F6dd0f1414d13ac4ef74c07b6937d%2Fbanxico-tasa-de-interes-victoria-rodriguez.jpeg",
+  "titulo": "Banco de México sorprende y recorta su tasa de interés a 6.25%",
+  "fuente": "Expansión",
+  "url_fuente": "https://expansion.mx/economia/2026/11/05/banco-de-mexico-sorprende-y-recorta-su-tasa-de-interes-a-6-25",
+  "hora": "13:10",
+  "emisoras": [
+   "MEXTRAC",
+   "GFNORTEO",
+   "AC",
+   "WALMEX"
+  ],
+  "movimiento": {
+   "MEXTRAC": 0.7,
+   "GFNORTEO": 2.38,
+   "AC": 1.92,
+   "WALMEX": 2.19
+  },
+  "por_que": "La Junta de Gobierno del Banco de México bajó la tasa de 6.50% a 6.25% en una decisión dividida, y ese día el MEXTRAC09 subió 0.70%, GFNORTEO 2.38%, AC 1.92% y WALMEX 2.19%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-06",
+  "tipo": "youtube",
+  "id_o_url": "lre_r1SIMwA",
+  "titulo": "Stocks Selloff Pauses Rebound After Tech Rout; Jobs Report Ahead",
+  "fuente": "Bloomberg Television",
+  "url_fuente": "https://www.youtube.com/watch?v=lre_r1SIMwA",
+  "hora": "06:45",
+  "emisoras": [
+   "MEXTRAC",
+   "PEOLES",
+   "GMEXICOB"
+  ],
+  "movimiento": {
+   "MEXTRAC": 0.26,
+   "PEOLES": 2.69,
+   "GMEXICOB": -0.63
+  },
+  "por_que": "Las acciones frenaron la caída tras el desplome tecnológico previo mientras el mercado esperaba el informe de empleo de EE.UU., y el MEXTRAC09 subió 0.26% con PEOLES +2.69% y GMEXICOB -0.63%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-06",
+  "tipo": "youtube",
+  "id_o_url": "vsCKVmbjQq0",
+  "titulo": "Peso mexicano recupera terreno frente al dólar tras fuerte caída por anuncio del Banxico",
+  "fuente": "El Economista",
+  "url_fuente": "https://www.youtube.com/watch?v=vsCKVmbjQq0",
+  "hora": "10:46",
+  "emisoras": [
+   "GFNORTEO",
+   "AC",
+   "AMXB"
+  ],
+  "movimiento": {
+   "GFNORTEO": -1.22,
+   "AC": 1.74,
+   "AMXB": 1.44
+  },
+  "por_que": "El peso recuperó terreno tras la fuerte caída por el recorte sorpresivo de Banxico, mientras Banorte fue la peor del IPC (GFNORTEO -1.22%) y AC +1.74% y AMXB +1.44% subieron; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-06",
+  "tipo": "imagen",
+  "id_o_url": "https://elceo.com/wp-content/uploads/2026/11/BMV-06-nov-1.jpg",
+  "titulo": "BMV y Wall Street hoy: así cierran las bolsas este 6 de noviembre de 2026",
+  "fuente": "El CEO",
+  "url_fuente": "https://elceo.com/mercados/bmv-ipc-wall-street-hoy-6-de-noviembre-de-2026-cierre/",
+  "hora": "16:40",
+  "emisoras": [
+   "MEXTRAC",
+   "AC",
+   "AMXB",
+   "KOFUBL"
+  ],
+  "movimiento": {
+   "MEXTRAC": 0.26,
+   "AC": 1.74,
+   "AMXB": 1.44,
+   "KOFUBL": -1.35
+  },
+  "por_que": "El IPC cerró la semana con alza de 2.25% (su mejor desde mediados de octubre) apoyado en el recorte de Banxico, mientras S&P y Nasdaq se recuperaban tras caer cerca de 5% el jueves, con el MEXTRAC09 +0.26%, AC +1.74% y KOFUBL -1.35%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-09",
+  "tipo": "youtube",
+  "id_o_url": "esdKJns0lVA",
+  "titulo": "Nvidia investiga a su CEO; Santiago Peña enfrenta cargos | Daybreak América Latina",
+  "fuente": "Bloomberg en Español",
+  "url_fuente": "https://www.youtube.com/watch?v=esdKJns0lVA",
+  "hora": "06:18",
+  "emisoras": [
+   "MEXTRAC",
+   "GMEXICOB",
+   "KOFUBL"
+  ],
+  "movimiento": {
+   "MEXTRAC": 0.55,
+   "GMEXICOB": 2.73,
+   "KOFUBL": 2.4
+  },
+  "por_que": "Nvidia abrió una investigación interna sobre su director general por presuntos vínculos con espionaje de China y cayó 4.27%, pero Wall Street subió con el petróleo cediendo cerca de 6%, y el MEXTRAC09 subió 0.55%, GMEXICOB 2.73% y KOFUBL 2.40%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-09",
+  "tipo": "youtube",
+  "id_o_url": "CpvMUmJiZ-A",
+  "titulo": "Inflación en México se acelera por tercer mes y llega a 3.75% anual en octubre",
+  "fuente": "El Economista",
+  "url_fuente": "https://www.youtube.com/watch?v=CpvMUmJiZ-A",
+  "hora": "12:26",
+  "emisoras": [
+   "MEXTRAC",
+   "WALMEX",
+   "AMXB",
+   "AC"
+  ],
+  "movimiento": {
+   "MEXTRAC": 0.55,
+   "WALMEX": 0.83,
+   "AMXB": 0.83,
+   "AC": -1.12
+  },
+  "por_que": "La inflación anual de octubre subió a 3.75% (tercer mes al alza y por encima de lo esperado, pero dentro del rango de Banxico) y el peso se apreció, con el MEXTRAC09 +0.55%, WALMEX +0.83%, AMXB +0.83% y AC -1.12%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-09",
+  "tipo": "imagen",
+  "id_o_url": "https://elceo.com/wp-content/uploads/2026/11/BMV-09-nov-1.jpg",
+  "titulo": "BMV y Wall Street hoy: así cierran las bolsas este 9 de noviembre de 2026",
+  "fuente": "El CEO",
+  "url_fuente": "https://elceo.com/mercados/bmv-ipc-wall-street-hoy-9-de-noviembre-de-2026-cierre/",
+  "hora": "16:22",
+  "emisoras": [
+   "GMEXICOB",
+   "KOFUBL",
+   "MEXTRAC",
+   "GAPB"
+  ],
+  "movimiento": {
+   "GMEXICOB": 2.73,
+   "KOFUBL": 2.4,
+   "MEXTRAC": 0.55,
+   "GAPB": -0.99
+  },
+  "por_que": "El IPC alcanzó un máximo histórico (71,855.64 puntos, quinta alza al hilo) por menor aversión al riesgo tras el desplome del petróleo, con Volaris +5.01% como mejor emisora, GMEXICOB +2.73%, KOFUBL +2.40% y GAPB -0.99%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-10",
+  "tipo": "youtube",
+  "id_o_url": "lyIdi0tfeNs",
+  "titulo": "Food, Gas Prices Push October CPI Higher",
+  "fuente": "Bloomberg Television",
+  "url_fuente": "https://www.youtube.com/watch?v=lyIdi0tfeNs",
+  "hora": "08:23",
+  "emisoras": [
+   "MEXTRAC",
+   "KOFUBL",
+   "GAPB"
+  ],
+  "movimiento": {
+   "MEXTRAC": 0.81,
+   "KOFUBL": 2.67,
+   "GAPB": 2.79
+  },
+  "por_que": "El CPI (inflación al consumidor) de EE.UU. de octubre subió 0.4% mensual contra 0.3% esperado y elevó las apuestas de un alza de la Fed, mientras en México el MEXTRAC09 subió 0.81%, KOFUBL 2.67% y GAPB 2.79%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-10",
+  "tipo": "youtube",
+  "id_o_url": "z0B7cFONR5A",
+  "titulo": "Peso mexicano se deprecia frente al dólar tras reporte de inflación de Estados Unidos",
+  "fuente": "El Economista",
+  "url_fuente": "https://www.youtube.com/watch?v=z0B7cFONR5A",
+  "hora": "10:56",
+  "emisoras": [
+   "PEOLES",
+   "FEMSAUBD",
+   "MEXTRAC"
+  ],
+  "movimiento": {
+   "PEOLES": -3.58,
+   "FEMSAUBD": 1.9,
+   "MEXTRAC": 0.81
+  },
+  "por_que": "El peso se depreció tras el reporte de inflación de EE.UU. y las divisas de Latinoamérica tocaron mínimos de siete meses, pero la BMV se mantuvo cerca de su récord (IPC +0.05%), con PEOLES -3.58%, FEMSAUBD +1.90% y MEXTRAC09 +0.81%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-10",
+  "tipo": "imagen",
+  "id_o_url": "https://elceo.com/wp-content/uploads/2026/11/BMV-10-nov-1.jpg",
+  "titulo": "BMV y Wall Street hoy: así cierran las bolsas este 10 de noviembre de 2026",
+  "fuente": "El CEO",
+  "url_fuente": "https://elceo.com/mercados/bmv-ipc-wall-street-hoy-10-de-noviembre-de-2026-cierre/",
+  "hora": "16:31",
+  "emisoras": [
+   "PEOLES",
+   "GAPB",
+   "KOFUBL",
+   "FEMSAUBD"
+  ],
+  "movimiento": {
+   "PEOLES": -3.58,
+   "GAPB": 2.79,
+   "KOFUBL": 2.67,
+   "FEMSAUBD": 1.9
+  },
+  "por_que": "El IPC cerró en máximos por segundo día y con su sexta alza seguida (71,893.88 puntos) por reacomodo de portafolios hacia Latinoamérica mientras Wall Street caía por el CPI de EE.UU. y Nvidia (-5.47%), con GAPB +2.79%, KOFUBL +2.67%, FEMSAUBD +1.90% y PEOLES -3.58%; contexto de la sesión, no causa demostrada."
+ },
+ {
+  "fecha": "2026-11-11",
+  "tipo": "youtube",
+  "id_o_url": "x0xoCwRrHx8",
+  "titulo": "AI Stocks Rally After Coreweave's Results; Treasury Market Closed",
+  "fuente": "Bloomberg Television",
+  "url_fuente": "https://www.youtube.com/watch?v=x0xoCwRrHx8",
+  "hora": null,
+  "emisoras": [
+   "MEXTRAC",
+   "GFNORTEO",
+   "KOFUBL",
+   "ASURB",
+   "OMAB",
+   "WALMEX"
+  ],
+  "movimiento": {
+   "MEXTRAC": 0.46,
+   "GFNORTEO": 1.5,
+   "KOFUBL": 0.8,
+   "ASURB": 1.61,
+   "OMAB": 1.47,
+   "WALMEX": -1.45
+  },
+  "por_que": "El rebote de las acciones de IA tras los resultados de CoreWeave (+24.7%) acompañó un Nasdaq +1.60% y un IPC en máximo histórico (72,006.05, +0.16%): contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-11-11",
+  "tipo": "youtube",
+  "id_o_url": "h7Xq6wvIDWE",
+  "titulo": "Nvidia Preparing to Oust CEO Jensen Huang: WSJ",
+  "fuente": "Bloomberg Television",
+  "url_fuente": "https://www.youtube.com/watch?v=h7Xq6wvIDWE",
+  "hora": "16:51",
+  "emisoras": [
+   "MEXTRAC",
+   "FEMSAUBD"
+  ],
+  "movimiento": {
+   "MEXTRAC": 0.46,
+   "FEMSAUBD": -0.26
+  },
+  "por_que": "El WSJ informó después del cierre de la BMV que el consejo de Nvidia preparaba la salida de su CEO, noticia que pegó en tecnológicas al día siguiente y no en la sesión mexicana del 11-nov: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-11-11",
+  "tipo": "imagen",
+  "id_o_url": "https://elceo.com/wp-content/uploads/2026/11/BMV-11-nov-1.jpg",
+  "titulo": "BMV y Wall Street hoy: así cierran las bolsas este 11 de noviembre de 2026",
+  "fuente": "El CEO",
+  "url_fuente": "https://elceo.com/mercados/bmv-ipc-wall-street-hoy-11-de-noviembre-de-2026-cierre/",
+  "hora": "16:26",
+  "emisoras": [
+   "MEXTRAC",
+   "ASURB",
+   "GFNORTEO",
+   "OMAB",
+   "WALMEX"
+  ],
+  "movimiento": {
+   "MEXTRAC": 0.46,
+   "ASURB": 1.61,
+   "GFNORTEO": 1.5,
+   "OMAB": 1.47,
+   "WALMEX": -1.45
+  },
+  "por_que": "El CEO atribuye el cierre en máximos del IPC a la recuperación de las acciones de IA y a una menor aversión al riesgo, con Walmart como mayor baja local: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-11-12",
+  "tipo": "youtube",
+  "id_o_url": "C_TjOTYXlWo",
+  "titulo": "Stocks Down as Nvidia CEO Resigns | Closing Bell",
+  "fuente": "Bloomberg Television",
+  "url_fuente": "https://www.youtube.com/watch?v=C_TjOTYXlWo",
+  "hora": null,
+  "emisoras": [
+   "KOFUBL",
+   "FEMSAUBD",
+   "PEOLES",
+   "OMAB",
+   "MEXTRAC"
+  ],
+  "movimiento": {
+   "KOFUBL": -2.27,
+   "FEMSAUBD": -1.0,
+   "PEOLES": -2.17,
+   "OMAB": -2.04,
+   "MEXTRAC": -0.38
+  },
+  "por_que": "Wall Street cayó con Nvidia −4.34% tras la renuncia de Jensen Huang y el Brent subió más de 3%, mientras el IPC cortaba siete alzas (−0.27%): contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-11-12",
+  "tipo": "youtube",
+  "id_o_url": "9nfaUliXMZE",
+  "titulo": "Sheinbaum RESPONDE a amenaza de ARANCELES de Trump",
+  "fuente": "El Financiero Bloomberg",
+  "url_fuente": "https://www.youtube.com/watch?v=9nfaUliXMZE",
+  "hora": null,
+  "emisoras": [
+   "MEXTRAC",
+   "AMXB",
+   "FEMSAUBD",
+   "KOFUBL"
+  ],
+  "movimiento": {
+   "MEXTRAC": -0.38,
+   "AMXB": -1.21,
+   "FEMSAUBD": -1.0,
+   "KOFUBL": -2.27
+  },
+  "por_que": "La amenaza de Trump de duplicar aranceles a México por la caravana migrante fue citada por Masari, junto con la desaceleración industrial, entre los motivos de la baja del IPC (−0.27%): contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-11-12",
+  "tipo": "imagen",
+  "id_o_url": "https://elceo.com/wp-content/uploads/2026/11/bmv-1.jpg",
+  "titulo": "BMV y Wall Street hoy: así cierran las bolsas este 12 de noviembre de 2026",
+  "fuente": "El CEO",
+  "url_fuente": "https://elceo.com/mercados/bmv-ipc-wall-street-hoy-12-de-noviembre-de-2026-cierre/",
+  "hora": "16:13",
+  "emisoras": [
+   "KOFUBL",
+   "PEOLES",
+   "OMAB",
+   "AC",
+   "MEXTRAC"
+  ],
+  "movimiento": {
+   "KOFUBL": -2.27,
+   "PEOLES": -2.17,
+   "OMAB": -2.04,
+   "AC": 2.26,
+   "MEXTRAC": -0.38
+  },
+  "por_que": "El CEO cita la desaceleración industrial, las amenazas arancelarias de Trump, el petróleo al alza y la salida de Huang en Nvidia como presiones del día, con Arca Continental como mayor alza local: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-11-13",
+  "tipo": "youtube",
+  "id_o_url": "DZmUEZnDI_I",
+  "titulo": "Microsoft Races to Fix Outage, Stocks Slip of Inflation Test",
+  "fuente": "Bloomberg Television",
+  "url_fuente": "https://www.youtube.com/watch?v=DZmUEZnDI_I",
+  "hora": null,
+  "emisoras": [
+   "GFNORTEO",
+   "GMEXICOB",
+   "KOFUBL",
+   "MEXTRAC"
+  ],
+  "movimiento": {
+   "GFNORTEO": -3.33,
+   "GMEXICOB": -1.13,
+   "KOFUBL": 1.52,
+   "MEXTRAC": -0.54
+  },
+  "por_que": "Las acciones de EU cedieron tras el IPP de octubre (+0.3% mensual, +6.5% anual) y Nvidia siguió bajo presión, mientras el IPC cayó 0.84% con Banorte −3.33%: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-11-13",
+  "tipo": "youtube",
+  "id_o_url": "tKGS2_rsJPE",
+  "titulo": "El desplome de Nvidia, Trump y México, AMIB, Anthropic y la fusión de Musk",
+  "fuente": "Bloomberg Línea",
+  "url_fuente": "https://www.youtube.com/watch?v=tKGS2_rsJPE",
+  "hora": "08:57",
+  "emisoras": [
+   "MEXTRAC",
+   "GFNORTEO",
+   "GMEXICOB"
+  ],
+  "movimiento": {
+   "MEXTRAC": -0.54,
+   "GFNORTEO": -3.33,
+   "GMEXICOB": -1.13
+  },
+  "por_que": "Por su título, el programa repasa el desplome de Nvidia y la amenaza arancelaria de Trump a México, temas que acompañaron una baja de 0.84% del IPC sin causa publicada para Banorte: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-11-13",
+  "tipo": "imagen",
+  "id_o_url": "https://elceo.com/wp-content/uploads/2026/11/BMV-13-nov-1-1.jpg",
+  "titulo": "BMV y Wall Street hoy: así cierran las bolsas este 13 de noviembre de 2026",
+  "fuente": "El CEO",
+  "url_fuente": "https://elceo.com/mercados/bmv-ipc-wall-street-hoy-13-de-noviembre-de-2026-cierre/",
+  "hora": "17:17",
+  "emisoras": [
+   "GFNORTEO",
+   "MEGACPO",
+   "GMEXICOB",
+   "KOFUBL",
+   "MEXTRAC"
+  ],
+  "movimiento": {
+   "GFNORTEO": -3.33,
+   "MEGACPO": -2.4,
+   "GMEXICOB": -1.13,
+   "KOFUBL": 1.52,
+   "MEXTRAC": -0.54
+  },
+  "por_que": "El CEO reporta el IPC −0.84% con Banorte, Megacable y Bimbo como mayores lastres y Wall Street presionado por Nvidia (HSBC la bajó a mantener) y por el IPP, sin explicar la baja de cada emisora: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "youtube",
+  "id_o_url": "CqVb9AnOQH8",
+  "titulo": "Nvidia Boosts Forecast, Quashes Huang’s Return",
+  "fuente": "Bloomberg Television",
+  "url_fuente": "https://www.youtube.com/watch?v=CqVb9AnOQH8",
+  "hora": null,
+  "emisoras": [
+   "MEXTRAC"
+  ],
+  "movimiento": {
+   "MEXTRAC": -0.9
+  },
+  "por_que": "Evento del calendario: Nvidia reportó tras el cierre del 17-nov ingresos de $115.8 mil millones y guía de $130 mil millones, y el video (del 18-nov) cubre el reporte; el IPC ya había cerrado −1.15% y el efecto en la BMV llega el día siguiente: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "youtube",
+  "id_o_url": "kMEGlz99E08",
+  "titulo": "Stocks End Lower For A 4th Straight Session, Nvidia Earnings",
+  "fuente": "Bloomberg Television",
+  "url_fuente": "https://www.youtube.com/watch?v=kMEGlz99E08",
+  "hora": "18:23",
+  "emisoras": [
+   "GMEXICOB",
+   "GAPB",
+   "FEMSAUBD",
+   "GFNORTEO",
+   "MEXTRAC"
+  ],
+  "movimiento": {
+   "GMEXICOB": -3.47,
+   "GAPB": -2.26,
+   "FEMSAUBD": -0.58,
+   "GFNORTEO": -1.72,
+   "MEXTRAC": -0.9
+  },
+  "por_que": "Wall Street cayó con ventas de tecnológicas antes del reporte de Nvidia (S&P 500 −1.03%) y la BMV, que reabrió tras el feriado del 16-nov, se puso al día con un IPC −1.15%: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "imagen",
+  "id_o_url": "https://elceo.com/wp-content/uploads/2026/11/BMV-17-nov-1.jpg",
+  "titulo": "BMV y Wall Street hoy: así cierran las bolsas este 17 de noviembre de 2026",
+  "fuente": "El CEO",
+  "url_fuente": "https://elceo.com/mercados/bmv-ipc-wall-street-hoy-17-de-noviembre-de-2026-cierre/",
+  "hora": "16:26",
+  "emisoras": [
+   "GMEXICOB",
+   "GAPB",
+   "PEOLES",
+   "OMAB",
+   "GFNORTEO",
+   "AC"
+  ],
+  "movimiento": {
+   "GMEXICOB": -3.47,
+   "GAPB": -2.26,
+   "PEOLES": -2.16,
+   "OMAB": -1.86,
+   "GFNORTEO": -1.72,
+   "AC": -1.55
+  },
+  "por_que": "El CEO reporta el IPC −1.15% (tercera baja seguida) por cautela, incertidumbre tecnológica y movimientos de portafolio, sin atribuir causa a cada emisora: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "youtube",
+  "id_o_url": "Eg14oEdwWfI",
+  "titulo": "Sheinbaum acuerda con Trump NUEVA REUNIÓN en cumbre del G20",
+  "fuente": "El Financiero Bloomberg",
+  "url_fuente": "https://www.youtube.com/watch?v=Eg14oEdwWfI",
+  "hora": "13:00",
+  "emisoras": [
+   "MEXTRAC",
+   "FEMSAUBD",
+   "GMEXICOB"
+  ],
+  "movimiento": {
+   "MEXTRAC": -1.14,
+   "FEMSAUBD": -0.45,
+   "GMEXICOB": -6.32
+  },
+  "por_que": "Evento del calendario (APEC Shenzhen): Sheinbaum y Trump se reunieron brevemente y acordaron otra charla en el G20; al cierre el MEXTRAC09 bajó 1.14%, con metales y peso a la baja: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "youtube",
+  "id_o_url": "9KMXMKHowxg",
+  "titulo": "S&P Falls to Lowest Since July, Anthropic IPO Looms | Closing Bell",
+  "fuente": "Bloomberg Television",
+  "url_fuente": "https://www.youtube.com/watch?v=9KMXMKHowxg",
+  "hora": "15:26",
+  "emisoras": [
+   "MEXTRAC",
+   "BOLSAA",
+   "AC",
+   "GMEXICOB"
+  ],
+  "movimiento": {
+   "MEXTRAC": -1.14,
+   "BOLSAA": -2.71,
+   "AC": -1.86,
+   "GMEXICOB": -6.32
+  },
+  "por_que": "El S&P 500 cayó a su nivel más bajo desde julio con la IPO de Anthropic por fijarse; en la BMV el MEXTRAC09 cerró −1.14% y GMEXICOB −6.32%: contexto de la sesión, no causa demostrada"
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "imagen",
+  "id_o_url": "https://elceo.com/wp-content/uploads/2026/11/BMV-18-nov.jpg",
+  "titulo": "BMV y Wall Street hoy: así cotizan las bolsas este 18 de noviembre de 2026",
+  "fuente": "El CEO",
+  "url_fuente": "https://elceo.com/mercados/bmv-ipc-wall-street-hoy-18-de-noviembre-de-2026-apertura/",
+  "hora": "09:32",
+  "emisoras": [
+   "GMEXICOB",
+   "PEOLES",
+   "BOLSAA",
+   "AC"
+  ],
+  "movimiento": {
+   "GMEXICOB": -6.32,
+   "PEOLES": -8.13,
+   "BOLSAA": -2.71,
+   "AC": -1.86
+  },
+  "por_que": "El CEO atribuyó la apertura a la baja sobre todo a la caída de metales (oro −2.76% y plata −4.68% en futuros); al cierre Grupo México bajó 6.32% y Peñoles 8.13%: contexto de la sesión, no causa demostrada"
+ }
+]

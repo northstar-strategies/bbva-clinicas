@@ -1,6 +1,6 @@
 ---
 fecha_corte: 2026-11-18
-hora_publicacion: 2026-11-18 19:57 CDMX
+hora_publicacion: 2026-11-18 21:31 CDMX
 fuente_precios: Price Close
 version: v7.0
 dias_habiles_desde_dia0: 21
