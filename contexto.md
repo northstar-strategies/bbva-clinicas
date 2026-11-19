@@ -1,13 +1,11 @@
 ---
 fecha_corte: 2026-11-18
-hora_publicacion: 2026-11-18 19:51 CDMX
+hora_publicacion: 2026-11-18 19:57 CDMX
 fuente_precios: Price Close
 version: v7.0
 dias_habiles_desde_dia0: 21
 tablero: https://northstar-strategies.github.io/bbva-clinicas/
 ---
-
-**Aviso: la réplica en Python no está cuadrada a 0 contra esta versión del tracker. Las cifras del día son preliminares.**
 
 # North Star Strategies · estado del fondo al mié 18-nov-2026
 
