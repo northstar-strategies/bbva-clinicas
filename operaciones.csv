@@ -94,4 +94,5 @@ fecha,hora,simbolo,tipo,titulos,precio,comision,iva,bloque,motivo,comentario,caj
 2026-10-28,,AC,DIVIDENDO,1469,2.0000,0.00,0.00,REPRESENTATIVA,Dividendo en efectivo,ex 2026-10-27 · pago 2026-10-28 · Refinitiv,2938.00,2026-10-28
 2026-11-06,,GAPB,DIVIDENDO,1372,20.8000,0.00,0.00,REPRESENTATIVA,Dividendo en efectivo,ex 2026-11-05 · pago 2026-11-06 · Refinitiv,28537.60,2026-11-06
 2026-11-11,,AMXB,DIVIDENDO,22894,0.2700,0.00,0.00,REPRESENTATIVA,Dividendo en efectivo,ex 2026-11-10 · pago 2026-11-11 · Refinitiv,6181.38,2026-11-11
+2026-11-18,,PINFRA,DIVIDENDO,1233,2.4919,0.00,0.00,ACTIVA,Dividendo en efectivo,"ex 2026-11-17 · pago 2026-11-18 · Manual · 0.133454 USD × FIX 18.6723 (Banxico, 18-nov)",3072.50,2026-11-18
 2026-11-18,,WALMEX,DIVIDENDO,6439,0.5800,0.00,0.00,REPRESENTATIVA,Dividendo en efectivo,ex 2026-11-17 · pago 2026-11-18 · Refinitiv,3734.62,2026-11-18

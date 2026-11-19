@@ -1,22 +1,22 @@
 # North Star Strategies · Fondo de Inversión ITESM-BBVA
 
-**Actualizado:** 18/11/2026 18:04 (hora CDMX) · precios **LSEG Refinitiv** · benchmark **MEXTRAC09** (etf)
+**Actualizado:** 18/11/2026 19:51 (hora CDMX) · precios **LSEG Refinitiv** · benchmark **MEXTRAC09** (etf)
 
 
 | | Último cierre (18/11) | Acumulado |
 |---|---:|---:|
-| Cartera | -1.47% | +1.86% |
+| Cartera | -1.44% | +1.89% |
 | MEXTRAC | -1.14% | +5.41% |
-| **Diferencia** | **-0.32%** | **-3.56%** |
+| **Diferencia** | **-0.29%** | **-3.53%** |
 
-Valor del portafolio **$10,552,837.83** · día 21 desde el portafolio de referencia (16/10) · TE ex ante 5.87% (límite 10%) · beta 0.90
+Valor del portafolio **$10,555,910.33** · día 21 desde el portafolio de referencia (16/10) · TE ex ante 5.87% (límite 10%) · beta 0.90
 
 
 ## Día por día
 
 | Fecha | Valor | Cartera | MEXTRAC | Diferencia | Acum. cartera | Acum. MEXTRAC | Acum. diferencia |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| 18/11/2026 | $10,552,838 | -1.47% | -1.14% | -0.32% | +1.86% | +5.41% | -3.56% |
+| 18/11/2026 | $10,555,910 | -1.44% | -1.14% | -0.29% | +1.89% | +5.41% | -3.53% |
 | 17/11/2026 | $10,709,841 | -0.98% | -0.90% | -0.08% | +3.37% | +6.63% | -3.26% |
 | 13/11/2026 | $10,815,604 | -0.51% | -0.54% | +0.04% | +4.39% | +7.60% | -3.21% |
 | 12/11/2026 | $10,870,656 | -0.31% | -0.38% | +0.07% | +4.92% | +8.19% | -3.27% |
@@ -38,18 +38,18 @@ Valor del portafolio **$10,552,837.83** · día 21 desde el portafolio de refere
 | 20/10/2026 | $10,410,769 | +0.46% | +0.89% | -0.44% | +0.49% | +1.26% | -0.78% |
 | 19/10/2026 | $10,363,607 | +0.03% | +0.37% | -0.34% | +0.03% | +0.37% | -0.34% |
 
-## Atribución del 18/11/2026 · alfa -32.1 pb
+## Atribución del 18/11/2026 · alfa -29.3 pb
 
 | Pieza | Aporte |
 |---|---:|
-| Emisoras | -42.27 pb |
+| Emisoras | -39.77 pb |
 | Efectivo | +0.09 pb |
-| MEXTRAC estimado / contra su canasta | +10.05 pb |
+| MEXTRAC estimado / contra su canasta | +10.42 pb |
 | Operaciones (ejecución contra cierre) | +0.00 pb |
 | Comisión e IVA | +0.00 pb |
-| **Total = alfa del día** | **-32.13 pb** |
+| **Total = alfa del día** | **-29.26 pb** |
 
-Sumaron: FEMSAUBD +5.5 pb · KOFUBL +3.4 pb · MEGACPO +1.9 pb · Restaron: GMEXICOB -23.4 pb · BOLSAA -9.3 pb · PEOLES -8.8 pb
+Sumaron: FEMSAUBD +5.5 pb · KOFUBL +3.4 pb · PINFRA +2.3 pb · Restaron: GMEXICOB -23.4 pb · BOLSAA -9.3 pb · PEOLES -8.8 pb
 
 Réplica en Python contra el tracker: diferencia máxima 1.7e-14 (2026-11-18T09:55).
 
@@ -67,12 +67,12 @@ Réplica en Python contra el tracker: diferencia máxima 1.7e-14 (2026-11-18T09:
 | GFNORTEO | 2,430 | 198.06 | -1.95% | 4.56% |
 | PINFRA | 1,233 | 305.92 | -1.20% | 3.57% |
 | WALMEX | 6,439 | 54.60 | -0.87% | 3.33% |
-| AC | 1,481 | 235.53 | -1.86% | 3.31% |
+| AC | 1,481 | 235.53 | -1.86% | 3.30% |
 | BBAJIOO | 5,399 | 55.28 | -0.91% | 2.83% |
 | MEGACPO | 3,980 | 57.97 | -0.05% | 2.19% |
 | ASURB | 427 | 493.23 | -0.66% | 2.00% |
 | PEOLES | 181 | 684.31 | -8.13% | 1.17% |
-| OMAB | 170 | 245.24 | -1.19% | 0.40% |
+| OMAB | 170 | 245.24 | -1.19% | 0.39% |
 
 ## Stop-loss y take-profit (datos al 18/11/2026)
 
