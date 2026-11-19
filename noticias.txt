@@ -231,6 +231,1199 @@ resumen:
   turistas provenientes de Estados Unidos, principal mercado emisor.
 
 ---
+fecha: 2026-11-18 17:55
+emisora: FED
+titulo: Newscasts - Fed's Barr says rate rises likely lie ahead
+fuente: Reuters
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nRTV1w84xs:4
+
+---
+fecha: 2026-11-18 17:55
+emisora: COBRE
+titulo: BUZZ-Australian miners tumble as copper hits seven-month low
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL3N46Z22G:1
+
+---
+fecha: 2026-11-18 17:49
+emisora: PETROLEO
+titulo: BUZZ-Asia Day Ahead-Trump-Xi-Putin summit, sliding commodities lead
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z18S:1
+
+---
+fecha: 2026-11-18 17:40
+emisora: PETROLEO
+titulo: SHH Margin Trading -- Dalian Port <601880.SS> Margin Long Amount is 855 (x10000) yuan, Short Selling Volume is 18 (x10000) shares
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nAZN4TVUUZ:1
+
+---
+fecha: 2026-11-18 17:40
+emisora: PETROLEO
+titulo: SHH Margin Trading -- Tianjin Port <600717.SS> Margin Long Amount is 1,243 (x10000) yuan, Short Selling Volume is 0.14 (x10000) shares
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nAZN4TVUMR:1
+
+---
+fecha: 2026-11-18 17:40
+emisora: PETROLEO
+titulo: SHH Margin Trading -- Rizhao Port <600017.SS> Margin Long Amount is 789 (x10000) yuan, Short Selling Volume is 1 (x10000) shares
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nAZN4TVTYJ:1
+
+---
+fecha: 2026-11-18 17:38
+emisora: FED
+titulo: Despite lower farm income this quarter, some see a brighter future
+fuente: AGWMAG
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rpp57:0
+
+---
+fecha: 2026-11-18 17:37
+emisora: PERU
+titulo: Findings from National University Broaden Understanding of Sustainability Research (Export Competitiveness of Peruvian Andean Grains: Structural Dy...
+fuente: ENEECO
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rpnks:0
+resumen:
+  Findings from National University Broaden Understanding of Sustainability Research
+  (Export Competitiveness of Peruvian Andean Grains: Structural Dynamics and Emerging
+  Water-sustainability Considerations, 2015-2024) 2026 NOV 18-- By a News Reporter-Staff
+  News Editor at Ecology Daily News-- Researchers detail new data in Sustainability
+  Research.
+
+---
+fecha: 2026-11-18 17:36
+emisora: FED
+titulo: 市場評估輝達財報、Fed紀要 美股漲跌互見!台積電ADR微揚
+fuente: YAHNEX
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261118:nNRA2rpnjt:0
+
+---
+fecha: 2026-11-18 17:32
+emisora: BOLSAA
+titulo: BMV - Aviso de Tenedores de AFIRMAR 00126
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nNDL748Rgj:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-18 17:32
+emisora: BOLSAA
+titulo: BMV - Amortizaciones AFIRMAR 04026
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nNDL1xmT5p:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. Amortizacion FECHA: 18/11/2026 BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-18 17:32
+emisora: BOLSAA
+titulo: BMV - Amortizaciones AFIRMAR 00126
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nNDL1WxKZ9:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. Amortizacion FECHA: 18/11/2026 BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-18 17:32
+emisora: BOLSAA
+titulo: BMV - Aviso de Tenedores de AFIRMAR 02326
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nNDL9CYkQy:1
+resumen:
+  Attention: The text below has been extracted from an image-only document using OCR
+  technology and may contain errors and omissions. You can access the original document
+  here. BOLSA MEXICANA DE VALORES, S.A.B.
+
+---
+fecha: 2026-11-18 17:32
+emisora: BOLSAA
+titulo: BMV - Composición de Cartera TRACS
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nNDL81CWjX:1
+
+---
+fecha: 2026-11-18 17:31
+emisora: FED
+titulo: Gold falls to 14‐month low below $3,750 on hawkish Fed rhetoric
+fuente: FORSTR
+tono: negativa
+impacto: bajo
+id: lseg:urn:link:webnews:20261118:nNRA2rpo0p:0
+
+---
+fecha: 2026-11-18 17:31
+emisora: FED
+titulo: RPT-ROI-Los riesgos más profundos de Nvidia son anteriores al escándalo de Huang: McGeever
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z2I2:1
+
+---
+fecha: 2026-11-18 17:28
+emisora: BRASIL
+titulo: Brazil's Senate approves Lula's $10 billion fiscal package after costly election spending
+fuente: MSNCAN
+tono: positiva
+impacto: alto
+id: lseg:urn:link:webnews:20261118:nNRA2rpl66:0
+
+---
+fecha: 2026-11-18 17:23
+emisora: VESTA
+titulo: Analyzing Jones Lang LaSalle (NYSE:JLL) & Corporacion Inmobiliaria Vesta (NYSE:VTMX)
+fuente: TRADAJ
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rpiwy:0
+resumen:
+  Nov 17, 2026 Jones Lang LaSalle (NYSE:JLL - Get Free Report) and Corporacion
+  Inmobiliaria Vesta (NYSE:VTMX - Get Free Report) are both real estate companies, but
+  which is the superior business? We will compare the two businesses based on the
+  strength of their valuation, earnings, dividends, risk, profitability, analyst
+  recommendations and institutional ownership.
+
+---
+fecha: 2026-11-18 17:14
+emisora: COLOMBIA
+titulo: 'Canacol has brought us to a standstill with gas and jeopardized operations,' says Cerro Matoso president
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rpgt7:0
+resumen:
+  The conflict between Cerro Matoso and Canacol Energy over natural gas supply has put
+  the mining company's operations in jeopardy, as it has seen contracted deliveries from
+  the producer progressively decline to nearly zero. According to figures provided by the
+  company, supply dropped from 16 million cubic feet per day to 11 million in February
+  226 and subsequently to seven million.
+
+---
+fecha: 2026-11-18 17:13
+emisora: PEOLES
+titulo: Peñoles Signs Renewable Energy Supply Contract with Atlas Renewable Energy
+fuente: NOTENG
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rpgrn:0
+resumen:
+  Industrias Peñoles, the world's leading silver producer, has signed a 20-year renewable
+  energy supply contract with Atlas Renewable Energy, a U.S. company that develops,
+  builds, and operates energy projects in Latin America. The contract includes the
+  development of a solar generation and storage project located in the state of Coahuila,
+  which is set to commence operations in the first half of 2029.
+
+---
+fecha: 2026-11-18 17:13
+emisora: BRASIL
+titulo: Dollar Rises Nearly 15% Since Lula's Victory, Starting to Burden Consumers
+fuente: NOTENG
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rph3r:0
+resumen:
+  Since Luiz Inácio Lula da Silva's (PT) victory on October 25, the U.S. dollar has
+  increased by 14.8%, and the Brazilian real has recorded the worst performance among the
+  116 currencies monitored by Austin Rating. This represents the worst currency reaction
+  in the world during this period. The effects of the devaluation are already evident in
+  wholesale markets, where prices have seen the greatest increase in over a year.
+
+---
+fecha: 2026-11-18 17:13
+emisora: PETROLEO
+titulo: Oil loses ground amid rising U.S. reserves and tensions in the Middle East
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rpfiq:0
+
+---
+fecha: 2026-11-18 17:12
+emisora: MERCADO
+titulo: Mexico's minimum wage could rise to 10,700 pesos by 2027: what is known about the increase
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rpgbs:0
+resumen:
+  The general minimum wage in Mexico could see a significant increase by 2027 , rising
+  from the current 9,582.47 pesos per month to approximately 10,700 pesos . This
+  projection, supported by the Mexican Institute of Public Accountants (IMCP) ,
+  anticipates an adjustment of between 12% and 13% , which would translate into an
+  additional 1,118 pesos per month for workers earning the base salary.
+
+---
+fecha: 2026-11-18 17:12
+emisora: BRASIL
+titulo: Durigan denies that the Lula administration will seek to raise the inflation target
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rpfeh:0
+resumen:
+  Finance Minister Dario Durigan denied on Wednesday (November 18) that the government of
+  President Luiz Inácio Lula da Silva (PT) is working to change the inflation target.
+  According to him, the Brazilian economic environment provides security to attract
+  investments. Follow the Correio Braziliense channel on WhatsApp and receive the day's
+  top news on your mobile.
+
+---
+fecha: 2026-11-18 17:07
+emisora: GMEXICOB
+titulo: Southern Copper Corporation's (NYSE:SCCO $144.24): Recent News and Research Digest
+fuente: GLORDP
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rpdid:0
+resumen:
+  NYSE END-OF-DAY STOCK REPORT PHOENIX, Wednesday, Nov 18, 2026 - Southern Copper
+  Corporation's (NYSE:SCCO $144.24) stock price traded at its 320-day low of $141.41. The
+  last time the price hit that low level was on Friday, Jan 02, 2026. Southern Copper
+  Corporation's stock price plunged $11.19 (7.2%) from its previous trading session to
+  close at $144.24.
+
+---
+fecha: 2026-11-18 16:52
+emisora: GMEXICOB
+titulo: Moody's de Mexico SA de CV - Moody’s Local MX afirma la calificación Seguros Azteca Daños
+fuente: PUBT
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nNDL1gfVP2:1
+
+---
+fecha: 2026-11-18 16:49
+emisora: PEOLES
+titulo: Peñoles and Atlas Renewable Energy sign a 20-year agreement to strengthen renewable supply and advance the decarbonization of Peñoles' operations w...
+fuente: ASIBAO
+tono: neutral
+impacto: medio
+id: lseg:urn:link:webnews:20261118:nNRA2rp7du:0
+
+---
+fecha: 2026-11-18 16:42
+emisora: MERCADO
+titulo: Past Week: Fresnillo PLC (L:FRES) in bottom 5% performers of FTSE 100 Index in past week; -GBX254 [-10.1%]
+fuente: NEWBTS
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rp6rm:0
+resumen:
+  BRITISH END-OF-WEEK STOCK REPORT www.buysellsignals.com Fresnillo PLC (L:FRES
+  GBX2,265.0), the United Kingdom's 6th largest Mining company by market cap, has sold
+  off GBX254 (or 10.1%) in the past week to close at GBX2,265.0. This makes it the fifth
+  lowest performer in the FTSE 100 Index which was down 2.6% in the past week; a relative
+  price change of -7.5%. The price ranged between a low of GBX2,265.0 on Wednesday Nov
+  18, 2026 and a high of GBX2,377.0 on Tuesday Nov 17, 2026.
+
+---
+fecha: 2026-11-18 16:42
+emisora: MERCADO
+titulo: Southern Copper Corporation (NYSE:SCCO) drops to eleven-month low; -$11.19 [-7.2%]
+fuente: NEWBTS
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rp5hi:0
+resumen:
+  NYSE END-OF-DAY STOCK REPORT www.buysellsignals.com PHOENIX, Wednesday, Nov 18, 2026 -
+  Southern Copper Corporation's (NYSE:SCCO $144.24) stock price traded at its 320-day low
+  of $141.41. The last time the price hit that low level was on Friday, Jan 02, 2026.
+  Southern Copper Corporation's stock price plunged $11.19 (7.2%) from its previous
+  trading session to close at $144.24.
+
+---
+fecha: 2026-11-18 16:39
+emisora: NVIDIA
+titulo: BREAKINGVIEWS-Anthropic IPO win keeps AI trade alive another day
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z18R:4
+
+---
+fecha: 2026-11-18 16:16
+emisora: NVIDIA
+titulo: MICROSOFT CEO NADELLA ON FORMER NVIDIA CEO HUANG RESIGNING: IT'S ALL SORT OF PRETTY TRAGIC, I AM A GREAT ADMIRER OF WHAT HE'S DONE  - NEW YORK TIMES DEALBOOK SUMMIT
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nFWN46Z0R6:1
+
+---
+fecha: 2026-11-18 16:14
+emisora: NVIDIA
+titulo: BRIEF-Moody's Ratings Changes Nvidia's Outlook To Stable Affirms Aa1 Senior Unsecured Ratings
+fuente: Reuters
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nFWN46Z136:1
+
+---
+fecha: 2026-11-18 16:13
+emisora: CHILE
+titulo: Talent as a Driver of Competitiveness: The Urgent Bid for Chile to Grow Again
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2roxy3:0
+resumen:
+  Chile today faces an economic paradox that is as evident as it is urgent. According to
+  the National Institute of Statistics (INE), the unemployment rate reached 9.8% in the
+  July-September quarter, which translates to over a million people without jobs.
+
+---
+fecha: 2026-11-18 16:13
+emisora: CHILE
+titulo: Senate President on Universal Childcare: “We are one step away from passing a historic law for Chile”
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2roxwz:0
+resumen:
+  The President of the Senate, Paulina Núñez (RN), valued the substantial vote in favor
+  of the Universal Nursery project in the Chamber of Deputies, highlighting the
+  cross-party support for an initiative that has been under discussion in Congress for
+  years. Núñez committed to expediting its processing in the Senate.
+
+---
+fecha: 2026-11-18 16:13
+emisora: EUA
+titulo: Trump Meets Sheinbaum in China to Discuss the Future of the USMCA
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2roxwg:0
+
+---
+fecha: 2026-11-18 16:13
+emisora: NVIDIA
+titulo: MOODY'S ON NVIDIA: CHANGED RATINGS OUTLOOK TO STABLE FROM POSITIVE
+fuente: Reuters
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nFWN46Z136:4
+
+---
+fecha: 2026-11-18 16:12
+emisora: MERCADO
+titulo: Corn Imports in Mexico: Harvest Area Decreases
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2roxst:0
+resumen:
+  On the occasion of World Corn Day, Mexico is facing a critical scenario characterized
+  by an increasing dependence on imports and a alarming decrease in harvested acreage.
+  According to estimates from the Agricultural Markets Consulting Group (GCMA), by 2026,
+  national production will reach only 23.5 million tons against an apparent consumption
+  of 48.2 million tons, placing the self-sufficiency index at around 49 percent.
+
+---
+fecha: 2026-11-18 16:11
+emisora: NVIDIA
+titulo: MOODY'S ON NVIDIA: RATINGS UPGRADE IS UNLIKELY OVER NEXT 12 TO 18 MONTHS
+fuente: Reuters
+tono: positiva
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nFWN46Z136:3
+
+---
+fecha: 2026-11-18 16:11
+emisora: NVIDIA
+titulo: MOODY'S: RATING REFLECTS NVIDIA'S EXCELLENT FINANCIAL PROFILE AND MARKET-LEADING AI DATA CENTER COMPUTING AND NETWORKING TECHNOLOGIES
+fuente: Reuters
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nFWN46Z136:2
+
+---
+fecha: 2026-11-18 16:01
+emisora: NVIDIA
+titulo: DÍA DE NEGOCIACIÓN-Los mercados registran resultados dispares en medio de la agitación en torno a Nvidia, Anthropic y las actas
+fuente: Reuters
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z2FB:1
+
+---
+fecha: 2026-11-18 16:00
+emisora: NVIDIA
+titulo: TRADING DAY-Markets mixed in a Nvidia, Anthropic, minutes swirl
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z17S:1
+
+---
+fecha: 2026-11-18 15:52
+emisora: GMEXICOB
+titulo: Southern Copper Corporation's (NYSE:SCCO $144.24) plunged 7.2%: Risk Factors and Bearish Indicators Analysis
+fuente: GLORDP
+tono: negativa
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261118:nNRA2roqry:0
+resumen:
+  NYSE END-OF-DAY STOCK REPORT PHOENIX, Wednesday, Nov 18, 2026 - Southern Copper
+  Corporation's (NYSE:SCCO $144.24) stock price plunged $11.19 (7.2%) from its previous
+  trading session to close at $144.24. Compared with the S&P 500 Index which fell 18.1
+  points (0.2%) in the day, the relative price change was -6.9%. Today its volatility
+  (highest price minus lowest price/lowest price) of 5.7% was 1.4 times its average daily
+  volatility of 4.0%.
+
+---
+fecha: 2026-11-18 15:52
+emisora: NVIDIA
+titulo: ACTUALIZA 4-Nvidia retrocede, ya que las buenas perspectivas no logran disipar la incertidumbre
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z1C9:4
+
+---
+fecha: 2026-11-18 15:51
+emisora: NVIDIA
+titulo: UPDATE 4-Nvidia retreats as strong outlook fails to dispel uncertainty
+fuente: Reuters
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z0R6:8
+
+---
+fecha: 2026-11-18 15:50
+emisora: NVIDIA
+titulo: INTELIGENCIA ARTIFICIAL-¿Podrá Jensen Huang volver?
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z2EB:1
+
+---
+fecha: 2026-11-18 15:49
+emisora: NVIDIA
+titulo: ARTIFICIAL INTELLIGENCER-Can Jensen Huang come back?
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z1IZ:1
+
+---
+fecha: 2026-11-18 15:49
+emisora: NVIDIA
+titulo: MERCADOS MUNDIALES-Las bolsas bajan con la mirada puesta en Anthropic y Nvidia; los precios del petróleo caen
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z2E2:1
+
+---
+fecha: 2026-11-18 15:48
+emisora: NVIDIA
+titulo: GLOBAL MARKETS-Stocks slip with eyes on Anthropic and Nvidia, oil prices slide
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z1EX:2
+
+---
+fecha: 2026-11-18 15:36
+emisora: NVIDIA
+titulo: BOLSA DE EEUU-Wall Street cierra con resultados dispares tras los resultados de Nvidia y las actas de la Fed
+fuente: Reuters
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z2C5:1
+
+---
+fecha: 2026-11-18 15:35
+emisora: NVIDIA
+titulo: US STOCKS-Wall Street ends mixed after Nvidia earnings, Fed minutes
+fuente: Reuters
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z1HD:4
+
+---
+fecha: 2026-11-18 15:27
+emisora: NVIDIA
+titulo: MERCADOS EN DIRECTO-Las bolsas estadounidenses cierran con resultados dispares tras el anuncio de Nvidia; Anthropic, a la espera
+fuente: Reuters
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z2BA:1
+
+---
+fecha: 2026-11-18 15:26
+emisora: NVIDIA
+titulo: LIVE MARKETS-US stocks end mixed after Nvidia; Anthropic on deck
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z1HS:1
+
+---
+fecha: 2026-11-18 15:13
+emisora: COLOMBIA
+titulo: María Claudia Lacouture resigns as President of AmCham Colombia after nine years
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rodas:0
+resumen:
+  Nine years after joining the American Colombian Chamber of Commerce, María Claudia
+  Lacouture has resigned from the presidency of the bilateral business body between
+  Colombia and the United States. She is now preparing to move to the Development Bank of
+  Latin America and the Caribbean. "With a heart full of gratitude, I submitted my
+  resignation as president of @AmChamCol.
+
+---
+fecha: 2026-11-18 15:12
+emisora: ARGENTINA
+titulo: ACTUALIZA 1-Riesgo país de Argentina se mantiene en torno a 850 puntos, dudas por deuda pública
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0W7:1
+resumen:
+  Modifica título, añade información y actualiza datos al cierre BUENOS AIRES, 18 nov
+  (Reuters) - El riesgo país argentino se ubicaba el jueves en torno al umbral de las 850
+  unidades, un nivel muy alto que a criterio de analistas podría presionar sobre el
+  refinanciamiento de deuda a corto plazo que debe afrontar el Gobierno.
+
+---
+fecha: 2026-11-18 15:08
+emisora: GMEXICOB
+titulo: Grupo Mexico SAB de CV falls 5.86% in Wednesday's session
+fuente: GLOREV
+tono: negativa
+impacto: alto
+id: lseg:urn:link:webnews:20261118:nNRA2robdn:0
+
+---
+fecha: 2026-11-18 15:07
+emisora: NVIDIA
+titulo: Wall Street cierra dispar tras resultados de Nvidia y minutas Fed
+fuente: Reuters
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z11U:1
+
+---
+fecha: 2026-11-18 15:06
+emisora: ARGENTINA
+titulo: BOLSA DE ARGENTINA <.MMXMRVLGA> AVANZA LEVE 0,16% EN CIERRE PROVISORIO APOYADA POR FIRMAS ENERGÉTICAS: OPERADORES
+fuente: Reuters
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z13A:1
+
+---
+fecha: 2026-11-18 14:57
+emisora: OMAB
+titulo: Grupo Aeroportuario del Centro Norte SAB de CV - Reporte Financiero (IR 3Q26 vf 1)
+fuente: PUBT
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:reuters.com:20261118:nNDL5N9L7s:1
+
+---
+fecha: 2026-11-18 14:51
+emisora: AMXB
+titulo: America Movil S.A.B. de CV ADR (NYSE:AMX) slides 3.1% on firm volume; -79c [-3.1%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2ro5y8:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
+  S.A.B. de CV (NYSE:AMX $25.01) has slid 79.0c (3.1%) to trade at $25.01 at 15:26 pm,
+  Wednesday. Compared with the BNY Mellon Composite ADR Index which is down 3.5 points
+  (1.4%) to 247.67, the relative price change is -1.7%. There were 1,129,787 ADRs worth
+  $28.3 million traded so far today.
+
+---
+fecha: 2026-11-18 14:51
+emisora: ASURB
+titulo: Grupo Aeroportuario del Sureste S.A. de C.V. ADR (NYSE:ASR) falls 2.7% on firm volume; -$7.26 [-2.7%]
+fuente: GLORDP
+tono: negativa
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2ro6wc:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Sureste S.A. de C.V. (NYSE:ASR $262.41) has fallen $7.26 (2.7%) to trade at $262.41
+  at 15:26 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which is down
+  3.5 points (1.4%) to 247.67, the relative price change is -1.3%.
+
+---
+fecha: 2026-11-18 14:51
+emisora: FEMSAUBD
+titulo: Fomento Economico Mexicano, S.A.B de C.V. ADR (NYSE:FMX) keeps sliding, down 3.0% in 3 days; -$3.08 [-2.4%]
+fuente: GLORDP
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261118:nNRA2ro6wa:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Fomento Economico
+  Mexicano, S.A.B de C.V. (NYSE:FMX $127.94), ADR price extended its slide on Wednesday,
+  shedding an additional $3.08 (2.4%) to trade at $127.94 at 15:26 pm, Wednesday. The
+  ADRs have dropped $3.97 (3.0%) over the past three trading days; compared with the BNY
+  Mellon Composite ADR Index which fell 15.6 points (5.9%) in the three days for a
+  relative price increase of 2.9%.
+
+---
+fecha: 2026-11-18 14:43
+emisora: COLOMBIA
+titulo: ACTUALIZA 1-Colombia logra compromisos de inversión y financiamiento por 43.200 millones de dólares en ronda en EEUU
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z11F:1
+resumen:
+  Actualiza con datos BOGOTÁ, 18 nov (Reuters) - Colombia logró concretar compromisos de
+  inversión con empresas y financiamiento con la banca multilateral por 43.200 millones
+  de dólares, informó el miércoles el vicepresidente del país, José Manuel Restrepo, en
+  momentos en que la nación sudamericana atraviesa por dificultades fiscales y una
+  desaceleración económica.
+
+---
+fecha: 2026-11-18 14:28
+emisora: COLOMBIA
+titulo: Colombia logra compromisos de inversión y financiamiento por 43.200 millones de dólares en ronda en EEUU
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nS0N44300Q:1
+resumen:
+  BOGOTÁ, 18 nov (Reuters) - Colombia logró concretar compromisos de inversión con
+  empresas y financiamiento con la banca multilateral por 43.200 millones de dólares,
+  informó el miércoles el vicepresidente del país, José Manuel Restrepo, en momentos en
+  que la nación sudamericana atraviesa por dificultades fiscales y una desaceleración
+  económica.
+
+---
+fecha: 2026-11-18 14:27
+emisora: AMXB
+titulo: America Movil S.A.B. de CV ADR (NYSE:AMX) slides 3.4% on firm volume; -87c [-3.4%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rnv31:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
+  S.A.B. de CV (NYSE:AMX $24.93) has slid 87.0c (3.4%) to trade at $24.93 at 14:44 pm,
+  Wednesday. Compared with the BNY Mellon Composite ADR Index which is down 3.6 points
+  (1.4%) to 247.52, the relative price change is -1.9%. There were 1,010,925 ADRs worth
+  $25.2 million traded so far today.
+
+---
+fecha: 2026-11-18 14:27
+emisora: ASURB
+titulo: Grupo Aeroportuario del Sureste S.A. de C.V. ADR (NYSE:ASR) falls 2.3% on robust volume; -$6.11 [-2.3%]
+fuente: GLORDP
+tono: negativa
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rnw01:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Sureste S.A. de C.V. (NYSE:ASR $263.56) has fallen $6.11 (2.3%) to trade at $263.56
+  at 14:44 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which is down
+  3.6 points (1.4%) to 247.52, the relative price change is -0.8%.
+
+---
+fecha: 2026-11-18 14:27
+emisora: FEMSAUBD
+titulo: Fomento Economico Mexicano, S.A.B de C.V. ADR (NYSE:FMX) falls 2.3%; -$2.96 [-2.3%]
+fuente: GLORDP
+tono: negativa
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rnvhs:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Fomento Economico
+  Mexicano, S.A.B de C.V. (NYSE:FMX $128.06) has fallen $2.96 (2.3%) to trade at $128.06
+  at 14:44 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which is down
+  3.6 points (1.4%) to 247.52, the relative price change is -0.8%.
+
+---
+fecha: 2026-11-18 14:26
+emisora: GAPB
+titulo: Grupo Aeroportuario del Pacifico S.A.B. de CV ADR (NYSE:PAC) falls 2.1%; -$4.84 [-2.1%]
+fuente: GLORDP
+tono: negativa
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rnvzx:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Pacifico S.A.B. de CV (NYSE:PAC $228.19) has fallen $4.84 (2.1%) to trade at
+  $228.19 at 14:44 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which
+  is down 3.6 points (1.4%) to 247.52, the relative price change is -0.6%. There were
+  26,461 ADRs worth $6 million traded so far today.
+
+---
+fecha: 2026-11-18 14:23
+emisora: EUA
+titulo: Canada, Mexico Back USMCA Renewal In China Meeting
+fuente: LAWAAB
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261118:nNRA2rnulf:0
+
+---
+fecha: 2026-11-18 14:23
+emisora: NVIDIA
+titulo: FOREX-El dólar se fortalece por el respaldo a una línea dura de Waller, de la Fed
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z1FP:1
+
+---
+fecha: 2026-11-18 14:19
+emisora: ARGENTINA
+titulo: MERCADOS A.LATINA-Monedas y bolsas caen ante expectativas de alzas tasas Fed
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z10Q:1
+resumen:
+  Actualiza con cotizaciones por la tarde Por Manuel Farías SANTIAGO, 18 nov (Reuters) -
+  Las principales monedas y bolsas de América Latina cayeron el miércoles, presionadas
+  por las expectativas de alzas de tasas de interés por parte de la Reserva Federal de
+  Estados Unidos tras comentarios de tono restrictivos de parte de autoridades del banco
+  central y luego de conocerse las minutas de la última reunión del organismo. * "Casi
+  todos" los responsables monetarios coincidieron en que serían necesarias más alzas de…
+
+---
+fecha: 2026-11-18 14:19
+emisora: ARGENTINA
+titulo: MERCADOS EMERGENTES-Los mercados de divisas y bursátiles de Latinoamérica caen ante la subida del dólar y el descenso de los precios de las materias primas
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z267:1
+resumen:
+  Las bolsas latinoamericanas tocan su mínimo desde el pasado diciembre El presidente de
+  México califica de «muy buena» su reunión con EEUU El real brasileño toca mínimos de
+  abril de 2025 frente al dólar El peso chileno cae brevemente a su mínimo de los últimos
+  22 meses Actualización con los niveles de cotización de la tarde Por Tharuniyaa Lakshmi
+  y Shashwat Chauhan 18 nov (Reuters) - La mayoría de las divisas latinoamericanas se
+  depreciaron el miércoles frente a un dólar más fuerte, ya que los operadores siguieron…
+
+---
+fecha: 2026-11-18 14:18
+emisora: ARGENTINA
+titulo: EMERGING MARKETS-Latam FX, stocks fall on stronger dollar, weaker commodity prices
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0YA:5
+resumen:
+  LatAm stocks hit lowest since last December Mexico's President says "very good meeting"
+  with US Brazil's real hits April 2025 lows vs dollar Chile's peso briefly falls to a
+  22-month low Updates with afternoon trading levels By Tharuniyaa Lakshmi and Shashwat
+  Chauhan Nov 18 (Reuters) - Most Latin American currencies slipped against a firmer
+  dollar on Wednesday as traders continued to bet on future Federal Reserve interest rate
+  hikes, while weaker commodity prices added to the gloom.
+
+---
+fecha: 2026-11-18 14:15
+emisora: CHILE
+titulo: Chile's GDP declines by 1.1% in the third quarter, weighed down by mining
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rnpxs:0
+resumen:
+  The gross domestic product (GDP) of Chile contracted by 1.1% in the third quarter of
+  2026 compared to the same period the previous year, weighed down by the mining sector,
+  the Central Bank of Chile reported on Wednesday. "Economic activity decreased by 1.1%
+  on an annual basis. This result was explained by lower investment, a setback that was
+  partly offset by an increase in household and government consumption.
+
+---
+fecha: 2026-11-18 14:12
+emisora: EUA
+titulo: Sheinbaum claims that trade negotiations with Trump are "well advanced"
+fuente: NOTENG
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rnot2:0
+
+---
+fecha: 2026-11-18 13:52
+emisora: EUA
+titulo: Sheinbaum signals trade progress after Trump meeting in China
+fuente: BIGNET
+tono: neutral
+impacto: bajo
+id: lseg:urn:link:webnews:20261118:nNRA2rndlq:0
+
+---
+fecha: 2026-11-18 13:51
+emisora: AMXB
+titulo: Benchmarking America Movil S.A.B. de CV's (NYSE:AMX) dividend against Its Peers *Updated*
+fuente: GLORDP
+tono: positiva
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rnckj:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS America Movil S.A.B. de CV's trailing
+  twelve months dividend is 59.64c. Its dividend yield at its current price is 2.31%. Its
+  current price is at a 7.23% discount to its 52 week high.
+
+---
+fecha: 2026-11-18 13:43
+emisora: ASURB
+titulo: Grupo Aeroportuario del Sureste S.A. de C.V. ADR (NYSE:ASR) increases 0.3% in today's session; +72c [+0.3%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rn797:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Sureste S.A. de C.V. ADR (NYSE:ASR $269.67) increased 72.0c (0.3%) from its
+  previous trading session to close at $269.67. Compared with the BNY Mellon Composite
+  ADR Index which fell 5.0 points (1.9%) in the day, the relative price increase was
+  2.2%.
+
+---
+fecha: 2026-11-18 13:43
+emisora: FEMSAUBD
+titulo: Fomento Economico Mexicano, S.A.B de C.V. ADR (NYSE:FMX) in negative territory today, declining 0.2%; -28c [-0.2%]
+fuente: GLORDP
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rn793:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Fomento Economico
+  Mexicano, S.A.B de C.V. ADR (NYSE:FMX $131.02) declined 28.0c (0.2%) from its previous
+  trading session to close at $131.02. Compared with the BNY Mellon Composite ADR Index
+  which fell 5.0 points (1.9%) in the day, the relative price increase was 1.7%.
+
+---
+fecha: 2026-11-18 13:43
+emisora: GAPB
+titulo: Grupo Aeroportuario del Pacifico S.A.B. de CV ADR (NYSE:PAC) ADRs fall 0.6%; -$1.32 [-0.6%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rn8jn:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Pacifico S.A.B. de CV ADR (NYSE:PAC $233.03) fell $1.32 (0.6%) from its previous
+  trading session to close at $233.03. Compared with the BNY Mellon Composite ADR Index
+  which fell 5.0 points (1.9%) in the day, the relative price increase was 1.4%. There
+  were 99,531 ADRs worth $23.2 million traded today; the volume was 0.8 times the average
+  daily trading volume of 122,026 ADRs.
+
+---
+fecha: 2026-11-18 13:43
+emisora: OMAB
+titulo: Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB) in negative territory today, declining 0.6%; -62c [-0.6%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rn89x:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB $107.78) declined 62.0c (0.6%) from
+  its previous trading session to close at $107.78. Compared with the BNY Mellon
+  Composite ADR Index which fell 5.0 points (1.9%) in the day, the relative price
+  increase was 1.4%.
+
+---
+fecha: 2026-11-18 13:43
+emisora: KIMBERA
+titulo: Kimberly-Clark de Mexico, S.A.B de C.V. ADR (OTC:KCDMY) climbs 2.8% against the trend; +29c [+2.8%]
+fuente: GLORDP
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rn8ub:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Kimberly-Clark de
+  Mexico, S.A.B de C.V. ADR (OTC:KCDMY $10.71) climbed 29.0c (2.8%) from its previous
+  trading session to close at $10.71. Compared with the BNY Mellon Composite ADR Index
+  which fell 5.0 points (1.9%) in the day, the relative price increase was 4.7%.
+
+---
+fecha: 2026-11-18 13:42
+emisora: AMXB
+titulo: America Movil S.A.B. de CV ADR (NYSE:AMX) lifts 1.4% against the trend; +36c [+1.4%]
+fuente: GLORDP
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rn6uo:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
+  S.A.B. de CV ADR (NYSE:AMX $25.80) lifted 36.0c (1.4%) from its previous trading
+  session to close at $25.80. Compared with the BNY Mellon Composite ADR Index which fell
+  5.0 points (1.9%) in the day, the relative price increase was 3.4%. There were
+  2,026,763 ADRs worth $52.3 million traded today; the volume was 0.9 times the average
+  daily trading volume of 2.2 million ADRs.
+
+---
+fecha: 2026-11-18 13:42
+emisora: AMXB
+titulo: America Movil S.A.B. de CV ADR (NYSE:AMX) slides 3.2% on firm volume; -83c [-3.2%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rn6ff:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
+  S.A.B. de CV (NYSE:AMX $24.97) has slid 83.0c (3.2%) to trade at $24.97 at 14:02 pm,
+  Wednesday. Compared with the BNY Mellon Composite ADR Index which is down 2.8 points
+  (1.1%) to 248.32, the relative price change is -2.1%. There were 876,587 ADRs worth
+  $21.9 million traded so far today.
+
+---
+fecha: 2026-11-18 13:42
+emisora: ASURB
+titulo: Grupo Aeroportuario del Sureste S.A. de C.V. ADR (NYSE:ASR) falls 2.2% on firm volume; -$5.83 [-2.2%]
+fuente: GLORDP
+tono: negativa
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rn6pa:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
+  del Sureste S.A. de C.V. (NYSE:ASR $263.84) has fallen $5.83 (2.2%) to trade at $263.84
+  at 14:02 pm, Wednesday. Compared with the BNY Mellon Composite ADR Index which is down
+  2.8 points (1.1%) to 248.32, the relative price change is -1.0%.
+
+---
+fecha: 2026-11-18 13:42
+emisora: KOFUBL
+titulo: Coca-Cola FEMSA S.A.B de CV ADR (NYSE:KOF) increases 43.0c on firm volume to close at $120.88; +43c [+0.4%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rn6o9:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Coca-Cola FEMSA
+  S.A.B de CV ADR (NYSE:KOF $120.88) increased 43.0c (0.4%) from its previous trading
+  session to close at $120.88. Compared with the BNY Mellon Composite ADR Index which
+  fell 5.0 points (1.9%) in the day, the relative price increase was 2.3%. There were
+  230,890 ADRs worth $27.9 million traded today.
+
+---
+fecha: 2026-11-18 13:42
+emisora: PINFRA
+titulo: Promotora Y Operadora de Infraestructura SA ADR (OTC:PUODY) adds $99.6 million (1.6%) in MCap, top heavyweight rise in Engineering & construction s...
+fuente: GLORDP
+tono: neutral
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rn7y4:0
+resumen:
+  Promotora Y Operadora de Infraestructura SA ADR (OTC:PUODY) adds $99.6 million (1.6%)
+  in MCap, top heavyweight rise in Engineering & construction sector; +$5.24 [+1.6%]
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Promotora Y
+  Operadora de Infraestructura SA ADR (OTC:PUODY $338.61) lifted $5.24 (1.6%) from its
+  previous trading session to close at $338.61.
+
+---
+fecha: 2026-11-18 13:42
+emisora: VESTA
+titulo: Corporacion Inmobiliaria Vesta, S.A.B. de C.V. ADR (NYSE:VTMX) ADRs fall 0.8%; -31c [-0.8%]
+fuente: GLORDP
+tono: neutral
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rn87c:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Corporacion
+  Inmobiliaria Vesta, S.A.B. de C.V. ADR (NYSE:VTMX $36.75) fell 31.0c (0.8%) from its
+  previous trading session to close at $36.75. Compared with the BNY Mellon Composite ADR
+  Index which fell 5.0 points (1.9%) in the day, the relative price increase was 1.1%.
+
+---
+fecha: 2026-11-18 13:13
+emisora: CHILE
+titulo: Chile's GDP falls by 1.1% in the third quarter, weighed down by mining
+fuente: NOTENG
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rmt2q:0
+
+---
+fecha: 2026-11-18 13:08
+emisora: COBRE
+titulo: BUZZ-COMMENT-US recap: EUR/USD slips as hawkish Fed speak lifts dollar
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z1E8:2
+
+---
+fecha: 2026-11-18 12:57
+emisora: CHILE
+titulo: Chile GDP Shock Deepens Pressure on Growth Stocks
+fuente: TIPRAN
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rmlc5:0
+
+---
+fecha: 2026-11-18 12:51
+emisora: FEMSAUBD
+titulo: Benchmarking Fomento Economico Mexicano, S.A.B de C.V.'s (NYSE:FMX) dividend against Its Peers *Updated*
+fuente: GLORDP
+tono: positiva
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rminz:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Fomento Economico Mexicano, S.A.B de
+  C.V.'s trailing twelve months dividend is $3.88. Its dividend yield at its current
+  price is 2.96%. Its current price is at a 6.88% discount to its 52 week high.
+
+---
+fecha: 2026-11-18 12:51
+emisora: GAPB
+titulo: Benchmarking Grupo Aeroportuario del Pacifico S.A.B. de CV's (NYSE:PAC) dividend against Its Peers *Updated*
+fuente: GLORDP
+tono: positiva
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rmgzx:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Grupo Aeroportuario del Pacifico S.A.B. de
+  CV's trailing twelve months dividend is $11.19. Its dividend yield at its current price
+  is 4.8%. Its current price is at a 18.78% discount to its 52 week high.
+
+---
+fecha: 2026-11-18 12:51
+emisora: WALMEX
+titulo: Benchmarking Wal-Mart De Mexico S.A.B. de C.V.'s (OTCQX:WMMVY) dividend against Its Peers *Updated*
+fuente: GLORDP
+tono: positiva
+impacto: alto
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rmior:0
+resumen:
+  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Wal-Mart De Mexico S.A.B. de C.V.'s
+  trailing twelve months dividend is 47.14c. Its dividend yield at its current price is
+  3.07%. Its current price is at a 14.4% discount to its 52 week high.
+
+---
+fecha: 2026-11-18 12:43
+emisora: WALMEX
+titulo: German trading: Wal Mart de Mexico SAB de CV (FRA:4GNB) hits six-month high on strong volume; +7c [+2.6%]
+fuente: CNBSTR
+tono: positiva
+impacto: medio
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rmdn6:0
+resumen:
+  GERMAN END-OF-DAY STOCK REPORT www.buysellsignals.com MEXICO, D.F, Wednesday, Nov 18,
+  2026 - Wal Mart de Mexico SAB de CV's (FRA:4GNB €2.72) stock price traded at its
+  177-day high of €2.72. The last time the price hit that high level was on Monday, May
+  25, 2026. Wal Mart de Mexico SAB de CV's stock price climbed 7.0c (2.6%) from its
+  previous trading session to close at €2.72.
+
+---
+fecha: 2026-11-18 12:34
+emisora: COBRE
+titulo: MERCADOS MUNDIALES-Las acciones caen, arrastradas por Nvidia, mientras que el dólar sube ligeramente
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z212:1
+
+---
+fecha: 2026-11-18 12:33
+emisora: COBRE
+titulo: GLOBAL MARKETS-Stocks slip with Nvidia, dollar ticks higher
+fuente: Reuters
+tono: positiva
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z13X:2
+
+---
+fecha: 2026-11-18 11:56
+emisora: COBRE
+titulo: METALES BÁSICOS-Cobre cae a mínimo de siete meses por ventas especulativas, temores inflación
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0VA:1
+
+---
+fecha: 2026-11-18 11:40
+emisora: COBRE
+titulo: METALS-Copper skids to seven-month low on speculative selling and inflation fears
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0C3:5
+
+---
+fecha: 2026-11-18 10:54
+emisora: COBRE
+titulo: Peru copper output falls 9% year-on-year in September
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nS0N42K04T:1
+
+---
+fecha: 2026-11-18 10:52
+emisora: COBRE
+titulo: Producción de cobre en Perú cae 8,9% interanual en septiembre, a 219.617 toneladas: gobierno
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0SO:1
+
+---
+fecha: 2026-11-18 10:39
+emisora: COBRE
+titulo: MERCADOS EMERGENTES-Los mercados de divisas y bursátiles de Latinoamérica caen debido a la fortaleza del dólar y al descenso de los precios de las materias primas
+fuente: Reuters
+tono: negativa
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z1OT:1
+
+---
+fecha: 2026-11-18 10:37
+emisora: COBRE
+titulo: EMERGING MARKETS-Latam FX, stocks fall as stronger dollar, weaker commodity prices weigh
+fuente: Reuters
+tono: neutral
+impacto: bajo
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z14P:5
+
+---
 fecha: 2026-11-18 09:55
 emisora: KIMBERA
 titulo: 09:55:43 INICIA SUBASTA DE VALUACION : KIMBER B
@@ -898,1209 +2091,3 @@ resumen:
   MILENIO, we share the key dates to take advantage of these promotions and where you can
   check both item availability and prices without leaving your home. When does the
   Irresistible Sale 2026 start?
-
----
-fecha: 2026-11-18 09:12
-emisora: CHILE
-titulo: Chile and the World: A Current Account in Surplus and Rising External Debt
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261118:nNRA2riyj6:0
-resumen:
-  The country recorded a current account deficit of US$ 2.227 billion during the third
-  quarter of the year, representing 2.4% of Gross Domestic Product (GDP), according to a
-  report from the Central Bank on Wednesday. As a result, the accumulated surplus over
-  the year now accounts for 0.7% of GDP. This outcome reflected the negative balance in
-  income and the services trade balance, partially offset by a favorable performance in
-  goods.
-
----
-fecha: 2026-11-18 09:12
-emisora: EUA
-titulo: Sheinbaum and Trump Meet in China: 'We Continue to Make Progress on the Common Agenda'
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261118:nNRA2riyay:0
-resumen:
-  President Claudia Sheinbaum held a meeting with her American counterpart, Donald Trump,
-  during the Asia-Pacific Economic Cooperation (APEC) Forum in China. The president
-  shared a photo of her face-to-face with the President of the United States, alongside
-  members of her cabinet: Marcelo Ebrard, Secretary of Economy, and Roberto Velasco,
-  Secretary of Foreign Relations. "We had a very good meeting with President Donald Trump
-  and his team.
-
----
-fecha: 2026-11-18 09:08
-emisora: FEMSAUBD
-titulo: Here's How Much You Would Have Made Owning Coca-Cola Femsa SAB de Stock In The Last 20 Years
-fuente: BENZIN
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rit2o:0
-resumen:
-  Coca-Cola Femsa SAB de (NYSE:KOF) has outperformed the market over the past 20 years by
-  9.11% on an annualized basis producing an average annual return of 17.78%. Currently,
-  Coca-Cola Femsa SAB de has a market Coca-Cola Femsa SAB de (NYSE:KOF) has outperformed
-  the market over the past 20 years by 9.11% on an annualized basis producing an average
-  annual return of 17.78%. Currently, Coca-Cola Femsa SAB de has a market capitalization
-  of $25.39 billion.
-
----
-fecha: 2026-11-18 09:00
-emisora: NVIDIA
-titulo: COMPAL UNVEILS RACK-SCALE LIQUID COOLING SOLUTIONS POWERED BY NVIDIA AT SC26
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nTUA4P0HRW:1
-
----
-fecha: 2026-11-18 08:59
-emisora: EUA
-titulo: UPDATE 2-Sheinbaum says Mexico-US trade talks 'very far along' after meeting Trump at APEC
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z100:4
-resumen:
-  Adds quotes from press conference Sheinbaum says Mexico-US trade talks are very far
-  along after Trump meeting Sheinbaum says she will meet Trump again at G20 in Miami in
-  December Trump threatened steeper duties over migrant caravans; Mexico says group
-  remains in Chiapas Nov 18 (Reuters) - Mexican President Claudia Sheinbaum said on
-  Wednesday she had a "very good meeting" with her US counterpart Donald Trump as the two
-  countries pursue negotiations aimed at easing trade tensions.
-
----
-fecha: 2026-11-18 08:58
-emisora: GMEXICOB
-titulo: Moody's de Mexico SA de CV - Moody’s Local MX afirma calificación de Muni Nuevo Laredo
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261118:nNDL8GGQRT:1
-
----
-fecha: 2026-11-18 08:58
-emisora: PEOLES
-titulo: Midland, in Partnership With Fresnillo, Commences an Airborne Gravity Gradiometer Survey on the La Peltrie Project
-fuente: NEWBTS
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rinh7:0
-resumen:
-  NEWS BITES - CORPORATE WIRE CANADA EDITION 18 November 2026 09:51 EST ORIGINAL
-  ANNOUNCEMENT [Text] MONTREAL, Nov. 10, 2026 -- Midland Exploration Inc. (Midland)
-  (TSX-V: MD) is pleased to announce the start of an airborne gravity gradiometer
-  geophysical survey on the La Peltrie project, in northern Abitibi in the Detour area.
-
----
-fecha: 2026-11-18 08:54
-emisora: COBRE
-titulo: COBRE A 3 MESES EN LME CAE 5% A 12.563,50 DLRS LA TONELADA, SU MENOR VALOR DESDE ABRIL DE ESTE AÑO
-fuente: Reuters
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0NJ:1
-
----
-fecha: 2026-11-18 08:52
-emisora: COBRE
-titulo: LME THREE MONTH COPPER <CMCU3> FALLS 5% TO $12,563.50 A METRIC TON, LOWEST SINCE APRIL 2026
-fuente: Reuters
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nS8N3LL0RR:1
-
----
-fecha: 2026-11-18 08:50
-emisora: COLOMBIA
-titulo: DÉFICIT COMERCIAL DE COLOMBIA FUE DE 2.268 MILLONES DE DÓLARES EN SEPTIEMBRE
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nAQN2MUB7L:1
-resumen:
-  El valor de las importaciones de Colombia subió un 32,73% en septiembre a $7.679
-  millones de dólares, frente a $5.785 millones de dólares en igual mes del año pasado,
-  informó el 18 de noviembre de 2026 el Departamento Nacional de Estadísticas (DANE). El
-  país registró un déficit comercial de $2.268 millones de dólares(FOB), comparado con un
-  déficit de $1.135 millones de dólares en el mismo mes del año previo.
-
----
-fecha: 2026-11-18 08:50
-emisora: COLOMBIA
-titulo: COLOMBIA TRADE DEFICIT WAS $2.268 BLN IN SEPTEMBER
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nAQN2MUB7M:1
-resumen:
-  Colombia's imports rose 32.73% to $7.679 billion in September from $5.785 billion in
-  the same month a year earlier, the government's DANE statistics agency said on 18
-  November 2026. The country registered a trade deficit of $2.268 billion (FOB), compared
-  with a deficit of $1.135 billion during the same month the year before. The following
-  is a breakdown of recent monthly imports.
-
----
-fecha: 2026-11-18 08:47
-emisora: KIMBERA
-titulo: Kimberly-Clark de Mexico,B de (OTC:KCDMY) Ohlson O-Score and Other Financial Risk Metrics
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rihxb:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
-  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
-  investors look at several key metrics and scores to assess each company. Below we
-  include some of the analysis used to mitigate such risks.
-
----
-fecha: 2026-11-18 08:47
-emisora: COLOMBIA
-titulo: MERCADOS A.LATINA-Monedas caen ante expectativas de alzas tasas Fed; inversores esperan minutas
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0N7:1
-resumen:
-  .
-
----
-fecha: 2026-11-18 08:47
-emisora: NVIDIA
-titulo: EXCLUSIVA-La Administración Trump baraja la posibilidad de obligar a las empresas estadounidenses a revelar el uso que hacen de la inteligencia artificial china
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z1EY:1
-resumen:
-  Se añaden comentarios de la embajada china, Airbnb y un diputado La propuesta fue
-  debatida por el Tesoro y la Casa Blanca El plan tendría como objetivo desalentar la
-  dependencia de la IA china sin imponer nuevas restricciones a las empresas
-  estadounidenses Aumentan los llamamientos a adoptar una postura más firme frente a
-  China Por Alexandra Alper WASHINGTON, 18 nov (Reuters) - La Administración Trump está
-  barajando la posibilidad de exigir a las empresas estadounidenses que revelen
-  públicamente su uso de modelos…
-
----
-fecha: 2026-11-18 08:46
-emisora: AMXB
-titulo: America MovilB. de CV (NYSE:AMX) Ohlson O-Score and Other Financial Risk Metrics
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rig8j:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
-  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
-  investors look at several key metrics and scores to assess each company. Below we
-  include some of the analysis used to mitigate such risks.
-
----
-fecha: 2026-11-18 08:46
-emisora: ASURB
-titulo: Grupo Aeroportuario del Sureste de (NYSE:ASR) Ohlson O-Score and Other Financial Risk Metrics
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rifhl:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
-  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
-  investors look at several key metrics and scores to assess each company. Below we
-  include some of the analysis used to mitigate such risks.
-
----
-fecha: 2026-11-18 08:46
-emisora: FEMSAUBD
-titulo: Fomento Economico Mexicano,B de (NYSE:FMX) Ohlson O-Score and Other Financial Risk Metrics
-fuente: GLORDP
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rigw9:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
-  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
-  investors look at several key metrics and scores to assess each company. Below we
-  include some of the analysis used to mitigate such risks.
-
----
-fecha: 2026-11-18 08:46
-emisora: KOFUBL
-titulo: Coca-Cola FEMSAB de (NYSE:KOF) Ohlson O-Score and Other Financial Risk Metrics
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rigw8:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
-  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
-  investors look at several key metrics and scores to assess each company. Below we
-  include some of the analysis used to mitigate such risks.
-
----
-fecha: 2026-11-18 08:46
-emisora: OMAB
-titulo: Grupo Aeroportuario del Centro NorteB. de (NASDAQ:OMAB) Ohlson O-Score and Other Financial Risk Metrics
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rifhi:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
-  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
-  investors look at several key metrics and scores to assess each company. Below we
-  include some of the analysis used to mitigate such risks.
-
----
-fecha: 2026-11-18 08:46
-emisora: WALMEX
-titulo: Wal-Mart De MexicoB. de (OTCQX:WMMVY) Ohlson O-Score and Other Financial Risk Metrics
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rigyz:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
-  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
-  investors look at several key metrics and scores to assess each company. Below we
-  include some of the analysis used to mitigate such risks.
-
----
-fecha: 2026-11-18 08:46
-emisora: VESTA
-titulo: Corporacion Inmobiliaria Vesta,B. de (NYSE:VTMX) Ohlson O-Score and Other Financial Risk Metrics
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rigyh:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS To mitigate risks in their investments
-  including bankruptcy, insolvency, low levels of liquidity and inflated earnings,
-  investors look at several key metrics and scores to assess each company. Below we
-  include some of the analysis used to mitigate such risks.
-
----
-fecha: 2026-11-18 08:46
-emisora: NVIDIA
-titulo: EXCLUSIVE-Trump administration weighs forcing US firms to disclose Chinese AI use
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0LJ:5
-resumen:
-  Adds Chinese Embassy, Airbnb and lawmaker comment Proposal was discussed by Treasury
-  and White House Plan would aim to discourage reliance on Chinese AI without imposing
-  new restrictions on US firms Calls for a tougher stance on China mount By Alexandra
-  Alper WASHINGTON, Nov 18 (Reuters) - The Trump administration is considering requiring
-  US companies to publicly disclose their use of Chinese AI models, a bid to discourage
-  reliance on the technology without imposing new restrictions that could anger industry
-  or…
-
----
-fecha: 2026-11-18 08:45
-emisora: NVIDIA
-titulo: NVIDIA SHARES TURN NEGATIVE, LAST DOWN 0.7%
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL3N46Z1AG:1
-
----
-fecha: 2026-11-18 08:41
-emisora: WALMEX
-titulo: Walmart, Chedraui, and La Comer test reduced hours amid the 40-hour workweek initiative
-fuente: CENAFT
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2riccr:0
-resumen:
-  Some of the most prominent supermarkets in Mexico, such as Walmart, Grupo Comercial
-  Chedraui, and La Comer, are preparing for a gradual reduction in the weekly work hours
-  with measures that include everything from digital strategies to reduced hours in some
-  of their stores. Walmart de México y Centroamérica, the largest supermarket company in
-  the country, has been applying pilot programs since last year to incorporate reduced
-  work hours.
-
----
-fecha: 2026-11-18 08:41
-emisora: NVIDIA
-titulo: RESUMEN DE INVESTIGACIONES EN EEUU-Calumet, Disney, Nvidia
-fuente: Reuters
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z1E6:1
-resumen:
-  18 nov (Reuters) - Los analistas bursátiles de Wall Street revisaron el miércoles sus
-  calificaciones y sus previsiones de cotización para varias empresas que cotizan en
-  bolsa en EEUU, entre ellas Calumet, Disney y Nvidia.
-
----
-fecha: 2026-11-18 08:40
-emisora: NVIDIA
-titulo: US RESEARCH ROUNDUP-Calumet, Disney, Nvidia
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL3N46Z0MM:4
-resumen:
-  Nov 18 (Reuters) - Wall Street securities analysts revised their ratings and price
-  targets on several US-listed companies, including Calumet, Disney and Nvidia, on
-  Wednesday.
-
----
-fecha: 2026-11-18 08:40
-emisora: NVIDIA
-titulo: SHARES OF US DATA CENTER FIRMS MIXED IN EARLY TRADING
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL3N46Z1A1:1
-
----
-fecha: 2026-11-18 08:38
-emisora: BOLSAA
-titulo: BMV - Aviso de Derechos de Tenedores CCD ́s
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261118:nNDL2hvGJ7:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-11-18 08:37
-emisora: NVIDIA
-titulo: NVIDIA SHARES PARE GAINS, LAST UP 0.6%
-fuente: Reuters
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL3N46Z19U:1
-
----
-fecha: 2026-11-18 08:37
-emisora: COBRE
-titulo: COMEX COPPER <HGc2> FALLS 5.1% TO $5.682 A POUND, LOWEST SINCE APRIL 2026
-fuente: Reuters
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nS8N3LL0RJ:1
-
----
-fecha: 2026-11-18 08:34
-emisora: NVIDIA
-titulo: SHARES OF US NEOCLOUD FIRMS MIXED AFTER NVIDIA FORECASTS Q4 REVENUE ABOVE ESTIMATES
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL3N46Z19J:1
-
----
-fecha: 2026-11-18 08:32
-emisora: NVIDIA
-titulo: US STOCKS SNAPSHOT-S&P 500, Nasdaq open higher as Nvidia forecast eases AI jitters
-fuente: Reuters
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z14E:3
-resumen:
-  Nov 18 (Reuters) - The S&P 500 and tech-heavy Nasdaq opened higher on Wednesday after
-  Nvidia's NVDA.O upbeat revenue forecast calmed investor concerns about the chip
-  bellwether's future and improved sentiment for AI-linked stocks. The Dow Jones
-  Industrial Average .DJI fell 132.1 points, or 0.26%, at the open to 50627.36.
-
----
-fecha: 2026-11-18 08:30
-emisora: PEOLES
-titulo: Mexicana Industrias Peñoles firma acuerdo de energía renovable a 20 años con Atlas Renewable Energy
-fuente: Reuters
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z02L:1
-resumen:
-  CIUDAD DE MÉXICO, 18 nov (Reuters) - Industrias Peñoles firmó un contrato de suministro
-  de energía renovable a 20 años con Atlas Renewable Energy, que respaldará parte de la
-  demanda eléctrica de las operaciones de la minera mexicana en el norte del país. El
-  proyecto, previsto para iniciar operaciones en el primer semestre de 2029 en el estado
-  Coahuila, combinará 269 MWp de capacidad solar con un sistema de baterías y
-  suministrará cerca de 550 GWh anuales, según un comunicado.
-
----
-fecha: 2026-11-18 08:30
-emisora: WALMEX
-titulo: Wal Mart de Mexico B de C : WMMVY - Books will close today, November 18, 2026.
-fuente: MARFRA
-tono: neutral
-impacto: medio
-id: lseg:urn:link:webnews:20261118:nNRA2ri2yt:0
-
----
-fecha: 2026-11-18 08:30
-emisora: NVIDIA
-titulo: NVIDIA SHARES UP 2.2% AFTER CO FORECASTS Q4 REVENUE ABOVE ESTIMATES
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL3N46Z192:1
-
----
-fecha: 2026-11-18 08:29
-emisora: VESTA
-titulo: VESTA DESIGNA A CLAUDIA MÁRQUEZ COMO DIRECTORA JURÍDICA INTERINA
-fuente: VISOR
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:reuters.com:20261118:nVIS1DbQW3:1
-
----
-fecha: 2026-11-18 08:25
-emisora: NVIDIA
-titulo: ACTUALIZA 1-Nvidia sube y arrastra consigo a las maltrechas acciones del sector de la IA, a medida que las previsiones disipan la incertidumbre tras la salida de Huang
-fuente: Reuters
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z1C9:1
-
----
-fecha: 2026-11-18 08:25
-emisora: NVIDIA
-titulo: UPDATE 1-Nvidia gains, lifts battered AI stocks as forecast eases post-Huang uncertainty
-fuente: Reuters
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z0R6:4
-
----
-fecha: 2026-11-18 08:22
-emisora: ARGENTINA
-titulo: RedCloud Launches Stablecoin Settlement Pilot In Argentina Starting Q1 2027
-fuente: BENZIN
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rhypj:0
-
----
-fecha: 2026-11-18 08:21
-emisora: NVIDIA
-titulo: MERCADOS EN DIRECTO-La caída del Nasdaq aún espera confirmación
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z1C2:1
-
----
-fecha: 2026-11-18 08:19
-emisora: FEMSAUBD
-titulo: Fomento Economico Mexicano, S.A.B de C.V. ADR (NYSE:FMX) ADR nudges 0.2% lower; -28c [-0.2%]
-fuente: GLORDP
-tono: negativa
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rhv3x:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Fomento Economico
-  Mexicano, S.A.B de C.V. ADR (NYSE:FMX $131.02) decreased 28.0c (0.2%) from its previous
-  trading session to close at $131.02. Compared with the BNY Mellon Composite ADR Index
-  which fell 5.0 points (1.9%) in the day, the relative price increase was 1.7%.
-
----
-fecha: 2026-11-18 08:19
-emisora: KOFUBL
-titulo: Coca-Cola FEMSA S.A.B de CV ADR (NYSE:KOF) strengthens above moving average price; +43c [+0.4%]
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rhwdh:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Coca-Cola FEMSA
-  S.A.B de CV ADR (NYSE:KOF $120.88) increased 43.0c (0.4%) from its previous trading
-  session to close at $120.88. Compared with the BNY Mellon Composite ADR Index which
-  fell 5.0 points (1.9%) in the day, the relative price increase was 2.3%. The 200-day
-  Moving Average Price (MAP) is $103.64, up from $103.55 on Monday.
-
----
-fecha: 2026-11-18 08:19
-emisora: OMAB
-titulo: Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB) falls in 4 out of last 5 days, 5-day fall of 2.2%; -62c [-0.6%]
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rhvdb:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
-  del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB $107.78) decreased 62.0c (0.6%) to
-  close at $107.78. Compared with the BNY Mellon Composite ADR Index which fell 5.0
-  points (1.9%) in the day, the relative price increase was 1.4%.
-
----
-fecha: 2026-11-18 08:19
-emisora: PINFRA
-titulo: Promotora Y Operadora de Infraestructura SA ADR (OTC:PUODY) lifts 1.6%, 2 days' volume in a day; +$5.24 [+1.6%]
-fuente: GLORDP
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rhwcd:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Promotora Y
-  Operadora de Infraestructura SA ADR (OTC:PUODY $338.61) lifted $5.24 (1.6%) from its
-  previous trading session to close at $338.61. Compared with the BNY Mellon Composite
-  ADR Index which fell 5.0 points (1.9%) in the day, the relative price increase was
-  3.5%. Today its volatility (highest price minus lowest price/lowest price) of 2.5% was
-  2.0 times its average daily volatility of 1.3%.
-
----
-fecha: 2026-11-18 08:19
-emisora: KIMBERA
-titulo: Kimberly-Clark de Mexico, S.A.B de C.V. ADR (OTC:KCDMY) climbs 2.8%, 2 days' volume in a day; +29c [+2.8%]
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rhvdp:0
-
----
-fecha: 2026-11-18 08:18
-emisora: AMXB
-titulo: America Movil S.A.B. de CV ADR (NYSE:AMX) lifts 1.4% on rising relative strength; +36c [+1.4%]
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rhu3k:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com America Movil
-  S.A.B. de CV ADR (NYSE:AMX $25.80) lifted 36.0c (1.4%) from its previous trading
-  session to close at $25.80. Compared with the BNY Mellon Composite ADR Index which fell
-  5.0 points (1.9%) in the day, the relative price increase was 3.4%. In the
-  International Depository Receipts market, the stock's relative price strength
-  percentile is rising at 59 for 6 months, 86 for 3 months, and 95 for 1 month.
-
----
-fecha: 2026-11-18 08:18
-emisora: ASURB
-titulo: Grupo Aeroportuario del Sureste S.A. de C.V. ADR (NYSE:ASR) logs 0.3% gain in today's trading session; +72c [+0.3%]
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rhup6:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
-  del Sureste S.A. de C.V. ADR (NYSE:ASR $269.67) gained 72.0c (0.3%) from its previous
-  trading session to close at $269.67. Compared with the BNY Mellon Composite ADR Index
-  which fell 5.0 points (1.9%) in the day, the relative price increase was 2.2%.
-
----
-fecha: 2026-11-18 08:18
-emisora: VESTA
-titulo: Corporacion Inmobiliaria Vesta, S.A.B. de C.V. ADR (NYSE:VTMX) decreases, 2 days' volume in a day; -31c [-0.8%]
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rhusq:0
-
----
-fecha: 2026-11-18 08:18
-emisora: ARGENTINA
-titulo: Riesgo país de Argentina se mantiene por encima de 850 puntos, dudas por deuda pública
-fuente: Reuters
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0LW:1
-
----
-fecha: 2026-11-18 08:18
-emisora: ARGENTINA
-titulo: REDCLOUD - TRIAL TO USE NON-CUSTODIAL WALLETS; REDCLOUD WILL NOT HOLD CUSTOMER FUNDS
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nFWN46Z0PZ:3
-
----
-fecha: 2026-11-18 08:18
-emisora: ARGENTINA
-titulo: REDCLOUD - EXPECTS TO EXPAND STABLECOIN SETTLEMENT TO ADDITIONAL MARKETS
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nFWN46Z0PZ:2
-
----
-fecha: 2026-11-18 08:06
-emisora: KIMBERA
-titulo: 08:05:52 INICIA SUBASTA DE VALUACION : KIMBER B
-fuente: BMV
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:reuters.com:20261118:nBMVMH0s6a:1
-
----
-fecha: 2026-11-18 07:40
-emisora: CHILE
-titulo: UPDATE 2-Chile economy posts biggest quarterly drop since 2020 on mining slump
-fuente: Reuters
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0FZ:5
-
----
-fecha: 2026-11-18 07:13
-emisora: CHILE
-titulo: Chile's GDP declines 1.1% in the third quarter, weighed down by mining
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rglh4:0
-
----
-fecha: 2026-11-18 07:13
-emisora: CHILE
-titulo: Exchange rate opened higher this Wednesday: local data weighs down the Chilean peso
-fuente: NOTENG
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rgkm8:0
-
----
-fecha: 2026-11-18 07:11
-emisora: CHILE
-titulo: Chile Copper Output Seen Falling 6.6% to 23-Year Low
-fuente: SCRAPM
-tono: neutral
-impacto: bajo
-id: lseg:urn:link:webnews:20261118:nNRA2rgic9:0
-
----
-fecha: 2026-11-18 06:12
-emisora: PERU
-titulo: There will be record home sales in 2026, but is a slowdown coming since December?
-fuente: NOTENG
-tono: positiva
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rfc9c:0
-
----
-fecha: 2026-11-18 06:06
-emisora: AMXB
-titulo: What's Next for America Movil S.A.B. de CV's (NYSE:AMX), Growth Trajectory
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rf8jk:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Ahead of this morning's market opening,
-  America Movil S.A.B. de CV ADR closed higher the previous trading day. America Movil
-  S.A.B. de CV (NYSE:AMX), the International Depository Receipt (IDR) market's 3rd
-  largest Telecommunication company by market cap, lifted 1.4% during its previous
-  trading session to close at $25.80.
-
----
-fecha: 2026-11-18 06:06
-emisora: ASURB
-titulo: Can Grupo Aeroportuario del Sureste S.A. de C.V. (NYSE:ASR), continue its rise?
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rf8y7:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Ahead of this morning's market opening,
-  Grupo Aeroportuario del Sureste S.A. de C.V. ADR closed higher the previous trading
-  day. Grupo Aeroportuario del Sureste S.A. de C.V.
-
----
-fecha: 2026-11-18 05:57
-emisora: AC
-titulo: Recent drop for Arca Continental SAB de CV (BMV:AC), raises questions
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rf19h:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Arca Continental SAB de CV
-  closed lower the previous trading day. Arca Continental SAB de CV (BMV:AC), Mexico's
-  largest Beverages company by market cap, dropped 1.0% during its previous trading
-  session to close at $240.53.
-
----
-fecha: 2026-11-18 05:57
-emisora: ASURB
-titulo: Will Grupo Aeroportuario del Sureste SAB de CV (BMV:ASUR), climb back after its latest drop?
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rf2df:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Grupo Aeroportuario del
-  Sureste SAB de CV has shown some weakness in recent days. Grupo Aeroportuario del
-  Sureste SAB de CV (BMV:ASUR), Mexico's 2nd largest Engineering & construction company
-  by market cap, decreased 0.2% during its previous trading session to close at $497.47.
-
----
-fecha: 2026-11-18 05:57
-emisora: GFNORTEO
-titulo: Grupo Financiero Banorte, S.A.B De C.V.'s (BMV:GFNORTE), outlook for Wednesday - A potential comeback?
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rf19e:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Grupo Financiero Banorte,
-  S.A.B De C.V. has shown some weakness in recent days. Grupo Financiero Banorte, S.A.B
-  De C.V. (BMV:GFNORTE), Mexico's 3rd largest Bank by market cap, dropped 1.4% during its
-  previous trading session to close at $202.51.
-
----
-fecha: 2026-11-18 05:57
-emisora: MEGACPO
-titulo: Can Megacable Holdings (BMV:MEGA), rebound after recent dip?
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rf2hv:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Megacable Holdings has
-  shown some weakness in recent days. Megacable Holdings (BMV:MEGA), Mexico's largest
-  Media company by market cap, decreased 0.9% during its previous trading session to
-  close at $58.25.
-
----
-fecha: 2026-11-18 05:57
-emisora: OMAB
-titulo: Grupo Aeroportuario Del Centro Norte, S.A.B. De C.V. (BMV:OMA), down in recent days
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rf2v5:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Grupo Aeroportuario Del
-  Centro Norte, S.A.B. De C.V. has shown some weakness in recent days. Grupo
-  Aeroportuario Del Centro Norte, S.A.B.
-
----
-fecha: 2026-11-18 05:57
-emisora: PEOLES
-titulo: ICYMI: Wednesday's Preview: Can Industrias Penoles SAB de CV (BMV:PE&OLES*), rebound after being down?
-fuente: GLORDP
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rf19i:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Industrias Penoles SAB de
-  CV has shown some weakness in recent days. Industrias Penoles SAB de CV (BMV:PE&OLES*),
-  Mexico's 3rd largest Mining company by market cap, dropped 1.2% during its previous
-  trading session to close at $749.33. Bullish Turning Point Williams % R The stock is
-  oversold according to the Williams % R indicator of -84.5, suggesting the price is
-  close to its 14-day low.
-
----
-fecha: 2026-11-18 05:57
-emisora: PINFRA
-titulo: Will Promotora Y Operadora De Infraestructura, S.A.B. De C.V.'s (BMV:PINFRA), Recent Rally Hold Strong for Traders?
-fuente: GLORDP
-tono: positiva
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rf2hu:0
-resumen:
-  MEXICAN STOCK REPORT Ahead of this morning's market opening, Promotora Y Operadora De
-  Infraestructura, S.A.B. De C.V. has shown some strength in recent days. Promotora Y
-  Operadora De Infraestructura, S.A.B.
-
----
-fecha: 2026-11-18 05:57
-emisora: KIMBERA
-titulo: Can Kimberly - Clark De Mexico S.A.B. De C.V. (BMV:KIMBERA), sustain its upward momentum this Wednesday?
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rf19f:0
-
----
-fecha: 2026-11-18 05:57
-emisora: VESTA
-titulo: Will Corp Inmobiliaria Vesta SAB de CV (BMV:VESTA), bounce back this Wednesday?
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rf2v7:0
-
----
-fecha: 2026-11-18 05:49
-emisora: COBRE
-titulo: METALES BÁSICOS-Cobre cae a mínimo de siete meses por ventas especulativas y temores de inflación
-fuente: Reuters
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z0RP:1
-
----
-fecha: 2026-11-18 05:40
-emisora: COBRE
-titulo: BUZZ-Over to New York-Dollar riding a hawkish Fed wave
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z0RX:1
-
----
-fecha: 2026-11-18 05:11
-emisora: PERU
-titulo: Dollar price in Peru today, Wednesday, November 18: check the exchange rate for buying and selling
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261118:nNRA2re9c6:0
-
----
-fecha: 2026-11-18 04:27
-emisora: PERU
-titulo: Lenders in Europe and Latin America Report Results as a Fed Governor Leans Toward a Hike
-fuente: NEWBTS
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rdetj:0
-
----
-fecha: 2026-11-18 04:08
-emisora: COBRE
-titulo: SEMANA DEL COBRE DE ASIA-Freeport Indonesia ofrece cobre de Manyar a China con una prima de 158 dólares por tonelada para 2027
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z0Q8:1
-
----
-fecha: 2026-11-18 04:08
-emisora: COBRE
-titulo: ASIA COPPER WEEK-Freeport Indonesia offers Manyar copper to China at $158/T premium for 2027
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0CH:3
-
----
-fecha: 2026-11-18 03:47
-emisora: COBRE
-titulo: SEMANA DEL COBRE DE ASIA-Según algunas fuentes, Freeport Indonesia ofrece a China cobre procedente de la fundición de Manyar con una prima de 158 dólares por tonelada para 2027
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z0O8:1
-
----
-fecha: 2026-11-18 03:47
-emisora: COBRE
-titulo: ASIA COPPER WEEK-Freeport Indonesia offers copper from Manyar smelter to China at $158/T premium for 2027, sources say
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z0NV:1
-
----
-fecha: 2026-11-18 03:14
-emisora: COBRE
-titulo: ASIA COPPER WEEK-Deeper negative copper ore refining charges needed to balance market, Mercuria analyst says
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0AJ:2
-
----
-fecha: 2026-11-18 02:59
-emisora: COBRE
-titulo: BUZZ-AUD/USD weighed down by lower gold, copper prices
-fuente: Reuters
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z0L1:1
-
----
-fecha: 2026-11-18 02:12
-emisora: COBRE
-titulo: CLEAN TECHNOLOGY REPRESENTS AROUND 70% OF COPPER DEMAND: MERCURIA
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nP8N45A06L:7
-
----
-fecha: 2026-11-18 02:12
-emisora: COBRE
-titulo: CLEAN TECHNOLOGY IN THE GRID, NOT DATA CENTRE, DRIVES COPPER DEMAND: MERCURIA
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nP8N45A06L:5
-
----
-fecha: 2026-11-18 02:11
-emisora: COBRE
-titulo: CHINA'S COPPER END DEMAND TO GROW BY 1% YEAR ON YEAR IN 2026 AND WILL SEE SIMILAR GROWTH NEXT YEAR: MERCURIA
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nP8N45A06L:3
-
----
-fecha: 2026-11-18 02:11
-emisora: COBRE
-titulo: MORE NEGATIVE COPPER CONC TC/RC BENCHMARK WOULD HELP MARKET TO ADJUST TO STRUCTURAL DEFICIT: MERCURIA
-fuente: Reuters
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nP8N45A06L:1
-
----
-fecha: 2026-11-18 01:55
-emisora: COBRE
-titulo: METALES BÁSICOS-El cobre cae a su mínimo en más de seis meses pendiente del dólar y la IA
-fuente: Reuters
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z0HR:1
-
----
-fecha: 2026-11-18 01:33
-emisora: COBRE
-titulo: LME THREE MONTH COPPER <CMCU3> FALLS OVER 3% TO $12,819 A TON
-fuente: Reuters
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nP8N44T0JA:1
-
----
-fecha: 2026-11-18 01:17
-emisora: COBRE
-titulo: METALS-London copper falls to over six-month low as firm dollar, AI concerns weigh
-fuente: Reuters
-tono: negativa
-impacto: bajo
-id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z02H:4
-
----
-fecha: 2026-11-18 01:07
-emisora: AMXB
-titulo: Will America Movil S.A.B. de CV's (NYSE:AMX), recent surge keep climbing?
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2r9rhq:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Ahead of this morning's market opening,
-  America Movil S.A.B. de CV ADR closed higher the previous trading day. America Movil
-  S.A.B. de CV (NYSE:AMX), the International Depository Receipt (IDR) market's 3rd
-  largest Telecommunication company by market cap, lifted 1.4% during its previous
-  trading session to close at $25.80.
-
----
-fecha: 2026-11-17 23:13
-emisora: PERU
-titulo: APEC 2026: Keiko Fujimori Highlights Peru's Economic Stability and Urges Chinese Businessmen to Maintain Their Investments
-fuente: NOTENG
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261118:nNRA2r8ah2:0
-
----
-fecha: 2026-11-17 22:52
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de BACOMER 74-26
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261118:nNDL70bXJQ:1
-
----
-fecha: 2026-11-17 22:43
-emisora: GFNORTEO
-titulo: Grupo Financiero Banorte, S.A.B. De C.V. ADR (OTCQX:GBOOY) dips 0.8% in past 3 months
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2r7xvo:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Financiero
-  Banorte, S.A.B. De C.V. (OTCQX:GBOOY) last traded at $54.76 for a year to date return
-  of 24.5%.
-
----
-fecha: 2026-11-17 22:43
-emisora: KOFUBL
-titulo: Coca-Cola FEMSA S.A.B de CV ADR (NYSE:KOF) jumps 12% in past 3 months
-fuente: GLORDP
-tono: positiva
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2r7zvr:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Coca-Cola FEMSA
-  S.A.B de CV (NYSE:KOF) last traded at $120.88 for a year to date return of 30.4%.
-  Coca-Cola FEMSA S.A.B de CV, has jumped $13.26 (or 12.3%) in the past 3 months to close
-  at $120.88 today. Compared with the BNY Mellon Composite ADR Index which fell 22.7
-  points (or 8.3%) in the past 3 months, this represented a relative price change of nil.
-
----
-fecha: 2026-11-17 22:43
-emisora: OMAB
-titulo: Grupo Aeroportuario del Centro Norte S.A.B. de C.V. ADR (NASDAQ:OMAB) increases 5% in past 3 months
-fuente: GLORDP
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2r7zvg:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Grupo Aeroportuario
-  del Centro Norte S.A.B. de C.V. (NASDAQ:OMAB) last traded at $107.78 for a year to date
-  return of 1.9%. Grupo Aeroportuario del Centro Norte S.A.B. de C.V., has increased
-  $4.99 (or 4.9%) in the past 3 months to close at $107.78 today.
-
----
-fecha: 2026-11-17 22:42
-emisora: PINFRA
-titulo: Promotora Y Operadora de Infraestructura SA ADR (OTC:PUODY) jumps 13% in past 3 months
-fuente: GLORDP
-tono: positiva
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261118:nNRA2r7ybo:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Promotora Y
-  Operadora de Infraestructura SA (OTC:PUODY) last traded at $338.61 for a year to date
-  return of 14.9%. Promotora Y Operadora de Infraestructura SA, has jumped $40.05 (or
-  13.4%) in the past 3 months to close at $338.61 today. Compared with the BNY Mellon
-  Composite ADR Index which fell 22.7 points (or 8.3%) in the past 3 months, this
-  represented a relative price change of nil.
-
----
-fecha: 2026-11-17 22:28
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de BACOMER 78-26
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261118:nNDL6KnDsR:1
-resumen:
-  Attention: The text below has been extracted from an image-only document using OCR
-  technology and may contain errors and omissions. You can access the original document
-  here. Aviso a Tenedores FECHA: 17/11/2026 BOLSA MEXICANA DE VALORES, S.A.B.
-
----
-fecha: 2026-11-17 21:56
-emisora: PINFRA
-titulo: Past Week: Promotora Y Operadora de Infraestructura SA ADR (OTC:PUODY:$338.61) posts best week in five weeks; +$15.83 [4.9%]
-fuente: GLORDP
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261118:nNRA2r7do5:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS www.buysellsignals.com Promotora Y
-  Operadora de Infraestructura SA (OTC:PUODY $338.61), the International Depository
-  Receipt (IDR) market's 9th largest Engineering & construction company by market cap,
-  has traded higher by $15.83 (or 4.9%) in the past week to close at $338.61. Compared
-  with the BNY Mellon Composite ADR Index which fell 12.7 points (or 4.8%) in the week,
-  this represented a relative price increase of 9.7%.
-
----
-fecha: 2026-11-17 21:23
-emisora: BOLSAA
-titulo: BMV - Reestructuras Corporativas Formato PDF
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261118:nNDL2kWxw4:1
-resumen:
-  FOLLETO INFORMATIVO SOBRE REESTRUCTURACIÓN SOCIETARIA Fecha de la declaración 04 de
-  septiembre de 2026 FIDEICOMISO IRREVOCABLE NÚMERO 188156 CFE FIBRA E (FCFE)
-  Fideicomitente y Administrador CFECapital, S. de R.L. de C.V. Domicilio del
-  Fideicomitente y Administrador: Av. Paseo de la Reforma 412, Piso 4, Col.
-
----
-fecha: 2026-11-17 21:23
-emisora: BOLSAA
-titulo: BMV - Aviso de Tenedores de BACOMER 128-26
-fuente: PUBT
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:reuters.com:20261118:nNDL66Mr0m:1
-
----
-fecha: 2026-11-17 20:23
-emisora: PERU
-titulo: Peru's economy slows to 2.4% growth in September, missing every forecast
-fuente: BNEINT
-tono: neutral
-impacto: bajo
-id: lseg:urn:newsml:newsroom:20261118:nNRA2r6d3g:0
-
----
-fecha: 2026-11-17 18:28
-emisora: AC
-titulo: Past Week: Arca Continental SAB de CV (BMV:AC) in top 4% performers of Mexican market in past week; +MX$8.59 [3.7%]
-fuente: CNBSTR
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2r5a59:0
-resumen:
-  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Arca Continental SAB de CV
-  (BMV:AC MX$240.53), Mexico's largest Beverages company by market cap, has pushed up
-  MX$8.59 (or 3.7%) in the past week to close at MX$240.53. This makes it the fourth
-  highest performer in the Mexican market. Compared with the Prices & Quotations Index of
-  34 stocks which fell 1,504.9 points (or 2.1%) in the week, a relative price increase of
-  5.8%.
-
----
-fecha: 2026-11-17 18:28
-emisora: GFNORTEO
-titulo: Past Week: Grupo Financiero Banorte, S.A.B De C.V. (BMV:GFNORTE) keeps sliding: down 5% in 3 weeks; -MX$11.52 [-5.4%]
-fuente: CNBSTR
-tono: neutral
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2r59t5:0
-resumen:
-  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Grupo Financiero Banorte, S.A.B
-  De C.V. (BMV:GFNORTE MX$202.51), Mexico's 3rd largest Bank by market cap, extended its
-  slide in the past week ended Tuesday, shedding an additional MX$6.35 (or 3.0%) to close
-  at MX$202.51. The shares have tumbled MX$11.52 (or 5.4%) over the past three weeks.
-
----
-fecha: 2026-11-17 18:28
-emisora: MEGACPO
-titulo: Past Week: Megacable Holdings (BMV:MEGA) ticks lower by 1.9%, 5 weeks' volume in a week; -MX$1.13 [-1.9%]
-fuente: CNBSTR
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2r5bep:0
-resumen:
-  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Megacable Holdings (BMV:MEGA
-  MX$58.25), Mexico's largest Media company by market cap, has ticked lower by MX$1.13
-  (or 1.9%) in the past week to close at MX$58.25. Compared with the Prices & Quotations
-  Index which fell 1,504.9 points (or 2.1%) in the week, this represented a relative
-  price increase of 0.2%. The volume was 5 times average weekly trading of 1.5 million
-  shares.
-
----
-fecha: 2026-11-17 18:28
-emisora: PEOLES
-titulo: Past Week: Industrias Penoles SAB de CV (BMV:PE&OLES*) in bottom 3% performers of Mexican market in past week; -MX$73.58 [-8.9%]
-fuente: CNBSTR
-tono: negativa
-impacto: medio
-id: lseg:urn:newsml:newsroom:20261118:nNRA2r5ber:0
-resumen:
-  MEXICAN END-OF-WEEK STOCK REPORT www.buysellsignals.com Industrias Penoles SAB de CV
-  (BMV:PE&OLES* MX$749.33), Mexico's 3rd largest Mining company by market cap, has traded
-  lower by MX$73.58 (or 8.9%) in the past week to close at MX$749.33. This makes it the
-  third lowest performer in the Mexican market. Compared with the Prices & Quotations
-  Index of 34 stocks which fell 1,504.9 points (or 2.1%) in the week, a relative price
-  change of -6.8%.
-
----
-fecha: 2026-11-17 17:51
-emisora: GFNORTEO
-titulo: Grupo Financiero Banorte, S.A.B. De C.V. (OTCQX:GBOOY) Grows Earnings Faster Than HDFC Bank Ltd. Over Three Years *Updated*
-fuente: GLORDP
-tono: neutral
-impacto: alto
-id: lseg:urn:newsml:newsroom:20261117:nNRA2r4uq2:0
-resumen:
-  GLOBAL ROUND UP ADRS AND DEPOSITORY RECEIPTS Grupo Financiero Banorte, S.A.B. De C.V.'s
-  growth in EPS (earnings per share) has been 8.9% annualized over 3 years. Over the same
-  time period its ADR price has gone up 59.2% or 27.1% annualized.

@@ -1,13 +1,152 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
-fecha: 2026-11-18 08:59
-emisora: EUA
-titulo: UPDATE 2-Sheinbaum says Mexico-US trade talks 'very far along' after meeting Trump at APEC
+fecha: 2026-11-18 17:55
+emisora: COBRE
+titulo: BUZZ-Australian miners tumble as copper hits seven-month low
 fuente: Reuters
 tono: neutral
-relevancia: 9
-id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z100:4
+relevancia: 4
+id: lseg:urn:newsml:reuters.com:20261118:nL3N46Z22G:1
+
+---
+fecha: 2026-11-18 17:13
+emisora: EUA
+titulo: Sheinbaum highlights a "very good meeting" with Trump amid tariff threats
+fuente: NOTENG
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rpg6t:0
+
+---
+fecha: 2026-11-18 17:12
+emisora: MERCADO
+titulo: Mexico's minimum wage could rise to 10,700 pesos by 2027: what is known about the increase
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rpgbs:0
+
+---
+fecha: 2026-11-18 17:12
+emisora: BANXICO
+titulo: Banxico Circular 4/2019 Governs Virtual Asset Limits in Mexico
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rpgqf:0
+
+---
+fecha: 2026-11-18 16:41
+emisora: BANXICO
+titulo: Banxico Circular 4/2019 Governs Virtual Asset Limits in Mexico
+fuente: MEXSPA
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261118:nNRA2rp5ek:0
+
+---
+fecha: 2026-11-18 16:39
+emisora: NVIDIA
+titulo: BREAKINGVIEWS-Anthropic IPO win keeps AI trade alive another day
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z18R:4
+
+---
+fecha: 2026-11-18 16:29
+emisora: BRASIL
+titulo: UPDATE 1-Brazil Senate approves fiscal package as government seeks to calm markets
+fuente: Reuters
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z169:2
+
+---
+fecha: 2026-11-18 16:13
+emisora: EUA
+titulo: Trump Meets Sheinbaum in China to Discuss the Future of the USMCA
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261118:nNRA2roxwg:0
+
+---
+fecha: 2026-11-18 16:12
+emisora: MERCADO
+titulo: Corn Imports in Mexico: Harvest Area Decreases
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261118:nNRA2roxst:0
+
+---
+fecha: 2026-11-18 16:01
+emisora: NVIDIA
+titulo: DÍA DE NEGOCIACIÓN-Los mercados registran resultados dispares en medio de la agitación en torno a Nvidia, Anthropic y las actas
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z2FB:1
+
+---
+fecha: 2026-11-18 15:36
+emisora: NVIDIA
+titulo: BOLSA DE EEUU-Wall Street cierra con resultados dispares tras los resultados de Nvidia y las actas de la Fed
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z2C5:1
+
+---
+fecha: 2026-11-18 15:34
+emisora: MERCADO
+titulo: Peso mexicano encabeza pérdidas entre monedas globales por expectativas de una Fed más restrictiva
+fuente: Reuters
+tono: negativa
+relevancia: 16
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z01Z:1
+resumen:
+  CIUDAD DE MÉXICO, 18 nov (Reuters) - El peso mexicano se depreció el miércoles con más fuerza que otras monedas referenciales, arrastrado por un avance global del dólar después de que las minutas de la Reserva Federal y comentarios de sus autoridades reforzaron las expectativas de una política monetaria estadounidense más restrictiva.
+
+---
+fecha: 2026-11-18 15:01
+emisora: FED
+titulo: BOLSA DE EEUU-Wall Street cierra con resultados dispares tras los resultados de Nvidia y las actas de la Fed
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z29Q:1
+
+---
+fecha: 2026-11-18 14:19
+emisora: MERCADO
+titulo: MERCADOS A.LATINA-Monedas y bolsas caen ante expectativas de alzas tasas Fed
+fuente: Reuters
+tono: neutral
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z10Q:1
+resumen:
+  Actualiza con cotizaciones por la tarde Por Manuel Farías SANTIAGO, 18 nov (Reuters) - Las principales monedas y bolsas de América Latina cayeron el miércoles, presionadas por las expectativas de alzas de tasas de interés por parte de la Reserva Federal de Estados Unidos tras comentarios de tono restrictivos de parte de autoridades del banco central y luego de conocerse las minutas de la última reunión del organismo. * "Casi todos" los responsables monetarios coincidieron en que serían necesarias más alzas de…
+
+---
+fecha: 2026-11-18 13:41
+emisora: NVIDIA
+titulo: BOLSA DE EEUU-Wall Street registra resultados mixtos tras los resultados de Nvidia y las actas de la Fed
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261118:nL5N46Z24Y:1
+
+---
+fecha: 2026-11-18 10:47
+emisora: BRASIL
+titulo: El ministro de Hacienda de Brasil apunta a medidas fiscales adicionales a corto plazo
+fuente: Reuters
+tono: neutral
+relevancia: 12
+id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z19Q:1
 
 ---
 fecha: 2026-11-18 08:37
@@ -43,15 +182,6 @@ resumen:
   Añade comentarios de Sheinbaum en mensaje a medios 18 nov (Reuters) - La presidenta mexicana, Claudia Sheinbaum, dijo el miércoles que durante una reunión en China con su homólogo estadounidense, Donald Trump, hablaron principalmente de acuerdos comerciales y afirmó que las conversaciones van muy avanzadas, sin ofrecer más detalles.
 
 ---
-fecha: 2026-11-18 07:51
-emisora: BANXICO
-titulo: BUZZ-Mexican peso tumbles alongside commodities
-fuente: Reuters
-tono: neutral
-relevancia: 9
-id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z12Y:1
-
----
 fecha: 2026-11-18 06:53
 emisora: NVIDIA
 titulo: MERCADOS MUNDIALES-Las acciones caen mientras los inversores analizan los resultados de Nvidia; la salida a bolsa de Anthropic pondrá a prueba el auge de la IA
@@ -72,24 +202,6 @@ resumen:
   Updates to reflect prices in early afternoon European trading hours MSCI gauge of global shares loses 0.1% European stocks steady after Tuesday losses Wall Street set for gains Nvidia sales forecast tops expectations Anthropic set to price IPO on Wednesday Oil falls on US inventories Dollar steady as rate hike expectations harden By Tom Wilson LONDON, Nov 18 (Reuters) - World stocks struggled on Wednesday, as investors digested Nvidia's better-than-expected sales forecast and braced for Anthropic's market debut,…
 
 ---
-fecha: 2026-11-18 06:47
-emisora: EUA
-titulo: Presidenta mexicana Sheinbaum dice que mantuvo "una muy buena" reunión con Trump
-fuente: Reuters
-tono: neutral
-relevancia: 10
-id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z104:1
-
----
-fecha: 2026-11-18 05:09
-emisora: EUA
-titulo: Trump se reunirá con presidenta de México y primer ministro de Canadá, dice funcionario Casa Blanca
-fuente: Reuters
-tono: neutral
-relevancia: 10
-id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z0DX:1
-
----
 fecha: 2026-11-18 04:47
 emisora: MERCADO
 titulo: EMERGING MARKETS-EM stocks edge up after Nvidia results; South African assets fall post inflation
@@ -99,24 +211,6 @@ relevancia: 13
 id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z0J9:1
 resumen:
   Nvidia sees revenue above analysts' estimate South Africa inflation jumps Hungary eyes possible December rate cut, forint slides Poland rate hike remains possible, policymaker says By Tharuniyaa Lakshmi Nov 18 (Reuters) - An MSCI index of emerging market stocks rose on Wednesday as Nvidia's strong quarterly earnings fired up the global AI trade, while traders assessed South Africa's inflation data.
-
----
-fecha: 2026-11-18 01:55
-emisora: COBRE
-titulo: METALES BÁSICOS-El cobre cae a su mínimo en más de seis meses pendiente del dólar y la IA
-fuente: Reuters
-tono: negativa
-relevancia: 9
-id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z0HR:1
-
----
-fecha: 2026-11-17 16:22
-emisora: NVIDIA
-titulo: VISTA INSTANTÁNEA-Los resultados de Nvidia superan las previsiones; la empresa no responderá a preguntas sobre la dimisión
-fuente: Reuters
-tono: positiva
-relevancia: 10
-id: lseg:urn:newsml:reuters.com:20261117:nL5N46Y2SA:1
 
 ---
 fecha: 2026-11-17 15:25
