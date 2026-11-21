@@ -1,13 +1,330 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
-fecha: 2026-11-18 17:55
-emisora: COBRE
-titulo: BUZZ-Australian miners tumble as copper hits seven-month low
+fecha: 2026-11-20 20:19
+emisora: MERCADO
+titulo: Trump sees Mexico deal near, presses Canada
+fuente: INDASI
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261121:nNRA2sx52u:0
+
+---
+fecha: 2026-11-20 19:12
+emisora: MERCADO
+titulo: Mexico's stock exchange falls 3.62% for the week, marks two consecutive declines, and drops to 68,629.46 points
+fuente: NOTENG
+tono: negativa
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261121:nNRA2swmpj:0
+
+---
+fecha: 2026-11-20 18:13
+emisora: EUA
+titulo: Trump says the U.S. is nearing a trade agreement with Mexico
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261121:nNRA2sw8k8:0
+
+---
+fecha: 2026-11-20 17:14
+emisora: BANXICO
+titulo: Dollar price in Mexico today, Friday, November 20, 2026: USD to MXN exchange rate, closing value, and Banxico quotation
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261120:nNRA2svoq5:0
+
+---
+fecha: 2026-11-20 16:34
+emisora: PETROLEO
+titulo: MERCADOS MUNDIALES-El sector tecnológico lidera la caída de las bolsas mundiales; bajan los rendimientos de los bonos del Tesoro
+fuente: Reuters
+tono: negativa
+relevancia: 5
+id: lseg:urn:newsml:reuters.com:20261120:nL5N4712EC:1
+
+---
+fecha: 2026-11-20 16:33
+emisora: MERCADO
+titulo: GLOBAL MARKETS-Tech leads global stocks rout, Treasury yields fall
 fuente: Reuters
 tono: neutral
-relevancia: 4
-id: lseg:urn:newsml:reuters.com:20261118:nL3N46Z22G:1
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261120:nL6N4710ZL:2
+
+---
+fecha: 2026-11-20 16:13
+emisora: BANXICO
+titulo: Mexico's Evolving Payment Compliance Landscape for Merchants
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261120:nNRA2sv9b7:0
+
+---
+fecha: 2026-11-20 16:12
+emisora: EUA
+titulo: Donald Trump and Claudia Sheinbaum are expected to finalize a trade agreement
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261120:nNRA2sv85r:0
+
+---
+fecha: 2026-11-20 15:38
+emisora: MERCADO
+titulo: MERCADOS EMERGENTES-Los activos de Latinoamérica, afectados por el clima de aversión al riesgo a nivel mundial; las materias primas agravan las pérdidas
+fuente: Reuters
+tono: negativa
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261120:nL5N47129M:1
+
+---
+fecha: 2026-11-20 15:32
+emisora: NVIDIA
+titulo: La semana que viene en Wall Street-El «Viernes Negro» pone el foco en el gasto de los consumidores en un mercado impulsado por la inteligencia artificial
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261120:nL5N47128W:1
+
+---
+fecha: 2026-11-20 15:16
+emisora: AMXB
+titulo: ACTUALIZA 2-ACTUALIZACIÓN 1-Los operadores de telefonía móvil mexicanos se enfrentan a cortes generalizados, según informan los usuarios
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261120:nL5N47121W:2
+
+---
+fecha: 2026-11-20 14:55
+emisora: NVIDIA
+titulo: TREASURIES-US yields drop for day and week; AI trade concern spurs safe-haven bid
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261120:nL6N47114K:3
+
+---
+fecha: 2026-11-20 14:14
+emisora: MERCADO
+titulo: MERCADOS A.LATINA-Monedas y bolsas cierran con bajas una de sus peores semanas de año
+fuente: Reuters
+tono: negativa
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261120:nL6N47111Z:1
+resumen:
+  Actualiza al cierre Por Javier López de Lérida SANTIAGO, 20 nov (Reuters) - Las monedas y las acciones latinoamericanas cayeron el viernes y registraron una de sus peores semanas del año, en la que fueron presionadas por un dólar que se fortaleció debido a que los inversores buscaron refugio tras bajas persistentes de los mercados de renta variable internacionales. * El índice de monedas latinoamericanas de MSCI .MILA00000CUS bajó todos los días de la semana con un descenso acumulado de más de un 3%, mientras que…
+
+---
+fecha: 2026-11-20 13:28
+emisora: NVIDIA
+titulo: US STOCKS-Wall St slides on mounting AI selloff, S&P 500, Dow set to confirm corrections
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261120:nL6N47112S:5
+
+---
+fecha: 2026-11-20 12:04
+emisora: EUA
+titulo: Trump dice que un acuerdo comercial con México está más cerca
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261120:nL6N47111I:1
+
+---
+fecha: 2026-11-20 11:36
+emisora: COBRE
+titulo: METALES BÁSICOS-Cobre registra mayor caída semanal en 19 meses, mientras sigue desplome de la IA
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261120:nL2N4710Q0:1
+
+---
+fecha: 2026-11-20 09:55
+emisora: COLOMBIA
+titulo: Déficit fiscal de Colombia superará 7,6% del PIB en 2026: Ministro de Hacienda
+fuente: Reuters
+tono: positiva
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261120:nS0N43E014:1
+resumen:
+  BOGOTÁ, 20 nov (Reuters) - El déficit fiscal de Colombia superará el 7,6% del Producto Interno Bruto (PIB) este año, dijo el viernes el ministro de Hacienda, Miguel Gómez, durante un evento con la Organización para la Cooperación y el Desarrollo Económicos (OCDE), en Bogotá. La cifra es superior al déficit fiscal que estableció el Gobierno para este año en el presupuesto de 2026, de un 7,2% del PIB. (Reporte de Nelson Bocanegra.
+
+---
+fecha: 2026-11-20 09:00
+emisora: PEOLES
+titulo: El oro cae por debajo de 3,590 USD y va a su peor semana desde marzo (−7%)
+fuente: North Star · Bloomberg Línea (Instagram)
+tono: negativa
+relevancia: 14
+id: equipo:20261120-oro-semana
+resumen:
+  El oro bajó hasta 1.1% el viernes, por debajo de 3,590 USD la onza, y se encamina a una caída de alrededor de 7% en la semana, la mayor desde marzo y su nivel más bajo desde septiembre de 2025. Bloomberg Línea lo atribuye a una Fed que apunta a más alzas de tasas y a la venta de acciones de IA, que obligó a vender metal para cubrir pérdidas. Para nosotros: PEÑOLES es la emisora más expuesta al oro y a la plata; el 18-nov ya había caído 8.1% y el 19-nov otro 4.5%. Liga: https://www.instagram.com/p/Df91Cjul8QH/
+
+---
+fecha: 2026-11-20 05:43
+emisora: EUA
+titulo: La incertidumbre comercial con EEUU está acercando más a México y a Europa, dice Hansen, de la UE
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261120:nL6N4710OC:1
+
+---
+fecha: 2026-11-20 05:05
+emisora: PEOLES
+titulo: La plata cae a 42.38 USD, 64% abajo de su máximo de enero, junto con las bolsas
+fuente: North Star · FinanceFeeds (Kitco, MeltValue)
+tono: negativa
+relevancia: 14
+id: equipo:20261120-plata-64
+resumen:
+  La plata cotizó en 42.38 USD la onza (−0.87%, Kitco) tras tocar 40.99. Está 63.9% abajo del máximo de 117.39 del 29 de enero y pierde 43.7% en el año. El S&P 500 cayó 2% el 19-nov, su sexta baja seguida, y el Nikkei casi 5% el viernes. Polymarket da 92% a un alza de 25 pb de la Fed el 8–9 de diciembre; el dólar (DXY 103.82) está en su nivel más alto desde abril de 2025 y el bono a 10 años ronda 5.07%. El oro bajó de 3,650 USD; la razón oro/plata ~83. Para nosotros: explica la caída de PEÑOLES y pesa sobre GMEXICO por el lado de los metales. Liga: https://financefeeds.com/es/precio-plata-cae-acciones-maximo-enero-fed/
+
+---
+fecha: 2026-11-20 01:12
+emisora: EUA
+titulo: U.S. Sanctions Canadian Branch of Italian Mafia 'Ndrangheta for Collaborating with Mexican and Colombian Cartels
+fuente: NOTENG
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:newsroom:20261120:nNRA2sge77:0
+resumen:
+  The U.S. Department of the Treasury announced on Thursday sanctions against the leaders of the Canadian branch of the Italian mafia known as the 'Ndrangheta, due to their complicity with Mexican and Colombian drug trafficking cartels. The sanctions specifically target Angelo Figliomeni, the leader of the 'Ndrangheta faction in Toronto — also known as "Don Angelino" — and Luigi Vescio Sr., known as "The Gravedigger," who owns a chain of funeral homes in Ontario.
+
+---
+fecha: 2026-11-19 16:00
+emisora: MERCADO
+titulo: GLOBAL MARKETS-Stocks fall as Anthropic debut fails to ease AI concerns; dollar rises
+fuente: Reuters
+tono: positiva
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261119:nL6N47018T:3
+resumen:
+  Updates to US stock market close Dollar index ticks up, Latam currencies slide Oil prices rise on Hormuz attacks concern Anthropic rises 17% in stock market debut By Rodrigo Campos NEW YORK/LONDON, Nov 19 (Reuters) - Global stocks fell on Thursday with sliding tech shares as Anthropic's ANT.O debut failed to allay investor concerns about AI returns, while oil prices rose as attacks on shipping in the Strait of Hormuz grabbed market attention.
+
+---
+fecha: 2026-11-19 15:04
+emisora: ARGENTINA
+titulo: ACTUALIZA 1-Peso argentino anota mínimo récord, riesgo país salta a 925 puntos
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261119:nL2N47012I:1
+
+---
+fecha: 2026-11-19 14:31
+emisora: MERCADO
+titulo: MERCADOS A.LATINA-Monedas caen ante expectativas alza tasas Fed; peso México presionado por minutas Banxico
+fuente: Reuters
+tono: neutral
+relevancia: 17
+id: lseg:urn:newsml:reuters.com:20261119:nL2N470170:1
+resumen:
+  Actualiza con cotizaciones por la tarde Por Manuel Farías SANTIAGO, 19 nov (Reuters) - Las principales monedas de América Latina cayeron el jueves, en medio de las expectativas de alzas de tasas de la Reserva Federal que ampliaría el diferencial con los tipos de los bancos centrales de la región y la volatilidad de los mercados globales ante la salida a bolsa de Anthropic. * El dólar =USD se tomó un respiro más temprano, pero la moneda subía levemente por la tarde en medio de las expectativas de que la Fed…
+
+---
+fecha: 2026-11-19 14:30
+emisora: ARGENTINA
+titulo: ACTUALIZA 1-Argentina logra superávit comercial de 3.394 mlns dlrs en octubre
+fuente: Reuters
+tono: positiva
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261119:nL2N47017M:1
+
+---
+fecha: 2026-11-19 14:12
+emisora: EUA
+titulo: IMF Chief and Sheinbaum Highlight Performance of the Mexican Economy; Georgieva Urges Countries to Prepare "Quickly" for Changes Due to AI
+fuente: NOTENG
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:newsroom:20261119:nNRA2s8t3t:0
+
+---
+fecha: 2026-11-19 13:37
+emisora: PINFRA
+titulo: North Star reinvierte el dividendo de PINFRA: compra de 10 PINFRA a $309.00
+fuente: North Star · Bitácora
+tono: neutral
+relevancia: 12
+id: equipo:20261119-compra-pinfra
+resumen:
+  PINFRA pagó USD 0.133454 por acción (ex 17-nov, pago 18-nov). En el libro se convierte con el FIX del 18-nov (18.6723): $2.4919 por título, 1,233 títulos = $3,072.50. El correo a los profesores lo estimó en $3,038.83 con el FIX del día anterior (18.4677). Ejecución en BMV a las 13:37:10 y 13:37:11 (vendedores MS y GS, comprador BCOMR): 10 títulos por $3,090.00, más $10.75 de comisión e IVA. Es parte de la estrategia de reinversión de dividendos del modelo presentado a BBVA.
+
+---
+fecha: 2026-11-19 13:03
+emisora: ARGENTINA
+titulo: Balanza comercial de Argentina contabiliza superávit de 3.394 mln dlr en octubre: INDEC
+fuente: Reuters
+tono: positiva
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261119:nAQN2MUKFT:1
+
+---
+fecha: 2026-11-19 12:05
+emisora: WALMEX
+titulo: North Star reinvierte el dividendo de WALMEX: compra de 67 WALMEX a $55.02
+fuente: North Star · Bitácora
+tono: neutral
+relevancia: 12
+id: equipo:20261119-compra-walmex
+resumen:
+  El dividendo de WALMEX fue de $0.58 por acción (ex 17-nov, pago 18-nov). Con 6,439 títulos cobramos $3,734.62. Ejecución en BIV a las 12:05:57 (vendedor GS, comprador BCOMR): 67 títulos por $3,686.34, más $12.83 de comisión e IVA. Sobran $35.45 en caja. Es parte de la estrategia de reinversión de dividendos del modelo presentado a BBVA; el mismo día se compraron 10 PINFRA con su dividendo.
+
+---
+fecha: 2026-11-19 11:55
+emisora: MERCADO
+titulo: GLOBAL MARKETS-Stocks slip as Anthropic gains on market debut and oil prices rise
+fuente: Reuters
+tono: positiva
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261119:nL6N470145:2
+
+---
+fecha: 2026-11-19 11:13
+emisora: EUA
+titulo: Mexico is confident it will soon reach an agreement with the U.S. to reduce tariffs
+fuente: NOTENG
+tono: negativa
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261119:nNRA2s6hvp:0
+
+---
+fecha: 2026-11-19 10:26
+emisora: BANXICO
+titulo: ACTUALIZA 1-Banco central mexicano dice no espera depreciación del peso golpee a inflación: minuta
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261119:nL6N47011F:1
+
+---
+fecha: 2026-11-19 10:16
+emisora: MERCADO
+titulo: EMERGING MARKETS-LatAm stocks hit 11-month low, most FX slips on tighter Fed bets
+fuente: Reuters
+tono: neutral
+relevancia: 12
+id: lseg:urn:newsml:reuters.com:20261119:nL6N4700TH:3
+resumen:
+  Brazil Senate backs fiscal package, easing debt concerns Mexico data signals resilience despite peso's recent weakness Xi, Trump, Putin sign peace declaration at trilateral summit By Tharuniyaa Lakshmi Nov 19 (Reuters) - Latin American equities slipped to a 11-month low on Thursday amid a fragile global mood, while growing expectations of tighter US monetary policy weighed on most regional currencies.‌ MSCI's index of Latin American equities .MILA00000PUS fell 1.62%, in line with global equities, which were on…
+
+---
+fecha: 2026-11-19 09:23
+emisora: BANXICO
+titulo: Mayoría gobernadores Banxico descarta depreciación cambiaria afecte inflación de forma significativa: minuta
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261119:nS0N44F02A:1
 
 ---
 fecha: 2026-11-18 17:13
@@ -17,69 +334,6 @@ fuente: NOTENG
 tono: neutral
 relevancia: 8
 id: lseg:urn:newsml:newsroom:20261118:nNRA2rpg6t:0
-
----
-fecha: 2026-11-18 17:12
-emisora: MERCADO
-titulo: Mexico's minimum wage could rise to 10,700 pesos by 2027: what is known about the increase
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rpgbs:0
-
----
-fecha: 2026-11-18 17:12
-emisora: BANXICO
-titulo: Banxico Circular 4/2019 Governs Virtual Asset Limits in Mexico
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rpgqf:0
-
----
-fecha: 2026-11-18 16:41
-emisora: BANXICO
-titulo: Banxico Circular 4/2019 Governs Virtual Asset Limits in Mexico
-fuente: MEXSPA
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261118:nNRA2rp5ek:0
-
----
-fecha: 2026-11-18 16:39
-emisora: NVIDIA
-titulo: BREAKINGVIEWS-Anthropic IPO win keeps AI trade alive another day
-fuente: Reuters
-tono: neutral
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261118:nL6N46Z18R:4
-
----
-fecha: 2026-11-18 16:29
-emisora: BRASIL
-titulo: UPDATE 1-Brazil Senate approves fiscal package as government seeks to calm markets
-fuente: Reuters
-tono: positiva
-relevancia: 6
-id: lseg:urn:newsml:reuters.com:20261118:nL2N46Z169:2
-
----
-fecha: 2026-11-18 16:13
-emisora: EUA
-titulo: Trump Meets Sheinbaum in China to Discuss the Future of the USMCA
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261118:nNRA2roxwg:0
-
----
-fecha: 2026-11-18 16:12
-emisora: MERCADO
-titulo: Corn Imports in Mexico: Harvest Area Decreases
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261118:nNRA2roxst:0
 
 ---
 fecha: 2026-11-18 16:01
