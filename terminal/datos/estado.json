@@ -1,0 +1,26 @@
+{
+ "version": 1,
+ "generado": "2026-11-21T04:14:37+00:00",
+ "modo": "rapido",
+ "mercado": {
+  "estado": "cerrado",
+  "texto": "Sesión terminada",
+  "hora_cdmx": "2026-11-20 22:14",
+  "fecha": "2026-11-20",
+  "horario": "8:30–15:00 CDMX"
+ },
+ "fuentes": [
+  "Mercado · diferido"
+ ],
+ "cobertura": {
+  "cotizaciones": "38/38"
+ },
+ "errores": [],
+ "avisos": [],
+ "n_avisos": 0,
+ "duracion_s": 6.7,
+ "escritos": 4,
+ "ultimo_completo": "2026-11-21T03:28:59+00:00",
+ "ultimo_rapido": "2026-11-21T04:14:37+00:00",
+ "origen": "GitHub Actions · corrida 44865079746"
+}

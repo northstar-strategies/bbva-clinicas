@@ -1,0 +1,857 @@
+{
+ "emisoras": [
+  {
+   "t": "AC",
+   "y": "AC.MX",
+   "n": "Arca Continental",
+   "nombre": "Arca Continental, S.A.B. de C.V.",
+   "sector": "Consumo frecuente",
+   "sub": "Bebidas",
+   "grupo": "bebidas",
+   "grupo_n": "Bebidas",
+   "logo": "Arca_Continental_logo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0742,
+   "financiera": false
+  },
+  {
+   "t": "ALPEKA",
+   "y": "ALPEKA.MX",
+   "n": "Alpek",
+   "nombre": "Alpek, S.A.B. de C.V.",
+   "sector": "Materiales",
+   "sub": "Químicos",
+   "grupo": "quimicos",
+   "grupo_n": "Químicos",
+   "logo": "Alpek_1_Positivo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0,
+   "financiera": false
+  },
+  {
+   "t": "ALSEA",
+   "y": "ALSEA.MX",
+   "n": "Alsea",
+   "nombre": "Alsea, S.A.B. de C.V.",
+   "sector": "Consumo discrecional",
+   "sub": "Restaurantes",
+   "grupo": "restaurantes",
+   "grupo_n": "Restaurantes",
+   "logo": "Alsea_1_Positivo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0,
+   "financiera": false
+  },
+  {
+   "t": "AMXB",
+   "y": "AMXB.MX",
+   "n": "América Móvil",
+   "nombre": "América Móvil, S.A.B. de C.V.",
+   "sector": "Comunicaciones",
+   "sub": "Telecomunicaciones",
+   "grupo": "telecom",
+   "grupo_n": "Telecomunicaciones",
+   "logo": "Logo_de_América_Móvil (2).svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0997,
+   "financiera": false
+  },
+  {
+   "t": "ASURB",
+   "y": "ASURB.MX",
+   "n": "ASUR",
+   "nombre": "Grupo Aeroportuario del Sureste, S.A.B. de C.V.",
+   "sector": "Industriales",
+   "sub": "Aeropuertos",
+   "grupo": "aeropuertos",
+   "grupo_n": "Aeropuertos",
+   "logo": "Grupo_Aeroportuario_del_Sureste_logo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0587,
+   "financiera": false
+  },
+  {
+   "t": "BBAJIOO",
+   "y": "BBAJIOO.MX",
+   "n": "BanBajío",
+   "nombre": "Banco del Bajío, S.A., Institución de Banca Múltiple",
+   "sector": "Financieros",
+   "sub": "Bancos",
+   "grupo": "bancos",
+   "grupo_n": "Bancos",
+   "logo": "Logo_de_BanBajío.svg",
+   "bloque": "ACTIVA",
+   "peso_indice": 0.0199,
+   "financiera": true
+  },
+  {
+   "t": "BIMBOA",
+   "y": "BIMBOA.MX",
+   "n": "Grupo Bimbo",
+   "nombre": "Grupo Bimbo, S.A.B. de C.V.",
+   "sector": "Consumo frecuente",
+   "sub": "Alimentos",
+   "grupo": "alimentos",
+   "grupo_n": "Alimentos",
+   "logo": "BIMBOA.MX.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0206,
+   "financiera": false
+  },
+  {
+   "t": "BOLSAA",
+   "y": "BOLSAA.MX",
+   "n": "Grupo BMV",
+   "nombre": "Bolsa Mexicana de Valores, S.A.B. de C.V.",
+   "sector": "Financieros",
+   "sub": "Infraestructura de mercados",
+   "grupo": "bolsa",
+   "grupo_n": "Infraestructura de mercados",
+   "logo": "BMV_1_Positivo.svg",
+   "bloque": "ACTIVA",
+   "peso_indice": 0.0,
+   "financiera": false
+  },
+  {
+   "t": "CEMEXCPO",
+   "y": "CEMEXCPO.MX",
+   "n": "Cemex",
+   "nombre": "Cemex, S.A.B. de C.V.",
+   "sector": "Materiales",
+   "sub": "Cemento",
+   "grupo": "cemento",
+   "grupo_n": "Cemento",
+   "logo": "CX_BIG.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0138,
+   "financiera": false
+  },
+  {
+   "t": "CHDRAUIB",
+   "y": "CHDRAUIB.MX",
+   "n": "Chedraui",
+   "nombre": "Grupo Comercial Chedraui, S.A.B. de C.V.",
+   "sector": "Consumo frecuente",
+   "sub": "Autoservicio",
+   "grupo": "autoservicio",
+   "grupo_n": "Autoservicio",
+   "logo": "Logo_de_Cherdraui.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0022,
+   "financiera": false
+  },
+  {
+   "t": "CUERVO",
+   "y": "CUERVO.MX",
+   "n": "Becle · José Cuervo",
+   "nombre": "Becle, S.A.B. de C.V.",
+   "sector": "Consumo frecuente",
+   "sub": "Destilados",
+   "grupo": "destilados",
+   "grupo_n": "Destilados",
+   "logo": "Cuervo_1_Positivo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0,
+   "financiera": false
+  },
+  {
+   "t": "FEMSAUBD",
+   "y": "FEMSAUBD.MX",
+   "n": "FEMSA",
+   "nombre": "Fomento Económico Mexicano, S.A.B. de C.V.",
+   "sector": "Consumo frecuente",
+   "sub": "Comercio y bebidas",
+   "grupo": "comercio_proximidad",
+   "grupo_n": "Comercio de proximidad",
+   "logo": "FEMSA_Logo.svg",
+   "bloque": "ACTIVA",
+   "peso_indice": 0.1038,
+   "financiera": false
+  },
+  {
+   "t": "GAPB",
+   "y": "GAPB.MX",
+   "n": "GAP",
+   "nombre": "Grupo Aeroportuario del Pacífico, S.A.B. de C.V.",
+   "sector": "Industriales",
+   "sub": "Aeropuertos",
+   "grupo": "aeropuertos",
+   "grupo_n": "Aeropuertos",
+   "logo": "Grupo_Aeroportuario_del_Pacífico_logo.jpg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.1019,
+   "financiera": false
+  },
+  {
+   "t": "GCARSOA1",
+   "y": "GCARSOA1.MX",
+   "n": "Grupo Carso",
+   "nombre": "Grupo Carso, S.A.B. de C.V.",
+   "sector": "Industriales",
+   "sub": "Conglomerado",
+   "grupo": "conglomerado",
+   "grupo_n": "Conglomerado",
+   "logo": "Logo_de_Grupo_Carso.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0056,
+   "financiera": false
+  },
+  {
+   "t": "GCC",
+   "y": "GCC.MX",
+   "n": "GCC",
+   "nombre": "GCC, S.A.B. de C.V.",
+   "sector": "Materiales",
+   "sub": "Cemento",
+   "grupo": "cemento",
+   "grupo_n": "Cemento",
+   "logo": "Cementos_Chihuahua_GCC_1_Positivo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0,
+   "financiera": false
+  },
+  {
+   "t": "GENTERA",
+   "y": "GENTERA.MX",
+   "n": "Gentera",
+   "nombre": "Gentera, S.A.B. de C.V.",
+   "sector": "Financieros",
+   "sub": "Microfinanzas",
+   "grupo": "microfinanzas",
+   "grupo_n": "Microfinanzas",
+   "logo": "Logo_de_Gentera.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0062,
+   "financiera": true
+  },
+  {
+   "t": "GFINBURO",
+   "y": "GFINBURO.MX",
+   "n": "Inbursa",
+   "nombre": "Grupo Financiero Inbursa, S.A.B. de C.V.",
+   "sector": "Financieros",
+   "sub": "Bancos",
+   "grupo": "bancos",
+   "grupo_n": "Bancos",
+   "logo": "Inbursa_1_Positivo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0,
+   "financiera": true
+  },
+  {
+   "t": "GFNORTEO",
+   "y": "GFNORTEO.MX",
+   "n": "Banorte",
+   "nombre": "Grupo Financiero Banorte, S.A.B. de C.V.",
+   "sector": "Financieros",
+   "sub": "Bancos",
+   "grupo": "bancos",
+   "grupo_n": "Bancos",
+   "logo": "Banorte_logo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0978,
+   "financiera": true
+  },
+  {
+   "t": "GMEXICOB",
+   "y": "GMEXICOB.MX",
+   "n": "Grupo México",
+   "nombre": "Grupo México, S.A.B. de C.V.",
+   "sector": "Materiales",
+   "sub": "Minería",
+   "grupo": "mineria",
+   "grupo_n": "Minería",
+   "logo": "Logo_de_Grupo_México.svg",
+   "bloque": "ACTIVA",
+   "peso_indice": 0.0943,
+   "financiera": false
+  },
+  {
+   "t": "GRUMAB",
+   "y": "GRUMAB.MX",
+   "n": "Gruma",
+   "nombre": "Gruma, S.A.B. de C.V.",
+   "sector": "Consumo frecuente",
+   "sub": "Alimentos",
+   "grupo": "alimentos",
+   "grupo_n": "Alimentos",
+   "logo": "Gruma_logo-en.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0043,
+   "financiera": false
+  },
+  {
+   "t": "KIMBERA",
+   "y": "KIMBERA.MX",
+   "n": "Kimberly-Clark de México",
+   "nombre": "Kimberly-Clark de México, S.A.B. de C.V.",
+   "sector": "Consumo frecuente",
+   "sub": "Cuidado personal y del hogar",
+   "grupo": "consumo_hogar",
+   "grupo_n": "Productos de consumo",
+   "logo": "Kimberly-Clark_logo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0277,
+   "financiera": false
+  },
+  {
+   "t": "KOFUBL",
+   "y": "KOFUBL.MX",
+   "n": "Coca-Cola FEMSA",
+   "nombre": "Coca-Cola FEMSA, S.A.B. de C.V.",
+   "sector": "Consumo frecuente",
+   "sub": "Bebidas",
+   "grupo": "bebidas",
+   "grupo_n": "Bebidas",
+   "logo": "coca-cola-femsa.svg",
+   "bloque": "ACTIVA",
+   "peso_indice": 0.0805,
+   "financiera": false
+  },
+  {
+   "t": "LABB",
+   "y": "LABB.MX",
+   "n": "Genomma Lab",
+   "nombre": "Genomma Lab Internacional, S.A.B. de C.V.",
+   "sector": "Salud",
+   "sub": "Farmacéutica y cuidado personal",
+   "grupo": "farma",
+   "grupo_n": "Farmacéutica",
+   "logo": "Genomma_Lab_1_Positivo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0,
+   "financiera": false
+  },
+  {
+   "t": "LACOMERUBC",
+   "y": "LACOMERUBC.MX",
+   "n": "La Comer",
+   "nombre": "La Comer, S.A.B. de C.V.",
+   "sector": "Consumo frecuente",
+   "sub": "Autoservicio",
+   "grupo": "autoservicio",
+   "grupo_n": "Autoservicio",
+   "logo": "La_Comer_1_Positivo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0,
+   "financiera": false
+  },
+  {
+   "t": "LIVEPOLC1",
+   "y": "LIVEPOLC-1.MX",
+   "n": "Liverpool",
+   "nombre": "El Puerto de Liverpool, S.A.B. de C.V.",
+   "sector": "Consumo discrecional",
+   "sub": "Tiendas departamentales",
+   "grupo": "departamental",
+   "grupo_n": "Tiendas departamentales",
+   "logo": "Liverpool_1_Positivo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0,
+   "financiera": false
+  },
+  {
+   "t": "MEGACPO",
+   "y": "MEGACPO.MX",
+   "n": "Megacable",
+   "nombre": "Megacable Holdings, S.A.B. de C.V.",
+   "sector": "Comunicaciones",
+   "sub": "Cable y banda ancha",
+   "grupo": "telecom",
+   "grupo_n": "Telecomunicaciones",
+   "logo": "Megacable.svg",
+   "bloque": "ACTIVA",
+   "peso_indice": 0.0063,
+   "financiera": false
+  },
+  {
+   "t": "OMAB",
+   "y": "OMAB.MX",
+   "n": "OMA",
+   "nombre": "Grupo Aeroportuario del Centro Norte, S.A.B. de C.V.",
+   "sector": "Industriales",
+   "sub": "Aeropuertos",
+   "grupo": "aeropuertos",
+   "grupo_n": "Aeropuertos",
+   "logo": "Grupo_Aeroportuario_Centro_Norte_logo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0389,
+   "financiera": false
+  },
+  {
+   "t": "ORBIA",
+   "y": "ORBIA.MX",
+   "n": "Orbia",
+   "nombre": "Orbia Advance Corporation, S.A.B. de C.V.",
+   "sector": "Materiales",
+   "sub": "Químicos",
+   "grupo": "quimicos",
+   "grupo_n": "Químicos",
+   "logo": "Orbia_1_Positivo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0,
+   "financiera": false
+  },
+  {
+   "t": "PEOLES",
+   "y": "PE&OLES.MX",
+   "n": "Peñoles",
+   "nombre": "Industrias Peñoles, S.A.B. de C.V.",
+   "sector": "Materiales",
+   "sub": "Minería",
+   "grupo": "mineria",
+   "grupo_n": "Minería",
+   "logo": "Penoles_1_Positivo.svg",
+   "bloque": "ACTIVA",
+   "peso_indice": 0.0,
+   "financiera": false
+  },
+  {
+   "t": "PINFRA",
+   "y": "PINFRA.MX",
+   "n": "Pinfra",
+   "nombre": "Promotora y Operadora de Infraestructura, S.A.B. de C.V.",
+   "sector": "Industriales",
+   "sub": "Autopistas",
+   "grupo": "autopistas",
+   "grupo_n": "Autopistas",
+   "logo": "logo pinfra.jpg",
+   "bloque": "ACTIVA",
+   "peso_indice": 0.006,
+   "financiera": false
+  },
+  {
+   "t": "Q",
+   "y": "Q.MX",
+   "n": "Quálitas",
+   "nombre": "Quálitas Controladora, S.A.B. de C.V.",
+   "sector": "Financieros",
+   "sub": "Seguros",
+   "grupo": "seguros",
+   "grupo_n": "Seguros",
+   "logo": "Qualitas_idMifArUl3_0.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0149,
+   "financiera": true
+  },
+  {
+   "t": "RA",
+   "y": "RA.MX",
+   "n": "Regional · Banregio",
+   "nombre": "Regional, S.A.B. de C.V.",
+   "sector": "Financieros",
+   "sub": "Bancos",
+   "grupo": "bancos",
+   "grupo_n": "Bancos",
+   "logo": "Logo_de_Banregio.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0099,
+   "financiera": true
+  },
+  {
+   "t": "SIGMAFA",
+   "y": "SIGMAFA.MX",
+   "n": "Sigma Foods",
+   "nombre": "Sigma Foods",
+   "sector": "Consumo frecuente",
+   "sub": "Alimentos",
+   "grupo": "alimentos",
+   "grupo_n": "Alimentos",
+   "logo": "SigmaFoods_2.png",
+   "bloque": "ACTIVA",
+   "peso_indice": 0.0111,
+   "financiera": false
+  },
+  {
+   "t": "TLEVISACPO",
+   "y": "TLEVISACPO.MX",
+   "n": "Televisa",
+   "nombre": "Grupo Televisa, S.A.B.",
+   "sector": "Comunicaciones",
+   "sub": "Telecom y medios",
+   "grupo": "telecom",
+   "grupo_n": "Telecomunicaciones",
+   "logo": "Logo_de_Grupo_Televisa.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0067,
+   "financiera": false
+  },
+  {
+   "t": "VESTA",
+   "y": "VESTA.MX",
+   "n": "Vesta",
+   "nombre": "Corporación Inmobiliaria Vesta, S.A.B. de C.V.",
+   "sector": "Bienes raíces",
+   "sub": "Inmobiliario industrial",
+   "grupo": "inmobiliario_industrial",
+   "grupo_n": "Inmobiliario industrial",
+   "logo": "vesta logo.png",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.021,
+   "financiera": false
+  },
+  {
+   "t": "VOLARA",
+   "y": "VOLARA.MX",
+   "n": "Volaris",
+   "nombre": "Controladora Vuela Compañía de Aviación, S.A.B. de C.V.",
+   "sector": "Industriales",
+   "sub": "Aerolíneas",
+   "grupo": "aerolinea",
+   "grupo_n": "Aerolínea",
+   "logo": "Volaris_1_Positivo.svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0,
+   "financiera": false
+  },
+  {
+   "t": "WALMEX",
+   "y": "WALMEX.MX",
+   "n": "Walmart de México",
+   "nombre": "Wal-Mart de México, S.A.B. de C.V.",
+   "sector": "Consumo frecuente",
+   "sub": "Autoservicio",
+   "grupo": "autoservicio",
+   "grupo_n": "Autoservicio",
+   "logo": "Walmart_México_y_Centroamérica_logo_(2025).svg",
+   "bloque": "REPRESENTATIVA",
+   "peso_indice": 0.0739,
+   "financiera": false
+  },
+  {
+   "t": "MEXTRAC",
+   "y": "MEXTRAC09.MX",
+   "n": "MEXTRAC 09",
+   "nombre": "MEXTRAC 09",
+   "sector": "ETF",
+   "sub": "Índice de referencia",
+   "grupo": "etf",
+   "grupo_n": "ETF",
+   "logo": "mextrac.svg",
+   "bloque": "ETF",
+   "peso_indice": 0.0,
+   "financiera": false
+  }
+ ],
+ "macro": [
+  {
+   "t": "IPC",
+   "y": "^MXX",
+   "n": "S&P/BMV IPC",
+   "tipo": "indice",
+   "unidad": "pts",
+   "mueve": []
+  },
+  {
+   "t": "SP500",
+   "y": "^GSPC",
+   "n": "S&P 500",
+   "tipo": "indice",
+   "unidad": "pts",
+   "mueve": []
+  },
+  {
+   "t": "NASDAQ",
+   "y": "^IXIC",
+   "n": "Nasdaq Composite",
+   "tipo": "indice",
+   "unidad": "pts",
+   "mueve": []
+  },
+  {
+   "t": "BOVESPA",
+   "y": "^BVSP",
+   "n": "Bovespa (Brasil)",
+   "tipo": "indice",
+   "unidad": "pts",
+   "mueve": [
+    "FEMSAUBD",
+    "KOFUBL",
+    "AMXB"
+   ]
+  },
+  {
+   "t": "VIX",
+   "y": "^VIX",
+   "n": "VIX · volatilidad implícita",
+   "tipo": "indice",
+   "unidad": "pts",
+   "mueve": []
+  },
+  {
+   "t": "USDMXN",
+   "y": "MXN=X",
+   "n": "Dólar en pesos",
+   "tipo": "divisa",
+   "unidad": "MXN",
+   "mueve": [
+    "AMXB",
+    "GMEXICOB",
+    "PEOLES",
+    "ORBIA",
+    "ALPEKA",
+    "CEMEXCPO",
+    "BOLSAA",
+    "GAPB",
+    "ASURB",
+    "VESTA",
+    "CUERVO"
+   ]
+  },
+  {
+   "t": "EURMXN",
+   "y": "EURMXN=X",
+   "n": "Euro en pesos",
+   "tipo": "divisa",
+   "unidad": "MXN",
+   "mueve": [
+    "ALSEA",
+    "AMXB",
+    "CEMEXCPO"
+   ]
+  },
+  {
+   "t": "BRLMXN",
+   "y": "BRLMXN=X",
+   "n": "Real brasileño en pesos",
+   "tipo": "divisa",
+   "unidad": "MXN",
+   "mueve": [
+    "FEMSAUBD",
+    "KOFUBL",
+    "AMXB"
+   ]
+  },
+  {
+   "t": "DXY",
+   "y": "DX-Y.NYB",
+   "n": "Índice dólar (DXY)",
+   "tipo": "divisa",
+   "unidad": "pts",
+   "mueve": []
+  },
+  {
+   "t": "UST10",
+   "y": "^TNX",
+   "n": "Bono de EUA a 10 años",
+   "tipo": "tasa",
+   "unidad": "%",
+   "mueve": [
+    "GFNORTEO",
+    "BBAJIOO",
+    "GFINBURO",
+    "RA",
+    "VESTA"
+   ]
+  },
+  {
+   "t": "UST3M",
+   "y": "^IRX",
+   "n": "Letra de EUA a 3 meses",
+   "tipo": "tasa",
+   "unidad": "%",
+   "mueve": []
+  },
+  {
+   "t": "COBRE",
+   "y": "HG=F",
+   "n": "Cobre (USD por libra)",
+   "tipo": "materia",
+   "unidad": "USD",
+   "mueve": [
+    "GMEXICOB"
+   ]
+  },
+  {
+   "t": "ORO",
+   "y": "GC=F",
+   "n": "Oro (USD por onza)",
+   "tipo": "materia",
+   "unidad": "USD",
+   "mueve": [
+    "PEOLES"
+   ]
+  },
+  {
+   "t": "PLATA",
+   "y": "SI=F",
+   "n": "Plata (USD por onza)",
+   "tipo": "materia",
+   "unidad": "USD",
+   "mueve": [
+    "PEOLES"
+   ]
+  },
+  {
+   "t": "BRENT",
+   "y": "BZ=F",
+   "n": "Petróleo Brent (USD)",
+   "tipo": "materia",
+   "unidad": "USD",
+   "mueve": [
+    "ALPEKA",
+    "ORBIA",
+    "VOLARA"
+   ]
+  },
+  {
+   "t": "WTI",
+   "y": "CL=F",
+   "n": "Petróleo WTI (USD)",
+   "tipo": "materia",
+   "unidad": "USD",
+   "mueve": [
+    "VOLARA",
+    "ALPEKA"
+   ]
+  },
+  {
+   "t": "GASNAT",
+   "y": "NG=F",
+   "n": "Gas natural (USD por MMBtu)",
+   "tipo": "materia",
+   "unidad": "USD",
+   "mueve": [
+    "ALPEKA",
+    "ORBIA",
+    "CEMEXCPO",
+    "GCC"
+   ]
+  },
+  {
+   "t": "MAIZ",
+   "y": "ZC=F",
+   "n": "Maíz (centavos por bushel)",
+   "tipo": "materia",
+   "unidad": "USc",
+   "mueve": [
+    "GRUMAB"
+   ]
+  },
+  {
+   "t": "TRIGO",
+   "y": "ZW=F",
+   "n": "Trigo (centavos por bushel)",
+   "tipo": "materia",
+   "unidad": "USc",
+   "mueve": [
+    "BIMBOA",
+    "GRUMAB"
+   ]
+  },
+  {
+   "t": "AZUCAR",
+   "y": "SB=F",
+   "n": "Azúcar (centavos por libra)",
+   "tipo": "materia",
+   "unidad": "USc",
+   "mueve": [
+    "KOFUBL",
+    "AC"
+   ]
+  }
+ ],
+ "banxico": [
+  {
+   "t": "TASA_OBJETIVO",
+   "serie": "SF61745",
+   "n": "Tasa objetivo de Banxico",
+   "unidad": "%"
+  },
+  {
+   "t": "TIIE28",
+   "serie": "SF43783",
+   "n": "TIIE a 28 días",
+   "unidad": "%"
+  },
+  {
+   "t": "CETES28",
+   "serie": "SF43936",
+   "n": "CETES a 28 días",
+   "unidad": "%"
+  },
+  {
+   "t": "FIX",
+   "serie": "SF43718",
+   "n": "Tipo de cambio FIX",
+   "unidad": "MXN"
+  },
+  {
+   "t": "INPC",
+   "serie": "SP1",
+   "n": "INPC (índice general)",
+   "unidad": "pts"
+  }
+ ],
+ "grupos": {
+  "autoservicio": "Autoservicio",
+  "departamental": "Tiendas departamentales",
+  "comercio_proximidad": "Comercio de proximidad",
+  "bebidas": "Bebidas",
+  "alimentos": "Alimentos",
+  "destilados": "Destilados",
+  "consumo_hogar": "Productos de consumo",
+  "restaurantes": "Restaurantes",
+  "farma": "Farmacéutica",
+  "aeropuertos": "Aeropuertos",
+  "aerolinea": "Aerolínea",
+  "autopistas": "Autopistas",
+  "conglomerado": "Conglomerado",
+  "bancos": "Bancos",
+  "microfinanzas": "Microfinanzas",
+  "seguros": "Seguros",
+  "bolsa": "Infraestructura de mercados",
+  "telecom": "Telecomunicaciones",
+  "mineria": "Minería",
+  "cemento": "Cemento",
+  "quimicos": "Químicos",
+  "inmobiliario_industrial": "Inmobiliario industrial",
+  "etf": "ETF"
+ },
+ "fondo": {
+  "nombre": "Fondo de Inversión ITESM-BBVA · North Star Strategies",
+  "benchmark": "MEXTRAC",
+  "modelo": "QVM M-tilt 40/10/50 · pesos del 13-oct-2026",
+  "inicio": "2026-10-12",
+  "fin": "2026-11-27",
+  "fecha_referencia": "2026-10-16",
+  "capital": 10000856.62,
+  "cetes28": 0.0623,
+  "comision_pct": 0.3,
+  "iva_pct": 16.0,
+  "feriados": [
+   "2026-11-02",
+   "2026-11-16",
+   "2026-12-12",
+   "2026-12-25",
+   "2027-01-01"
+  ],
+  "pesos_indice": {
+   "FEMSAUBD": 0.1038,
+   "GMEXICOB": 0.0943,
+   "PINFRA": 0.006,
+   "MEGACPO": 0.0063,
+   "BBAJIOO": 0.0199,
+   "KOFUBL": 0.0805,
+   "GAPB": 0.1019,
+   "AMXB": 0.0997,
+   "GFNORTEO": 0.0978,
+   "AC": 0.0742,
+   "WALMEX": 0.0739,
+   "ASURB": 0.0587,
+   "OMAB": 0.0389,
+   "KIMBERA": 0.0277,
+   "VESTA": 0.021,
+   "BIMBOA": 0.0206,
+   "Q": 0.0149,
+   "CEMEXCPO": 0.0138,
+   "SIGMAFA": 0.0111,
+   "RA": 0.0099,
+   "TLEVISACPO": 0.0067,
+   "GENTERA": 0.0062,
+   "GCARSOA1": 0.0056,
+   "GRUMAB": 0.0043,
+   "CHDRAUIB": 0.0022
+  }
+ }
+}
