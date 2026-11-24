@@ -95,6 +95,17 @@ resumen:
   Updates to close of trading, adds new quotes in paragraph 4, adds additional context in paragraphs 6, 8, updates bullets, updates headline Nvidia shares surge 31% on Jensen Huang's return Dollar index hits 19-month high with bets on a hawkish Fed Tech shares lead indexes higher, S&P gains 4.7% By Sabrina Valle NEW YORK, Nov 23 (Reuters) - US stocks soared on Monday after Nvidia NVDA.Oreinstated Jensen Huang as chief executive following pressure from US President Donald Trump.
 
 ---
+fecha: 2026-11-23 15:50
+emisora: MERCADO
+titulo: Semana corta y último tramo de la gestión: inflación el martes, PCE el miércoles, Banxico el jueves y cierre el viernes 27
+fuente: North Star · INEGI, Banxico, NYSE
+tono: neutral
+relevancia: 14
+id: equipo:20261123-semana-cierre-gestion
+resumen:
+  Martes 24, 06:00: inflación de la primera quincena de noviembre (Encuesta Citi: +0.49% quincenal, por verificar) y fecha ex de OMAB ($6.28 por acción, pago el 25-nov). Miércoles 25, 07:30: PIB, PCE de octubre (3.8% anual, subyacente 3.2%), bienes duraderos y solicitudes de desempleo de EUA. Jueves 26: informe trimestral de Banxico y NYSE cerrada por Acción de Gracias. Viernes 27: la NYSE cierra a las 12:00 CDMX; fecha ex estimada de ASUR ($10.00, pago el 30-nov) y último día de la gestión. Riesgos para el cierre: con poco volumen el MEXTRAC09 puede quedar sin movimiento (regla del precio estimado), y la fecha ex de ASUR resta ~4 pb el 27 porque el pago cae después del último cierre.
+
+---
 fecha: 2026-11-23 15:12
 emisora: EUA
 titulo: Midterm election results are reshaping the dynamics between the U.S. and Mexico: Former Ambassador Antonio Garza
@@ -113,6 +124,17 @@ fuente: Reuters
 tono: neutral
 relevancia: 9
 id: lseg:urn:newsml:reuters.com:20261123:nL6N47411H:1
+
+---
+fecha: 2026-11-23 15:00
+emisora: MERCADO
+titulo: El IPC corta seis caídas: +1.06% a 69,355.62; Peñoles +4.4% y Grupo México +3.2% con el rebote de los metales
+fuente: North Star · LSEG, El CEO, Milenio
+tono: positiva
+relevancia: 14
+id: equipo:20261123-ipc-corta-caidas
+resumen:
+  Cierre de LSEG: IPC 69,355.62 (+1.06%) y MEXTRAC09 72.24 (+0.32%, con solo 2,337 títulos operados). Las mayores alzas del IPC fueron Volaris (+7.12%), Alpek (+4.61%) y Peñoles; la mayor baja, Carso (−2.39%). Subieron 164 emisoras y bajaron 58 (El CEO). El peso cerró en ~19.16, su cuarta caída seguida (en la mañana tocó 19.2264, el peor nivel desde junio de 2025), y el M10 bajó 6 pb a 9.28%. En la cartera: PEÑOLES +4.39%, GMEXICOB +3.21%, OMAB +2.43%, BOLSAA +1.82% y ASURB +1.54%; FEMSAUBD −0.13%, AMXB −0.25% y MEGACPO −0.16%. Para nosotros: los metales explican la mayor parte del día. Las dos emisoras en «Vigilar» del stop-loss (GMEXICOB y PEÑOLES) fueron las que más subieron.
 
 ---
 fecha: 2026-11-23 14:42
@@ -180,6 +202,28 @@ relevancia: 10
 id: lseg:urn:newsml:reuters.com:20261123:nL2N47202G:1
 
 ---
+fecha: 2026-11-23 10:00
+emisora: PEOLES
+titulo: El oro rebota 2.8% a ~3,635 USD y la plata 4.6% a ~43 USD tras su peor semana desde marzo; el petróleo cae ~3.5%
+fuente: North Star · Kitco, Capp Notes
+tono: positiva
+relevancia: 14
+id: equipo:20261123-oro-plata-rebotan
+resumen:
+  Compras de oportunidad tras la caída de la semana pasada (oro −9%), más apetito por riesgo y menos ventas forzadas. El cobre subió 2.5% a 5.61 USD la libra según Capp Notes (Trading Economics da 5.52). El WTI cayó 3.9% a 80.17 y el Brent 3.5% a 89.37 por más oferta: volvió a operar el oleoducto Sharara en Libia y fluye más crudo de Medio Oriente. Para nosotros: PEÑOLES +4.39% y GMEXICOB +3.21%. El petróleo barato ayuda a las aerolíneas (Volaris +7.1%) y al tráfico de los aeropuertos (OMAB +2.43%, ASURB +1.54%). Liga: https://www.kitco.com/news/article/2026-11-23/gold-silver-prices-see-sharp-rebounds-ai-shares-rally-renewed-fed
+
+---
+fecha: 2026-11-23 09:00
+emisora: GMEXICOB
+titulo: Grupo México entrega su dividendo en acciones: recibimos 27 GMEXICOB y $79.37 por la fracción
+fuente: North Star · Aviso de derechos BMV, Bitácora
+tono: neutral
+relevancia: 14
+id: equipo:20261123-gmexico-dividendo-acciones
+resumen:
+  El aviso de la BMV del 4-nov decretó 1 acción B (cupón 95) por cada 194 (cupón 94), con acciones del fondo de recompra y pago a partir del 23-nov. No hubo dividendo en efectivo: El CEO lo describe como el primero totalmente en acciones desde 2009. Con 5,301 títulos entran 27 acciones (quedan 5,328) y la fracción (63/194) se paga a $244.40: $79.37. La fecha ex fue el viernes 20-nov, cuando el precio se ajustó por 194/195. Corrección en el libro: LSEG ajustó hacia atrás toda la serie de GMEXICOB y el tracker ya aplicaba el factor en la fecha ex, así que el dividendo se contaba dos veces (~6 pb a favor al 20-nov). Se regresó la serie sin ajustar: el cierre del 16-oct vuelve a $244.40, el precio de la asignación de BBVA. Pendiente: confirmar en el estado de cuenta de BBVA si hubo retención de ISR sobre la fracción. Liga: https://www.bmv.com.mx/docs-pub/derechos/derechos_1601398_1.pdf
+
+---
 fecha: 2026-11-23 08:58
 emisora: BANXICO
 titulo: UPDATE 2-Mexico's economy slows in third quarter as momentum fades
@@ -187,6 +231,28 @@ fuente: Reuters
 tono: neutral
 relevancia: 9
 id: lseg:urn:newsml:reuters.com:20261123:nL6N4740LI:5
+
+---
+fecha: 2026-11-23 08:00
+emisora: NVIDIA
+titulo: Nvidia restituye a Jensen Huang como CEO: la acción sube 31.5% y Wall Street tiene su mejor día desde abril de 2025
+fuente: North Star · CNBC, Capp Notes, Bloomberg, El CEO
+tono: positiva
+relevancia: 14
+id: equipo:20261123-nvidia-huang-regresa
+resumen:
+  El consejo anunció el regreso de Huang 12 días después de su renuncia; según la empresa, no hubo pruebas de que pusiera en riesgo a la compañía. Nvidia subió 31.48% a 165.05 USD, su mejor día desde 2003 (~950 mmd de valor). S&P 500 +4.73% a 7,237.17, Nasdaq +6.51% a 24,089.56 y Dow +3.01% a 49,595.31; el viernes el S&P había entrado en corrección. VIX 26.62 (−26%). El bono a 10 años no se movió (4.92%) y el mercado da ~97% a un alza de 25 pb de la Fed el 9-dic. Para nosotros: la cartera no tiene tecnología, así que el efecto llegó por el apetito de riesgo y los metales, no por las tasas: la BMV subió ~1% contra 4.7% del S&P 500 y el peso siguió débil. Liga: https://www.cnbc.com/2026/11/23/stock-market-today-live-updates.html
+
+---
+fecha: 2026-11-23 06:00
+emisora: MERCADO
+titulo: El PIB del 3T se revisa a +3.3% anual (+0.9% trimestral), pero el IGAE de septiembre cae 0.7%
+fuente: North Star · INEGI, Milenio, Investing.com
+tono: neutral
+relevancia: 14
+id: equipo:20261123-pib-3t-igae
+resumen:
+  La cifra revisada supera la estimación oportuna (3.2%) y es la mayor alza anual desde 2023; INEGI también revisó 2025 a 0.7% y 2024 a 1.8%. Pero septiembre cayó 0.7% mensual (+3.0% anual): industria −1.4% (construcción −2.0%, manufacturas −1.7%) y servicios −0.2%. Apunta a un 4T flojo. Para nosotros: la cartera no tiene constructoras y pesa más en consumo y servicios, que aguantaron mejor. El peso no lo celebró: el diferencial con una Fed que sube manda más que el dato. Liga: https://mx.investing.com/news/economic-indicators/pib-de-mexico-crecio-33-en-tercer-trimestre-mas-de-lo-previsto-que-esperar-3860304
 
 ---
 fecha: 2026-11-23 01:57
@@ -254,6 +320,17 @@ fuente: CENAFT
 tono: neutral
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261122:nNRA2t9aby:0
+
+---
+fecha: 2026-11-21 12:00
+emisora: AMXB
+titulo: Profeco: Telcel debe bonificar a los usuarios afectados por la falla del 20-nov
+fuente: North Star · El Imparcial, N+
+tono: negativa
+relevancia: 14
+id: equipo:20261121-telcel-profeco
+resumen:
+  La falla del viernes afectó CDMX, Estado de México, Hidalgo y Morelos; Telcel la atribuyó a una «degradación en la red». Profeco recordó que procede la parte proporcional del servicio más una bonificación mínima de 20%, que el usuario debe reclamar. No hubo postura de la CRT. AMXB bajó 0.25% el lunes: el costo parece menor. Liga: https://www.elimparcial.com/dinero/2026/11/21/telcel-debe-compensar-a-usuarios-por-fallas-de-servicio-segun-la-profeco/
 
 ---
 fecha: 2026-11-21 11:12
