@@ -1,13 +1,11 @@
 ---
 fecha_corte: 2026-11-23
-hora_publicacion: 2026-11-23 19:01 CDMX
+hora_publicacion: 2026-11-23 19:10 CDMX
 fuente_precios: Price Close
 version: v7.0
 dias_habiles_desde_dia0: 24
 tablero: https://northstar-strategies.github.io/bbva-clinicas/
 ---
-
-**Aviso: la réplica en Python no está cuadrada a 0 contra esta versión del tracker (diferencia máxima 1.7e-14). Las cifras del día son preliminares.**
 
 # North Star Strategies · estado del fondo al lun 23-nov-2026
 
@@ -141,11 +139,11 @@ Las divisas van en pesos por unidad. La macro es contexto de la sesión, no caus
 
 ## Titulares de la sesión
 
+- lun 23-nov 10:00 · North Star · Kitco, Capp Notes · PEOLES: El oro rebota 2.8% a ~3,635 USD y la plata 4.6% a ~43 USD tras su peor semana desde marzo; el petróleo cae ~3.5%
+- lun 23-nov 09:00 · North Star · Aviso de derechos BMV, Bitácora · GMEXICOB: Grupo México entrega su dividendo en acciones: recibimos 27 GMEXICOB y $79.37 por la fracción
+- sáb 21-nov 12:00 · North Star · El Imparcial, N+ · AMXB: Profeco: Telcel debe bonificar a los usuarios afectados por la falla del 20-nov
 - lun 23-nov 14:42 · Reuters · MERCADO: MERCADOS A.LATINA-Monedas y bolsas cierran mixtas en sesión marcada por regreso de Huang a Nvidia
-- lun 23-nov 01:57 · Reuters · MERCADO: EMERGING MARKETS-Rupiah rebounds from record low, Asia stocks hit 7-month trough on AI woes
-- dom 22-nov 22:08 · Reuters · COBRE: METALES-El cobre cae por debajo de los 12 000 dólares, ya que la inquietud por la IA y las subidas de tasas de interés eclipsan la escasez de oferta
-- lun 23-nov 15:12 · NOTENG · EUA: Midterm election results are reshaping the dynamics between the U.S. and Mexico: Former Ambassador Antonio Garza
-- lun 23-nov 14:25 · Reuters · NVIDIA: FOREX-Dólar sube por apuestas a una Fed restrictiva y repunte de acciones del sector IA
+- lun 23-nov 15:50 · North Star · INEGI, Banxico, NYSE · MERCADO: Semana corta y último tramo de la gestión: inflación el martes, PCE el miércoles, Banxico el jueves y cierre el viernes 27
 
 ## Supuestos
 

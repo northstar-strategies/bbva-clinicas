@@ -1,9 +1,9 @@
 {
   "estado": "ok",
-  "detalle": "Cierres, noticias y réplica · cierre del 23/11/2026",
+  "detalle": "Réplica del tracker y tablero · cierre del 23/11/2026",
   "errores_seguidos": 0,
-  "ultima_revision": "2026-11-24T01:01:45+00:00",
-  "hora_cdmx": "23/11/2026 19:01",
+  "ultima_revision": "2026-11-24T01:10:51+00:00",
+  "hora_cdmx": "23/11/2026 19:10",
   "maquina": "DAHEL",
   "modo": "cierre"
 }
