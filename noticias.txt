@@ -14,6 +14,109 @@
 # ══════════════════════════════════════════════════════════════════════════════
 
 ---
+fecha: 2026-11-24 15:50
+emisora: MERCADO
+titulo: Cierre preliminar: el IPC termina plano (−0.08%) y el MEXTRAC09 sube 0.65%; la cartera +0.20% y el alfa −45.5 pb por Grupo México
+fuente: North Star · LSEG (OFF_CLOSE), tracker
+tono: negativa
+impacto: alto
+resumen:
+  Cifras preliminares con el cierre de la BMV de LSEG (falta el Price Close de las 17:30). El IPC cerró
+  en 69,301.41 (−0.08%) tras subir hasta 1.2% en la mañana: los metales borraron la ganancia en la tarde.
+  El MEXTRAC09 subió 0.65% porque su canasta pesa más en aeropuertos (GAPB +4.0%, ASURB +2.1%, OMAB
+  +3.7% con dividendo) y menos en Grupo México que el IPC; su prima contra el PCF casi no cambió (0.89%).
+  Alfa del día −45.5 pb: GMEXICOB −26.5 pb (sobreponderada, −5.5%), GAPB −6.9 pb (subponderada) y BOLSAA
+  −6.8 pb; sumaron WALMEX +6.2 pb (subponderada, −1.9%), PINFRA +4.3 y BBAJIOO +2.3. Desde el día 0 el
+  alfa va en −435.3 pb.
+
+---
+fecha: 2026-11-24 15:00
+emisora: GMEXICOB
+titulo: El cobre cae ~5% a su mínimo desde marzo y la plata ~5%: GMEXICOB −5.5% y PEÑOLES −3.7%
+fuente: North Star · LSEG, Kitco, Investing.com
+tono: negativa
+impacto: alto
+resumen:
+  El cobre COMEX bajó a ~5.37 USD la libra (−4.6% a las 13:08 EST) y en la LME ~5.6%, por demanda china
+  floja, dudas sobre el gasto en IA y salida de inventarios de EUA. La plata cayó a ~41 USD (−4% a −5%)
+  y el oro ~2.7% en futuros, con la Fed apuntando a subir tasas. GMEXICOB fue la que más cayó del IPC
+  (−5.5% con el cierre de LSEG) y PEÑOLES −3.7%: borran el rebote del lunes.
+  Para nosotros: GMEXICOB es la segunda mayor apuesta de la cartera (~+4.2 pp sobre el índice) y sigue en
+  «Vigilar» del stop-loss (−3.4σ de TE y −2.2σ propias), igual que PEÑOLES (−3.6σ y −2.6σ).
+
+---
+fecha: 2026-11-24 14:30
+emisora: NVIDIA
+titulo: Nvidia devuelve parte del rally (−6.9%) y el Nasdaq cae 1.5%; el Dow pasa 50,000 y la confianza del consumidor sorprende (103.3)
+fuente: North Star · AP, CNBC, Conference Board
+tono: neutral
+impacto: medio
+resumen:
+  Pesó el escrutinio de seguridad nacional sobre Huang (comparecencias en el Senado el 1 y el 3-dic),
+  la lista negra a Megaspeed y a una unidad de Alibaba y las dudas sobre el gasto en IA; Micron y
+  SK Hynix cayeron más de 10%. S&P 500 −0.5% a 7,201.09, Nasdaq −1.5% a 23,733.54 y Dow +0.9% a
+  50,018.70 (AP). La confianza del Conference Board saltó a 103.3 (esperado ~92), su mayor nivel desde
+  enero de 2025, y FedWatch da ~95–96% a un alza de 25 pb el 9-dic.
+  Para nosotros: sin tecnología en la cartera, el efecto llega por los metales y el peso.
+
+---
+fecha: 2026-11-24 12:00
+emisora: ASURB
+titulo: Aviso de la BMV: el primer dividendo extraordinario de ASUR ($10.00, cupón 23) se paga el 30-nov; la fecha ex sería el viernes 27, último día de la gestión
+fuente: North Star · Aviso de derechos BMV 1583418, LSEG
+tono: neutral
+impacto: medio
+resumen:
+  El aviso del 20-ago fija el pago el 30-nov contra el cupón 23 (series B y BB); no trae fecha ex. Con la
+  liquidación a T+1 la fecha ex sería el viernes 27 (así salió hoy OMA). A nosotros: 427 títulos, $4,270.
+  Como el libro cobra los dividendos en la fecha de pago y el benchmark en la fecha ex, el 27 el precio
+  bajaría ~1.8% sin la caja (≈ −4 pb de alfa). Pendiente: decidir si se reconoce como dividendo por cobrar.
+  Liga: https://www.bmv.com.mx/docs-pub/derechos/derechos_1583418_1.pdf
+
+---
+fecha: 2026-11-24 08:30
+emisora: OMAB
+titulo: OMA sale ex dividendo de $6.28: nos tocan $1,067.64 que se pagan el miércoles 25
+fuente: North Star · 6-K de OMA (SEC), LSEG
+tono: neutral
+impacto: bajo
+resumen:
+  Ps 6.280254872 por acción (cupón 15), registro el 24-nov y pago el 25-nov. Primer hecho a las 8:31 en
+  243.00, contra un precio ex teórico de 243.05; al cierre 252.21: +1.2% de precio y ~+3.7% con el
+  dividendo. Con 170 títulos cobramos $1,067.64 el 25-nov. El benchmark trae el dividendo hoy (fecha ex)
+  y la cartera mañana (fecha de pago).
+
+---
+fecha: 2026-11-24 08:00
+emisora: MERCADO
+titulo: El peso cae 1.33% a 19.42, su quinta baja seguida y su peor nivel desde mayo de 2025
+fuente: North Star · Banxico (FIX), El CEO, Banco Base
+tono: negativa
+impacto: alto
+resumen:
+  Banxico fijó 19.4242 (−25.42 centavos). El peso cayó aun con el índice dólar −0.5%: pesaron la
+  inflación general arriba de lo esperado, una Fed que el mercado ve subiendo el 9-dic y un carry más
+  angosto con Banxico en 6.25%. Gabriela Siller (Base) ve posible 19.50. El M10 sin cambio en 9.28%.
+  Para nosotros: la cartera está en pesos sin cobertura. Los aeropuertos, que cobran en dólares la
+  tarifa de pasajeros internacionales, subieron (GAPB +4.0%, ASURB +2.1%): contexto, no causa demostrada.
+
+---
+fecha: 2026-11-24 06:00
+emisora: BANXICO
+titulo: Inflación de la 1a quincena de noviembre: 3.96% anual (+0.54%); la subyacente baja a 3.68%, su menor nivel desde marzo de 2025
+fuente: North Star · INEGI (boletín 701/26), El Financiero, Expansión
+tono: neutral
+impacto: alto
+resumen:
+  La general subió 0.54% en la quincena y 3.96% anual (desde 3.88%), un poco arriba del 3.92% esperado
+  (Bloomberg). La subyacente bajó 0.10% y quedó en 3.68% anual (desde 3.82%), muy abajo de lo esperado
+  (~3.86%) por el Buen Fin: mercancías no alimenticias −0.46%. La no subyacente subió 2.72%: electricidad
+  +20.74% por el fin del subsidio de verano en 11 ciudades (aporta 0.28 pp), jitomate +28.95% y tomate
+  verde +39.31%. Monex ve poco probable otro recorte de Banxico el 17-dic.
+  Para nosotros: la general alta con una Fed que sube presiona al peso; la subyacente baja deja abierta
+  la puerta a recortes en 2027.
+
+---
 fecha: 2026-11-23 15:50
 emisora: MERCADO
 titulo: Semana corta y último tramo de la gestión: inflación el martes, PCE el miércoles, Banxico el jueves y cierre el viernes 27
