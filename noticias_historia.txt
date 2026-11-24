@@ -1,76 +1,104 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
-fecha: 2026-11-23 18:44
-emisora: PETROLEO
-titulo: Autoridad ambiental de Colombia otorga licencias a proyectos de exploración y explotación de hidrocarburos
-fuente: Reuters
-tono: neutral
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261124:nL2N47500G:1
-
----
-fecha: 2026-11-23 18:36
-emisora: NVIDIA
-titulo: EXPLICACIÓN-¿Cuáles son las distintas investigaciones federales y estatales de EEUU a las que se enfrentan Nvidia y Jensen Huang?
-fuente: Reuters
-tono: negativa
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261124:nL5N47500S:1
-
----
-fecha: 2026-11-23 18:18
+fecha: 2026-11-24 15:21
 emisora: MERCADO
-titulo: Mexico structural steel output climbs, merchant bar rebounds
-fuente: KALCOM
+titulo: Peso mexicano cierra con quinta caída al hilo, espera dato clave de inflación en EEUU
+fuente: Reuters
 tono: neutral
-relevancia: 6
-id: lseg:urn:link:webnews:20261124:nNRA2tyznj:0
+relevancia: 14
+id: lseg:urn:newsml:reuters.com:20261124:nL2N475139:1
+resumen:
+  CIUDAD DE MÉXICO, 24 nov (Reuters) - El peso mexicano cayó el martes por quinta jornada consecutiva, afectado por un aumento de la aversión global al riesgo ante renovadas tensiones geopolíticas y preocupaciones sobre el diferencial de tasas entre México y Estados Unidos.
 
 ---
-fecha: 2026-11-23 17:52
+fecha: 2026-11-24 14:03
 emisora: NVIDIA
-titulo: PERSONA DESTACADA-El regreso de Jensen Huang a Nvidia pone de manifiesto su enorme influencia en el ámbito de la inteligencia artificial
+titulo: Retornos bonos Tesoro EEUU cotizan estables mientras se desvanece el repunte impulsado por la IA
 fuente: Reuters
 tono: neutral
-relevancia: 8
-id: lseg:urn:newsml:reuters.com:20261123:nL5N4742LB:1
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261124:nL2N47513K:1
+resumen:
+  Actualiza con cotizaciones por la tarde en Nueva York Por Chuck Mikolajczak NUEVA YORK, 24 nov (Reuters) - Los rendimientos de los bonos del Tesoro de Estados Unidos cotizaban casi sin cambios el martes, mientras se desvanecía el intenso repunte de las acciones del sector de la inteligencia artificial tras el regreso del presidente ejecutivo de Nvidia, Jensen Huang.
 
 ---
-fecha: 2026-11-23 17:48
+fecha: 2026-11-24 12:42
+emisora: NVIDIA
+titulo: UPDATE 1-Schumer accuses Nvidia CEO of violating US export control law
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261124:nL2N475101:6
+
+---
+fecha: 2026-11-24 11:15
 emisora: COBRE
-titulo: BUZZ-Australian miners rise after copper rally
+titulo: METALES-El cobre y el estaño se desploman a medida que se desvanece el repunte impulsado por la IA
 fuente: Reuters
-tono: neutral
-relevancia: 4
-id: lseg:urn:newsml:reuters.com:20261123:nL3N47420X:1
-
----
-fecha: 2026-11-23 17:14
-emisora: BANXICO
-titulo: Dollar Price in Mexico Today, Monday, November 23, 2026: What It Costs, USD to MXN Exchange Rate, and Banxico Quotation
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261123:nNRA2tyccr:0
-
----
-fecha: 2026-11-23 17:13
-emisora: EUA
-titulo: CCE anticipates agreement between Mexico and the U.S. to reduce tariffs in December during G20
-fuente: NOTENG
 tono: negativa
-relevancia: 8
-id: lseg:urn:newsml:newsroom:20261123:nNRA2tybol:0
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261124:nL5N475258:1
 
 ---
-fecha: 2026-11-23 16:55
-emisora: FED
-titulo: FED’S WILLIAMS: FED WILL RESPOND IF INFLATION PRESSURES DON’T EASE
+fecha: 2026-11-24 10:51
+emisora: BANXICO
+titulo: SONDEO-Acciones brasileñas recuperarían parte de caída postelectoral en 2027, bolsa mexicana subiría
 fuente: Reuters
 tono: neutral
-relevancia: 4
-id: lseg:urn:newsml:reuters.com:20261123:nL6N474147:6
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261124:nL6N4750YC:1
+resumen:
+  Ibovespa subiría un 10% a 182.000 puntos al cierre de 2027 IPC de México superaría récord máximo del 11 de noviembre Open datos de la encuesta Por Gabriel Burin y Noe Torres BUENOS AIRES/CIUDAD DE MÉXICO, 24 nov (Reuters) - Las acciones brasileñas recuperarían en 2027 parte de sus pérdidas posteriores a las elecciones mediante operaciones selectivas, tras la volatilidad de este año, mostró un sondeo de Reuters entre estrategas de renta variable.
+
+---
+fecha: 2026-11-24 10:21
+emisora: NVIDIA
+titulo: Retornos bonos Tesoro EEUU caen a medida que se desvanece el repunte impulsado por la IA
+fuente: Reuters
+tono: negativa
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261124:nL6N4750ZF:1
+
+---
+fecha: 2026-11-24 09:14
+emisora: MERCADO
+titulo: MERCADOS A.LATINA-Mayoría de monedas caen pese a baja global del dólar, real brasileño se fortalece
+fuente: Reuters
+tono: negativa
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261124:nL2N4750LX:1
+resumen:
+  Por Froilan Romero SANTIAGO, 24 nov (Reuters) - Las monedas de América Latina caían el martes, pese a una baja global del dólar, con la excepción del real brasileño, que se apreciaba tras reportes de que Luiz Inácio Lula da Silva autorizó a su equipo económico a presentar al Congreso un segundo paquete de medidas destinadas a frenar el gasto obligatorio. * El dólar retrocedía tras tocar su nivel más alto en casi dos años, impulsado por la reincorporación de Jensen Huang como presidente ejecutivo de Nvidia, lo que…
+
+---
+fecha: 2026-11-24 09:13
+emisora: BANXICO
+titulo: Mexican peso holds firm against pressure from a strengthened dollar fueled by the AI boom as the exchange rate is set this Tuesday, November 24
+fuente: NOTENG
+tono: positiva
+relevancia: 10
+id: lseg:urn:newsml:newsroom:20261124:nNRA2udm0z:0
+
+---
+fecha: 2026-11-24 06:50
+emisora: BANXICO
+titulo: ACTUALIZA 1-Inflación general de México acelera más de lo previsto, subyacente se modera inesperadamente
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261124:nL2N4750JS:1
+
+---
+fecha: 2026-11-24 04:30
+emisora: MERCADO
+titulo: EMERGING MARKETS-EM stocks climb as Huang returns to Nvidia, but Europe muted
+fuente: Reuters
+tono: neutral
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261124:nL2N4750C4:3
+resumen:
+  MSCI EM stocks rise 3.5%, FX flat Polish equities drop after weak data on Monday Indonesian rupiah down 0.2% By Niket Nishant Nov 24 (Reuters) - Emerging market stocks were on course for their best day in nearly four months on Tuesday, as investors welcomed the return of Jensen Huang at the helm of chip heavyweight Nvidia.
 
 ---
 fecha: 2026-11-23 16:26
@@ -117,26 +145,6 @@ resumen:
   Former Ambassador Antonio Garza stated that the outcomes of the midterm elections are reshaping the dynamics between the United States and Mexico, while insisting that trade and border policies are still managed from the White House.
 
 ---
-fecha: 2026-11-23 15:12
-emisora: NVIDIA
-titulo: Wall Street rebota con fuerza tras el regreso de Jensen Huang a la presidencia de Nvidia
-fuente: Reuters
-tono: neutral
-relevancia: 9
-id: lseg:urn:newsml:reuters.com:20261123:nL6N47411H:1
-
----
-fecha: 2026-11-23 15:00
-emisora: MERCADO
-titulo: El IPC corta seis caídas: +1.06% a 69,355.62; Peñoles +4.4% y Grupo México +3.2% con el rebote de los metales
-fuente: North Star · LSEG, El CEO, Milenio
-tono: positiva
-relevancia: 14
-id: equipo:20261123-ipc-corta-caidas
-resumen:
-  Cierre de LSEG: IPC 69,355.62 (+1.06%) y MEXTRAC09 72.24 (+0.32%, con solo 2,337 títulos operados). Las mayores alzas del IPC fueron Volaris (+7.12%), Alpek (+4.61%) y Peñoles; la mayor baja, Carso (−2.39%). Subieron 164 emisoras y bajaron 58 (El CEO). El peso cerró en ~19.16, su cuarta caída seguida (en la mañana tocó 19.2264, el peor nivel desde junio de 2025), y el M10 bajó 6 pb a 9.28%. En la cartera: PEÑOLES +4.39%, GMEXICOB +3.21%, OMAB +2.43%, BOLSAA +1.82% y ASURB +1.54%; FEMSAUBD −0.13%, AMXB −0.25% y MEGACPO −0.16%. Para nosotros: los metales explican la mayor parte del día. Las dos emisoras en «Vigilar» del stop-loss (GMEXICOB y PEÑOLES) fueron las que más subieron.
-
----
 fecha: 2026-11-23 14:42
 emisora: MERCADO
 titulo: MERCADOS A.LATINA-Monedas y bolsas cierran mixtas en sesión marcada por regreso de Huang a Nvidia
@@ -166,24 +174,6 @@ relevancia: 10
 id: lseg:urn:newsml:reuters.com:20261123:nL5N474223:1
 
 ---
-fecha: 2026-11-23 12:06
-emisora: COBRE
-titulo: METALES BÁSICOS-Cobre y estaño repuntan tras reincorporación de Huang como CEO de Nvidia
-fuente: Reuters
-tono: positiva
-relevancia: 9
-id: lseg:urn:newsml:reuters.com:20261123:nL2N4740TW:1
-
----
-fecha: 2026-11-23 11:41
-emisora: BANXICO
-titulo: POLL-Mexico inflation likely rose to 3.92% in early November
-fuente: Reuters
-tono: neutral
-relevancia: 9
-id: lseg:urn:newsml:reuters.com:20261123:nL6N4740WT:4
-
----
 fecha: 2026-11-23 11:33
 emisora: COBRE
 titulo: Las empresas de mediana capitalización del Reino Unido obtienen mejores resultados gracias al repunte global del apetito por el riesgo impulsado por Nvidia
@@ -191,15 +181,6 @@ fuente: Reuters
 tono: negativa
 relevancia: 10
 id: lseg:urn:newsml:reuters.com:20261123:nL5N4741XP:1
-
----
-fecha: 2026-11-23 10:35
-emisora: BANXICO
-titulo: SONDEO-Inflación en México aceleraría en primera mitad de noviembre, pero seguiría dentro de la meta
-fuente: Reuters
-tono: neutral
-relevancia: 10
-id: lseg:urn:newsml:reuters.com:20261123:nL2N47202G:1
 
 ---
 fecha: 2026-11-23 10:00
@@ -222,15 +203,6 @@ relevancia: 14
 id: equipo:20261123-gmexico-dividendo-acciones
 resumen:
   El aviso de la BMV del 4-nov decretó 1 acción B (cupón 95) por cada 194 (cupón 94), con acciones del fondo de recompra y pago a partir del 23-nov. No hubo dividendo en efectivo: El CEO lo describe como el primero totalmente en acciones desde 2009. Con 5,301 títulos entran 27 acciones (quedan 5,328) y la fracción (63/194) se paga a $244.40: $79.37. La fecha ex fue el viernes 20-nov, cuando el precio se ajustó por 194/195. Corrección en el libro: LSEG ajustó hacia atrás toda la serie de GMEXICOB y el tracker ya aplicaba el factor en la fecha ex, así que el dividendo se contaba dos veces (~6 pb a favor al 20-nov). Se regresó la serie sin ajustar: el cierre del 16-oct vuelve a $244.40, el precio de la asignación de BBVA. Pendiente: confirmar en el estado de cuenta de BBVA si hubo retención de ISR sobre la fracción. Liga: https://www.bmv.com.mx/docs-pub/derechos/derechos_1601398_1.pdf
-
----
-fecha: 2026-11-23 08:58
-emisora: BANXICO
-titulo: UPDATE 2-Mexico's economy slows in third quarter as momentum fades
-fuente: Reuters
-tono: neutral
-relevancia: 9
-id: lseg:urn:newsml:reuters.com:20261123:nL6N4740LI:5
 
 ---
 fecha: 2026-11-23 08:00
@@ -284,6 +256,8 @@ fuente: NOTENG
 tono: positiva
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261122:nNRA2tf7tx:0
+resumen:
+  MEXICO.- The price of the dollar today, Sunday, November 22, 2026, is quoted at around 19.15 Mexican pesos per unit, according to data from Investing.com. The U.S. currency remains close to the 19.18 pesos recorded at the close of Friday, November 20, when the exchange rate reached a peak of 19.19 pesos per dollar, a level not seen since June 2025.
 
 ---
 fecha: 2026-11-22 08:12
@@ -421,15 +395,6 @@ fuente: NOTENG
 tono: positiva
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261121:nNRA2sx3mb:0
-
----
-fecha: 2026-11-20 19:12
-emisora: MERCADO
-titulo: Mexico's stock exchange falls 3.62% for the week, marks two consecutive declines, and drops to 68,629.46 points
-fuente: NOTENG
-tono: negativa
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261121:nNRA2swmpj:0
 
 ---
 fecha: 2026-11-20 16:33
