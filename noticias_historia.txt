@@ -1,6 +1,333 @@
 # Noticias de la línea del tiempo del tablero, desde el día 0. Las escribe el vigilante: no editar a mano.
 
 ---
+fecha: 2026-11-23 18:44
+emisora: PETROLEO
+titulo: Autoridad ambiental de Colombia otorga licencias a proyectos de exploración y explotación de hidrocarburos
+fuente: Reuters
+tono: neutral
+relevancia: 7
+id: lseg:urn:newsml:reuters.com:20261124:nL2N47500G:1
+
+---
+fecha: 2026-11-23 18:36
+emisora: NVIDIA
+titulo: EXPLICACIÓN-¿Cuáles son las distintas investigaciones federales y estatales de EEUU a las que se enfrentan Nvidia y Jensen Huang?
+fuente: Reuters
+tono: negativa
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261124:nL5N47500S:1
+
+---
+fecha: 2026-11-23 18:18
+emisora: MERCADO
+titulo: Mexico structural steel output climbs, merchant bar rebounds
+fuente: KALCOM
+tono: neutral
+relevancia: 6
+id: lseg:urn:link:webnews:20261124:nNRA2tyznj:0
+
+---
+fecha: 2026-11-23 17:52
+emisora: NVIDIA
+titulo: PERSONA DESTACADA-El regreso de Jensen Huang a Nvidia pone de manifiesto su enorme influencia en el ámbito de la inteligencia artificial
+fuente: Reuters
+tono: neutral
+relevancia: 8
+id: lseg:urn:newsml:reuters.com:20261123:nL5N4742LB:1
+
+---
+fecha: 2026-11-23 17:48
+emisora: COBRE
+titulo: BUZZ-Australian miners rise after copper rally
+fuente: Reuters
+tono: neutral
+relevancia: 4
+id: lseg:urn:newsml:reuters.com:20261123:nL3N47420X:1
+
+---
+fecha: 2026-11-23 17:14
+emisora: BANXICO
+titulo: Dollar Price in Mexico Today, Monday, November 23, 2026: What It Costs, USD to MXN Exchange Rate, and Banxico Quotation
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261123:nNRA2tyccr:0
+
+---
+fecha: 2026-11-23 17:13
+emisora: EUA
+titulo: CCE anticipates agreement between Mexico and the U.S. to reduce tariffs in December during G20
+fuente: NOTENG
+tono: negativa
+relevancia: 8
+id: lseg:urn:newsml:newsroom:20261123:nNRA2tybol:0
+
+---
+fecha: 2026-11-23 16:55
+emisora: FED
+titulo: FED’S WILLIAMS: FED WILL RESPOND IF INFLATION PRESSURES DON’T EASE
+fuente: Reuters
+tono: neutral
+relevancia: 4
+id: lseg:urn:newsml:reuters.com:20261123:nL6N474147:6
+
+---
+fecha: 2026-11-23 16:26
+emisora: NVIDIA
+titulo: MERCADOS MUNDIALES-Wall Street se dispara tras el regreso de Huang a Nvidia; suben los rendimientos de los bonos del Tesoro
+fuente: Reuters
+tono: positiva
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261123:nL5N4742HJ:1
+resumen:
+  Actualizaciones al cierre de la sesión bursátil; se añaden nuevas citas en el párrafo 4; se añade contexto adicional en los párrafos 6 y 8; se actualizan las viñetas; se actualiza el titular Las acciones de Nvidia se disparan un 31 % tras el regreso de Jensen Huang El índice del dólar alcanza su máximo en 19 meses ante las expectativas de una postura restrictiva de la Fed Las acciones tecnológicas lideran la subida de los índices; el S&P gana un 4,7 % Por Sabrina Valle NUEVA YORK, 23 nov (Reuters) - Las acciones…
+
+---
+fecha: 2026-11-23 16:25
+emisora: MERCADO
+titulo: GLOBAL MARKETS-Wall Street soars on Huang's return to Nvidia, Treasury yields rise
+fuente: Reuters
+tono: neutral
+relevancia: 13
+id: lseg:urn:newsml:reuters.com:20261123:nL2N47410T:2
+resumen:
+  Updates to close of trading, adds new quotes in paragraph 4, adds additional context in paragraphs 6, 8, updates bullets, updates headline Nvidia shares surge 31% on Jensen Huang's return Dollar index hits 19-month high with bets on a hawkish Fed Tech shares lead indexes higher, S&P gains 4.7% By Sabrina Valle NEW YORK, Nov 23 (Reuters) - US stocks soared on Monday after Nvidia NVDA.Oreinstated Jensen Huang as chief executive following pressure from US President Donald Trump.
+
+---
+fecha: 2026-11-23 15:12
+emisora: EUA
+titulo: Midterm election results are reshaping the dynamics between the U.S. and Mexico: Former Ambassador Antonio Garza
+fuente: NOTENG
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:newsroom:20261123:nNRA2tx260:0
+resumen:
+  Former Ambassador Antonio Garza stated that the outcomes of the midterm elections are reshaping the dynamics between the United States and Mexico, while insisting that trade and border policies are still managed from the White House.
+
+---
+fecha: 2026-11-23 15:12
+emisora: NVIDIA
+titulo: Wall Street rebota con fuerza tras el regreso de Jensen Huang a la presidencia de Nvidia
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261123:nL6N47411H:1
+
+---
+fecha: 2026-11-23 14:42
+emisora: MERCADO
+titulo: MERCADOS A.LATINA-Monedas y bolsas cierran mixtas en sesión marcada por regreso de Huang a Nvidia
+fuente: Reuters
+tono: neutral
+relevancia: 15
+id: lseg:urn:newsml:reuters.com:20261123:nL2N4740N0:1
+resumen:
+  Actualiza valores al cierre Por Froilan Romero SANTIAGO, 23 nov (Reuters) - Las principales monedas y bolsas de valores de América Latina anotaron un desempeño dispar al cierre del lunes, en una jornada volátil marcada por la noticia de que el directorio de Nvidia reincorporó a Jensen Huang como máximo ejecutivo de la compañía lo que, a primera hora, incentivó el apetito por los activos de la región. * Nvidia NVDA.O restituyó el lunes a Huang como presidente ejecutivo, en un giro extraordinario que devuelve al…
+
+---
+fecha: 2026-11-23 14:25
+emisora: NVIDIA
+titulo: FOREX-Dólar sube por apuestas a una Fed restrictiva y repunte de acciones del sector IA
+fuente: Reuters
+tono: positiva
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261123:nL2N4740YK:1
+
+---
+fecha: 2026-11-23 12:35
+emisora: NVIDIA
+titulo: MERCADOS MUNDIALES-Wall Street se dispara tras la reincorporación de Huang a Nvidia; el dólar se dispara
+fuente: Reuters
+tono: positiva
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261123:nL5N474223:1
+
+---
+fecha: 2026-11-23 12:06
+emisora: COBRE
+titulo: METALES BÁSICOS-Cobre y estaño repuntan tras reincorporación de Huang como CEO de Nvidia
+fuente: Reuters
+tono: positiva
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261123:nL2N4740TW:1
+
+---
+fecha: 2026-11-23 11:41
+emisora: BANXICO
+titulo: POLL-Mexico inflation likely rose to 3.92% in early November
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261123:nL6N4740WT:4
+
+---
+fecha: 2026-11-23 11:33
+emisora: COBRE
+titulo: Las empresas de mediana capitalización del Reino Unido obtienen mejores resultados gracias al repunte global del apetito por el riesgo impulsado por Nvidia
+fuente: Reuters
+tono: negativa
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261123:nL5N4741XP:1
+
+---
+fecha: 2026-11-23 10:35
+emisora: BANXICO
+titulo: SONDEO-Inflación en México aceleraría en primera mitad de noviembre, pero seguiría dentro de la meta
+fuente: Reuters
+tono: neutral
+relevancia: 10
+id: lseg:urn:newsml:reuters.com:20261123:nL2N47202G:1
+
+---
+fecha: 2026-11-23 08:58
+emisora: BANXICO
+titulo: UPDATE 2-Mexico's economy slows in third quarter as momentum fades
+fuente: Reuters
+tono: neutral
+relevancia: 9
+id: lseg:urn:newsml:reuters.com:20261123:nL6N4740LI:5
+
+---
+fecha: 2026-11-23 01:57
+emisora: MERCADO
+titulo: EMERGING MARKETS-Rupiah rebounds from record low, Asia stocks hit 7-month trough on AI woes
+fuente: Reuters
+tono: positiva
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261123:nL6N47407B:4
+resumen:
+  Rupiah rebounds from all-time low of 18,290 South Korea's KOSPI closes at lowest since Jan AI-linked stocks remain under pressure amid valuation concerns Updates for afternoon trade By Shruti Agarwal Nov 23 (Reuters) - The Indonesian rupiah rebounded from a record low on Monday and was set for its best close in over a week after a report that MSCI had discussed avoiding a market downgrade with President Prabowo Subianto, while regional stocks slid to a seven-month low.
+
+---
+fecha: 2026-11-22 22:08
+emisora: COBRE
+titulo: METALES-El cobre cae por debajo de los 12 000 dólares, ya que la inquietud por la IA y las subidas de tasas de interés eclipsan la escasez de oferta
+fuente: Reuters
+tono: negativa
+relevancia: 11
+id: lseg:urn:newsml:reuters.com:20261123:nL5N47402M:1
+resumen:
+  23 nov (Reuters) - El cobre cayó por debajo de la barrera de los 12 000 dólares por primera vez desde marzo, antes de recuperarse en las primeras horas de negociación del lunes, debido al nerviosismo de los inversores ante las perspectivas de la inteligencia artificial (link) y nuevas subidas de las tasas de interés en EEUU, a pesar de que la oferta al contado sigue siendo escasa.
+
+---
+fecha: 2026-11-22 09:12
+emisora: BANXICO
+titulo: Dollar declines against the Mexican peso, but remains close to 19.20 pesos as the exchange rate is quoted this Sunday, November 22
+fuente: NOTENG
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261122:nNRA2tf7tx:0
+
+---
+fecha: 2026-11-22 08:12
+emisora: EUA
+titulo: EU confident in reaching agreement with Mexico this year
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261122:nNRA2teqro:0
+
+---
+fecha: 2026-11-22 07:12
+emisora: EUA
+titulo: Despite Trump’s pressures, Mexico must bet on China to be part of the new trade order
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261122:nNRA2te9kb:0
+
+---
+fecha: 2026-11-22 00:12
+emisora: BANXICO
+titulo: Mexican Economy Shows Signs of Improvement
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261122:nNRA2taxp8:0
+
+---
+fecha: 2026-11-21 19:41
+emisora: EUA
+titulo: Trump claims that the U.S. is close to a trade agreement with Mexico, despite the ongoing narco-government
+fuente: CENAFT
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261122:nNRA2t9aby:0
+
+---
+fecha: 2026-11-21 11:12
+emisora: BANXICO
+titulo: Dollar TODAY November 21: How did the Mexican peso close this week after breaking the 19 barrier?
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261121:nNRA2t6dww:0
+
+---
+fecha: 2026-11-21 07:11
+emisora: BANXICO
+titulo: Mexican Peso Crushed by Dollar; Exchange Rate TODAY Saturday, November 21
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261121:nNRA2t45mn:0
+
+---
+fecha: 2026-11-21 06:12
+emisora: BANXICO
+titulo: DOLLAR PRICE TODAY: here's how it trades against the Mexican peso this Saturday, November 21, 2026 | EXCHANGE RATE
+fuente: NOTENG
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261121:nNRA2t3ky7:0
+
+---
+fecha: 2026-11-21 05:12
+emisora: EUA
+titulo: Trump close to agreement with Mexico; still highlights deficit
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261121:nNRA2t30kk:0
+
+---
+fecha: 2026-11-21 01:12
+emisora: BANXICO
+titulo: What was the closing rate of the dollar in Mexico today, Friday, November 20, 2026?
+fuente: NOTENG
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261121:nNRA2t0g6z:0
+
+---
+fecha: 2026-11-20 22:01
+emisora: EUA
+titulo: Trump sees Mexico deal near, presses Canada
+fuente: INDASI
+tono: neutral
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261121:nNRA2sxzlk:0
+
+---
+fecha: 2026-11-20 21:19
+emisora: EUA
+titulo: Trump sees Mexico deal near, presses Canada
+fuente: HANIND
+tono: neutral
+relevancia: 6
+id: lseg:urn:link:webnews:20261121:nNRA2sxlqn:0
+
+---
+fecha: 2026-11-20 20:34
+emisora: EUA
+titulo: Trump sees Mexico deal near, presses Canada
+fuente: MANGAL
+tono: neutral
+relevancia: 6
+id: lseg:urn:link:webnews:20261121:nNRA2sxaao:0
+
+---
 fecha: 2026-11-20 20:19
 emisora: MERCADO
 titulo: Trump sees Mexico deal near, presses Canada
@@ -8,6 +335,15 @@ fuente: INDASI
 tono: neutral
 relevancia: 6
 id: lseg:urn:newsml:newsroom:20261121:nNRA2sx52u:0
+
+---
+fecha: 2026-11-20 20:14
+emisora: BANXICO
+titulo: Mexican peso depreciates against the dollar, closing its worst week since July 2024
+fuente: NOTENG
+tono: positiva
+relevancia: 6
+id: lseg:urn:newsml:newsroom:20261121:nNRA2sx3mb:0
 
 ---
 fecha: 2026-11-20 19:12
@@ -19,33 +355,6 @@ relevancia: 6
 id: lseg:urn:newsml:newsroom:20261121:nNRA2swmpj:0
 
 ---
-fecha: 2026-11-20 18:13
-emisora: EUA
-titulo: Trump says the U.S. is nearing a trade agreement with Mexico
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261121:nNRA2sw8k8:0
-
----
-fecha: 2026-11-20 17:14
-emisora: BANXICO
-titulo: Dollar price in Mexico today, Friday, November 20, 2026: USD to MXN exchange rate, closing value, and Banxico quotation
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261120:nNRA2svoq5:0
-
----
-fecha: 2026-11-20 16:34
-emisora: PETROLEO
-titulo: MERCADOS MUNDIALES-El sector tecnológico lidera la caída de las bolsas mundiales; bajan los rendimientos de los bonos del Tesoro
-fuente: Reuters
-tono: negativa
-relevancia: 5
-id: lseg:urn:newsml:reuters.com:20261120:nL5N4712EC:1
-
----
 fecha: 2026-11-20 16:33
 emisora: MERCADO
 titulo: GLOBAL MARKETS-Tech leads global stocks rout, Treasury yields fall
@@ -55,24 +364,6 @@ relevancia: 9
 id: lseg:urn:newsml:reuters.com:20261120:nL6N4710ZL:2
 
 ---
-fecha: 2026-11-20 16:13
-emisora: BANXICO
-titulo: Mexico's Evolving Payment Compliance Landscape for Merchants
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261120:nNRA2sv9b7:0
-
----
-fecha: 2026-11-20 16:12
-emisora: EUA
-titulo: Donald Trump and Claudia Sheinbaum are expected to finalize a trade agreement
-fuente: NOTENG
-tono: neutral
-relevancia: 6
-id: lseg:urn:newsml:newsroom:20261120:nNRA2sv85r:0
-
----
 fecha: 2026-11-20 15:38
 emisora: MERCADO
 titulo: MERCADOS EMERGENTES-Los activos de Latinoamérica, afectados por el clima de aversión al riesgo a nivel mundial; las materias primas agravan las pérdidas
@@ -80,6 +371,8 @@ fuente: Reuters
 tono: negativa
 relevancia: 11
 id: lseg:urn:newsml:reuters.com:20261120:nL5N47129M:1
+resumen:
+  El déficit fiscal de Colombia en 2026 superará el 7,6 % del PIB, según el ministro de Hacienda BofA ve margen para una nueva oleada de entradas de capital en Brasil Las ventas minoristas mexicanas apuntan a una menor demanda interna El riesgo país de Argentina alcanza su máximo en 13 meses; los bonos se desploman Actualización con los niveles de cotización de la tarde Por Tharuniyaa Lakshmi y Avinash P 20 nov (Reuters) - Los activos latinoamericanos se encaminaban el viernes hacia pérdidas semanales, a medida que…
 
 ---
 fecha: 2026-11-20 15:32
@@ -98,6 +391,8 @@ fuente: Reuters
 tono: neutral
 relevancia: 11
 id: lseg:urn:newsml:reuters.com:20261120:nL5N47121W:2
+resumen:
+  Se añade un comentario de AT&T CIUDAD DE MÉXICO, 20 nov (Reuters) - Los usuarios de telefonía móvil mexicanos informaron el viernes de cortes generalizados en el servicio que afectaron a Telcel, AT&T T.N México y Movistar, lo que supone la última interrupción en las redes móviles del país.
 
 ---
 fecha: 2026-11-20 14:55
@@ -120,15 +415,6 @@ resumen:
   Actualiza al cierre Por Javier López de Lérida SANTIAGO, 20 nov (Reuters) - Las monedas y las acciones latinoamericanas cayeron el viernes y registraron una de sus peores semanas del año, en la que fueron presionadas por un dólar que se fortaleció debido a que los inversores buscaron refugio tras bajas persistentes de los mercados de renta variable internacionales. * El índice de monedas latinoamericanas de MSCI .MILA00000CUS bajó todos los días de la semana con un descenso acumulado de más de un 3%, mientras que…
 
 ---
-fecha: 2026-11-20 13:28
-emisora: NVIDIA
-titulo: US STOCKS-Wall St slides on mounting AI selloff, S&P 500, Dow set to confirm corrections
-fuente: Reuters
-tono: neutral
-relevancia: 9
-id: lseg:urn:newsml:reuters.com:20261120:nL6N47112S:5
-
----
 fecha: 2026-11-20 12:04
 emisora: EUA
 titulo: Trump dice que un acuerdo comercial con México está más cerca
@@ -136,15 +422,6 @@ fuente: Reuters
 tono: neutral
 relevancia: 10
 id: lseg:urn:newsml:reuters.com:20261120:nL6N47111I:1
-
----
-fecha: 2026-11-20 11:36
-emisora: COBRE
-titulo: METALES BÁSICOS-Cobre registra mayor caída semanal en 19 meses, mientras sigue desplome de la IA
-fuente: Reuters
-tono: neutral
-relevancia: 9
-id: lseg:urn:newsml:reuters.com:20261120:nL2N4710Q0:1
 
 ---
 fecha: 2026-11-20 09:55
@@ -231,15 +508,6 @@ resumen:
   Actualiza con cotizaciones por la tarde Por Manuel Farías SANTIAGO, 19 nov (Reuters) - Las principales monedas de América Latina cayeron el jueves, en medio de las expectativas de alzas de tasas de la Reserva Federal que ampliaría el diferencial con los tipos de los bancos centrales de la región y la volatilidad de los mercados globales ante la salida a bolsa de Anthropic. * El dólar =USD se tomó un respiro más temprano, pero la moneda subía levemente por la tarde en medio de las expectativas de que la Fed…
 
 ---
-fecha: 2026-11-19 14:30
-emisora: ARGENTINA
-titulo: ACTUALIZA 1-Argentina logra superávit comercial de 3.394 mlns dlrs en octubre
-fuente: Reuters
-tono: positiva
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261119:nL2N47017M:1
-
----
 fecha: 2026-11-19 14:12
 emisora: EUA
 titulo: IMF Chief and Sheinbaum Highlight Performance of the Mexican Economy; Georgieva Urges Countries to Prepare "Quickly" for Changes Due to AI
@@ -258,15 +526,6 @@ relevancia: 12
 id: equipo:20261119-compra-pinfra
 resumen:
   PINFRA pagó USD 0.133454 por acción (ex 17-nov, pago 18-nov). En el libro se convierte con el FIX del 18-nov (18.6723): $2.4919 por título, 1,233 títulos = $3,072.50. El correo a los profesores lo estimó en $3,038.83 con el FIX del día anterior (18.4677). Ejecución en BMV a las 13:37:10 y 13:37:11 (vendedores MS y GS, comprador BCOMR): 10 títulos por $3,090.00, más $10.75 de comisión e IVA. Es parte de la estrategia de reinversión de dividendos del modelo presentado a BBVA.
-
----
-fecha: 2026-11-19 13:03
-emisora: ARGENTINA
-titulo: Balanza comercial de Argentina contabiliza superávit de 3.394 mln dlr en octubre: INDEC
-fuente: Reuters
-tono: positiva
-relevancia: 7
-id: lseg:urn:newsml:reuters.com:20261119:nAQN2MUKFT:1
 
 ---
 fecha: 2026-11-19 12:05
