@@ -1,6 +1,6 @@
 ---
 fecha_corte: 2026-11-24
-hora_publicacion: 2026-11-24 15:57 CDMX
+hora_publicacion: 2026-11-24 16:00 CDMX
 fuente_precios: Price Close
 version: v7.0
 dias_habiles_desde_dia0: 25
@@ -136,11 +136,11 @@ Las divisas van en pesos por unidad. La macro es contexto de la sesión, no caus
 
 ## Titulares de la sesión
 
+- mar 24-nov 15:00 · North Star · LSEG, Kitco, Investing.com · GMEXICOB: El cobre cae ~5% a su mínimo desde marzo y la plata ~5%: GMEXICOB −5.5% y PEÑOLES −3.7%
+- mar 24-nov 12:00 · North Star · Aviso de derechos BMV 1583418, LSEG · ASURB: Aviso de la BMV: el primer dividendo extraordinario de ASUR ($10.00, cupón 23) se paga el 30-nov; la fecha ex sería el viernes 27, último día de la gestión
+- mar 24-nov 08:30 · North Star · 6-K de OMA (SEC), LSEG · OMAB: OMA sale ex dividendo de $6.28: nos tocan $1,067.64 que se pagan el miércoles 25
+- mar 24-nov 15:50 · North Star · LSEG (OFF_CLOSE), tracker · MERCADO: Cierre preliminar: el IPC termina plano (−0.08%) y el MEXTRAC09 sube 0.65%; la cartera +0.20% y el alfa −45.5 pb por Grupo México
 - mar 24-nov 15:21 · Reuters · MERCADO: Peso mexicano cierra con quinta caída al hilo, espera dato clave de inflación en EEUU
-- mar 24-nov 10:51 · Reuters · BANXICO: SONDEO-Acciones brasileñas recuperarían parte de caída postelectoral en 2027, bolsa mexicana subiría
-- lun 23-nov 16:25 · Reuters · MERCADO: GLOBAL MARKETS-Wall Street soars on Huang's return to Nvidia, Treasury yields rise
-- mar 24-nov 09:14 · Reuters · MERCADO: MERCADOS A.LATINA-Mayoría de monedas caen pese a baja global del dólar, real brasileño se fortalece
-- mar 24-nov 04:30 · Reuters · MERCADO: EMERGING MARKETS-EM stocks climb as Huang returns to Nvidia, but Europe muted
 
 ## Supuestos
 

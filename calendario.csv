@@ -7,13 +7,13 @@ fecha,emisora,tipo,titulo,fuente
 2026-11-23,GMEXICOB,Evento,Grupo México paga el dividendo en acciones: 1 B (cupón 95) por cada 194 (cupón 94); fracciones a $244.40,Aviso de derechos BMV 1601398 (4-nov); El CEO (4-nov); DividendosMX; Investing.com
 2026-11-23,MERCADO,Evento,"PIB del 3T revisado (+0.9% trimestral, +3.3% anual) e IGAE de septiembre (−0.7% mensual, +3.0% anual)",INEGI; Milenio (13:36) e Investing.com (14:09) del 23-nov
 2026-11-23,NVIDIA EUA,Evento,"Nvidia restituye a Jensen Huang como CEO, 12 días después de su renuncia","CNBC, Capp Notes, El CEO y Milenio (23-nov)"
-2026-11-24,MERCADO BANXICO,Evento,"Inflación de la primera quincena de noviembre (INEGI, 06:00)",Calendario de INEGI; Encuesta Citi
+2026-11-24,MERCADO BANXICO,Evento,"Inflación de la primera quincena de noviembre (INEGI, 06:00)","INEGI, boletín 701/26; El Financiero; Expansión; Banxico (FIX)"
 2026-11-24,OMAB,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 6.280255 paid on Nov 25, 2026 going ex on Nov 24, 2026",LSEG
 2026-11-24,OMAB,Evento,"Fecha ex del dividendo de OMAB ($6.2803 por acción, cupón 15); registro 24-nov, pago 25-nov",6-K de OMA del 12-nov (SEC); LSEG
 2026-11-25,FED EUA,Evento,"EUA, 07:30: PIB del 3T (segunda), PCE de octubre, bienes duraderos y solicitudes de desempleo; Libro Beige en la tarde",Investing.com; calendario de la Fed
 2026-11-26,BANXICO,Evento,Informe trimestral del 3T de Banxico; desempleo de octubre (INEGI),Calendario de Banxico
 2026-11-26,EUA MEXTRAC,Evento,Acción de Gracias: NYSE cerrada el jueves; el viernes 27 cierra a las 12:00 CDMX,"NYSE, calendario de feriados"
-2026-11-27,ASURB,Evento,"Fecha ex del primer dividendo extraordinario de ASUR ($10.00 por acción, cupón 23); pago desde el 30-nov",6-K de ASUR del 20-ago; aviso BMV; Rankia; LSEG
+2026-11-27,ASURB,Evento,"Fecha ex del primer dividendo extraordinario de ASUR ($10.00 por acción, cupón 23); pago desde el 30-nov",Aviso de derechos BMV 1583418 (20-ago); 6-K de ASUR; LSEG
 2026-11-27,MERCADO,Evento,"Último día de la gestión (Parámetros: 27-nov, por confirmar con BBVA); balanza comercial de octubre",Parámetros del tracker; INEGI
 2026-11-30,MERCADO,Evento,Entra en vigor la revisión de noviembre de MSCI (al cierre),"MSCI, anuncio del 11-nov (listas públicas)"
 2026-12-07,KOFUBL,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 1.935 paid on Dec 08, 2026 going ex on Dec 07, 2026",LSEG

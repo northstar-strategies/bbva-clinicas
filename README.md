@@ -1,21 +1,22 @@
 # North Star Strategies · Fondo de Inversión ITESM-BBVA
 
-**Actualizado:** 23/11/2026 19:10 (hora CDMX) · precios **LSEG Refinitiv** · benchmark **MEXTRAC09** (etf)
+**Actualizado:** 24/11/2026 16:00 (hora CDMX) · precios **LSEG Refinitiv** · benchmark **MEXTRAC09** (etf)
 
 
-| | Último cierre (23/11) | Acumulado |
+| | Último cierre (24/11) | Acumulado |
 |---|---:|---:|
-| Cartera | +0.69% | +2.37% |
-| MEXTRAC | +0.32% | +6.24% |
-| **Diferencia** | **+0.38%** | **-3.86%** |
+| Cartera | +0.20% | +2.57% |
+| MEXTRAC | +0.65% | +6.93% |
+| **Diferencia** | **-0.46%** | **-4.35%** |
 
-Valor del portafolio **$10,606,373.50** · día 24 desde el portafolio de referencia (16/10) · TE ex ante 5.87% (límite 10%) · beta 0.91
+Valor del portafolio **$10,627,086.69** · día 25 desde el portafolio de referencia (16/10) · TE ex ante 5.76% (límite 10%) · beta 0.91
 
 
 ## Día por día
 
 | Fecha | Valor | Cartera | MEXTRAC | Diferencia | Acum. cartera | Acum. MEXTRAC | Acum. diferencia |
 |---|---:|---:|---:|---:|---:|---:|---:|
+| 24/11/2026 | $10,627,087 | +0.20% | +0.65% | -0.46% | +2.57% | +6.93% | -4.35% |
 | 23/11/2026 | $10,606,374 | +0.69% | +0.32% | +0.38% | +2.37% | +6.24% | -3.86% |
 | 20/11/2026 | $10,533,197 | -0.22% | +0.26% | -0.48% | +1.67% | +5.90% | -4.23% |
 | 19/11/2026 | $10,556,317 | +0.00% | +0.20% | -0.19% | +1.89% | +5.62% | -3.73% |
@@ -41,49 +42,49 @@ Valor del portafolio **$10,606,373.50** · día 24 desde el portafolio de refere
 | 20/10/2026 | $10,410,769 | +0.46% | +0.89% | -0.44% | +0.49% | +1.26% | -0.78% |
 | 19/10/2026 | $10,363,607 | +0.03% | +0.37% | -0.34% | +0.03% | +0.37% | -0.34% |
 
-## Atribución del 23/11/2026 · alfa +37.5 pb
+## Atribución del 24/11/2026 · alfa -45.5 pb
 
 | Pieza | Aporte |
 |---|---:|
-| Emisoras | +14.61 pb |
-| Efectivo | -0.03 pb |
-| MEXTRAC estimado / contra su canasta | +22.93 pb |
-| Operaciones (ejecución contra cierre) | +0.01 pb |
-| Comisión e IVA | -0.00 pb |
-| **Total = alfa del día** | **+37.53 pb** |
+| Emisoras | -43.15 pb |
+| Efectivo | -0.05 pb |
+| MEXTRAC estimado / contra su canasta | -2.33 pb |
+| Operaciones (ejecución contra cierre) | +0.00 pb |
+| Comisión e IVA | +0.00 pb |
+| **Total = alfa del día** | **-45.53 pb** |
 
-Sumaron: GMEXICOB +12.3 pb · BOLSAA +8.7 pb · PEOLES +4.5 pb · Restaron: OMAB -5.2 pb · FEMSAUBD -3.6 pb · ASURB -3.2 pb
+Sumaron: WALMEX +6.2 pb · PINFRA +4.3 pb · BBAJIOO +2.3 pb · Restaron: GMEXICOB -26.5 pb · GAPB -6.9 pb · BOLSAA -6.8 pb
 
-Réplica en Python contra el tracker: diferencia máxima 1.7e-14 (2026-11-23T19:01).
+Réplica en Python contra el tracker: diferencia máxima 1.7e-14 (2026-11-24T16:00).
 
 ## Posiciones · movimiento de hoy
 
 | Emisora | Títulos | Precio | Cambio hoy | Peso |
 |---|---:|---:|---:|---:|
-| MEXTRAC | 38,326 | 72.24 | +0.32% | 26.10% |
-| FEMSAUBD | 6,921 | 241.62 | -0.13% | 15.77% |
-| GMEXICOB | 5,328 | 198.42 | +3.21% | 9.97% |
-| KOFUBL | 3,638 | 224.17 | +0.56% | 7.69% |
-| BOLSAA | 16,440 | 38.13 | +1.82% | 5.91% |
-| GAPB | 1,435 | 424.83 | +0.38% | 5.75% |
-| AMXB | 23,149 | 23.81 | -0.25% | 5.20% |
-| GFNORTEO | 2,430 | 198.14 | +0.86% | 4.54% |
-| PINFRA | 1,243 | 312.35 | +0.28% | 3.66% |
-| AC | 1,481 | 245.47 | +0.19% | 3.43% |
-| WALMEX | 6,506 | 54.66 | +0.33% | 3.35% |
-| BBAJIOO | 5,399 | 54.35 | +0.28% | 2.77% |
-| ASURB | 427 | 531.05 | +1.54% | 2.14% |
-| MEGACPO | 3,980 | 56.21 | -0.16% | 2.11% |
-| PEOLES | 181 | 670.11 | +4.39% | 1.14% |
-| OMAB | 170 | 249.33 | +2.43% | 0.40% |
+| MEXTRAC | 38,326 | 72.71 | +0.65% | 26.22% |
+| FEMSAUBD | 6,921 | 242.44 | +0.34% | 15.79% |
+| GMEXICOB | 5,328 | 187.57 | -5.47% | 9.40% |
+| KOFUBL | 3,638 | 228.03 | +1.72% | 7.81% |
+| GAPB | 1,435 | 441.88 | +4.01% | 5.97% |
+| BOLSAA | 16,440 | 37.94 | -0.50% | 5.87% |
+| AMXB | 23,149 | 23.98 | +0.71% | 5.22% |
+| GFNORTEO | 2,430 | 198.98 | +0.42% | 4.55% |
+| PINFRA | 1,243 | 318.54 | +1.98% | 3.73% |
+| AC | 1,481 | 249.10 | +1.48% | 3.47% |
+| WALMEX | 6,506 | 53.61 | -1.92% | 3.28% |
+| BBAJIOO | 5,399 | 55.52 | +2.15% | 2.82% |
+| ASURB | 427 | 542.42 | +2.14% | 2.18% |
+| MEGACPO | 3,980 | 56.24 | +0.05% | 2.11% |
+| PEOLES | 181 | 644.98 | -3.75% | 1.10% |
+| OMAB | 170 | 252.21 | +1.16% | 0.40% |
 
-## Stop-loss y take-profit (datos al 23/11/2026)
+## Stop-loss y take-profit (datos al 24/11/2026)
 
-Día 24 desde la entrada · señales contra el precio del MEXTRAC09 (estimado los días sin movimiento).
+Día 25 desde la entrada · señales contra el precio del MEXTRAC09 (estimado los días sin movimiento).
 
 Sin señales hoy.
 
-Quién explica más el TE del libro: FEMSAUBD 0.75 pp · BOLSAA 0.52 pp · GMEXICOB 0.36 pp · PEOLES 0.18 pp · PINFRA 0.16 pp
+Quién explica más el TE del libro: FEMSAUBD 0.76 pp · BOLSAA 0.52 pp · GMEXICOB 0.28 pp · KOFUBL 0.16 pp · PEOLES 0.16 pp
 
 ---
 _Lo genera `vigilante_refinitiv.py`. Los CSV de esta carpeta alimentan el tablero del cliente._
