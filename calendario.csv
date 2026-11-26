@@ -14,7 +14,7 @@ fecha,emisora,tipo,titulo,fuente
 2026-11-26,BANXICO,Evento,Informe trimestral del 3T de Banxico; desempleo de octubre (INEGI),Calendario de Banxico
 2026-11-26,EUA MEXTRAC,Evento,Acción de Gracias: NYSE cerrada el jueves; el viernes 27 cierra a las 12:00 CDMX,"NYSE, calendario de feriados"
 2026-11-27,ASURB,Evento,"Fecha ex del primer dividendo extraordinario de ASUR ($10.00 por acción, cupón 23); pago desde el 30-nov",Aviso de derechos BMV 1583418 (20-ago); 6-K de ASUR; LSEG
-2026-11-27,MERCADO,Evento,"Último día de la gestión (Parámetros: 27-nov, por confirmar con BBVA); balanza comercial de octubre",Parámetros del tracker; INEGI
+2026-11-27,MERCADO,Evento,"Balanza comercial de octubre (la gestión terminó el 24-nov)",Parámetros del tracker; INEGI
 2026-11-30,MERCADO,Evento,Entra en vigor la revisión de noviembre de MSCI (al cierre),"MSCI, anuncio del 11-nov (listas públicas)"
 2026-12-07,KOFUBL,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 1.935 paid on Dec 08, 2026 going ex on Dec 07, 2026",LSEG
 2026-12-08,WALMEX,Fecha ex de dividendo,"Final Cash Dividend of gross MXN 0.58 paid on Dec 09, 2026 going ex on Dec 08, 2026",LSEG

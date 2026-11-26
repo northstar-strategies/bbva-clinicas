@@ -1,6 +1,6 @@
 {
  "version": "v7.3",
- "actualizado": "2026-11-24T15:59:54-06:00",
+ "actualizado": "2026-11-26T12:51:36-06:00",
  "alertas": {
   "caja_negativa": [
    {
@@ -40,7 +40,7 @@
  "caja_invertida": "NO",
  "capital": 10000856.62,
  "inicio": "2026-10-12",
- "fin": "2026-11-27",
+ "fin": "2026-11-24",
  "fin_semana_libre": "2026-10-16",
  "compra_paga_semana": true,
  "fecha_referencia": "2026-10-16",

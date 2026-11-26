@@ -1,0 +1,226 @@
+referencia,papel,metrica,valor
+NAV,Oficial,rend_cartera,0.025834320157688495
+NAV,Oficial,rend_referencia,0.06882352941176473
+NAV,Oficial,ganancia_cartera,267656.4200000018
+NAV,Oficial,ganancia_referencia_mismo_capital,713046.032629412
+NAV,Oficial,alfa_bruto_pb,-429.89209254076235
+NAV,Oficial,alfa_bruto_pp,-4.298920925407623
+NAV,Oficial,alfa_penalizado_pb,-459.89209254076235
+NAV,Oficial,alfa_penalizado_pp,-4.598920925407624
+NAV,Oficial,hit_ratio_diario,0.24
+NAV,Oficial,dias_a_favor,6
+NAV,Oficial,dias,25
+NAV,Oficial,hit_ratio_semanal,0.16666666666666666
+NAV,Oficial,semanas_a_favor,1
+NAV,Oficial,semanas,6
+NAV,Oficial,racha_a_favor,2
+NAV,Oficial,racha_en_contra,6
+NAV,Oficial,mejor_dia_pb,35.61149991137435
+NAV,Oficial,mejor_dia,2026-11-09
+NAV,Oficial,peor_dia_pb,-70.45877683651058
+NAV,Oficial,peor_dia,2026-10-21
+NAV,Oficial,ganancia_prom_dias_a_favor_pb,13.577465330761502
+NAV,Oficial,perdida_prom_dias_en_contra_pb,-25.991906534242936
+NAV,Oficial,te_periodo,0.01232944043674281
+NAV,Oficial,te_anual,0.03914475984024609
+NAV,Oficial,ir_efectiva,-3.486712107871873
+NAV,Oficial,ir_anualizada,-10.619058216727126
+NAV,Oficial,beta_ex_post,0.8459937893653495
+NAV,Oficial,jensen_anual,-0.3208811603405913
+NAV,Oficial,correlacion,0.9381374798183452
+NAV,Oficial,r2,0.880101931039916
+NAV,Oficial,captura_alza,0.686017471095718
+NAV,Oficial,captura_baja,1.149709759381044
+NAV,Oficial,caida_max_relativa,-0.040221054337880924
+NAV,Oficial,caida_max_relativa_fecha,2026-11-24
+NAV,Oficial,t_alfa_diario,-3.344688952282977
+NAV,Oficial,beta_ex_ante,0.9369977195333893
+NAV,Oficial,te_ex_ante,0.04330045102043477
+NAV,Oficial,var_rel_hist_95_1d,0.0038827726549157814
+NAV,Oficial,var_rel_param_95_1d,0.004486621223729592
+NAV,Oficial,obs_ex_ante,252
+NAV,Oficial,faltan_ex_ante,0
+NAV,Oficial,var_rel_hist_95_1d_pesos,41266.707004748765
+NAV,Oficial,var_rel_param_95_1d_pesos,47684.50278605157
+NAV,Oficial,bootstrap_ic95_bajo_pb,-691.9427469416695
+NAV,Oficial,bootstrap_ic95_alto_pb,-183.95815184463368
+NAV,Oficial,bootstrap_prob_alfa_positivo,0.0001
+Precio,Comparativa,rend_cartera,0.025834320157688495
+Precio,Comparativa,rend_referencia,0.06926470588235278
+Precio,Comparativa,ganancia_cartera,267656.4200000018
+Precio,Comparativa,ganancia_referencia_mismo_capital,717616.8405308807
+Precio,Comparativa,alfa_bruto_pb,-434.3038572466429
+Precio,Comparativa,alfa_bruto_pp,-4.343038572466429
+Precio,Comparativa,alfa_penalizado_pb,-464.3038572466429
+Precio,Comparativa,alfa_penalizado_pp,-4.643038572466429
+Precio,Comparativa,hit_ratio_diario,0.36
+Precio,Comparativa,dias_a_favor,9
+Precio,Comparativa,dias,25
+Precio,Comparativa,hit_ratio_semanal,0.16666666666666666
+Precio,Comparativa,semanas_a_favor,1
+Precio,Comparativa,semanas,6
+Precio,Comparativa,racha_a_favor,3
+Precio,Comparativa,racha_en_contra,5
+Precio,Comparativa,mejor_dia_pb,76.29475505027905
+Precio,Comparativa,mejor_dia,2026-10-21
+Precio,Comparativa,peor_dia_pb,-158.0103120957421
+Precio,Comparativa,peor_dia,2026-10-22
+Precio,Comparativa,ganancia_prom_dias_a_favor_pb,22.724545125797974
+Precio,Comparativa,perdida_prom_dias_en_contra_pb,-38.80580216911913
+Precio,Comparativa,te_periodo,0.021591545880394934
+Precio,Comparativa,te_anual,0.06855103298515938
+Precio,Comparativa,ir_efectiva,-2.0114532773727407
+Precio,Comparativa,ir_anualizada,-6.122488396245987
+Precio,Comparativa,beta_ex_post,0.7264443676187917
+Precio,Comparativa,jensen_anual,-0.2502139571485134
+Precio,Comparativa,correlacion,0.7953325906463987
+Precio,Comparativa,r2,0.632553929744312
+Precio,Comparativa,captura_alza,0.6537038275098827
+Precio,Comparativa,captura_baja,1.0573388096997665
+Precio,Comparativa,caida_max_relativa,-0.040617057203646945
+Precio,Comparativa,caida_max_relativa_fecha,2026-11-24
+Precio,Comparativa,t_alfa_diario,-1.9284025834935192
+Precio,Comparativa,beta_ex_ante,0.9061986208767091
+Precio,Comparativa,te_ex_ante,0.0575764629859234
+Precio,Comparativa,var_rel_hist_95_1d,0.005408419474282505
+Precio,Comparativa,var_rel_param_95_1d,0.005965845036995446
+Precio,Comparativa,obs_ex_ante,252
+Precio,Comparativa,faltan_ex_ante,0
+Precio,Comparativa,var_rel_hist_95_1d_pesos,57481.51685405194
+Precio,Comparativa,var_rel_param_95_1d_pesos,63405.92176205217
+Precio,Comparativa,bootstrap_ic95_bajo_pb,-901.3414433983468
+Precio,Comparativa,bootstrap_ic95_alto_pb,-30.181772563041832
+Precio,Comparativa,bootstrap_prob_alfa_positivo,0.0161
+Precio sin ajustar,Comparativa,rend_cartera,0.025834320157688495
+Precio sin ajustar,Comparativa,rend_referencia,0.06926470588235278
+Precio sin ajustar,Comparativa,ganancia_cartera,267656.4200000018
+Precio sin ajustar,Comparativa,ganancia_referencia_mismo_capital,717616.8405308807
+Precio sin ajustar,Comparativa,alfa_bruto_pb,-434.3038572466429
+Precio sin ajustar,Comparativa,alfa_bruto_pp,-4.343038572466429
+Precio sin ajustar,Comparativa,alfa_penalizado_pb,-464.3038572466429
+Precio sin ajustar,Comparativa,alfa_penalizado_pp,-4.643038572466429
+Precio sin ajustar,Comparativa,hit_ratio_diario,0.36
+Precio sin ajustar,Comparativa,dias_a_favor,9
+Precio sin ajustar,Comparativa,dias,25
+Precio sin ajustar,Comparativa,hit_ratio_semanal,0.16666666666666666
+Precio sin ajustar,Comparativa,semanas_a_favor,1
+Precio sin ajustar,Comparativa,semanas,6
+Precio sin ajustar,Comparativa,racha_a_favor,3
+Precio sin ajustar,Comparativa,racha_en_contra,5
+Precio sin ajustar,Comparativa,mejor_dia_pb,76.29475505027905
+Precio sin ajustar,Comparativa,mejor_dia,2026-10-21
+Precio sin ajustar,Comparativa,peor_dia_pb,-158.0103120957421
+Precio sin ajustar,Comparativa,peor_dia,2026-10-22
+Precio sin ajustar,Comparativa,ganancia_prom_dias_a_favor_pb,22.724545125797974
+Precio sin ajustar,Comparativa,perdida_prom_dias_en_contra_pb,-38.80580216911913
+Precio sin ajustar,Comparativa,te_periodo,0.021591545880394934
+Precio sin ajustar,Comparativa,te_anual,0.06855103298515938
+Precio sin ajustar,Comparativa,ir_efectiva,-2.0114532773727407
+Precio sin ajustar,Comparativa,ir_anualizada,-6.122488396245987
+Precio sin ajustar,Comparativa,beta_ex_post,0.7264443676187917
+Precio sin ajustar,Comparativa,jensen_anual,-0.2502139571485134
+Precio sin ajustar,Comparativa,correlacion,0.7953325906463987
+Precio sin ajustar,Comparativa,r2,0.632553929744312
+Precio sin ajustar,Comparativa,captura_alza,0.6537038275098827
+Precio sin ajustar,Comparativa,captura_baja,1.0573388096997665
+Precio sin ajustar,Comparativa,caida_max_relativa,-0.040617057203646945
+Precio sin ajustar,Comparativa,caida_max_relativa_fecha,2026-11-24
+Precio sin ajustar,Comparativa,t_alfa_diario,-1.9284025834935192
+Precio sin ajustar,Comparativa,beta_ex_ante,0.8770877392113977
+Precio sin ajustar,Comparativa,te_ex_ante,0.0703879127281961
+Precio sin ajustar,Comparativa,var_rel_hist_95_1d,0.006028365224503022
+Precio sin ajustar,Comparativa,var_rel_param_95_1d,0.007293316713752326
+Precio sin ajustar,Comparativa,obs_ex_ante,252
+Precio sin ajustar,Comparativa,faltan_ex_ante,0
+Precio sin ajustar,Comparativa,var_rel_hist_95_1d_pesos,64070.395963623225
+Precio sin ajustar,Comparativa,var_rel_param_95_1d_pesos,77514.49561132817
+Precio sin ajustar,Comparativa,bootstrap_ic95_bajo_pb,-901.3414433983468
+Precio sin ajustar,Comparativa,bootstrap_ic95_alto_pb,-30.181772563041832
+Precio sin ajustar,Comparativa,bootstrap_prob_alfa_positivo,0.0161
+Índice,Comparativa,rend_cartera,0.025834320157688495
+Índice,Comparativa,rend_referencia,0.07039009596642565
+Índice,Comparativa,ganancia_cartera,267656.4200000018
+Índice,Comparativa,ganancia_referencia_mismo_capital,729276.4421448524
+Índice,Comparativa,alfa_bruto_pb,-445.55775808737155
+Índice,Comparativa,alfa_bruto_pp,-4.455577580873715
+Índice,Comparativa,alfa_penalizado_pb,-475.55775808737155
+Índice,Comparativa,alfa_penalizado_pp,-4.755577580873716
+Índice,Comparativa,hit_ratio_diario,0.28
+Índice,Comparativa,dias_a_favor,7
+Índice,Comparativa,dias,25
+Índice,Comparativa,hit_ratio_semanal,0.16666666666666666
+Índice,Comparativa,semanas_a_favor,1
+Índice,Comparativa,semanas,6
+Índice,Comparativa,racha_a_favor,2
+Índice,Comparativa,racha_en_contra,5
+Índice,Comparativa,mejor_dia_pb,27.083252486046483
+Índice,Comparativa,mejor_dia,2026-11-09
+Índice,Comparativa,peor_dia_pb,-70.28146487677355
+Índice,Comparativa,peor_dia,2026-10-21
+Índice,Comparativa,ganancia_prom_dias_a_favor_pb,14.142818208227842
+Índice,Comparativa,perdida_prom_dias_en_contra_pb,-29.2367061881959
+Índice,Comparativa,te_periodo,0.013737500133647267
+Índice,Comparativa,te_anual,0.043615210787216696
+Índice,Comparativa,ir_efectiva,-3.2433685441506688
+Índice,Comparativa,ir_anualizada,-9.874515427714032
+Índice,Comparativa,beta_ex_post,0.8209694963618595
+Índice,Comparativa,jensen_anual,-0.31779071012076304
+Índice,Comparativa,correlacion,0.9250053344740735
+Índice,Comparativa,r2,0.8556348688054927
+Índice,Comparativa,captura_alza,0.6801078295187367
+Índice,Comparativa,captura_baja,1.16382958823697
+Índice,Comparativa,caida_max_relativa,-0.04162573624012189
+Índice,Comparativa,caida_max_relativa_fecha,2026-11-24
+Índice,Comparativa,t_alfa_diario,-3.1101800165478486
+Índice,Comparativa,beta_ex_ante,0.9804496862155899
+Índice,Comparativa,te_ex_ante,0.036092584724098736
+Índice,Comparativa,var_rel_hist_95_1d,0.0036760430853426673
+Índice,Comparativa,var_rel_param_95_1d,0.0037397706681156387
+Índice,Comparativa,obs_ex_ante,252
+Índice,Comparativa,faltan_ex_ante,0
+Índice,Comparativa,var_rel_hist_95_1d_pesos,39069.553234751234
+Índice,Comparativa,var_rel_param_95_1d_pesos,39746.85981954022
+Índice,Comparativa,bootstrap_ic95_bajo_pb,-740.7782729109344
+Índice,Comparativa,bootstrap_ic95_alto_pb,-173.2112905398101
+Índice,Comparativa,bootstrap_prob_alfa_positivo,0.0
+Cartera,Absoluta,rend,0.025834320157688495
+Cartera,Absoluta,vol_anual,0.1013881785212503
+Cartera,Absoluta,sharpe_anual,1.9713808454630675
+Cartera,Absoluta,sortino_anual,2.892386824078994
+Cartera,Absoluta,caida_max,-0.03407487224653294
+Cartera,Absoluta,caida_pico,2026-11-11
+Cartera,Absoluta,caida_valle,2026-11-20
+Cartera,Absoluta,caida_recuperacion,sin recuperar al 24-nov
+Cartera,Absoluta,var_hist_95_1d,0.014758687977745594
+Cartera,Absoluta,var_param_95_1d,0.016062492922161196
+Cartera,Absoluta,cvar_hist_95_1d,0.018301819708722234
+Cartera,Absoluta,cetes28,0.0623
+Cartera,Absoluta,var_hist_95_1d_pesos,156857.6135357958
+Cartera,Absoluta,var_param_95_1d_pesos,170714.6537012619
+Cartera,Absoluta,cvar_hist_95_1d_pesos,194514.5643841356
+Cierre,Autopsia,escalera_original_buy_hold,0.025664
+Cierre,Autopsia,escalera_real,0.025834320157688495
+Cierre,Autopsia,escalera_real_segun_replica_bh,0.025834000000000003
+Cierre,Autopsia,escalera_modelo_whatif,0.004599855056
+Cierre,Autopsia,escalera_qvm_alterno,0.0046
+Cierre,Autopsia,costos_comision_iva,1404.2499999999998
+Cierre,Autopsia,costos_comision,1210.57
+Cierre,Autopsia,costos_iva,193.68
+Cierre,Autopsia,costos_operado,403519.77
+Cierre,Autopsia,costos_rotacion,0.03809869096395597
+Cierre,Autopsia,costos_alfa_comido_pb,-1.3916594046884485
+Cierre,Autopsia,costos_operaciones,37
+Cierre,Autopsia,dividendos_cobrados,44543.47
+Cierre,Autopsia,dividendos_por_cobrar,1067.64
+Cierre,Autopsia,dividendos_reinvertidos,43998.96000000001
+Cierre,Autopsia,dividendos_en_acciones,"GMEXICOB: 27 títulos (1 por cada 194) y $79.37 de fracción, 23-nov"
+Cierre,Autopsia,concentracion_top1,0.36868988983014944
+Cierre,Autopsia,concentracion_top3,0.5816486473961905
+Cierre,Autopsia,concentracion_top5,0.7421388717849191
+Cierre,Autopsia,valor_dia0,10360497.91
+Cierre,Autopsia,valor_24nov,10628154.330000002
+Cierre,Autopsia,penalizacion_pb,30.0
+Cierre,Autopsia,sesiones,25
+Cierre,Autopsia,faltan_indice_ex_ante,0
+Cierre,Autopsia,senales_sl_dias,"{'OK': 127, 'Sin sobrepeso': 725, 'Vigilar': 73}"
+Cierre,Autopsia,senales_tp_dias,"{'OK': 200, 'Sin sobrepeso': 725}"

@@ -1794,7 +1794,7 @@ body{font-variant-numeric:tabular-nums}
 }
 </style>
 </head>
-<body>
+<body data-vista="cierre">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <symbol id="i-dash" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></symbol>
 <symbol id="i-swap" viewBox="0 0 24 24"><path d="M7 4 3 8l4 4"/><path d="M3 8h13a4 4 0 0 1 4 4"/><path d="m17 20 4-4-4-4"/><path d="M21 16H8a4 4 0 0 1-4-4"/></symbol>
@@ -1837,8 +1837,10 @@ body{font-variant-numeric:tabular-nums}
       <div class="sub">Fuente única de datos · seguimiento v2.1</div>
     </div>
     <nav class="nav" id="nav">
+      <div class="nav-group">Cierre</div>
+      <button class="nav-item on" data-v="cierre"><svg class="i ic"><use href="#i-target"/></svg>Cierre de gestión<span class="badge">final</span></button>
       <div class="nav-group">Gestión</div>
-      <button class="nav-item on" data-v="portafolio"><svg class="i ic"><use href="#i-dash"/></svg>Portafolio</button>
+      <button class="nav-item" data-v="portafolio"><svg class="i ic"><use href="#i-dash"/></svg>Portafolio</button>
       <button class="nav-item" data-v="historia"><svg class="i ic"><use href="#i-cal"/></svg>Historia</button>
       <button class="nav-item" data-v="operaciones"><svg class="i ic"><use href="#i-swap"/></svg>Operaciones<span class="badge" id="bdgOps">0</span></button>
       <button class="nav-item" data-v="dividendos"><svg class="i ic"><use href="#i-cash"/></svg>Dividendos</button>
@@ -1865,7 +1867,7 @@ body{font-variant-numeric:tabular-nums}
   <main class="main">
     <header class="topbar">
       <button class="btn sm menu-btn" id="menuBtn" aria-label="Menú"><svg class="i"><use href="#i-menu"/></svg></button>
-      <div><div class="crumb" id="crumb">Gestión</div><h2 id="title">Portafolio</h2></div>
+      <div><div class="crumb" id="crumb">Cierre</div><h2 id="title">Cierre de gestión · cifras finales al 24-nov-2026</h2></div>
       <div class="spacer"></div>
       <button class="al-pill" id="alPill" hidden><svg class="i"><use href="#i-shield"/></svg><b>0</b></button>
       <div class="status"><span class="led" id="led"></span><span id="ledTxt">Listo</span></div>
@@ -1892,7 +1894,61 @@ body{font-variant-numeric:tabular-nums}
       <div class="alertas" id="alertas" hidden role="status" aria-live="polite"></div>
 
       <!-- ══════════ PORTAFOLIO ══════════ -->
-      <section class="view on" id="v-portafolio">
+      <section class="view on" id="v-cierre" aria-labelledby="ciTit">
+<style>
+/* La portada de cierre no muestra precios en vivo: la cinta y las alertas son de la operación diaria */
+body[data-vista="cierre"] #cinta,body[data-vista="cierre"] #alertas{display:none!important}
+#v-cierre .ci-head{margin:4px 0 18px}
+#v-cierre .ci-sobre{font:600 11px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--ice-2)}
+#v-cierre .ci-tit{font-size:clamp(20px,3.2vw,30px);font-weight:700;line-height:1.2;margin:6px 0 4px}
+#v-cierre .ci-sub{color:var(--txt-3);font-size:12.5px}
+#v-cierre .ci-final{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:999px;background:var(--info-bg);color:var(--ice);font:600 10.5px var(--mono);letter-spacing:.08em}
+#v-cierre .ci-marc{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:14px;margin-bottom:14px}
+#v-cierre .ci-ref{cursor:pointer;outline:none}
+#v-cierre .ci-ref.sel{border-color:var(--ice-2);box-shadow:0 0 0 1px var(--ice-2) inset}
+#v-cierre .ci-ref:focus-visible{box-shadow:0 0 0 2px var(--ice) inset}
+#v-cierre .ci-ref .lbl{font-size:11px;color:var(--txt-3);text-transform:uppercase;letter-spacing:.12em}
+#v-cierre .ci-ref .of{color:var(--ice);font-weight:700}
+#v-cierre .ci-ref .big{font:700 clamp(26px,4vw,40px)/1.1 var(--mono);margin:8px 0 2px}
+#v-cierre .ci-ref .med{font:700 22px/1.2 var(--mono);margin:8px 0 2px}
+#v-cierre .ci-ref .lin{font-size:12.5px;color:var(--txt-2);margin-top:4px}
+#v-cierre .pos{color:var(--pos)} #v-cierre .neg{color:var(--neg)}
+#v-cierre .ci-30 li{margin:6px 0 6px 18px;line-height:1.5}
+#v-cierre .ci-ctl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:4px 0 14px}
+#v-cierre .ci-ctl .t{font-size:12px;color:var(--txt-3)}
+#v-cierre .ci-g2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+#v-cierre .ci-c{position:relative;height:300px}
+#v-cierre .ci-c.alto{height:380px}
+#v-cierre .card{margin-bottom:14px}
+#v-cierre .ci-nota{font-size:11.5px;color:var(--txt-3);margin-top:8px}
+#v-cierre table.ci-t{width:100%;border-collapse:collapse;font-size:12px}
+#v-cierre .ci-t th,#v-cierre .ci-t td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+#v-cierre .ci-t th:first-child,#v-cierre .ci-t td:first-child{text-align:left;white-space:normal}
+#v-cierre .ci-t th{color:var(--txt-3);font-weight:600;cursor:pointer;user-select:none}
+#v-cierre .ci-t th[aria-sort]::after{content:" ↕";opacity:.5}
+#v-cierre .ci-t td.sel,#v-cierre .ci-t th.sel{background:rgba(20,100,165,.18)}
+#v-cierre .ci-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+#v-cierre .ci-calor td{padding:3px 4px;font:10.5px var(--mono);text-align:center;min-width:34px}
+#v-cierre .ci-sem{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:6px}
+#v-cierre .ci-sem div{border-radius:8px;padding:6px;font:11px var(--mono);text-align:center;border:1px solid var(--line)}
+#v-cierre .ci-sem .ok{background:var(--pos-bg)} #v-cierre .ci-sem .no{background:var(--neg-bg)}
+#v-cierre .ci-tl{list-style:none;border-left:2px solid var(--line-2);margin-left:6px;padding-left:14px}
+#v-cierre .ci-tl li{margin:0 0 10px;position:relative;font-size:12.5px}
+#v-cierre .ci-tl li::before{content:"";position:absolute;left:-20px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--blue)}
+#v-cierre .ci-tl b{font-family:var(--mono)}
+#v-cierre details{margin:6px 0} #v-cierre summary{cursor:pointer;font-weight:600}
+#v-cierre .ci-dl a{display:inline-block;margin:4px 8px 4px 0;padding:6px 10px;border:1px solid var(--line-2);border-radius:8px;color:var(--ice);text-decoration:none;font:12px var(--mono)}
+#v-cierre .btn-rep{border:1px solid var(--line-2);background:none;color:var(--ice);border-radius:8px;padding:5px 10px;cursor:pointer;font:12px var(--sans);min-height:30px}
+@media (max-width:900px){#v-cierre .ci-marc,#v-cierre .ci-g2{grid-template-columns:1fr}#v-cierre .ci-c{height:260px}#v-cierre .ci-c.alto{height:300px}}
+</style>
+<header class="ci-head">
+  <p class="ci-sobre">Cierre de gestión <span class="ci-final">CIFRAS FINALES</span></p>
+  <h2 class="ci-tit" id="ciTit">Periodo de gestión cerrado · 16-oct al 24-nov-2026 · 25 sesiones</h2>
+  <p class="ci-sub">Referencia oficial: NAV del MEXTRAC09. Cifras congeladas al cierre del 24-nov: no cambian con precios en vivo ni con corridas posteriores del vigilante. Fuente: <code>cierre/</code> y <code>Resultados_finales_24nov.md</code>.</p>
+</header>
+<div id="ciCuerpo"><div class="card"><div class="empty">Leyendo los archivos de cierre…</div></div></div>
+</section>
+<section class="view" id="v-portafolio">
         <div class="tabs" data-tabs="portafolio">
           <button class="tab on" data-p="dash">Resumen</button>
           <button class="tab" data-p="dia">Día a día</button>
@@ -7991,13 +8047,13 @@ const AtrV=(()=>{
 /* ═══════════ 17. UI ═══════════ */
 const UI=(()=>{
   const sortState={}, F={pos:'',ops:'',px:'',bmk:'',mdl:'',posStrat:'TODAS',opsTipo:'TODAS',pxUni:'TODAS',mdlF:'TODAS'};
-  let view='portafolio', pane={portafolio:'dash',operaciones:GESTOR?'alta':'log',modelo:'pesos',
+  let view='cierre', pane={portafolio:'dash',operaciones:GESTOR?'alta':'log',modelo:'pesos',
     mercado:'px',analisis:'rend',control:'efec',noticias:'',simulador:'',atribucion:'atrdia'};
   let period='ITD', mainPeriod='ITD', donutModo='ABIERTO', prospDays=252, rebalList=[];
   let cmp={from:'',to:'',cont:true,quick:'EN MODELO',q:''};
   let noti={tono:'TODAS',sym:'TODAS',q:''};
   let hist5={per:'5A', series:null};
-  const TITLES={portafolio:['Gestión','Portafolio'],operaciones:['Gestión','Operaciones'],modelo:['Gestión','Modelo de cartera'],
+  const TITLES={cierre:['Cierre','Cierre de gestión · cifras finales al 24-nov-2026'],portafolio:['Gestión','Portafolio'],operaciones:['Gestión','Operaciones'],modelo:['Gestión','Modelo de cartera'],
     simulador:['Gestión','Simulador de órdenes · cuánto falta para el peso objetivo'],
     noticias:['Seguimiento','Noticias del portafolio'],
     mercado:['Datos','Mercado'],analisis:['Análisis','Análisis'],control:['Control','Control'],
@@ -8145,6 +8201,7 @@ const UI=(()=>{
     if(view==='dividendos') Divs.render();
     if(view==='historia') HistV.render();
     if(view==='buyhold') BH.render();
+    if(view==='cierre') Cierre.render();
     montarExplicador();
     cintaPendiente();
     try{ Alertas.pendiente(); }catch(e){}
@@ -10551,6 +10608,190 @@ const Ruta=(()=>{
   return {iniciar,vista,abrir,cambio,cerre,guardaScroll,menu:ab=>ab?abrir('menu','',cierraMenu):cerre(cierraMenu),get pila(){ return pila.map(c=>c.t); }};
 })();
 
+/* ═══════════ 18b. CIERRE DE GESTIÓN (24-nov-2026) ═══════════
+   Portada del sitio. Lee solo cierre/*.csv (cifras finales, congeladas): ni cotizaciones.csv ni los CSV diarios del vigilante.
+   Selector global NAV · Precio · Índice; abre en NAV (oficial). Colores fijos por serie en todas las gráficas. */
+const Cierre=(()=>{
+  const ARCH=['resumen_referencias','diario_referencias','puente','atribucion_cierre','portafolio_final','decisiones','cumplimiento_diario'];
+  const RAWC='https://raw.githubusercontent.com/northstar-strategies/bbva-clinicas/main/cierre/';
+  const COL={cartera:'#D4EDFC',NAV:'#4FA3E8',Precio:'#F5B93C','Índice':'#B48CF0',pos:'#22C77E',neg:'#FF5468',grid:'rgba(212,237,252,.08)',txt:'rgba(236,243,251,.62)'};
+  const REFS=['NAV','Precio','Índice'], CLAVE={NAV:'nav',Precio:'precio','Índice':'indice'};
+  const CORTE='corte 24-nov-2026';
+  let D=null, err='', ref='NAV', graf={}, pintado='', cargando=null;
+  const reduce=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const n=v=>{ const x=parseFloat(v); return isFinite(x)?x:null; };
+  const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const pc=(x,d=2)=>x==null?'—':(x>0?'+':x<0?'−':'')+Math.abs(x*100).toFixed(d)+'%';
+  const pb=(x,d=2)=>x==null?'—':(x>0?'+':x<0?'−':'')+Math.abs(x).toFixed(d)+' pb';
+  const mx=x=>x==null?'—':(x<0?'−$':'$')+Math.abs(x).toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2});
+  const cls=x=>x>0?'pos':x<0?'neg':'';
+  const fDia=f=>{ const [y,m,d]=f.split('-'); return `${+d}-${['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'][m-1]}`; };
+  async function leer(f){
+    try{ const r=await fetch('cierre/'+f+'.csv',{cache:'no-store'}); if(r.ok){ const t=await r.text(); if(t.includes(',')) return t; } }catch(e){}
+    const r=await fetch(RAWC+f+'.csv',{cache:'no-store'}); if(!r.ok) throw new Error(f+'.csv: '+r.status); return r.text(); }
+  function filas(t){ const R=IO.parseCSV(String(t||'').trim()); if(R.length<2) return [];
+    const H=R[0].map(h=>String(h).trim()); return R.slice(1).filter(r=>r.length>1).map(r=>Object.fromEntries(H.map((h,i)=>[h,r[i]??'']))); }
+  function cargar(){ if(cargando) return cargando;
+    cargando=Promise.all(ARCH.map(leer)).then(T=>{ const o={}; ARCH.forEach((a,i)=>o[a]=filas(T[i]));
+      const M={}; o.resumen_referencias.forEach(r=>{ (M[r.referencia]||(M[r.referencia]={}))[r.metrica]=r.valor; });
+      D={...o,M}; err=''; }).catch(e=>{ err=String(e.message||e); cargando=null; });
+    return cargando; }
+  const m=(r,k)=>n(D.M[r]?.[k]);
+  const base=()=>({responsive:true,maintainAspectRatio:false,animation:reduce()?false:{duration:900,easing:'easeOutQuart'},
+    interaction:{mode:'index',intersect:false},
+    plugins:{legend:{labels:{color:COL.txt,boxWidth:12,font:{size:11}}},tooltip:{backgroundColor:'rgba(6,15,38,.95)'}},
+    scales:{x:{ticks:{color:COL.txt,maxRotation:0,autoSkip:true,font:{size:10}},grid:{color:COL.grid}},
+            y:{ticks:{color:COL.txt,font:{size:10}},grid:{color:COL.grid}}}});
+  function chart(id,cfg){ const c=document.getElementById(id); if(!c||typeof Chart==='undefined') return;
+    if(graf[id]) graf[id].destroy(); graf[id]=new Chart(c,cfg); }
+  const card=(tit,cuerpo,nota='')=>`<div class="card"><div class="card-h"><h3>${tit}</h3></div>${cuerpo}${nota?`<p class="ci-nota">${nota}</p>`:''}</div>`;
+  const lienzo=(id,alto)=>`<div class="ci-c${alto?' alto':''}"><canvas id="${id}" role="img" aria-label="${id}"></canvas></div>`;
+
+  function marcador(){
+    return `<div class="ci-marc" role="radiogroup" aria-label="Referencia">${REFS.map((r,i)=>{ const a=m(r,'alfa_bruto_pb'), p=m(r,'alfa_penalizado_pb');
+      return `<div class="kpi ci-ref${r===ref?' sel':''}" tabindex="0" role="radio" aria-checked="${r===ref}" data-ref="${r}">
+        <div class="lbl">${r==='NAV'?'<span class="of">NAV del MEXTRAC09 · oficial</span>':r==='Precio'?'MEXTRAC09 a precio de mercado · comparativa':'Índice S&P/BMV IPC CompMx Rentable ESG Tilted TR · comparativa'}</div>
+        <div class="${i?'med':'big'} ${cls(a)}">${pb(a)}</div>
+        <div class="lin">Alfa bruto · con la penalización de 30 pb: <b class="${cls(p)}">${pb(p)}</b>${i?' <i>(ejercicio comparativo)</i>':''}</div>
+        <div class="lin">Cartera ${pc(m(r,'rend_cartera'))} contra ${pc(m(r,'rend_referencia'))} de la referencia</div>
+        <div class="lin"><b>${a>0?'Le ganamos':'Perdimos'} por ${Math.abs(a/100).toFixed(2)} pp</b></div></div>`; }).join('')}</div>`;
+  }
+  function resumen30(){
+    const at=D.atribucion_cierre, em=at.filter(r=>r.bloque==='EMISORA'), R=Object.fromEntries(at.filter(r=>r.bloque==='RESUMEN').map(r=>[r.renglon,n(r.pb)]));
+    const sem=at.filter(r=>r.bloque==='SEMANA').sort((a,b)=>n(b.pb)-n(a.pb))[0];
+    const gan=em.filter(r=>n(r.pb)>0).sort((a,b)=>n(b.pb)-n(a.pb))[0];
+    return card('Resumen en 30 segundos',`<ul class="ci-30">
+      <li><b>Cómo nos fue:</b> la cartera ganó ${pc(m('NAV','rend_cartera'))} (${mx(m('Cierre','valor_24nov')-m('Cierre','valor_dia0'))}) pero el NAV del MEXTRAC09 subió ${pc(m('NAV','rend_referencia'))}: quedamos ${pb(m('NAV','alfa_bruto_pb'))} abajo, ${pb(m('NAV','alfa_penalizado_pb'))} con la penalización.</li>
+      <li><b>Qué más pesó:</b> ${em.slice(0,2).map(r=>`${esc(r.renglon)} (${pb(n(r.pb))})`).join(' y ')}; por pieza, la asignación sectorial (${pb(R['Asignación sectorial'])}) y la selección (${pb(R['Selección (stock picking)'])}).</li>
+      <li><b>Qué funcionó:</b> ${gan?`${esc(gan.renglon)} (${pb(n(gan.pb))}), `:''}la semana ${esc(sem.renglon)} (${pb(n(sem.pb))}) y costos bajos (${pb(R['Comisión e IVA'])}).</li></ul>`,
+      'Frases armadas con las cifras de cierre/atribucion_cierre.csv. 25 días no bastan para separar habilidad de suerte.');
+  }
+  function carrera(){ const d=D.diario_referencias, L=d.map(r=>fDia(r.fecha)), k=CLAVE[ref];
+    const b100=c=>d.map(r=>100*(1+n(r['acum_'+c])));
+    const ds=[{label:'Cartera',data:b100('cartera'),borderColor:COL.cartera,backgroundColor:'rgba(255,84,104,.14)',borderWidth:2.4,pointRadius:0,fill:{target:1+REFS.indexOf(ref),above:'rgba(34,199,126,.16)',below:'rgba(255,84,104,.16)'}},
+      ...REFS.map(r=>({label:r+(r==='NAV'?' (oficial)':''),data:b100(CLAVE[r]),borderColor:COL[r],borderWidth:r===ref?2.2:1.3,borderDash:r===ref?[]:[5,4],pointRadius:0,fill:false}))];
+    const ev={'2026-10-21':'Sobregiro y descuento del ETF (−1.43% contra su canasta)','2026-10-27':'Ventas para corregir el sobregiro','2026-11-09':'Mejor día relativo','2026-11-23':'GMEXICO: dividendo en acciones (1 por 194)','2026-11-24':'Cobre −5%: GMEXICOB −5.5% · OMAB ex dividendo'};
+    ds.push({label:'Eventos',type:'scatter',data:d.map((r,i)=>ev[r.fecha]?{x:L[i],y:100*(1+n(r.acum_cartera)),t:ev[r.fecha]}:null).filter(Boolean),pointRadius:5,pointBackgroundColor:'#fff',showLine:false});
+    const c=base(); c.plugins.tooltip.callbacks={label:x=>x.raw?.t?`● ${x.raw.t}`:`${x.dataset.label}: ${x.parsed.y.toFixed(2)}`};
+    c.plugins.legend.onClick=(e,it,lg)=>{ Chart.defaults.plugins.legend.onClick(e,it,lg); };
+    chart('ciCarrera',{type:'line',data:{labels:L,datasets:ds},options:c});
+  }
+  function alfaDia(){ const p=D.puente, k=CLAVE[ref], L=p.map(r=>fDia(r.fecha));
+    const dia=p.map(r=>n(r['alfa_dia_'+k])*1e4), ac=p.map(r=>n(r['alfa_'+k])*1e4);
+    const c=base(); c.scales.y.title={display:true,text:'pb',color:COL.txt}; c.scales.y2={position:'right',ticks:{color:COL.txt},grid:{display:false},title:{display:true,text:'pb acumulado',color:COL.txt}};
+    chart('ciAlfa',{data:{labels:L,datasets:[{type:'bar',label:'Alfa del día (pb)',data:dia,backgroundColor:dia.map(v=>v>=0?COL.pos:COL.neg)},
+      {type:'line',label:'Alfa acumulado (pb)',data:ac,borderColor:COL[ref],pointRadius:0,borderWidth:2,yAxisID:'y2'}]},options:c});
+  }
+  function puente(){ const u=D.puente.at(-1), aN=m('NAV','alfa_bruto_pb');
+    const filas_=ref==='NAV'?[['Alfa contra Índice',m('Índice','alfa_bruto_pb')],['Índice − NAV (seguimiento del ETF)',n(u.puente_indice_menos_nav)*1e4],['Alfa contra NAV',aN]]
+      :[[`Alfa contra ${ref}`,m(ref,'alfa_bruto_pb')],[ref==='Precio'?'Precio − NAV (premio del ETF)':'Índice − NAV (seguimiento del ETF)',n(ref==='Precio'?u.puente_precio_menos_nav:u.puente_indice_menos_nav)*1e4],['Alfa contra NAV',aN]];
+    const a=filas_[0][1], b=filas_[1][1];
+    const c=base(); c.indexAxis='y'; c.plugins.legend.display=false; c.scales.x.title={display:true,text:'pb',color:COL.txt};
+    c.plugins.tooltip.callbacks={label:x=>pb(filas_[x.dataIndex][1])};
+    chart('ciPuente',{type:'bar',data:{labels:filas_.map(f=>f[0]),datasets:[{data:[[0,a],[a,a+b],[0,a+b]],backgroundColor:[COL[ref==='NAV'?'Índice':ref],b>=0?COL.pos:COL.neg,COL.NAV]}]},options:c});
+  }
+  function cascada(){ const R=D.atribucion_cierre.filter(r=>r.bloque==='RESUMEN'&&!/^Total|Redondeo/.test(r.renglon));
+    const pz=R.map(r=>[r.renglon.replace(' (efectivo contra acciones)','').replace(' de nuestro MEXTRAC09 contra su canasta',' del ETF').replace('Canasta del MEXTRAC09 contra el NAV','Canasta contra NAV').replace(' (ejecución contra cierre)',''),n(r.pb)]);
+    if(ref!=='NAV'){ const v=D.atribucion_cierre.find(r=>r.bloque==='VISTA '+ref&&/^Diferencia/.test(r.renglon)); pz.push([`NAV contra ${ref}`,n(v.pb)]); }
+    let acc=0; const bar=pz.map(([,v])=>{ const s=[acc,acc+v]; acc+=v; return s; }); bar.push([0,acc]); const lab=[...pz.map(p=>p[0]),`Alfa contra ${ref}`];
+    const c=base(); c.plugins.legend.display=false; c.scales.y.title={display:true,text:'pb',color:COL.txt};
+    c.plugins.tooltip.callbacks={label:x=>pb(x.dataIndex<pz.length?pz[x.dataIndex][1]:acc)};
+    chart('ciCascada',{type:'bar',data:{labels:lab,datasets:[{data:bar,backgroundColor:bar.map((s,i)=>i===bar.length-1?COL[ref]:(s[1]-s[0]>=0?COL.pos:COL.neg))}]},options:c});
+    return acc;
+  }
+  function caida(){ const d=D.diario_referencias; let pico=-1e9; const dd=d.map(r=>{ const v=n(r.valor); pico=Math.max(pico,v); return (v/pico-1)*100; });
+    const k=CLAVE[ref]; let pr=-1e9; const rel=d.map(r=>{ const w=(1+n(r.acum_cartera))/(1+n(r['acum_'+k])); pr=Math.max(pr,w); return (w/pr-1)*100; });
+    const c=base(); c.scales.y.title={display:true,text:'% desde el máximo',color:COL.txt};
+    chart('ciCaida',{type:'line',data:{labels:d.map(r=>fDia(r.fecha)),datasets:[{label:'Cartera (absoluta)',data:dd,borderColor:COL.cartera,pointRadius:0,fill:true,backgroundColor:'rgba(212,237,252,.08)'},
+      {label:`Relativa contra ${ref}`,data:rel,borderColor:COL[ref],pointRadius:0,borderDash:[5,4]}]},options:c});
+  }
+  function premio(){ const d=D.diario_referencias; const c=base(); c.scales.y.title={display:true,text:'% precio sobre NAV',color:COL.txt};
+    chart('ciPremio',{data:{labels:d.map(r=>fDia(r.fecha)),datasets:[{type:'bar',label:'Premio (+) o descuento (−) del MEXTRAC09 sobre su NAV',data:d.map(r=>n(r.premio_descuento)*100),
+      backgroundColor:d.map(r=>r.mextrac_estimado==='1'?'rgba(245,185,60,.9)':n(r.premio_descuento)>=0?COL.pos:COL.neg)}]},options:c}); }
+  function sectores(){ const S=D.atribucion_cierre.filter(r=>r.bloque==='SECTOR'&&Math.abs(n(r.pb))>1e-9);
+    const c=base(); c.indexAxis='y'; c.scales.x.stacked=c.scales.y.stacked=true; c.scales.x.title={display:true,text:'pb contra NAV',color:COL.txt};
+    chart('ciSect',{type:'bar',data:{labels:S.map(r=>r.renglon),datasets:[['Asignación','asignacion_pb','#4FA3E8'],['Selección','seleccion_pb','#B48CF0'],['Interacción','interaccion_pb','#F5B93C']]
+      .map(([l,k,col])=>({label:l,data:S.map(r=>n(r[k])),backgroundColor:col}))},options:c}); }
+  function ganadoras(){ const E=D.atribucion_cierre.filter(r=>r.bloque==='EMISORA').sort((a,b)=>n(b.pb)-n(a.pb)); const S=[...E.slice(0,8),...E.slice(-8)];
+    const c=base(); c.indexAxis='y'; c.plugins.legend.display=false; c.scales.x.title={display:true,text:'pb contra NAV (Cariño)',color:COL.txt};
+    chart('ciGan',{type:'bar',data:{labels:S.map(r=>r.renglon),datasets:[{data:S.map(r=>n(r.pb)),backgroundColor:S.map(r=>n(r.pb)>=0?COL.pos:COL.neg)}]},options:c}); }
+  function escalera(){ const o=m('Cierre','escalera_original_buy_hold'), r=m('Cierre','escalera_real'), q=m('Cierre','escalera_qvm_alterno'), b=m(ref,'rend_referencia');
+    const c=base(); c.plugins.legend.display=false; c.scales.y.title={display:true,text:'% desde el 16-oct',color:COL.txt};
+    c.plugins.tooltip.callbacks={label:x=>pc([o,r,q,b][x.dataIndex])};
+    chart('ciEsc',{type:'bar',data:{labels:['Asignación sin tocar','Cartera real','QVM alterno (hipotético)',`${ref} (referencia)`],
+      datasets:[{data:[o,r,q,b].map(x=>x*100),backgroundColor:['#7FB6E8',COL.cartera,'rgba(180,140,240,.55)',COL[ref]]}]},options:c});
+    return r-o; }
+  function calor(){ const C=D.atribucion_cierre.filter(r=>r.bloque==='CALOR').map(r=>{ const [f,e]=r.renglon.split('|'); return {f,e,v:n(r.pb)}; });
+    const top=D.atribucion_cierre.filter(r=>r.bloque==='EMISORA').slice(0,15).map(r=>r.renglon), F=[...new Set(C.map(c=>c.f))].sort();
+    const V={}; C.forEach(c=>V[c.f+'|'+c.e]=c.v); const mx_=Math.max(...C.filter(c=>top.includes(c.e)).map(c=>Math.abs(c.v)),1);
+    const col=v=>`background:${v>=0?'rgba(34,199,126,':'rgba(255,84,104,'}${(Math.min(1,Math.abs(v)/mx_)*.85+.05).toFixed(2)})`;
+    return `<div class="ci-scroll"><table class="ci-t ci-calor"><thead><tr><th>Emisora</th>${F.map(f=>`<th>${fDia(f)}</th>`).join('')}</tr></thead><tbody>
+      ${top.map(e=>`<tr><td>${esc(e)}</td>${F.map(f=>{ const v=V[f+'|'+e]??0; return `<td style="${col(v)}" title="${esc(e)} ${fDia(f)}: ${pb(v)}">${Math.abs(v)>=.5?(v>0?'+':'−')+Math.abs(v).toFixed(0):''}</td>`; }).join('')}</tr>`).join('')}</tbody></table></div>`; }
+  function semaforo(){ const C=D.cumplimiento_diario;
+    return `<div class="ci-sem">${C.map(r=>{ const ok=r.estado==='Cumple'; return `<div class="${ok?'ok':'no'}" title="${esc(r.estado)} · caja ${pc(n(r.efectivo))} · ETF ${pc(n(r.etf),1)} · pasiva ${pc(n(r.pasiva),1)} · desv. ${(n(r.desviacion_max)*100).toFixed(2)} pp · TE ${pc(n(r.te_ex_ante))} · β ${n(r.beta_ex_ante).toFixed(2)}">${fDia(r.fecha)}<br>${ok?'✓ cumple':'✗ caja'}</div>`; }).join('')}</div>`; }
+  const METS=[['Rendimiento de la referencia','rend_referencia',x=>pc(x,4)],['Alfa bruto','alfa_bruto_pb',pb],['Alfa penalizado (−30 pb)','alfa_penalizado_pb',pb],
+    ['Hit ratio diario','hit_ratio_diario',x=>pc(x,0).replace('+','')],['Hit ratio semanal','hit_ratio_semanal',x=>pc(x,0).replace('+','')],['Racha a favor (días)','racha_a_favor',x=>x],['Racha en contra (días)','racha_en_contra',x=>x],
+    ['Mejor día relativo','mejor_dia_pb',pb],['Peor día relativo','peor_dia_pb',pb],['Ganancia prom. días a favor','ganancia_prom_dias_a_favor_pb',pb],['Pérdida prom. días en contra','perdida_prom_dias_en_contra_pb',pb],
+    ['TE del periodo (σ×√25)','te_periodo',x=>pc(x).replace('+','')],['TE anualizado (σ×√252)','te_anual',x=>pc(x).replace('+','')],['IR efectiva','ir_efectiva',x=>x.toFixed(2)],['IR anualizada (referencia)','ir_anualizada',x=>x.toFixed(2)],
+    ['Beta ex post','beta_ex_post',x=>x.toFixed(3)],['Alfa de Jensen anual','jensen_anual',x=>pc(x)],['Correlación','correlacion',x=>x.toFixed(3)],['R²','r2',x=>x.toFixed(3)],
+    ['Captura al alza','captura_alza',x=>x.toFixed(2)],['Captura a la baja','captura_baja',x=>x.toFixed(2)],['Caída máxima relativa','caida_max_relativa',x=>pc(x)],
+    ['Beta ex ante (1 año)','beta_ex_ante',x=>x.toFixed(3)],['TE ex ante (1 año)','te_ex_ante',x=>pc(x).replace('+','')],['VaR relativo histórico 95% 1 día','var_rel_hist_95_1d',x=>pc(x).replace('+','')],
+    ['VaR relativo paramétrico 95% 1 día','var_rel_param_95_1d',x=>pc(x).replace('+','')],['Estadístico t del alfa diario','t_alfa_diario',x=>x.toFixed(2)],
+    ['Bootstrap IC 95% bajo','bootstrap_ic95_bajo_pb',pb],['Bootstrap IC 95% alto','bootstrap_ic95_alto_pb',pb]];
+  let orden={col:-1,asc:true};
+  function tabla(){ let F=METS.map(([t,k,f])=>[t,...REFS.map(r=>m(r,k)),f]);
+    if(orden.col>=0) F=[...F].sort((a,b)=>{ const x=orden.col?a[orden.col]:a[0], y=orden.col?b[orden.col]:b[0]; return (x>y?1:x<y?-1:0)*(orden.asc?1:-1); });
+    return `<div class="ci-scroll"><table class="ci-t" id="ciTabla"><thead><tr>${['Métrica',...REFS.map(r=>r+(r==='NAV'?' (oficial)':''))].map((h,i)=>`<th data-c="${i}" aria-sort="${orden.col===i?(orden.asc?'ascending':'descending'):'none'}" class="${i&&REFS[i-1]===ref?'sel':''}">${h}</th>`).join('')}</tr></thead>
+      <tbody>${F.map(f=>`<tr><td>${f[0]}</td>${REFS.map((r,i)=>`<td class="${r===ref?'sel':''}">${f[i+1]==null?'—':f[4](f[i+1])}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`; }
+  function portafolio(){ const P=D.portafolio_final;
+    return `<div class="ci-scroll"><table class="ci-t"><thead><tr><th>Emisora</th><th>Títulos</th><th>Precio</th><th>Valor</th><th>Peso directo</th><th>Look-through</th><th>Peso benchmark</th><th>Sobre/sub (pp)</th></tr></thead><tbody>
+      ${P.map(r=>`<tr><td>${esc(r.emisora)}</td><td>${r.titulos?(+r.titulos).toLocaleString('es-MX'):''}</td><td>${r.precio?mx(n(r.precio)):''}</td><td>${mx(n(r.valor))}</td><td>${pc(n(r.peso_directo)).replace('+','')}</td>
+      <td>${r.peso_look_through?pc(n(r.peso_look_through)).replace('+',''):'abierto'}</td><td>${r.peso_benchmark?pc(n(r.peso_benchmark)).replace('+',''):'—'}</td><td class="${cls(n(r.activo_pp))}">${r.activo_pp?(n(r.activo_pp)>0?'+':'')+n(r.activo_pp).toFixed(2):'—'}</td></tr>`).join('')}</tbody></table></div>`; }
+  function linea(){ const dec=D.decisiones, p=D.puente, ev=[];
+    p.forEach(r=>{ const ops=dec.filter(o=>o.fecha===r.fecha); const a=n(r.alfa_dia_nav)*1e4;
+      if(ops.length||Math.abs(a)>=30||r.fecha==='2026-11-24') ev.push(`<li><b>${fDia(r.fecha)}</b> · alfa del día contra NAV <span class="${cls(a)}">${pb(a,1)}</span>${ops.length?` · ${ops.length} operación(es): ${[...new Set(ops.map(o=>`${o.tipo.toLowerCase()} ${o.emisora} (${o.motivo})`))].slice(0,4).map(esc).join('; ')}`:''}</li>`); });
+    return `<ul class="ci-tl"><li><b>16-oct</b> · Día 0: cierre de la semana de construcción. Valor ${mx(m('Cierre','valor_dia0'))}.</li>${ev.join('')}
+      <li><b>24-nov</b> · Fin de la gestión. Dividendo de OMAB por cobrar (${mx(m('Cierre','dividendos_por_cobrar'))}, paga el 25-nov). Mercado: el cobre cayó ~5% (LSEG, Kitco, Investing.com).</li></ul>`; }
+  function html(){ const ps=m('Cierre','escalera_real')-m('Cierre','escalera_original_buy_hold');
+    const r=ref, a=m(r,'alfa_bruto_pb');
+    return marcador()+resumen30()
+    +`<div class="ci-ctl"><span class="t">Referencia para alfa, riesgo, atribución y gráficas relativas:</span><div class="seg" id="ciSeg" role="group" aria-label="Referencia">${REFS.map(x=>`<button class="${x===ref?'on':''}" data-ref="${x}" aria-pressed="${x===ref}">${x}${x==='NAV'?' · oficial':''}</button>`).join('')}</div>
+      <button class="btn-rep" id="ciRep" type="button">Repetir la carrera</button></div>`
+    +card(`La carrera: la cartera ${pc(m(r,'rend_cartera'))} contra ${pc(m(r,'rend_referencia'))} del ${r} · base 100 · ${CORTE}`,lienzo('ciCarrera',1),'Sombreado verde: vamos arriba de la referencia elegida; rojo: abajo. Toque la leyenda para prender o apagar líneas. Puntos blancos = eventos.')
+    +`<div class="ci-g2">`+card(`Alfa diario y acumulado contra ${r}: ${pb(a)} al cierre · pb · ${CORTE}`,lienzo('ciAlfa'))
+      +card(`Puente: el alfa contra NAV (${pb(m('NAV','alfa_bruto_pb'))}) se explica desde el ${r==='NAV'?'Índice':r} · pb · ${CORTE}`,lienzo('ciPuente'),'Alfa contra NAV = alfa contra la otra referencia + (R de esa referencia − R del NAV). Cierra en cero cada día.')+`</div>`
+    +card(`Cascada: de dónde salen los ${pb(a)} contra ${r} · Brinson-Hood-Beebower enlazado con Cariño · pb · ${CORTE}`,lienzo('ciCascada',1),'Timing de mercado = efectivo contra acciones. La sobre y subponderación por sector es asignación.'+(r!=='NAV'?` El último bloque traslada el resultado del NAV al ${r} (ejercicio comparativo).`:''))
+    +`<div class="ci-g2">`+card(`Caída desde el máximo: ${pc(m('Cartera','caida_max'))} absoluta y ${pc(m(r,'caida_max_relativa'))} relativa contra ${r} · % · ${CORTE}`,lienzo('ciCaida'))
+      +card(`Premio o descuento del MEXTRAC09 sobre su NAV: cerró en ${pc(n(D.diario_referencias.at(-1).premio_descuento))} · % · ${CORTE}`,lienzo('ciPremio'),'Amarillo = día con MEXTRAC estimado (sin movimiento). El 21-oct no hay Price Close: se usa 69.10, último hecho.')+`</div>`
+    +`<div class="ci-g2">`+card(`Sectores: Materiales restó ${pb(n(D.atribucion_cierre.find(x=>x.bloque==='SECTOR'&&x.renglon==='Materiales')?.pb))} · pb contra NAV · ${CORTE}`,lienzo('ciSect',1))
+      +card(`Ganadoras y perdedoras: ${esc(D.atribucion_cierre.find(x=>x.bloque==='EMISORA')?.renglon)} explica ${pc(m('Cierre','concentracion_top1'),0).replace('+','')} del alfa · pb contra NAV · ${CORTE}`,lienzo('ciGan',1))+`</div>`
+    +card(`Mapa de calor: aporte de cada emisora por día contra NAV (las 15 de mayor efecto) · pb · ${CORTE}`,calor(),'Verde suma, rojo resta; el número es el aporte del día en pb (se omiten los menores a 0.5 pb). Los días no se enlazan con Cariño en esta vista.')
+    +`<div class="ci-g2">`+card(`Escalera de decisiones: operar sumó ${pb(ps*1e4)} contra la asignación sin tocar · % · ${CORTE}`,lienzo('ciEsc'),'Original = asignación de BBVA del 12-oct sin operar, medida desde el 16-oct. QVM alterno = escenario hipotético de la hoja WhatIf_Modelo.')
+      +card(`Semáforo de cumplimiento: ${D.cumplimiento_diario.filter(x=>x.estado!=='Cumple').length} días fuera (solo caja, sobregiro del 21 al 26-oct) · TE y beta contra NAV`,semaforo(),'Reglas: caja 0–5%, ETF ≥ 25%, pasiva y activa 40–60%, ±10 pp por emisora, TE ≤ 10%, beta 0.70–1.30.')+`</div>`
+    +card(`Métricas lado a lado · toque un encabezado para ordenar · ${CORTE}`,tabla(),`Absolutas de la cartera: volatilidad ${pc(m('Cartera','vol_anual')).replace('+','')}, Sharpe ${m('Cartera','sharpe_anual').toFixed(2)} y Sortino ${m('Cartera','sortino_anual').toFixed(2)} contra Cetes 28 (${pc(m('Cartera','cetes28')).replace('+','')}), VaR 95% 1 día ${pc(m('Cartera','var_hist_95_1d')).replace('+','')} histórico (${mx(m('Cartera','var_hist_95_1d_pesos'))}) y ${pc(m('Cartera','var_param_95_1d')).replace('+','')} paramétrico (${mx(m('Cartera','var_param_95_1d_pesos'))}), CVaR ${pc(m('Cartera','cvar_hist_95_1d')).replace('+','')}. Las cifras anualizadas son solo de referencia.`)
+    +card(`Portafolio final al 24-nov: ${mx(m('Cierre','valor_24nov'))}`,portafolio(),'Look-through = peso directo + MEXTRAC09 abierto en su canasta (PCF del 21-oct). Sobre/sub = look-through − peso en el benchmark.')
+    +card('Línea de tiempo de la gestión (16-oct a 24-nov)',linea(),'Se listan los días con operaciones o con alfa de ±30 pb o más. Una coincidencia de fechas no prueba causa.')
+    +card('Cómo se calculó',`<details open><summary>Fórmulas</summary><p class="ci-nota">Rendimiento = valor al cierre ÷ valor al cierre del 16-oct − 1 (la cartera se valúa a precio de mercado, incluido nuestro MEXTRAC09). Alfa bruto = rendimiento acumulado de la cartera − el de la referencia. Penalizado = bruto − 30 pb, una vez. TE = σ de los alfas diarios × √25 (periodo) o × √252 (anual). IR efectiva = alfa ÷ TE del periodo. Ex ante = posición del 24-nov sobre 252 escenarios diarios; VaR paramétrico = 1.645 σ. Atribución: Brinson-Fachler por sector, pesos al cierre anterior con el MEXTRAC abierto, días enlazados con Cariño.</p></details>
+      <details><summary>Fuentes</summary><p class="ci-nota">NAV: LSEG TR.FundNAV (MEXTRAC09.MX), revisado día por día con su fecha. Precio: LSEG TR.PriceClose, con estimado los días sin movimiento. Índice: S&P Dow Jones Indices, S&P/BMV IPC CompMx Trailing Income Equities ESG Tilted Index (MXN) TR, indexId 92411421; LSEG no lo tiene. Cetes 28: Banxico. Por licencia se publican rendimientos, no niveles.</p></details>
+      <details><summary>Supuestos</summary><p class="ci-nota">r_caja = 0%. Un dividendo con fecha ex dentro de la gestión y pago después cuenta como por cobrar el 24-nov (OMAB). El MEXTRAC09 no pagó distribuciones en el periodo. Las señales tácticas se midieron contra el precio del ETF, como se decidieron.</p></details>
+      <details><summary>Glosario</summary><p class="ci-nota"><b>NAV</b>: valor de los activos del fondo por certificado. <b>Alfa</b>: cuánto le ganamos o perdimos a la referencia. <b>pb</b>: centésima de punto porcentual. <b>TE</b>: qué tanto se separa día a día la cartera de la referencia. <b>IR</b>: alfa por unidad de TE. <b>Asignación</b>: efecto de pesar distinto un sector. <b>Selección</b>: efecto de escoger mejores o peores acciones dentro del sector. <b>Look-through</b>: abrir el ETF en sus acciones.</p></details>`)
+    +card('Descargas',`<div class="ci-dl">${ARCH.map(a=>`<a href="cierre/${a}.csv" download>${a}.csv</a>`).join('')}<a href="Resultados_finales_24nov.md">Resultados_finales_24nov.md</a></div>`);
+  }
+  function graficas(){ carrera(); alfaDia(); puente(); cascada(); caida(); premio(); sectores(); ganadoras(); escalera(); }
+  function enlazar(){ const v=document.getElementById('v-cierre');
+    v.querySelectorAll('[data-ref]').forEach(b=>{ const f=()=>{ if(b.dataset.ref!==ref){ ref=b.dataset.ref; pintado=''; render(); } };
+      b.onclick=f; b.onkeydown=e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); f(); } }; });
+    const rep=document.getElementById('ciRep'); if(rep) rep.onclick=()=>{ const c=graf.ciCarrera; if(c){ c.reset(); c.update(); } };
+    const t=document.getElementById('ciTabla'); if(t) t.querySelectorAll('th').forEach(th=>th.onclick=()=>{ const c=+th.dataset.c; orden=orden.col===c?{col:c,asc:!orden.asc}:{col:c,asc:false};
+      t.parentElement.outerHTML=tabla(); enlazar(); }); }
+  async function render(){ const cu=document.getElementById('ciCuerpo'); if(!cu) return;
+    if(!D){ await cargar(); }
+    if(!D){ cu.innerHTML=`<div class="card"><div class="empty">No se pudieron leer los archivos de cierre: ${esc(err)}</div></div>`; return; }
+    if(pintado===ref) return; pintado=ref;
+    cu.innerHTML=html(); enlazar(); requestAnimationFrame(graficas); }
+  return {render, get datos(){ return D; }};
+})();
+
 /* ═══════════ 19. EVENTOS ═══════════ */
 function bindEvents(){
   $$('.nav-item').forEach(b=>b.onclick=()=>UI.go(b.dataset.v));
@@ -10909,7 +11150,7 @@ function bindEvents(){
     Remote.auto();
   // La primera vez que alguien abre el archivo se le ofrece el recorrido.
   if(!GESTOR && !Store.get().cfg.guíaVista){
-    setTimeout(()=>{ if(!Guia.activa) Guia.iniciar(); }, 1200);
+    setTimeout(()=>{ if(!Guia.activa && UI.view!=='cierre') Guia.iniciar(); }, 1200);   // cierre 24-nov: la portada no se tapa
   }
   if(Store.get().cfg.remoteAuto && (Store.get().cfg.urlCotiz||Store.get().cfg.urlPesos||Store.get().cfg.urlPrecios)){
     Remote.pullAll(true).then(()=>UI.render());     // primera lectura sin esperar al intervalo
@@ -11371,7 +11612,7 @@ function seedFromModel(S){
   Remote.auto();
   // La primera vez que alguien abre el archivo se le ofrece el recorrido.
   if(!GESTOR && !Store.get().cfg.guíaVista){
-    setTimeout(()=>{ if(!Guia.activa) Guia.iniciar(); }, 1200);
+    setTimeout(()=>{ if(!Guia.activa && UI.view!=='cierre') Guia.iniciar(); }, 1200);   // cierre 24-nov: la portada no se tapa
   }
   if(Store.get().cfg.remoteAuto && (Store.get().cfg.urlCotiz||Store.get().cfg.urlPesos||Store.get().cfg.urlPrecios)){
     // Primera lectura sin esperar al intervalo, ya fijada al último commit si GitHub responde
